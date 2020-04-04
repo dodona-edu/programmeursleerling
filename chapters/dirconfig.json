@@ -1,5 +1,6 @@
 {
   "programming_language": "python",
   "access": "public",
-  "author": "Pieter Spronck <pythonbook@spronck.net>"
+  "author": "Pieter Spronck <pythonbook@spronck.net>",
+  "labels": ["The Coder's Apprentice", "De programmeursleerling"]
 }
