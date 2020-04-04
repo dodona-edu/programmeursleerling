@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+  </head>
+  <body>
+    <p>Different versions of Python exist. At the moment of creating this book,
+      the most popular versions are Python 2 and Python 3. Python 3 is, as can
+      be expected, an update of Python 2. Python 2 programs are, unfortunately,
+      not completely compatible with Python 3. Since a lot of Python 2 code is
+      still in use, Python 2 is still an active language, and still being
+      maintained.</p>
+    <p>The reason why Python 3 was created is to resolve a number of
+      inconsistencies and idiosyncrasies in the Python 2 language. For people
+      new to programming, this is a big plus, because there are less "weird"
+      language elements they need to learn and understand if they choose Python
+      3 instead of Python 2.</p>
+    <p>To give an example, when you calculate <samp>7/4</samp> in Python 2, the
+      answer is <samp>1</samp>, and not <samp>1.75</samp> as you might expect.
+      The reason is that both <samp>7</samp> and <samp>4</samp> are whole
+      numbers (integers), and therefore the result of their division is a whole
+      number. If you want to make sure that the result is <samp>1.75</samp>,
+      you must make at least one of the numbers involved a floating-point
+      number. Therefore, <samp>7.0/4</samp> gives the result <samp>1.75</samp>.
+      This is how almost all computer languages do calculations. Naturally, for
+      people who are not familiar with programming computers, this is
+      counter-intuitive. Python 3 has resolved this issue, and automatically
+      does the floating-point conversion when a floating-point result would be
+      expected, i.e., in Python 3, <samp>7/4</samp> gives the result <samp>1.75</samp>.
+      Many Python 2 programs, however, are written with the assumption that
+      integer-division rounds down, which means that, when you run them as
+      Python 3 programs, they no longer give the desired results. Thus, Python 2
+      and Python 3 are not compatible.</p>
+    <p>Since Python 3 is more intuitive than Python 2, and since nowadays most
+      Python programs and modules have been converted to Python 3, this book is
+      written for Python 3. If you ever have to revert back to Python 2, it is
+      not hard to make the change. An overview of the differences between Python
+      2 and Python 3 is given in Appendix B (which is not a complete overview,
+      but contains all the differences that I am aware of). If you are only
+      using Python 3, you can ignore this appendix. However, considering how
+      often I see the question "What exactly are the differences between Python
+      2 and Python 3?", and how hard it seems to be to find an answer to that
+      question, I thought it prudent to add it.</p>
+  </body>
+</html>
