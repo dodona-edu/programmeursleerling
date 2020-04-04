@@ -4,5 +4,9 @@
       "nl": "Dankwoord",
       "en": "Acknowledgments"
     }
+  },
+  "internals": {
+    "token": "tzkwMaCGXCIi9GGHwZDuHcWtsNTJCJjr5baC66iZa35MTYicHKbxTCVT-aBvwH9f",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
   }
 }
