@@ -1,0 +1,9 @@
+Python is cool!
+----------------------------------------
+tab name: Feedback
+python input without prompt: true
+block count: one
+<DEFINITION>
+def customEvaluate(expected_output, generated_output):
+    return bool(generated_output)
+</DEFINITION>
