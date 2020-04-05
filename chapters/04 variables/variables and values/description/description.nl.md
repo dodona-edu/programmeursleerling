@@ -40,13 +40,11 @@ waarde oplevert. Het hoeft niet een enkel getal te zijn. Het mag ook een
 berekening zijn, of een string, of een aanroep van een functie die een
 waarde oplevert (bijvoorbeeld de `int()` functie).
 
-
-<div class="callout callout-info">
-  <h4>Opgave</h4>
-  <p>In het vorige hoofdstuk was er een oefenopgave die je het aantal
+{:class="callout callout-info"}
+> #### Opgave
+> In het vorige hoofdstuk was er een oefenopgave die je het aantal
 seconden in een week liet uitrekenen. Kopieer die berekening in een
-programma, en ken hem toe aan een variabele. Druk dan de variabele af.</p>
-</div>
+programma, en ken hem toe aan een variabele. Druk dan de variabele af.
 
 De eerste keer in je programma dat je een waarde toekent aan een
 specifieke variabele naam, wordt de bijbehorende variabele gecreëerd.

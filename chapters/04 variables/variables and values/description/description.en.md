@@ -15,10 +15,9 @@ The variable `x` behaves pretty much like a box on which you write an`x` with a 
 
 To the right of the assign operator you can place anything that results in a value. Therefore, it does not need to be a single number. It can be, for instance, a calculation, a string, or a call to a function that results in a value (such as the `int()` function).
 
-<div class="callout callout-info">
-  <h4>Exercise</h4>
-  <p>In the previous chapter you wrote a calculation that determines the number of seconds in a week. Copy this calculation into a program, and assign it to a variable. Then add a statement to print the contents of the variable.</p>
-</div>
+{:class="callout callout-info"}
+> #### Exercise
+> In the previous chapter you wrote a calculation that determines the number of seconds in a week. Copy this calculation into a program, and assign it to a variable. Then add a statement to print the contents of the variable.
 
 When you assign a value to a variable name in your program, the first time you do that for a specific variable name, it creates the variable. If later in the program you assign another value to the same variable name, it "overwrites" the previous value. In the box metaphor: you empty the box and put something else in it. A variable always holds the value that was last assigned to it.
 
