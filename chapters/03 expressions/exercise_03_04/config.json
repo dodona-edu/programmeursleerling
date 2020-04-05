@@ -5,6 +5,9 @@
       "en": "Runtime errors"
     }
   },
+  "evaluation": {
+    "pythia_judge": "output"
+  },
   "labels": [
 
   ],
