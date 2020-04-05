@@ -11,9 +11,7 @@ In the code block above, two things happen. First, I create a variable with the 
 
 The variable `x` behaves pretty much like a box on which you write an`x` with a thick, black marker to be able to find it later. You can put something in the box, and then look into the box to see what you put in (though only one thing at a time will fit in the box). You can refer to the contents of the box by using the name written on the box. The term "variable" means the variable name, i.e., the letter `x` on the box. The term "value" means the value that is stored in the variable, i.e., the contents of the box.
 
-![variable](media/box.png "variable"){:data-caption="A variable behaves pretty much like a box on which you write a name with a thick, black marker to be able to find it later. You can put something in the box, and then look into the box to see what you put in (though only one thing at a time will fit in the box). You can refer to the contents of the box by using the name written on the box." width="50%"}
-
-<img src="media/box.png" width="50%" alt="image" />
+![variable](media/box.png "variable"){:data-caption="A variable behaves pretty much like a box on which you write a name with a thick, black marker to be able to find it later. You can put something in the box, and then look into the box to see what you put in (though only one thing at a time will fit in the box). You can refer to the contents of the box by using the name written on the box." width="35%"}
 
 To the right of the assign operator you can place anything that results in a value. Therefore, it does not need to be a single number. It can be, for instance, a calculation, a string, or a call to a function that results in a value (such as the `int()` function).
 
