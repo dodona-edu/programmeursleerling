@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+  </head>
+  <body>
+    <p>In the IDLE shell you can type commands on the IDLE prompt (<samp>&gt;&gt;&gt;</samp>).
+      Give the command <samp>print(7/4)</samp>. You will see that it prints the
+      answer <samp>1.75</samp>. Then give the command <samp>7/4</samp> (i.e.,
+      without <samp>print</samp>). Observe that it also prints the answer <samp>1.75</samp>.</p>
+    <p>The reason is that the IDLE shell will always display the result of a
+      command. The result of <samp>7/4</samp> is <samp>1.75</samp>, and
+      therefore it displays <samp>1.75</samp>. The result of a <samp>print</samp>
+      command is nothing, so the shell displays nothing &#8212; however, the <samp>print</samp>
+      command causes the display of whatever is within the parentheses, which is
+      the value resulting from dividing $$7$$ by $$4$$, which is $$1.75$$.
+      Therefore, in both cases you see <samp>1.75</samp>, but one is the result
+      of the use of the <samp>print</samp> command, while the other is the
+      result of the shell showing you the evaluation of a calculation.</p>
+    <p>Now write a Python program that contains only the command <samp>7/4</samp>.
+      Before you run it, think about what you expect to happen when you run it.
+      Will the shell display <samp>1.75</samp>? Will it display nothing? Or
+      will you see an error?</p>
+    <p>Check if your expectation is correct.</p>
+  </body>
+</html>

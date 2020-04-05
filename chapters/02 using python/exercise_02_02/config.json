@@ -1,0 +1,14 @@
+{
+  "description": {
+    "names": {
+      "nl": "Een expressie evalueren",
+      "en": "Evaluate an expression"
+    }
+  },
+  "evaluation": {
+    "pythia_judge": "output"
+  },
+  "labels": [
+
+  ]
+}

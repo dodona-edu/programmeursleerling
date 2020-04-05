@@ -1,0 +1,14 @@
+{
+  "description": {
+    "names": {
+      "nl": "Hello, world!",
+      "en": "Hello, world!"
+    }
+  },
+  "evaluation": {
+    "pythia_judge": "output"
+  },
+  "labels": [
+
+  ]
+}
