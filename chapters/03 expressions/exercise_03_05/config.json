@@ -5,6 +5,9 @@
       "en": "Set an alarm"
     }
   },
+  "evaluation": {
+    "pythia_judge": "output"
+  },
   "labels": [
 
   ],

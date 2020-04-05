@@ -5,6 +5,9 @@
       "en": "Ordering books"
     }
   },
+  "evaluation": {
+    "pythia_judge": "output"
+  },
   "labels": [
 
   ],
