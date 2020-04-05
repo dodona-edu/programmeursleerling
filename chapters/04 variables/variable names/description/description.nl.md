@@ -115,20 +115,19 @@ niet zou misstaan.
 ### Oefenen met variabele namen
 
 {:class="callout callout-info"}
-  #### Opgave
-  
-  In de code hieronder wordt de waarde 1 toegekend aan een aantal (potentiële variabele namen. Sommige hiervan zijn correct, andere niet. Identificeer de incorrecte namen en leg uit waarom ze incorrect zijn.
-
-  ```python
-  classificatie = 1   # 1
-  Classificatie = 1   # 2
-  cl@ssificatie = 1   # 3
-  class1f1cat1e = 1   # 4
-  1classificatie = 1  # 5
-  _classificatie = 1  # 6
-  class = 1           # 7
-  Class = 1           # 8
-  ```
+> #### Opgave
+>
+> In de code hieronder wordt de waarde 1 toegekend aan een aantal (potentiële variabele namen. Sommige hiervan zijn correct, andere niet. Identificeer de incorrecte namen en leg uit waarom ze incorrect zijn.
+> ```python
+>  classificatie = 1   # 1
+>  Classificatie = 1   # 2
+>  cl@ssificatie = 1   # 3
+>  class1f1cat1e = 1   # 4
+>  1classificatie = 1  # 5
+>  _classificatie = 1  # 6
+>  class = 1           # 7
+>  Class = 1           # 8
+>  ```
 
 {:class="callout callout-info"}
   #### Antwoord
