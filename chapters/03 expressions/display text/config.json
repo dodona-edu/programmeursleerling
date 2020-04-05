@@ -5,6 +5,9 @@
       "en": "Display text"
     }
   },
+  "evaluation": {
+    "pythia_judge": "output"
+  },
   "labels": [
 
   ]
