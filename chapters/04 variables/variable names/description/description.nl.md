@@ -76,7 +76,7 @@ print( d )
 ```
 
 Snap je wat deze code doet? Je ziet waarschijnlijk wel dat er een
-benadering van $\pi$ in voorkomt, maar wat stelt `d` voor?
+benadering van $$\pi$$ in voorkomt, maar wat stelt `d` voor?
 
 Deze code berekent het volume van een kegel. Dat zou je waarschijnlijk
 niet geraden hebben, maar dat is wel wat er gebeurt. Nu vraag ik je de
@@ -130,7 +130,7 @@ niet zou misstaan.
 
 {:class="callout callout-info"}
 > #### Antwoord
-> De derde, vijfde, en zevende zijn incorrect. De derde omdat er een at-sign ($@$) in zit, de vijfde omdat hij begint met een cijfer, en de zevende omdat het een gereserveerd woord is (dat gelukkig opvalt vanwege de syntax highlighting). De andere zijn weliswaar correct, maar de zesde zou volgens de conventie vermeden moeten worden omdat het begint met een underscore, en de tweede en achtste ook, omdat die een hoofdletter bevatten. De achtste is het ergst, want die lijkt op een gereserveerd woord.
+> De derde, vijfde, en zevende zijn incorrect. De derde omdat er een at-sign (`@`) in zit, de vijfde omdat hij begint met een cijfer, en de zevende omdat het een gereserveerd woord is (dat gelukkig opvalt vanwege de syntax highlighting). De andere zijn weliswaar correct, maar de zesde zou volgens de conventie vermeden moeten worden omdat het begint met een underscore, en de tweede en achtste ook, omdat die een hoofdletter bevatten. De achtste is het ergst, want die lijkt op een gereserveerd woord.
 
 ### Constanten
 
