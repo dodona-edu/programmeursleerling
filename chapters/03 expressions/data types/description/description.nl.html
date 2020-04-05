@@ -1,0 +1,118 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+  </head>
+  <body>
+    <p>Voordat ik toekom aan expressies, is er nog een onderwerp dat aan bod
+      moet komen, en dat is data types. Er zijn drie verschillende data types
+      die je op dit moment moet kennen, en dat zijn <i>strings</i>, <i>integers</i>,
+      en <i>floats</i>.</p>
+    <h3>Strings</h3>
+    <p>Een string is een tekst, die bestaat uit nul of meer tekens, omsloten
+      door aanhalingstekens. Je mag dubbele of enkele aanhalingstekens
+      gebruiken. Wat je kiest maakt niet uit, bijvoorbeeld: <samp>"appel"</samp>
+      is equivalent met <samp>'appel</samp>'. Echter, als je tekst een enkel
+      aanhalingsteken bevat, moet je hem om problemen te voorkomen omsluiten met
+      dubbele aanhalingstekens; dus <samp>"mango's"</samp> is een correcte
+      string, terwijl <samp>'mango's'</samp> niet correct is. Hetzelfde geldt
+      natuurlijk voor een dubbel aanhalingsteken in een string, die dan omsloten
+      moet worden door enkele aanhalingstekens.</p>
+    <p>Maar wat moet je doen als een string zowel dubbele als enkele
+      aanhalingstekens bevat? Je kunt dat oplossen door in de string een <i>backslash</i>
+      (<samp>\</samp>) op te nemen voor ieder dubbel of enkel aanhalingsteken
+      dat in de string staat. Dit vertelt Python dat dat aanhalingsteken
+      behandeld moet worden als een teken in de string, en niet als een
+      afsluiting van de string. Dus <samp>'mango\'s'</samp> is een correcte
+      string, wat je kunt zien als je hem probeert te printen:</p>
+    <div class="highlighter-rouge">
+      <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span
+class="p">(</span> <span class="s1">'mango</span><span class="se">\'</span><span
+class="s1">s'</span> <span class="p">)</span>
+<span class="go">mango's</span>
+</pre></div>
+    <p>Maar wat moet je dan doen als je een echte backslash wilt opnemen in de
+      string, en die backslash moet dan ook nog eens staan voor een dubbel of
+      enkel aanhalingsteken? Dat kun je oplossen door voor de backslash een
+      extra backslash op te nemen, wat er een teken in de string van maakt in
+      plaats van een aanduiding dat wat erachter komt letterlijk genomen moet
+      worden. Bijvoorbeeld, controleer wat de volgende code doet als je hem
+      uitvoert (je kunt hem intypen in de Python shell):</p>
+    <div class="highlighter-rouge">
+      <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span
+class="p">(</span> <span class="s1">'mango</span><span class="se">\\\'</span><span
+class="s1">s'</span> <span class="p">)</span>
+<span class="go">mango\'s</span>
+</pre></div>
+    <p>Als je dit verwarrend vindt kun je het voorlopig vergeten; ik ga het
+      hierover in een later hoofdstuk nog uitgebreid hebben. Voor dit moment is
+      het voldoende om te weten dat een string een tekst is die omsloten is door
+      dubbele of enkele aanhalingstekens. Een string kan iedere lengte hebben,
+      inclusief nul tekens lang.</p>
+    <p>Let erop dat je alleen <i>rechte</i> aanhalingstekens gebruikt in Python
+      programma's, en niet <i>ronde</i>. Tekstverwerkers hebben de neiging om
+      rechte aanhalingstekens automatisch te vervangen door ronde, maar Python
+      herkent zulke ronde aanhalingstekens niet. Tekst editors doen dat niet,
+      maar als je om wat voor reden dan ook Python code kopieert naar een
+      tekstverwerker, dan zou het best kunt gebeuren dat je aanhalingstekens
+      gewijzigd worden. Kijk daarvoor uit.</p>
+    <h3>Integers</h3>
+    <p>Integers zijn gehele getallen, die positief of negatief (of nul) kunnen
+      zijn. Er is een zekere grens aan hoe groot integers kunnen worden, die
+      afhankelijk is van je computer en besturingssysteem. Voor de meeste
+      toepassingen maakt dit niet uit, en kom je nooit aan die grenzen toe.
+      Python is niet als rekenmachines met een 10-cijfer display.</p>
+    <p>Er zijn meerdere manieren mogelijk om een specifieke integer-waarde te
+      schrijven. <samp>1</samp> is hetzelfde als <samp>+1</samp> (er zijn nog
+      meer manieren om <samp>1</samp> te schrijven, maar die volgen in een
+      later hoofdstuk). Dus zowel <samp>print( 1 )</samp> als <samp>print( +1
+        )</samp> geven hetzelfde resultaat. Voor strings is dat natuurlijk
+      anders: de string <samp>"1"</samp> is niet hetzelfde als de string <samp>"+1"</samp>.</p>
+    <p>Als je integers in Python gebruikt, mag je ze niet schrijven met
+      scheiders tussen de veelvouden van 1000 om ze leesbaarder te maken. Je
+      moet het getal 1 miljard dus schrijven als <samp>1000000000</samp> en
+      niet als <samp>1,000,000,000</samp> (de Engelse conventie) of <samp>1.000.000.000</samp>.</p>
+    <p>Bestudeer de volgende code en bedenk wat er gebeurt als je hem uitvoert.
+      Kopieer hem daarna naar de Python shell en voer hem uit.</p>
+    <div class="highlighter-rouge">
+      <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span
+class="p">(</span> <span class="mi">1</span><span class="p">,</span><span class="mo">000</span><span
+class="p">,</span><span class="mo">000</span><span class="p">,</span><span class="mo">000</span> <span
+class="p">)</span>
+</pre></div>
+    <div class="callout callout-info">
+      <h4>Opgave</h4>
+      <p>Als je voorspelling van wat de code doet niet correct is, probeer dan
+        te bedenken waarom de code deze uitkomst geeft.</p>
+    </div>
+    <h3>Floats</h3>
+    <p>Floats, wat kort is voor <i>floating-point getallen</i> (<i>gebroken
+        getallen</i>), zijn getallen met decimalen. Bijvoorbeeld,&#160; <samp>3.14159265</samp>
+      is een float. Merk op dat je een punt in plaats van een komma moet
+      gebruiken als decimaal-scheider. Veel landen (inclusief Nederland)
+      gebruiken een komma als decimaal-scheider, maar Python houdt zich aan de
+      conventie van Engelstalige landen en gebruikt daarom de punt.</p>
+    <p>Als je een integer hebt die je wilt gebruiken als float, kun je dat doen
+      door er <samp>.0</samp> achter te zetten. Bijvoorbeeld, <samp>13</samp>
+      is een integer, maar <samp>13.0</samp> is een float. Ze geven nog steeds
+      dezelfde waarde weer, en als je ze in code met elkaar vergelijkt (dat
+      bespreek ik in hoofdstuk \ref{ch:conditions}), dan zal Python stellen dat
+      ze hetzelfde zijn.</p>
+    <p>Er zijn bepaalde begrenzingen aan de grootte van de floats, en aan de
+      precisie. Het is onwaarschijnlijk dat je ooit de maximale groottes
+      bereikt, aangezien Python wetenschappelijke notatie voor grote getallen
+      gebruikt. Maar als je Python gebruikt voor zeer exacte berekeningen, kun
+      je wel in de problemen komen met precisie. Voor de meeste toepassingen
+      gebeurt dat niet, maar als je een natuurkundige bent wiens berekeningen
+      grote getallen omvatten op quantumniveau, moet je je wel bewust zijn van
+      deze beperkingen.</p>
+    <p>Door de manier waarop Python floats opslaat, kunnen bepaalde getallen
+      niet precies vastgelegd worden. Bijvoorbeeld, het statement <samp>print(
+        (431 / 100) * 100 )</samp> geeft als antwoord <samp>430.99999999999994</samp>,
+      en niet <samp>431</samp> zoals je zou verwachten. Als je weet dat de
+      uitkomst van een berekening waarin floats zitten een integer moet zijn,
+      dan doe je er goed aan om de uitkomst af te ronden naar het
+      dichtstbijzijnde gehele getal. Dat kun je doen met behulp van de <samp>round()</samp>
+      functie, die ik bespreek in hoofdstuk \ref{ch:simplefunctions}.</p>
+    
+  </body>
+</html>

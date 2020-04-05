@@ -1,0 +1,273 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+  </head>
+  <body>
+    <p>Finally, I can get to the topic of this chapter, which is "expressions".
+      An expression is a combination of one or more values (such as strings,
+      integers, or floats) using operators, which result in a new value. In
+      other words, you can think of expressions as calculations.</p>
+    <h3>Basic calculations</h3>
+    <p>Basic calculations combine two values with one operator in between them.
+      Some straightforward operators are:</p>
+    <div class="dodona-centered-group">
+      <table class="table table-striped table-condensed">
+        <thead>
+          <tr>
+            <th>operator</th>
+            <th>description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><samp>+</samp></td>
+            <td>addition</td>
+          </tr>
+          <tr>
+            <td><samp>-</samp></td>
+            <td>subtraction</td>
+          </tr>
+          <tr>
+            <td><samp>*</samp></td>
+            <td>multiplication</td>
+          </tr>
+          <tr>
+            <td><samp>/</samp></td>
+            <td>division</td>
+          </tr>
+          <tr>
+            <td><samp>//</samp></td>
+            <td>integer division</td>
+          </tr>
+          <tr>
+            <td><samp>**</samp></td>
+            <td>power</td>
+          </tr>
+          <tr>
+            <td><samp>%</samp></td>
+            <td>modulo</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Here are some examples:</p>
+    <div class="highlighter-rouge">
+      <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span
+class="p">(</span> <span class="mi">15</span><span class="o">+</span><span class="mi">4</span> <span
+class="p">)</span>
+<span class="go">19</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span> <span
+class="mi">15</span><span class="o">-</span><span class="mi">4</span> <span class="p">)</span>
+<span class="go">11</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span> <span
+class="mi">15</span><span class="o">*</span><span class="mi">4</span> <span class="p">)</span>
+<span class="go">60</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span> <span
+class="mi">15</span><span class="o">/</span><span class="mi">4</span> <span class="p">)</span>
+<span class="go">3.75</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span> <span
+class="mi">15</span><span class="o">//</span><span class="mi">4</span> <span class="p">)</span>
+<span class="go">3</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span> <span
+class="mi">15</span><span class="o">**</span><span class="mi">4</span> <span class="p">)</span>
+<span class="go">50625</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span> <span
+class="mi">15</span><span class="o">%</span><span class="mi">4</span> <span class="p">)</span>
+<span class="go">3</span>
+</pre></div>
+    <p>I assume you know what each of these operators entails, except perhaps
+      the integer division and modulo operators.</p>
+    <p>The integer division (also called <i>floor division</i>) is simply a
+      division that rounds down to a whole number. If you involve floats in the
+      calculation, the result will still be a float, but rounded down. If you
+      only involve integers in the calculation, the result will be an integer.</p>
+    <p>The modulo operator (<samp>%</samp>) takes the remainder of a division.
+      For example: If I divide 14 by 5, the result is 2.8, right? This means I
+      can subtract 5 twice from 14, and still have a positive result, but if I
+      subtract it a third time, the result will become negative. So, after
+      subtracting 5 twice from 14 I have a remainder that is less than 5. This
+      remainder is what the modulo operator produces.</p>
+    <p>In very simplistic terms: if I have 14 cookies which I have to divide
+      over 5 children, each child gets 2 cookies. And I still have 4 cookies
+      left, because there are more children than I have cookies at that point.
+      Thus, dividing 14 by 5 as an integer division is 2 (cookies per child),
+      while 14 modulo 5 is the remainder 4 (cookies I have left in my hand).</p>
+    <p>On a side note, I wish to point out that the code shown above consists of
+      multiple lines. Each line is said to be a <i>statement</i>, and it
+      consists of one command that Python executes (in the code above, a <samp>print()</samp>
+      function on every line). Most programming languages make it mandatory to
+      end each statement with a special character, usually a semi-colon (<samp>;</samp>).
+      Python does not require a semi-colon after each statement, but each
+      statement must (in general) be on its own line. In principle, you are
+      allowed to place multiple Python statements on one line, but then you
+      should put semi-colons between the statements. However, it is Python
+      practice and convention not to do that, as it makes code ugly, hard to
+      read, and difficult to maintain. So, please stick to the convention and
+      give each statement its own line.</p>
+    <h3>More complex calculations</h3>
+    <p>You are allowed to combine operators into bigger calculations, just as
+      you can do on the more advanced calculators. To help you out, you are also
+      allowed to used parentheses in your calculations, and you can even nest
+      these parentheses. Python will process the operators in the order
+      prescribed by mathematicians, often referred to as PEMDAS (Parentheses,
+      Exponents, Multiplication and Division, Addition and Subtraction).</p>
+    <p>Check out the calculation below, and try to predict what it will result
+      in before you copy it to the Python shell and run the code.</p>
+    <div class="highlighter-rouge">
+      <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span
+class="p">(</span> <span class="mi">5</span><span class="o">*</span><span class="mi">2</span><span
+class="o">-</span><span class="mi">3</span><span class="o">+</span><span class="mi">4</span><span
+class="o">/</span><span class="mi">2</span> <span class="p">)</span>
+<span class="go">9.0</span>
+</pre></div>
+    <p>There are a couple of things to note about this calculation.</p>
+    <p>First, the end result is a float (even though it has no decimals, or, if
+      you will, only zero as a decimal). The reason is that a division is part
+      of the calculation, and for Python that means that it should turn this
+      into a floating-point calculation.</p>
+    <p>Second, just as explained above, spaces are ignored by Python, so the
+      code above is the same as:</p>
+    <div class="highlighter-rouge">
+      <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span
+class="p">(</span> <span class="mi">5</span> <span class="o">*</span> <span class="mi">2</span> <span
+class="o">-</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">4</span> <span
+class="o">/</span> <span class="mi">2</span> <span class="p">)</span>
+<span class="go">9.0</span>
+</pre></div>
+    <p>It is even the same as:</p>
+    <div class="highlighter-rouge">
+      <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span
+class="p">(</span> <span class="mi">5</span><span class="o">*</span><span class="mi">2</span> <span
+class="o">-</span> <span class="mi">3</span><span class="o">+</span><span class="mi">4</span>    <span
+class="o">/</span> <span class="mi">2</span> <span class="p">)</span>
+<span class="go">9.0</span>
+</pre></div>
+    <p>I have been in long discussions with people who keep arguing that the
+      code above should result in <samp>6.5</samp> or <samp>1.5</samp>,
+      because <i>clearly</i> you have to calculate the <samp>5*2</samp> and
+      the <samp>3+4</samp> before you do the subtraction and division. That is
+      hogwash. It does not matter how close you place operands together, spaces
+      are ignored. If you really want to calculate the <samp>3+4</samp> first,
+      you have to put it between parentheses. You can then still use spaces to
+      improve readability, but they mean nothing to Python.</p>
+    <div class="highlighter-rouge">
+      <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span
+class="p">(</span> <span class="p">(</span><span class="mi">5</span><span class="o">*</span><span
+class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span
+class="mi">3</span><span class="o">+</span><span class="mi">4</span><span class="p">)</span><span
+class="o">/</span><span class="mi">2</span> <span class="p">)</span>
+<span class="go">6.5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span> <span
+class="p">((</span><span class="mi">5</span><span class="o">*</span><span class="mi">2</span><span
+class="p">)</span><span class="o">-</span><span class="p">(</span><span class="mi">3</span><span
+class="o">+</span><span class="mi">4</span><span class="p">))</span> <span class="o">/</span> <span
+class="mi">2</span> <span class="p">)</span>
+<span class="go">1.5</span>
+</pre></div>
+    <div class="callout callout-info">
+      <h4>Exercise</h4>
+      <p>Now it is time to write your first program. Write a program that
+        displays the number of seconds in a week. You should, of course, not
+        grab your calculator or smartphone to do the calculation and then just
+        print the resulting number, but you should do the calculation in Python
+        code. Since this program needs only one line of code, you could just
+        write it in the Python shell, though you are encouraged to create a
+        program file and use that.</p>
+    </div>
+    <h3>String expressions</h3>
+    <p>Some of the operators given above can also be used for strings, though
+      not all of them.</p>
+    <p>In particular, you can use the addition operator (<samp>+</samp>) to
+      concatenate two strings, and you can use the multiplication operator (<samp>*</samp>)
+      with a number and a string to create a string that contains a repetition
+      of the original string. Check it out:</p>
+    <div class="highlighter-rouge">
+      <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span
+class="p">(</span> <span class="s2">"hello"</span><span class="o">+</span><span
+class="s2">"world"</span> <span class="p">)</span>
+<span class="go">helloworld</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span> <span
+class="mi">3</span><span class="o">*</span><span class="s2">"hello"</span> <span
+class="p">)</span>
+<span class="go">hellohellohello</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span> <span
+class="s2">"goodbye"</span><span class="o">*</span><span class="mi">3</span> <span
+class="p">)</span>
+<span class="go">goodbyegoodbyegoodbye</span>
+</pre></div>
+    <p>You cannot add a number to a string, or multiply two strings. Such use of
+      the operators is undefined, and will give error messages. None of the
+      other operators listed for numbers will work on strings either.</p>
+    <h3>Type casting</h3>
+    <p>Sometimes you need to change the data type of a value into a different
+      data type. You can do that using type casting functions.</p>
+    <p>I will discuss functions in a lot more detail in a later chapter, but for
+      now you just need to know that a function has a name, and may have
+      parameters (values) between parentheses after the name. It will do
+      something with the parameters, and then may give back a result. For
+      instance, the <samp>print()</samp> function displays the parameter values
+      that are given to it between the parentheses, and gives nothing in return.</p>
+    <p>The type casting functions take the parameter value between the
+      parentheses and give back a value that is the (almost) the same as the
+      parameter value, but of a different data type. The three main type casting
+      functions are the following:</p>
+    <div class="dodona-centered-group">
+      <table class="table table-striped table-condensed">
+        <thead>
+          <tr>
+            <th>function</th>
+            <th>description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><samp>int()</samp></td>
+            <td>will return the value between the parentheses as an integer
+              (rounding down if necessary)</td>
+          </tr>
+          <tr>
+            <td><samp>float()</samp></td>
+            <td>will return the value between the parentheses as a float (adding
+              .0 if necessary)</td>
+          </tr>
+          <tr>
+            <td><samp>str()</samp></td>
+            <td>will return the value between the parentheses as a string</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>See the difference between the following two lines of code:</p>
+    <div class="highlighter-rouge">
+      <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span
+class="p">(</span> <span class="mi">15</span><span class="o">/</span><span class="mi">4</span> <span
+class="p">)</span>
+<span class="go">3.75</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span> <span
+class="nb">int</span><span class="p">(</span> <span class="mi">15</span><span class="o">/</span><span
+class="mi">4</span> <span class="p">)</span> <span class="p">)</span>
+<span class="go">3</span>
+</pre></div>
+    <p>Or the following two lines of code:</p>
+    <div class="highlighter-rouge">
+      <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span
+class="p">(</span> <span class="mi">15</span><span class="o">+</span><span class="mi">4</span> <span
+class="p">)</span>
+<span class="go">19</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span> <span
+class="nb">float</span><span class="p">(</span> <span class="mi">15</span><span
+class="o">+</span><span class="mi">4</span> <span class="p">)</span> <span class="p">)</span>
+<span class="go">19.0</span>
+</pre></div>
+    I stated that you cannot use the addition operator to concatenate a number
+    to a string. However, if you need to do something like that, you can work
+    around the issue by using string type casting:
+    <div class="highlighter-rouge">
+      <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span
+class="p">(</span> <span class="s2">"I own "</span> <span class="o">+</span> <span
+class="nb">str</span><span class="p">(</span> <span class="mi">15</span> <span class="p">)</span> <span
+class="o">+</span> <span class="s2">" apples."</span> <span class="p">)</span>
+<span class="go">I own 15 apples.</span>
+</pre></div>
+  </body>
+</html>

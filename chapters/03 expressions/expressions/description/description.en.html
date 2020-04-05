@@ -1,0 +1,112 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+  </head>
+  <body>
+    <p>Before I can get to expressions, there is one more topic that requires
+      some discussion, and that is data types. Specifically, there are three
+      different data types that you need to be aware of at this time: <i>strings</i>,
+      <i>integers</i>, and <i>floats</i>.</p>
+    <h3>Strings</h3>
+    <p>A string is a text, consisting of zero or more characters. In Python, a
+      string is enclosed by either double quotes, or single quotes. In
+      principle, it does not matter which of the two you use, i.e., <samp>"orange"</samp>
+      is equivalent to <samp>'orange'</samp>. However, if you have a text which
+      contains a single quote, if you want to avoid problems you will have to
+      enclose it in double quotes, i.e., <samp>"I can't stand it"</samp> is a
+      legal string, while <samp>'I can't stand it'</samp> is not. Vice versa
+      for double quotes in a string, of course.</p>
+    <p>What if a string contains both double quotes and single quotes? You can
+      solve that issue by putting a backslash (<samp>\</samp>) in front of the
+      single or double quote that is part of the string to tell Python to treat
+      that single or double quote as a character of the string rather than
+      something that ends the string, i.e., <samp>'I can\'t stand it'</samp> is
+      a legal string. You can see that when you try to print it:</p>
+    <div class="highlighter-rouge">
+      <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span
+class="p">(</span> <span class="s1">'I can</span><span class="se">\'</span><span
+class="s1">t stand it'</span> <span class="p">)</span>
+<span class="go">I can't stand it</span>
+</pre></div>
+    <p>But what if I want to put an actual backslash in a string, and that
+      backslash is, by chance, in front of a single or double quote? Well, I can
+      do the same thing for a backslash, namely put a backslash in front of a
+      backslash to make it a literal backslash, rather than a backslash that
+      changes the interpretation of the character that comes after it. For an
+      example, check out what the next bit of code displays (you can type it
+      into the Python shell).</p>
+    <div class="highlighter-rouge">
+      <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span
+class="p">(</span> <span class="s1">'I can</span><span class="se">\\\'</span><span
+class="s1">t stand it'</span> <span class="p">)</span>
+<span class="go">I can\'t stand it</span>
+</pre></div>
+    <p>If this all is a bit confusing, forget about these details for now, as I
+      will come back to them in a later chapter. For now, just remember that a
+      string is a text, enclosed by either single or double quotes. A string
+      might be of any length, including zero characters long.</p>
+    <p>Be careful that you only use <i>straight</i> single or double quotes in
+      your Python programs, and not <i>rounded</i> ones. Word processors are in
+      the habit of changing your straight quotes into rounded quotes, and Python
+      does not recognize those. Text editors will not do that, but should you,
+      for some reason, copy code to and from a word processor, your quotes might
+      get changed. Watch out for that.</p>
+    <h3>Integers</h3>
+    <p>Integers are whole numbers, which can be positive or negative (or zero).
+      There is a certain maximum size that integers can become, which depends on
+      the kind of computer and operating system you are running. For most
+      purposes, however, you will not run into those boundaries. Python is not
+      like those calculators with a 10-digit display that cannot use numbers
+      higher than 10 billion.</p>
+    <p>There are different ways of writing integers that result in the same
+      value. <samp>1</samp> is the same as <samp>+1</samp> (there are other
+      ways than these to write the value <samp>1</samp>, but these follow in a
+      later chapter). So both <samp>print( 1 )</samp> and <samp>print( +1 )</samp>
+      produce the same outcome. This is different for strings, of course. The
+      string <samp>"1"</samp> is not the same as the string <samp>"+1"</samp>.</p>
+    <p>When you use integers in Python, you cannot write them with <i>thousands
+        separators</i> (commas in English) to make them more readable. I.e., the
+      number one billion should be written as <samp>1000000000</samp> rather
+      than <samp>1,000,000,000</samp>.</p>
+    <p>Check out the following code and think about what it will display when
+      you run it. Then copy it to the Python shell and run it.</p>
+    <div class="highlighter-rouge">
+      <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span
+class="p">(</span> <span class="mi">1</span><span class="p">,</span><span class="mo">000</span><span
+class="p">,</span><span class="mo">000</span><span class="p">,</span><span class="mo">000</span> <span
+class="p">)</span>
+</pre></div>
+    <div class="callout callout-info">
+      <h4>Exercise</h4>
+      <p>If your prediction of what this code would do was not correct, find out
+        why it produces this result.</p>
+    </div>
+    <h3>Floats</h3>
+    <p>Floats, or <i>floating-point numbers</i>, are numbers with decimals. For
+      instance, <samp>3.14159265</samp> is a float. Note that you have to use a
+      period as the decimal separator. Many countries use a comma as the decimal
+      separator, but Python uses the convention of English-speaking countries
+      and uses the period.</p>
+    <p>If there is an integer that for some reason you want to use as a float,
+      you can do so by adding <samp>.0</samp> to it. I.e., <samp>13</samp> is
+      an integer, while <samp>13.0</samp> is a float. Still, they represent the
+      same value, and if you use Python to compare them (which I will get to in
+      a short while), Python will tell you that they are the same value.</p>
+    <p>Just like with integers, there are certain maximum boundaries for floats,
+      and there is also a maximum precision. You are unlikely to ever reach
+      those maximum boundaries, as Python will switch over to scientific
+      notation when the numbers get very big, but if you use Python to do very
+      precise calculations, you might run into problems with precision. That is
+      unlikely to happen for most applications, but if you are a physicist whose
+      calculations involve huge numbers of particles on the molecular or quantum
+      level, it is something to be aware of.</p>
+    <p>Note that due to the way that Python stores floats, certain numbers
+      cannot be expressed exactly. For instance, the statement <samp>print(
+        (431 / 100) * 100 )</samp> prints as answer <samp>430.99999999999994</samp>,
+      and not <samp>431</samp> as you might expect. If you know that the
+      outcome of a floating-point calculation must be an integer, then you best
+      make sure that you round the outcome to the nearest whole number. You can
+      use the <samp>round()</samp> function for that, which will be explained
+      in Chapter \ref{ch:simplefunctions}.</p>
+  </body>
+</html>
