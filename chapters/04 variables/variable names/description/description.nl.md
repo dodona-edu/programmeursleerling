@@ -116,7 +116,6 @@ niet zou misstaan.
 
 {:class="callout callout-info"}
 > #### Opgave
->
 > In de code hieronder wordt de waarde 1 toegekend aan een aantal (potentiële variabele namen. Sommige hiervan zijn correct, andere niet. Identificeer de incorrecte namen en leg uit waarom ze incorrect zijn.
 > ```python
 >  classificatie = 1   # 1
@@ -130,9 +129,8 @@ niet zou misstaan.
 >  ```
 
 {:class="callout callout-info"}
-  #### Antwoord
-  
-  De derde, vijfde, en zevende zijn incorrect. De derde omdat er een at-sign ($@$) in zit, de vijfde omdat hij begint met een cijfer, en de zevende omdat het een gereserveerd woord is (dat gelukkig opvalt vanwege de syntax highlighting). De andere zijn weliswaar correct, maar de zesde zou volgens de conventie vermeden moeten worden omdat het begint met een underscore, en de tweede en achtste ook, omdat die een hoofdletter bevatten. De achtste is het ergst, want die lijkt op een gereserveerd woord.
+>  #### Antwoord
+> De derde, vijfde, en zevende zijn incorrect. De derde omdat er een at-sign ($@$) in zit, de vijfde omdat hij begint met een cijfer, en de zevende omdat het een gereserveerd woord is (dat gelukkig opvalt vanwege de syntax highlighting). De andere zijn weliswaar correct, maar de zesde zou volgens de conventie vermeden moeten worden omdat het begint met een underscore, en de tweede en achtste ook, omdat die een hoofdletter bevatten. De achtste is het ergst, want die lijkt op een gereserveerd woord.
 
 ### Constanten
 
