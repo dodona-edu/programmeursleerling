@@ -10,6 +10,10 @@ python input without prompt: true
 block count: one
 <DEFINITION>
 def customEvaluate(expected_output, generated_output):
+    if not isinstance(expected_output, str):
+        expected_output = '\n'.join(expected_output)
+    if not isinstance(generated_output, str):
+        generated_output = '\n'.join(generated_output)
     lines = expected_output.rstrip().split('\n')
     expected_output = {
         '\n'.join(lines[index:index + 3]) + '\n'
