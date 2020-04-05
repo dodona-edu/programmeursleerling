@@ -1,0 +1,19 @@
+A message.
+A message
+A messagef"
+Een boodschap.
+Een boodschap
+Een boodschapf"
+----------------------------------------
+tab name: feedback
+python input without prompt: true
+block count: one
+<DEFINITION>
+def customEvaluate(expected_output, generated_output):
+    lines = expected_output.rstrip().split('\n')
+    expected_output = {
+        '\n'.join(lines[index:index + 3]) + '\n'
+        for index in range(0, len(lines), 3)
+    }
+    return generated_output in expected_output
+</DEFINITION>
