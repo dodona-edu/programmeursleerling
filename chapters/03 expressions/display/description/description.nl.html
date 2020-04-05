@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+  </head>
+  <body>
+    <p>Als je een expressie schrijft in de Python shell, en hem uitvoert, wordt
+      het resultaat van de expressie eronder getoond. Bijvoorbeeld, als je het
+      volgende commando in de shell schrijft en op <i>Enter</i> drukt, zie je
+      het resultaat <samp>12</samp>.</p>
+    <div class="highlighter">
+      <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="mi">5</span> <span
+class="o">+</span> <span class="mi">7</span>
+<span class="go">12</span>
+</pre></div>
+    <p>Echter, zoals ik liet zien in opgave \ref{python.shell}, als je een
+      programma schrijft dat alleen het commando <samp>5 + 7</samp> bevat, dan
+      zie je geen resultaat. In plaats daarvan moet je voor programma's altijd
+      expliciet aangeven dat je resultaten wilt tonen, zelfs als het gaat om een
+      commando dat op de laatste regel van het programma staat.</p>
+    <p>Ook al gaat dit hoofdstuk over expressies, ik moet toch eerst iets
+      uitleggen dat geen expressie is, maar een functie, namelijk een functie
+      die het mogelijk maakt resultaten te laten zien. De functie die dat doet
+      is <samp>print</samp>. Ik heb deze functie al gebruikt in hoofdstukken 1
+      en 2.</p>
+    <p>De <samp>print</samp> functie gebruik je als volgt: je schrijft het
+      woord <samp>print</samp>, gevolgd door een rond openingshaakje, gevolgd
+      door hetgeen je wilt laten zien, gevolgd door een rond sluithaakje.
+      Bijvoorbeeld (en ook dit commando heb ik meerdere malen laten zien):</p>
+    <div class="highlighter">
+      <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span
+class="p">(</span> <span class="s2">"Hello, world!"</span> <span class="p">)</span>
+<span class="go">Hello, world!</span>
+</pre></div>
+    <p>Als je deze code draait (door het op te slaan in een Python bestand en
+      het te draaien in IDLE), zie je dat de tekst <samp>Hello, world!</samp>
+      in de shell wordt getoond.</p>
+    <p>Overigens is het gebruikelijk dat wanneer auteurs van teksten over
+      programmeren een functie bij naam noemen, ze er een openings- en
+      sluithaakje achter zetten, om aan te geven dat het een functienaam
+      betreft. Vanaf nu zal ik dat ook doen. Bovendien gebruiken auteurs soms
+      niet het woord <i>functie</i>, maar het woord <i>statement</i> of <i>commando</i>.
+      Deze termen duiden echter meestal op alles wat Python kan uitvoeren, niet
+      alleen functies. Bijvoorbeeld, een expressie is ook een <i>commando</i>.</p>
+    <p>Je kunt meerdere dingen tegelijkertijd laten zien met een <samp>print()</samp>
+      functie, door alles wat je wilt laten zien tussen de haakjes te zetten,
+      met komma's ertussen. De <samp>print()</samp> functie laat dan al die
+      items zien, met spaties ertussen. Bijvoorbeeld:</p>
+    <div class="highlighter">
+      <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span
+class="p">(</span> <span class="s2">"Ik"</span><span class="p">,</span> <span class="s2">"heb"</span><span
+class="p">,</span> <span class="s2">"twee"</span><span class="p">,</span> <span
+class="s2">"appels"</span><span class="p">,</span> <span class="s2">"en"</span><span
+class="p">,</span> <span class="s2">"een"</span><span class="p">,</span> <span class="s2">"banaan"</span> <span
+class="p">)</span>
+<span class="go">Ik heb twee appels en een banaan</span>
+</pre></div>
+    <p>De spaties in dit commando zijn overigens overbodig.</p>
+    <div class="highlighter">
+      <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span
+class="p">(</span><span class="s2">"Ik"</span><span class="p">,</span><span class="s2">"heb"</span><span
+class="p">,</span><span class="s2">"twee"</span><span class="p">,</span><span class="s2">"appels"</span><span
+class="p">,</span><span class="s2">"en"</span><span class="p">,</span><span class="s2">"een"</span><span
+class="p">,</span><span class="s2">"banaan"</span><span class="p">)</span>
+<span class="go">Ik heb twee appels en een banaan</span>
+</pre></div>
+    <p>is precies hetzelfde als het commando ervoor. Je kunt zulke spaties
+      toevoegen om de leesbaarheid te vergroten. Je mag ook spaties zetten
+      tussen het woord <samp>print</samp> en het openingshaakje, maar de
+      gewoonte is om bij functies altijd het openingshaakje aan de naam van de
+      functie "vast te plakken".</p>
+    <p>Merk op dat je met <samp>print()</samp> niet alleen teksten, maar ook
+      getallen kunt laten zien. Je mag zelfs teksten en getallen door elkaar
+      gebruiken.</p>
+<div class="highlighter"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span> <span class="s2">&quot;Ik&quot;</span><span class="p">,</span> <span class="s2">&quot;heb&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;appels&quot;</span><span class="p">,</span> <span class="s2">&quot;en&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;banaan&quot;</span> <span class="p">)</span>
+<span class="go">Ik heb 2 appels en 1 banaan</span>
+</pre></div>
+  </body>
+</html>
