@@ -22,7 +22,7 @@ de inhoud van de variabele `x` op het scherm getoond middels `print()`.
 Merk op dat `print( x )` niet de letter `x` toont, maar de waarde die in
 de variabele `x` is opgeslagen.
 
-![variabele](media/box.png "variabele){:data-caption="Een variabele kan je voorstellen als een doos waarop je met een dikke, zwarte viltstift een naam hebt geschreven, zodat je hem later gemakkelijk kunt terugvinden. Je kunt iets in de doos stoppen, en je kunt in de doos kijken om te zien wat er in zit (er kan wel slechts één ding tegelijkertijd in de doos zitten). Je kunt aan de inhoud van de
+![variabele](media/box.png "variabele"){:data-caption="Een variabele kan je voorstellen als een doos waarop je met een dikke, zwarte viltstift een naam hebt geschreven, zodat je hem later gemakkelijk kunt terugvinden. Je kunt iets in de doos stoppen, en je kunt in de doos kijken om te zien wat er in zit (er kan wel slechts één ding tegelijkertijd in de doos zitten). Je kunt aan de inhoud van de
 doos refereren door de naam te gebruiken die je op de doos hebt geschreven." :width="50%"}
 
 <img src="media/box.png" width="50%" alt="image" />
