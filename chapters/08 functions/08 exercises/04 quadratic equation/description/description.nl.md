@@ -1,4 +1,8 @@
-Een **kwadratische vergelijking** is een vergelijking van de vorm \[ax^2 + bx + c = 0\,,\] waarin $$a, b, c \in \mathbb{R}$$ en $$a \neq 0$$.
+Een **kwadratische vergelijking** is een vergelijking van de vorm 
+
+$$ax^2 + bx + c = 0\,,$$
+
+waarin $$a, b, c \in \mathbb{R}$$ en $$a \neq 0$$.
 
 De grootheid \[\Delta = b^2 - 4ac\] wordt de **discriminant** van de kwadratische vergelijking genoemd. Het teken van $$\Delta$$ bepaalt het aantal reële oplossingen:
 
@@ -8,7 +12,9 @@ De grootheid \[\Delta = b^2 - 4ac\] wordt de **discriminant** van de kwadratisch
 
 - als $$\Delta < 0$$ dan zijn er geen reële oplossingen voor de vergelijking
 
-De reële oplossingen kunnen bepaald worden met de zogenaamde wortelformule: \[ x_{1} = \frac{-b - \sqrt{\Delta}}{2a}\ \ \ \text{en}\ \ \ x_{2} = \frac{-b + \sqrt{\Delta}}{2a} \]
+De reële oplossingen kunnen bepaald worden met de zogenaamde wortelformule:
+
+$$x_{1} = \frac{-b - \sqrt{\Delta}}{2a}\ \ \ \text{en}\ \ \ x_{2} = \frac{-b + \sqrt{\Delta}}{2a}$$
 
 ### Opgave
 
