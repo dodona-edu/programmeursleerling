@@ -1,4 +1,7 @@
-The [Grerory-Leibnitz series](https://en.wikipedia.org/wiki/Leibniz_formula_for_%CF%80){:target="_blank"} approximates $$\pi$$ using the alternate series \[4 * (1/1 - 1/3 + 1/5 - 1/7 + 1/9 ...)\]
+The [Grerory-Leibnitz series](https://en.wikipedia.org/wiki/Leibniz_formula_for_%CF%80){:target="_blank"} approximates $$\pi$$ using the alternate series
+
+$$4 * \left(\frac{1}{1} - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \frac{1}{9} - \hellip\right)$$
+
 
 ### Assignment
 
