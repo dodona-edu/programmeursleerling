@@ -1,0 +1,5 @@
+--------------------------------------------------------
+tab name: multiplication_table
+<LANGUAGE code="nl">
+    <function from="multiplication_table" to="tafel_van_vermenigvuldiging" />
+</LANGUAGE>
