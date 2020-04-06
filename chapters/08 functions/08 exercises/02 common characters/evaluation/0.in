@@ -1,0 +1,8 @@
+>>> common_characters('bee', 'tween')
+<LANGUAGE code="en notdetected" sticky="sticky" />
+1
+
+>>> common_characters('een', 'twee')
+<LANGUAGE code="nl" sticky="sticky" />
+1
+

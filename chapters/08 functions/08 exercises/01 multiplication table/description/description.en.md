@@ -1,4 +1,17 @@
-Write a function that gets a number as
-parameter, and then prints the multiplication table for that number from
-1 to 10. E.g., when the parameter is 12, the first line printed is "1 \*
-12 = 12" and the last line printed is "10 \* 12 = 120." 
+Write a function `multiplication_table` that takes an integer $$n \in \mathbb{Z}$$ (`int`). The function must output the multiplication table of $$n$$ from 1 to 10.
+
+### Example
+
+```console?lang=python&prompt=>>>
+>>> tafel_van_vermenigvuldiging(12)
+1 * 12 = 12
+2 * 12 = 24
+3 * 12 = 36
+4 * 12 = 48
+5 * 12 = 60
+6 * 12 = 72
+7 * 12 = 84
+8 * 12 = 96
+9 * 12 = 108
+10 * 12 = 120
+```

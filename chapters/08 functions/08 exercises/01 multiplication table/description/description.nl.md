@@ -1,4 +1,4 @@
-Schrijf een functie `tafel_van_vermenigvuldiging` waaraan een geheel getal $$n$$ moet doorgegeven worden. De functie moet de tafel van vermenigvuldiging van $$n$$ uitschrijven voor 1 tot en met 10.
+Schrijf een functie `tafel_van_vermenigvuldiging` waaraan een getal $$n \in \mathbb{Z}$$ (`int`) moet doorgegeven worden. De functie moet de tafel van vermenigvuldiging van $$n$$ uitschrijven vanaf 1 tot en met 10.
 
 ### Voorbeeld
 

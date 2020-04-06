@@ -1,8 +1,8 @@
-Write a function that gets as parameters
-two strings. The function returns the number of characters that the
-strings have in common. Each character counts only once, e.g., the
-strings `"bee"` and `"peer"` only have one character in common (the
-letter "e"). You can consider capitals different from lower case
-letters. Note: the function should *return* the number of characters
-that the strings have in common, and not print it. To test the function,
-you can print the result in your main program.
+Write a function `common_characters` that takes two strings (`str`). The function must return the number of characters (`int`) both strings have in common. Each character is counted only once: the strings `bee` and `tween` only have one character in common (the letter `e`). Uppercase and lowercase letters are considered to be different characters.
+
+### Example
+
+```console?lang=python&prompt=>>>
+>>> common_characters('bee', 'tween')
+1
+```
