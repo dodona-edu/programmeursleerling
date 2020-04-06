@@ -1,9 +1,8 @@
-In hoofdstuk
+In Chapter
 <a href="#ch:simplefunctions" data-reference-type="ref" data-reference="ch:simplefunctions">6</a>
-beschreef ik hoe je eenvoudige functies kunt gebruiken, en hoe je
-functies kunt importeren uit modules. Dit hoofdstuk beschrijft hoe je je
-eigen functies en modules kunt creëren. Als je niet meer weet wat
-hoofdstuk
+I described how to use simple functions, and how to import functions
+from modules. This chapter is about how to write your own functions and
+modules. If you do not remember what Chapter
 <a href="#ch:simplefunctions" data-reference-type="ref" data-reference="ch:simplefunctions">6</a>
-over functies zei, doe je er goed aan om dat hoofdstuk nogmaals door te
-nemen.
+said about functions, re-read that chapter before continuing with this
+one.
