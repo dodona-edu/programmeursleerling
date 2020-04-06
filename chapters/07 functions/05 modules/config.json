@@ -5,5 +5,11 @@
       "en": "Modules"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "pMNE-S576z64Z_k94xNj3KkGenvHqXXiiYrwC9bIQdSC4cdqzsD_eFiR7eexDRbI",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }

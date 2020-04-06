@@ -5,5 +5,11 @@
       "en": "Grerory-Leibnitz series"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "GZbfNikXWvDI7tXhNCWrW_JGbXsS2Wb32E3EpJExDT3CmSrNij4GnhGtmYIR-a_2",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }

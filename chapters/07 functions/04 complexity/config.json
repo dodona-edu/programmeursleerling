@@ -5,5 +5,11 @@
       "en": "Managing program complexity"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "N3qtmaUg5gkvSAxs5FGVWPryhs4NPGnbZYrSUQ6f_-KVMf2rdGKeMq6f9-DFSxEd",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }

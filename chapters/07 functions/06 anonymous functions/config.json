@@ -5,5 +5,11 @@
       "en": "Anonymous functions"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "SNzh8v5YcxFjiemVAV8M9kw_G9uXQ2p6CKjbvx3dpdQkYbWxXv8edsfnw5w4J-Rq",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
