@@ -1,6 +1,18 @@
-De Grerory-Leibnitz reeks benadert de
-waarde van $\pi$ door de berekening van
-$4 * (1/1 - 1/3 + 1/5 - 1/7 + 1/9 ...)$. Schrijf een functie die $\pi$
-benadert via deze reeks. De functie krijgt één parameter, namelijk een
-integer die aangeeft hoeveel van de termen tussen de haakjes in de reeks
-berekend moeten worden.
+De [Grerory-Leibnitz reeks](https://en.wikipedia.org/wiki/Leibniz_formula_for_%CF%80){:target="_blank"} benadert $$\pi$$ op basis van de reeksontwikkeling \[4 * (1/1 - 1/3 + 1/5 - 1/7 + 1/9 ...)\]
+
+### Opgave
+
+Schrijf een functie `gregory_leibnitz` waaraan een getal $$n \in \mathbb{N}_0$$ (`int`) moet doorgegeven worden. De functie moet de benadering (`float`) van $$\pi$$ teruggeven die men bekomt op basis van de eerste $$n$$ termen van de Grerory-Leibnitz reeks.
+
+### Voorbeeld
+
+```console?lang=python&prompt=>>>
+>>> gregory_leibnitz(1)
+4.0
+>>> gregory_leibnitz(10)
+3.0418396189294032
+>>> gregory_leibnitz(100)
+3.1315929035585537
+>>> gregory_leibnitz(1000)
+3.140592653839794
+```

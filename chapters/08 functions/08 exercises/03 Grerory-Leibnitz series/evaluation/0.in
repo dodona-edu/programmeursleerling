@@ -1,0 +1,150 @@
+>>> gregory_leibnitz(1)
+4.0
+
+>>> gregory_leibnitz(10)
+3.0418396189294032
+
+>>> gregory_leibnitz(100)
+3.1315929035585537
+
+>>> gregory_leibnitz(1000)
+3.140592653839794
+
+>>> gregory_leibnitz(2013)
+3.1420894245477173
+
+>>> gregory_leibnitz(3104)
+3.1412704886496985
+
+>>> gregory_leibnitz(3436)
+3.1413016175074837
+
+>>> gregory_leibnitz(5699)
+3.141768122969033
+
+>>> gregory_leibnitz(10000)
+3.1414926535900345
+
+>>> gregory_leibnitz(11714)
+3.141507285654136
+
+>>> gregory_leibnitz(13528)
+3.1415187328329335
+
+>>> gregory_leibnitz(18736)
+3.1415392804045172
+
+>>> gregory_leibnitz(24213)
+3.1416339537178017
+
+>>> gregory_leibnitz(27226)
+3.141555923993096
+
+>>> gregory_leibnitz(35564)
+3.1415645352679005
+
+>>> gregory_leibnitz(37241)
+3.141619505715137
+
+>>> gregory_leibnitz(39811)
+3.141617772275582
+
+>>> gregory_leibnitz(39829)
+3.1416177609236438
+
+>>> gregory_leibnitz(40994)
+3.141568259776066
+
+>>> gregory_leibnitz(41173)
+3.1416169413511867
+
+>>> gregory_leibnitz(46010)
+3.141570919184228
+
+>>> gregory_leibnitz(49214)
+3.141572334168487
+
+>>> gregory_leibnitz(52051)
+3.1416118655165413
+
+>>> gregory_leibnitz(52059)
+3.1416118625642104
+
+>>> gregory_leibnitz(52377)
+3.141611745939473
+
+>>> gregory_leibnitz(53694)
+3.141574029534955
+
+>>> gregory_leibnitz(57796)
+3.141575351354331
+
+>>> gregory_leibnitz(57969)
+3.141609904189235
+
+>>> gregory_leibnitz(60727)
+3.1416091207295858
+
+>>> gregory_leibnitz(61170)
+3.141576305706815
+
+>>> gregory_leibnitz(70115)
+3.141606915873159
+
+>>> gregory_leibnitz(71066)
+3.141578582163209
+
+>>> gregory_leibnitz(71511)
+3.141606637452388
+
+>>> gregory_leibnitz(73145)
+3.141606325064217
+
+>>> gregory_leibnitz(77511)
+3.141605554984383
+
+>>> gregory_leibnitz(78664)
+3.1415799412944163
+
+>>> gregory_leibnitz(78910)
+3.1415799809246847
+
+>>> gregory_leibnitz(80138)
+3.1415801751151187
+
+>>> gregory_leibnitz(81286)
+3.1415803513482783
+
+>>> gregory_leibnitz(83138)
+3.141580625395653
+
+>>> gregory_leibnitz(84070)
+3.141580758740203
+
+>>> gregory_leibnitz(85017)
+3.14160441594314
+
+>>> gregory_leibnitz(87693)
+3.141604057008479
+
+>>> gregory_leibnitz(88513)
+3.141603951365201
+
+>>> gregory_leibnitz(89022)
+3.1415814204114194
+
+>>> gregory_leibnitz(90129)
+3.1416037487977126
+
+>>> gregory_leibnitz(90323)
+3.141603724966899
+
+>>> gregory_leibnitz(93056)
+3.1415819073723985
+
+>>> gregory_leibnitz(96930)
+3.141582336866306
+
+>>> gregory_leibnitz(96951)
+3.1416029680784767
+
