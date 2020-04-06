@@ -4,7 +4,11 @@ $$ax^2 + bx + c = 0\,,$$
 
 waarin $$a, b, c \in \mathbb{R}$$ en $$a \neq 0$$.
 
-De grootheid \[\Delta = b^2 - 4ac\] wordt de **discriminant** van de kwadratische vergelijking genoemd. Het teken van $$\Delta$$ bepaalt het aantal reële oplossingen:
+De grootheid
+
+$$\Delta = b^2 - 4ac$$
+
+wordt de **discriminant** van de kwadratische vergelijking genoemd. Het teken van $$\Delta$$ bepaalt het aantal reële oplossingen:
 
 - als $$\Delta > 0$$ dan zijn er twee verschillende reële oplossingen $$x_1 \neq x_2$$
 

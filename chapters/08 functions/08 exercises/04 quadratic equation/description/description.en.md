@@ -4,7 +4,11 @@ $$ax^2 + bx + c = 0\,,$$
 
 where $$a, b, c \in \mathbb{R}$$ and $$a \neq 0$$.
 
-The expression \[\Delta = b^2 - 4ac\] is called the **discriminant** of the quadratic equation. The sign of $$\Delta$$ determines the number of real-valued solutions:
+The expression
+
+$$\Delta = b^2 - 4ac$$
+
+is called the **discriminant** of the quadratic equation. The sign of $$\Delta$$ determines the number of real-valued solutions:
 
 - if $$\Delta > 0$$, then there are two distinct real-valued solutions ($$x_1 \neq x_2$$)
 
@@ -14,7 +18,7 @@ The expression \[\Delta = b^2 - 4ac\] is called the **discriminant** of the quad
 
 The real-valued solutions can be determined as:
  
- $$x_{1} = \frac{-b - \sqrt{\Delta}}{2a}\ \ \ \text{en}\ \ \ x_{2} = \frac{-b + \sqrt{\Delta}}{2a}$$
+$$x_{1} = \frac{-b - \sqrt{\Delta}}{2a}\ \ \ \text{en}\ \ \ x_{2} = \frac{-b + \sqrt{\Delta}}{2a}$$
 
 ### Assignment
 
