@@ -508,9 +508,9 @@ Het gebruik van geneste functies is wat uitzonderlijk, maar het is
 mogelijk.
 
 Merk op: Als je de hash mark verwijdert voor de laatste regel in de code
-hierboven, wordt er een aanroep van `pythagoras\_binnen()` toegevoegd
+hierboven, wordt er een aanroep van `pythagoras_binnen()` toegevoegd
 aan de code. Bij uitvoering van het programma geeft dat een runtime
-error, omdat `pythagoras\_binnen()` alleen zichtbaar is in de functie
+error, omdat `pythagoras_binnen()` alleen zichtbaar is in de functie
 `afstand()`.
 
 Schrijf een functie `printx()` die alleen de letter "x" print. Schrijf

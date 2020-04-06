@@ -125,15 +125,15 @@ print( "doerian =", doerian )
 
 Voer deze code uit en bestudeer hem nauwlettend.
 
-De drie functies `printfruit\_1()`, `printfruit\_2()`, en
-`printfruit\_3()` printen de waardes van de variabelen `appel` en
+De drie functies `printfruit_1()`, `printfruit_2()`, en
+`printfruit_3()` printen de waardes van de variabelen `appel` en
 `banaan`.
 
-In `printfruit\_1()` worden de variabelen `appel` en `banaan` geprint
+In `printfruit_1()` worden de variabelen `appel` en `banaan` geprint
 die gedefinieerd zijn buiten de functie, aangezien de functie zelf geen
 variabelen met deze namen definieert.
 
-In `printfruit\_2()`, is `appel` een parameter van de functie, wat
+In `printfruit_2()`, is `appel` een parameter van de functie, wat
 betekent dat de variabele lokaal is voor de functie en, omdat het een
 parameter is, zijn waarde krijgt van buiten de functie. De waarde de de
 parameter krijgt is de waarde van `kers`. `banaan` is een variabele die
@@ -144,7 +144,7 @@ het hoofdprogramma. Deze variabele krijgt de waarde van de variabele
 `kers` van het hoofdprogramma gebruikt. Dus krijgt de lokale variabele
 `banaan` de waarde "kers," en dat is dus de waarde die geprint wordt.
 
-In `printfruit\_3()` zijn `appel` en `banaan` beide parameters, dus
+In `printfruit_3()` zijn `appel` en `banaan` beide parameters, dus
 beide zijn lokaal voor de functie en krijgen hun initiële waarde bij de
 aanroep van de functie. De functie creëert een lokale variabele `kers`,
 die onafhankelijk is van de variabele `kers` uit het hoofdprogramma, en

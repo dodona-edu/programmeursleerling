@@ -490,8 +490,8 @@ It is not very common that nested functions are used, but it is
 possible.
 
 Note: if you remove the hash mark before the last line of the code
-above, it adds a call to `pythagoras\_inside()`. This will cause a
-runtime error, as `pythagoras\_inside()` is only visible inside
+above, it adds a call to `pythagoras_inside()`. This will cause a
+runtime error, as `pythagoras_inside()` is only visible inside
 `euclideanDistance()`.
 
 Write a function called `printx()` that just prints the letter "x." Then

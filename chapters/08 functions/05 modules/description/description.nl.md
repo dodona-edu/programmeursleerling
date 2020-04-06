@@ -19,6 +19,7 @@ zie je vaak een constructie als de volgende:
 ```python
 def main():
     # code...
+    
 if __name__ == '__main__':
     main()
 ```

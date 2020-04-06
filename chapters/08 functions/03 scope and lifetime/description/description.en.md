@@ -122,14 +122,14 @@ print( "durian =", durian )
 
 Run this code and study it closely.
 
-The three functions `printfruits\_1()`, `printfruits\_2()`, and
-`printfruits\_3()` print the variables `apple` and `banana`.
+The three functions `printfruits_1()`, `printfruits_2()`, and
+`printfruits_3()` print the variables `apple` and `banana`.
 
-In `printfruits\_1()` these are the two variables `apple` and `banana`
+In `printfruits_1()` these are the two variables `apple` and `banana`
 that are defined outside the function, as the function itself does not
 try to define these variables.
 
-In `printfruits\_2()`, `apple` is the parameter of the function, which
+In `printfruits_2()`, `apple` is the parameter of the function, which
 means it is a variable local to the function that gets its value from
 outside the function. The value it gets is the value of the variable
 `cherry` (because `cherry` is provided as the argument when the function
@@ -141,7 +141,7 @@ so it uses the variable `cherry` from the main program for that.
 Therefore, the local variable `banana` gets the value "cherry," and this
 is the value that is printed.
 
-In `printfruits\_3()`, `apple` and `banana` are both parameters, so they
+In `printfruits_3()`, `apple` and `banana` are both parameters, so they
 are both variables that are local to the function and that get their
 initial value from the call to the function. The function then creates a
 local variable `cherry`, which is independent from the variable `cherry`
