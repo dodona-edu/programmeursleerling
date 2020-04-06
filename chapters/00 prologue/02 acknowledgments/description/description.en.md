@@ -1,6 +1,6 @@
 Many thanks to Allen B. Downey, who wrote the excellent Python 2 book
 *Think Python: How to Think Like a Computer Scientist*. I myself learned
-Python programming from his book, and used the LaTeX template that he
+Python programming from his book, and used the $$\LaTeX$$ template that he
 graciously provided as the basis for this book. Downey recently released
 a Python 3 version of his book. If you are already familiar with
 programming in general and just want to get to know Python, his book

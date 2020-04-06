@@ -1,7 +1,7 @@
 Ik dank Allen B. Downey, die het uitermate sterke Python 2 boek *Think
 Python: How to Think Like a Computer Scientist* heeft geschreven. Ikzelf
 heb Python programmeren geleerd met dit boek, en ik heb het
-LaTeX template van Downey's boek gebruikt om mijn eigen boek te
+$$\LaTeX$$ template van Downey's boek gebruikt om mijn eigen boek te
 schrijven. Downey heeft recentelijk een Python 3 versie van zijn boek
 uitgebracht. Als je Engels voldoende beheerst en al een beetje bekend
 bent met programmeren, doe je er goed aan dat boek erbij te halen – het
