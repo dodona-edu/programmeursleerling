@@ -8,7 +8,7 @@ The expression \[\Delta = b^2 - 4ac\] is called the **discriminant** of the quad
 
 - als $$\Delta < 0$$, then there are no real-valued solutions
 
-The real-valued solutions can be determined as: \[ x_{1} = \frac{-b - \sqrt(\Delta)}{2a}\ \ \ \text{and}\ \ \ x_{1} = \frac{-b + \sqrt(\Delta)}{2a} \]
+The real-valued solutions can be determined as: \[ x_{1} = \frac{-b - \sqrt{\Delta}}{2a}\ \ \ \text{en}\ \ \ x_{2} = \frac{-b + \sqrt{\Delta}}{2a} \]
 
 ### Assignment
 

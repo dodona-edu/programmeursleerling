@@ -8,7 +8,7 @@ De grootheid \[\Delta = b^2 - 4ac\] wordt de **discriminant** van de kwadratisch
 
 - als $$\Delta < 0$$ dan zijn er geen reële oplossingen voor de vergelijking
 
-De reële oplossingen kunnen bepaald worden met de zogenaamde wortelformule: \[ x_{1} = \frac{-b - \sqrt(\Delta)}{2a}\ \ \ \text{en}\ \ \ x_{1} = \frac{-b + \sqrt(\Delta)}{2a} \]
+De reële oplossingen kunnen bepaald worden met de zogenaamde wortelformule: \[ x_{1} = \frac{-b - \sqrt{\Delta}}{2a}\ \ \ \text{en}\ \ \ x_{2} = \frac{-b + \sqrt{\Delta}}{2a} \]
 
 ### Opgave
 
