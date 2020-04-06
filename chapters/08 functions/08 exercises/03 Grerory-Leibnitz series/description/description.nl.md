@@ -1,6 +1,6 @@
 De [Grerory-Leibnitz reeks](https://en.wikipedia.org/wiki/Leibniz_formula_for_%CF%80){:target="_blank"} benadert $$\pi$$ op basis van de reeksontwikkeling
 
-$$4 * \left(\frac{1}{1} - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \frac{1}{9} - \hellip\right)$$
+$$4 * \left(\frac{1}{1} - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \frac{1}{9} - \cdots\right)$$
 
 ### Opgave
 
