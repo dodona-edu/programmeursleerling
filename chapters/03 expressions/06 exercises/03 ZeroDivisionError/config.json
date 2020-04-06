@@ -5,9 +5,7 @@
       "en": "ZeroDivisionError"
     }
   },
-  "labels": [
-
-  ],
+  "labels": [],
   "internals": {
     "token": "DAKdY7NzSNczCXQSFVJQSBCUhp5aTJNVHysqygVZna-2xgX9jvigPyA63gI6Egss",
     "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."

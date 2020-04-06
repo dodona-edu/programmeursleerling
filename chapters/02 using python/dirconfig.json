@@ -1,3 +1,6 @@
 {
-  "labels": ["using python", "python gebruiken"]
+  "labels": ["using python", "python gebruiken"],
+  "evaluation": {
+    "pythia_judge": "output"
+  }
 }

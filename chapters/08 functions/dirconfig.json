@@ -1,3 +1,6 @@
 {
-  "labels": ["functions", "functies"]
+  "labels": ["functions", "functies"],
+  "evaluation": {
+    "pythia_judge": "doctest"
+  }
 }

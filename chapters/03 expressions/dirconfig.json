@@ -1,3 +1,6 @@
 {
-  "labels": ["expressions", "expressies"]
+  "labels": ["expressions", "expressies"],
+  "evaluation": {
+    "pythia_judge": "output"
+  }
 }

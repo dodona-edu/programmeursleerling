@@ -5,12 +5,7 @@
       "en": "Hello, world!"
     }
   },
-  "evaluation": {
-    "pythia_judge": "output"
-  },
-  "labels": [
-
-  ],
+  "labels": [],
   "internals": {
     "token": "ASYAwMCF9utrN-_h93JPET8Pxs73xHr3iXdiBqR6zFBu5_gmj9RIBvFsX_GEkcqw",
     "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."

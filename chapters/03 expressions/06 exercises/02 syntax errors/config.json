@@ -5,12 +5,7 @@
       "en": "Syntax errors"
     }
   },
-  "evaluation": {
-    "pythia_judge": "output"
-  },
-  "labels": [
-
-  ],
+  "labels": [],
   "internals": {
     "token": "Tup9ME9jHAtIzIekdJFHFk4HGYcw5K39efGpqUfQZ3FGZZhzGvh_34x_yIT9vUam",
     "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."

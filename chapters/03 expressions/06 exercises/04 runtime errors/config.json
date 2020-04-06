@@ -5,12 +5,7 @@
       "en": "Runtime errors"
     }
   },
-  "evaluation": {
-    "pythia_judge": "output"
-  },
-  "labels": [
-
-  ],
+  "labels": [],
   "internals": {
     "token": "JsRIq8KGq7h-nSBG22IgB9UaEeuXIUSttVa9_FG7rbyna5dVS4EEvgNYr4WC5mhH",
     "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
