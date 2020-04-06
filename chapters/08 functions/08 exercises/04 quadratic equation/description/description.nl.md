@@ -18,9 +18,9 @@ $$x_{1} = \frac{-b - \sqrt{\Delta}}{2a}\ \ \ \text{en}\ \ \ x_{2} = \frac{-b + \
 
 ### Opgave
 
-- Schrijf een functie `discriminant` waaraan de drie parameters $$a$$ (`int` of `float`), $$b$$ (`int` of `float`) en $$c$$ (`int` of `float`) van een kwadratische vergelijking moeten doorgegeven worden. De functie moet de discriminant $$\Delta$$ (`float`) van de kwadratische vergelijking teruggeven.
+- Schrijf een functie `discriminant` waaraan de drie parameters $$a$$, $$b$$ en $$c$$ (`int` of `float`) van een kwadratische vergelijking moeten doorgegeven worden. De functie moet de discriminant $$\Delta$$ (`float`) van de kwadratische vergelijking teruggeven.
 
-- Schrijf een functie `oplossingen` waaraan de drie parameters $$a$$ (`int` of `float`), $$b$$ (`int` of `float`) en $$c$$ (`int` of `float`) van een kwadratische vergelijking moeten doorgegeven worden. De functie moet drie waarden teruggeven: *i*) het aantal verschillende reële oplossingen (`int`) van de vierkantsvergelijking, *ii*) de oplossing $$x_1$$ (`float`) van de vierkantsvergelijking en *iii*) de oplossing $$x_2$$ (`float`) van de vierkantsvergelijking. Als de kwadratische vergelijking geen reële oplossingen heeft, dan moet de waarde $$0$$ teruggegeven worden voor $$x_1$$ en $$x_2$$.
+- Schrijf een functie `oplossingen` waaraan de drie parameters $$a$$, $$b$$ en $$c$$ (`int` of `float`) van een kwadratische vergelijking moeten doorgegeven worden. De functie moet drie waarden teruggeven: *i*) het aantal verschillende reële oplossingen (`int`) van de vierkantsvergelijking, *ii*) de oplossing $$x_1$$ (`float`) van de vierkantsvergelijking en *iii*) de oplossing $$x_2$$ (`float`) van de vierkantsvergelijking. Als de kwadratische vergelijking geen reële oplossingen heeft, dan moet de waarde $$0$$ teruggegeven worden voor $$x_1$$ en $$x_2$$.
 
 ### Voorbeeld
 

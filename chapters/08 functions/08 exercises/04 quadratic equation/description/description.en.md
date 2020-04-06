@@ -18,9 +18,9 @@ The real-valued solutions can be determined as:
 
 ### Assignment
 
-- Write a function `discriminant` that takes the three parameters $$a$$ (`int` or `float`), $$b$$ (`int` or `float`) and $$c$$ (`int` or `float`) of a quadratic equation. The function must return the discriminant $$\Delta$$ (`float`) of the quadratic equation.
+- Write a function `discriminant` that takes the three parameters $$a$$, $$b$$ and $$c$$ (`int` or `float`) of a quadratic equation. The function must return the discriminant $$\Delta$$ (`float`) of the quadratic equation.
 
-- Write a function `solutions` that takes the three parameters $$a$$ (`int` or `float`), $$b$$ (`int` or `float`) and $$c$$ (`int` or `float`) of a quadratic equation. The function must return three values: *i*) the number of different real-valued solutions (`int`) of the quadratic equation, *ii*) the solution $$x_1$$ (`float`) of the quadratic equation and *iii*) the solution $$x_2$$ (`float`)  of the quadratic equation. If the quadratic equation has no real-valued solution, the value $$0$$ must be returned for both $$x_1$$ and $$x_2$$.
+- Write a function `solutions` that takes the three parameters $$a$$, $$b$$ and $$c$$ (`int` or `float`) of a quadratic equation. The function must return three values: *i*) the number of different real-valued solutions (`int`) of the quadratic equation, *ii*) the solution $$x_1$$ (`float`) of the quadratic equation and *iii*) the solution $$x_2$$ (`float`)  of the quadratic equation. If the quadratic equation has no real-valued solution, the value $$0$$ must be returned for both $$x_1$$ and $$x_2$$.
 
 ### Example
 
