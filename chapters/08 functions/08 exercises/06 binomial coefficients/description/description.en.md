@@ -1,51 +1,51 @@
-Hoeveel kleurencombinaties zijn er mogelijk bij een keuze van drie kleuren uit de zeven kleuren van de regenboog? De volgorde van de kleuren is niet van belang. Dat zijn er
+How many color combinations are possible with a choice of three colors from the seven colors of the rainbow? The order of the colors is not important. There are
 
 $$\binom{7}{3} = \frac{7!}{3!4!} = 35$$
 
-Hoe komt men tot de waarde van deze coëfficiënt? Voor de eerste kleurkeuze zijn er 7 mogelijkheden, voor de tweede nog 6, en voor de derde nog 5. In totaal dus $$7 \times 6 \times 5 = \frac{7!}{4!}$$ mogelijkheden.
+How is this value obtained? There are 7 options for chosing the first color, 6 options for the second color, and 5 options for the third color. So, in total there are $$7 \times 6 \times 5 = \frac{7!}{4!} = 210$$ possibilities.
 
-Maar daarbij is rekening gehouden met de volgorde van de kleuren: eerst kan rood en dan geel gekozen zijn, maar ook eerst geel en dan rood. Om van deze volgorde af te zien, moet nog gedeeld worden door het aantal volgordes van de drie kleuren. Dat is
+But this takes into account the order of the colors: it is possible to choose red s the first color followed by yellow as the second color, but also to choose yellow as the first color and red as the second color. To get rid of this order, we have to divide the result by the number of different orderings of the three colors. That is
 
 $$1 \times 2 \times 3 = 3! = 6$$
 
-### Opgave
+### Assignment
 
-De **faculteit** van een natuurlijk getal $$n$$, genoteerd als $$n!$$, is het product van de getallen 1 tot en met $$n$$:
+The **factorial** of a positive integer $$n$$, denoted by $$n!$$, is the product of all positive integers less than or equal to $$n$$:
 
-$$n! = \prod_{k=1}^{n}k = 1 \times 2 \times 3 \times \codts \times n$$
+$$n! = \prod_{k=1}^{n}k = 1 \times 2 \times 3 \times \cdots \times n$$
 
-Bijvoorbeeld als $$n = 5$$:
+For example, if $$n = 5$$ then
 
 $$5! = 1 \times 2 \times 3 \times 4 \times 5 = 120$$
 
-In overeenstemming met de definitie van het lege product is afgesproken dat
+According to the convention for an empty product, we have that
 
 $$0! = 1$$
 
-Een **binomiaalcoëfficient**, geschreven als
+A **binomial coefficients**, denoted by
 
-$$\binom{n}{k}\ \ \ \text{(spreekt uit: $$n$$ boven $$k$$)}$$
+$$\binom{n}{k}$$
 
-is een grootheid uit de combinatoriek die aangeeft op hoeveel manieren men uit $$n$$ (verschillende) objecten er zonder terugleggen $$k$$ kan kiezen. Zo'n keuze heet een **combinatie**. Een binomiaalcoëfficient is gedefinieerd als het natuurlijk getal
+and read as "$$n$$ choose $$k$$", is a value used in combinatorics to indicate the number of ways to choose an (unordered) subset of $$k$$ elements from a fixed set of $$n$$ elements. Such a choice is called a **combination**. A binomial coefficient is defined as the positive integer
 
-$$\binom{n}{k} = \frac{n!}{k!(n-k)!}\ \ \ \text{voor $$0 \leq k \leq n$$}$$
+$$\binom{n}{k} = \frac{n!}{k!(n-k)!}\ \ \ \text{for }0 \leq k \leq n$$
 
-en
+and
 
-$$\binom{n}{k} = 0\ \ \ \text{voor $$k < 0$$ of $$k > n$$}$$
+$$\binom{n}{k} = 0\ \ \ \text{for }k < 0\text{ or }k > n$$
 
-Gevraagd wordt:
+Your task:
 
-- Schrijf een functie `faculteit` waaraan een getal $$n \in \mathbb{N}$$ (`int`) moet doorgegeven worden. De functie moet $$n!$$ (`int`) teruggeven.
+- Write a function `factorial` that takes an integer $$n \in \mathbb{N}$$ (`int`). The function must return $$n!$$ (`int`).
 
-- Schrijf een functie `binomiaal` waaraan twee getallen $$n, k \mathbb{N}$$ (`int`) moeten doorgegeven worden. De functie moet $$\binom{n}{k}$$ teruggeven.
+- Write a function `binomial` that takes two integers $$n, k \in \mathbb{N}$$ (`int`). The function must return $$\binom{n}{k}$$.
 
-### Voorbeeld
+### Example
 
 ```console?lang=python&prompt=>>>
->>> faculteit(5)
+>>> factorial(5)
 120
 
->>> binomiaal(7, 3)
+>>> binomial(7, 3)
 35
 ```
