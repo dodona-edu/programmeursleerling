@@ -5,5 +5,11 @@
       "en": "Early exits"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "mcMBpWNS-Ct_sBw3YX9UvvsbGvpt5FJjFBQMR5MN7iPeK4si_Ec95KbFvxhnUDy8",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
