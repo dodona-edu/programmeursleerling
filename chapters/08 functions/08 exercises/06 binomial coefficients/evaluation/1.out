@@ -1,0 +1,6 @@
+--------------------------------------------------------
+tab name: binomial
+<LANGUAGE code="nl">
+    <function from="factorial" to="faculteit" />
+    <function from="binomial" to="binomiaal" />
+</LANGUAGE>

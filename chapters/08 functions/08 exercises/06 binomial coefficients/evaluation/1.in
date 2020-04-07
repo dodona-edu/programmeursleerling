@@ -1,0 +1,150 @@
+>>> binomial(7, 3)
+35
+
+>>> binomial(41, 38)
+10660
+
+>>> binomial(25, -11)
+0
+
+>>> binomial(44, 34)
+2481256778
+
+>>> binomial(22, 14)
+319770
+
+>>> binomial(34, 1)
+34
+
+>>> binomial(17, 0)
+1
+
+>>> binomial(47, 47)
+1
+
+>>> binomial(20, 35)
+0
+
+>>> binomial(37, 5)
+435897
+
+>>> binomial(18, 1)
+18
+
+>>> binomial(0, 0)
+1
+
+>>> binomial(35, 33)
+595
+
+>>> binomial(19, 12)
+50388
+
+>>> binomial(7, 0)
+1
+
+>>> binomial(16, 7)
+11440
+
+>>> binomial(3, 0)
+1
+
+>>> binomial(22, 7)
+170544
+
+>>> binomial(47, 32)
+751616304549
+
+>>> binomial(8, 1)
+8
+
+>>> binomial(21, 16)
+20349
+
+>>> binomial(27, 12)
+17383860
+
+>>> binomial(13, -11)
+0
+
+>>> binomial(8, 6)
+28
+
+>>> binomial(42, 34)
+118030185
+
+>>> binomial(7, -5)
+0
+
+>>> binomial(24, 18)
+134596
+
+>>> binomial(25, 12)
+5200300
+
+>>> binomial(46, 9)
+1101716330
+
+>>> binomial(7, 4)
+35
+
+>>> binomial(46, 8)
+260932815
+
+>>> binomial(1, 0)
+1
+
+>>> binomial(42, 21)
+538257874440
+
+>>> binomial(45, 17)
+1103068603890
+
+>>> binomial(50, 42)
+536878650
+
+>>> binomial(18, 15)
+816
+
+>>> binomial(21, 29)
+0
+
+>>> binomial(30, 6)
+593775
+
+>>> binomial(33, 3)
+5456
+
+>>> binomial(27, 27)
+1
+
+>>> binomial(27, 24)
+2925
+
+>>> binomial(47, 42)
+1533939
+
+>>> binomial(14, 11)
+364
+
+>>> binomial(33, 40)
+0
+
+>>> binomial(16, 8)
+12870
+
+>>> binomial(2, 1)
+2
+
+>>> binomial(38, -4)
+0
+
+>>> binomial(0, -4)
+0
+
+>>> binomial(24, 23)
+24
+
+>>> binomial(15, 1)
+15
+

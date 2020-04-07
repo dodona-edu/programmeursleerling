@@ -1,15 +1,51 @@
-In de statistiek wordt de
-binomiaalcoëfficiënt "`n` boven `k`," waarbij `n` groter dan of gelijk
-aan `k` moet zijn, berekend als $n!/(k!*(n-k)!)$, waarbij $n!$ de
-faculteit van `n` is. Zoals ik in hoofdstuk
-<a href="#ch:iterations" data-reference-type="ref" data-reference="ch:iterations">8</a>
-heb uitgelegd: de faculteit van een positief geheel getal is dat getal,
-vermenigvuldigd met alle positieve gehele getallen die kleiner zijn
-(exclusief nul). Je schrijft de faculteit als het getal met een
-uitroepteken erachter. Bijvoorbeeld, 5 faculteit is
-$5! = 5 * 4 * 3 * 2 * 1 = 120$. Als je alle opgaves tot nu toe gemaakt
-hebt, heb je hier code voor geschreven. Schrijf een functie die de
-binomiaalcoëfficiënt voor de twee parameters die de functie krijgt, en
-die de waarde retourneert. Schrijf de code op zo'n manier dat hij als
-module in een ander programma kan worden opgenomen (dus test de functie
-via een `main()` functie zoals hierboven is uitgelegd).  
+Hoeveel kleurencombinaties zijn er mogelijk bij een keuze van drie kleuren uit de zeven kleuren van de regenboog? De volgorde van de kleuren is niet van belang. Dat zijn er
+
+$$\binom{7}{3} = \frac{7!}{3!4!} = 35$$
+
+Hoe komt men tot de waarde van deze coëfficiënt? Voor de eerste kleurkeuze zijn er 7 mogelijkheden, voor de tweede nog 6, en voor de derde nog 5. In totaal dus $$7 \times 6 \times 5 = \frac{7!}{4!}$$ mogelijkheden.
+
+Maar daarbij is rekening gehouden met de volgorde van de kleuren: eerst kan rood en dan geel gekozen zijn, maar ook eerst geel en dan rood. Om van deze volgorde af te zien, moet nog gedeeld worden door het aantal volgordes van de drie kleuren. Dat is
+
+$$1 \times 2 \times 3 = 3! = 6$$
+
+### Opgave
+
+De **faculteit** van een natuurlijk getal $$n$$, genoteerd als $$n!$$, is het product van de getallen 1 tot en met $$n$$:
+
+$$n! = \prod_{k=1}^{n}k = 1 \times 2 \times 3 \times \codts \times n$$
+
+Bijvoorbeeld als $$n = 5$$:
+
+$$5! = 1 \times 2 \times 3 \times 4 \times 5 = 120$$
+
+In overeenstemming met de definitie van het lege product is afgesproken dat
+
+$$0! = 1$$
+
+Een **binomiaalcoëfficient**, geschreven als
+
+$$\binom{n}{k}\ \ \ \text{(spreekt uit: $$n$$ boven $$k$$)}$$
+
+is een grootheid uit de combinatoriek die aangeeft op hoeveel manieren men uit $$n$$ (verschillende) objecten er zonder terugleggen $$k$$ kan kiezen. Zo'n keuze heet een **combinatie**. Een binomiaalcoëfficient is gedefinieerd als het natuurlijk getal
+
+$$\binom{n}{k} = \frac{n!}{k!(n-k)!}\ \ \ \text{voor $$0 \leq k \leq n$$}$$
+
+en
+
+$$\binom{n}{k} = 0\ \ \ \text{voor $$k < 0$$ of $$k > n$$}$$
+
+Gevraagd wordt:
+
+- Schrijf een functie `faculteit` waaraan een getal $$n \in \mathbb{N}$$ (`int`) moet doorgegeven worden. De functie moet $$n!$$ (`int`) teruggeven.
+
+- Schrijf een functie `binomiaal` waaraan twee getallen $$n, k \mathbb{N}$$ (`int`) moeten doorgegeven worden. De functie moet $$\binom{n}{k}$$ teruggeven.
+
+### Voorbeeld
+
+```console?lang=python&prompt=>>>
+>>> faculteit(5)
+120
+
+>>> binomiaal(7, 3)
+35
+```
