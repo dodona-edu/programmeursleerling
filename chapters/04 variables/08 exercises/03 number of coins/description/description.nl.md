@@ -1,6 +1,7 @@
 De Amerikaanse dollar is de wettige munteenheid van de Verenigde Staten en van enkele andere landen die deze munt overgenomen hebben. De dollar is onderverdeeld in 100 cent (symbool ¢). De namen van de muntstukken zijn:
 
 | naam | waarde (in cent) | opdruk voorkant | opdruk achterkant |
+|------|------------------|-----------------|-------------------|
 | cent (of *penny*) | 1 | [Abraham Lincoln](https://nl.wikipedia.org/wiki/Abraham_Lincoln){:target="_blank"} |  een Eenheidsschild |
 | stuiver (*nickel*) | 5 | [Thomas Jefferson](https://nl.wikipedia.org/wiki/Thomas_Jefferson){:target="_blank"} | [Monticello](https://nl.wikipedia.org/wiki/Sacagawea){:target="_blank"} |
 | dubbeltje (*dime*) | 10 | [Franklin Delano Roosevelt](https://nl.wikipedia.org/wiki/Franklin_Delano_Roosevelt){:target="_blank"} | fakkel, eikentak en olijftak |
