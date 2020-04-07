@@ -1,4 +1,4 @@
-Kun je een manier bedenken om de inhoud van twee numerieke variabelen om te wisselen zonder daarbij gebruik te maken van een derde hulp-variabele? 
+Kun je een manier bedenken om de waarden toegekend aan twee variabelen om te wisselen, zonder daarbij een derde hulpvariabele te gebruiken? 
 
 ### Opdracht
 
