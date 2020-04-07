@@ -5,5 +5,11 @@
       "en": "String length"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "rKNthygBZIQtKjw4EA4HKU7ZMFSqxZjU3G6sz4ycY9tGz5gsUQg9ADNY3ucCAyKB",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }

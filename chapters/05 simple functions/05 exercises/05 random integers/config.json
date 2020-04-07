@@ -5,5 +5,11 @@
       "en": "Random integers"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "zDUCiwq8UwbNAcVaApWgsR6auuKVb2d2Vd-itR_VQhIMXqZJwc66rp62i-jz8FWR",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }

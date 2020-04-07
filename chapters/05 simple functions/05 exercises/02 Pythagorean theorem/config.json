@@ -5,5 +5,11 @@
       "en": "Pythagorean theorem"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "YzcUX8Sr3a3XD86trSkiexc5fZ2cgBFJnDcVzGRT98ib6FXs7eIRe8Z-wZ7B3zv9",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }

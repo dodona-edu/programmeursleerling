@@ -5,5 +5,11 @@
       "en": "Some basic functions"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "2DrnG6Ru7YbMCNPMCJ7em-xnj3pb5Nky8E3VKqk83k9__VbnTws46IkjeqiY4bXD",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
