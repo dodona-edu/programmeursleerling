@@ -5,5 +5,11 @@
       "en": "Boolean expressions"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "DSQgWkpH2agFNKibw2Xngm7bId2nVkiHyEBTdq5fqIEy6EtGFTtwzgrxtjQcR_Ze",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }

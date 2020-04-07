@@ -5,5 +5,11 @@
       "en": "Grades"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "PMQKQ3zQ43tYYhjCuFipdntG4V5SRHdMEsAj9PsEY4e5aQi-Fj9FB43Bi6QIhd3E",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }

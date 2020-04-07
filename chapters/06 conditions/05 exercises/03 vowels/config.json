@@ -5,5 +5,11 @@
       "en": "Vowels"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "Vi2gBDV5AJICK8Jvvs4bmY2rTBw4yXS9B5ZidgTRdXBFfVVcR2WX2y7iHpeIpNVE",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
