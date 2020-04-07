@@ -1,8 +1,36 @@
-De stelling van Pythagoras zegt
-dat bij een rechthoekige driehoek het kwadraat van de schuine zijde
-gelijk is aan de som van de kwadraten van de twee andere zijden (ofwel
-$a^2 + b^2 = c^2$). Schrijf een programma dat de gebruiker om de lengte
-van de twee rechte zijden vraagt, en bereken dan de lengte van de
-schuine zijde. Toon hem op een netjes geformatteerde manier. Je hoeft
-geen rekening te houden met het feit dat de gebruiker ook negatieve
-waardes of nul zou kunnen ingeven.
+De stelling van Pythagoras geeft een verband tussen de lengten van de zijden van een rechthoekige driehoek. In woorden luidt de stelling:
+
+    In een rechthoekige driehoek is de som van de kwadraten van de lengtes van de rechthoekszijden gelijk aan het kwadraat van de lengte van de schuine zijde.
+    
+Noemt men de lengten van rechthoekszijden (de zijden die aan de hoek van 90° liggen) $$a$$ en $$$b$, en de lengte van de schuine zijde $$c$$, dan is de bekende wiskundige vorm van de stelling:
+
+$$a^2 + b^2 = c^2$$
+
+### Invoer
+
+De lengte van de twee rechthoekszijden van een rechthoekige driehoek, elk op een afzonderlijke regel.
+
+### Uitvoer
+
+Een zin van de vorm
+
+```
+Lengte van de schuine zijde: ???
+```
+
+die de lengte van de schuine zijde aangeeft. De lengte van de schuine zijde moet uitgeschreven worden met drie cijfers na de komma (met afronding). 
+
+### Voorbeeld
+
+#### Invoer:
+
+```
+3.0
+4.0
+```
+
+#### Uitvoer:
+
+```
+Lengte van de schuine zijde: 5.000
+```

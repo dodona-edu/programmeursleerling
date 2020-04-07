@@ -1,0 +1,61 @@
+Length of the hypotenuse: 5.000
+Length of the hypotenuse: 114.635
+Length of the hypotenuse: 118.161
+Length of the hypotenuse: 91.237
+Length of the hypotenuse: 109.149
+Length of the hypotenuse: 87.142
+Length of the hypotenuse: 114.923
+Length of the hypotenuse: 104.043
+Length of the hypotenuse: 44.618
+Length of the hypotenuse: 30.563
+Length of the hypotenuse: 56.535
+Length of the hypotenuse: 123.071
+Length of the hypotenuse: 51.869
+Length of the hypotenuse: 69.227
+Length of the hypotenuse: 61.921
+Length of the hypotenuse: 17.085
+Length of the hypotenuse: 113.416
+Length of the hypotenuse: 11.391
+Length of the hypotenuse: 129.576
+Length of the hypotenuse: 88.545
+Length of the hypotenuse: 67.623
+Length of the hypotenuse: 73.083
+Length of the hypotenuse: 65.648
+Length of the hypotenuse: 54.586
+Length of the hypotenuse: 45.671
+Length of the hypotenuse: 90.931
+Length of the hypotenuse: 97.134
+Length of the hypotenuse: 50.955
+Length of the hypotenuse: 84.720
+Length of the hypotenuse: 61.086
+Length of the hypotenuse: 104.175
+Length of the hypotenuse: 103.114
+Length of the hypotenuse: 122.407
+Length of the hypotenuse: 107.704
+Length of the hypotenuse: 59.505
+Length of the hypotenuse: 92.254
+Length of the hypotenuse: 95.808
+Length of the hypotenuse: 111.064
+Length of the hypotenuse: 49.462
+Length of the hypotenuse: 101.499
+Length of the hypotenuse: 118.626
+Length of the hypotenuse: 117.369
+Length of the hypotenuse: 77.247
+Length of the hypotenuse: 86.098
+Length of the hypotenuse: 88.493
+Length of the hypotenuse: 41.472
+Length of the hypotenuse: 110.441
+Length of the hypotenuse: 45.563
+Length of the hypotenuse: 57.204
+Length of the hypotenuse: 96.847
+------------------------------------------------------------
+tab name: Length
+python input without prompt: true
+block count: multi
+input block size: 2
+output block size: 1
+comparison: exact match
+<LANGUAGE code="nl">
+    <fixed from="Length" to="Lengte" detect="false" />
+</LANGUAGE>
+
