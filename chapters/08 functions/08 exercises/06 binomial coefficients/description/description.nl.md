@@ -12,7 +12,7 @@ $$1 \times 2 \times 3 = 3! = 6$$
 
 De **faculteit** van een natuurlijk getal $$n$$, genoteerd als $$n!$$, is het product van de getallen 1 tot en met $$n$$:
 
-$$n! = \prod_{k=1}^{n}k = 1 \times 2 \times 3 \times \codts \times n$$
+$$n! = \prod_{k=1}^{n}k = 1 \times 2 \times 3 \times \cdots \times n$$
 
 Bijvoorbeeld als $$n = 5$$:
 
@@ -24,9 +24,9 @@ $$0! = 1$$
 
 Een **binomiaalcoëfficient**, geschreven als
 
-$$\binom{n}{k}\ \ \ \text{(spreekt uit: }n\text{ boven }k)$$
+$$\binom{n}{k}$$
 
-is een grootheid uit de combinatoriek die aangeeft op hoeveel manieren men uit $$n$$ (verschillende) objecten er zonder terugleggen $$k$$ kan kiezen. Zo'n keuze heet een **combinatie**. Een binomiaalcoëfficient is gedefinieerd als het natuurlijk getal
+en uitgesproken als "$$n$$ boven $$k$$", is een grootheid uit de combinatoriek die aangeeft op hoeveel manieren men uit $$n$$ (verschillende) objecten er zonder terugleggen $$k$$ kan kiezen. Zo'n keuze heet een **combinatie**. Een binomiaalcoëfficient is gedefinieerd als het natuurlijk getal
 
 $$\binom{n}{k} = \frac{n!}{k!(n-k)!}\ \ \ \text{voor }0 \leq k \leq n$$
 
