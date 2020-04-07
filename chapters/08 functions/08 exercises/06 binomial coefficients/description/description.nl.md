@@ -38,7 +38,7 @@ Gevraagd wordt:
 
 - Schrijf een functie `faculteit` waaraan een getal $$n \in \mathbb{N}$$ (`int`) moet doorgegeven worden. De functie moet $$n!$$ (`int`) teruggeven.
 
-- Schrijf een functie `binomiaal` waaraan twee getallen $$n, k \mathbb{N}$$ (`int`) moeten doorgegeven worden. De functie moet $$\binom{n}{k}$$ teruggeven.
+- Schrijf een functie `binomiaal` waaraan twee getallen $$n, k \in \mathbb{N}$$ (`int`) moeten doorgegeven worden. De functie moet $$\binom{n}{k}$$ teruggeven.
 
 ### Voorbeeld
 
