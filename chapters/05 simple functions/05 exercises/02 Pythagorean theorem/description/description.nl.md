@@ -2,7 +2,7 @@ De stelling van Pythagoras geeft een verband tussen de lengten van de zijden van
 
     In een rechthoekige driehoek is de som van de kwadraten van de lengtes van de rechthoekszijden gelijk aan het kwadraat van de lengte van de schuine zijde.
     
-Noemt men de lengten van rechthoekszijden (de zijden die aan de hoek van 90° liggen) $$a$$ en $$$b$, en de lengte van de schuine zijde $$c$$, dan is de bekende wiskundige vorm van de stelling:
+Noemt men de lengten van rechthoekszijden (de zijden die aan de hoek van 90° liggen) $$a$$ en $$b$$, en de lengte van de schuine zijde $$c$$, dan is de bekende wiskundige vorm van de stelling:
 
 $$a^2 + b^2 = c^2$$
 
