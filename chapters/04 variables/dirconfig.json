@@ -1,6 +1,3 @@
 {
-  "labels": ["variables", "variabelen"],
-  "evaluation": {
-    "pythia_judge": "output"
-  }
+  "labels": ["variables", "variabelen"]
 }
