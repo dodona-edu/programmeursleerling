@@ -5,7 +5,7 @@ python input without prompt: true
 block count: one
 <DEFINITION>
 def customEvaluate(expected_output, generated_output):
-    return len(generated_output) == 1
+    return len(generated_output) == 1 and generated_output[0].endswith('\n')
     generated_output = ''.join(generated_output)
     return (
         isinstance(generated_output, str) and
