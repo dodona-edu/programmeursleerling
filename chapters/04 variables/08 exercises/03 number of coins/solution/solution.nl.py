@@ -1,13 +1,13 @@
-# bedrag (in centen)
+# bedrag (in cent)
 bedrag = 1156
 
-# eenheden van munt vastleggen
+# waarde van munstukken vastleggen
 centen_in_dollar = 100
 centen_in_kwartje = 25
 centen_in_dubbeltje = 10
 centen_in_stuiver = 5
 
-# bedrag in centen opsplitsen in eenheden
+# minimaal aantal muntstukken bepalen
 dollars = bedrag // centen_in_dollar
 centen = bedrag % centen_in_dollar
 
@@ -20,7 +20,7 @@ centen = centen % centen_in_dubbeltje
 stuivers = centen // centen_in_stuiver
 centen = centen % centen_in_stuiver
 
-# eenheden uitschrijven
+# minimaal aantal muntstukken uitschrijven
 print(f'Dollars: {dollars}')
 print(f'Kwartjes: {kwartjes}')
 print(f'Dubbeltjes: {dubbeltjes}')

@@ -1,13 +1,13 @@
 # amount (in cents)
 amount = 1156
 
-# coins in valuta
+# values coins used USD (in cents)
 cents_in_dollar = 100
 cents_in_quarter = 25
 cents_in_dime = 10
 cents_in_nickel = 5
 
-# split amount in units
+# determine minimum number of coins needed
 dollars = amount // cents_in_dollar
 cents = amount % cents_in_dollar
 
@@ -20,7 +20,7 @@ cents = cents % cents_in_dime
 nickels = cents // cents_in_nickel
 cents = cents % cents_in_nickel
 
-# eenheden uitschrijven
+# print minimum number of coins
 print(f'Dollars: {dollars}')
 print(f'Quarters: {quarters}')
 print(f'Dimes: {dimes}')
