@@ -5,5 +5,11 @@
       "en": "Powers of e"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "GvF4ISvE9QSUejvmdrfUET3_PhMITg_7NiHA2HxJ9Bdm-9yk7MNjPhjH2u9qRFJC",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
