@@ -1,0 +1,13 @@
+7
+----------------------------------------
+tab name: e
+python input without prompt: true
+block count: one
+<DEFINITION>
+def customEvaluate(expected_output, generated_output):
+    return (
+        isinstance(generated_output, str) and
+        generated_output.isdigit() and
+        0 < int(generated_output) < 11
+    )
+</DEFINITION>

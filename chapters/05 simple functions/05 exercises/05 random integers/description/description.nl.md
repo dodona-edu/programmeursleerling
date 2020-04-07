@@ -1,3 +1,5 @@
-Stel dat je een geheel toevalgetal
-tussen 1 en 10 wilt hebben (inclusief 1 en 10), maar je hebt alleen de
-`random()` functie beschikbaar. Hoe doe je dat?
+Stel dat je een willekeurig geheel getal tussen 1 en 10 wil genereren (grenzen inbegrepen), maar je mag alleen gebruikmaken van de `random()` functie uit de `random` module. Hoe doe je dat?
+
+### Uitvoer
+
+Een willekeurig geheel getal tussen 1 en 10 (grenzen inbegrepen).
