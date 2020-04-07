@@ -1,0 +1,15 @@
+Dollars: 11
+Quarters: 2
+Dimes: 0
+Nickels: 1
+Cents: 1
+----------------------------------------
+tab name: Muntstukken
+python input without prompt: true
+block count: one
+<LANGUAGE code="nl">
+    <fixed from="Quarters" to="Kwartjes" />
+    <fixed from="Dimes" to="Dubbeltjes" />
+    <fixed from="Nickels" to="Stuivers" />
+    <fixed from="Cents" to="Centen" />
+</LANGUAGE>
