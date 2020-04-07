@@ -4,7 +4,7 @@ Dimes: 0
 Nickels: 1
 Cents: 1
 ----------------------------------------
-tab name: Muntstukken
+tab name: Coins
 python input without prompt: true
 block count: one
 <LANGUAGE code="nl">
@@ -12,4 +12,5 @@ block count: one
     <fixed from="Dimes" to="Dubbeltjes" />
     <fixed from="Nickels" to="Stuivers" />
     <fixed from="Cents" to="Centen" />
+    <fixed from="Coins" to="Muntstukken" detect="false" />
 </LANGUAGE>

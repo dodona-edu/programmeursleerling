@@ -4,3 +4,6 @@ tab name: Gemiddelde
 python input without prompt: true
 block count: one
 ignore fp rounding: -6
+<LANGUAGE code="nl">
+    <fixed from="Average" to="Gemiddelde" detect="false" />
+</LANGUAGE>

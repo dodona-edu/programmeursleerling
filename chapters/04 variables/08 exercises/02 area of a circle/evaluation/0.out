@@ -1,6 +1,6 @@
 The area of a circle with radius 2.73 is 23.41397588793937.
 ----------------------------------------
-tab name: Oppervlakte
+tab name: Area
 python input without prompt: true
 block count: one
 ignore fp rounding: -6
@@ -9,4 +9,5 @@ ignore fp rounding: -6
     <fixed from="area" to="oppervlakte" />
     <fixed from="circle" to="cirkel" />
     <fixed from="radius" to="straal" />
+    <fixed from="Area" to="Oppervlakte" detect="false" />
 </LANGUAGE>

@@ -1,0 +1,10 @@
+a = 17 and b = 23
+a = 23 and b = 17
+----------------------------------------
+tab name: Swap
+python input without prompt: true
+block count: one
+<LANGUAGE code="nl">
+    <token from="and" to="en" />
+    <fixed from="Swap" to="Omwisselen" detect="false" />
+</LANGUAGE>
