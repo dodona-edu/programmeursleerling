@@ -1,6 +1,11 @@
-Up to this point, I have already introduced some basic "functions," such
-as `print()` and `int()`. In this chapter these functions will be
-discussed a bit more in-depth, and a few other functions will be
-introduced, which will be helpful in the coming chapters. In Chapter
-<a href="#ch:functions" data-reference-type="ref" data-reference="ch:functions">9</a>,
-I will discuss how you can create your own functions.
+Compute the value of $$e$$ to the power if -1, 0, 1, 2 and 3. Display the results in a nicely formatted manner, with the powers of $$e$$ printed with 5 decimal digits (rounded).
+
+#### Output:
+
+```
+e ** -1 =  0.36788
+e **  0 =  1.00000
+e **  1 =  2.71828
+e **  2 =  7.38906
+e **  3 = 20.08554
+```
