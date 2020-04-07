@@ -24,15 +24,15 @@ $$0! = 1$$
 
 Een **binomiaalcoëfficient**, geschreven als
 
-$$\binom{n}{k}\ \ \ \text{(spreekt uit: $$n$$ boven $$k$$)}$$
+$$\binom{n}{k}\ \ \ \text{(spreekt uit: }n\text{ boven }k)$$
 
 is een grootheid uit de combinatoriek die aangeeft op hoeveel manieren men uit $$n$$ (verschillende) objecten er zonder terugleggen $$k$$ kan kiezen. Zo'n keuze heet een **combinatie**. Een binomiaalcoëfficient is gedefinieerd als het natuurlijk getal
 
-$$\binom{n}{k} = \frac{n!}{k!(n-k)!}\ \ \ \text{voor $$0 \leq k \leq n$$}$$
+$$\binom{n}{k} = \frac{n!}{k!(n-k)!}\ \ \ \text{voor }0 \leq k \leq n$$
 
 en
 
-$$\binom{n}{k} = 0\ \ \ \text{voor $$k < 0$$ of $$k > n$$}$$
+$$\binom{n}{k} = 0\ \ \ \text{voor }k < 0\text{ of }k > n$$
 
 Gevraagd wordt:
 
