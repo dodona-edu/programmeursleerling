@@ -1,0 +1,150 @@
+>>> area_of_triangle(7, 3)
+'The area of a triangle with a bottom of 7 and a height of 3 is 10.5'
+
+>>> area_of_triangle(42, 29)
+'The area of a triangle with a bottom of 42 and a height of 29 is 609.0'
+
+>>> area_of_triangle(35, 46)
+'The area of a triangle with a bottom of 35 and a height of 46 is 805.0'
+
+>>> area_of_triangle(39, 26)
+'The area of a triangle with a bottom of 39 and a height of 26 is 507.0'
+
+>>> area_of_triangle(20, 45)
+'The area of a triangle with a bottom of 20 and a height of 45 is 450.0'
+
+>>> area_of_triangle(30, 26)
+'The area of a triangle with a bottom of 30 and a height of 26 is 390.0'
+
+>>> area_of_triangle(35, 23)
+'The area of a triangle with a bottom of 35 and a height of 23 is 402.5'
+
+>>> area_of_triangle(26, 29)
+'The area of a triangle with a bottom of 26 and a height of 29 is 377.0'
+
+>>> area_of_triangle(35, 45)
+'The area of a triangle with a bottom of 35 and a height of 45 is 787.5'
+
+>>> area_of_triangle(14, 44)
+'The area of a triangle with a bottom of 14 and a height of 44 is 308.0'
+
+>>> area_of_triangle(39, 2)
+'The area of a triangle with a bottom of 39 and a height of 2 is 39.0'
+
+>>> area_of_triangle(18, 40)
+'The area of a triangle with a bottom of 18 and a height of 40 is 360.0'
+
+>>> area_of_triangle(12, 2)
+'The area of a triangle with a bottom of 12 and a height of 2 is 12.0'
+
+>>> area_of_triangle(48, 40)
+'The area of a triangle with a bottom of 48 and a height of 40 is 960.0'
+
+>>> area_of_triangle(10, 48)
+'The area of a triangle with a bottom of 10 and a height of 48 is 240.0'
+
+>>> area_of_triangle(21, 44)
+'The area of a triangle with a bottom of 21 and a height of 44 is 462.0'
+
+>>> area_of_triangle(30, 38)
+'The area of a triangle with a bottom of 30 and a height of 38 is 570.0'
+
+>>> area_of_triangle(20, 41)
+'The area of a triangle with a bottom of 20 and a height of 41 is 410.0'
+
+>>> area_of_triangle(6, 19)
+'The area of a triangle with a bottom of 6 and a height of 19 is 57.0'
+
+>>> area_of_triangle(21, 25)
+'The area of a triangle with a bottom of 21 and a height of 25 is 262.5'
+
+>>> area_of_triangle(43, 50)
+'The area of a triangle with a bottom of 43 and a height of 50 is 1075.0'
+
+>>> area_of_triangle(3, 1)
+'The area of a triangle with a bottom of 3 and a height of 1 is 1.5'
+
+>>> area_of_triangle(7, 42)
+'The area of a triangle with a bottom of 7 and a height of 42 is 147.0'
+
+>>> area_of_triangle(27, 36)
+'The area of a triangle with a bottom of 27 and a height of 36 is 486.0'
+
+>>> area_of_triangle(5, 2)
+'The area of a triangle with a bottom of 5 and a height of 2 is 5.0'
+
+>>> area_of_triangle(39, 34)
+'The area of a triangle with a bottom of 39 and a height of 34 is 663.0'
+
+>>> area_of_triangle(20, 29)
+'The area of a triangle with a bottom of 20 and a height of 29 is 290.0'
+
+>>> area_of_triangle(26, 8)
+'The area of a triangle with a bottom of 26 and a height of 8 is 104.0'
+
+>>> area_of_triangle(48, 29)
+'The area of a triangle with a bottom of 48 and a height of 29 is 696.0'
+
+>>> area_of_triangle(2, 17)
+'The area of a triangle with a bottom of 2 and a height of 17 is 17.0'
+
+>>> area_of_triangle(20, 16)
+'The area of a triangle with a bottom of 20 and a height of 16 is 160.0'
+
+>>> area_of_triangle(43, 46)
+'The area of a triangle with a bottom of 43 and a height of 46 is 989.0'
+
+>>> area_of_triangle(15, 4)
+'The area of a triangle with a bottom of 15 and a height of 4 is 30.0'
+
+>>> area_of_triangle(18, 36)
+'The area of a triangle with a bottom of 18 and a height of 36 is 324.0'
+
+>>> area_of_triangle(44, 6)
+'The area of a triangle with a bottom of 44 and a height of 6 is 132.0'
+
+>>> area_of_triangle(23, 31)
+'The area of a triangle with a bottom of 23 and a height of 31 is 356.5'
+
+>>> area_of_triangle(46, 16)
+'The area of a triangle with a bottom of 46 and a height of 16 is 368.0'
+
+>>> area_of_triangle(48, 43)
+'The area of a triangle with a bottom of 48 and a height of 43 is 1032.0'
+
+>>> area_of_triangle(13, 33)
+'The area of a triangle with a bottom of 13 and a height of 33 is 214.5'
+
+>>> area_of_triangle(9, 24)
+'The area of a triangle with a bottom of 9 and a height of 24 is 108.0'
+
+>>> area_of_triangle(47, 7)
+'The area of a triangle with a bottom of 47 and a height of 7 is 164.5'
+
+>>> area_of_triangle(22, 35)
+'The area of a triangle with a bottom of 22 and a height of 35 is 385.0'
+
+>>> area_of_triangle(24, 33)
+'The area of a triangle with a bottom of 24 and a height of 33 is 396.0'
+
+>>> area_of_triangle(28, 39)
+'The area of a triangle with a bottom of 28 and a height of 39 is 546.0'
+
+>>> area_of_triangle(34, 26)
+'The area of a triangle with a bottom of 34 and a height of 26 is 442.0'
+
+>>> area_of_triangle(14, 41)
+'The area of a triangle with a bottom of 14 and a height of 41 is 287.0'
+
+>>> area_of_triangle(20, 9)
+'The area of a triangle with a bottom of 20 and a height of 9 is 90.0'
+
+>>> area_of_triangle(40, 35)
+'The area of a triangle with a bottom of 40 and a height of 35 is 700.0'
+
+>>> area_of_triangle(28, 43)
+'The area of a triangle with a bottom of 28 and a height of 43 is 602.0'
+
+>>> area_of_triangle(26, 27)
+'The area of a triangle with a bottom of 26 and a height of 27 is 351.0'
+

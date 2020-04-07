@@ -1,0 +1,8 @@
+--------------------------------------------------------
+tab name: area_of_triangle
+<LANGUAGE code="nl">
+    <function from="area_of_triangle" to="oppervlakte_van_driehoek" />
+    <fixed from="The area of a triangle with a bottom of" to="Een driehoek met basis" detect="false" />
+    <fixed from="and a height of" to="en hoogte" detect="false" />
+    <fixed from=" is " to=" heeft oppervlakte " detect="false" />
+</LANGUAGE>
