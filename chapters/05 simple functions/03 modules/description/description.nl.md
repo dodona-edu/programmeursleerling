@@ -12,7 +12,11 @@ nadat je `math` geïmporteerd hebt.
 
 Als alternatief kun je ook specifieke functies vanuit een module
 importeren, via:  
-`from <module> import <functie1>, <functie2>, <functie3>, ...`  
+
+```python
+from <module> import <functie1>, <functie2>, <functie3>, ...
+```
+  
 Het voordeel van een dergelijke manier van functies importeren is dat je
 in je code niet de naam van de module voor de functie-aanroep hoeft te
 zetten.

@@ -9,8 +9,12 @@ function from the `math` module (which calculates the square root of a
 number), you call `math.sqrt()` after importing `math`.
 
 Alternatively, you can import only specific functions from a module, by
-stating:  
-`from <modulename> import <function1>, <function2>, <function3>, ...`  
+stating:
+
+```python
+from <modulename> import <function1>, <function2>, <function3>, ...
+```
+  
 The main advantage of importing specific functions from a module in this
 way is that in your code, you no longer need to precede the call to a
 function with the module name.
