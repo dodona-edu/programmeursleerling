@@ -1,6 +1,6 @@
 The Pythagorean theorem is a fundamental relation among the three sides of a right triangle. In words it states:
 
-    In a right triangle, the square of the length of the hypotenuse (the side opposite the right angle) is equal to the sum of the lengths of the other two sides (called the legs).
+> In a right triangle, the square of the length of the hypotenuse (the side opposite the right angle) is equal to the sum of the lengths of the other two sides (called the legs).
 
 If the lengths of the legs are named $$a$$ and $$b$$, and the length of the hypotenuse is named $$c$$, the theorem can be written as an equation relating the lengths of the sides $$a$$, $$b$$ and $$c$$, often called the "Pythagorean equation":
 
