@@ -2,7 +2,7 @@ Hoeveel kleurencombinaties zijn er mogelijk bij een keuze van drie kleuren uit d
 
 $$\binom{7}{3} = \frac{7!}{3!4!} = 35$$
 
-Hoe komt men tot de waarde van deze coëfficiënt? Voor de eerste kleurkeuze zijn er 7 mogelijkheden, voor de tweede nog 6, en voor de derde nog 5. In totaal dus $$7 \times 6 \times 5 = \frac{7!}{4!}$$ mogelijkheden.
+Hoe komt men tot de waarde van deze coëfficiënt? Voor de eerste kleurkeuze zijn er 7 mogelijkheden, voor de tweede nog 6, en voor de derde nog 5. In totaal dus $$7 \times 6 \times 5 = \frac{7!}{4!} = 210$$ mogelijkheden.
 
 Maar daarbij is rekening gehouden met de volgorde van de kleuren: eerst kan rood en dan geel gekozen zijn, maar ook eerst geel en dan rood. Om van deze volgorde af te zien, moet nog gedeeld worden door het aantal volgordes van de drie kleuren. Dat is
 
