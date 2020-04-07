@@ -25,12 +25,18 @@ block count: multi
 input block size: 2
 output block size: 1
 comparison: exact match
-'''
-for language, translation in tab_name_translations.items():
-    settings += f'''<LANGUAGE code="{language}">
-    <fixed from="{tab_name}" to="{translation}" detect="false" />
+<LANGUAGE code="nl">
+    <fixed from="Length of the hypotenuse:" to="Lengte van de schuine zijde:" />
+    <fixed from="Length" to="Lengte" />
+    <fixed from="hypotenuse" to="schuine zijde" />
 </LANGUAGE>
 '''
+
+# for language, translation in tab_name_translations.items():
+#     settings += f'''<LANGUAGE code="{language}">
+#     <fixed from="{tab_name}" to="{translation}" detect="false" />
+# </LANGUAGE>
+# '''
 
 # generate test data
 cases = [(3, 4)]
@@ -71,4 +77,4 @@ for stdin in cases:
     print(stdout, file=outfile, end='')
 
 # add settings to output file
-print('-' * 60 + settings, file=outfile)
+print('-' * 60 + settings, file=outfile, end='')
