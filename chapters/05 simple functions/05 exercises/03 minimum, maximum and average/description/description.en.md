@@ -1,6 +1,27 @@
-Up to this point, I have already introduced some basic "functions," such
-as `print()` and `int()`. In this chapter these functions will be
-discussed a bit more in-depth, and a few other functions will be
-introduced, which will be helpful in the coming chapters. In Chapter
-<a href="#ch:functions" data-reference-type="ref" data-reference="ch:functions">9</a>,
-I will discuss how you can create your own functions.
+Determine the maximum, the minimum and the average of three integers.
+
+### Input
+
+Three integers, each on a separate line.
+
+### Output
+
+The maximum, mininum and average of the three integers. The average must be printed with two decimal digits (rounded).
+
+### Example
+
+#### Input:
+
+```
+12
+5
+8
+```
+
+#### Output:
+
+```
+maximum: 12
+minimum: 5
+average: 8.33
+```
