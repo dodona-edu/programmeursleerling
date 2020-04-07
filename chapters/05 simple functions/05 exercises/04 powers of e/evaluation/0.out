@@ -4,10 +4,8 @@ e **  1 =  2.71828
 e **  2 =  7.38906
 e **  3 = 20.08554
 ----------------------------------------
-tab name: Powers
+tab name: e
 python input without prompt: true
 block count: one
 comparison: exact match
-<LANGUAGE code="nl">
-    <fixed from="Powers" to="Machten" detect="false" />
-</LANGUAGE>
+
