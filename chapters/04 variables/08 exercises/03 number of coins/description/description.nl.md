@@ -6,6 +6,7 @@ De Amerikaanse dollar is de wettige munteenheid van de Verenigde Staten en van e
 | dubbeltje (*dime*) | 10 | [Franklin Delano Roosevelt](https://nl.wikipedia.org/wiki/Franklin_Delano_Roosevelt){:target="_blank"} | fakkel, eikentak en olijftak |
 | kwartje (*quarter*) | 25 | [George Washington](https://nl.wikipedia.org/wiki/George_Washington){:target="_blank"} | arend |
 | dollar | 100 | [Sacagawea](https://nl.wikipedia.org/wiki/Sacagawea){:target="_blank"} met kind | arend in vlucht |
+{:class="table table-striped table-condensed"}
 
 ### Opdracht
 
