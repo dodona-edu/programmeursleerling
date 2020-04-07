@@ -3,9 +3,9 @@ test and one or more actions. The test is a so-called "boolean
 expression." The actions are executed when the test evaluates to True.
 For instance, an app on a smartphone might give a warning if the battery
 level is lower than 5%. This means that the app needs to check if a
-certain variable `battery_level` is lower than the value $5$, i.e., if
+certain variable `battery_level` is lower than the value $$5$$, i.e., if
 `battery_level < 5` evaluates to `True`. If the variable `battery_level`
-holds the value $17$, then `battery_level < 5` evaluates to `False`.
+holds the value $$17$$, then `battery_level < 5` evaluates to `False`.
 
 ### Booleans
 
@@ -59,9 +59,9 @@ operators are:
 |        `!=` |  not equal |
 {:class="table table-striped table-condensed"}
 
-A common mistake is to use a single $=$ as a comparison operator, as the
-single $=$ is the assignment operator. In general, Python will produce a
-syntax or runtime error if you try to use a single $=$ to make a
+A common mistake is to use a single $$=$$ as a comparison operator, as the
+single $$=$$ is the assignment operator. In general, Python will produce a
+syntax or runtime error if you try to use a single $$=$$ to make a
 comparison.
 
 You can use the comparison operators to compare both numbers and
@@ -105,9 +105,9 @@ print( greater )
 print( type( greater ) )
 ```
 
-Write some code that allows you to test if $1/2$ is greater than, equal
-to, or less than $0.5$. Do the same for $1/3$ and $0.33$. Then do the
-same for $(1/3)*3$ and $1$.
+Write some code that allows you to test if $$1/2$$ is greater than, equal
+to, or less than $$0.5$$. Do the same for $$1/3$$ and $$0.33$$. Then do the
+same for $$(1/3)*3$$ and $$1$$.
 
 Comparisons of data types that cannot be compared, in general lead to
 runtime errors.

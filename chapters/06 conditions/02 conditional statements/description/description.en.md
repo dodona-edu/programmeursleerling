@@ -275,7 +275,7 @@ underneath the `else` will be executed.
 
 Therefore, in the code above, you do not need to test
 `age >= 12 and age < 18` for the first `elif`. Just testing `age < 18`
-suffices, because if age was smaller than $12$, already the boolean
+suffices, because if age was smaller than $$12$$, already the boolean
 expression for the `if` would have evaluated to `True`, and the boolean
 expression for the first `elif` would not even have been encountered by
 Python.
@@ -285,9 +285,9 @@ However, in most cases where I need `elif`s I include it anyway, if only
 for error checking.
 
 Write a program that defines a variable `weight`. If `weight` is greater
-than $20$ (kilo's), print: "There is a \$25 surcharge for luggage that
-is too heavy." If `weight` is smaller than $20$, print: "Have a safe
-flight!" If `weight` is exactly $20$, print: "Pfew! The weight is just
+than $$20$$ (kilo's), print: "There is a \$$25 surcharge for luggage that
+is too heavy." If `weight` is smaller than $$20$$, print: "Have a safe
+flight!" If `weight` is exactly $$20$$, print: "Pfew! The weight is just
 right!" Make sure that you change the value of `weight` a couple of
 times to check whether your code works.
 

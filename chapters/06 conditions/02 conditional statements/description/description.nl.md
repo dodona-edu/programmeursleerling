@@ -290,9 +290,9 @@ waarin ik zelf meerdere `elif`s gebruik, zet ik wel een `else`, al was
 het maar voor het afvangen van fouten.
 
 Schrijf een programma dat een variabele `gewicht` heeft. Als `gewicht`
-groter is dan $20$ (kilo), print je: "Er moet een toeslag van \$25
+groter is dan $$20$$ (kilo), print je: "Er moet een toeslag van \$$25
 betaald worden voor baggage die te zwaar is." Als `gewicht` kleiner is
-dan $20$, print je: "Goede reis!" Als `gewicht` precies $20$ is, print
+dan $$20$$, print je: "Goede reis!" Als `gewicht` precies $$20$$ is, print
 je: "Poeh! Dat gewicht is precies goed!" Wijzig de waarde van `gewicht`
 een paar keer om de code te testen.
 

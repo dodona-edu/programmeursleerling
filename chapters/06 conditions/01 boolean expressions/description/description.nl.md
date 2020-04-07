@@ -4,8 +4,8 @@ expressie." De acties worden alleen uitgevoerd als de test evalueert als
 zijnde "waar." Bijvoorbeeld, een app op een smartphone kan een
 waarschuwing geven als de batterij minder dan 5% vol is. Dat betekent
 dat de app test of een zekere variabele `batterij_energie` kleiner is
-dan $5$, dus of de vergelijking `batterij_energie < 5` als zijnde "waar"
-geëvalueerd wordt. Als de variabele momenteel de waarde $17$ bevat,
+dan $$5$$, dus of de vergelijking `batterij_energie < 5` als zijnde "waar"
+geëvalueerd wordt. Als de variabele momenteel de waarde $$17$$ bevat,
 evalueert de test `batterij_energie < 5` als zijnde "onwaar."
 
 ### Booleans
@@ -64,8 +64,8 @@ ertussen. Vergelijkingsoperatoren zijn:
 {:class="table table-striped table-condensed"}
 
 Een veelgemaakte fout is om twee waardes te vergelijken met een enkele
-$=$. De enkele $=$ is de assignment operator. Meestal (maar niet altijd)
-produceert Python een syntax of runtime error als je de $=$ probeert te
+$$=$$. De enkele $$=$$ is de assignment operator. Meestal (maar niet altijd)
+produceert Python een syntax of runtime error als je de $$=$$ probeert te
 gebruiken om twee waardes te vergelijken.
 
 Je kunt vergelijksoperatoren gebruiken zowel tussen getallen als tussen
@@ -110,9 +110,9 @@ print( groter )
 print( type( groter ) )
 ```
 
-Schrijf code die test of $1/2$ groter dan, gelijk aan, of kleiner is dan
-$0.5$. Doe dat ook voor $1/3$ en $0.33$. Doe het dan ook voor $(1/3)*3$
-en $1$.
+Schrijf code die test of $$1/2$$ groter dan, gelijk aan, of kleiner is dan
+$$0.5$$. Doe dat ook voor $$1/3$$ en $$0.33$$. Doe het dan ook voor $$(1/3)*3$$
+en $$1$$.
 
 Vergelijkingen tussen data types die niet vergeleken kunnen worden,
 leiden meestal tot runtime errors.
