@@ -24,14 +24,14 @@ input block size: 1
 output block size: ends with
 comparison: exact match
 <LANGUAGE code="nl">
-    <fixed from="bottles of beer" to="flesjes bier" />
-    <fixed from="bottle of beer" to="flesje bier" />
+    <fixed from="bottles of beer" to="flesjes met bier" />
+    <fixed from="bottle of beer" to="flesje met bier" />
     <fixed from="Take one down, pass it around" to="Open er een, drink hem meteen" />
 </LANGUAGE>
 '''
 
 # generate test data
-cases = [5, 10, 99]
+cases = [5, 10, 25]
 
 # configure test files
 infile = open(os.path.join(evaldir, '0.in'), 'w', encoding='utf-8')
