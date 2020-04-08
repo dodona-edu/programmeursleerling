@@ -1,0 +1,18 @@
+3.13992
+3.14044
+3.13936
+3.14208
+3.13224
+3.140284
+3.141688
+3.1415
+3.140776
+3.13986
+------------------------------------------------------------
+tab name: Tests
+python input without prompt: true
+block count: multi
+input block size: 1
+output block size: 1
+ignore fp rounding: -1
+

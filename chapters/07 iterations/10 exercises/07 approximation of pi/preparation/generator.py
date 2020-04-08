@@ -17,21 +17,18 @@ if not os.path.exists(solutiondir):
 
 # configuration settings
 settings = f'''
-tab name: Grades
+tab name: Tests
 python input without prompt: true
 block count: multi
 input block size: 1
 output block size: 1
-comparison: exact match
+ignore fp rounding: -1
 '''
 
 # generate test data
-cases = list(range(60, 101))
-while len(cases) < 60:
-    grade = random.randrange(60)
-    if grade not in cases:
-        cases.append(grade)
-random.shuffle(cases)
+repeats = 5
+cases = [100000, 1000000]
+cases = [case for case in cases for _ in range(repeats)]
 
 # configure test files
 infile = open(os.path.join(evaldir, '0.in'), 'w', encoding='utf-8')
