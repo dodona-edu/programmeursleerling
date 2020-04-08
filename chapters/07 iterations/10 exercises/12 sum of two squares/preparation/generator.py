@@ -17,31 +17,38 @@ if not os.path.exists(solutiondir):
 
 # configuration settings
 settings = f'''
-tab name: Grades
+tab name: Tests
 python input without prompt: true
 block count: multi
-input block size: 1
-output block size: 1
+input block size: 2
+output block size: ends with
 comparison: exact match
+<DEFINITION>
+def customEvaluate(expected_output, generated_output):
+    return (
+        len(generated_output) == len(expected_output) and
+        sorted(generated_output) == sorted(expected_output)
+    )
+</DEFINITION>
 '''
 
 # generate test data
-cases = list(range(60, 101))
-while len(cases) < 60:
-    grade = random.randrange(60)
-    if grade not in cases:
-        cases.append(grade)
-random.shuffle(cases)
+cases = [(48, 52)]
+while len(cases) < 50:
+    lower = random.randint(1, 1000)
+    upper = lower + random.randint(0, 20)
+    if (lower, upper) not in cases:
+        cases.append((lower, upper))
 
 # configure test files
 infile = open(os.path.join(evaldir, '0.in'), 'w', encoding='utf-8')
 outfile = open(os.path.join(evaldir, '0.out'), 'w', encoding='utf-8')
 
 # generate unit tests
-for stdin in cases:
+for index, stdin in enumerate(cases):
 
     # add input to input file
-    stdin = str(stdin)
+    stdin = '\n'.join(str(line) for line in stdin)
     print(stdin, file=infile)
 
     # generate output to output file
@@ -55,6 +62,8 @@ for stdin in cases:
     stdout = process.stdout
 
     # add stdout to output file
+    if index:
+        print(file=outfile)
     print(stdout, file=outfile, end='')
 
 # add settings to output file

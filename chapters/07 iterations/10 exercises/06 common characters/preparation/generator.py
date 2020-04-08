@@ -30,7 +30,6 @@ def customEvaluate(expected_output, generated_output):
         sorted(generated_output[0]) == sorted(expected_output[0])
     )
 </DEFINITION>
-
 '''
 
 # generate test data
