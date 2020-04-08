@@ -5,5 +5,11 @@
       "en": "Letter grades"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "XaNQtpysHBQqY9_iWtEghDQiazPCk_-HeNhU-Wm3Q4Iaj6fvp_pkBx5REm6DpvBU",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }

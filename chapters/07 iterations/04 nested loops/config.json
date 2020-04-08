@@ -5,5 +5,11 @@
       "en": "Nested loops"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "bAn-NmUBBMTPTSraHGuhGqkvVaj6s9nGmjIUVziz-iKmAaf6knfRueSpVYSUiC5t",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
