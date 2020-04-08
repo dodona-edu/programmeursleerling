@@ -17,21 +17,23 @@ if not os.path.exists(solutiondir):
 
 # configuration settings
 settings = f'''
-tab name: Grades
+tab name: Tests
 python input without prompt: true
 block count: multi
-input block size: 1
-output block size: 1
+input block size: 10
+output block size: 3
 comparison: exact match
+<LANGUAGE code="nl">
+    <fixed from="largest" to="grootste" />
+    <fixed from="smallest" to="kleinste" />
+    <fixed from="triplicates" to="drievouden" />
+</LANGUAGE>
 '''
 
 # generate test data
-cases = list(range(60, 101))
-while len(cases) < 60:
-    grade = random.randrange(60)
-    if grade not in cases:
-        cases.append(grade)
-random.shuffle(cases)
+cases = [
+    tuple(random.randint(0, 1000) for _ in range(10)) for _ in range(50)
+]
 
 # configure test files
 infile = open(os.path.join(evaldir, '0.in'), 'w', encoding='utf-8')
@@ -41,7 +43,7 @@ outfile = open(os.path.join(evaldir, '0.out'), 'w', encoding='utf-8')
 for stdin in cases:
 
     # add input to input file
-    stdin = str(stdin)
+    stdin = '\n'.join(str(line) for line in stdin)
     print(stdin, file=infile)
 
     # generate output to output file
