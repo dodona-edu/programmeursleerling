@@ -26,6 +26,7 @@ comparison: exact match
 <LANGUAGE code="nl">
     <fixed from="The sentence contains" to="De zin bevat" />
     <fixed from="different vowel" to="verschillende klinker" />
+    <fixed from="no vowels" to="geen klinkers" />
     <fixed from="only 1" to="slechts 1" />
     <fixed from="Vowels" to="Klinkers" detect="false" />
 </LANGUAGE>
