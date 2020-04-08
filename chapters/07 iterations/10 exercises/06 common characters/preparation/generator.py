@@ -17,21 +17,26 @@ if not os.path.exists(solutiondir):
 
 # configuration settings
 settings = f'''
-tab name: Grades
+tab name: Tests
 python input without prompt: true
 block count: multi
-input block size: 1
+input block size: 2
 output block size: 1
 comparison: exact match
+<DEFINITION>
+def customEvaluate(expected_output, generated_output):
+    return (
+        len(generated_output) == 1 and
+        sorted(generated_output[0]) == sorted(expected_output[0])
+    )
+</DEFINITION>
+
 '''
 
 # generate test data
-cases = list(range(60, 101))
-while len(cases) < 60:
-    grade = random.randrange(60)
-    if grade not in cases:
-        cases.append(grade)
-random.shuffle(cases)
+cases = [
+    ('And now for something completely different.', 'Nobody expects the Spanish Inquisition!')
+]
 
 # configure test files
 infile = open(os.path.join(evaldir, '0.in'), 'w', encoding='utf-8')
@@ -41,7 +46,7 @@ outfile = open(os.path.join(evaldir, '0.out'), 'w', encoding='utf-8')
 for stdin in cases:
 
     # add input to input file
-    stdin = str(stdin)
+    stdin = '\n'.join(stdin)
     print(stdin, file=infile)
 
     # generate output to output file

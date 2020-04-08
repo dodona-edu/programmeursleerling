@@ -1,0 +1,17 @@
+nd osethicpy
+------------------------------------------------------------
+tab name: Tests
+python input without prompt: true
+block count: multi
+input block size: 2
+output block size: 1
+comparison: exact match
+<DEFINITION>
+def customEvaluate(expected_output, generated_output):
+    return (
+        len(generated_output) == 1 and
+        sorted(generated_output[0]) == sorted(expected_output[0])
+    )
+</DEFINITION>
+
+
