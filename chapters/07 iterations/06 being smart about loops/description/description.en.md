@@ -4,7 +4,7 @@ design, and, in general, the design of algorithms.
 ### When to use a loop
 
 If you roll five 6-sided dice, how big is the probability that you roll
-five sixes? The answer is $1/(6^5)$, but suppose that you did not know
+five sixes? The answer is $$1/(6^5)$$, but suppose that you did not know
 that, and wanted to use a simulation to estimate the probability. You
 can imitate the rolling of a die using `randint()`, and so you can
 imitate the rolling of five dice this way. You can check whether they

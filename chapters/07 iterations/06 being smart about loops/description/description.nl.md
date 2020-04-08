@@ -5,7 +5,7 @@ algemeen.
 ### Wanneer gebruik je een loop
 
 Als je vijf zes-zijdige dobbelstenen rolt, hoe groot is dan de
-waarschijnlijkheid dat je vijf zessen rolt? het antwoord is $1/(6^5)$,
+waarschijnlijkheid dat je vijf zessen rolt? het antwoord is $$1/(6^5)$$,
 maar stel dat je dat niet weet, en je wilt een simulatie gebruiken om de
 waarschijnlijkheid te schatten. Je kunt het rollen van een dobbelstenen
 imiteren via `randint()`, dus daarmee kun je ook het rollen van vijf
