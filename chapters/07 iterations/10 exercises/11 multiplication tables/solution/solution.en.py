@@ -10,7 +10,7 @@ for m in range(1, number + 1):
 print(row)
 
 # print row of hyphens
-print('-' * len(row))
+print('=' * len(row))
 
 # print other rows
 for n in range(1, number + 1):

@@ -10,7 +10,7 @@ for m in range(1, getal + 1):
 print(rij)
 
 # rij van streepjes uitschrijven
-print('-' * len(rij))
+print('=' * len(rij))
 
 # overige rijen uitschrijven
 for n in range(1, getal + 1):
