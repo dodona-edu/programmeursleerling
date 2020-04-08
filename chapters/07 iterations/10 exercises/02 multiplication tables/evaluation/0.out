@@ -548,7 +548,7 @@
 9 * 200 = 1800
 10 * 200 = 2000
 ------------------------------------------------------------
-tab name: Test
+tab name: Tests
 python input without prompt: true
 block count: multi
 input block size: 1
