@@ -88,8 +88,8 @@ input block size: 1
 output block size: ends with
 comparison: exact match
 <LANGUAGE code="nl">
-    <fixed from="bottles of beer" to="flesjes bier" />
-    <fixed from="bottle of beer" to="flesje bier" />
+    <fixed from="bottles of beer" to="flesjes met bier" />
+    <fixed from="bottle of beer" to="flesje met bier" />
     <fixed from="Take one down, pass it around" to="Open er een, drink hem meteen" />
 </LANGUAGE>
 
