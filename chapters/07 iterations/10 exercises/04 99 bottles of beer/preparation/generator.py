@@ -26,6 +26,7 @@ comparison: exact match
 <LANGUAGE code="nl">
     <fixed from="bottles of beer" to="flesjes met bier" />
     <fixed from="bottle of beer" to="flesje met bier" />
+    <fixed from="on the wall" to="op de muur" />
     <fixed from="Take one down, pass it around" to="Open er een, drink hem meteen" />
 </LANGUAGE>
 '''
