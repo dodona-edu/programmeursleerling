@@ -1,23 +1,45 @@
-xxx
+Een priemgetal is een positief geheel getal dat deelbaar is door precies twee
+verschillende getallen, namelijk 1 en het priemgetal zelf. Het laagste en enige
+even priemgetal is 2. De eerste 10 priemgetallen zijn 
+
+> 2, 3, 5, 7, 11, 13, 17, 19, 23, 29
 
 ### Input
 
-A numeric grade (percentage) expressed as a positive integer $$s \in [0, 100]$$.
+Een getal $$n \in \mathbb{N}_0$$.
 
-### Output
+### Uitvoer
 
-The letter grade corresponding to $$s$$.
+Een zin die aangeeft of $$n$$ een priemgetal is.
 
-### Example
+{:class="callout callout-info"}
+> #### Tip
+> Test in een loop alle mogelijke delers van het getal. In deze loop kun je concluderen dat een getal geen priemgetal is zodra je een deler (anders dan 1 of het getal zelf) hebt gevonden. Je kunt echter alleen na afloop van de loop constateren dat het getal een priemgetal is, want dan heb je pas alle mogelijke delers getest.
+
+### Voorbeeld
 
 #### Input:
 
 ```
-87
+11
 ```
 
-#### Output:
+#### Uitvoer:
 
 ```
-B
+11 is een priemgetal
+```
+
+### Voorbeeld
+
+#### Input:
+
+```
+12
+```
+
+#### Uitvoer:
+
+```
+11 is geen priemgetal
 ```

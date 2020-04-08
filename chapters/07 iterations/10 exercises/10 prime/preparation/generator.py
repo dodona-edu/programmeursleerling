@@ -17,20 +17,23 @@ if not os.path.exists(solutiondir):
 
 # configuration settings
 settings = f'''
-tab name: Grades
+tab name: Tests
 python input without prompt: true
 block count: multi
 input block size: 1
 output block size: 1
 comparison: exact match
+<LANGUAGE code="nl">
+    <fixed from="is not a prime" to="is geen priemgetal" />
+    <fixed from="is a prime" to="is een priemgetal" />
+</LANGUAGE>
 '''
 
 # generate test data
-cases = list(range(60, 101))
-while len(cases) < 60:
-    grade = random.randrange(60)
-    if grade not in cases:
-        cases.append(grade)
+maximum = 10000
+primes = [p for p in range(1, maximum + 1) if all(p % d for d in range(2, p))]
+noprimes = [p for p in range(1, maximum + 1) if any(not p % d for d in range(2, p))]
+cases = random.sample(primes, 25) + random.sample(noprimes, 25)
 random.shuffle(cases)
 
 # configure test files

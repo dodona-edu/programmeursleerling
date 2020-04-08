@@ -1,17 +1,13 @@
-# numerieke score inlezen
-numerieke_score = int(input())
+# getal inlezen
+getal = int(input())
 
-# letterscore bepalen
-if numerieke_score >= 90:
-    letterscore = 'A'
-elif numerieke_score >= 80:
-    letterscore = 'B'
-elif numerieke_score >= 70:
-    letterscore = 'C'
-elif numerieke_score >= 60:
-    letterscore = 'D'
-else:
-    letterscore = 'F'
+# bepalen of het getal een priemgetal is
+priem = True
+deler = 2
+while priem and deler < getal:
+    if not getal % deler:
+        priem = False
+    deler += 1
 
-# letterscore uitschrijven
-print(letterscore)
+# resultaat uitschrijven
+print(f'{getal} is {"" if priem else "g"}een priemgetal')

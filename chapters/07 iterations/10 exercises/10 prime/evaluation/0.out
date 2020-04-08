@@ -1,0 +1,62 @@
+3605 is not a prime
+6515 is not a prime
+1220 is not a prime
+8929 is a prime
+1711 is not a prime
+8999 is a prime
+9973 is a prime
+6257 is a prime
+8783 is a prime
+4927 is not a prime
+1292 is not a prime
+9363 is not a prime
+2953 is a prime
+4787 is a prime
+5763 is not a prime
+7039 is a prime
+4751 is a prime
+1093 is a prime
+4597 is a prime
+7537 is a prime
+1907 is a prime
+461 is a prime
+9724 is not a prime
+4286 is not a prime
+8350 is not a prime
+7487 is a prime
+2593 is a prime
+223 is a prime
+241 is a prime
+351 is not a prime
+451 is not a prime
+6287 is a prime
+1992 is not a prime
+4646 is not a prime
+5139 is not a prime
+9006 is not a prime
+7019 is a prime
+9817 is a prime
+4019 is a prime
+319 is not a prime
+7467 is not a prime
+5746 is not a prime
+7688 is not a prime
+8352 is not a prime
+2487 is not a prime
+2115 is not a prime
+4241 is a prime
+5437 is a prime
+4678 is not a prime
+5849 is a prime
+------------------------------------------------------------
+tab name: Tests
+python input without prompt: true
+block count: multi
+input block size: 1
+output block size: 1
+comparison: exact match
+<LANGUAGE code="nl">
+    <fixed from="is not a prime" to="is geen priemgetal" />
+    <fixed from="is a prime" to="is een priemgetal" />
+</LANGUAGE>
+
