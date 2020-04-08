@@ -1,0 +1,19 @@
+The sentence contains 4 different vowels.
+The sentence contains only 1 different vowel.
+The sentence contains no vowels.
+The sentence contains 3 different vowels.
+The sentence contains 5 different vowels.
+------------------------------------------------------------
+tab name: Vowels
+python input without prompt: true
+block count: multi
+input block size: 1
+output block size: 1
+comparison: exact match
+<LANGUAGE code="nl">
+    <fixed from="The sentence contains" to="De zin bevat" />
+    <fixed from="different vowel" to="verschillende klinker" />
+    <fixed from="only 1" to="slechts 1" />
+    <fixed from="Vowels" to="Klinkers" detect="false" />
+</LANGUAGE>
+

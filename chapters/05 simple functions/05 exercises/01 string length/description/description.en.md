@@ -2,7 +2,7 @@ Aks the user to enter a line of text and print the length of the text.
 
 ### Input
 
-A line of text.
+A single line of text.
 
 ### Output
 
