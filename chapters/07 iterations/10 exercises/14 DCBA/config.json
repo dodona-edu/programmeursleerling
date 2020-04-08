@@ -1,8 +1,8 @@
 {
   "description": {
     "names": {
-      "nl": "Letterscores",
-      "en": "Letter grades"
+      "nl": "DCBA = 4 × ABCD",
+      "en": "DCBA = 4 × ABCD"
     }
   },
   "labels": [
