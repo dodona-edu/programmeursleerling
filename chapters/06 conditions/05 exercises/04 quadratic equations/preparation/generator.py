@@ -41,10 +41,18 @@ cases = [
     (0, 0, 3),
 ]
 while len(cases) < 50:
-    a = random.randint(-10, 10)
-    while not a:
+    if random.random() < 0.2:
+        a = 0
+        if random.random() < 0.5:
+            b = 0
+        else:
+            b = random.randint(-10, 10)
+    else:
         a = random.randint(-10, 10)
-    b = random.randint(-10, 10)
+        if random.random() < 0.2:
+            b = 0
+        else:
+            b = random.randint(-10, 10)
     c = random.randint(-10, 10)
     parameters = (a, b, c)
     if parameters not in cases:
