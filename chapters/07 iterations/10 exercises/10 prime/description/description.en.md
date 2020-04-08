@@ -1,22 +1,22 @@
-Een priemgetal is een positief geheel getal dat deelbaar is door precies twee
-verschillende getallen, namelijk 1 en het priemgetal zelf. Het laagste en enige
-even priemgetal is 2. De eerste 10 priemgetallen zijn 
+A prime number is a positive integer that is divisible by exactly two different
+numbers, namely 1 and itself. The lowest (and only even) prime number is 2. The
+first 10 prime numbers are 
 
 > 2, 3, 5, 7, 11, 13, 17, 19, 23, 29
 
 ### Input
 
-Een getal $$n \in \mathbb{N}_0$$.
+An integer $$n \in \mathbb{N}_0$$.
 
-### Uitvoer
+### Output
 
-Een zin die aangeeft of $$n$$ een priemgetal is.
+A sentence that indicates if $$n$$ is a prime.
 
 {:class="callout callout-info"}
 > #### Tip
-> Test in een loop alle mogelijke delers van het getal. In deze loop kun je concluderen dat een getal geen priemgetal is zodra je een deler (anders dan 1 of het getal zelf) hebt gevonden. Je kunt echter alleen na afloop van de loop constateren dat het getal een priemgetal is, want dan heb je pas alle mogelijke delers getest.
+> In a loop where you test the possible dividers of the number, you can conclude that the number is not prime as soon as you encounter a number other than 1 or itself that divides it. However, you can only conclude that it actually is prime after you have tested all possible dividers.
 
-### Voorbeeld
+### Example
 
 #### Input:
 
@@ -24,13 +24,13 @@ Een zin die aangeeft of $$n$$ een priemgetal is.
 11
 ```
 
-#### Uitvoer:
+#### Output:
 
 ```
-11 is een priemgetal
+11 is a prime
 ```
 
-### Voorbeeld
+### Example
 
 #### Input:
 
@@ -38,8 +38,8 @@ Een zin die aangeeft of $$n$$ een priemgetal is.
 12
 ```
 
-#### Uitvoer:
+#### Output:
 
 ```
-11 is geen priemgetal
+11 is not a prime
 ```
