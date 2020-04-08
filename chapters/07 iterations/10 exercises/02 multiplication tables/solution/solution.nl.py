@@ -2,5 +2,7 @@
 factor = int(input())
 
 # tafel van vermenigvuldiging uitschrijven
-for getal in range(1, 11):
+getal = 1
+while getal <= 10:
     print(f'{getal} * {factor} = {getal * factor}')
+    getal += 1

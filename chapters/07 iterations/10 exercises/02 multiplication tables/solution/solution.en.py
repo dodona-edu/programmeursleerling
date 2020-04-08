@@ -2,5 +2,7 @@
 factor = int(input())
 
 # print multiplication table
-for number in range(1, 11):
+number = 1
+while number <= 10:
     print(f'{number} * {factor} = {number * factor}')
+    number += 1
