@@ -61,6 +61,6 @@ ignore fp rounding: -6
     <fixed from="There are 2 real-valued solutions" to="Er zijn 2 reële oplossingen" />
     <fixed from="There are no real-valued solutions" to="Er zijn geen reële oplossingen" />
     <fixed from=" and " to=" en " detect="false" />
-    <fixed from="Solutions" to="Oplossingen" detect="false" />
+    <fixed from="Solutions" to="Oplossingen" />
 </LANGUAGE>
 
