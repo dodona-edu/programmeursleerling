@@ -28,7 +28,7 @@ vierkant kleiner dan 1. Schrijf de waarde $$4m/n$$ uit.
 
 {:class="callout callout-info"}
 > #### Tip
-> De afstand van een punt $$(x, y)$$ tot de linkeronderhoek kun je berekenen als $$\sqrt(x^2 + y^2)$$. 
+> De afstand van een punt $$(x, y)$$ tot de linkeronderhoek kun je berekenen als $$\sqrt{x^2 + y^2}$$. 
 
 ### Voorbeeld
 
