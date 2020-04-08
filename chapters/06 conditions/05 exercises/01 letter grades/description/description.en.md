@@ -1,7 +1,7 @@
 Grading in the United States commonly takes on the form of five letter grades (`A`, `B`, `C`, `D` and `F`), with `A` being the highest and `F` being the lowest. Below is the grading system found to be most commonly used in United States public high schools for the conversion of numeric grades (percentages) to letter grades.
 
 | letter grade | percentage |
-|:------------:|:-----------|
+|:------------:|:----------:|
 | `A` | 90%-100% |
 | `B` | 80%-89% |
 | `C` | 70%-79% |
