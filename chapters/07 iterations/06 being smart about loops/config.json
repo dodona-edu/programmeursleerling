@@ -5,5 +5,11 @@
       "en": "Being smart about loops"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "7XHJ64gBtbUXQ-7KrfMmfQnzdpU_iCe2Hi4FKGuTMakMn2MIxKEwP7ZiIEusyhiu",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }

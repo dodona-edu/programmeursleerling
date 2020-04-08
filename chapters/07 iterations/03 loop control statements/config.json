@@ -5,5 +5,11 @@
       "en": "Loop control statements"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "cECZsgn8XX6p8ws3jk93DnYF6BvIr8MRHQcBdTEpHrpK6aJX5-28RpQgvCjccRu_",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }

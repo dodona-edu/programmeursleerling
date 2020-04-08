@@ -5,5 +5,11 @@
       "en": "The loop-and-a-half"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "vcfUJ5VjDZfKK2I682F62GriX3Jmu8x-hq444jfXVVYc-SXMXVTZxrpfAmenSItn",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }

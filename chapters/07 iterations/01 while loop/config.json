@@ -5,5 +5,11 @@
       "en": "While loop"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "tZdYP5N2gSgcH2ayxHn8uy2hfmEpVHS6VmEM3ah9rrkch8TH97s4bXGZTSjwqSfI",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
