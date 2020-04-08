@@ -1,0 +1,66 @@
+There are 2 real-valued solutions: -5.0 and 1.0
+There is 1 real-valued solution: 6.0
+There are no real-valued solutions
+Invalid equation
+There are no real-valued solutions
+There are 2 real-valued solutions: -0.4624752955742644 and 0.24025307335204216
+There are no real-valued solutions
+There are no real-valued solutions
+There are 2 real-valued solutions: 0.8539392014169456 and -1.0539392014169455
+There are 2 real-valued solutions: 0.6733200530681511 and -2.673320053068151
+There are 2 real-valued solutions: 0.8164965809277259 and -0.8164965809277259
+There are no real-valued solutions
+There are 2 real-valued solutions: -0.0 and -0.125
+There are 2 real-valued solutions: -0.9221443851123801 and 5.4221443851123805
+There are 2 real-valued solutions: 1.683189997589324 and -0.2546185690178954
+There are 2 real-valued solutions: -0.7533740707851005 and 1.8962312136422435
+There are 2 real-valued solutions: -0.8047378541243649 and 0.1380711874576983
+There are 2 real-valued solutions: -1.596291201783626 and 1.096291201783626
+There are 2 real-valued solutions: -0.18614066163450715 and 2.686140661634507
+There are no real-valued solutions
+There are 2 real-valued solutions: 0.7777777777777778 and -1.0
+There are 2 real-valued solutions: 0.855536096278095 and -0.730536096278095
+There are 2 real-valued solutions: 0.8968052532744766 and -2.23013858660781
+There are no real-valued solutions
+There are no real-valued solutions
+There are 2 real-valued solutions: -2.0 and -1.0
+There are no real-valued solutions
+There are 2 real-valued solutions: 1.2426406871192848 and -7.242640687119285
+There are no real-valued solutions
+There are 2 real-valued solutions: -3.0887604324451328 and 0.7554270991117994
+There are 2 real-valued solutions: 2.850781059358212 and -0.35078105935821213
+There are 2 real-valued solutions: -1.7071067811865475 and -0.2928932188134524
+There are no real-valued solutions
+There are 2 real-valued solutions: -0.6902380714238084 and 1.6902380714238083
+There are 2 real-valued solutions: -1.135041612651109 and 1.4683749459844424
+There are 2 real-valued solutions: -2.4270509831248424 and 0.9270509831248424
+There are no real-valued solutions
+There are no real-valued solutions
+There are 2 real-valued solutions: 1.75 and -0.0
+There are no real-valued solutions
+There are 2 real-valued solutions: -1.1213203435596424 and 3.1213203435596424
+There are 2 real-valued solutions: 4.561552812808831 and 0.4384471871911697
+There are 2 real-valued solutions: 4.449489742783178 and -0.4494897427831779
+There is 1 real-valued solution: -0.0
+There are 2 real-valued solutions: -0.0 and -2.0
+There are 2 real-valued solutions: 1.545951212649517 and -0.8316654983638028
+There are 2 real-valued solutions: 2.186140661634507 and -0.6861406616345072
+There are no real-valued solutions
+There are no real-valued solutions
+There are 2 real-valued solutions: -1.579795897113271 and 0.37979589711327116
+------------------------------------------------------------
+tab name: Solutions
+python input without prompt: true
+block count: multi
+input block size: 3
+output block size: 1
+ignore fp rounding: -6
+<LANGUAGE code="nl">
+    <fixed from="Invalid equation" to="Ongeldige vergelijking" />
+    <fixed from="There is 1 real-valued solution" to="Er is 1 reële oplossing" />
+    <fixed from="There are 2 real-valued solutions" to="Er zijn 2 reële oplossingen" />
+    <fixed from="There are no real-valued solutions" to="Er zijn geen reële oplossingen" />
+    <fixed from=" and " to=" en " detect="false" />
+    <fixed from="Solutions" to="Oplossingen" detect="false" />
+</LANGUAGE>
+
