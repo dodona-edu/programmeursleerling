@@ -8,7 +8,7 @@ Twee getallen $$m, n \in \mathbb{N}$$, waarbij $$m \leq n$$.
 
 Elke som van twee kwadraten ($$x^2 + y^2$$ waarvoor $$x \leq y$$) die een waarde oplevert die in het interval $$[m, n]$$ ligt. De uitvoer is een lijst van regels van de vorm 
 
-> `x ** 2 + y ** 2 = z`.
+> `x ** 2 + y ** 2 = z`
 
 {:class="callout callout-info"}
 > #### Opmerking

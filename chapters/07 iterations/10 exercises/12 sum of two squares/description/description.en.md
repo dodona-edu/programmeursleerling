@@ -8,7 +8,7 @@ Two integers $$m, n \in \mathbb{N}$$, where $$m \leq n$$.
 
 Each sum of squares ($$x^2 + y^2$$ where $$x \leq y$$) that results in a value from the interval $$[m, n]$$. The output is a list of line that are formatted as
 
-> `x ** 2 + y ** 2 = z`.
+> `x ** 2 + y ** 2 = z`
 
 {:class="callout callout-info"}
 > #### Note
