@@ -57,7 +57,7 @@ of multiple lines. Each line is said to be a "statement," and it
 consists of one command that Python executes (in the code above, a
 `print()` function on every line). Most programming languages make it
 mandatory to end each statement with a special character, usually a
-semi-colon ($;$). Python does not require a semi-colon after each
+semi-colon ($$;$$). Python does not require a semi-colon after each
 statement, but each statement must (in general) be on its own line. In
 principle, you are allowed to place multiple Python statements on one
 line, but then you should put semi-colons between the statements.
@@ -102,11 +102,11 @@ print( 5*2 - 3+4    / 2 )
 ```
 
 I have been in long discussions with people who keep arguing that the
-code above should result in $6.5$ or $1.5$, because *clearly* you have
-to calculate the $5*2$ and the $3+4$ before you do the subtraction and
+code above should result in $$6.5$$ or $$1.5$$, because *clearly* you have
+to calculate the $$5*2$$ and the $$3+4$$ before you do the subtraction and
 division. That is hogwash. It does not matter how close you place
 operands together, spaces are ignored. If you really want to calculate
-the $3+4$ first, you have to put it between parentheses. You can then
+the $$3+4$$ first, you have to put it between parentheses. You can then
 still use spaces to improve readability, but they mean nothing to
 Python.
 
@@ -128,8 +128,8 @@ program file and use that.
 Some of the operators given above can also be used for strings, though
 not all of them.
 
-In particular, you can use the addition operator ($+$) to concatenate
-two strings, and you can use the multiplication operator ($*$) with a
+In particular, you can use the addition operator ($$+$$) to concatenate
+two strings, and you can use the multiplication operator ($$*$$) with a
 number and a string to create a string that contains a repetition of the
 original string. Check it out:
 

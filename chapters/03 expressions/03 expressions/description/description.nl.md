@@ -60,7 +60,7 @@ regels. Iedere regel is één "statement," bestaande uit een commando dat
 Python uitvoert (in de code hierboven is dat voor iedere regel een
 `print()` commando). De meeste programmeertalen stellen het als een
 verplichting dat ieder statement eindigt met een speciaal teken,
-bijvoorbeeld een puntkomma ($;$). Python verlangt dat niet, maar dan
+bijvoorbeeld een puntkomma ($$;$$). Python verlangt dat niet, maar dan
 moet ieder statement ook op zijn eigen regel staan. In principe mag je
 meerdere Python statements op één regel zetten, maar dan moeten er
 puntkomma's tussen de statements staan. In de praktijk doen Python
@@ -106,11 +106,11 @@ print( 5*2 - 3+4    / 2 )
 ```
 
 Ik heb lange discussies moeten voeren met mensen die beweren dat de code
-hierboven als uitkomst $6.5$ of $1.5$ geeft, want het is toch
-*overduidelijk* dat je eerst $5*2$ en $3+4$ moet berekenen voordat je
+hierboven als uitkomst $$6.5$$ of $$1.5$$ geeft, want het is toch
+*overduidelijk* dat je eerst $$5*2$$ en $$3+4$$ moet berekenen voordat je
 toekomt aan die aftrekking en deling. Dat is kolder. Het maakt niet uit
 hoeveel spaties je rondom de operatoren zet: spaties worden genegeerd.
-Als je echt eerst $3+4$ wilt laten berekenen, moet je er haakjes omheen
+Als je echt eerst $$3+4$$ wilt laten berekenen, moet je er haakjes omheen
 zetten. Spaties kunnen leesbaarheid verhogen als je ze goed toepast,
 maar voor Python zijn ze betekenisloos.
 
@@ -132,8 +132,8 @@ echt een programmabestand te maken.
 Een aantal van de hierboven genoemde operatoren kunnen voor strings
 worden gebruikt, maar niet allemaal.
 
-Specifiek, je kunt de plus ($+$) gebruiken om twee strings aan elkaar te
-"plakken," en je kunt de ster ($*$) gebruiken met een string en een
+Specifiek, je kunt de plus ($$+$$) gebruiken om twee strings aan elkaar te
+"plakken," en je kunt de ster ($$*$$) gebruiken met een string en een
 integer om een string te maken die een herhaling van de originele string
 bevat. Zie hier:
 

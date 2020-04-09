@@ -1,7 +1,7 @@
 When you write an expression in the Python shell, and you run it, the
 result of the expression is shown below it. For instance, if you type
 the following command in the shell and press `Enter`, you see the result
-$12$.
+$$12$$.
 
 ```python
 5 + 7

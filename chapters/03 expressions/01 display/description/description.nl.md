@@ -1,7 +1,7 @@
 Als je een expressie schrijft in de Python shell, en hem uitvoert, wordt
 het resultaat van de expressie eronder getoond. Bijvoorbeeld, als je het
 volgende commando in de shell schrijft en op `Enter` drukt, zie je het
-resultaat $12$.
+resultaat $$12$$.
 
 ```python
 5 + 7
