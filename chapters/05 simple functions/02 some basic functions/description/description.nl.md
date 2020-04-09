@@ -267,8 +267,8 @@ meekrijgen, die in de geformatteerde string ingebracht kunnen worden op
 specifieke plaatsen.
 
 De plaatsen waar `format()` de parameter waardes in de string plaatst
-worden in de string aangegeven middels accolades ($\{$ en $\}$). Als je
-alleen $\{\}$ gebruikt om de parameters aan te duiden, worden ze van
+worden in de string aangegeven middels accolades ($$\{$$ en $$\}$$). Als je
+alleen $$\{\}$$ gebruikt om de parameters aan te duiden, worden ze van
 links naar rechts afgehandeld. Bijvoorbeeld:
 
 ```python

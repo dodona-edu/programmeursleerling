@@ -262,7 +262,7 @@ function without a value.
 If you wonder what you should return in circumstances that you do not
 have a good return value for: that depends on the application. For
 instance, for the `pythagoras()` function, you could decide that it will
-return $-1$ whenever it gets provided with arguments that it cannot
+return $$-1$$ whenever it gets provided with arguments that it cannot
 process. As long as you communicate that to the user of a function, the
 user can ensure that the main program handles such exceptional cases in
 the spirit of the program as a whole. For instance:

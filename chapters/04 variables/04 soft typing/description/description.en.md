@@ -36,7 +36,7 @@ print( type( a ) )
 
 Since variables have a type, the effect of operators might change
 depending on the types of the variables involved. For instance, in the
-following code, the addition operator ($+$) is used twice, but its
+following code, the addition operator ($$+$$) is used twice, but its
 effect changes due to the types of the variables involved.
 
 ```python

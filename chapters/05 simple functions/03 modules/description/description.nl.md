@@ -69,15 +69,15 @@ functies zijn meestal zeer efficiënt, en retourneren meestal een float.
 Ik noem hier een klein aantal van de functies; als je er meer wilt
 kennen kun je ze opzoeken in de Python referentie):
 
--   `exp()` krijgt één numerieke parameter en retourneert $e$ tot de
-    macht van die parameter. Als je niet weet wat $e$ is: $e$ is een
+-   `exp()` krijgt één numerieke parameter en retourneert $$e$$ tot de
+    macht van die parameter. Als je niet weet wat $$e$$ is: $$e$$ is een
     speciaal getal met veel interessante eigenschappen, en wordt veel
     gebruikt in natuurkunde, wiskunde, en statistiek.
 
 -   `log()` krijgt één numerieke parameter en retourneert het natuurlijk
     logaritme van die parameter. Het natuurlijk logaritme is de waarde
-    die de parameter als uitkomst heeft als je $e$ verheft tot deze
-    waarde. Net als $e$ heeft het natuurlijk logaritme toepassingen in
+    die de parameter als uitkomst heeft als je $$e$$ verheft tot deze
+    waarde. Net als $$e$$ heeft het natuurlijk logaritme toepassingen in
     natuurkunde, wiskunde, en statistiek.
 
 -   `log10()` krijgt één numerieke parameter en retourneert het
@@ -106,7 +106,7 @@ genereren. Maar voor alle toepassingen mag je ervan uitgaan dat deze
 module toevalsgetallen genereert.
 
 -   `random()` krijgt geen parameters, en retourneert een toevalsgetal
-    als een float binnen het bereik $[0,1)$, dat wil zeggen een bereik
+    als een float binnen het bereik $$[0,1)$$, dat wil zeggen een bereik
     tussen nul en 1, waarbij 0.0 wel meedoet maar 1.0 niet.
 
 -   `randint()` krijgt twee parameters, beide integers, waarbij de

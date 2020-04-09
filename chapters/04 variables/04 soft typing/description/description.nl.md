@@ -38,7 +38,7 @@ print( type( a ) )
 
 Omdat variabelen een type hebben, past het effect van operatoren die
 tussen variabelen staan zich aan aan de types van de variabelen.
-Bijvoorbeeld, in de code hieronder wordt de optelling ($+$) twee keer
+Bijvoorbeeld, in de code hieronder wordt de optelling ($$+$$) twee keer
 gebruikt, en het effect verandert naar gelang de variabele types.
 
 ```python
@@ -50,8 +50,8 @@ print( a + b )
 print( c + d )
 ```
 
-Omdat `a` en `b` beide getallen zijn, is de $+$ in `a + b` de numerieke
-optelling. Omdat `c` en `d` beide strings zijn, is de $+$ in `c + d` de
+Omdat `a` en `b` beide getallen zijn, is de $$+$$ in `a + b` de numerieke
+optelling. Omdat `c` en `d` beide strings zijn, is de $$+$$ in `c + d` de
 “concatenatie” (“vastplak”) operator.
 
 Wat gebeurt er in de code hierboven als je `a + c` probeert te printen?

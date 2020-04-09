@@ -264,7 +264,7 @@ It does not print 0, instead it prints "Blast off!"
 The factorial of a positive integer is that integer, multiplied by all
 positive integers that are lower (excluding zero). You write the
 factorial as the number with an exclamation mark after it. E.g., the
-factorial of 5 is $5! = 5 * 4 * 3 * 2 * 1 = 120$. Write some code that
+factorial of 5 is $$5! = 5 * 4 * 3 * 2 * 1 = 120$$. Write some code that
 calculates the factorial of a number. Do not test your program with
 numbers that are too high, as factorials grow exponentially (testing it
 up to 10! is more than enough). Hint: to do this with a `while` loop,

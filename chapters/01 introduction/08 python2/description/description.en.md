@@ -11,17 +11,17 @@ new to programming, this is a big plus, because there are less "weird"
 language elements they need to learn and understand if they choose
 Python 3 instead of Python 2.
 
-To give an example, when you calculate $7/4$ in Python 2, the answer is
-$1$, and not $1.75$ as you might expect. The reason is that both $7$ and
-$4$ are whole numbers ("integers"), and therefore the result of their
+To give an example, when you calculate $$7/4$$ in Python 2, the answer is
+$$1$$, and not $$1.75$$ as you might expect. The reason is that both $$7$$ and
+$$4$$ are whole numbers ("integers"), and therefore the result of their
 division is a whole number. If you want to make sure that the result is
-$1.75$, you must make at least one of the numbers involved a
-floating-point number. Therefore, $7.0/4$ gives the result $1.75$. This
+$$1.75$$, you must make at least one of the numbers involved a
+floating-point number. Therefore, $$7.0/4$$ gives the result $$1.75$$. This
 is how almost all computer languages do calculations. Naturally, for
 people who are not familiar with programming computers, this is
 counter-intuitive. Python 3 has resolved this issue, and automatically
 does the floating-point conversion when a floating-point result would be
-expected, i.e., in Python 3, $7/4$ gives the result $1.75$. Many Python
+expected, i.e., in Python 3, $$7/4$$ gives the result $$1.75$$. Many Python
 2 programs, however, are written with the assumption that
 integer-division rounds down, which means that, when you run them as
 Python 3 programs, they no longer give the desired results. Thus, Python

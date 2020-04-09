@@ -254,8 +254,8 @@ process of formatting, will insert these parameter values in particular
 places in the resulting string.
 
 The places where `format()` inserts the parameter values in the string
-are indicated in the string by opening and closing curly brackets ($\{$
-and $\}$). If you only use $\{\}$ to refer to the parameters, it will
+are indicated in the string by opening and closing curly brackets ($$\{$$
+and $$\}$$). If you only use $$\{\}$$ to refer to the parameters, it will
 process the string from left to right, and process the parameters from
 left to right, inserting them in the order that they are given. For
 example:

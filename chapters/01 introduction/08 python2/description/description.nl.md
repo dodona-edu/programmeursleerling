@@ -12,16 +12,16 @@ van Python 2 op te lossen. Voor studenten voor wie programmeren nieuw
 is, is dit een groot voordeel, omdat er minder "vreemde" taalelementen
 zijn die ze moeten leren als ze Python 3 verkiezen boven Python 2.
 
-Om een voorbeeld te geven, als je $7/4$ uitrekent in Python 2, krijg je
-als antwoord $1$, en niet $1.75$ wat je zou verwachten. De reden is dat
-zowel $7$ als $4$ gehele getallen zijn ("integers"), en daarom is de
-uitkomst van de deling ook een geheel getal. Als je $1.75$ als uitkomst
+Om een voorbeeld te geven, als je $$7/4$$ uitrekent in Python 2, krijg je
+als antwoord $$1$$, en niet $$1.75$$ wat je zou verwachten. De reden is dat
+zowel $$7$$ als $$4$$ gehele getallen zijn ("integers"), en daarom is de
+uitkomst van de deling ook een geheel getal. Als je $$1.75$$ als uitkomst
 wilt hebben, moet je ervoor zorgen dat minstens een van de twee getallen
-een gebroken getal is. $7.0/4$ geeft daarom als uitkomst $1.75$. Dit is
+een gebroken getal is. $$7.0/4$$ geeft daarom als uitkomst $$1.75$$. Dit is
 de manier waarop vrijwel alle computertalen omgaan met getallen. Voor
 studenten voor wie programmeren nieuw is, is dit contra-intuïtief.
 Python 3 heeft dit probleem opgelost, en doet de conversie naar gebroken
-getallen automatisch. Dus in Python 3 geeft $7/4$ de uitkomst $1.75$.
+getallen automatisch. Dus in Python 3 geeft $$7/4$$ de uitkomst $$1.75$$.
 Veel Python 2 programma's zijn echter geschreven onder de aanname dat
 een integer-deling naar beneden afrondt, wat betekent dat deze
 programma's niet meer correct functioneren als je ze uitvoert als Python

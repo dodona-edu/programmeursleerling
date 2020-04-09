@@ -14,7 +14,7 @@ When you start IDLE, you are in a so-called "Python shell" (see Figure
 <a href="#f:IDLE" data-reference-type="ref" data-reference="f:IDLE">3.1</a>)
 This is, as it were, an interactive Python program, in which you can
 type lines of Python code, which are run immediately. For instance, if
-you type `print(7/4)`, IDLE will show you the answer $1.75$. In general,
+you type `print(7/4)`, IDLE will show you the answer $$1.75$$. In general,
 this is not how you wish to create and run code, but you can use the
 shell to quickly test the effect of Python statements.
 

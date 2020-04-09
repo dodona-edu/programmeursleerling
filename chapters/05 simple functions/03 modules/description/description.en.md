@@ -64,15 +64,15 @@ general they return a float. I will introduce only a few of these
 functions here (if you want to learn more of them, look up the `math`
 module in the Python reference):
 
--   `exp()` gets one numerical parameter and returns $e$ to the power of
-    that parameter. If you do not remember $e$ from math class: $e$ is a
+-   `exp()` gets one numerical parameter and returns $$e$$ to the power of
+    that parameter. If you do not remember $$e$$ from math class: $$e$$ is a
     special value that has many interesting properties, which have
     applications in physics, maths, and statistics.
 
 -   `log()` gets one numerical parameter and returns the natural
     logarithm of that parameter. The natural logarithm is the value
     which, when e is raised to the power of that value, gives the
-    requested parameter. Just like $e$, the natural logarithm has many
+    requested parameter. Just like $$e$$, the natural logarithm has many
     applications in physics, maths, and statistics.
 
 -   `log10()` gets one numerical parameter and returns the base-10
@@ -101,7 +101,7 @@ However, for all intents and purposes you may assume that the functions
 in the `random` module cough up random values.
 
 -   `random()` gets no parameters, and returns a random float in the
-    range $[0,1)$, i.e., a range that includes 0.0, but excludes 1.0.
+    range $$[0,1)$$, i.e., a range that includes 0.0, but excludes 1.0.
 
 -   `randint()` gets two parameters, both integers, and the first should
     be smaller than or equal to the second. It returns a random integer

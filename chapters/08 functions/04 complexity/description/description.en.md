@@ -76,7 +76,7 @@ print( "sum of largest =", largest( num11, num12, num13 ) +
 
 {:class="callout callout-info"}
 > #### Note
-> In the code above, to reduce the size, I used a "multiple assignment" to give the variables `num`$xx$ their values. You can have multiple variables at the right of the assignment operator, and an equal number of values to the left, and the first value will then go to the first variable, the second value to the second variable, etcetera. I will discuss this in more depth in Chapter <a href="#ch:tuples" data-reference-type="ref" data-reference="ch:tuples">12</a>.
+> In the code above, to reduce the size, I used a "multiple assignment" to give the variables `num`$$xx$$ their values. You can have multiple variables at the right of the assignment operator, and an equal number of values to the left, and the first value will then go to the first variable, the second value to the second variable, etcetera. I will discuss this in more depth in Chapter <a href="#ch:tuples" data-reference-type="ref" data-reference="ch:tuples">12</a>.
 
 The program above readable, understandable, and can already be tested.
 True, the functions `smallest()`, `middle()`, and `largest()` do not

@@ -15,7 +15,7 @@ afbeelding
 Dit is, als het ware, een interactief Python programma, waarin je regels
 code kunt typen die onmiddellijk worden uitgevoerd als je op `Enter`
 drukt. Bijvoorbeeld, als je `print(7/4)` typt, geeft IDLE meteen als
-antwoord $1.75$. Dit is niet de manier waarop je wilt programmeren, maar
+antwoord $$1.75$$. Dit is niet de manier waarop je wilt programmeren, maar
 je kunt wel op deze wijze snel het effect testen van regels Python code.
 
 Om programma's met IDLE te creëren, kun je nieuwe Python bestanden
