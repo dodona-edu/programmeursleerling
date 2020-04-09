@@ -49,4 +49,4 @@ No input.
 
 ### Output
 
-The average age that a Triangle Crawler reaches, expresses as a single floating point number, rounded to two decimals.
+The average age that a Triangle Crawler reaches, expressed as a single floating point number, rounded to two decimals.
