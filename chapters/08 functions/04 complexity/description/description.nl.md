@@ -141,11 +141,11 @@ Dit programma werkt voor de kleinste getallen en de grootste getallen.
 Om het af te maken, moet nog iets bepaald worden voor de middelste. Wat
 is het middelste van drie getallen? Dat is het getal dat overblijft als
 je de kleinste en de grootste weghaalt. Kun je dit programmeren? Ik stel
-een functie `verwijder\_twee\_van\_drie()` voor, die eerst de kleinste,
+een functie `verwijder_twee_van_drie()` voor, die eerst de kleinste,
 en dan de grootste van de twee overgebleven getallen verwijdert (wat
 weer gelijk is aan de eerder bepaalde grootste). Om
-`verwijder\_twee\_van\_drie()` gemakkelijk te kunnen bouwen, maak ik ook
-`verwijder\_een\_van\_drie()` en `verwijder\_een\_van\_twee()`.
+`verwijder_twee_van_drie()` gemakkelijk te kunnen bouwen, maak ik ook
+`verwijder_een_van_drie()` en `verwijder_een_van_twee()`.
 
 ```python
 num11, num12, num13 = 436, 178, 992

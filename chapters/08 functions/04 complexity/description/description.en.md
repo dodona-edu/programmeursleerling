@@ -140,12 +140,12 @@ The program now works as far as smallest numbers and largest numbers are
 concerned. To complete the code, a solution must be found for the
 middle. What is the middle of three numbers? It is the number that
 remains if the smallest and largest are taken out. Can this be
-programmed? Here I propose a `remove\_two\_of\_three()` function. The
+programmed? Here I propose a `remove_two_of_three()` function. The
 function first removes the smallest from three numbers, then removes the
 largest of the remaining two, which is the same as the largest of the
 original three. So, for an easy implementation of
-`remove\_two\_of\_three()`, I also implement functions
-`remove\_one\_of\_three()` and `remove\_one\_of\_two()`.
+`remove_two_of_three()`, I also implement functions
+`remove_one_of_three()` and `remove_one_of_two()`.
 
 ```python
 num11, num12, num13 = 436, 178, 992
