@@ -1,4 +1,4 @@
-A, B, C, and D are all different digits. The number DCBA is equal to 4 times the number ABCD. What are the digits?
+A, B, C, and D are four different digits. The number DCBA is equal to 4 times the number ABCD. What are the digits?
 
 {:class="callout callout-info"}
 > #### Note

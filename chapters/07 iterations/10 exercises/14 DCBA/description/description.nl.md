@@ -1,4 +1,4 @@
-A, B, C, en D zijn alle verschillende cijfers. Het getal DCBA is gelijk aan 4 keer het getal ABCD. Wat zijn de cijfers?
+A, B, C, en D zijn vier verschillende cijfers. Het getal DCBA is gelijk aan 4 keer het getal ABCD. Wat zijn de cijfers?
 
 {:class="callout callout-info"}
 > #### Opmerking
