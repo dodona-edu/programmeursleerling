@@ -1,17 +1,12 @@
-# numerieke score inlezen
-numerieke_score = int(input())
+from random import randint
 
-# letterscore bepalen
-if numerieke_score >= 90:
-    letterscore = 'A'
-elif numerieke_score >= 80:
-    letterscore = 'B'
-elif numerieke_score >= 70:
-    letterscore = 'C'
-elif numerieke_score >= 60:
-    letterscore = 'D'
-else:
-    letterscore = 'F'
+NUMKRUIPERS = 100000
+leeftijd = NUMKRUIPERS # Ze leven minstens een dag
 
-# letterscore uitschrijven
-print(letterscore)
+for i in range( NUMKRUIPERS ):
+    if randint( 0, 2 ): # Sterf niet op dag 1
+        leeftijd += 1
+        while randint( 0, 1 ): # Sterf niet
+            leeftijd += 1
+
+print( "{:.2f}".format( leeftijd / NUMKRUIPERS ) )

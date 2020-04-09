@@ -25,27 +25,28 @@ naar de aap.
 De vraag is: wat is het kleinste aantal kokosnoten dat er op de
 originele stapel kan hebben gelegen?
 
-Schrijf een Python programma dat de puzzel oplost. Het is nog beter als
-je het kunt oplossen voor een willekeurig aantal piraten.
+### Opgave
+
+Los de puzzel op voor een willekeurig aantal piraten.
 
 ### Invoer
 
-Een numerieke score (percentage) voorgesteld als een natuurlijk getal $$s \in [0, 100]$$.
+Een getal $$n \in \mathbb{N}_0$$.
 
 ### Uitvoer
 
-De letterscore die correspondeert met $$s$$.
+De oplossing van de puzzel (een aantal kokosnoten) voor $$n$$ piraten.
 
 ### Voorbeeld
 
 #### Invoer:
 
 ```
-87
+5
 ```
 
 #### Uitvoer:
 
 ```
-B
+15621
 ```

@@ -1,17 +1,12 @@
-# read numeric grade
-numeric_grade = int(input())
+from random import randint
 
-# determine corresponding letter grade
-if numeric_grade >= 90:
-    letter_grade = 'A'
-elif numeric_grade >= 80:
-    letter_grade = 'B'
-elif numeric_grade >= 70:
-    letter_grade = 'C'
-elif numeric_grade >= 60:
-    letter_grade = 'D'
-else:
-    letter_grade = 'F'
+NUMCRAWLERS = 100000
+totalage = NUMCRAWLERS # They all live at least one day
 
-# print corresponding letter grade
-print(letter_grade)
+for i in range( NUMCRAWLERS ):
+    if randint( 0, 2 ): # Don't die on first day
+        totalage += 1
+        while randint( 0, 1 ): # Don't die on following day
+            totalage += 1
+
+print( "{:.2f}".format( totalage / NUMCRAWLERS ) )

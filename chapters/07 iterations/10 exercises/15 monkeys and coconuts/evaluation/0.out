@@ -1,0 +1,14 @@
+7
+79
+1021
+15621
+279931
+5764795
+------------------------------------------------------------
+tab name: Tests
+python input without prompt: true
+block count: multi
+input block size: 1
+output block size: 1
+comparison: exact match
+
