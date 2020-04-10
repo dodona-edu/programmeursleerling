@@ -5,5 +5,11 @@
       "en": "Recursive definitions"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "K2Kgde_XhD8wrbR6V9hYt4YcjztJ6PpkQR_AEfYTyXmTiJ49d95f3-2nNgDTPER3",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
