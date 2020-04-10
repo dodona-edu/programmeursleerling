@@ -1,7 +1,8 @@
 --------------------------------------------------------
 tab name: Hanoi
 <LANGUAGE code="nl">
-    <fixed from="Disk " to="Schijf " />
+    <fixed from="Disc " to="Schijf " />
     <fixed from=" from " to=" van " />
     <fixed from=" to " to=" naar " />
+    <fixed from="moves needed" to="stappen gedaan" />
 </LANGUAGE>

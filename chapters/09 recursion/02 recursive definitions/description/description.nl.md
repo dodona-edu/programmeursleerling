@@ -113,7 +113,7 @@ in afbeelding
 <a href="#f:maze" data-reference-type="ref" data-reference="f:maze">10.1</a>.
 De ingang is 1, de uitgang is 16.
 
-![doolhof](media/maze.png "doolhof"){:width="65%" data-caption="Het doolhof van `pcmaze`."}
+![doolhof](media/maze.png "doolhof"){:width="40%" data-caption="Het doolhof van `pcmaze`."}
 
 Hoe vind je nu je weg door zo'n doolhof (zonder dat je de layout kent)?
 Recursief kan dat als volgt: Je definieert een functie

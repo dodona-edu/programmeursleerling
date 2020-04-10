@@ -106,7 +106,7 @@ the exit (if there is such a way). The maze is visualized in Figure
 <a href="#f:maze" data-reference-type="ref" data-reference="f:maze">10.1</a>.
 Entrance is 1, exit is 16.
 
-![maze](media/maze.png "maze"){:width="65%" data-caption="The maze implemented in `pcmaze`."}
+![maze](media/maze.png "maze"){:width="40%" data-caption="The maze implemented in `pcmaze`."}
 
 So how do you find a way through such a maze (without knowing the exact
 layout)? Recursively, you can do it as follows: You define a function
