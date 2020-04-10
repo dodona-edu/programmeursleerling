@@ -1,5 +1,5 @@
 ---
-name: exercise issue
+name: Exercise issue
 about: Issues related to a specific exercise.
 title: exercise 0.1 "title"
 labels: exercise

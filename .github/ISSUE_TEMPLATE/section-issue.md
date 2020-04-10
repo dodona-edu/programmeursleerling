@@ -1,5 +1,5 @@
 ---
-name: section issue
+name: Section issue
 about: Issues related to a specific section.
 title: section 0.1 "title"
 labels: ''
