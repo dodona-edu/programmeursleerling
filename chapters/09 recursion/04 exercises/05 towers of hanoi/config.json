@@ -5,5 +5,11 @@
       "en": "Towers of Hanoi"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "C2CUtkftA5fNCxwkWBdgxMEUBZvYicr2_GaRI8qDGBD3CNsXsNEGEHwWKRyEwYMW",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
