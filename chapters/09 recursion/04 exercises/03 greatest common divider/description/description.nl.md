@@ -20,6 +20,6 @@ Schrijf een recursieve functie `ggd` waaraan twee getallen $$a, b \in \mathbb{N}
 ### Voorbeeld
 
 ```console?lang=python&prompt=>>>
->>> gcd(14, 21)
+>>> ggd(14, 21)
 7
 ```
