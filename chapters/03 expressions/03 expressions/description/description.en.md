@@ -17,7 +17,7 @@ Some straightforward operators are:
 | `//` | integer division |
 | `**` | power |
 | `%` | modulo |
-{:class="table table-striped table-condensed"}
+{:class="table table-striped table-condensed" style="width:auto;margin-left:auto;margin-right:auto;"}
 
 Here are some examples:
 

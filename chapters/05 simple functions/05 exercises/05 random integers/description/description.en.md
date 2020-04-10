@@ -2,4 +2,4 @@ Suppose you want to generate a random integer between 1 and 10 (limits included)
 
 ### Output
 
-A random integer between 1 and 10(limits included).
+A random integer between 1 and 10 (limits included).

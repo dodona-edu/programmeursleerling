@@ -3,7 +3,7 @@ Write a function `multiplication_table` that takes an integer $$n \in \mathbb{Z}
 ### Example
 
 ```console?lang=python&prompt=>>>
->>> tafel_van_vermenigvuldiging(12)
+>>> multiplication_table(12)
 1 * 12 = 12
 2 * 12 = 24
 3 * 12 = 36

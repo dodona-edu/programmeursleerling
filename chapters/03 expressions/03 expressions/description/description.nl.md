@@ -19,7 +19,7 @@ zijn:
 | `//` | integer deling |
 | `**` | machtsverheffing |
 | `%` | modulo |
-{:class="table table-striped table-condensed"}
+{:class="table table-striped table-condensed" style="width:auto;margin-left:auto;margin-right:auto;"}
 
 Hier volgen een paar voorbeelden:
 
