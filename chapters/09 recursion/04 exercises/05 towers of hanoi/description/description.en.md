@@ -9,9 +9,11 @@ the bottom. You now have to move all the discs from pole A to pole C,
 whereby you have to follow these four rules:
  
 1. you can only move one disc at a time;
+
 2. you can only move discs between the poles;
-3. you
-can only move a disc from a pole if it is on top, and can only move it to the top of another pole;
+
+3. you can only move a disc from a pole if it is on top, and can only move it to the top of another pole;
+
 4. you can never place a disc on top of a disc that is smaller.
 
 ### Assignment

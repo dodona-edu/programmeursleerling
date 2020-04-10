@@ -10,8 +10,11 @@ schijven verplaatsen van paal A naar paal C, waarbij je vier regels in
 acht moet nemen:
  
 1. je mag mag maar één schijf per keer verplaatsen;
+
 2. je mag alleen maar schijven verplaatsen tussen de palen;
+
 3. je mag alleen een schijf verplaatsen die bovenop een stapel ligt, en je kunt hem alleen verplaatsen naar de top van een andere stapel;
+
 4. je mag nooit een schijf plaatsen op een schijf die kleiner is.
 
 ### Opgave
