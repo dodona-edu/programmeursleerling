@@ -9,6 +9,6 @@ python input without prompt: true
 block count: one
 comparison: exact match
 <LANGUAGE code="nl">
-    <fixed from="Invalid answer!:" to="Ongeldig antwoord!" />
+    <fixed from="Invalid answer!" to="Ongeldig antwoord!" />
     <fixed from="The user entered:" to="Je gaf in:" />
 </LANGUAGE>
