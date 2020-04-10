@@ -589,3 +589,8 @@ chapters I often will not do that as I discuss the functions in text
 anyway, or I want you to study the contents of the function. However, I
 always write comments for functions that I write in code that I use for
 other purposes.
+
+[^5]: A little anecdote on the side here: I once heard someone extol the
+    intellect of a certain programmer by saying "when I see his code, I
+    don't understand any of it!" When someone would say that about my
+    code, I would feel deeply ashamed.

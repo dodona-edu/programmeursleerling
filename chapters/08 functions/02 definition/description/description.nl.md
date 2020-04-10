@@ -616,3 +616,13 @@ tekst bediscussieer, of omdat ik vind dat je de inhoud van een functie
 moet bestuderen. Maar ik schrijf wel altijd commentaar bij functies die
 ik voor andere doeleinden gebruik.
 
+[^9]: "Get" is uiteraard de Engelse term voor "nemen." Je mag hier in
+    het Nederlands dan ook het woord "neem" voor gebruiken in plaats van
+    "get."
+
+[^10]: Een kleine anecdote wat dit betreft: tijdens mijn dagen als
+    professioneel programmeur hoorde ik een collega eens een andere
+    collega ophemelen door te zeggen: "Hij is zo briljant, als ik zijn
+    code zie snap ik er niks van!" Als iemand dat over mijn code zou
+    zeggen zou ik me diep schamen.
+

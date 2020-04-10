@@ -197,3 +197,12 @@ je een oplossing maken met behulp van string type casting:
 ```python
 print( "Ik heb " + str( 15 ) + " appels." )
 ```
+
+[^3]: In het Engels wordt de volgorde PEMDAS genoemd, en eigenlijk geeft
+    die beter aan wat daadwerkelijk de volgorde is: haakjes
+    (parentheses), exponenten, multiplicatie en divisie (deling),
+    additie (optelling) en subtractie (aftrekking). Feitelijk is de
+    Nederlandse volgorde incorrect, omdat worteltrekken na delen wordt
+    geplaatst, terwijl wiskundig gezien worteltrekken een vorm van
+    machtsverheffen is, en dus voor vermenigvuldigen komt.
+

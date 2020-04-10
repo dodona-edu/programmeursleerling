@@ -345,3 +345,21 @@ else:
 ```
 
 I assume you agree that the version with the `elif`s looks better.
+
+[^1]: In many programming languages (actually, in almost all programming
+    languages), code blocks are recognized by having them start and end
+    with a specific symbol or keyword. For instance, in languages such
+    as Java and C++, code blocks are enclosed by curly brackets, while
+    in languages such as Pascal and Modula, code blocks are started with
+    the keyword `begin` and ended with the keyword `end`. That means
+    that in almost all languages, indenting to recognize code blocks is
+    not necessary. However, you will find that code written by capable
+    programmers is always nicely indented, regardless of the language.
+    This makes it easy to see which code belongs together, for instance,
+    which commands belong to an `if` statement. Python makes indenting a
+    requirement. While for experienced programmers who are new to Python
+    this seems strange at first, they quickly find that they do not care
+    – they were indenting nicely anyway, and Python's strategy makes
+    that beginning programmers are also required to write nice-looking
+    code.
+

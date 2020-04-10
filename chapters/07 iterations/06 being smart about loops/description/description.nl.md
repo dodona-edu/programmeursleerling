@@ -234,3 +234,7 @@ print( woordtotaal / boektotaal )
 Zoals je ziet heb ik een drievoudig-geneste loop ontworpen, werkend van
 binnen naar buiten. Dit is een goede aanpak als je met geneste loops aan
 de slag moet.
+
+[^8]: pseudo-code is geen echte code, maar het leest als code, en zou
+    als zodanig gemakkelijk te implementeren moeten zijn in
+    verschillende programmeertalen.

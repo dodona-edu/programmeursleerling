@@ -176,3 +176,9 @@ down to zero. Instead of zero, print "Blast off!" Use a `for` loop.
 
 I am not going to ask you to build a `for` loop that asks the user to
 enter numbers until the user enters zero. Why not?
+
+[^2]: Unfortunately, I will have to revise this statement in Chapter
+    <a href="#ch:iteratorsandgenerators" data-reference-type="ref" data-reference="ch:iteratorsandgenerators">24</a>,
+    but it requires knowledge of pretty advanced Python to create an
+    endless `for` loop – for now, and in general practice, you may
+    assume that `for` loops are guaranteed to end.

@@ -353,3 +353,22 @@ Ik neem aan dat je het ermee eens bent dat de versie met `elif`s
 prettiger leest.
 
 ![geneste conditie](media/Chart3nl.png "geneste conditie"){:width="80%" data-caption="Stroomdiagram dat een geneste conditie weergeeft."}
+
+[^5]: In veel programmeertalen (of eigenlijk in vrijwel alle
+    programmeertalen) worden blokken code door de compiler/interpreter
+    herkend doordat ze beginnen en eindigen met een speciaal symbool of
+    gereserveerd woord. Bijvoorbeeld, in talen als Java en C++ worden
+    blokken code omsloten door accolades, terwijl in talen als Pascal en
+    Modula ze beginnen met het woord `begin` en eindigen met het woord
+    `end`. Dat betekent dat in vrijwel alle talen correcte inspringing
+    niet nodig is. Je ziet toch dat goede programmeurs correct
+    inspringen, ongeacht de taal die ze gebruiken. Dat maakt het
+    namelijk gemakkelijk te zien welke delen van de code bij elkaar
+    horen, bijvoorbeeld, wat er hoort bij een `if` statement. Bij Python
+    is het inspringen een verplichting. Voor ervaren programmeurs die
+    voor het eerst Python leren komt dat wat vreemd over, maar ze
+    beseffen al snel dat het ze niks uitmaakt – ze lieten hun code toch
+    al netjes inspringen. Python maakt het echter ook voor beginnende
+    programmeurs een noodzakelijkheid om netjes in te springen, wat
+    betekent dat ze gedwongen zijn om nette code te schrijven. En dat is
+    alleen maar nuttig voor iedereen.

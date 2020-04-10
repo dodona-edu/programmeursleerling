@@ -62,3 +62,9 @@ meeste mensen aan gewend zijn.
 Door te leren programmeren in Python, beginnend met kleine programma's
 die groeien in complexiteit, breng je jezelf langzaamaan ook de
 denkprocessen bij die een programmeur van nature beheerst.
+
+[^1]: De syntax zijn de regels die beschrijven wat correct-gevormde
+    zinnen in een taal zijn.
+
+[^2]: De semantiek beschrijft de manier waarop syntactisch
+    correct-gevormde zinnen geïnterpreteerd moeten worden.

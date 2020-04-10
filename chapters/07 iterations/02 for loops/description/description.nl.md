@@ -186,3 +186,10 @@ dan "Start!" print. Doe dat nu met een `for` loop.
 
 Ik ga geen oefening geven waarin je met een `for` loop de gebruiker
 vraagt om getallen totdat de gebruiker nul ingeeft. Waarom niet?
+
+[^6]: Helaas zal ik deze uitspraak moeten aanpassen in hoofdstuk
+    <a href="#ch:iteratorsandgenerators" data-reference-type="ref" data-reference="ch:iteratorsandgenerators">24</a>,
+    maar je hebt erg geavanceerde kennis van Python nodig om een
+    eindeloze `for` loop te maken – je mag er op dit moment van uitgaan
+    (en in de praktijk zal dit ook altijd zo zijn) dat `for` loops
+    gegarandeerd eindigen.

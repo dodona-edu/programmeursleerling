@@ -231,3 +231,7 @@ print( wordcount / bookcount )
 As you can see, I built a triple-nested loop, working from the inner
 loop outward. To learn how to deal with nested loops, this is usually
 the best approach.
+
+[^4]: Pseudocode isn't real code, but it looks like code that more or
+    less explains how an algorithm works. As such, it should be easy to
+    implement it in various programming languages.
