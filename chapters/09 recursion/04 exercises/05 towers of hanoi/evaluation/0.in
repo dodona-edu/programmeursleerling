@@ -1,0 +1,138 @@
+>>> hanoi(1) # doctest: +STDOUT
+Disc 1 from A to C
+1 moves needed
+
+>>> hanoi(2) # doctest: +STDOUT
+Disc 1 from A to B
+Disc 2 from A to C
+Disc 1 from B to C
+3 moves needed
+
+>>> hanoi(3) # doctest: +STDOUT
+Disc 1 from A to C
+Disc 2 from A to B
+Disc 1 from C to B
+Disc 3 from A to C
+Disc 1 from B to A
+Disc 2 from B to C
+Disc 1 from A to C
+7 moves needed
+
+>>> hanoi(4) # doctest: +STDOUT
+Disc 1 from A to B
+Disc 2 from A to C
+Disc 1 from B to C
+Disc 3 from A to B
+Disc 1 from C to A
+Disc 2 from C to B
+Disc 1 from A to B
+Disc 4 from A to C
+Disc 1 from B to C
+Disc 2 from B to A
+Disc 1 from C to A
+Disc 3 from B to C
+Disc 1 from A to B
+Disc 2 from A to C
+Disc 1 from B to C
+15 moves needed
+
+>>> hanoi(5) # doctest: +STDOUT
+Disc 1 from A to C
+Disc 2 from A to B
+Disc 1 from C to B
+Disc 3 from A to C
+Disc 1 from B to A
+Disc 2 from B to C
+Disc 1 from A to C
+Disc 4 from A to B
+Disc 1 from C to B
+Disc 2 from C to A
+Disc 1 from B to A
+Disc 3 from C to B
+Disc 1 from A to C
+Disc 2 from A to B
+Disc 1 from C to B
+Disc 5 from A to C
+Disc 1 from B to A
+Disc 2 from B to C
+Disc 1 from A to C
+Disc 3 from B to A
+Disc 1 from C to B
+Disc 2 from C to A
+Disc 1 from B to A
+Disc 4 from B to C
+Disc 1 from A to C
+Disc 2 from A to B
+Disc 1 from C to B
+Disc 3 from A to C
+Disc 1 from B to A
+Disc 2 from B to C
+Disc 1 from A to C
+31 moves needed
+
+>>> hanoi(6) # doctest: +STDOUT
+Disc 1 from A to B
+Disc 2 from A to C
+Disc 1 from B to C
+Disc 3 from A to B
+Disc 1 from C to A
+Disc 2 from C to B
+Disc 1 from A to B
+Disc 4 from A to C
+Disc 1 from B to C
+Disc 2 from B to A
+Disc 1 from C to A
+Disc 3 from B to C
+Disc 1 from A to B
+Disc 2 from A to C
+Disc 1 from B to C
+Disc 5 from A to B
+Disc 1 from C to A
+Disc 2 from C to B
+Disc 1 from A to B
+Disc 3 from C to A
+Disc 1 from B to C
+Disc 2 from B to A
+Disc 1 from C to A
+Disc 4 from C to B
+Disc 1 from A to B
+Disc 2 from A to C
+Disc 1 from B to C
+Disc 3 from A to B
+Disc 1 from C to A
+Disc 2 from C to B
+Disc 1 from A to B
+Disc 6 from A to C
+Disc 1 from B to C
+Disc 2 from B to A
+Disc 1 from C to A
+Disc 3 from B to C
+Disc 1 from A to B
+Disc 2 from A to C
+Disc 1 from B to C
+Disc 4 from B to A
+Disc 1 from C to A
+Disc 2 from C to B
+Disc 1 from A to B
+Disc 3 from C to A
+Disc 1 from B to C
+Disc 2 from B to A
+Disc 1 from C to A
+Disc 5 from B to C
+Disc 1 from A to B
+Disc 2 from A to C
+Disc 1 from B to C
+Disc 3 from A to B
+Disc 1 from C to A
+Disc 2 from C to B
+Disc 1 from A to B
+Disc 4 from A to C
+Disc 1 from B to C
+Disc 2 from B to A
+Disc 1 from C to A
+Disc 3 from B to C
+Disc 1 from A to B
+Disc 2 from A to C
+Disc 1 from B to C
+63 moves needed
+

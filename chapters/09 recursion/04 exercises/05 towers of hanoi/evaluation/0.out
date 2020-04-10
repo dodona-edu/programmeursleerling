@@ -1,0 +1,7 @@
+--------------------------------------------------------
+tab name: Hanoi
+<LANGUAGE code="nl">
+    <fixed from="Disk " to="Schijf " />
+    <fixed from=" from " to=" van " />
+    <fixed from=" to " to=" naar " />
+</LANGUAGE>

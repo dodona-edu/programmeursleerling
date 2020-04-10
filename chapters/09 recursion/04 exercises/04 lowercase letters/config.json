@@ -1,0 +1,12 @@
+{
+  "description": {
+    "names": {
+      "nl": "Kleine letters",
+      "en": "Lowercase letters"
+    }
+  },
+  "labels": [],
+  "evaluation": {
+    "pythia_judge": "output"
+  }
+}
