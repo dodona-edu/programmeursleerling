@@ -7,7 +7,7 @@ The United States dollar (USD) is the official currency of the United States and
 | dime | 10 | [Franklin Delano Roosevelt](https://en.wikipedia.org/wiki/Franklin_D._Roosevelt){:target="_blank"} | olive branch, torch, oak branch |
 | quarter | 25 | [George Washington](https://en.wikipedia.org/wiki/George_Washington){:target="_blank"} | eagle |
 | dollar | 100 | [Sacagawea](https://en.wikipedia.org/wiki/Sacagawea){:target="_blank"} with her child | Bald eagle in flight |
-{:class="table table-striped table-condensed"}
+{:class="table table-striped table-condensed" style="width:auto;margin-left:auto;margin-right:auto;"}
 
 ### Assignment
 

@@ -57,7 +57,7 @@ operators are:
 |        `>=` |  equal to or greater than |
 |        `>`  |  greater than |
 |        `!=` |  not equal |
-{:class="table table-striped table-condensed"}
+{:class="table table-striped table-condensed" style="width:auto;margin-left:auto;margin-right:auto;"}
 
 A common mistake is to use a single $$=$$ as a comparison operator, as the
 single $$=$$ is the assignment operator. In general, Python will produce a

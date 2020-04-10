@@ -8,7 +8,7 @@ In de Verenigde Staten worden schoolcijfers vaak uitgedrukt op een vijflettersch
 | `C` | 70%-79% |
 | `D` | 60%-69% |
 | `F` | < 60% |
-{:class="table table-striped table-condensed"}
+{:class="table table-striped table-condensed" style="width:auto;margin-left:auto;margin-right:auto;"}
 
 ### Invoer
 

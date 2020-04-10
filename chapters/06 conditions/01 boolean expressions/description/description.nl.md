@@ -61,7 +61,7 @@ ertussen. Vergelijkingsoperatoren zijn:
 |        `>=` |  groter dan of gelijk aan |
 |        `>`  |  groter dan |
 |        `!=` |  niet gelijk aan |
-{:class="table table-striped table-condensed"}
+{:class="table table-striped table-condensed" style="width:auto;margin-left:auto;margin-right:auto;"}
 
 Een veelgemaakte fout is om twee waardes te vergelijken met een enkele
 $$=$$. De enkele $$=$$ is de assignment operator. Meestal (maar niet altijd)

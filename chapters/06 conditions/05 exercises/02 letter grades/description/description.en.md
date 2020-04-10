@@ -8,7 +8,7 @@ Grading in the United States commonly takes on the form of five letter grades (`
 | `C` | 70%-79% |
 | `D` | 60%-69% |
 | `F` | < 60% |
-{:class="table table-striped table-condensed"}
+{:class="table table-striped table-condensed" style="width:auto;margin-left:auto;margin-right:auto;"}
 
 ### Input
 
