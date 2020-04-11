@@ -1,22 +1,27 @@
-0
-1
-2
-3
-4
-5
--1
--2
--3
--4
--5
--6
-spam
+100 / 100 = 1.0
+100 / 101 = 0.9900990099009901
+Error: it looks like the list contains a zero
+Error: it looks like there is a non-numeric item
+100 / 104 = 0.9615384615384616
+Error: you should specify an index between -5 and 4
+100 / 104 = 0.9615384615384616
+Error: it looks like there is a non-numeric item
+Error: it looks like the list contains a zero
+100 / 101 = 0.9900990099009901
+100 / 100 = 1.0
+Error: you should specify an index between -5 and 4
+Error: you did not enter an integer
 ----------------------------------------
 tab name: Tests
 python input without prompt: true
 block count: multi
 input block size: 1
 output block size: 1
+ignore fp rounding: -6
 <LANGUAGE code="nl">
     <fixed from="Error:" to="Fout:" />
+    <fixed from="it looks like the list contains a zero" to="xxx" detect="false" />
+    <fixed from="it looks like there is a non-numeric item" to="xxx" detect="false" />
+    <regex from="you should specify an index between (-?[1-9][0-9]*) and (-?[1-9][0-9]*)" to="de index moet tussen \\1 en \\2 liggen" detect="false" />
+    <fixed from="you did not enter an integer" to="je gaf geen geheel getal" detect="false" />
 </LANGUAGE>
