@@ -5,5 +5,11 @@
       "en": "What you already know about strings"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "nVw9SPnj_jKPbQuZ2QqkmuqmWEthiP7ZDwntBRA-NZ3HQt4DMIJZ23PZfam5z-UW",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }

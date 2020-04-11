@@ -5,5 +5,11 @@
       "en": "Strings are immutable"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "dfzXsd8xvxmJ5-nCF5Vq-jIQCEN2gk9MSYgCcuMmNF8EUxZvBh3fS5b7ZhZZDKAs",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }

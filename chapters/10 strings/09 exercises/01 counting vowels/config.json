@@ -5,5 +5,11 @@
       "en": "Counting vowels"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "xfN6Y7C4AFVAm2WksZXYMD3ad4UHJfVW3Ez6kp9sccn25PgbXuDM52WWaIGdMpTQ",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }

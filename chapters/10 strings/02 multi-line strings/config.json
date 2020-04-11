@@ -5,5 +5,11 @@
       "en": "Multi-line strings"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "b-wcMC26-SdGq362-7YKe_s3b3QiYKhCeuKR3Zyej2tcCaZ5QbQ7BNbTyq3uJ-du",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
