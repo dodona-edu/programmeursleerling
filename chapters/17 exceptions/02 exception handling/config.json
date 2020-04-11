@@ -5,5 +5,11 @@
       "en": "Exception handling"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "XHyUDhet8FzqSunEHdGpDr7eCzphD8QMHxM_XRv-vveyiECrRvFubi-RqzTuxi-a",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
