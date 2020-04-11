@@ -1,0 +1,9 @@
+{
+  "description": {
+    "names": {
+      "nl": "Tuples zijn onveranderbaar",
+      "en": "Tuples are immutable"
+    }
+  },
+  "labels": []
+}
