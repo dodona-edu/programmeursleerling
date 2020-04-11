@@ -1,8 +1,8 @@
 {
   "description": {
     "names": {
-      "nl": "Klinkers tellen",
-      "en": "Counting vowels"
+      "nl": "Woorden tellen",
+      "en": "Counting words"
     }
   },
   "labels": []

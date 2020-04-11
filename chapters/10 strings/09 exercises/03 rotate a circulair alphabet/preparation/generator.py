@@ -17,7 +17,7 @@ if not os.path.exists(solutiondir):
 
 # configuration settings
 settings = f'''
-tab name: ROT
+tab name: Tests
 python input without prompt: true
 block count: multi
 input block size: 1

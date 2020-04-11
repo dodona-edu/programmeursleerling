@@ -15,9 +15,9 @@ om een "echte" backslash in de string op te nemen.
 Naast deze zijn er nog diverse andere speciale tekens. De meeste zijn
 behoorlijk archaïsch en worden niet meer gebruikt op moderne computers,
 dus die kun je negeren. De twee die ik nog wil noemen zijn `"\t"` die
-een tabulatie (inspringing) in de string representeert, en `"\x`$nn$`"`
-waarbij $nn$ staat voor twee hexadecimale cijfers, die het hexadecimale
-getal $nn$ representeren. Bijvoorbeeld, `"\x20"` is het teken dat
+een tabulatie (inspringing) in de string representeert, en `"\x`$$nn$$`"`
+waarbij $$nn$$ staat voor twee hexadecimale cijfers, die het hexadecimale
+getal $$nn$$ representeren. Bijvoorbeeld, `"\x20"` is het teken dat
 gerepresenteerd wordt door het hexadecimale getal 20, dat hetzelfde is
 als het decimale getal 32, wat een spatie is (dit leg ik later in dit
 hoofdstuk verder uit).
@@ -29,10 +29,10 @@ hexadecimale cijfers naar decimale getallen stelt dat A gelijk is aan
 10, B aan 11, etcetera. In decimale getallen wordt de waarde van een
 getal dat uit meerdere cijfers bestaat berekend door de cijfers te
 vermenigvuldigen met oplopende machten van 10, van rechts naar links;
-bijvoorbeeld, het getal $1426$ is $6 + 2*10 + 4*100 + 1*1000$. Voor
+bijvoorbeeld, het getal $$1426$$ is $$6 + 2*10 + 4*100 + 1*1000$$. Voor
 hexadecimale getallen doe je hetzelfde, maar vermenigvuldig je de
 cijfers met oplopende machten van 16; bijvoorbeeld, het hexadecimale
-getal $4AF2$ is $2 + 15*16 + 10*256 + 4*4096$. Programmeurs gebruiken
+getal $$4AF2$$ is $$2 + 15*16 + 10*256 + 4*4096$$. Programmeurs gebruiken
 graag hexadecimale getallen, omdat computers als kleinste rekeneenheid
 de "byte" gebruiken, en een byte kan 256 verschillende waardes bevatten;
 met andere woorden, een byte kan iedere waarde bevatten die je kunt

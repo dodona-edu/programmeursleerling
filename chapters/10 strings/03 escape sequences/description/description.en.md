@@ -13,9 +13,9 @@ use `"\\"` to insert a "real" backslash in a string.
 Besides these, there are a few more escape sequences which lead to a
 special character. Most of these are archaic and you do not need to
 worry about them. The two I want to mention are `"\t"` which represents
-a single tabulation, and `"\x`$nn$`"` whereby $nn$ stands for two
+a single tabulation, and `"\x`$$nn$$`"` whereby $$nn$$ stands for two
 hexadecimal digits, which represents the character with hexadecimal
-number $nn$. For example, `"\x20"` is the character expressed by the
+number $$nn$$. For example, `"\x20"` is the character expressed by the
 hexadecimal number 20, which is the same as the decimal number 32, which
 is the space (this will be explained later in this chapter).
 
@@ -24,10 +24,10 @@ numbering scheme that uses 16 different digits, namely 0 to 9, and A to
 F. A direct translation from hexadecimals to decimals turns A into 10, B
 into 11, etcetera. In decimal counting, the value of a multi-digit
 number is found by multiplying the digits by increasing powers of 10,
-from right to left, e.g., the number $1426$ is
-$6 + 2*10 + 4*100 + 1*1000$. For hexadecimal numbers you do the same
-thing, but multiply by powers of 16, e.g., the hexadecimal number $4AF2$
-is $2 + 15*16 + 10*256 + 4*4096$. Programmers tend to like hexadecimal
+from right to left, e.g., the number $$1426$$ is
+$$6 + 2*10 + 4*100 + 1*1000$$. For hexadecimal numbers you do the same
+thing, but multiply by powers of 16, e.g., the hexadecimal number $$4AF2$$
+is $$2 + 15*16 + 10*256 + 4*4096$$. Programmers tend to like hexadecimal
 numbers, as computers work with bytes as the smallest unit of memory
 storage, and a byte can store 256 different values, i.e., any byte value
 can be expressed by a hexadecimal number of two digits.
