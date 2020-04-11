@@ -5,5 +5,11 @@
       "en": "Lists and operators"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "Tv2ZKAa8e4iMsqvF4Q6XcHQMmXZuBHpzZ5wpq_D_U4WRJzUVr2qTJMhFyxKz5fiH",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
