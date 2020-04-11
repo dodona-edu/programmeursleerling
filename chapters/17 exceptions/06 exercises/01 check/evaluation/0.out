@@ -51,7 +51,7 @@ def customEvaluate(expected_output, generated_output):
 
     # check prefix and suffix of regular generated output
     return (
-        gen[1] != exp[1] and                         # same prefix
+        gen[1] == exp[1] and                         # same prefix
         abs(float(gen[2]) - float(exp[2])) < 1e-6    # same suffix (float)
     )
 </DEFINITION>
