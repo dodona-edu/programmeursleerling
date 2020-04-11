@@ -1,7 +1,7 @@
 ---
 name: Section issue
 about: Issues related to a specific section.
-title: section 0.1 "title"
+title: Section 0.1 "title"
 labels: ''
 assignees: ''
 

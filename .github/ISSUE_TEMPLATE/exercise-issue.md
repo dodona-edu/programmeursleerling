@@ -1,7 +1,7 @@
 ---
 name: Exercise issue
 about: Issues related to a specific exercise.
-title: exercise 0.1 "title"
+title: Exercise 0.1 "title"
 labels: exercise
 assignees: ''
 
