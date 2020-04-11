@@ -302,11 +302,5 @@ block count: multi
 input block size: 2
 output block size: ends with
 comparison: exact match
-<DEFINITION>
-def customEvaluate(expected_output, generated_output):
-    return (
-        len(generated_output) == len(expected_output) and
-        sorted(generated_output) == sorted(expected_output)
-    )
-</DEFINITION>
+line order sensitive: false
 
