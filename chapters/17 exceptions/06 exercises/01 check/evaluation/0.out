@@ -22,6 +22,6 @@ ignore fp rounding: -6
     <fixed from="Error:" to="Fout:" />
     <fixed from="it looks like the list contains a zero" to="xxx" detect="false" />
     <fixed from="it looks like there is a non-numeric item" to="xxx" detect="false" />
-    <regex from="you should specify an index between (-?[1-9][0-9]*) and (-?[1-9][0-9]*)" to="de index moet tussen \\1 en \\2 liggen" detect="false" />
+    <regex from="you should specify an index between (-?[1-9][0-9]*) and (-?[1-9][0-9]*)" to="de index moet tussen \1 en \2 liggen" detect="false" />
     <fixed from="you did not enter an integer" to="je gaf geen geheel getal" detect="false" />
 </LANGUAGE>
