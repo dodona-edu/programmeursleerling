@@ -1,0 +1,9 @@
+{
+  "description": {
+    "names": {
+      "nl": "Exceptions bij bestandsmanipulatie",
+      "en": "File handling exceptions"
+    }
+  },
+  "labels": []
+}

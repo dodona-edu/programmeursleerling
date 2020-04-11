@@ -1,0 +1,22 @@
+0
+1
+2
+3
+4
+5
+-1
+-2
+-3
+-4
+-5
+-6
+spam
+----------------------------------------
+tab name: Tests
+python input without prompt: true
+block count: multi
+input block size: 1
+output block size: 1
+<LANGUAGE code="nl">
+    <fixed from="Error:" to="Fout:" />
+</LANGUAGE>
