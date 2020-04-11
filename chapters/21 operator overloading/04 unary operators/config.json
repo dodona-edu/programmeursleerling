@@ -5,5 +5,11 @@
       "en": "Unary operators"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "3CgaxbZqfaSPrjZwaNnfwCr2uYvUK7BA78HZqtAUvfcWur4PBxx8UKTny3RrUdce",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
