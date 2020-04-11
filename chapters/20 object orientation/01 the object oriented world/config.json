@@ -5,5 +5,11 @@
       "en": "The object oriented world"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "bpWayHtiM9pr-p-fycM5hJM-WDfuu7bMcgzNur9EvMqi3cyDFC6ZW2TVNfgy9Uzi",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
