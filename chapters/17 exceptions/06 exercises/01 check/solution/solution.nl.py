@@ -6,7 +6,7 @@ try:
 except ValueError:
     print( "Fout: je gaf geen geheel getal" )
 except IndexError:
-    print( "Fout: de index moet tussen -5 en 4 liggen" )
+    print( "Fout: de index moet tussen -{} en {} liggen".format(len(numlist), len(numlist) - 1) )
 except ZeroDivisionError:
     print( "Fout: het lijkt erop dat de list een 0 bevat" )
 except TypeError:

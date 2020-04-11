@@ -6,7 +6,7 @@ try:
 except ValueError:
     print( "Error: you did not enter an integer" )
 except IndexError:
-    print( "Error: you should specify an index between -5 and 4" )
+    print( "Error: you should specify an index between -{} and {}".format(len(numlist), len(numlist) - 1) )
 except ZeroDivisionError:
     print( "Error: it looks like the list contains a zero" )
 except TypeError:
