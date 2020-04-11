@@ -1,4 +1,4 @@
-Inheritance allows you to create new classes based on existing ones,
-just by indicating the difference. It is an extremely powerful concept
-that allows for the creation of highly flexible, easily maintainable
-programs.
+Operator overloading is a powerful feature of object orientation that
+allows you to integrate your new classes into programs in a natural way.
+Operator overloading is always based on the definition of some special
+methods, that have the typical `__<name>__()` structure.
