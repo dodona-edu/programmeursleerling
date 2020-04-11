@@ -1,0 +1,15 @@
+{
+  "description": {
+    "names": {
+      "nl": "Wat je geleerd hebt",
+      "en": "What you learned"
+    }
+  },
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "zaydETnkUyvKstN3xa4GYwWxi4Q5fTW9e2B2ihHY6B-jvT3iKRNdgQMekCMeYKx7",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
+}
