@@ -33,8 +33,8 @@ def customEvaluate(expected_output, generated_output):
         return False
 
     # extract output lines
-    expected_output = expected_output[0].rstrip('\n')
-    generated_output = generated_output[0].rstrip('\n')
+    expected_output = expected_output[0]
+    generated_output = generated_output[0]
 
     # expected error message > check if also generated error message
     for prefix in ('Error', 'Fout'):
