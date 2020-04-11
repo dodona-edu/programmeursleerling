@@ -5,5 +5,11 @@
       "en": "Directory listing"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "xu-xQzfJvPP4Z_HV5a2WQBUFkwGVIRwsK84v5qWR7mFxavKgPWFD9gKKRj3fJxrf",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }

@@ -5,5 +5,11 @@
       "en": "File system"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "f8jfuS27HS6t6DI3aCT2PwJYQ9At8GmU-9kIsGaect4MInZNYshF2_iGrX9545_j",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }

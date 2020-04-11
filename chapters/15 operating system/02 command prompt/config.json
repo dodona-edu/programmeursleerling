@@ -5,5 +5,11 @@
       "en": "Command prompt"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "gvsVwy_BhgxHNJmP2MCwiJIUeqkvj4wvfyCQRxw4p7bhWUQnQ2qeVxhWgd5KD8Xb",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
