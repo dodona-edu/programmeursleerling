@@ -5,5 +5,11 @@
       "en": "Dictionary basics"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "RdkvMnIFNaS977ACiwFvSik4EVcHjMdQpuRnrgXR-xRFjBYq5M29JrHJgH7Qnz6-",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
