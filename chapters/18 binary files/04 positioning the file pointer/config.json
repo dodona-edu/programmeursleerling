@@ -5,5 +5,11 @@
       "en": "Positioning the file pointer"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "GRSUvHYY32FwT8FaQHuHeHq73hYzfVjf9uensD8ZZjVy-FtKNTU2euqCuCGg6kGi",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }

@@ -5,5 +5,11 @@
       "en": "Opening and closing binary files"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "TUqTN83xXfZEEv-prVbxbhupC2-3TPGy_cVtsQ5eKhvNartaRDrwYxzUS-nNKBXS",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }

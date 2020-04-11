@@ -5,5 +5,11 @@
       "en": "Reading a binary file"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "6mpHBEcAMpHDFhAa44DkESXiA9J-pBENk4Hb982g6CEicIrsqIUyHBvMN_qyeaBp",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
