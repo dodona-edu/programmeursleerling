@@ -2,8 +2,8 @@ The Towers of Hanoi is a puzzle, which uses
 three poles, labeled A, B, and C. On pole A there is a stack of discs of
 varying size; the discs are numbered according to their size. The
 smallest disc is 1, the next one is 2, the next one is 3, etcetera, up
-to size $N$. Typical values for $N$ are 4 and 5, though in the classic
-puzzle $N$ is supposed to be 64. The discs are stacked on pole A
+to size $$n$$. Typical values for $$n$$ are 4 and 5, though in the classic
+puzzle $$n$$ is supposed to be 64. The discs are stacked on pole A
 according to their size, the smallest one on top, and the biggest one on
 the bottom. You now have to move all the discs from pole A to pole C,
 whereby you have to follow these four rules:
@@ -43,7 +43,7 @@ process of generating the recipe.
 > where it must go. Basically, this comes down to a recursive definition
 > of the solution method:
 > 
-> To solve it for size $N$ where you move from pole X to pole Y with Z as
+> To solve it for size $$n$$ where you move from pole X to pole Y with Z as
 > temporary pole, you first solve it for size $$n - 1$$ where you move from
 > pole X to pole Z with pole Y as temporary pole, then move the disc of
 > size $$n$$ from pole X to pole Y, and finally solve the problem for size
