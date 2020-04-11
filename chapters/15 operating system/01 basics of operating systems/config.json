@@ -5,5 +5,11 @@
       "en": "Basics of operating systems"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "-ahFX3SvWeMgTkh_Jp9CN6iHpzSiHS76UAxYhqyuMdzhMSyIWM4tgnHnNgFdvQt4",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
