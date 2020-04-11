@@ -5,5 +5,11 @@
       "en": "Nesting objects"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "bdDrKYfAVB78V9XhUtMhF97DPi26BfXTZfbB9J6Aw57SdDN46cd6XiXP2MzIAHhn",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
