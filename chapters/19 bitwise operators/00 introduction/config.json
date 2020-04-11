@@ -5,5 +5,11 @@
       "en": "Introduction"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "8Yp_dmF33VPfdZR5qS4DKzXvGg2FbudEkDi_Y-xvH7QiM5QrEhcqhDPH6-55Qt_h",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
