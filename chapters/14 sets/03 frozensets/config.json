@@ -5,5 +5,11 @@
       "en": "Frozensets"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "nNnpXhwEex3XX3qY6VpHMXuemKv7evK_prfJIZ8daxvRChBZ5SukseU44s94YI3X",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
