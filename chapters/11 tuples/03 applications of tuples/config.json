@@ -5,5 +5,11 @@
       "en": "Applications of tuples"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "HTv6eVjkAQhUA7WhDeWN_pzBqR-CI2k7VDPWMkt4qe5_P5gbKJNkhfcPqHAzJugK",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }

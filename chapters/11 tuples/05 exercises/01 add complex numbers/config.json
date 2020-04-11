@@ -5,5 +5,11 @@
       "en": "Add complex numbers"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "N9j6sSnIQxX-GXIsHsvVSJyf-uqBEuII6Su_hW5WwNuKnFIWHmYM3qpS-XaVykmZ",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }

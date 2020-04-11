@@ -5,5 +5,11 @@
       "en": "Tuples are immutable"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "dgdCdYjff6QhjehhV4jEG2aHaKCjNzweTWwNhTJH9PWu6dusVYrTgt3JPqyGJ3hD",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
