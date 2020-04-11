@@ -1,0 +1,14 @@
+Number of times "wood" occurs in the text: 3
+Number of times "chuck" occurs in the text: 5
+------------------------------------------------------------
+tab name: Tests
+python input without prompt: true
+block count: multi
+input block size: 2
+output block size: 1
+comparison: exact match
+<LANGUAGE code="nl">
+    <fixed from="Number of times" to="Aantal keren dat het woord" />
+    <fixed from="occurs in the text" to="voorkomt" />
+</LANGUAGE>
+

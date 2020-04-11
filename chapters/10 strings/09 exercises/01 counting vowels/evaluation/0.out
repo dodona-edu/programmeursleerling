@@ -1,0 +1,13 @@
+A: 1
+E: 5
+I: 2
+O: 4
+U: 0
+------------------------------------------------------------
+tab name: Tests
+python input without prompt: true
+block count: multi
+input block size: 1
+output block size: 5
+comparison: exact match
+

@@ -1,0 +1,9 @@
+{
+  "description": {
+    "names": {
+      "nl": "Strings zijn onveranderbaar",
+      "en": "Strings are immutable"
+    }
+  },
+  "labels": []
+}
