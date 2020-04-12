@@ -4,5 +4,9 @@
       "nl": "Geschud kaartspel",
       "en": "Shuffled card deck"
     }
+  },
+  "internals": {
+    "token": "gKxcvcewiAvWKpD8Gzp3N2-w5G_Cs5pRMNsGNj6G9tbqcF-hD_QHKiJQYY-J-9jP",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
   }
 }
