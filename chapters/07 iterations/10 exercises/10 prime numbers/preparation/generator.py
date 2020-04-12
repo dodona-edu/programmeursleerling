@@ -26,6 +26,7 @@ comparison: exact match
 <LANGUAGE code="nl">
     <fixed from="is not a prime" to="is geen priemgetal" />
     <fixed from="is a prime" to="is een priemgetal" />
+    <fixed from="prime" to="priemgetal" />
 </LANGUAGE>
 '''
 
