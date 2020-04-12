@@ -1,4 +1,4 @@
-Een **standaard kaartspel** bestaat uit 52 verschillende kaarten die onderverdeeld worden in vier kleuren van elk 13 kaarten: 13 klaveren (♣), 13 ruiten (♦{:style="color:red;"}), 13 harten (♥{:style="color:red;"}) en 13 schoppen (♠). Klaveren en schoppen zijn zwart, ruiten en harten zijn rood, maar het zijn niet deze fysieke kleuren, maar de soorten die met de term **kleur** aangeduid worden. Van elke kleur zijn er telkens kaarten met een **rang** van 2 tot en met 10, een boer, een vrouw, een heer en een aas. Daarnaast bevat een spel soms twee of drie jokers, maar die laten we hier even buiten beschouwing.
+Een **standaard kaartspel** bestaat uit 52 verschillende kaarten die onderverdeeld worden in vier kleuren van elk 13 kaarten: 13 klaveren (**♣**), 13 ruiten (**♦**{:style="color:red;"}), 13 harten (**♥**{:style="color:red;"}) en 13 schoppen (**♠**). Klaveren en schoppen zijn zwart, ruiten en harten zijn rood, maar het zijn niet deze fysieke kleuren, maar de soorten die met de term **kleur** aangeduid worden. Van elke kleur zijn er telkens kaarten met een **rang** van 2 tot en met 10, een boer, een vrouw, een heer en een aas. Daarnaast bevat een spel soms twee of drie jokers, maar die laten we hier even buiten beschouwing.
 
 ### Opgave
 
@@ -6,7 +6,7 @@ We stellen elk van de 52 kaarten van een standaard kaartspel voor als een string
 
 - rangen: `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `10`, `J` (boer), `Q` (vrouw), `K` (heer) en `A` (aas)
 
-- kleuren: `C` (klaveren; ♣), `D` (ruiten; ♦{:style="color:red;"}), `H` (harten; ♥{:style="color:red;"}) en `S` (schoppen; ♠)
+- kleuren: `C` (klaveren; **♣**), `D` (ruiten; **♦**{:style="color:red;"}), `H` (harten; **♥**{:style="color:red;"}) en `S` (schoppen; **♠**)
 
 Zo stelt `AS` bijvoorbeeld schoppenaas voor, `10H` hartentien en `KC` klaverenheer.
 

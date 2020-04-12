@@ -1,4 +1,4 @@
-A **standard card deck** includes 52 different cards, evenly distributed over four **suits**: 13 clubs (♣), 13 diamonds (♦{:style="color:red;"}), 13 hearts (♥{:style="color:red;"}) and 13 spades (♠). Clubs and spades are black, whereas diamonds and hearts are red. Each suit includes thirteen **ranks**: two through ten (with each card depicting that many symbols of its suit), jack, queen, king (each depicted with a symbol of its suit) and ace (depicting a single symbol of its suit). Commercial card decks may also include anywhere from one to six jokers, but we do not take these into account here.
+A **standard card deck** includes 52 different cards, evenly distributed over four **suits**: 13 clubs (**♣**), 13 diamonds (**♦**{:style="color:red;"}), 13 hearts (**♥**{:style="color:red;"}) and 13 spades (**♠**). Clubs and spades are black, whereas diamonds and hearts are red. Each suit includes thirteen **ranks**: two through ten (with each card depicting that many symbols of its suit), jack, queen, king (each depicted with a symbol of its suit) and ace (depicting a single symbol of its suit). Commercial card decks may also include anywhere from one to six jokers, but we do not take these into account here.
 
 ### Assignment
 
@@ -6,7 +6,7 @@ Each card of a standard 52-card deck is represented by a string (`str`) that con
 
 - ranks: `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `10`, `J` (jack), `Q` (queen), `K` (king) and `A` (ace)
 
-- suits: `C` (clubs; ♣), `D` (diamonds; ♦{:style="color:red;"}), `H` (hearts; ♥{:style="color:red;"}) and `S` (spades; ♠)
+- suits: `C` (clubs; **♣**), `D` (diamonds; **♦**{:style="color:red;"}), `H` (hearts; **♥**{:style="color:red;"}) and `S` (spades; **♠**)
 
 As such, the ace of spades is for example represented as `AS`, the ten of hearts as `10H` and the king of clubs as `KC`.
 
