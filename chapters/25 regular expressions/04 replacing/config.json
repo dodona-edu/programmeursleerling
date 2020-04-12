@@ -5,5 +5,11 @@
       "en": "Replacing"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "y5wYsphxCR_2CEtDYUwATEDXaQVVTKwxIAMI9nC6Kh_4YJvRMs2NW65YGkJTTfSz",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }

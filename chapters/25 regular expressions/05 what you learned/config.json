@@ -5,5 +5,11 @@
       "en": "What you learned"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "6_fbGvRt9sQdqjStfaDIiFhK4ums7g-2xxfnsQQ4dE99hnzWUCDwBAzeDiWWgGNa",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
