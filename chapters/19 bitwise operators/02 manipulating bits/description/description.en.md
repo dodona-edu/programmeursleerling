@@ -23,8 +23,8 @@ the left while shifting, and losing the bits of `x` at the right. `x`
 and `y` must both be numbers.
 
 For example, the exclamation mark `\`! has decimal code 33, which is
-written as $00100001$ in binary. Shifting this pattern one place to the
-left gives $01000010$, i.e., 66 in decimal, which is the code for the
+written as $$00100001$$ in binary. Shifting this pattern one place to the
+left gives $$01000010$$, i.e., 66 in decimal, which is the code for the
 capital B. You can reverse this by shifting the pattern of B one place
 to the right.
 
@@ -52,9 +52,9 @@ print( "345 divided by 8 makes", 345>>3 )
 The bitwise `and` operator (`&`) takes two bit patterns, and produces a
 new pattern that is all zeroes, except for those places where both bit
 patterns had a 1, which will then also have a 1 in the output pattern.
-For instance, if the input patterns are the number 11 ($00001011$) and
-the number 6 ($00000110$), then the bitwise `and` operator produces the
-pattern $00000010$, which is the number 2.
+For instance, if the input patterns are the number 11 ($$00001011$$) and
+the number 6 ($$00000110$$), then the bitwise `and` operator produces the
+pattern $$00000010$$, which is the number 2.
 
 ```python
 print( 11 & 6 )
@@ -63,7 +63,7 @@ print( 11 & 6 )
 The bitwise `and` is an easy way to take (positive) numbers modulo a
 power of 2. For instance, if you want to take a number modulo 16, this
 is the same as performing the bitwise `and` on the number with 15, which
-is $00001111$. Check that the value of 345 modulo 32 is the same as
+is $$00001111$$. Check that the value of 345 modulo 32 is the same as
 taking `345 & 31`.
 
 ### Bitwise `or`
@@ -71,9 +71,9 @@ taking `345 & 31`.
 The bitwise `or` operator (`|`) takes two bit patterns, and produces a
 new pattern that is all ones, except for those places where both bit
 patterns had a 0, which will then also have a 0 in the output pattern.
-For instance, if the input patterns are the number 11 ($00001011$) and
-the number 6 ($00000110$), then the bitwise `or` operator produces the
-pattern $00001111$, which is the number 15.
+For instance, if the input patterns are the number 11 ($$00001011$$) and
+the number 6 ($$00000110$$), then the bitwise `or` operator produces the
+pattern $$00001111$$, which is the number 15.
 
 ```python
 print( 11 | 6 )
@@ -92,9 +92,9 @@ bit with index 7 (i.e., the eight bit from the right) to 1.
 The bitwise `not` operator (`\~`) is placed in front of a bit pattern,
 and then produces a new pattern that has all the bits of the original
 pattern "flipped," i.e., each zero becomes a 1 and each 1 becomes a
-zero. For instance, if the input pattern is the number 11 ($00001011$),
-then the bitwise `not` produces the pattern $11110100$, which is the
-number $-12$. If you wonder why it is $-12$ and not $-11$: this is the
+zero. For instance, if the input pattern is the number 11 ($$00001011$$),
+then the bitwise `not` produces the pattern $$11110100$$, which is the
+number $$-12$$. If you wonder why it is $$-12$$ and not $$-11$$: this is the
 result of the two's complement encoding, which I explained above. Don't
 worry too much about it.
 
@@ -118,8 +118,8 @@ The bitwise `exclusive or`, or "`xor`," operator (`^`) takes two bit
 patterns, and produces a new pattern that has a zero in all places where
 the two bit patterns have the same bit, and a 1 in all places where the
 two bit patterns have different bits. For instance, if the input
-patterns are the number 11 ($00001011$) and the number 6 ($00000110$),
-then the bitwise `xor` operator produces the pattern $00001101$, which
+patterns are the number 11 ($$00001011$$) and the number 6 ($$00000110$$),
+then the bitwise `xor` operator produces the pattern $$00001101$$, which
 is the number 13.
 
 ```python

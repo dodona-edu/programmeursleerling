@@ -33,4 +33,4 @@ print( 999 in numlist )
 Write a `while` loop to print the elements of a list.
 
 Apart from the square brackets, lists seem to be a lot like tuples. Yet
-there is a big difference...
+there is a big difference…

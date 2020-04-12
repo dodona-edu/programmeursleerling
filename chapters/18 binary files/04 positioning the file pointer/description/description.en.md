@@ -1,4 +1,4 @@
-The file "pc\_binarytest.tmp" actually contains a few secret words,
+The file "pc_binarytest.tmp" actually contains a few secret words,
 which you cannot recognize when printing the file. I am going to use
 them as an illustration on how to move the file pointer.
 
@@ -53,7 +53,7 @@ The `seek()` method is particularly useful when you open a file in
 file, reading where you need to read, and (over)writing where you need
 to (over)write.
 
-Open the file "pc\_binarytest.tmp" in binary "reading and writing" mode,
+Open the file "pc_binarytest.tmp" in binary "reading and writing" mode,
 and overwrite the encoded secret words with their decoded translation.
 Once you have closed the file, open it again in text mode, read the
 contents, and display them. If you did it all correctly, you should see

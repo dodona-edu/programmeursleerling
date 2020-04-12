@@ -10,9 +10,9 @@ stoppen).
 
 De vervanging is meestal gewoon een string, maar er kunnen verwijzingen
 in staan naar groepen in het eerste patroon. Je moet dan een formaat
-gebruiken dat verschilt van het `\\x` formaat dat ik hierboven
+gebruiken dat verschilt van het `\x` formaat dat ik hierboven
 beschreef. Als je wilt refereren aan groep `x` in het patroon (waarbij
-`x` een getal is), dan schrijf je `\\g<x>` (ook hier moet je de `<` en
+`x` een getal is), dan schrijf je `\g<x>` (ook hier moet je de `<` en
 `>` in het patroon opnemen). De reden voor dit verschil is
 ondubbelzinnigheid; het maakt het mogelijk om verschil te maken tussen,
 bijvoorbeeld, een referentie naar groep 2 gevolgd door het teken 0, en

@@ -181,7 +181,7 @@ can ensure that `print()` does not "go to the next line."
 
 To use `sep` and `end`, you include parameters `sep=<string>` and/or
 `end=<string>` (note: when in a code description you see something
-between \< and \>, that usually means that you are not supposed to type
+between `<` and `>`, that usually means that you are not supposed to type
 that literally, but that you have to replace it with something of the
 type listed, e.g., `<string>` means that you have to type a string in
 that place). For example:
@@ -254,8 +254,8 @@ process of formatting, will insert these parameter values in particular
 places in the resulting string.
 
 The places where `format()` inserts the parameter values in the string
-are indicated in the string by opening and closing curly brackets ($$\{$$
-and $$\}$$). If you only use $$\{\}$$ to refer to the parameters, it will
+are indicated in the string by opening and closing curly brackets (`{`
+and `}`). If you only use `{}` to refer to the parameters, it will
 process the string from left to right, and process the parameters from
 left to right, inserting them in the order that they are given. For
 example:

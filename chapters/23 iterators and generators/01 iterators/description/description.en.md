@@ -1,4 +1,4 @@
-You have used the `for ... in ...` command on many occasions. You may
+You have used the `for … in …` command on many occasions. You may
 have noticed that it can be used for many different applications.
 
 ```python
@@ -19,7 +19,7 @@ for key in { "apple":1, "banana":3 }:
 ```
 
 List, strings, and dictionaries are all "iterables," which means they
-can be used in such `for ... in ...` expressions. Many other objects can
+can be used in such `for … in …` expressions. Many other objects can
 also be used as iterables. You can actually ensure that your own classes
 can be used as iterables as well.
 
@@ -38,7 +38,7 @@ print( next( iterator, "END" ) )
 print( next( iterator, "END" ) )
 ```
 
-You can use iterators in `for ... in ...` statements.
+You can use iterators in `for … in …` statements.
 
 ```python
 iterator = iter( ["apple", "banana", "cherry"] )
@@ -54,10 +54,10 @@ An object that should function as an iterable has two elements:
 
 -   a method `__next__()` that provides access to all the items that the
     object contains, one by one, and when no more objects are left,
-    raises `StopIteration` (in a `for ... in ...` loop, this will cause
+    raises `StopIteration` (in a `for … in …` loop, this will cause
     the loop to end)
 
-You can loop over all the items of the iterable using `for ... in ...`.
+You can loop over all the items of the iterable using `for … in …`.
 There are three main ways that you can create such an iterable object.
 The first two ways start with the iterable as a container of a sequence
 of items.
@@ -151,7 +151,7 @@ for n in fseq:
 > #### Warning
 > You have to be very careful when making an iterable that in
 > principle may return an infinite number of items. Programmers count on
-> `for ... in ...` never leading to an endless loop, but in the example
+> `for … in …` never leading to an endless loop, but in the example
 > above, without limiting the number of items to a maximum of 1000 when
 > creating the `fseq` object, an endless loop would result. It is best to
 > force the programmer to set a maximum to the number of items.
@@ -201,7 +201,7 @@ This approach has several advantages:
 
 -   You can run several instances of the iterable in parallel without
     the need to explicitly create more than one (as they are created
-    automatically when needed, i.e., when you use `for ... in ...`)
+    automatically when needed, i.e., when you use `for … in …`)
 
 -   You do not need to call a `reset()` method to start from the
     beginning
@@ -222,8 +222,8 @@ for x in z:
 ```
 
 A zip-object is an iterator, i.e., you cannot print the zip-object
-itself, but you have to loop over its elements instead. The $i$th
-element of the zip-object consists of the $i$th elements of each of the
+itself, but you have to loop over its elements instead. The $$i$$th
+element of the zip-object consists of the $$i$$th elements of each of the
 iterables that are its arguments. If these iterables are of unequal
 length, the number of elements in the zip-object will be the same as the
 number of elements of the shortest of the iterables.

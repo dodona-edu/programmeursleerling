@@ -43,8 +43,8 @@ goodbyeWorld()
 
 When you run this program, you see that it first prints "Hello, world!,"
 and then "Goodbye, world!" This happens even though Python processes
-code top-down, so that it sees the line `print( "Goodbye, world\{`}" )!
-before it sees the line `print( "Hello, world\{`}" )!. This is because
+code top-down, so that it sees the line `print( "Goodbye, world!" )`
+before it sees the line `print( "Hello, world!" )`. This is because
 Python does not actually run the code inside functions, at least, not
 until the moment that the function gets called. Python does not even
 look at the code in functions. It just notices the function name,

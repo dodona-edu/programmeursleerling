@@ -17,7 +17,7 @@ Dat betekent dat alleen onveranderbare data types in een set kunnen
 worden opgeslagen. Sets zelf zijn echter wel veranderbaar.
 
 Omdat Python dictionaries gebruikt om sets te implementeren, denk je
-misschien dat je een lege set kunt creëren door `\{\}` toe te kennen aan
+misschien dat je een lege set kunt creëren door `{}` toe te kennen aan
 een variabele. Dat creëert echter een lege dictionary, en niet een lege
 set. In plaats daarvan creëer je een lege set door de retourwaarde van
 de functie `set()` (zonder argumenten) toe te kennen aan een variabele.

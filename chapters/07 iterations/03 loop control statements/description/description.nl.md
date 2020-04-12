@@ -44,8 +44,7 @@ Merk op dat nadat de `while` loop hierboven geëindigd is, de waarde van
 `i` 5 is. De waarde van `fruit` na de `for` loop hierboven is het
 laatste item verwerkt is, dus `"aardbei"`.
 
-### `break` <span id="ss:break"
-label="ss:break">\[ss:break\]</span>
+### `break`
 
 Het `break` statement maakt het mogelijk een loop voortijdig af te
 breken. Als Python een `break` tegenkomt, stopt het met het verwerken
@@ -99,7 +98,7 @@ van de `break`.
 
 Als ik een beetje mijn best doe kan ik er best voor zorgen dat de
 boolean expressie de vergelijking voor me doet, via iets als
-`while i < 1000000 and num1 \`= 3 \* num2!. Dit wordt wat ingewikkeld,
+`while i < 1000000 and num1 != 3 * num2`. Dit wordt wat ingewikkeld,
 en ik moet ook `num1` en `num2` waardes geven voordat de loop start. Het
 is in principe altijd mogelijk om het gebruik van `break` te vermijden.
 Maar een `break` kan code beter leesbaar maken, zoals het doet in dit

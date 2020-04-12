@@ -36,7 +36,7 @@ Druk aan het einde van het recept het aantal benodigde stappen af.
 > paal C, en tenslotte gebruik je de procedure voor grootte 9 om de
 > overgebleven 9 schijven te verplaatsen van paal B naar paal C. Maar hoe
 > los je de puzzel op met de grootste schijf 9? Dat is niet moeilijk als
-> je hem kunt oplossen voor grootte 8... Je kunt je voorstellen waar dit
+> je hem kunt oplossen voor grootte 8… Je kunt je voorstellen waar dit
 > heengaat. Je kunt de complexiteit van het probleem stap-voor-stap
 > reduceren, totdat je stelt "het is gemakkelijk om het probleem op te
 > lossen voor grootte 2 als je het kunt oplossen voor grootte 1." Oplossen

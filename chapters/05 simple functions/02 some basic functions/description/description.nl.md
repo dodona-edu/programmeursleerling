@@ -193,9 +193,9 @@ regel gaan als hij klaar is met het tonen van parameters.
 
 On `sep` en `end` te gebruiken, moet je speciale parameters opnemen,
 namelijk parameters `sep=<string>` en/of `end=<string>` (merk op: als in
-een beschrijving van code je iets ziet dat tussen \< en \> staat,
+een beschrijving van code je iets ziet dat tussen `<` en `>` staat,
 betekent dat meestal dat je dat niet letterlijk moet typen, maar moet
-vervangen door van wat de term tussen de \< en \> aangeeft, dus
+vervangen door van wat de term tussen de `<` en `>` aangeeft, dus
 `<string>` betekent dat je daar een string moet plaatsen). Bijvoorbeeld:
 
 ```python
@@ -267,8 +267,8 @@ meekrijgen, die in de geformatteerde string ingebracht kunnen worden op
 specifieke plaatsen.
 
 De plaatsen waar `format()` de parameter waardes in de string plaatst
-worden in de string aangegeven middels accolades ($$\{$$ en $$\}$$). Als je
-alleen $$\{\}$$ gebruikt om de parameters aan te duiden, worden ze van
+worden in de string aangegeven middels accolades (`{` en `}`). Als je
+alleen `{}` gebruikt om de parameters aan te duiden, worden ze van
 links naar rechts afgehandeld. Bijvoorbeeld:
 
 ```python

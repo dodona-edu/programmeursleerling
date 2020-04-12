@@ -65,7 +65,7 @@ Op de command line kun je een Python programma starten met een aantal
 argumenten. Je schrijft dan:
 
 ```console?lang=bash&prompt=$
-$ python <programmanaam>.py <argument_1> <argument_2> ... <argument_n>
+$ python <programmanaam>.py <argument_1> <argument_2> … <argument_n>
 ```
 
 De argumenten zijn van elkaar gescheiden door middel van spaties en

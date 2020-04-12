@@ -12,7 +12,7 @@ Alternatively, you can import only specific functions from a module, by
 stating:
 
 ```python
-from <modulename> import <function1>, <function2>, <function3>, ...
+from <modulename> import <function1>, <function2>, <function3>, …
 ```
   
 The main advantage of importing specific functions from a module in this

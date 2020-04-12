@@ -29,7 +29,7 @@ print( langestring )
 ```
 
 Als je deze code uitvoert, zie je dat Python de string als een geheel
-interpreteert. De backslash (`\\`) die aangeeft dat de string verder
+interpreteert. De backslash (`\`) die aangeeft dat de string verder
 gaat op de volgende regel is algemener bruikbaar dan alleen voor
 strings: je kunt hem achter ieder Python statement zetten om aan te
 geven dat het statement verder gaat op de volgende regel. Dat kan nuttig

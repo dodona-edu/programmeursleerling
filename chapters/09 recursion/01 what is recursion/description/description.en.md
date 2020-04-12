@@ -11,7 +11,7 @@ And since a function is defined by the time its code gets executed, it
 can call itself.
 
 "But," one might say: "if a function calls itself, then it calls itself
-again, and again, and again... Doesn't that mean it gets into an endless
+again, and again, and again… Doesn't that mean it gets into an endless
 process, similar to an endless loop?" The answer is that there is
 certainly a danger, with sloppy coding, that a recursive function gets
 into an endless loop, but recursive functions should be designed in such

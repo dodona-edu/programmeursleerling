@@ -74,7 +74,7 @@ lossen dan dat je hem op de meest efficiënte manier weet op te lossen.
 Een goede aanpak is vier rechthoeken op een stuk papier te zetten en
 deze te nummeren, en dan een kaart in iedere rechthoek te plaatsen. Zeg
 tegen de persoon die de instructies gaat uitvoeren dat "vergelijk de
-kaart in rechthoek $x$ met de kaart in rechthoek $y$" betekent dat hij
+kaart in rechthoek $$x$$ met de kaart in rechthoek $$y$$" betekent dat hij
 of zij aan de processor moet vragen die kaarten op te rapen, te
 bekijken, en ze terug te leggen waar ze vandaan kwamen, en daarna aan te
 geven welke de hoogste van de twee is. Dan kun je de volgende
@@ -121,9 +121,9 @@ Python draait nu op je computer. Gefeliciteerd!
 #### Antwoord 2.2
 
 Je ziet niets in de shell (behalve het woord `RESTART` dat je altijd
-ziet als je een programma draait). $7/4$ is een correct Python commando,
-dus het programma geeft geen foutmelding. Het programma rekent $7/4$
-uit, maar toont geen resultaat, dus het programma laat niet $1.75$ zien.
+ziet als je een programma draait). $$7/4$$ is een correct Python commando,
+dus het programma geeft geen foutmelding. Het programma rekent $$7/4$$
+uit, maar toont geen resultaat, dus het programma laat niet $$1.75$$ zien.
 De shell toont het resultaat van het draaien van het programma. Maar
 omdat het programma zelf geen resultaat heeft, is er ook niks dat de
 shell kan laten zien. Dus je ziet niets.
@@ -159,7 +159,7 @@ print( 1/0 )
 
 Het probleem is dat er een enkel sluithaakje ontbreekt op de eerste
 regel code. Ik heb het haakje verwijderd dat ik origineel had geschreven
-na de $6$, maar dat kun je niet meer weten; je kunt slechts de haakjes
+na de $$6$$, maar dat kun je niet meer weten; je kunt slechts de haakjes
 tellen en zien dat er een sluithaakje ontbreekt.
 
 Het verwarrende is dat de foutboodschap zegt dat er een fout is gevonden
@@ -458,7 +458,7 @@ while flessen != "geen":
         "met bier op de muur.".format( flessen, s ) )
 ```
 
-Als je een backslash (\\) plaatst aan het einde van een regel code, dan
+Als je een backslash (`\`) plaatst aan het einde van een regel code, dan
 wordt de volgende regel aan de regel met de backslash geplakt. Als
 hierdoor twee strings tegen elkaar aan komen te staan, dan worden die
 samen als één string beschouwd. Ik gebruik dat hier om ervoor te zorgen
@@ -820,7 +820,7 @@ Tenslotte geef ik hier een oplossing die ik niet suggereerde, maar die
 geweldig werkt. Hij is erg kort, ongelofelijk snel, en geeft een vrijwel
 exact antwoord. De oplossing berekent eenvoudigweg een benadering van
 
-$$\frac{1}{3} + \frac{2}{3}(\frac{1}{2}(2 + \frac{1}{2}(3 + \frac{1}{2}(4 + \frac{1}{2}(5 + ...) ) ) ) )$$
+$$\frac{1}{3} + \frac{2}{3}(\frac{1}{2}(2 + \frac{1}{2}(3 + \frac{1}{2}(4 + \frac{1}{2}(5 + \hellip) ) ) ) )$$
 
 Het gebruikt slechts 100 termen van deze berekening, maar dat is meer
 dan genoeg om een zeer nauwkeurige benadering van het antwoord te
@@ -836,7 +836,7 @@ for dagen in range( 2, 101 ):
 print( "{:.2f}".format( schatting ) )
 ```
 
-Het exacte antwoord is overigens $2\frac{1}{3}$ dagen; een benadering
+Het exacte antwoord is overigens $$2\frac{1}{3}$$ dagen; een benadering
 moet 2.33 of 2.34 geven.
 
 ### Hoofdstuk <a href="#ch:functions" data-reference-type="ref" data-reference="ch:functions">9</a>
@@ -1121,7 +1121,7 @@ om te implementeren omdat je iedere paal moet representeren als een list
 <a href="#ch:lists" data-reference-type="ref" data-reference="ch:lists">13</a>),
 en je moet een manier bedenken om te bepalen dat de puzzel is opgelost
 (dat kan door simpelweg de stappen te tellen, dat wil zeggen, te tellen
-tot $2^N-1$).
+tot $$2^N-1$$).
 
 ### Hoofdstuk <a href="#ch:strings" data-reference-type="ref" data-reference="ch:strings">11</a>
 

@@ -69,12 +69,12 @@ argument `cmp=<functie>`, dat je toestaat een functie op te geven die
 twee elementen met elkaar vergelijkt. Deze functie bestaat niet langer
 in Python 3, maar je kunt de key parameter voor hetzelfde doel
 gebruiken. In de Python module `functools` is een functie
-`cmp\_to\_key()` opgenomen die een oude-stijl `cmp` specificatie in een
+`cmp_to_key()` opgenomen die een oude-stijl `cmp` specificatie in een
 nieuwe-stijl `key` specificatie wijzigt.
 
 In Python 2 retourneren de dictionary methodes `keys()`, `values()`, en
 `items()` een list in plaats van een iterator. Python 2 ondersteunt ook
-een methode `has\_key()` die je kunt gebruiken om te controleren of een
+een methode `has_key()` die je kunt gebruiken om te controleren of een
 key in de dictionary zit, maar deze methode is verwijderd uit Python 3.
 
 Python 2 ondersteunt sets niet als een basis-data structuur. Je moet de

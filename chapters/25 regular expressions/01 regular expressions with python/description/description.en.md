@@ -44,7 +44,7 @@ regular expression string. Why did I write `r"a+"` instead of just
 `"a+"`? This letter "r" tells Python that it should consider the string
 as "raw data," i.e., it should not try to convert parts of the string
 according to standard Python string interpretations. This is mainly
-necessary when the regular expression contains `"\\b"`, which for
+necessary when the regular expression contains `"\b"`, which for
 regular expressions means "word boundary" (I will get to that later in
 this chapter), but for Python is an escape sequence that means
 "backspace." So it is good practice to always put that "r" in front of a
@@ -55,7 +55,7 @@ parameter (a so-called "flag") to the `compile()` call, which indicates
 a special way to use the created pattern. The parameter `re.I` indicates
 that the pattern should be used case-insensitively, while `re.S`
 indicates that the pattern should also process newlines, and `re.M`
-indicates that the pattern should match the meta-characters `^` and `\$`
+indicates that the pattern should match the meta-characters `^` and `$`
 to every line of the text, and not just the text as a whole. You may
 combine them by putting pipe-lines (`|`) between them.
 
@@ -133,7 +133,7 @@ I already showed that the `findall()` method creates a list of
 occurrences of a pattern in a string. The `finditer()` method is its
 complement, which creates a list (or rather, an iterator) of match
 objects for where the pattern occurs in a string. The best way to
-process such a list is by using the `for m in ...` approach. For
+process such a list is by using the `for m in …` approach. For
 example:
 
 ```python

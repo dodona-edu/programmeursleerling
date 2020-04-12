@@ -8,9 +8,9 @@ geassocieerde waardes. Ieder onveranderbaar data type mag gebruikt
 worden als key. Een veelgebruikt data type dat als key wordt ingezet is
 de string.
 
-Dictionaries creëer middels accolades `\{\}`, vergelijkbaar met hoe je
+Dictionaries creëer middels accolades `{}`, vergelijkbaar met hoe je
 lists creëert met vierkante haken. Een lege dictionary maak je door een
-assignment aan een variabele te doen met `\{\}`. Je kunt een dictionary
+assignment aan een variabele te doen met `{}`. Je kunt een dictionary
 met inhoud creëren door ieder element dat je erin wilt hebben tussen de
 accolades te zetten, met als syntax `<key>:<value>`, en komma's tussen
 de elementen.

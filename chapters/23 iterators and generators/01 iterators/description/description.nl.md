@@ -1,4 +1,4 @@
-Je hebt het `for ... in ...` commando regelmatig gebruikt. Het is je
+Je hebt het `for … in …` commando regelmatig gebruikt. Het is je
 wellicht opgevallen dat het op allerlei verschillende manieren gebruikt
 wordt.
 
@@ -21,7 +21,7 @@ for key in { "appel":1, "banaan":3 }:
 
 Lists, strings, en dictionaries zijn alle "iterabelen" (een
 vernederlandsing van het Engelse woord "iterable"), wat betekent dat ze
-gebruikt mogen worden in `for ... in ...` statements. Vele andere
+gebruikt mogen worden in `for … in …` statements. Vele andere
 objecten kunnen ook als iterabelen gebruikt worden. Je kunt ervoor
 zorgen dat dat ook geldt voor instanties van je eigen classes.
 
@@ -42,7 +42,7 @@ print( next( iterator, "END" ) )
 print( next( iterator, "END" ) )
 ```
 
-Je kunt iteratoren gebruiken in `for ... in ...` statements.
+Je kunt iteratoren gebruiken in `for … in …` statements.
 
 ```python
 iterator = iter( ["appel", "banaan", "kers"] )
@@ -60,10 +60,10 @@ methodes bevatten:
 
 -   een methode `__next__()` die toegang geeft tot alle elementen die
     het object bevat, één voor één, en die als er geen elementen meer
-    zijn de `StopIteration` exception genereert (in een `for ... in ...`
+    zijn de `StopIteration` exception genereert (in een `for … in …`
     loop, betekent dit dat de loop eindigt)
 
-Je kunt alle elementen van een iterabele doorlopen met `for ... in ...`.
+Je kunt alle elementen van een iterabele doorlopen met `for … in …`.
 Er zijn drie manieren om zulke iterabele objecten te maken. De eerste
 twee beginnen met de iterabele als een container die een sequentie van
 elementen bevat.
@@ -160,7 +160,7 @@ for n in fseq:
 > #### Waarschuwing
 > Wees erg voorzichtig met het bouwen van een iterabele
 > die een oneindig aantal elementen kan retourneren. Programmeurs gaan
-> ervan uit dat `for ... in ...` geen eindeloze loop kan veroorzaken, maar
+> ervan uit dat `for … in …` geen eindeloze loop kan veroorzaken, maar
 > in het voorbeeld hierboven kan een eindeloze loop ontstaan als ik geen
 > limiet aan het aantal elementen stel. Bij een dergelijke iterabele kun
 > je het beste een verplicht maximum stellen aan het aantal elementen, wat
@@ -214,7 +214,7 @@ Deze aanpak heeft een aantal voordelen:
 -   Je kunt meerdere instanties van de iterabele parallel aan elkaar
     uitvoeren zonder er expliciet meer dan één te creëren (omdat ze
     automatisch worden gecreëerd wanneer dat nodig is, dus als
-    `for ... in ...` gebruikt wordt)
+    `for … in …` gebruikt wordt)
 
 -   Je hoeft geen methode `reset()` aan te roepen om weer van voor af
     aan te beginnen; iedere nieuwe aanroep van de iterabele begint weer
@@ -239,8 +239,8 @@ for x in z:
 
 Een zip-object is een iterator, dat wil zeggen, je kunt het zip-object
 zelf niet printen, maar je kunt de elementen van het object doorlopen
-via een `for ... in ...` constructie. Het $i$de element van het
-zip-object bestaat uit de $i$de elementen van ieder van de iterabelen
+via een `for … in …` constructie. Het $$i$$de element van het
+zip-object bestaat uit de $$i$$de elementen van ieder van de iterabelen
 die als argumenten gebruikt worden. Als deze iterabelen van ongelijke
 lengte zijn, dan is de lengte van het zip-object gelijk aan de kortste
 lengte van de argumenten.

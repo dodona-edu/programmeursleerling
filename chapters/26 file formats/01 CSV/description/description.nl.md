@@ -107,5 +107,5 @@ fp.close()
 ```
 
 Nadat je de code hierboven hebt gebruikt om het bestand
-"pc\_writetest.csv" te creëren, open je het bestand en gebruikt
+"pc_writetest.csv" te creëren, open je het bestand en gebruikt
 `reader()` om de inhoud ervan te tonen.

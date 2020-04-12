@@ -57,7 +57,7 @@ bereik 80-FF.
 Als je wilt zien welke speciale tekens door jouw bestandssysteem
 ondersteund worden met waardes in het bereik 80-FF, kun je de code
 hieronder uitvoeren. De numerieke waarde van een teken in de tabel kun
-je afleiden door $16*rij+kolom$ te berekenen, waarbij `rij` en `kolom`
+je afleiden door $$16*rij+kolom$$ te berekenen, waarbij `rij` en `kolom`
 de hexadecimale nummering zijn van de rij en kolom. Met deze code laat
 ik geen tekens zien in het bereik 80-9F, omdat die meestal niet ingevuld
 zijn.

@@ -38,9 +38,9 @@ for item in seq:
 `product()` creëert een iterabele die alle elementen produceert van het
 Cartesisch product van de iterabelen die als argumenten zijn meegegeven.
 In iets minder wiskundige termen: als je twee iterabelen hebt, waarvan
-de eerste de elementen $x$, $y$, en $z$ heeft, en de tweede de elementen
-$a$ en $b$, produceert `product()` een iterabele met de elementen $xa$,
-$xb$, $ya$, $yb$, $za$, en $zb$.
+de eerste de elementen $$x$$, $$y$$, en $$z$$ heeft, en de tweede de elementen
+$$a$$ en $$b$$, produceert `product()` een iterabele met de elementen $$xa$$,
+$$xb$$, $$ya$$, $$yb$$, $$za$$, en $$zb$$.
 
 ```python
 from itertools import product

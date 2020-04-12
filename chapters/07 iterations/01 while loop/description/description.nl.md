@@ -269,7 +269,7 @@ Je moet nu oefenen met een paar eenvoudige `while` loops.
 
 Schrijf code die aftelt. Er wordt begonnen met een specifiek nummer,
 bijvoorbeeld 10. Dan telt de code af naar nul, waarbij ieder nummer
-geprint wordt (10, 9, 8, ...). Nul wordt niet geprint, maar in plaats
+geprint wordt (10, 9, 8, …). Nul wordt niet geprint, maar in plaats
 daarvan drukt het programma de tekst "Start!" af.
 
 De faculteit van een positief geheel getal is gelijk aan dat getal,

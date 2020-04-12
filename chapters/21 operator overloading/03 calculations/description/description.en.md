@@ -27,7 +27,9 @@ operator. The most important of these are:
 -   `__xor__()` for bitwise `xor` (`\^`)
 
 For example, for quaternions the addition is defined as:
-$(A + Bi + Cj + Dk) + (E + Fi + Gj + Hk) = (A+E) + (B+F)i + (C+G)j + (D+H)k$.
+
+$$(A + Bi + Cj + Dk) + (E + Fi + Gj + Hk) = (A+E) + (B+F)i + (C+G)j + (D+H)k$$
+
 Naturally, you can also add integers and floats to quaternions. This can
 be implemented as follows:
 

@@ -44,7 +44,7 @@ totZiens()
 Als je dit programma uitvoert, zie je dat het eerst de regel "Hallo!"
 afdrukt, en daarna "Tot ziens!" Dit gebeurt zo ondanks het feit dat
 Python de code van boven naar beneden uitvoert; Python komt
-`print( "Tot ziens\`" )! tegen voordat `print( "Hallo\`" )! wordt
+`print( "Tot ziens!" )` tegen voordat `print( "Hallo!" )` wordt
 aangetroffen. De reden dat Python toch eerst de tekst "Hallo!" afdrukt
 is dat Python de code van een functie alleen uitvoert als de functie
 wordt aangeroepen. Een functie die Python tegenkomt voordat de functie

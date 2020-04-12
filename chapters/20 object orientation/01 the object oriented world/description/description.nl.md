@@ -194,6 +194,6 @@ instantie van een klasse is.
 Maar niet alleen strings zijn instanties van klassen: integers en floats
 zijn dat ook. Ze hebben zelfs methodes, maar die worden zelden expliciet
 aangeroepen. Methodes worden vaak wel impliciet aangeroepen,
-bijvoorbeeld, als je twee getallen optelt met $+$, is dat eigenlijk de
+bijvoorbeeld, als je twee getallen optelt met $$+$$, is dat eigenlijk de
 aanroep van een methode. Ik zal dit bediscussiëren in hoofdstuk
 <a href="#ch:operatoroverloading" data-reference-type="ref" data-reference="ch:operatoroverloading">22</a>.

@@ -67,12 +67,12 @@ In Python 2, sorting a mixed list does not give a runtime error. The
 allows you to specify a function that does the comparison between two
 elements. This function is no longer supported in Python 3, but you can
 use the key parameter for the same purpose. In the Python module
-`functools` a function `cmp\_to\_key()` is found that turns the
+`functools` a function `cmp_to_key()` is found that turns the
 old-style `cmp` specification into the new-style `key` specification.
 
 In Python 2, the dictionary methods `keys()`, `values()`, and `items()`
 return lists instead of iterators. Python 2 also supports a method
-`has\_key()` that you can use to check if a certain key is in a
+`has_key()` that you can use to check if a certain key is in a
 dictionary, but this method has been removed from Python 3.
 
 Python 2 does not support sets natively. You have to import the `sets`

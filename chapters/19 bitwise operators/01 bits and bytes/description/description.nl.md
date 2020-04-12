@@ -31,15 +31,15 @@ Als de bits genummerd worden, is het de gewoonte om de meest rechtse bit
 van een binair getal nummer nul te geven, en de nummering te laten
 toenemen naar links; dus de rechterbit is nummer 0, de bit ernaast
 nummer 1, de bit daarnaast nummer 2, etcetera. De reden is dat de
-rechterbit de waarde $2^0$ representeert (wat gelijk is aan 1), de bit
-ernaast de waarde $2^1$, de bit daarnaast $2^2$, etcetera.
+rechterbit de waarde $$2^0$$ representeert (wat gelijk is aan 1), de bit
+ernaast de waarde $$2^1$$, de bit daarnaast $$2^2$$, etcetera.
 
 |                         |       |          |        |          |        |        |          |        |       |
 |:------------------------|------:|---------:|-------:|---------:|-------:|-------:|---------:|-------:|:------|
 | Byte                    |      1|         1|       0|         1|       0|       0|         1|       0|       |
 | Nummer van de bit       |      7|         6|       5|         4|       3|       2|         1|       0|       |
-| Gerepresenteerde waarde |  $2^7$|     $2^6$|   $2^5$|     $2^4$|   $2^3$|   $2^2$|     $2^1$|   $2^0$|       |
-| Byte waarde             |  $2^7$|  \+ $2^6$|  \+ $0$|  \+ $2^4$|  \+ $0$|  \+ $0$|  \+ $2^1$|  \+ $0$| = 210 |
+| Gerepresenteerde waarde |  $$2^7$$|     $$2^6$$|   $$2^5$$|     $$2^4$$|   $$2^3$$|   $$2^2$$|     $$2^1$$|   $$2^0$$|       |
+| Byte waarde             |  $$2^7$$|  \+ $$2^6$$|  \+ $$0$$|  \+ $$2^4$$|  \+ $$0$$|  \+ $$0$$|  \+ $$2^1$$|  \+ $$0$$| = 210 |
 {:class="table table-striped table-condensed" style="width:auto;margin-left:auto;margin-right:auto;"}
 
 Schrijf een programma dat van een binaire string, die bestaat uit 8 enen
@@ -52,8 +52,8 @@ omgekeerde string van links naar rechts). Als een teken gevonden wordt
 dat een "1" is, telt het de vermenigvuldigingsfactor op bij het totaal.
 Dit geeft uiteindelijk het gevraagde getal.
 
-Het laagste getal dat een byte kan representeren is $00000000$, wat
-gelijk is aan nul. Het hoogste is $11111111$, wat gelijk is aan 255. Er
+Het laagste getal dat een byte kan representeren is $$00000000$$, wat
+gelijk is aan nul. Het hoogste is $$11111111$$, wat gelijk is aan 255. Er
 zijn dus 256 verschillende waardes die door een byte gerepresenteerd
 kunnen worden.
 
@@ -68,7 +68,7 @@ wellicht opgevallen dat de codes liepen van (hexadecimaal) 20 tot en met
 (zoals de "newline"). Code 7F wordt gewoonlijk gebruikt om de `Del`
 toets te representeren. Andere codes worden niet gebruikt, wat betekent
 dat alle ASCII tekens middels 7 bits kunnen worden weergeven, ofwel de
-8-bit sequenties $00000000$ tot en met $01111111$.
+8-bit sequenties $$00000000$$ tot en met $$01111111$$.
 
 Hoewel computers de byte gebruiken als de basis manier om data vast te
 leggen, gebruikt ASCII slechts 128 van de 256 tekens die in een byte
@@ -102,11 +102,11 @@ UTF-8 werkt als volgt:
     waarde 0, gevolgd door een aantal resterende bits. De totale lengte
     van de multi-byte sequentie is het aantal bits met waarde 1 links
     van de meest linkse 0 in de leidende byte. Bijvoorbeeld, als de
-    leidende byte de waarde $1110xxxx$ heeft (waarbij iedere $x$ een
+    leidende byte de waarde $$1110xxxx$$ heeft (waarbij iedere $$x$$ een
     byte is), dan is de hele multi-byte sequentie drie bytes in lengte.
     Dit is inclusief de leidende byte. De minimum lengte van de
     sequentie is twee bytes, en de maximum lengte is zes bytes (in dat
-    laatste geval is de leading byte $1111110x$).
+    laatste geval is de leading byte $$1111110x$$).
 
 -   Iedere "volgende byte" heeft 10 als de meeste linkse twee bits.
 
@@ -139,9 +139,9 @@ iedere 0, en een 0 van iedere 1. Tenslotte tel je numeriek 1 op bij het
 resulterende bitpatroon. Daardoor heeft een bitpatroon dat een negatief
 getal representeert altijd een 1 als de meest linkerbit.
 
-Bijvoorbeeld, om $-1$ te coderen neem je eerst het bitpatroon van 1, dus
-...$00000001$. Je flipt alle bits, wat je ...$11111110$ geeft. Tenslotte
-tel je 1 op bij het resultaat, wat ...$11111111$ oplevert. Dus $-1$
+Bijvoorbeeld, om $$-1$$ te coderen neem je eerst het bitpatroon van 1, dus
+…$$00000001$$. Je flipt alle bits, wat je …$$11111110$$ geeft. Tenslotte
+tel je 1 op bij het resultaat, wat …$$11111111$$ oplevert. Dus $$-1$$
 wordt gecodeerd als een sequentie van alleen maar enen.
 
 Wat betreft gebroken getallen: die worden opgeslagen in de

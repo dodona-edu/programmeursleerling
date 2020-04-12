@@ -41,7 +41,7 @@ bedoeld van wat er tussen de vierkante haken staat. Bijvoorbeeld,
 ### Speciale tekens
 
 In reguliere expressies, net als in strings, wordt het backslash teken
-(\\) gebruikt om aan te geven dat het volgende teken een speciale
+(`\`) gebruikt om aan te geven dat het volgende teken een speciale
 betekenis heeft. De speciale tekens die je voor strings kunt gebruiken,
 gelden ook voor reguliere expressies, maar reguliere expressies hebben
 er meer. Er zijn ook een aantal meta-tekens die op een speciale manier
@@ -66,7 +66,7 @@ zijn er meer, maar deze worden het meest gebruikt):
 | `\"` | dubbel aanhalingsteken |
 | `\'` | enkel aanhalingsteken |
 | `^` | start van een string (breedte nul) |
-| ` $` | einde van een string (breedte nul) |
+| `$` | einde van een string (breedte nul) |
 | `.` | ieder teken |
 {:class="table table-striped table-condensed" style="width:auto;margin-left:auto;margin-right:auto;"}
 
@@ -185,7 +185,7 @@ in te vullen volgens de beschrijvingen die in het commentaar ernaast
 staan. Merk op dat de eerste zeven reguliere expressies de string als
 geheel beschrijven, en die moet je dus laten starten met een dakje en
 eindigen met een dollar teken, wat aangeeft dat de expressie de string
-van het begin (`^`) tot het einde (`\$`) moet representeren.
+van het begin (`^`) tot het einde (`$`) moet representeren.
 
 ```python
 import re

@@ -4,7 +4,7 @@ zijn.
 
 Er is een "root"[^19] directory, die het eerste toegangspunt is voor
 alle andere directories. De root directory wordt geïdentificeerd door
-een slash (/) of backslash (\\), afhankelijk van het besturingssysteem.
+een slash (`/`) of backslash (`\`), afhankelijk van het besturingssysteem.
 Bij Windows is het de backslash, bij Mac OS en Linux is het de
 voorwaartse slash. Windows ondersteunt tegenwoordig ook de voorwaartse
 slash voor dit doel. Ik beveel aan dat je de voorwaartse slash gebruikt
@@ -35,9 +35,9 @@ maar ze zijn er wel – je ziet ze alleen niet.
 Om een bestand uniek te identificeren, moet je het exacte "pad" vanaf de
 root naar het bestand kennen, de directories volgend. Het pad van een
 bestandsnaam ziet er uit als
-`/<directory>/<directory>/.../<bestandsnaam>`. Bij Windows kan er nog de
+`/<directory>/<directory>/…/<bestandsnaam>`. Bij Windows kan er nog de
 letter van een disk drive voor het pad staan, waardoor het
-`<drive>:/<directory>/<directory>/.../<bestandsnaam>` wordt.
+`<drive>:/<directory>/<directory>/…/<bestandsnaam>` wordt.
 Bijvoorbeeld, als je bij Windows op de "C" drive onder de root een
 directory "Python34" hebt, waaronder je een directory "Lib" hebt, waarin
 je een bestand "os.py" kunt vinden, dan is het pad voor dat bestand

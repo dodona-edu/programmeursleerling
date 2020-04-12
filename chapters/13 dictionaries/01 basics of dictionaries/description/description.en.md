@@ -4,9 +4,9 @@ element, you have to know the element's "key."
 Basically, dictionaries store "key-value pairs." Any immutable data type
 can function as a key. A very common type to use as key is the string.
 
-You create dictionaries using curly brackets `\{\}`, similar to how you
+You create dictionaries using curly brackets `{}`, similar to how you
 create lists using square brackets. An empty dictionary you create by
-assigning `\{\}` to a variable. You can create a dictionary with
+assigning `{}` to a variable. You can create a dictionary with
 contents by describing every element of the dictionary between the curly
 brackets using the syntax `<key>:<value>`, and commas between the
 elements.

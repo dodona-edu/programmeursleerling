@@ -9,12 +9,12 @@ overloading."
 For instance, suppose that you define a class that represents
 quaternions.[^11] You know that adding and multiplying quaternions are
 well-defined operations. Therefore, you might want to define what
-happens when you combine two of your quaternions with a $+$ operator.
+happens when you combine two of your quaternions with a $$+$$ operator.
 Python allows you to specify that. In fact, Python allows you to specify
-what the $+$ operator does for any of your new classes.
+what the $$+$$ operator does for any of your new classes.
 
 Isn't that great? You can define a class `Student`, and then define that
-if you add two students together with a $+$ operator, that their ages
+if you add two students together with a $$+$$ operator, that their ages
 are added up. Wonderful, isn't it? No, it isn't. It obviously makes no
 sense to add up two students. You might start thinking about what a
 natural interpretation of adding up two students would entail, but the

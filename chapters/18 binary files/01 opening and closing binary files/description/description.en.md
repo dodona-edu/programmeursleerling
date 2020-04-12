@@ -35,4 +35,4 @@ fp.close()
 {:class="callout callout-info"}
 > #### Note
 > The code above has no output – if it does have output, that is a
-> runtime error, meaning that "pc\_rose.txt" is not available.
+> runtime error, meaning that "pc_rose.txt" is not available.

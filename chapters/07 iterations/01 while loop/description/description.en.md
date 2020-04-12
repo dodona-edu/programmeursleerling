@@ -34,7 +34,7 @@ code block below it. However, contrary to the `if` statement, once the
 code block has finished, the code "loops" back to the boolean expression
 to test it again. If it still evaluates to `True`, the code block below
 it gets executed once more. And after it has finished, it loops back
-again, and again, and again...
+again, and again, and again…
 
 Note: if the boolean expression immediately evaluates to `False`, then
 the code block below the `while` is skipped completely, just like with
@@ -258,7 +258,7 @@ Fix the code above so that it no longer is an endless loop.
 You should now practice a bit with simple `while` loops.
 
 Write countdown code. It starts with a given number (e.g., 10), and
-counts down to zero, printing each number it encounters (10, 9, 8, ...).
+counts down to zero, printing each number it encounters (10, 9, 8, …).
 It does not print 0, instead it prints "Blast off!"
 
 The factorial of a positive integer is that integer, multiplied by all

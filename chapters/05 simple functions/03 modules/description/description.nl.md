@@ -14,7 +14,7 @@ Als alternatief kun je ook specifieke functies vanuit een module
 importeren, via:  
 
 ```python
-from <module> import <functie1>, <functie2>, <functie3>, ...
+from <module> import <functie1>, <functie2>, <functie3>, …
 ```
   
 Het voordeel van een dergelijke manier van functies importeren is dat je

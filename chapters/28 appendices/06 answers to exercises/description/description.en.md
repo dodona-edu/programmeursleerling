@@ -68,8 +68,8 @@ solve a task, than that you solve it in the most efficient manner.
 
 You should draw four boxes on a piece of paper, number them, and put
 each of the cards in one of the boxes. Tell the person who is following
-the instructions that "compare the card in box $x$ with the card in box
-$y$" means that they should ask the processor to take up those cards,
+the instructions that "compare the card in box $$x$$ with the card in box
+$$y$$" means that they should ask the processor to take up those cards,
 look at them, put them back in the same spots where they were taken
 from, and then indicate which of the two is the higher card. Then you
 can give them instructions for the simple, six-comparisons procedure
@@ -108,10 +108,10 @@ You now have Python running on your computer. Congratulations!
 #### Answer 2.2
 
 You will see nothing in the shell (apart from a display of the word
-`RESTART` that you always see when running a program). $7/4$ is a legal
+`RESTART` that you always see when running a program). $$7/4$$ is a legal
 Python statement, so the program will not give an error. The program
-just calculates $7/4$, but does not display the result using a print
-statement, so the program does not show $1.75$. The shell, however,
+just calculates $$7/4$$, but does not display the result using a print
+statement, so the program does not show $$1.75$$. The shell, however,
 displays the result of running the program. But since a program has no
 result by itself, there is nothing for the shell to display either. So
 you see nothing.
@@ -146,7 +146,7 @@ print( 1/0 )
 
 The problem is that there is one closing parenthesis missing in the
 first line of code. I actually deleted the closing parenthesis that
-should be right of the $6$, but you cannot know that; you can only count
+should be right of the $$6$$, but you cannot know that; you can only count
 the parentheses in the first statement and see that there is one less
 closing parenthesis than there are opening parentheses.
 
@@ -447,7 +447,7 @@ while bottles != "no":
         "of beer on the wall.".format( bottles, s ) )
 ```
 
-The backslash (\\) at the end of two of the strings in this code
+The backslash (`\`) at the end of two of the strings in this code
 concatenates the string on the next line to the string after which the
 backslash is found. I use that feature here to make the code fit in the
 box. Use of the backslash to allow code to span multiple lines is
@@ -807,7 +807,7 @@ Finally, I present a solution that I did not suggest, but that works
 great. It is very brief, incredibly fast, and gives an almost exact
 answer. It simply calculates
 
-$$\frac{1}{3} + \frac{2}{3}(\frac{1}{2}(2 + \frac{1}{2}(3 + \frac{1}{2}(4 + \frac{1}{2}(5 + ...) ) ) ) )$$
+$$\frac{1}{3} + \frac{2}{3}(\frac{1}{2}(2 + \frac{1}{2}(3 + \frac{1}{2}(4 + \frac{1}{2}(5 + \hellip) ) ) ) )$$
 
 for a limited number of terms, in this case 100, which is plenty to get
 a highly accurate approximation. Of course, this a calculation rather
@@ -823,7 +823,7 @@ for days in range( 2, 101 ):
 print( "{:.2f}".format( estimate ) )
 ```
 
-By the way, the exact answer is $2\frac{1}{3}$ days; an approximation
+By the way, the exact answer is $$2\frac{1}{3}$$ days; an approximation
 should give 2.33 or 2.34.
 
 ### Chapter <a href="#ch:functions" data-reference-type="ref" data-reference="ch:functions">9</a>
@@ -989,14 +989,14 @@ if __name__ == '__main__':
 #### Answer 8.7
 
 The code tries to print the return value of the function
-`area\_of\_triangle()`, but since this function has no return value, it
+`area_of_triangle()`, but since this function has no return value, it
 prints the word `None`. To display the output of a function, you can
 either print the output in the function and then call it without using
 the return value, or you let the function produce the output, return it,
 and print the return value of the function in your main program. Not
 both. In general it is preferable if functions do not do the printing
 themselves, because it makes them more generally usable (for instance,
-the function `area\_of\_triangle()`, if it just returns the area instead
+the function `area_of_triangle()`, if it just returns the area instead
 of printing it, you can not only use the function to print the area, but
 also use the area in calculations). If you do not understand the
 explanation given here, revisit Chapter
@@ -1102,7 +1102,7 @@ have to represent each pole as a list of discs (lists will be introduced
 in Chapter
 <a href="#ch:lists" data-reference-type="ref" data-reference="ch:lists">13</a>),
 and you have to find a way to check whether the game is solved (you can
-just take the number of necessary moves, which is $2^N-1$).
+just take the number of necessary moves, which is $$2^N-1$$).
 
 ### Chapter <a href="#ch:strings" data-reference-type="ref" data-reference="ch:strings">11</a>
 
@@ -1288,7 +1288,7 @@ print( newsentence )
 #### Answer 11.1
 
 I created `display_complex()` to nicely format complex numbers (it will
-not show a real part which is zero, or a 1 in front of the $i$, or clump
+not show a real part which is zero, or a 1 in front of the $$i$$, or clump
 a plus and minus together). Creating such a function was not a
 requirement.
 
@@ -2040,8 +2040,8 @@ except:
 
 #### Answer 18.1
 
-For this program I created a copy of "pc\_rose.txt" and called it
-"pc\_rose\_copy.txt." To demonstrate what happens, I display the
+For this program I created a copy of "pc_rose.txt" and called it
+"pc_rose_copy.txt." To demonstrate what happens, I display the
 contents of the file before and after the encryption process.
 
 ```python

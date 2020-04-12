@@ -11,12 +11,12 @@ Bijvoorbeeld, stel dat je een class definieert die een representatie is
 van een quaternion.[^23] Je weet dat het optellen en vermenigvuldigen
 van quaternionen goed gedefinieerde operaties zijn. Daarom zou je
 wellicht willen definiëren wat er gebeurt als je twee van je
-quaternionen met elkaar verbindt middels de $+$ operator. Python staat
-je toe dat vast te leggen. Python staat je toe wat de $+$ operator doet
+quaternionen met elkaar verbindt middels de $$+$$ operator. Python staat
+je toe dat vast te leggen. Python staat je toe wat de $$+$$ operator doet
 voor iedere willekeurige class die je implementeert.
 
 Is dat niet geweldig? Nu kun je een class `Student` definiëren, en
-ervoor zorgen dat als twee studenten met een $+$ bij elkaar worden
+ervoor zorgen dat als twee studenten met een $$+$$ bij elkaar worden
 geteld, hun leeftijden bij elkaar worden opgeteld. Prachtig, niet?
 
 Nee, dat is helemaal niet prachtig. Het is overduidelijk een zinloze

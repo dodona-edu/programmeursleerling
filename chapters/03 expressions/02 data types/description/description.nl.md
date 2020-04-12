@@ -17,10 +17,10 @@ aanhalingstekens.
 
 Maar wat moet je doen als een string zowel dubbele als enkele
 aanhalingstekens bevat? Je kunt dat oplossen door in de string een
-"backslash" (\\) op te nemen voor ieder dubbel of enkel aanhalingsteken
+"backslash" (`\`) op te nemen voor ieder dubbel of enkel aanhalingsteken
 dat in de string staat. Dit vertelt Python dat dat aanhalingsteken
 behandeld moet worden als een teken in de string, en niet als een
-afsluiting van de string. Dus `'mango\\'s'` is een correcte string, wat
+afsluiting van de string. Dus `'mango\'s'` is een correcte string, wat
 je kunt zien als je hem probeert te printen:
 
 ```python

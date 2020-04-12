@@ -171,7 +171,7 @@ retour waarde moet je kennen om de functie te kunnen gebruiken. Het zou
 kunnen dat de functie intern variabelen aanmaakt en berekeningen doet,
 maar die hebben geen effect op de rest van de code.
 
-...Tenminste, als de functie netjes geïmplementeerd is. Een functie die
+…Tenminste, als de functie netjes geïmplementeerd is. Een functie die
 geen effect heeft op de rest van de code heet een "pure functie." Alle
 functies die ik hier bespreek zijn "pure functies." Maar het feit dat er
 een aparte naam is voor functies die de rest van de code niet aantasten,

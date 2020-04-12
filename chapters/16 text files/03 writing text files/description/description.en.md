@@ -69,13 +69,13 @@ exactly the same method as `write()`, so it is not needed.
 
 ### Practice
 
-Write a program that reads the contents of "pc\_rose.txt," and writes
-exactly the same contents to the file "pc\_writetest.tmp." Then open the
-file "pc\_writetest.tmp" and display the contents. You can easily
+Write a program that reads the contents of "pc_rose.txt," and writes
+exactly the same contents to the file "pc_writetest.tmp." Then open the
+file "pc_writetest.tmp" and display the contents. You can easily
 construct this program by cobbling together some of the code given
 above.
 
-Write a program that reads the contents of "pc\_rose.txt," reverses each
+Write a program that reads the contents of "pc_rose.txt," reverses each
 of the lines, and writes the reversed lines to the file
-"pc\_writetest.tmp." Then open the file "pc\_writetest.tmp" and display
+"pc_writetest.tmp." Then open the file "pc_writetest.tmp" and display
 the contents.

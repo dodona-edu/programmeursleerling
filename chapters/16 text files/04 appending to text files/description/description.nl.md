@@ -5,7 +5,7 @@ aan het einde van het bestand, waar je dan nieuwe data mag wegschrijven.
 Om een bestand in deze modus te openen, gebruik je `"a"` als het tweede
 argument bij het openen van het bestand.
 
-De code hieronder toont eerst de inhoud van "pc\_writetest.tmp" (die nu
+De code hieronder toont eerst de inhoud van "pc_writetest.tmp" (die nu
 zou moeten bestaan). Daarna wordt de gebruiker gevraagd om regels in te
 geven die aan het bestand worden toegevoegd. Tenslotte wordt de nieuwe
 inhoud van het bestand getoond. Ik heb dit programma iets beter

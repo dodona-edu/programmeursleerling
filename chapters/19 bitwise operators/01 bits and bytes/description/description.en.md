@@ -28,16 +28,16 @@ When bits are numbered, by convention numbering starts at zero at the
 rightmost end, and numbers are increased when counting to the left,
 i.e., the rightmost bit has number 0, the bit next to that has number 1,
 the bit next to that has number 2, etcetera. The reason is that the
-rightmost bit represents the value $2^0$ (which, in case you forgot,
-equals 1), the bit next to it the value $2^1$, the bit next to that
-$2^2$, etcetera.
+rightmost bit represents the value $$2^0$$ (which, in case you forgot,
+equals 1), the bit next to it the value $$2^1$$, the bit next to that
+$$2^2$$, etcetera.
 
 |                   |       |          |        |          |        |        |          |        |       |
 |:------------------|------:|---------:|-------:|---------:|-------:|-------:|---------:|-------:|:------|
 | Byte              |      1|         1|       0|         1|       0|       0|         1|       0|       |
 | Number of bit     |      7|         6|       5|         4|       3|       2|         1|       0|       |
-| Represented value |  $2^7$|     $2^6$|   $2^5$|     $2^4$|   $2^3$|   $2^2$|     $2^1$|   $2^0$|       |
-| Byte value        |  $2^7$|  \+ $2^6$|  \+ $0$|  \+ $2^4$|  \+ $0$|  \+ $0$|  \+ $2^1$|  \+ $0$| = 210 |
+| Represented value |  $$2^7$$|     $$2^6$$|   $$2^5$$|     $$2^4$$|   $$2^3$$|   $$2^2$$|     $$2^1$$|   $$2^0$$|       |
+| Byte value        |  $$2^7$$|  \+ $$2^6$$|  \+ $$0$$|  \+ $$2^4$$|  \+ $$0$$|  \+ $$0$$|  \+ $$2^1$$|  \+ $$0$$| = 210 |
 {:class="table table-striped table-condensed" style="width:auto;margin-left:auto;margin-right:auto;"}
 
 Write some code that calculates the decimal number represented by a
@@ -50,8 +50,8 @@ and if the character encountered is a "1," it adds the multiplier to a
 total. This will end up with the number represented by the string as the
 total.
 
-The lowest number that can be expressed by a byte is $00000000$, which
-equals zero. The highest is $11111111$, which equals 255. Thus, there
+The lowest number that can be expressed by a byte is $$00000000$$, which
+equals zero. The highest is $$11111111$$, which equals 255. Thus, there
 are 256 different values that can be expressed by one byte.
 
 ### Character encoding
@@ -64,7 +64,7 @@ ran from (hexadecimal) 20 to 7E. The codes below 20 are used for special
 sequences (such as the newline character). The code 7F usually represent
 the `Del` key. No other codes are in use, which means that all ASCII
 characters can be represented by 7 bits, or the 8-bit sequences
-$00000000$ to $01111111$.
+$$00000000$$ to $$01111111$$.
 
 While computers use bytes as basic data unit, the ASCII character set
 does not use 128 of all the values that can be stored in a byte. All
@@ -95,11 +95,11 @@ UTF-8 encoding works as follows:
     several bits with value 1, followed by a bit with value zero,
     followed by the remaining bits. The length of the total multibyte
     sequence is as many bytes as there are bits with value 1 to the left
-    of the leftmost zero. E.g., if the leading byte has value $1110xxxx$
-    (where each $x$ is some bit value), the whole sequence is three
+    of the leftmost zero. E.g., if the leading byte has value $$1110xxxx$$
+    (where each $$x$$ is some bit value), the whole sequence is three
     bytes long. This includes the leading byte. The minimum sequence
     length is two bytes, and the maximum sequence length is six bytes
-    (the leading byte will then be $1111110x$).
+    (the leading byte will then be $$1111110x$$).
 
 -   Each continuation byte has 10 as the two leftmost bits.
 
@@ -129,10 +129,10 @@ becomes a zero and every zero becomes a 1. Finally, 1 is numerically
 added to the result. The bit pattern of a negative number therefore
 always has a 1 as its leftmost bit.
 
-For example, to encode $-1$, first the bit pattern of 1 is taken, which
-is ...$00000001$. All the bits are flipped, which gives ...$11111110$.
-Finally, 1 is added the the result, which gives ...$11111111$. Thus,
-$-1$ is encoded as a sequence of only $1$s.
+For example, to encode $$-1$$, first the bit pattern of 1 is taken, which
+is …$$00000001$$. All the bits are flipped, which gives …$$11111110$$.
+Finally, 1 is added the the result, which gives …$$11111111$$. Thus,
+$$-1$$ is encoded as a sequence of only $$1$$s.
 
 As for floating point numbers, these use scientific notation, whereby
 part of the multi-byte pattern is used as exponent.

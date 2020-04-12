@@ -27,7 +27,7 @@ string has index `-len(s)`.
 
 If a string is stored in a variable, the individual letters of the
 string can be accessed by the variable name and the index of the
-requested letter between square brackets (\[\]) next to it.
+requested letter between square brackets (`[]`) next to it.
 
 ```python
 fruit = "orange"

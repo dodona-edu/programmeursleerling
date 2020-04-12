@@ -74,13 +74,13 @@ zijn als `write()`, dus hij is overbodig.
 
 ### Oefening
 
-Schrijf een programma dat de inhoud van "pc\_rose.txt" leest, en exact
-dezelfde inhoud schrijft in een bestand "pc\_writetest.tmp." Open dan
-het bestand "pc\_writetest.tmp" en toon de inhoud. Je kunt dit programma
+Schrijf een programma dat de inhoud van "pc_rose.txt" leest, en exact
+dezelfde inhoud schrijft in een bestand "pc_writetest.tmp." Open dan
+het bestand "pc_writetest.tmp" en toon de inhoud. Je kunt dit programma
 gemakkelijk bouwen door wat van de hierboven gegeven code bij elkaar te
 plakken.
 
-Schrijf een programma dat de inhoud van "pc\_rose.txt" leest, iedere
+Schrijf een programma dat de inhoud van "pc_rose.txt" leest, iedere
 regel achterstevoren zet, en dan de geïnverteerde regels wegschrijft
-naar het bestand "pc\_writetest.tmp." Open daarna "pc\_writetest.tmp" en
+naar het bestand "pc_writetest.tmp." Open daarna "pc_writetest.tmp" en
 toon de inhoud.

@@ -99,5 +99,5 @@ csvwriter.writerow( ["Monty Python's Meaning of Life", 7] )
 fp.close()
 ```
 
-After using the code above to create the file "pc\_writetest.csv," open
+After using the code above to create the file "pc_writetest.csv," open
 it and use `reader()` to list its contents.

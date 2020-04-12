@@ -49,7 +49,7 @@ gewoon `"a+"`? Deze letter "r" vertelt Python dat deze string beschouwd
 moet worden als "ruwe data," dat wil zeggen, dat Python niet moet
 proberen delen van de string te converteren via de standaard Python
 string interpretaties. Dat is met name belangrijk als de reguliere
-expressie een `"\\b"` bevat, wat voor reguliere expressies betekent
+expressie een `"\b"` bevat, wat voor reguliere expressies betekent
 "woord begrenzing" (dat leg ik later in dit hoofdstuk uit), maar voor
 Python een speciaal teken is dat "backspace" betekent. Dus je doet er
 goed aan die letter "r" altijd voor reguliere expressies op te nemen, om
@@ -61,7 +61,7 @@ tweede parameter (een zogeheten "vlag") opnemen in de aanroep van
 verwerkt moet worden. Het argument `re.I` geeft aan dat er geen
 onderscheid gemaakt moet worden tussen hoofd- en kleine letters, terwijl
 `re.S` aangeeft dat het patroon ook "newlines" moet verwerken, en `re.M`
-aangeeft dat het patroon de meta-tekens `^` en `\$` moet toepassen op
+aangeeft dat het patroon de meta-tekens `^` en `$` moet toepassen op
 iedere regel tekst, en niet alleen de tekst als geheel. Je mag deze
 argumenten met elkaar combineren middels pipe-lines (`|`).
 
@@ -142,7 +142,7 @@ Ik liet zien dat de `findall()` methode een list bouwt van de
 voorkomende patronen. `findall()` wordt gecomplementeerd door de
 `finditer()` methode, die een list (of liever gezegd, een iterator)
 bouwt van match objecten voor het gezochte patroon. De beste manier om
-zo'n list te verwerken is via de `for m in ...` constructie.
+zo'n list te verwerken is via de `for m in …` constructie.
 Bijvoorbeeld:
 
 ```python

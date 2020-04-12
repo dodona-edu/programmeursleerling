@@ -43,8 +43,7 @@ Notice that after the `while` loop above, the value of `i` is 5. The
 value of `fruit` after the `for` loop above is the last item that it
 encountered, i.e., `"strawberry"`.
 
-### `break` <span id="ss:break"
-label="ss:break">\[ss:break\]</span>
+### `break`
 
 The `break` statement allows you to break out of a loop prematurely.
 I.e., when Python encounters the `break` statement, it will no longer
@@ -98,7 +97,7 @@ purpose of the `break` is.
 
 With some juggling the boolean expression for the loop actually can do
 the comparison for me. It would be something like
-`while (i < 1000000) and (num1` `!=` `3*num2):`. This becomes a bit
+`while (i < 1000000) and (num1 != 3*num2):`. This becomes a bit
 convoluted, and I would also have to give `num1` and `num2` starting
 values before the loop starts. Still, it is always possible to avoid
 using a `break`, but applying the `break` might make code more readable

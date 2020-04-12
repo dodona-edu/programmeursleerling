@@ -225,7 +225,7 @@ Als je deelt door nul, geeft Python een runtime error, dus de evaluatie
 van `x / y == 1` geeft een error als `y` nul is. En als je de code
 bestudeert, zie je dat `y` inderdaad nul is. Maar de code geeft geen
 foutmelding. Python evalueert de boolean expressie van links naar
-rechts, en ziet op een gegeven moment `... or (y == 0) or ...`. `y == 0`
+rechts, en ziet op een gegeven moment `… or (y == 0) or …`. `y == 0`
 evalueert als `True`. Omdat een expressie die via `or`s gecombineerd is
 `True` is als één van de componenten `True` is, kan Python na evaluatie
 van `(y == 0)` concluderen dat deze hele expressie `True` is. Het is dus

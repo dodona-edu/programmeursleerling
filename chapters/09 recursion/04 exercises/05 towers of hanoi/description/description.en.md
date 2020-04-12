@@ -36,7 +36,7 @@ process of generating the recipe.
 > target pole, and finally use the size-9 procedure to move the 9 discs
 > from the middle pole to the target pole. But how do you solve the
 > problem with the biggest disc being size 9? Well, that is simple if you
-> know how to solve it for size 8... You can imagine where this is going.
+> know how to solve it for size 8… You can imagine where this is going.
 > You are reducing the complexity of the problem step by step, until you
 > are at "solving the problem for size 2 is simple if you can solve it for
 > size 1." Solving it for size 1 is trivial: you just move the disc to

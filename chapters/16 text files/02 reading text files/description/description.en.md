@@ -77,17 +77,17 @@ with open( "pc_rose.txt" ) as fp:
 print( buffer )
 ```
 
-This code assumes that a file is available with the name "pc\_rose.txt,"
+This code assumes that a file is available with the name "pc_rose.txt,"
 and that it is located in the same directory as the program. Appendix
 <a href="#ch:testtextfiles" data-reference-type="ref" data-reference="ch:testtextfiles">33</a>
 explains how to get it. If the file is unavailable, you get a runtime
 error. How to deal with such errors will be explained in the next
 chapter.
 
-In the code above, change the file name "pc\_rose.txt" to something that
+In the code above, change the file name "pc_rose.txt" to something that
 does not exist. Run the program and observe the error that you get.
 
-In the code above, change the file name to "pc\_woodchuck.txt" (if you
+In the code above, change the file name to "pc_woodchuck.txt" (if you
 have that file). Run the program and observe the output.
 
 ### Reading lines using `readline()`
@@ -119,7 +119,7 @@ when the buffer is printed, it prints a newline character too. And since
 the `print()` function also moves to a new line after it is executed,
 there is an empty line printed after each line of text.
 
-Write a program that reads the lines from "pc\_rose.txt," and displays
+Write a program that reads the lines from "pc_rose.txt," and displays
 only those lines that contain the word `"name"`.
 
 ### Reading lines using `readlines()`

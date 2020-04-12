@@ -8,8 +8,8 @@ with performing a specific task:
 Suppose that you have a deck of cards, each card with a different number
 on it. You have to sort these cards from low to high, lowest card on
 top. Most people are able to do that. Also, most people, when you ask
-them how they do it, will look at you mystified, and answer: "Well,... I
-just sort them low to high... what do you mean with how do I do it?"
+them how they do it, will look at you mystified, and answer: "Well,… I
+just sort them low to high… what do you mean with how do I do it?"
 Other people may say: "I first seek the highest card, and put it down.
 Then I seek the next highest card, and put it on top of the highest
 card. Etcetera." While this more or less explains how they sort cards,

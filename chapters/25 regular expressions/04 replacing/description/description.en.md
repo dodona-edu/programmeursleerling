@@ -9,8 +9,8 @@ value if you want access to the new string).
 
 The replacement is usually just a string, but it may contain references
 to groups in the original pattern. You will have to use a format that is
-different from the `\\x` format shown before. If you want to refer to
-group `x` in the pattern (`x` being a number), you write `\\g<x>`. The
+different from the `\x` format shown before. If you want to refer to
+group `x` in the pattern (`x` being a number), you write `\g<x>`. The
 reason for the difference is disambiguation; it allows you to
 distinguish a reference to, for instance, group 2 followed by a
 character zero, from a reference to group 20.

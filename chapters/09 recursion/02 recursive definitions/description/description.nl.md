@@ -117,7 +117,7 @@ De ingang is 1, de uitgang is 16.
 
 Hoe vind je nu je weg door zo'n doolhof (zonder dat je de layout kent)?
 Recursief kan dat als volgt: Je definieert een functie
-`leidt\_naar\_uitgang()` die een pad naar de uitgang retourneert als de
+`leidt_naar_uitgang()` die een pad naar de uitgang retourneert als de
 cel die als parameter wordt meegegeven op het pad ligt dat naar de
 uitgang leidt. Als die functie een pad retourneert, dan weet je dat de
 huidige cel op dat pad ligt. Als je hem dus aanroept met cel 1, krijg je
@@ -140,7 +140,7 @@ niet. Het probleem is niet onoplosbaar als ze er wel zijn, maar om dat
 netjes op te lossen heb je een data structuur nodig die pas in een
 toekomstig hoofdstuk aan bod komt.
 
-In pseudo-code ziet de recursieve functie `leidt\_naar\_uitgang()` er
+In pseudo-code ziet de recursieve functie `leidt_naar_uitgang()` er
 ongeveer als volgt uit:
 
 ```python

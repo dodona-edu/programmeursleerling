@@ -110,7 +110,7 @@ Entrance is 1, exit is 16.
 
 So how do you find a way through such a maze (without knowing the exact
 layout)? Recursively, you can do it as follows: You define a function
-`leads\_to\_exit()` that returns a path to the exit if the cell that it
+`leads_to_exit()` that returns a path to the exit if the cell that it
 is currently examining is on the path that leads to the exit. If that
 function returns a path, then you know that the current cell is also on
 the path. If you call it with cell 1, you get a path that leads from the
@@ -130,7 +130,7 @@ circular paths in the maze, but fortunately there aren't. The problem is
 not unsolvable if there are circular paths, but to solve it a data
 structure is needed that is not discussed yet.
 
-In pseudo-code, the recursive function `leads\_to\_exit()` is something
+In pseudo-code, the recursive function `leads_to_exit()` is something
 like this:
 
 ```python

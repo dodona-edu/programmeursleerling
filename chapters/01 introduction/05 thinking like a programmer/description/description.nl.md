@@ -10,7 +10,7 @@ een verschillend getal geschreven. Je moet deze kaarten sorteren van
 laag naar hoog, met het laagste getal bovenop. De meeste mensen kunnen
 die taak uitvoeren. Voor de meeste mensen geldt ook dat als je ze vraagt
 *hoe* ze de taak uitvoeren, ze je vragend aan zullen kijken en zeggen:
-"Eh..., ik sorteer ze van laag naar hoog... wat bedoel je met hoe ik dat
+"Eh…, ik sorteer ze van laag naar hoog… wat bedoel je met hoe ik dat
 doe?" Anderen zullen zeggen: "Ik zoek eerst de hoogste kaart en die leg
 ik onderop. Dan zoek ik de op-een-na-hoogste en die leg ik erbovenop.
 Enzovoorts." Dit legt min of meer uit hoe ze het doen, maar als je dan

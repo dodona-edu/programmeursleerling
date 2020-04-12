@@ -84,18 +84,18 @@ print( buffer )
 ```
 
 Deze code verkeert in de veronderstelling dat een bestand met de naam
-"pc\_rose.txt" beschikbaar is in dezelfde directory als waar het
+"pc_rose.txt" beschikbaar is in dezelfde directory als waar het
 programma staat. Appendix
 <a href="#ch:testtextfiles" data-reference-type="ref" data-reference="ch:testtextfiles">33</a>
 legt uit hoe je dit bestand kunt krijgen (als je het nog niet hebt). Als
 het bestand niet bestaat, krijg je een runtime error. Hoe je met zulke
 fouten om moet gaan wordt in het volgende hoofdstuk uitgelegd.
 
-Wijzig in de code hierboven de bestandsnaam "pc\_rose.txt" in een naam
+Wijzig in de code hierboven de bestandsnaam "pc_rose.txt" in een naam
 die niet bestaat. Bestudeer de fout die je krijgt als je het programma
 uitvoert.
 
-Als je het bestand "pc\_woodchuck.txt" hebt, wijzig dan de bestandsnaam
+Als je het bestand "pc_woodchuck.txt" hebt, wijzig dan de bestandsnaam
 in de code hierboven in die naam. Voer het programma uit en bestudeer de
 uitvoer.
 
@@ -129,7 +129,7 @@ afgedrukt. En omdat de `print()` functie zelf ook naar een nieuwe regel
 gaat nadat hij is uitgevoerd, krijg je een lege regel te zien na iedere
 tekstregel die wordt afgedrukt.
 
-Schrijf een programma dat regels leest uit "pc\_rose.txt," en alleen die
+Schrijf een programma dat regels leest uit "pc_rose.txt," en alleen die
 regels toont die het woord `"naam"` bevatten.
 
 ### Regels lezen met `readlines()`

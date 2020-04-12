@@ -28,7 +28,7 @@ heeft de eerste letter van de string de index `-len(s)`.
 
 Als een string is opgeslagen in een variabele, dan kun je de individuele
 letters van de string benaderen via de variabele naam en de index van de
-gevraagde letter tussen vierkante haken (\[\]) rechts ernaast.
+gevraagde letter tussen vierkante haken (`[]`) rechts ernaast.
 
 ```python
 fruit = "aardbei"

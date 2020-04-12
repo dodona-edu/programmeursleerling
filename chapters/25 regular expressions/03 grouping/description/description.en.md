@@ -75,21 +75,21 @@ instance, the string "regular" would not have a match, but the string
 cannot be done with the regular expression features that we discussed
 until now. It can be solved, however, with groups, and special
 references within a regular expression, namely as follows: using the
-special sequence `\\x`, whereby `x` is a number, you refer to the group
+special sequence `\x`, whereby `x` is a number, you refer to the group
 with index `x` in the match. Thus, a regular expression that represents
-a string with an arbitrary non-space character twice is `(\\S).*\\1`.
+a string with an arbitrary non-space character twice is `(\S).*\1`.
 
 Since at this point this regular expression might still be a bit hard to
-understand, let's look at it in depth. The `\\S` is a special sequence
+understand, let's look at it in depth. The `\S` is a special sequence
 that represents a non-space character. Putting it in parentheses turns
 it into a group, and since this is the first (and only) group in the
 expression, its index is 1. The `.*` represents a sequence of zero or
 more characters, which can be anything (the period is a meta-character
-that represents any character). Finally, the `\\1` refers to the first
+that represents any character). Finally, the `\1` refers to the first
 group, and says that here you want to have exactly the same thing as the
 first group represents. If you are wondering why you do not need to
-represent anything that can be placed before the `\\S`, or anything that
-can come after the `\\1`, then the answer is that you are not specifying
+represent anything that can be placed before the `\S`, or anything that
+can come after the `\1`, then the answer is that you are not specifying
 that this regular expression represents a string as a whole, so as long
 as it occurs anywhere in the string, it matches.
 

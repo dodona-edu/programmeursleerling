@@ -76,7 +76,7 @@ changing but the date. Therefore, if I design a class `Person` that
 models a person, I best make "date of birth" an attribute of the person,
 while "age" is a method of the person. Remember that methods are
 functions that belong to a certain data type: if a data type `Person` is
-defined, `date\_of\_birth` is an attribute of that data type, while
+defined, `date_of_birth` is an attribute of that data type, while
 `age()` is a method of that data type that returns the person's age as
 an integer.
 
@@ -177,6 +177,6 @@ is an instance of a class.
 But not only strings are class instances: integers and floats are too.
 They even have methods, though these are seldom used explicitly. Some
 methods are used implicitly, e.g., when you add two numbers together
-with $+$, that is actually a method call. This will be discussed in
+with $$+$$, that is actually a method call. This will be discussed in
 Chapter
 <a href="#ch:operatoroverloading" data-reference-type="ref" data-reference="ch:operatoroverloading">22</a>.

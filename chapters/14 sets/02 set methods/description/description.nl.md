@@ -71,9 +71,9 @@ elementen van beide verenigde sets bevat. Je kunt de `union()` methode
 voor de ene set, met als argument de andere set, gebruiken om de
 vereniging van beide geretourneerd te krijgen. Dit verandert niets aan
 de twee gebruikte sets zelf. Je kunt als alternatief de speciale
-operator $|$ ("pipeline") gebruiken om de vereniging te creëren. Merk
-op: je zou misschien denken dat je de $+$ operator kunt gebruiken om
-twee sets te verenigen, maar $+$ is niet voor sets gedefinieerd, en $*$
+operator $$|$$ ("pipeline") gebruiken om de vereniging te creëren. Merk
+op: je zou misschien denken dat je de $$+$$ operator kunt gebruiken om
+twee sets te verenigen, maar $$+$$ is niet voor sets gedefinieerd, en $$*$$
 is evenmin gedefinieerd.
 
 ```python
@@ -93,7 +93,7 @@ alleen de elementen bevat die beide samenstellende sets gemeen hebben.
 Je kunt de `intersection()` methode gebruiken voor de ene set, met als
 argument de andere set, om de doorsnede van beide geretourneerd te
 krijgen. Dit verandert de samenstellende sets niet. Als alternatief kun
-je de speciale operator $\&$ ("ampersand") gebruiken om de doorsnede te
+je de speciale operator `&` ("ampersand") gebruiken om de doorsnede te
 creëren.
 
 ```python
@@ -157,12 +157,12 @@ Een set is zowel een subset als een superset van zichzelf.
 
 ### Oefening
 
-Er is ook een methode `symmetric\_difference()` die een set retourneert
+Er is ook een methode `symmetric_difference()` die een set retourneert
 die alle elementen bevat van de vereniging van twee sets, behalve de
 elementen die zich bevinden in de doorsnede van de twee sets.
 Bijvoorbeeld, als set 1 de elementen A, B, en C bevat, en set 2 de
 elementen B, C, en D, dan bevat de "symmetric difference" van sets 1 en
-2 alleen de elementen A en D. Kun je de `symmetric\_difference()`
+2 alleen de elementen A en D. Kun je de `symmetric_difference()`
 methode implementeren via de combinatie van een aantal van bovenstaande
 methodes?
 

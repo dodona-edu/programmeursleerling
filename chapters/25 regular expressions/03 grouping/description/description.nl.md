@@ -75,19 +75,19 @@ maar de string "magnetron" wel (aangezien de `"n"` twee keer voorkomt).
 Dit kun je niet doen met de mogelijkheden van reguliere expressies die
 ik tot nu toe bediscussieerd heb. Je kunt het echter oplossen met
 groepen, en speciale referenties binnen reguliere expressies, als volgt:
-je gebruikt het speciale teken `\\x`, waarbij `x` een cijfer is, waarmee
+je gebruikt het speciale teken `\x`, waarbij `x` een cijfer is, waarmee
 je dan refereert aan de groep met index `x` in het patroon. Dus de
-gevraagde reguliere expressie is `(\\S).*\\1`.
+gevraagde reguliere expressie is `(\S).*\1`.
 
 Omdat op dit punt deze reguliere expressie misschien wat moeilijk te
-begrijpen is, zal ik hem in detail doornemen. De `\\S` is een speciaal
+begrijpen is, zal ik hem in detail doornemen. De `\S` is een speciaal
 teken dat een non-spatie voorstelt. Door er haakjes omheen te zetten,
 wordt het een groep, en omdat de eerste (en enige) groep is, is de index
 1. De `.*` stelt een serie van nul of meer tekens voor die alles kunnen
 zijn (de punt is een meta-teken dat ieder teken kan voorstellen).
-Tenslotte is de `\\1` een referentie aan de eerste groep, en stelt dat
+Tenslotte is de `\1` een referentie aan de eerste groep, en stelt dat
 je hier exact moet hebben wat de eerste groep is. Als je je afvraagt of
-je niet ook moet beschrijven wat er vóór de `\\S` of na de `\\1` komt,
+je niet ook moet beschrijven wat er vóór de `\S` of na de `\1` komt,
 dan is het antwoord dat dat niet nodig is, aangezien deze reguliere
 expressie niet de string als geheel representeert. Dus zolang dit maar
 ergens voorkomt in de string, wordt het patroon gevonden.

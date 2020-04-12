@@ -4,7 +4,7 @@ In dit hoofdstuk is het volgende besproken:
 
 -   Veranderbaarheid van lists
 
--   Gebruik van $+$ en $*$ met lists
+-   Gebruik van $$+$$ en $$*$$ met lists
 
 -   List methodes `append()`, `extend()`, `insert()`, `remove()`,
     `pop()`, `index()`, `count()`, `sort()`, en `reverse()`

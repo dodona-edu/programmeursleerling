@@ -50,7 +50,7 @@ encoding, as `utf-8` has no corresponding characters with values in the
 
 If you want to see which special characters are supported with values in
 the range 80-FF on your system, run the code below. The numerical value
-of a character in the table can be derived by calculating $16*row+col$,
+of a character in the table can be derived by calculating $$16*row+col$$,
 whereby `row` and `col` are the hexadecimal row and column number,
 respectively. I do not display the characters in the range 80-9F, as
 these are normally not filled in.

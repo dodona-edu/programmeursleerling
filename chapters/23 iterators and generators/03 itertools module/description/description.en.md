@@ -37,9 +37,9 @@ for item in seq:
 `product()` creates an iterable that produces all elements of the
 Cartesian product of the iterables that are given as its arguments. To
 put that in less mathematical terms: if two iterables are given as
-arguments, and the first has elements $x$, $y$, and $z$, while the
-second has elements $a$ and $b$, `product()` produces $xa$, $xb$, $ya$,
-$yb$, $za$, and $zb$.
+arguments, and the first has elements $$x$$, $$y$$, and $$z$$, while the
+second has elements $$a$$ and $$b$$, `product()` produces $$xa$$, $$xb$$, $$ya$$,
+$$yb$$, $$za$$, and $$zb$$.
 
 ```python
 from itertools import product

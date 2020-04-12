@@ -34,4 +34,4 @@ print( 999 in numlist )
 Schrijf een `while` loop die elementen van een list afdrukt.
 
 Afgezien van de vierkante haken, lijken lists veel op tuples. Maar er is
-een groot verschil...
+een groot verschil…

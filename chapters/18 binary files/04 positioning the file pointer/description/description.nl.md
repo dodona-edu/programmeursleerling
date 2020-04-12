@@ -1,4 +1,4 @@
-Het bestand "pc\_binarytest.tmp" bevat een aantal geheime woorden, die
+Het bestand "pc_binarytest.tmp" bevat een aantal geheime woorden, die
 je niet kunt herkennen als je de inhoud van het bestand toont. Ik
 gebruik ze als illustratie bij het positioneren van de pointer.
 
@@ -55,7 +55,7 @@ De `seek()` methode is vooral nuttig als je een bestand opent in "lezen
 plus schrijven" modus (`"r+b"`). Je kunt ermee door het bestand bewegen
 en lezen wat je moet lezen, en (over)schrijven waar dat nodig is.
 
-Open "pc\_binarytest.tmp" in binaire "lezen plus schrijven" modus, en
+Open "pc_binarytest.tmp" in binaire "lezen plus schrijven" modus, en
 overschrijf de gecodeerde boodschap met de vertaling. Als je het bestand
 weer gesloten hebt, open het dan in tekst modus, lees de inhoud, en toon
 die. Als je het correct hebt gedaan, zie je twee leesbare regels. Als je

@@ -13,7 +13,7 @@ zijn voordat hij wordt aangeroepen, kan hij dus zichzelf aanroepen.
 
 "Maar," hoor ik iemand al protesteren: "als een functie zichzelf
 aanroept, dan roept hij zichzelf nogmaals aan, en nogmaals, en
-nogmaals... Betekent dat dan niet dat je een eindeloos proces krijgt,
+nogmaals… Betekent dat dan niet dat je een eindeloos proces krijgt,
 net als bij een eindeloze loop?" Het antwoord is dat er inderdaad het
 gevaar bestaat dat een recursieve functie, die slordig in elkaar is
 gestoken, een eindeloze serie aanroepen veroorzaakt. Maar recursieve

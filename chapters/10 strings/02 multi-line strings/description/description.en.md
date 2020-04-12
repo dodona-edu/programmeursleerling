@@ -27,7 +27,7 @@ print( long )
 ```
 
 As you can see when you run the code, Python interprets this example as
-a single line of text. The backslash (`\\`) can actually be included
+a single line of text. The backslash (`\`) can actually be included
 after any Python statement to indicate that it continues on the next
 line, and it can be quite useful for that, for instance when you write
 long calculations.

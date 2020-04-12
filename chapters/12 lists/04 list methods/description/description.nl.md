@@ -26,7 +26,7 @@ print( fruitlist )
 ```
 
 Zoals hierboven is beschreven, kun je in plaats van de `append()`
-methode een element aan een list toevoegen via de $+$ operator, en het
+methode een element aan een list toevoegen via de $$+$$ operator, en het
 resultaat weer toekennen aan de variabele die de list bevat. De
 `append()` methode is echter leesbaarder. `<``list``>.append(<element>)`
 is equivalent met `<``list``>[len(<``list``>):] = [<element>]`, of
@@ -46,7 +46,7 @@ print( fruitlist )
 ```
 
 Net als bij de `append()` methode kun je in plaats van de `extend()`
-methode de $+$ operator gebruiken en het resultaat toekennen aan de
+methode de $$+$$ operator gebruiken en het resultaat toekennen aan de
 originele list. En net als bij de `append()` methode, is het gebruik van
 de `extend()` methode te prefereren vanwege de leesbaarheid.
 `<``list``>.extend(<addlist>)` is equivalent met
@@ -223,7 +223,7 @@ fruitlist.sort( key=len_alfabetisch )
 print( fruitlist )
 ```
 
-Merk op dat de `len\_alfabetisch()` functie een tuple retourneert. Zoals
+Merk op dat de `len_alfabetisch()` functie een tuple retourneert. Zoals
 in hoofdstuk
 <a href="#ch:tuples" data-reference-type="ref" data-reference="ch:tuples">12</a>
 werd uitgelegd, als je twee tuples vergelijkt worden eerst de eerste

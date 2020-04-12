@@ -13,7 +13,7 @@ the elements of a set as dictionary keys. Thus, only immutable data
 types can be set elements. Sets themselves, however, are mutable.
 
 Since Python uses dictionaries to implement sets, you might think that
-you can create an empty set by assigning `\{\}` to a variable. That,
+you can create an empty set by assigning `{}` to a variable. That,
 however, does not work as it creates an empty dictionary, not an empty
 set. Instead, you create an empty set by assigning a call to the
 function `set()` to a variable.

@@ -44,7 +44,7 @@ control codes, and are not legal characters that you can put in a string
 "escape code": the escape sequence `\x` can be followed by a
 two-character hexadecimal code that represents the character with the
 specified number. For example, the hexadecimal code for a space is
-`\x20`, i.e., `"Hello, world\`"! is the same as `"Hello,\\x20world\`"!
+`\x20`, i.e., `"Hello, world!\"` is the same as `"Hello,\\x20world!\"`
 (this was discussed in Chapter
 <a href="#ch:strings" data-reference-type="ref" data-reference="ch:strings">11</a>).
 
@@ -144,7 +144,7 @@ mode.
 ### Binary reading demonstration
 
 To demonstrate how reading a binary file works, I now open the file
-"pc\_rose.txt," and read ten times ten bytes from it.
+"pc_rose.txt," and read ten times ten bytes from it.
 
 ```python
 fp = open( "pc_rose.txt", "rb" )

@@ -239,6 +239,6 @@ retourneert. Als je besluit om sommige details weg te laten, kun je
 beter `__str__()` gebruiken.
 
 Breid de class `Punt` uit met een `kleur` attribuut, waarbij `kleur` een
-getal is tussen 0 en $2^{24}-1$. Zorg ervoor dat de kleur in de
+getal is tussen 0 en $$2^{24}-1$$. Zorg ervoor dat de kleur in de
 `__init__()` methode een waarde krijgt, en in de `__repr__()` methode
 geretourneerd wordt.

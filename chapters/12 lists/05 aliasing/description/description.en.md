@@ -64,7 +64,7 @@ print( newfruitlist is verynewfruitlist )
 
 As you can see, the keyword `is` manages to determine that `fruitlist`
 and `newfruitlist` are aliases, but that `verynewfruitlist` is not the
-same list. If you compare them with the $==$ operator, the results are
+same list. If you compare them with the $$==$$ operator, the results are
 not the same as comparing them with `is`:
 
 ```python
@@ -77,8 +77,8 @@ print( fruitlist == verynewfruitlist )
 print( newfruitlist == verynewfruitlist )
 ```
 
-The $==$ operator actually compares the contents of the lists, so it
-returns `True` for all comparisons. For data types for which $==$ is not
+The $$==$$ operator actually compares the contents of the lists, so it
+returns `True` for all comparisons. For data types for which $$==$$ is not
 defined, it executes an identity comparison, but for lists it has been
 defined as a comparison of the contents. I will return to this topic
 when discussing "operator overloading" in Chapter

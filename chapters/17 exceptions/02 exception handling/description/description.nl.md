@@ -1,10 +1,10 @@
 Om exceptions expliciet in je programma af te handelen, gebruik je de
-`try ... except` constructie. Er zijn verschillende manieren om deze
+`try … except` constructie. Er zijn verschillende manieren om deze
 constructie toe te passen.
 
-### `try` ... `except`
+### `try` … `except`
 
-De meest basale vorm van de `try ... except` constructie heeft de
+De meest basale vorm van de `try … except` constructie heeft de
 volgende syntax:
 
 ```python
@@ -36,10 +36,10 @@ except:
 print( "Tot ziens!" )
 ```
 
-Meerdere statements mogen binnen een enkele `try ... except` gebruikt
+Meerdere statements mogen binnen een enkele `try … except` gebruikt
 worden. Bijvoorbeeld, de volgende code genereert een exception als de
 gebruiker een nul ingeeft of als de gebruiker een 3 ingeeft. Beide
-uitzonderingen worden via dezelfde `try ... except` constructie
+uitzonderingen worden via dezelfde `try … except` constructie
 afgehandeld.
 
 ```python
@@ -78,7 +78,7 @@ De twee exceptions die in deze code kunnen optreden zijn de
 iets ingeeft dat geen integer is. Probeer het als je dat niet al gedaan
 hebt.
 
-Je kunt beide exceptions afhandelen met een enkele `try ... except`
+Je kunt beide exceptions afhandelen met een enkele `try … except`
 constructie, maar je kunt ze ook van elkaar onderscheiden door meerdere
 `except`s te gebruiken. Iedere `except` kan gevolgd worden door één van
 de specifieke exceptions, en de code die bij die `except` hoort wordt
@@ -98,7 +98,7 @@ Als je "alle overige exceptions" wilt afhandelen, kun je een `except`
 zonder specifieke exception aan het einde toevoegen. Slechts één van de
 `except`s zal worden uitgevoerd, namelijk de eerste die wordt
 aangetroffen die van toepassing is. Dit werkt dus ongeveer als een
-`if ... elif ... elif ... else` constructie.
+`if … elif … elif … else` constructie.
 
 ```python
 try:
@@ -135,7 +135,7 @@ Hier zijn een aantal specifieke exceptions die vaak optreden:
     data type dat niet ondersteund wordt door de operatie
 
 De code hieronder kan verschillende exceptions genereren. Deze worden nu
-afgehandeld door een enkele `try ... except` constructie. Breid deze
+afgehandeld door een enkele `try … except` constructie. Breid deze
 code uit met de expliciete afhandeling van alle exceptions die van
 toepassing zijn (er zijn er minimaal drie). Ik wil hierbij benadrukken
 dat ik liever zie dat je exceptions vermijdt dan dat je ze afhandelt,
@@ -157,7 +157,7 @@ except:
 
 ### Toevoegen van een `else`
 
-Aan het einde van een `try ... except` constructie kun je een `else`
+Aan het einde van een `try … except` constructie kun je een `else`
 toevoegen. De acties die bij de `else` staan worden alleen uitgevoerd
 als er geen exception optreedt. Bijvoorbeeld, in de code hieronder wordt
 de berekende waarde voor `num` alleen getoond als er geen exception
@@ -240,7 +240,7 @@ except IOError as ex:
 ### Advies voor het gebruik van exception afhandeling
 
 Als je een exception opvangt in je code, handel hem dan ook netjes af,
-en negeer hem niet. Gebruik zeker geen generieke `try ... except`
+en negeer hem niet. Gebruik zeker geen generieke `try … except`
 constructie waarna je niks doet met een exception. Als je denkt dat je
 een bepaalde exception veilig kunt negeren, vang dan alleen die
 specifieke exception af, en zet commentaar in je programma dat aangeeft

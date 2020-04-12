@@ -137,7 +137,7 @@ maar zal ze dan niet beschouwen als, bijvoorbeeld, string begrenzingen.
 
 Als je Unicode tekens in een string wilt opnemen, kun je dat doen met
 Unicode codes. Je moet dan het UTF-8 nummer van het teken kennen dat je
-wilt tonen. Je kunt dan de code `\u`$xxxx$ opnemen, waarbij $xxxx$ een
+wilt tonen. Je kunt dan de code `\u`$$xxxx$$ opnemen, waarbij $$xxxx$$ een
 hexadecimaal getal van vier hexadecimale cijfers is, om het
 corresponderende teken in de string te zetten. Bijvoorbeeld, de
 onderstaande code toont het Griekse alfabet:[^14]

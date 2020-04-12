@@ -24,7 +24,7 @@ print( fruitlist )
 ```
 
 An alternative for using the `append()` method is to add a list with one
-new element to the existing list with a $+$, and assign the resulting
+new element to the existing list with a $$+$$, and assign the resulting
 list to the original list variable. However, the `append()` method is
 preferable as it is more readable. `<``list``>.append(<element>)` is
 equivalent to `<``list``>[len(<``list``>):] = [<element>]`, or simply
@@ -44,7 +44,7 @@ print( fruitlist )
 ```
 
 Just as with the `append()` method, you can extend an existing list with
-a new list by simply using the $+$ operator, and assigning the result to
+a new list by simply using the $$+$$ operator, and assigning the result to
 the original list variable. And just as with the `append()` method, the
 `extend()` method is preferable. `<``list``>.extend(<addlist>)` is
 equivalent to `<``list``>[len(<``list``>):] = <addlist>`.
@@ -211,7 +211,7 @@ fruitlist.sort( key=len_alphabetical )
 print( fruitlist )
 ```
 
-Note that the `len\_alphabetical()` function returns a tuple. When two
+Note that the `len_alphabetical()` function returns a tuple. When two
 tuples are compared, first the first elements of both tuples are
 compared, and if they are equal, the second elements are compared.
 

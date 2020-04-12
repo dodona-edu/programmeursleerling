@@ -226,5 +226,5 @@ define `__repr__()`, while `__str__()` is optional. If you use
 If you leave things out, it is better to just use `__str__()`.
 
 Expand the `Point` class with a `color` attribute. A `color` is
-represented by a number between 0 and $2^{24}-1$. Make sure the color is
+represented by a number between 0 and $$2^{24}-1$$. Make sure the color is
 used both in the `__init__()` method and in the `__repr__()` method.

@@ -15,10 +15,10 @@ it in double quotes, i.e., `"I can't stand it"` is a legal string, while
 of course.
 
 What if a string contains both double quotes and single quotes? You can
-solve that issue by putting a backslash (\\) in front of the single or
+solve that issue by putting a backslash (`\`) in front of the single or
 double quote that is part of the string to tell Python to treat that
 single or double quote as a character of the string rather than
-something that ends the string, i.e., `'I can\\'t stand it'` is a legal
+something that ends the string, i.e., `'I can\'t stand it'` is a legal
 string. You can see that when you try to print it:
 
 ```python

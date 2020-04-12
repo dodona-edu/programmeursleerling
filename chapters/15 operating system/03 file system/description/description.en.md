@@ -2,8 +2,8 @@ A computer's file system consists of a tree-like structured organization
 of directories and files.
 
 There is one "root" directory, which is the main access point for all
-other directories. The root directory is identified by a slash (/) or
-backslash (\\), depending on the operating system. Under Windows it is a
+other directories. The root directory is identified by a slash (`/`) or
+backslash (`\`), depending on the operating system. Under Windows it is a
 backslash, under Mac OS and Linux it is a forward slash. However,
 Windows now also supports the forward slash. I recommend using the
 forward slash in most cases, as in strings the backslash indicates a
@@ -29,9 +29,9 @@ hidden, but they are there – you just do not see them.
 
 To uniquely identify a file, you need to know its exact "path" from the
 root to the file, following the directories. The path name for the file
-is `/<directory>/<directory>/.../<filename>`. Under Windows, a drive
+is `/<directory>/<directory>/…/<filename>`. Under Windows, a drive
 letter can be placed in front of this path, making it
-`<drive>:/<directory>/<directory>/... /<filename>`. For instance, if
+`<drive>:/<directory>/<directory>/… /<filename>`. For instance, if
 under Windows, on the "C" drive, under the root there is a directory
 "Python34," under which there is a directory "Lib," in which you can
 find a file "os.py," the path for that file is `C:/Python34/Lib/os.py`.

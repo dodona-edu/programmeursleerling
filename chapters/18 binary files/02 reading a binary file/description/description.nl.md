@@ -47,7 +47,7 @@ string op te nemen als een speciaal teken: als je `\x`, gevolgd door een
 hexadecimale code van twee hexadecimale cijfers, opneemt, representeert
 dat het teken met dat hexadecimale getal als nummer. Bijvoorbeeld, de
 hexadecimale code voor een spatie is `\x20`. Met andere woorden:
-`"Hello, world\`"! is hetzelfde als `"Hello,\\x20world\`"! (ik heb dit
+`"Hello, world!\"` is hetzelfde als `"Hello,\\x20world!\"` (ik heb dit
 allemaal eerder besproken in hoofdstuk
 <a href="#ch:strings" data-reference-type="ref" data-reference="ch:strings">11</a>).
 
@@ -150,7 +150,7 @@ als tekstbestand, en moet je dus openen in binaire modus.
 ### Demonstratie binair lezen
 
 Om te demonstreren hoe binair lezen werkt, open ik het bestand
-"pc\_rose.txt" in binaire modus en lees tien keer tien bytes.
+"pc_rose.txt" in binaire modus en lees tien keer tien bytes.
 
 ```python
 fp = open( "pc_rose.txt", "rb" )

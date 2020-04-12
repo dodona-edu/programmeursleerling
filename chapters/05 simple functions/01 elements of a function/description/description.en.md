@@ -161,7 +161,7 @@ The name, parameters, and return value are all you need to know. The
 function might, internally, create variables and do calculations, but
 they do not have an effect on the rest of your code.
 
-...At least, if the function is implemented well. A function that has no
+…At least, if the function is implemented well. A function that has no
 effect on your code is called a "pure function," and the functions that
 I discuss here are all "pure functions." However, sometimes functions
 are designed that actually do have an effect outside the function,

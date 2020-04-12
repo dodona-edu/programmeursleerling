@@ -27,7 +27,9 @@ berekeningsoperator. De meest belangrijke zijn:
 -   `__xor__()` voor bitsgewijze `xor` (`\^`)
 
 Bijvoorbeeld, voor quaternionen is de optelling gedefinieerd als:
-$(A + Bi + Cj + Dk) + (E + Fi + Gj + Hk) = (A+E) + (B+F)i + (C+G)j + (D+H)k$.
+
+$$(A + Bi + Cj + Dk) + (E + Fi + Gj + Hk) = (A+E) + (B+F)i + (C+G)j + (D+H)k$$
+
 Je kunt natuurlijk ook integers en floats optellen bij quaternionen. Dit
 kan als volgt geïmplementeerd worden:
 

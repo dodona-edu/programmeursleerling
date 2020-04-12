@@ -66,7 +66,7 @@ print( fruitlist2 is fruitlist3 )
 
 Zoals je kunt zien, weet `is` te bepalen dat `fruitlist` en `fruitlist2`
 een alias van elkaar zijn, maar dat `fruitlist3` niet dezelfde list is.
-Als je ze echter vergelijkt met de $==$ operator, zijn de resultaten
+Als je ze echter vergelijkt met de $$==$$ operator, zijn de resultaten
 anders dan als je ze vergelijkt met `is`:
 
 ```python
@@ -79,10 +79,10 @@ print( fruitlist == fruitlist3 )
 print( fruitlist2 == fruitlist3 )
 ```
 
-De $==$ operator vergelijkt de inhoud van de lists, dus er wordt `True`
-geretourneerd voor alle vergelijkingen. Voor data types waarvoor de $==$
+De $$==$$ operator vergelijkt de inhoud van de lists, dus er wordt `True`
+geretourneerd voor alle vergelijkingen. Voor data types waarvoor de $$==$$
 niet speciaal gedefinieerd is, wordt een identiteitsvergelijking
-uitgevoerd. Maar voor lists is de $==$ operator gedefinieerd als een
+uitgevoerd. Maar voor lists is de $$==$$ operator gedefinieerd als een
 vergelijking van list inhoud. Ik ga dieper op dit onderwerp in als ik
 het ga hebben over "operator overloading" in hoofdstuk
 <a href="#ch:operatoroverloading" data-reference-type="ref" data-reference="ch:operatoroverloading">22</a>.

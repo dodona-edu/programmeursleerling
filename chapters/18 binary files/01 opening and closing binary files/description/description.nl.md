@@ -39,4 +39,4 @@ fp.close()
 > #### Opmerking
 > De code hierboven geeft geen uitvoer – als hij wel uitvoer geeft, dan
 > betreft het een runtime error, die hoogstwaarschijnlijk inhoudt dat
-> "pc\_rose.txt" niet beschikbaar is.
+> "pc_rose.txt" niet beschikbaar is.

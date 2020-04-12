@@ -68,10 +68,10 @@ dictionaries), you use the method `copy()` to create a copy of a set.
 The union of two sets is a set which contains elements of both of them.
 You can use the `union()` method for one set, with as argument a second
 set, to return the union of both sets involved. This does not change the
-sets themselves. Alternatively, you can use the special operator $|$
+sets themselves. Alternatively, you can use the special operator $$|$$
 (pipeline) to create the union of two sets. Note: you might suspect that
-you can also use the $+$ operator to combine two sets, but $+$ is not
-defined for sets, and neither is $*$.
+you can also use the $$+$$ operator to combine two sets, but $$+$$ is not
+defined for sets, and neither is $$*$$.
 
 ```python
 fruit1 = { "apple", "banana", "cherry" }
@@ -89,7 +89,7 @@ The intersection of two sets is a set which contains only the elements
 that they both have. You can use the `intersection()` method for one
 set, with as argument a second set, to return the intersection of the
 sets involved. This does not change the sets themselves. Alternatively,
-you can use the special operator $\&$ (ampersand) to create the
+you can use the special operator `&` (ampersand) to create the
 intersection of two sets.
 
 ```python
@@ -150,12 +150,12 @@ print( fruit1.issuperset( fruit1 ) )
 
 ### Practice
 
-There is also a set method `symmetric\_difference()` which returns a set
+There is also a set method `symmetric_difference()` which returns a set
 that contains all the elements that are in the union of two sets, except
 those that are found in both sets. For example, if set 1 contains A, B,
 and C, and set 2 contains B, C, and D, the symmetric difference of sets
 1 and 2 contains A and D. Can you implement the
-`symmetric\_difference()` method by using only some of the methods found
+`symmetric_difference()` method by using only some of the methods found
 above?
 
 In the chapter on iterations you were asked to write code that

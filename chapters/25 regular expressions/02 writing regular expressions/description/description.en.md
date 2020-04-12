@@ -41,7 +41,7 @@ for a digit.
 ### Special sequences
 
 In a regular expression, just like in strings, the backslash character
-(\\) indicates that the character that follows it has a special meaning,
+(`\`) indicates that the character that follows it has a special meaning,
 i.e., it is an escape sequence. The escape sequences that hold for
 strings also hold for regular expressions, but regular expressions have
 many more. There are also a few meta-characters that are interpreted in
@@ -66,7 +66,7 @@ more, but these are the most common ones):
 | `\"` | double quote |
 | `\'` | single quote |
 | `^` | start of a string (zero-width) |
-| ` $` | end of a string (zero-width) |
+| `$` | end of a string (zero-width) |
 | `.` | any character |
 {:class="table table-striped table-condensed" style="width:auto;margin-left:auto;margin-right:auto;"}
 
