@@ -1,0 +1,5 @@
+{
+  "evaluation": {
+    "pythia_judge": "doctest"
+  }
+}
