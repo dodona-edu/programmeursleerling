@@ -5,5 +5,11 @@
       "en": "Datetime"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "3RwjJhB5HpRYK-8SI5f7mGHGpGUvQeudAHDx4ztyVCEHeQxDmcBWZk2xyg6GjcnH",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
