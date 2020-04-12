@@ -4,7 +4,7 @@ several small text files are used to demonstrate functionalities.
 Moreover, in Chapter
 <a href="#ch:fileformats" data-reference-type="ref" data-reference="ch:fileformats">27</a>
 I use a CSV file as demonstration. You can download these files either
-from <http://www.spronck.net/pythonbook>, or create them yourself. The
+from <http://www.spronck.net/pythonbook>{:target="_blank"}, or create them yourself. The
 contents of these files are given below: just create them with any text
 editor (you can even do that with IDLE), saving them under the name that
 is given as title. The first one is a small excerpt from Shakespeare's

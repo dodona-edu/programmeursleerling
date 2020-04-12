@@ -1,7 +1,7 @@
 Dit boek is bedoeld als cursus. Het is niet direct bedoeld als
 naslagwerk voor de Python taal. Naslagwerken zijn niet nodig, een
 uitstekende taalreferentie voor Python kan op Internet gevonden worden
-(<http://docs.python.org>).
+(<http://docs.python.org>{:target="_blank"}).
 
 De hoofdstukken van dit boek zijn geschreven om in volgorde bestudeerd
 te worden. Voor een korte cursus Python, waarbij je je concentreert op
@@ -55,7 +55,7 @@ Veel van de code fragmenten in dit boek – in ieder geval alle antwoorden
 op de opgaves en alle iets langere fragmenten – hebben een bestandsnaam
 boven de code genoemd. Dat betekent dat die code beschikbaar is als
 bestand, verkrijgbaar via de website die met dit boek geassocieerd is
-(<http://www.spronck.net/pythonbook>). Je kunt de code downloaden en
+(<http://www.spronck.net/pythonbook>{:target="_blank"}). Je kunt de code downloaden en
 meteen in een editor laden als je dat wilt.
 
 {:class="callout callout-info"}

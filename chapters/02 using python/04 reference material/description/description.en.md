@@ -2,7 +2,7 @@ Besides this book, you might occasionally want to reference the Python
 manual. The easiest way to do that is using the Internet. Just search
 for "Python" with whatever you are interested in, and you will quickly
 see links that lead straight into the Python manuals (the Python manuals
-are stored at <http://docs.python.org>). You might also run into links
+are stored at <http://docs.python.org>{:target="_blank"}). You might also run into links
 that lead you to code that solves a problem for you directly. While that
 is great by the time you have to use Python for practical problems, it
 does not help you to learn. So my advice is that you avoid such links
@@ -14,7 +14,7 @@ are not connected to the Internet.
 
 If you are interested in another book besides this one, I recommend the
 classic *Think Python: How to Think Like a Computer Scientist*, by Allen
-B. Downey. It is freely available from <http://greenteapress.com/wp/>. A
+B. Downey. It is freely available from <http://greenteapress.com/wp/>{:target="_blank"}. A
 version for Python 3 was released in 2016. The main differences with my
 book as far as content is concerned, is that my book has more exercises,
 is aimed more at people who are completely new to programming, takes

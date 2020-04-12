@@ -1,6 +1,6 @@
 To run Python programs, you need a "Python interpreter." Fortunately,
 Python interpreters are freely available for almost every machine in
-existence. Visit <http://www.python.org> to download a Python
+existence. Visit <http://www.python.org>{:target="_blank"} to download a Python
 interpreter for your computer. Make sure that you get a Python 3
 interpreter. Install it. After the installation finishes, in principle
 you are ready to write and run Python programs.

@@ -15,6 +15,6 @@ misschien doornemen.
 
 Als je opmerking hebt over de inhoud van de huidige versie van het boek,
 ontvang ik je email graag via
-[pythonbook@spronck.net](pythonbook@spronck.net).
+<pythonbook@spronck.net>.
 
 ![kat](media/Cat.png "kat"){:width="80%"}

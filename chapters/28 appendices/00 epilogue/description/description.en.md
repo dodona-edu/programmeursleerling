@@ -15,6 +15,6 @@ out.
 
 If you have any remarks on the contents of the present version of the
 book, I'll be glad to receive your message at
-[pythonbook@spronck.net](pythonbook@spronck.net).
+<pythonbook@spronck.net>.
 
 ![cat](media/Cat.png "cat"){:width="80%"}

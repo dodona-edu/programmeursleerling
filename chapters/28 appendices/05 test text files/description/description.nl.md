@@ -4,7 +4,7 @@ worden verscheidene korte tekstbestanden gebruikt om functionaliteiten
 te demonstreren. In het hoofdstuk
 <a href="#ch:fileformats" data-reference-type="ref" data-reference="ch:fileformats">27</a>
 gebruik ik ook een CSV bestand als demonstratie. Je kunt deze bestanden
-downloaden via <http://www.spronck.net/pythonbook>, of je kunt ze zelf
+downloaden via <http://www.spronck.net/pythonbook>{:target="_blank"}, of je kunt ze zelf
 creëren. De inhoud van deze bestanden is hieronder gegeven: je kunt ze
 met een willekeurige tekst editor maken (zelfs met IDLE), waarbij je ze
 moet opslaan onder de naam die als titel gegeven is. De eerste is een

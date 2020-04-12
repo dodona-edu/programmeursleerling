@@ -15,7 +15,7 @@ outside sources). Answers to these numbered exercises are provided in
 the back of the book, in Appendix
 <a href="#ch:answers" data-reference-type="ref" data-reference="ch:answers">34</a>,
 and can also be downloaded from the website associated with this book
-(<http://www.spronck.net/pythonbook>). I wish to stress the following
+(<http://www.spronck.net/pythonbook>{:target="_blank"}). I wish to stress the following
 points:
 
 -   You should work on the numbered exercises until you have solved

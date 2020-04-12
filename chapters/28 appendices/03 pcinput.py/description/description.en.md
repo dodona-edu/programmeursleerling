@@ -3,7 +3,7 @@ available that accepts inputs of a certain type. I created a module
 called `pcinput` which contains a number of such functions. During many
 of the exercises in this book, I assume that you have that module
 available. To get it, download it from
-<http://www.spronck.net/pythonbook>, or copy the code below to a file
+<http://www.spronck.net/pythonbook>{:target="_blank"}, or copy the code below to a file
 called "pcinput.py," and make sure that it is located in same folder
 where you keep the files with your own code.
 

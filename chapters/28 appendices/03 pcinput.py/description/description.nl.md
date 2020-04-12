@@ -3,7 +3,7 @@ gebruiker een input laat geven die voldoet aan specifieke eisen. Ik heb
 een module gecreëerd, `pcinput` geheten, die een aantal van die functies
 bevat. In veel van de opgaves en voorbeelden in dit boek veronderstel ik
 dat je die module beschikbaar hebt. Je kunt de module downloaden van
-<http://www.spronck.net/pythonbook>, of de code hieronder overnemen in
+<http://www.spronck.net/pythonbook>{:target="_blank"}, of de code hieronder overnemen in
 een bestand "pcinput.py," ervoor zorgend dat deze is opgeslagen in
 dezelfde directory als waar je je eigen code schrijft.
 

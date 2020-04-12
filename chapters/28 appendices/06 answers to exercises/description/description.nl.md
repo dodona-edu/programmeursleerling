@@ -1,6 +1,6 @@
 Deze appendix bevat de antwoorden bij de meeste opgaves. Al deze
 antwoorden zijn ook beschikbaar als bestanden, te downloaden via
-<http://www.spronck.net/pythonbook>.
+<http://www.spronck.net/pythonbook>{:target="_blank"}.
 
 Het is zinloos om deze antwoorden te bekijken als je niet zelf intensief
 hebt geprobeerd de opgaves op te lossen. Je kunt alleen programmeren

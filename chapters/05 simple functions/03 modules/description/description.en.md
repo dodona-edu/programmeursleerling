@@ -135,7 +135,7 @@ print( "The same 3 numbers are:", random(), random(), random() )
 `pcinput` is a module I wrote for this book. You can find it in Appendix
 <a href="#ch:pcinput" data-reference-type="ref" data-reference="ch:pcinput">31</a>,
 and can easily recreate it (or simply download it from
-<http://www.spronck.net/pythonbook>). It contains four functions which
+<http://www.spronck.net/pythonbook>{:target="_blank"}). It contains four functions which
 are helpful for getting particular kinds of input from the user in a
 safe way. The functions are the following:
 

@@ -1,5 +1,5 @@
 This appendix provides answers to most of the exercises. They are also
-available in file format from <http://www.spronck.net/pythonbook>.
+available in file format from <http://www.spronck.net/pythonbook>{:target="_blank"}.
 
 Note that it is useless to look up answers to exercises if you have not
 spent a significant amount of time trying to solve the exercises. You

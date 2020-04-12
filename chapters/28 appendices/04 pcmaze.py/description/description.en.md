@@ -3,7 +3,7 @@ In Chapter
 an example of searching a maze is presented. In that example a module
 `pcmaze` is used, that I wrote for this book. The module contains a
 specific maze, and functions to access features of the maze. To create
-the module, download it from <http://www.spronck.net/pythonbook>, or
+the module, download it from <http://www.spronck.net/pythonbook>{:target="_blank"}, or
 copy the code below to a file called "pcmaze.py," and make sure that it
 is located in same folder where you keep the files with your own code.
 

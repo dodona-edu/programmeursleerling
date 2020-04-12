@@ -4,7 +4,7 @@ laat ik in een voorbeeld een doolhof doorzoeken. In dat voorbeeld
 gebruik ik een module `pcmaze`, die ik voor dit boek heb geschreven. De
 module bevat een doolhof, en geeft functies om eigenschappen van het
 doolhof op te vragen. Je kunt de module downloaden van
-<http://www.spronck.net/pythonbook>, of de code hieronder overnemen in
+<http://www.spronck.net/pythonbook>{:target="_blank"}, of de code hieronder overnemen in
 een bestand "pcmaze.py," ervoor zorgend dat het in dezelfde directory
 staat als waar je je eigen code schrijft.
 

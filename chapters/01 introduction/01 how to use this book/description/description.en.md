@@ -1,7 +1,7 @@
 This book is meant to be used as a course. It is not meant as a Python
 language reference. You do not need a book as a language reference, as
 an excellent language reference can be found on the Internet
-(<http://docs.python.org>).
+(<http://docs.python.org>{:target="_blank"}).
 
 The chapters of this book are written to be studied in sequential order.
 For a brief course on the basics of the Python language, using it for
@@ -55,7 +55,7 @@ Many of the code snippets in this book – in particular all the answers
 to the exercises and all the slightly longer pieces of code – have a
 file name listed as a caption. This means that this code is available
 under that particular file name from the website associated with this
-book (<http://www.spronck.net/pythonbook>). You can download this code
+book (<http://www.spronck.net/pythonbook>{:target="_blank"}). You can download this code
 and load it immediately in the editor that you are using if you so wish.
 
 {:class="callout callout-info"}

@@ -145,7 +145,7 @@ print( "Dezelfde 3 zijn:", random(), random(), random() )
 hem in appendix
 <a href="#ch:pcinput" data-reference-type="ref" data-reference="ch:pcinput">31</a>,
 en je kunt hem gemakkelijk zelf maken (of eenvoudigweg downloaden via
-<http://www.spronck.net/pythonbook>). De module bevat vier handige
+<http://www.spronck.net/pythonbook>{:target="_blank"}). De module bevat vier handige
 functies, die de gebruiker op een veilige manier om specifieke input
 vragen. De functies zijn de volgende:
 

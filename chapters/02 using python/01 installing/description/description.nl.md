@@ -1,6 +1,6 @@
 Om Python te gebruiken heb je een "Python interpreter" nodig. Python
 interpreters zijn gratis verkrijgbaar voor vrijwel alle computers. Via
-de website <http://www.python.org> kun je een Python interpreter
+de website <http://www.python.org>{:target="_blank"} kun je een Python interpreter
 downloaden voor jouw computer. Let erop dat je een Python 3 interpreter
 neemt. Installeer de interpreter door het bestand te openen dat je hebt
 gedownload. Nadat de installatie is afgelopen, ben je in principe klaar
