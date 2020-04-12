@@ -32,7 +32,7 @@ Thanks to all the contributors (listed below) who sent in corrections
 and suggestions.
 
 If you have a suggestion or correction, please send email to
-[pythonbook@spronck.net](pythonbook@spronck.net) (not to be used for
+<pythonbook@spronck.net> (not to be used for
 assistance with programming problems, of course – there are plenty of
 places on the Internet where you can get such help), or leave a message
 at the forum <http://www.spronck.net/forum>{:target="_blank"}. If I make a change based on

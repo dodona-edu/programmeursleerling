@@ -32,7 +32,7 @@ Tenslotte dank ik iedereen die suggesties of correcties heeft ingestuurd
 (een lijst volgt hieronder).
 
 Als je een suggestie of correctie hebt, stuur dan een email naar
-[pythonbook@spronck.net](pythonbook@spronck.net) (dat adres is
+<pythonbook@spronck.net> (dat adres is
 natuurlijk niet bedoeld om vragen over programma's te stellen – er zijn
 vele plaatsen op het Internet waar programmeerhulp geboden wordt), of
 een boodschap achterlaten op het forum <http://www.spronck.net/forum>{:target="_blank"}. 
