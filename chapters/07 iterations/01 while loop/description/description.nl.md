@@ -61,8 +61,7 @@ print( "Klaar" )
 Deze code wordt ook weergegeven in het stroomdiagram in afbeelding
 <a href="#f:chart4" data-reference-type="ref" data-reference="f:chart4">8.2</a>.
 
-<img src="img/Chart4nl.png" title="fig:" id="f:chart4" style="width:60.0%" alt="Stroomdiagram dat een while loop weergeeft." />
-<img src="img/Chart4nl.png" title="fig:" id="f:chart4" style="width:70.0%" alt="Stroomdiagram dat een while loop weergeeft." />
+![while](media/Chart4en.png "while"){:width="60%" data-caption="Stroomdiagram dat een `while` loop weergeeft."}
 
 Het is van essentieel belang dat je deze code snapt, dus ik neem hem
 stap voor stap door.
@@ -231,11 +230,13 @@ een nummer tegenkomt dat, als het gekwadrateerd wordt, deelbaar is door
 1000. De loop bevat een fout. Kijk of je de fout weet te vinden (zonder
 de code uit te voeren!).
 
-    nummer = 1
-    totaal = 0
-    while (nummer * nummer) % 1000 != 0:
-        totaal += nummer
-    print( "Totaal is", totaal )
+```python
+nummer = 1
+totaal = 0
+while (nummer * nummer) % 1000 != 0:
+    totaal += nummer
+print( "Totaal is", totaal )
+```
 
 De titel boven deze paragraaf gaf het antwoord natuurlijk al weg: deze
 code bevat een loop die nooit eindigt. Als je hem uitvoert, lijkt het

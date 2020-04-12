@@ -58,7 +58,7 @@ print( "Done" )
 This code is also expressed by the flow chart in Figure
 <a href="#f:chart4" data-reference-type="ref" data-reference="f:chart4">8.1</a>.
 
-![loop](media/Chart4en.png "loop"){:width="60%" data-caption="Flow chart expressing a `while` loop."}
+![while](media/Chart4en.png "while"){:width="60%" data-caption="Flow chart expressing a `while` loop."}
 
 It is crucial that you understand this code, so let's discuss it step by
 step.
