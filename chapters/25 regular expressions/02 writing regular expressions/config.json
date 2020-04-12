@@ -5,5 +5,11 @@
       "en": "Writing regular expressions"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "hiWcI5kZvaM7wC2pupQH-m765abeQAeEHTBZx4UX9MXIqxGWpKZHzrAGzSfu8mX-",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
