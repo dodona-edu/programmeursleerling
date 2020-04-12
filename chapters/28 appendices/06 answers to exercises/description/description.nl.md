@@ -23,9 +23,9 @@ is, moet je overwegen of de oplossing efficiënter gemaakt kan worden.
 Leesbaarheid en onderhoudbaarheid zijn veel belangrijker dan
 efficiëntie.
 
-## Hoofdstuk <a href="#ch:introduction" data-reference-type="ref" data-reference="ch:introduction">2</a>
+### Hoofdstuk <a href="#ch:introduction" data-reference-type="ref" data-reference="ch:introduction">2</a>
 
-### Antwoord 1.1
+#### Antwoord 1.1
 
 Een recht-toe-recht-aan sortering die eerste de hoogste kaart zoekt, dan
 de op-één-na-hoogste, etcetera, heeft zes vergelijkingen nodig. Je kunt
@@ -69,7 +69,7 @@ met maximaal vijf vergelijkingen te verzinnen. Raak dus niet ontmoedigd
 als je daar niet opkomt. Het is belangrijker dat je een taak weet op te
 lossen dan dat je hem op de meest efficiënte manier weet op te lossen.
 
-### Antwoord 1.2
+#### Antwoord 1.2
 
 Een goede aanpak is vier rechthoeken op een stuk papier te zetten en
 deze te nummeren, en dan een kaart in iedere rechthoek te plaatsen. Zeg
@@ -112,13 +112,13 @@ computerprogramma. Variabelen worden uitgelegd in hoofdstuk
 Het uitleggen van de meer efficiënte procedure die hierboven staat is
 een stuk lastiger, omdat je er geneste condities voor nodig hebt.
 
-## Hoofdstuk <a href="#ch:usingpython" data-reference-type="ref" data-reference="ch:usingpython">3</a>
+### Hoofdstuk <a href="#ch:usingpython" data-reference-type="ref" data-reference="ch:usingpython">3</a>
 
-### Antwoord 2.1
+#### Antwoord 2.1
 
 Python draait nu op je computer. Gefeliciteerd!
 
-### Antwoord 2.2
+#### Antwoord 2.2
 
 Je ziet niets in de shell (behalve het woord `RESTART` dat je altijd
 ziet als je een programma draait). $7/4$ is een correct Python commando,
@@ -128,15 +128,15 @@ De shell toont het resultaat van het draaien van het programma. Maar
 omdat het programma zelf geen resultaat heeft, is er ook niks dat de
 shell kan laten zien. Dus je ziet niets.
 
-## Hoofdstuk <a href="#ch:expressions" data-reference-type="ref" data-reference="ch:expressions">4</a>
+### Hoofdstuk <a href="#ch:expressions" data-reference-type="ref" data-reference="ch:expressions">4</a>
 
-### Antwoord 3.1
+#### Antwoord 3.1
 
 ```python
 print( 60 * (0.6 * 24.95 + 0.75) + (3 - 0.75) )
 ```
 
-### Antwoord 3.2
+#### Antwoord 3.2
 
 Alle regels moeten `print( "Een boodschap" )` zijn (of hetzelfde maar
 met de string tussen enkele aanhalingstekens). De fout in de eerste
@@ -148,14 +148,14 @@ aanhalingsteken worden, of andersom. De derde regel is strict genomen
 niet fout, maar waarschijnlijk was de bedoeling ervan dat de `f"` er
 niet zou staan.
 
-### Antwoord 3.3
+#### Antwoord 3.3
 
 
 ```python
 print( 1/0 )
 ```
 
-### Antwoord 3.4
+#### Antwoord 3.4
 
 Het probleem is dat er een enkel sluithaakje ontbreekt op de eerste
 regel code. Ik heb het haakje verwijderd dat ik origineel had geschreven
@@ -174,15 +174,15 @@ gerapporteerd op een bepaalde regel, maar de echte fout is al gemaakt op
 een eerdere regel. Dit soort fouten betreffen vaak het ontbreken van
 haakjes of aanhalingstekens. Houd daar rekening mee.
 
-### Antwoord 3.5
+#### Antwoord 3.5
 
 ```python
 print( str( (14 + 535) % 24 ) + ".00" )
 ```
 
-## Hoofdstuk <a href="#ch:variables" data-reference-type="ref" data-reference="ch:variables">5</a>
+### Hoofdstuk <a href="#ch:variables" data-reference-type="ref" data-reference="ch:variables">5</a>
 
-### Antwoord 4.1
+#### Antwoord 4.1
 
 
 ```python
@@ -196,7 +196,7 @@ print( gemiddelde ) # Ziet er wat lelijk uit, maar
 # dat wordt beter na een discussie over formattering
 ```
 
-### Antwoord 4.2
+#### Antwoord 4.2
 
 ```python
 pi = 3.14159
@@ -205,7 +205,7 @@ print( "De oppervlakte van een cirkel met straal",
     straal, "is", pi * straal * straal )
 ```
 
-### Antwoord 4.3
+#### Antwoord 4.3
 
 ```python
 CENTEN_IN_DOLLAR = 100
@@ -234,7 +234,7 @@ print( "Stuivers:", stuivers )
 print( "Centen:", centen )
 ```
 
-### Antwoord 4.4
+#### Antwoord 4.4
 
 ```python
 a = 17
@@ -246,16 +246,16 @@ a -= b
 print( "a =", a, "en b =", b )
 ```
 
-## Hoofdstuk <a href="#ch:simplefunctions" data-reference-type="ref" data-reference="ch:simplefunctions">6</a>
+### Hoofdstuk <a href="#ch:simplefunctions" data-reference-type="ref" data-reference="ch:simplefunctions">6</a>
 
-### Antwoord 5.1
+#### Antwoord 5.1
 
 ```python
 s = input( "Geef een string: " )
 print( "Je hebt", len( s ), "letters ingegeven" )
 ```
 
-### Antwoord 5.2
+#### Antwoord 5.2
 
 ```python
 from pcinput import getFloat
@@ -267,7 +267,7 @@ zijde3 = sqrt( zijde1 * zijde1 + zijde2 * zijde2 )
 print( "De lengte van de diagonaal is {:.3f}.".format( zijde3 ) )
 ```
 
-### Antwoord 5.3
+#### Antwoord 5.3
 
 ```python
 from pcinput import getFloat
@@ -281,7 +281,7 @@ print( "De kleinste is", min( num1, num2, num3 ) )
 print( "Het gemiddelde is", round( (num1 + num2 + num3)/3, 2 ) )
 ```
 
-### Antwoord 5.4
+#### Antwoord 5.4
 
 ```python
 from math import exp
@@ -294,7 +294,7 @@ print( s.format( 2, exp( 2 ) ) )
 print( s.format( 3, exp( 3 ) ) )
 ```
 
-### Antwoord 5.5
+#### Antwoord 5.5
 
 ```python
 from random import random
@@ -303,9 +303,9 @@ print( "Een toevalsgetal tussen 1 en 10 is",
     1 + int( random() * 10 ) )
 ```
 
-## Hoofdstuk <a href="#ch:conditions" data-reference-type="ref" data-reference="ch:conditions">7</a>
+### Hoofdstuk <a href="#ch:conditions" data-reference-type="ref" data-reference="ch:conditions">7</a>
 
-### Antwoord 6.1
+#### Antwoord 6.1
 
 ```python
 from pcinput import getFloat
@@ -328,14 +328,14 @@ else:
     print( "F" )
 ```
 
-### Antwoord 6.2
+#### Antwoord 6.2
 
 De enig mogelijke antwoorden zijn "D" en "F," aangezien de tests in de
 verkeerde volgorde zijn geplaatst. Bijvoorbeeld, als de score 85 is, dan
 is dat niet alleen groter dan 80.0, maar ook groter dan 60.0, dus de
 uitkomst zal dan "D" zijn.
 
-### Antwoord 6.3
+#### Antwoord 6.3
 
 ```python
 from pcinput import getString
@@ -361,7 +361,7 @@ else:
     print( "Er zijn", count, "verschillende klinkers." )
 ```
 
-### Antwoord 6.4
+#### Antwoord 6.4
 
 ```python
 from pcinput import getFloat
@@ -388,9 +388,9 @@ else:
                 (-b-sqrt(discriminant))/(2*a) )
 ```
 
-## Hoofdstuk <a href="#ch:iterations" data-reference-type="ref" data-reference="ch:iterations">8</a>
+### Hoofdstuk <a href="#ch:iterations" data-reference-type="ref" data-reference="ch:iterations">8</a>
 
-### Antwoord 7.1
+#### Antwoord 7.1
 
 ```python
 from pcinput import getInteger
@@ -402,7 +402,7 @@ while i <= 10:
     i += 1
 ```
 
-### Antwoord 7.2
+#### Antwoord 7.2
 
 ```python
 from pcinput import getInteger
@@ -412,7 +412,7 @@ for i in range( 1, 11 ):
     print( i, "*", num, "=", i*num )
 ```
 
-### Antwoord 7.3
+#### Antwoord 7.3
 
 ```python
 from pcinput import getInteger
@@ -440,7 +440,7 @@ print( "Grootste is", grootste )
 print( "Deelbaar door 3 is", deelbaar3 )
 ```
 
-### Antwoord 7.4
+#### Antwoord 7.4
 
 ```python
 flessen = 10
@@ -468,7 +468,7 @@ in hoofdstuk
 Je hebt het zelf niet nodig: je kunt het hele `print()` statement op een
 lange regel schrijven.
 
-### Antwoord 7.5
+#### Antwoord 7.5
 
 ```python
 num1 = 0
@@ -483,7 +483,7 @@ while True:
     num2 = num3    
 ```
 
-### Antwoord 7.6
+#### Antwoord 7.6
 
 ```python
 from pcinput import getString
@@ -501,7 +501,7 @@ else:
     print( "De woorden delen de volgende tekens:", gemeen )
 ```
 
-### Antwoord 7.7
+#### Antwoord 7.7
 
 ```python
 from random import random
@@ -517,7 +517,7 @@ for i in range( DARTS ):
 print( "Een redelijke benadering van pi is", 4 * raak / DARTS )
 ```
 
-### Antwoord 7.8
+#### Antwoord 7.8
 
 ```python
 from random import randint
@@ -545,7 +545,7 @@ else:
     print( "Je moest", teller, "keer raden." )
 ```
 
-### Antwoord 7.9
+#### Antwoord 7.9
 
 ```python
 from pcinput import getLetter
@@ -584,7 +584,7 @@ else:
     print( "Ik moest", teller, "keer raden." )
 ```
 
-### Antwoord 7.10
+#### Antwoord 7.10
 
 ```python
 from pcinput import getInteger
@@ -634,7 +634,7 @@ kwadraat zijn van een priemgetal (bijvoorbeeld 25). Nog beter is als je
 een loop schrijft rond je code die alle getallen test tussen,
 bijvoorbeeld, -10 en 100. Dan ben je echt met een intensieve test bezig.
 
-### Antwoord 7.11
+#### Antwoord 7.11
 
 ```python
 num = 9
@@ -652,7 +652,7 @@ for i in range( 1, num+1 ):
     print()
 ```
 
-### Antwoord 7.12
+#### Antwoord 7.12
 
 ```python
 for i in range( 1, 101 ):
@@ -677,7 +677,7 @@ for i in range( 1, 101 ):
 Deze reden dat dit een efficiënter algoritme is, en waarom het werkt, is
 hierboven beschreven voor de priemgetallen opgave.
 
-### Antwoord 7.13
+#### Antwoord 7.13
 
 ```python
 from random import randint
@@ -701,7 +701,7 @@ print( "De waarschijnlijkheid van een oplopende serie van vijf",
     "dobbelsteen worpen is {:.3f}".format( succes/POGINGEN ) )
 ```
 
-### Antwoord 7.14
+#### Antwoord 7.14
 
 ```python
 for A in range( 1, 10 ):
@@ -729,7 +729,7 @@ is, is de beste aanpak een functie te schrijven die deze code bevat, en
 die functie af te breken als de oplossing gevonden is. Functies worden
 besproken in het volgende hoofdstuk.
 
-### Antwoord 7.15
+#### Antwoord 7.15
 
 ```python
 PIRATES = 5
@@ -757,7 +757,7 @@ na een eerlijke verdeling van de overgebleven stapel.
 Vind je het niet verbazend dat je een probleem met zo'n lange
 beschrijving kunt oplossen met zo weinig code?
 
-### Antwoord 7.16
+#### Antwoord 7.16
 
 Ik geef eerst een oplossing die iedere Driehoekkruiper apart simuleert.
 Deze oplossing is gemakkelijk te begrijpen:
@@ -839,9 +839,9 @@ print( "{:.2f}".format( schatting ) )
 Het exacte antwoord is overigens $2\frac{1}{3}$ dagen; een benadering
 moet 2.33 of 2.34 geven.
 
-## Hoofdstuk <a href="#ch:functions" data-reference-type="ref" data-reference="ch:functions">9</a>
+### Hoofdstuk <a href="#ch:functions" data-reference-type="ref" data-reference="ch:functions">9</a>
 
-### Antwoord 8.1
+#### Antwoord 8.1
 
 ```python
 from pcinput import getInteger
@@ -858,7 +858,7 @@ num = getInteger( "Geef een getal: " )
 tafel( num )
 ```
 
-### Antwoord 8.2
+#### Antwoord 8.2
 
 ```python
 from pcinput import getString
@@ -884,7 +884,7 @@ else:
     print( "De woorden hebben", num, "tekens gemeen" )
 ```
 
-### Antwoord 8.3
+#### Antwoord 8.3
 
 ```python
 # gregoryLeibnitz benadert pi middels de Gregory-Leibnitz 
@@ -903,7 +903,7 @@ def gregoryLeibnitz( num ):
 print( gregoryLeibnitz( 50 ) )
 ```
 
-### Antwoord 8.4
+#### Antwoord 8.4
 
 ```python
 from pcinput import getFloat
@@ -940,7 +940,7 @@ else:
     print( "Er zijn 2 oplossingen, namelijk:", opl1, "en", opl2 )
 ```
 
-### Antwoord 8.5
+#### Antwoord 8.5
 
 ```python
 from pcinput import getInteger
@@ -971,7 +971,7 @@ if __name__ == '__main__':
     main()
 ```
 
-### Antwoord 8.6
+#### Antwoord 8.6
 
 ```python
 # Berekent de faculteit van de paremeter n, een integer.
@@ -998,7 +998,7 @@ if __name__ == '__main__':
     main()
 ```
 
-### Antwoord 8.7
+#### Antwoord 8.7
 
 De code probeert de retourwaarde van de functie te printen, maar omdat
 de functie geen retourwaarde heeft, wordt het woord `None` afgedrukt.
@@ -1014,9 +1014,9 @@ berekeningen gebruikt worden). Als je deze uitleg niet begrijpt, lees
 dan nogmaals hoofdstuk
 <a href="#ch:simplefunctions" data-reference-type="ref" data-reference="ch:simplefunctions">6</a>.
 
-## Hoofdstuk <a href="#ch:recursion" data-reference-type="ref" data-reference="ch:recursion">10</a>
+### Hoofdstuk <a href="#ch:recursion" data-reference-type="ref" data-reference="ch:recursion">10</a>
 
-### Antwoord 9.1
+#### Antwoord 9.1
 
 ```python
 def fib( n ):
@@ -1027,7 +1027,7 @@ def fib( n ):
 print( fib( 20 ) )
 ```
 
-### Antwoord 9.2
+#### Antwoord 9.2
 
 ```python
 def fib( n, depth ):
@@ -1043,7 +1043,7 @@ def fib( n, depth ):
 print( fib( 5, 0 ) )
 ```
 
-### Antwoord 9.3
+#### Antwoord 9.3
 
 Aangezien de reeks van Fibonacci net zo goed als iteratieve functie
 geïmplementeerd kan worden (dat heb je al in het vorige hoofdstuk
@@ -1054,7 +1054,7 @@ definitie feitelijk alle termen van de sequentie meerdere keren
 berekent, wat je kunt zien als je naar de output van de tweede opgave
 kijkt, terwijl eenmalig berekenen voldoende kan zijn.
 
-### Antwoord 9.4
+#### Antwoord 9.4
 
 ```python
 def gcd( m, n ):
@@ -1072,7 +1072,7 @@ kleinste en dan de grootste, dan betekent dat alleen maar dat de functie
 een extra keer wordt aangeroepen. Verder geeft hij gewoon de juiste
 uitkomst.
 
-### Antwoord 9.5
+#### Antwoord 9.5
 
 Het probleem met deze code is dat als ik een string ingeef met twee
 foute tekens, dat het zichzelf twee keer recursief zal aanroepen,
@@ -1087,7 +1087,7 @@ Ik kan uitleggen hoe je dit probleem kunt oplossen door de code te
 wijzigen, maar de echte oplossing is dat je geen recursieve functies
 moet schrijven die interactie hebben met de gebruiker.
 
-### Antwoord 9.6
+#### Antwoord 9.6
 
 ```python
 GROOTTE = 4
@@ -1123,9 +1123,9 @@ en je moet een manier bedenken om te bepalen dat de puzzel is opgelost
 (dat kan door simpelweg de stappen te tellen, dat wil zeggen, te tellen
 tot $2^N-1$).
 
-## Hoofdstuk <a href="#ch:strings" data-reference-type="ref" data-reference="ch:strings">11</a>
+### Hoofdstuk <a href="#ch:strings" data-reference-type="ref" data-reference="ch:strings">11</a>
 
-### Antwoord 10.1
+#### Antwoord 10.1
 
 ```python
 text = """En Sint Atilla hief de handgranaat ten hemel, en
@@ -1152,7 +1152,7 @@ print( "tels: a={}, e={}, i={}, o={}, u={}".format(
     tela, tele, teli, telo, telu ) )
 ```
 
-### Antwoord 10.2
+#### Antwoord 10.2
 
 ```python
 tekst = """En ze stu[re]n [i]ngekleurde prentbriefkaarten van 
@@ -1179,7 +1179,7 @@ while True:
 print()
 ```
 
-### Antwoord 10.3
+#### Antwoord 10.3
 
 ```python
 ch = "A"
@@ -1194,7 +1194,7 @@ for i in range( 26 ):
     print( ch, end=" " )
 ```
 
-### Antwoord 10.4
+#### Antwoord 10.4
 
 ```python
 tekst = """Kapper Knap, de knappe kapper, knipt en kapt heel 
@@ -1219,7 +1219,7 @@ for woord in schoon( tekst ).split():
 print( "Aantal keren dat het woord \"knap\" voorkomt:", tel )
 ```
 
-### Antwoord 10.5
+#### Antwoord 10.5
 
 ```python
 tekst = "Hello, world!"
@@ -1238,7 +1238,7 @@ while len( tekst ) > 0:
 print( ntekst )
 ```
 
-### Antwoord 10.6
+#### Antwoord 10.6
 
 ```python
 from sys import exit
@@ -1295,9 +1295,9 @@ nieuwezin = nieuwezin.strip()
 print( nieuwezin )
 ```
 
-## Hoofdstuk <a href="#ch:tuples" data-reference-type="ref" data-reference="ch:tuples">12</a>
+### Hoofdstuk <a href="#ch:tuples" data-reference-type="ref" data-reference="ch:tuples">12</a>
 
-### Antwoord 11.1
+#### Antwoord 11.1
 
 De functie `toon_complex()` heb ik gemaakt om complexe getallen op een
 nette manier te tonen, en dat neemt de meeste code in beslag. Ik had
@@ -1330,7 +1330,7 @@ print( toon_complex( num1 ), "+", toon_complex( num2 ), "=",
      toon_complex( plus_complex( num1, num2 ) ) )
 ```
 
-### Antwoord 11.2
+#### Antwoord 11.2
 
 Voor deze oplossing heb ik een minimalistische versie van
 `toon_complex()` gebruikt.
@@ -1348,7 +1348,7 @@ print( toon_complex( num1 ), "*", toon_complex( num2 ), "=",
      toon_complex( maal_complex( num1, num2 ) ) )
 ```
 
-### Antwoord 11.3
+#### Antwoord 11.3
 
 ```python
 inttuple = ( 1, 2, ( 3, 4 ), 5, ( ( 6, 7, 8, ( 9, 10 ), 11 ), 12, 
@@ -1364,9 +1364,9 @@ def toon_inttuple( it ):
 toon_inttuple( inttuple )
 ```
 
-## Hoofdstuk <a href="#ch:lists" data-reference-type="ref" data-reference="ch:lists">13</a>
+### Hoofdstuk <a href="#ch:lists" data-reference-type="ref" data-reference="ch:lists">13</a>
 
-### Antwoord 12.1
+#### Antwoord 12.1
 
 ```python
 from random import choice
@@ -1388,7 +1388,7 @@ De `choice()` functie uit de `random` module selecteert een element van
 een list per toeval. Je kunt ook `randint()` gebruiken, waarbij je een
 index per toeval selecteert.
 
-### Antwoord 12.2
+#### Antwoord 12.2
 
 ```python
 from random import randint
@@ -1407,7 +1407,7 @@ for kaart in stok:
     print( kaart )
 ```
 
-### Antwoord 12.3
+#### Antwoord 12.3
 
 ```python
 fifo = []
@@ -1423,7 +1423,7 @@ while True:
         print( "Lijst is leeg" )
 ```
 
-### Antwoord 12.4
+#### Antwoord 12.4
 
 ```python
 tekst = """Let op, het is heel eenvoudig om je te verdedigen 
@@ -1448,7 +1448,7 @@ for tel in tellist:
     print( "{:3}: {}".format( tel[0],tel[1] ) )
 ```
 
-### Antwoord 12.5
+#### Antwoord 12.5
 
 Er zijn twee manieren om dit probleem aan te pakken: ofwel je begint met
 een list met nummers, of je begint met een list met booleans en je
@@ -1494,7 +1494,7 @@ for i in nummers:
     print( i, end=" " )
 ```
 
-### Antwoord 12.6
+#### Antwoord 12.6
 
 ```python
 from pcinput import getInteger
@@ -1565,7 +1565,7 @@ while True:
     speler = opponent( speler )
 ```
 
-### Antwoord 12.7
+#### Antwoord 12.7
 
 ```python
 from pcinput import getString
@@ -1644,7 +1644,7 @@ while raak < SCHEPEN:
 print( "Je had", zetten, "zetten nodig om mij te verslaan." )
 ```
 
-### Antwoord 12.8
+#### Antwoord 12.8
 
 ```python
 # Recursieve functie die bepaalt of intlist (integer-list) een 
@@ -1703,9 +1703,9 @@ het probleem oplost zonder alle deelverzamelingen te testen als er geen
 oplossing is. Voor degenen die iets weten van complexiteitstheorie: het
 subset som probleem is "NP-hard."
 
-## Hoofdstuk <a href="#ch:dictionaries" data-reference-type="ref" data-reference="ch:dictionaries">14</a>
+### Hoofdstuk <a href="#ch:dictionaries" data-reference-type="ref" data-reference="ch:dictionaries">14</a>
 
-### Antwoord 13.1
+#### Antwoord 13.1
 
 ```python
 tekst = """Kapper Knap, de knappe kapper, knipt en kapt heel 
@@ -1732,7 +1732,7 @@ for key in keylist:
     print( "{}: {}".format( key, wdict[key] ) )
 ```
 
-### Antwoord 13.2
+#### Antwoord 13.2
 
 ```python
 movies = {  "Monty Python and the Holy Grail": 
@@ -1751,7 +1751,7 @@ for key in keylist:
         sum( movies[key] )/len( movies[key] ), 1 ) ) )
 ```
 
-### Antwoord 13.3
+#### Antwoord 13.3
 
 Veel verschillende antwoorden zijn mogelijk. Het eenvoudigste antwoord
 is waarschijnlijk om een dictionary te gebruiken waarvan de keys tuples
@@ -1773,9 +1773,9 @@ dubbelzinnige keys introduceert in de data structuur (maar over het
 algemeen geldt dat je beter een database systeem kunt gebruiken om een
 bibliotheek in op te slaan).
 
-## Hoofdstuk <a href="#ch:sets" data-reference-type="ref" data-reference="ch:sets">15</a>
+### Hoofdstuk <a href="#ch:sets" data-reference-type="ref" data-reference="ch:sets">15</a>
 
-### Antwoord 14.1
+#### Antwoord 14.1
 
 ```python
 alles = { "Socrates", "Plato", "Eratosthenes", "Zeus", "Hera", 
@@ -1791,7 +1791,7 @@ print( len( sterfelijken.difference( mensen ) ) > 0 ) # (d)
 print( len( alles.difference( sterfelijken ) ) > 0 ) # (e)
 ```
 
-### Antwoord 14.2
+#### Antwoord 14.2
 
 ```python
 set3 = set( [3*x for x in range( 1, int( 1001/3 ) )] )
@@ -1805,9 +1805,9 @@ setc = set( range( 1, 1001 ) ) - set3 - set7 - set11
 
 Je kunt de sets afdrukken om te zien dat ze correct zijn.
 
-## Hoofdstuk <a href="#ch:operatingsystem" data-reference-type="ref" data-reference="ch:operatingsystem">16</a>
+### Hoofdstuk <a href="#ch:operatingsystem" data-reference-type="ref" data-reference="ch:operatingsystem">16</a>
 
-### Antwoord 15.1
+#### Antwoord 15.1
 
 ```python
 from os import listdir, getcwd
@@ -1817,9 +1817,9 @@ for name in flist:
     print( getcwd() + "/" + name )
 ```
 
-## Hoofdstuk <a href="#ch:textfiles" data-reference-type="ref" data-reference="ch:textfiles">17</a>
+### Hoofdstuk <a href="#ch:textfiles" data-reference-type="ref" data-reference="ch:textfiles">17</a>
 
-### Antwoord 16.1
+#### Antwoord 16.1
 
 Hopelijk herinnerde je je dat je iets soortgelijks hebt gedaan in
 hoofdstukken
@@ -1858,7 +1858,7 @@ for key in keylist:
     print( "{}: {}".format( key, wdict[key] ) )
 ```
 
-### Antwoord 16.2
+#### Antwoord 16.2
 
 ```python
 def schoon( s ):
@@ -1887,7 +1887,7 @@ for key in keylist:
     print( "{}: {}".format( key, wdict[key] ) )
 ```
 
-### Antwoord 16.3
+#### Antwoord 16.3
 
 ```python
 from os.path import join
@@ -1925,7 +1925,7 @@ print( "Gelezen:", telread )
 print( "Geschreven:", telwrite )
 ```
 
-### Antwoord 16.4
+#### Antwoord 16.4
 
 De oplossing die ik hieronder geef maakt gebruik van sets. Er wordt een
 set gebouwd voor ieder bestand, dat alle woorden bevat uit het bestand
@@ -1979,7 +1979,7 @@ for woord in combinatie:
     print( woord )
 ```
 
-### Antwoord 16.5
+#### Antwoord 16.5
 
 Wederom heb ik een oplossing gekozen die flexibel is wat betreft het
 aantal bestanden dat verwerkt wordt. Het programma is gemakkelijker te
@@ -2034,9 +2034,9 @@ print( fp.read() )
 fp.close()
 ```
 
-## Hoofdstuk <a href="#ch:exceptions" data-reference-type="ref" data-reference="ch:exceptions">18</a>
+### Hoofdstuk <a href="#ch:exceptions" data-reference-type="ref" data-reference="ch:exceptions">18</a>
 
-### Antwoord 17.1
+#### Antwoord 17.1
 
 De code kan een `ValueError` genereren als je iets ingeeft dat geen
 integer is, een `IndexError` als je een index ingeeft buiten het bereik
@@ -2065,9 +2065,9 @@ except:
     raise
 ```
 
-## Hoofdstuk <a href="#ch:binaryfiles" data-reference-type="ref" data-reference="ch:binaryfiles">19</a>
+### Hoofdstuk <a href="#ch:binaryfiles" data-reference-type="ref" data-reference="ch:binaryfiles">19</a>
 
-### Antwoord 18.1
+#### Antwoord 18.1
 
 Ik gebruik een kopie van "pc_rose.txt" die ik "pc_rose_copy.txt"
 noem.
@@ -2096,7 +2096,7 @@ encryptie( NAAM )
 toon_inhoud( NAAM )
 ```
 
-### Antwoord 18.2
+#### Antwoord 18.2
 
 ```python
 letters = "etaoinshrdlcum "
@@ -2130,7 +2130,7 @@ Dit programma is 25 regels, waarvan 4 commentaar, 4 leeg, en 3 slechts
 voor testdoeleinden zijn. Dit kan dus met 14 regels code. Dat was niet
 al te erg, toch?
 
-### Antwoord 18.3
+#### Antwoord 18.3
 
 ```python
 letters = "etaoinshrdlcum "
@@ -2160,7 +2160,7 @@ while len( halfbytelist ) > 0:
 print( gedecodeerd, len( gedecodeerd ) )
 ```
 
-### Antwoord 18.4
+#### Antwoord 18.4
 
 Dit programa lijkt lang, maar is eenvoudig. `comprimeer()` en
 `decomprimeer()` werden eerder gebouwd. Ik heb alleen de invoer en
@@ -2266,9 +2266,9 @@ print( getsize( filein ), "bytes gelezen" )
 print( getsize( fileout ), "bytes geschreven" )
 ```
 
-## Hoofdstuk <a href="#ch:bitwiseoperators" data-reference-type="ref" data-reference="ch:bitwiseoperators">20</a>
+### Hoofdstuk <a href="#ch:bitwiseoperators" data-reference-type="ref" data-reference="ch:bitwiseoperators">20</a>
 
-### Antwoord 19.1
+#### Antwoord 19.1
 
 ```python
 s = "Hello, world!"
@@ -2285,7 +2285,7 @@ for c in codering:
 print( decodering )
 ```
 
-### Antwoord 19.2
+#### Antwoord 19.2
 
 ```python
 def setBit( opslag, index, value ):
@@ -2326,9 +2326,9 @@ opslag = setBit( opslag, 1, False )
 toonBits( opslag )
 ```
 
-## Hoofdstuk <a href="#ch:objectorientation" data-reference-type="ref" data-reference="ch:objectorientation">21</a>
+### Hoofdstuk <a href="#ch:objectorientation" data-reference-type="ref" data-reference="ch:objectorientation">21</a>
 
-### Antwoord 20.1
+#### Antwoord 20.1
 
 ```python
 from copy import copy
@@ -2385,7 +2385,7 @@ else:
     print( "De rechthoeken overlappen niet" )
 ```
 
-### Antwoord 20.2
+#### Antwoord 20.2
 
 Vanwege de lijst die je moet tonen, kun je het beste de methode
 `inschrijven()` in de student plaatsen. Voor de geboortedatum gebruik ik
@@ -2449,9 +2449,9 @@ for student in studenten:
         print( "\t{}".format( cursus ) )
 ```
 
-## Hoofdstuk <a href="#ch:operatoroverloading" data-reference-type="ref" data-reference="ch:operatoroverloading">22</a>
+### Hoofdstuk <a href="#ch:operatoroverloading" data-reference-type="ref" data-reference="ch:operatoroverloading">22</a>
 
-### Antwoord 21.1
+#### Antwoord 21.1
 
 ```python
 KLEUR = ["Harten","Schoppen","Klaveren","Ruiten"]
@@ -2497,7 +2497,7 @@ print( k5 <= sh )
 > implementeren, aangezien die automatisch worden gewijzigd in aanroepen
 > van andere methodes die je implementeert.
 
-### Antwoord 21.2
+#### Antwoord 21.2
 
 Om de leesbaarheid te vergroten heb ik de methodes die niet nodig zijn
 uit `Kaart` verwijderd voor dit programma.
@@ -2544,7 +2544,7 @@ print( ts1.trek() )
 print( ts1 )
 ```
 
-### Antwoord 21.3
+#### Antwoord 21.3
 
 ```python
 KLEUR = ["Harten","Schoppen","Klaveren","Ruiten"]
@@ -2620,7 +2620,7 @@ else:
     print( "De tweede stapel wint!" )
 ```
 
-### Antwoord 21.4
+#### Antwoord 21.4
 
 Vergeet niet dat je in de `__add__()` en `__sub__()` methodes (diepe)
 kopieën moet creëren van de fruitmand, die je dan aanpast en
@@ -2718,9 +2718,9 @@ fm["mango"] = 0
 print( fm )
 ```
 
-## Hoofdstuk <a href="#ch:inheritance" data-reference-type="ref" data-reference="ch:inheritance">23</a>
+### Hoofdstuk <a href="#ch:inheritance" data-reference-type="ref" data-reference="ch:inheritance">23</a>
 
-### Antwoord 22.1
+#### Antwoord 22.1
 
 ```python
 class Rechthoek:
@@ -2742,7 +2742,7 @@ s = Vierkant( 1, 1, 4 )
 print( s, s.oppervlakte(), s.omtrek() )
 ```
 
-### Antwoord 22.2
+#### Antwoord 22.2
 
 ```python
 from math import pi
@@ -2784,7 +2784,7 @@ c = Cirkel( 1, 1, 4 )
 print( c, c.oppervlakte(), c.omtrek() )
 ```
 
-### Antwoord 22.3
+#### Antwoord 22.3
 
 `GeheugenStrategie` is gedefinieerd om `OogOmOog`, `OogOmTweeOgen`, en
 `Meerderheid` van af te leiden. `GeheugenStrategie` houdt alle rondes in
@@ -2882,9 +2882,9 @@ print( "Score van", strategie1.naam, "is", strategie1.score )
 print( "Score van", strategie2.naam, "is", strategie2.score )
 ```
 
-## Hoofdstuk <a href="#ch:iteratorsandgenerators" data-reference-type="ref" data-reference="ch:iteratorsandgenerators">24</a>
+### Hoofdstuk <a href="#ch:iteratorsandgenerators" data-reference-type="ref" data-reference="ch:iteratorsandgenerators">24</a>
 
-### Antwoord 23.1
+#### Antwoord 23.1
 
 ```python
 from pcinput import getInteger
@@ -2924,7 +2924,7 @@ else:
         print( num, end=" " )
 ```
 
-### Antwoord 23.2
+#### Antwoord 23.2
 
 ```python
 def faculteit():
@@ -2938,7 +2938,7 @@ for n in fseq:
     print( n, end=" " )
 ```
 
-### Antwoord 23.3
+#### Antwoord 23.3
 
 ```python
 from itertools import permutations
@@ -2949,7 +2949,7 @@ for item in seq:
     print( "".join( item ) )
 ```
 
-### Antwoord 23.4
+#### Antwoord 23.4
 
 De enige wijziging tussen deze code en het antwoord op de vorige opgave
 is dat ik van de iterabele een set heb gemaakt.
@@ -2963,7 +2963,7 @@ for item in set( seq ):
     print( "".join( item ) )
 ```
 
-### Antwoord 23.5
+#### Antwoord 23.5
 
 ```python
 from itertools import combinations
@@ -3000,7 +3000,7 @@ else:
 > hij op een gegeven moment wel erg traag, maar dat kan niet verholpen
 > worden omdat dit een NP-hard probleem is).
 
-### Antwoord 23.6
+#### Antwoord 23.6
 
 ```python
 from itertools import combinations
@@ -3019,7 +3019,7 @@ for lengte in range( 1, len( testdict)+1 ):
 print( resultaat )
 ```
 
-### Antwoord 23.7
+#### Antwoord 23.7
 
 Als je de rijen en de kolommen nummert van 0 tot 7, dan komt ieder rij
 nummer en ieder kolom nummer precies één keer voor in de oplossing. Neem
@@ -3062,9 +3062,9 @@ else:
     print( "Geen oplossing gevonden" ) # Should not happen.
 ```
 
-## Hoofdstuk <a href="#ch:commandlineprocessing" data-reference-type="ref" data-reference="ch:commandlineprocessing">25</a>
+### Hoofdstuk <a href="#ch:commandlineprocessing" data-reference-type="ref" data-reference="ch:commandlineprocessing">25</a>
 
-### Antwoord 24.1
+#### Antwoord 24.1
 
 ```python
 import sys
@@ -3080,9 +3080,9 @@ for i in sys.argv[1:]:
 print( "The arguments add up to", totaal )
 ```
 
-## Hoofdstuk <a href="#ch:regularexpressions" data-reference-type="ref" data-reference="ch:regularexpressions">26</a>
+### Hoofdstuk <a href="#ch:regularexpressions" data-reference-type="ref" data-reference="ch:regularexpressions">26</a>
 
-### Antwoord 25.1
+#### Antwoord 25.1
 
 ```python
 import re
@@ -3097,7 +3097,7 @@ for woord in woordlist:
     print( woord )
 ```
 
-### Antwoord 25.2
+#### Antwoord 25.2
 
 ```python
 import re
@@ -3109,7 +3109,7 @@ delist = pde.findall( zin )
 print( len( delist ) )
 ```
 
-### Antwoord 25.3
+#### Antwoord 25.3
 
 ```python
 import re
@@ -3124,7 +3124,7 @@ for naam in naamlist:
     print( naam )
 ```
 
-### Antwoord 25.4
+#### Antwoord 25.4
 
 ```python
 import re
@@ -3141,7 +3141,7 @@ for naam in naamlist:
     print( naam.group(1) )
 ```
 
-### Antwoord 25.5
+#### Antwoord 25.5
 
 ```python
 import re
@@ -3157,7 +3157,7 @@ for tekst in gesprokenlist:
     print( tekst )
 ```
 
-### Antwoord 25.6
+#### Antwoord 25.6
 
 ```python
 import re
@@ -3183,9 +3183,9 @@ for m in mlist:
     print( m.group(1), m.group(2) )
 ```
 
-## Hoofdstuk <a href="#ch:fileformats" data-reference-type="ref" data-reference="ch:fileformats">27</a>
+### Hoofdstuk <a href="#ch:fileformats" data-reference-type="ref" data-reference="ch:fileformats">27</a>
 
-### Antwoord 26.1
+#### Antwoord 26.1
 
 ```python
 from csv import reader, writer
@@ -3207,7 +3207,7 @@ fp.close()
 Als je dit correct het gedaan, zie je dubbele aanhalingstekens rondom
 "Blue Stilton," die daar staan omdat er een spatie in voorkomt.
 
-### Antwoord 26.2
+#### Antwoord 26.2
 
 ```python
 from csv import reader
@@ -3230,9 +3230,9 @@ print( fp.read() )
 fp.close()
 ```
 
-## Hoofdstuk <a href="#ch:varioususefulmodules" data-reference-type="ref" data-reference="ch:varioususefulmodules">28</a>
+### Hoofdstuk <a href="#ch:varioususefulmodules" data-reference-type="ref" data-reference="ch:varioususefulmodules">28</a>
 
-### Antwoord 27.1
+#### Antwoord 27.1
 
 ```python
 from collections import Counter
@@ -3248,7 +3248,7 @@ for c in clist:
     print( "{}: {}".format( c[0], c[1] ) )
 ```
 
-### Antwoord 27.2
+#### Antwoord 27.2
 
 ```python
 from collections import Counter

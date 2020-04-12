@@ -21,9 +21,9 @@ your code solves the problem at hand, before you look into making the
 code more efficient. Readability and maintainability are far more
 important than efficiency.
 
-## Chapter <a href="#ch:introduction" data-reference-type="ref" data-reference="ch:introduction">2</a>
+### Chapter <a href="#ch:introduction" data-reference-type="ref" data-reference="ch:introduction">2</a>
 
-### Answer 1.1
+#### Answer 1.1
 
 A straightforward sorting procedure that first identifies the highest
 card, then the next highest card, then the lowest-but-one, and then the
@@ -64,7 +64,7 @@ needs five comparisons is quite hard to design, so do not get
 discouraged if you cannot come up with it. It is more important that you
 solve a task, than that you solve it in the most efficient manner.
 
-### Answer 1.2
+#### Answer 1.2
 
 You should draw four boxes on a piece of paper, number them, and put
 each of the cards in one of the boxes. Tell the person who is following
@@ -99,13 +99,13 @@ program. Variables will be explained in one of the early chapters.
 Trying to write instructions for the more efficient procedure outlined
 above is harder, because you need nested conditions and an early escape.
 
-## Chapter <a href="#ch:usingpython" data-reference-type="ref" data-reference="ch:usingpython">3</a>
+### Chapter <a href="#ch:usingpython" data-reference-type="ref" data-reference="ch:usingpython">3</a>
 
-### Answer 2.1
+#### Answer 2.1
 
 You now have Python running on your computer. Congratulations!
 
-### Answer 2.2
+#### Answer 2.2
 
 You will see nothing in the shell (apart from a display of the word
 `RESTART` that you always see when running a program). $7/4$ is a legal
@@ -116,15 +116,15 @@ displays the result of running the program. But since a program has no
 result by itself, there is nothing for the shell to display either. So
 you see nothing.
 
-## Chapter <a href="#ch:expressions" data-reference-type="ref" data-reference="ch:expressions">4</a>
+### Chapter <a href="#ch:expressions" data-reference-type="ref" data-reference="ch:expressions">4</a>
 
-### Answer 3.1
+#### Answer 3.1
 
 ```python
 print( 60 * (0.6 * 24.95 + 0.75) + (3 - 0.75) )
 ```
 
-### Answer 3.2
+#### Answer 3.2
 
 Each of the lines should be either `print( "A message" )` or
 `print( 'A message' )`. The error in the first line is that it ends in a
@@ -136,13 +136,13 @@ double quote. The third line is actually syntactically correct, but
 probably it was meant to be `print( 'A message' )`, so the `f"` should
 be removed.
 
-### Answer 3.3
+#### Answer 3.3
 
 ```python
 print( 1/0 )
 ```
 
-### Answer 3.4
+#### Answer 3.4
 
 The problem is that there is one closing parenthesis missing in the
 first line of code. I actually deleted the closing parenthesis that
@@ -164,15 +164,15 @@ reported for a certain line of code, but the error is actually made in
 one of the previous lines. Such errors often encompass the absence of a
 required parenthesis or single or double quote. Keep this in mind.
 
-### Answer 3.5
+#### Answer 3.5
 
 ```python
 print( str( (14 + 535) % 24 ) + ".00" )
 ```
 
-## Chapter <a href="#ch:variables" data-reference-type="ref" data-reference="ch:variables">5</a>
+### Chapter <a href="#ch:variables" data-reference-type="ref" data-reference="ch:variables">5</a>
 
-### Answer 4.1
+#### Answer 4.1
 
 ```python
 # This program calculates the average of three variables, 
@@ -185,7 +185,7 @@ print( average ) # May look a bit ugly, but we might make this
 # look a bit better when we have learned about formatting
 ```
 
-### Answer 4.2
+#### Answer 4.2
 
 ```python
 pi = 3.14159
@@ -194,7 +194,7 @@ print( "The surface area of a circle with radius",
     radius, "is", pi * radius * radius )
 ```
 
-### Answer 4.3
+#### Answer 4.3
 
 ```python
 CENTS_IN_DOLLAR = 100
@@ -223,7 +223,7 @@ print( "Nickels:", nickels )
 print( "Pennies:", cents )
 ```
 
-### Answer 4.4
+#### Answer 4.4
 
 ```python
 a = 17
@@ -235,16 +235,16 @@ a -= b
 print( "a =", a, "and b =", b )
 ```
 
-## Chapter <a href="#ch:simplefunctions" data-reference-type="ref" data-reference="ch:simplefunctions">6</a>
+### Chapter <a href="#ch:simplefunctions" data-reference-type="ref" data-reference="ch:simplefunctions">6</a>
 
-### Answer 5.1
+#### Answer 5.1
 
 ```python
 s = input( "Enter a string: " )
 print( "You entered", len( s ), "characters" )
 ```
 
-### Answer 5.2
+#### Answer 5.2
 
 ```python
 from pcinput import getFloat
@@ -256,7 +256,7 @@ side3 = sqrt( side1 * side1 + side2 * side2 )
 print( "The length of the diagonal is {:.3f}.".format( side3 ) )
 ```
 
-### Answer 5.3
+#### Answer 5.3
 
 ```python
 from pcinput import getFloat
@@ -270,7 +270,7 @@ print( "The smallest is", min( num1, num2, num3 ) )
 print( "The average is", round( (num1 + num2 + num3)/3, 2 ) )
 ```
 
-### Answer 5.4
+#### Answer 5.4
 
 ```python
 from math import exp
@@ -283,7 +283,7 @@ print( s.format( 2, exp( 2 ) ) )
 print( s.format( 3, exp( 3 ) ) )
 ```
 
-### Answer 5.5
+#### Answer 5.5
 
 ```python
 from random import random
@@ -292,9 +292,9 @@ print( "A random integer between 1 and 10 is",
     1 + int( random() * 10 ) )
 ```
 
-## Chapter <a href="#ch:conditions" data-reference-type="ref" data-reference="ch:conditions">7</a>
+### Chapter <a href="#ch:conditions" data-reference-type="ref" data-reference="ch:conditions">7</a>
 
-### Answer 6.1
+#### Answer 6.1
 
 ```python
 from pcinput import getFloat
@@ -317,13 +317,13 @@ else:
     print( "Grade F" )
 ```
 
-### Answer 6.2
+#### Answer 6.2
 
 The grade will always be "D" or "F," as the tests are placed in the
 incorrect order. E.g., if score is 85, then it is not only greater than
 80.0, but also greater than 60.0, so that the grade becomes "D."
 
-### Answer 6.3
+#### Answer 6.3
 
 ```python
 from pcinput import getString
@@ -349,7 +349,7 @@ else:
     print( "There are", count, "different vowels in the string.")
 ```
 
-### Answer 6.4
+#### Answer 6.4
 
 ```python
 from pcinput import getFloat
@@ -376,9 +376,9 @@ else:
                 (-b-sqrt(discriminant))/(2*a) )
 ```
 
-## Chapter <a href="#ch:iterations" data-reference-type="ref" data-reference="ch:iterations">8</a>
+### Chapter <a href="#ch:iterations" data-reference-type="ref" data-reference="ch:iterations">8</a>
 
-### Answer 7.1
+#### Answer 7.1
 
 ```python
 from pcinput import getInteger
@@ -390,7 +390,7 @@ while i <= 10:
     i += 1
 ```
 
-### Answer 7.2
+#### Answer 7.2
 
 ```python
 from pcinput import getInteger
@@ -400,7 +400,7 @@ for i in range( 1, 11 ):
     print( i, "*", num, "=", i*num )
 ```
 
-### Answer 7.3
+#### Answer 7.3
 
 ```python
 from pcinput import getInteger
@@ -428,7 +428,7 @@ print( "Largest is", largest )
 print( "Dividable by 3 is", div3 )
 ```
 
-### Answer 7.4
+#### Answer 7.4
 
 ```python
 bottles = 10
@@ -456,7 +456,7 @@ discussed in Chapter
 You do not need it at this time: you can just put the whole `print()`
 statement on one long line.
 
-### Answer 7.5
+#### Answer 7.5
 
 ```python
 num1 = 0
@@ -472,7 +472,7 @@ while True:
     num2 = num3    
 ```
 
-### Answer 7.6
+#### Answer 7.6
 
 ```python
 from pcinput import getString
@@ -489,7 +489,7 @@ else:
     print( "The words have the following in common:", common )
 ```
 
-### Answer 7.7
+#### Answer 7.7
 
 ```python
 from random import random
@@ -505,7 +505,7 @@ for i in range( DARTS ):
 print( "A reasonable approximation of pi is", 4 * hits / DARTS )
 ```
 
-### Answer 7.8
+#### Answer 7.8
 
 ```python
 from random import randint
@@ -534,7 +534,7 @@ else:
     print( "You needed", count, "guesses." )
 ```
 
-### Answer 7.9
+#### Answer 7.9
 
 ```python
 from pcinput import getLetter
@@ -573,7 +573,7 @@ else:
     print( "I needed", count, "guesses." )
 ```
 
-### Answer 7.10
+#### Answer 7.10
 
 ```python
 from pcinput import getInteger
@@ -622,7 +622,7 @@ if you can write a for loop around your code that tests all numbers
 between, for instance, -10 and 100, then you are really doing an
 extensive test of your code.
 
-### Answer 7.11
+#### Answer 7.11
 
 ```python
 num = 9
@@ -640,7 +640,7 @@ for i in range( 1, num+1 ):
     print()
 ```
 
-### Answer 7.12
+#### Answer 7.12
 
 ```python
 for i in range( 1, 101 ):
@@ -662,7 +662,7 @@ for i in range( 1, 101 ):
                 print( "{} = {}**2 + {}**2".format( i, j, k ) )
 ```
 
-### Answer 7.13
+#### Answer 7.13
 
 ```python
 from random import randint
@@ -685,7 +685,7 @@ print( "The probability of an increasing sequence",
     "of five die rolls is {:.3f}".format( success/TRIALS ) )
 ```
 
-### Answer 7.14
+#### Answer 7.14
 
 ```python
 for A in range( 1, 10 ):
@@ -713,7 +713,7 @@ once it has found a solution, the best approach is to put most of it in
 a function and return from that function as soon as a solution is found.
 Creating your own functions is discussed in the next chapter.
 
-### Answer 7.15
+#### Answer 7.15
 
 ```python
 PIRATES = 5
@@ -741,7 +741,7 @@ remaining when the pile is equally divided amongst the pirates.
 Isn't it a bit surprising that you can solve a problem for which the
 description is so long in so few lines of code?
 
-### Answer 7.16
+#### Answer 7.16
 
 First I give the solution that simulates each Triangle Crawler
 separately. The advantage of coding it like this is that it is not hard
@@ -826,9 +826,9 @@ print( "{:.2f}".format( estimate ) )
 By the way, the exact answer is $2\frac{1}{3}$ days; an approximation
 should give 2.33 or 2.34.
 
-## Chapter <a href="#ch:functions" data-reference-type="ref" data-reference="ch:functions">9</a>
+### Chapter <a href="#ch:functions" data-reference-type="ref" data-reference="ch:functions">9</a>
 
-### Answer 8.1
+#### Answer 8.1
 
 ```python
 from pcinput import getInteger
@@ -845,7 +845,7 @@ num = getInteger( "Give a number: " )
 multiplicationtable( num )
 ```
 
-### Answer 8.2
+#### Answer 8.2
 
 ```python
 from pcinput import getString
@@ -871,7 +871,7 @@ else:
     print( "The words have", num, "characters in common")
 ```
 
-### Answer 8.3
+#### Answer 8.3
 
 ```python
 # The function gregoryLeibnitz approximates pi using the Gregory-
@@ -890,7 +890,7 @@ def gregoryLeibnitz( num ):
 print( gregoryLeibnitz( 50 ) )
 ```
 
-### Answer 8.4
+#### Answer 8.4
 
 ```python
 from pcinput import getFloat
@@ -927,7 +927,7 @@ else:
     print( "There are two solutions, namely:", sol1, "and", sol2)
 ```
 
-### Answer 8.5
+#### Answer 8.5
 
 ```python
 from pcinput import getInteger
@@ -958,7 +958,7 @@ if __name__ == '__main__':
     main()
 ```
 
-### Answer 8.6
+#### Answer 8.6
 
 ```python
 # Calculates the factorial of parameter n, which must be an 
@@ -986,7 +986,7 @@ if __name__ == '__main__':
     main()
 ```
 
-### Answer 8.7
+#### Answer 8.7
 
 The code tries to print the return value of the function
 `area\_of\_triangle()`, but since this function has no return value, it
@@ -1002,9 +1002,9 @@ also use the area in calculations). If you do not understand the
 explanation given here, revisit Chapter
 <a href="#ch:simplefunctions" data-reference-type="ref" data-reference="ch:simplefunctions">6</a>.
 
-## Chapter <a href="#ch:recursion" data-reference-type="ref" data-reference="ch:recursion">10</a>
+### Chapter <a href="#ch:recursion" data-reference-type="ref" data-reference="ch:recursion">10</a>
 
-### Answer 9.1
+#### Answer 9.1
 
 ```python
 def fib( n ):
@@ -1015,7 +1015,7 @@ def fib( n ):
 print( fib( 20 ) )
 ```
 
-### Answer 9.2
+#### Answer 9.2
 
 ```python
 def fib( n, depth ):
@@ -1031,7 +1031,7 @@ def fib( n, depth ):
 print( fib( 5, 0 ) )
 ```
 
-### Answer 9.3
+#### Answer 9.3
 
 Since the Fibonacci sequence can just as easily be implemented as an
 iterative function (you did this in the previous chapter), doing it as a
@@ -1041,7 +1041,7 @@ that the recursive definition basically calculates all terms of the
 sequence multiple times, as you can see when you look at the output for
 the second exercise, while calculating them just once suffices.
 
-### Answer 9.4
+#### Answer 9.4
 
 ```python
 def gcd( m, n ):
@@ -1057,7 +1057,7 @@ smallest and the largest number, you actually do not have to make that
 distinction in your code. If you call the function with the two
 exchanged, it just leads to one extra recursive call.
 
-### Answer 9.5
+#### Answer 9.5
 
 The problem in this code is that when I enter a string with two illegal
 characters, then it will recursively call itself twice, namely once for
@@ -1070,7 +1070,7 @@ how you can solve this problem by fixing the code, but the real fix here
 is that you should not write recursive functions that interact with the
 user.
 
-### Answer 9.6
+#### Answer 9.6
 
 ```python
 SIZE = 4
@@ -1104,9 +1104,9 @@ in Chapter
 and you have to find a way to check whether the game is solved (you can
 just take the number of necessary moves, which is $2^N-1$).
 
-## Chapter <a href="#ch:strings" data-reference-type="ref" data-reference="ch:strings">11</a>
+### Chapter <a href="#ch:strings" data-reference-type="ref" data-reference="ch:strings">11</a>
 
-### Answer 10.1
+#### Answer 10.1
 
 ```python
 text = """And Saint Attila raised the hand grenade up on high,
@@ -1133,7 +1133,7 @@ print( "Counts: a={}, e={}, i={}, o={}, u={}".format(
     counta, counte, counti, counto, countu ) )
 ```
 
-### Answer 10.2
+#### Answer 10.2
 
 ```python
 text = """And sending tinted postcards of places they don't 
@@ -1159,7 +1159,7 @@ while True:
 print()
 ```
 
-### Answer 10.3
+#### Answer 10.3
 
 ```python
 ch = "A"
@@ -1174,7 +1174,7 @@ for i in range( 26 ):
     print( ch, end=" " )
 ```
 
-### Answer 10.4
+#### Answer 10.4
 
 ```python
 text = """How much wood would a woodchuck chuck
@@ -1205,7 +1205,7 @@ Note that in the example text, the word "wood" never occurs with a
 capital. For a solid test, you should insert "wood" written with one or
 more capitals in the text somewhere.
 
-### Answer 10.5
+#### Answer 10.5
 
 ```python
 text = "Hello, world!"
@@ -1226,7 +1226,7 @@ while len( text ) > 0:
 print( newtext )
 ```
 
-### Answer 10.6
+#### Answer 10.6
 
 ```python
 from sys import exit
@@ -1283,9 +1283,9 @@ newsentence = newsentence.strip()
 print( newsentence )
 ```
 
-## Chapter <a href="#ch:tuples" data-reference-type="ref" data-reference="ch:tuples">12</a>
+### Chapter <a href="#ch:tuples" data-reference-type="ref" data-reference="ch:tuples">12</a>
 
-### Answer 11.1
+#### Answer 11.1
 
 I created `display_complex()` to nicely format complex numbers (it will
 not show a real part which is zero, or a 1 in front of the $i$, or clump
@@ -1318,7 +1318,7 @@ print( display_complex( num1 ), "+", display_complex( num2 ),
     "=", display_complex( add_complex( num1, num2 ) ) )
 ```
 
-### Answer 11.2
+#### Answer 11.2
 
 I used a less nice version of `display_complex()` for this solution.
 
@@ -1335,7 +1335,7 @@ print( display_complex( num1 ), "*", display_complex( num2 ),
     "=", display_complex( multiply_complex( num1, num2 ) ) )
 ```
 
-### Answer 11.3
+#### Answer 11.3
 
 ```python
 inttuple = ( 1, 2, ( 3, 4 ), 5, ( ( 6, 7, 8, ( 9, 10 ), 11 ), 12, 
@@ -1351,9 +1351,9 @@ def display_inttuple( it ):
 display_inttuple( inttuple )
 ```
 
-## Chapter <a href="#ch:lists" data-reference-type="ref" data-reference="ch:lists">13</a>
+### Chapter <a href="#ch:lists" data-reference-type="ref" data-reference="ch:lists">13</a>
 
-### Answer 12.1
+#### Answer 12.1
 
 ```python
 from random import choice
@@ -1374,7 +1374,7 @@ The `choice()` function from `random` selects a random item from a list.
 You could also have used `randint()`, selecting an index from the range
 0 to `len( answers )-1`.
 
-### Answer 12.2
+#### Answer 12.2
 
 ```python
 from random import randint
@@ -1393,7 +1393,7 @@ for card in deck:
     print( card )
 ```
 
-### Answer 12.3
+#### Answer 12.3
 
 ```python
 fifo = []
@@ -1409,7 +1409,7 @@ while True:
         print( "List is empty" )
 ```
 
-### Answer 12.4
+#### Answer 12.4
 
 ```python
 text = """Now, it's quite simple to defend yourself against a 
@@ -1434,7 +1434,7 @@ for count in countlist:
     print( "{:3}: {}".format( count[0],count[1] ) )
 ```
 
-### Answer 12.5
+#### Answer 12.5
 
 There are basically two general approaches to this program: either you
 make a list of numbers, or you make a list of booleans and use the index
@@ -1477,7 +1477,7 @@ for i in numbers:
     print( i, end=" " )
 ```
 
-### Answer 12.6
+#### Answer 12.6
 
 ```python
 from pcinput import getInteger
@@ -1550,7 +1550,7 @@ while True:
     player = opponent( player )
 ```
 
-### Answer 12.7
+#### Answer 12.7
 
 ```python
 from pcinput import getString
@@ -1631,7 +1631,7 @@ while hits < SHIPS:
 print( "You needed", moves, "moves to sink all battleships." )
 ```
 
-### Answer 12.8
+#### Answer 12.8
 
 ```python
 # Recursive function that determines if intlist, which is a list 
@@ -1690,9 +1690,9 @@ algorithm is known that avoids having to process each and every subset
 if there is no solution. For those who know some complexity theory: the
 subset sum problem is "NP-hard."
 
-## Chapter <a href="#ch:dictionaries" data-reference-type="ref" data-reference="ch:dictionaries">14</a>
+### Chapter <a href="#ch:dictionaries" data-reference-type="ref" data-reference="ch:dictionaries">14</a>
 
-### Answer 13.1
+#### Answer 13.1
 
 ```python
 text = """How much wood would a woodchuck chuck
@@ -1721,7 +1721,7 @@ for key in keylist:
     print( "{}: {}".format( key, worddict[key] ) )
 ```
 
-### Answer 13.2
+#### Answer 13.2
 
 ```python
 movies = {  "Monty Python and the Holy Grail": 
@@ -1740,7 +1740,7 @@ for key in keylist:
         sum( movies[key] )/len( movies[key] ), 1 ) ) )
 ```
 
-### Answer 13.3
+#### Answer 13.3
 
 Many answers are possible. Probably the simplest one is to use a
 dictionary where the keys are tuples of writers' last and first names,
@@ -1758,9 +1758,9 @@ described. I can't complain if you want to introduce easier and less
 ambiguous keys in such a data structure (but in general, you should
 divert to a database system to deal with libraries).
 
-## Chapter <a href="#ch:sets" data-reference-type="ref" data-reference="ch:sets">15</a>
+### Chapter <a href="#ch:sets" data-reference-type="ref" data-reference="ch:sets">15</a>
 
-### Answer 14.1
+#### Answer 14.1
 
 ```python
 allthings = {"Socrates", "Plato", "Eratosthenes", "Zeus", "Hera", 
@@ -1775,7 +1775,7 @@ print( len( mortalthings.difference( men ) ) > 0 ) # (d)
 print( len( allthings.difference( mortalthings ) ) > 0 ) # (e)
 ```
 
-### Answer 14.2
+#### Answer 14.2
 
 ```python
 set3 = set( [3*x for x in range( 1, int( 1001/3 ) )] )
@@ -1787,9 +1787,9 @@ setb = (set3 & set7) - set11
 setc = set( range( 1, 1001 ) ) - set3 - set7 - set11
 ```
 
-## Chapter <a href="#ch:operatingsystem" data-reference-type="ref" data-reference="ch:operatingsystem">16</a>
+### Chapter <a href="#ch:operatingsystem" data-reference-type="ref" data-reference="ch:operatingsystem">16</a>
 
-### Answer 15.1
+#### Answer 15.1
 
 ```python
 from os import listdir, getcwd
@@ -1799,9 +1799,9 @@ for name in flist:
     print( getcwd() + "/" + name )
 ```
 
-## Chapter <a href="#ch:textfiles" data-reference-type="ref" data-reference="ch:textfiles">17</a>
+### Chapter <a href="#ch:textfiles" data-reference-type="ref" data-reference="ch:textfiles">17</a>
 
-### Answer 16.1
+#### Answer 16.1
 
 The code below is mostly a copy of some code you had to write in Chapter
 <a href="#ch:dictionaries" data-reference-type="ref" data-reference="ch:dictionaries">14</a>.
@@ -1833,7 +1833,7 @@ for key in keylist:
     print( "{}: {}".format( key, wdict[key] ) )
 ```
 
-### Answer 16.2
+#### Answer 16.2
 
 ```python
 def clean( s ):
@@ -1862,7 +1862,7 @@ for key in keylist:
     print( "{}: {}".format( key, wdict[key] ) )
 ```
 
-### Answer 16.3
+#### Answer 16.3
 
 ```python
 from os.path import join
@@ -1900,7 +1900,7 @@ print( "Characters read:", countread )
 print( "Characters written:", countwritten )
 ```
 
-### Answer 16.4
+#### Answer 16.4
 
 The solution below makes use of sets: a set is created for each file,
 which contains all the words from that file that have 2 letters or more.
@@ -1953,7 +1953,7 @@ for word in combination:
     print( word )
 ```
 
-### Answer 16.5
+#### Answer 16.5
 
 Again, in the solution below I chose to be flexible as far as the number
 of files is concerned. The program is easier to write if you assume
@@ -2007,9 +2007,9 @@ print( fp.read() )
 fp.close()
 ```
 
-## Chapter <a href="#ch:exceptions" data-reference-type="ref" data-reference="ch:exceptions">18</a>
+### Chapter <a href="#ch:exceptions" data-reference-type="ref" data-reference="ch:exceptions">18</a>
 
-### Answer 17.1
+#### Answer 17.1
 
 The code can generate a `ValueError` when you enter something that is
 not an integer, an `IndexError` when you give an index outside the range
@@ -2036,9 +2036,9 @@ except:
     raise
 ```
 
-## Chapter <a href="#ch:binaryfiles" data-reference-type="ref" data-reference="ch:binaryfiles">19</a>
+### Chapter <a href="#ch:binaryfiles" data-reference-type="ref" data-reference="ch:binaryfiles">19</a>
 
-### Answer 18.1
+#### Answer 18.1
 
 For this program I created a copy of "pc\_rose.txt" and called it
 "pc\_rose\_copy.txt." To demonstrate what happens, I display the
@@ -2068,7 +2068,7 @@ encrypt( FILENAME )
 display_contents( FILENAME )
 ```
 
-### Answer 18.2
+#### Answer 18.2
 
 ```python
 letters = "etaoinshrdlcum "
@@ -2102,7 +2102,7 @@ This solution needs 25 lines of code, of which 4 are comments, 4 are
 empty lines, and 3 are only for testing purposes. So, basically, 14
 lines of code suffices. That wasn't too bad, right?
 
-### Answer 18.3
+#### Answer 18.3
 
 ```python
 letters = "etaoinshrdlcum "
@@ -2132,7 +2132,7 @@ while len( halfbytelist ) > 0:
 print( decoded, len( decoded ) )
 ```
 
-### Answer 18.4
+#### Answer 18.4
 
 This program looks like it is quite long, but it is straightforward.
 `compress()` and `decompress()` were developed in the previous two
@@ -2238,9 +2238,9 @@ print( getsize( filein ), "bytes read" )
 print( getsize( fileout ), "bytes written" )
 ```
 
-## Chapter <a href="#ch:bitwiseoperators" data-reference-type="ref" data-reference="ch:bitwiseoperators">20</a>
+### Chapter <a href="#ch:bitwiseoperators" data-reference-type="ref" data-reference="ch:bitwiseoperators">20</a>
 
-### Answer 19.1
+#### Answer 19.1
 
 ```python
 s = "Hello, world!"
@@ -2257,7 +2257,7 @@ for c in code:
 print( decode )
 ```
 
-### Answer 19.2
+#### Answer 19.2
 
 ```python
 def setBit( store, index, value ):
@@ -2297,9 +2297,9 @@ store = setBit( store, 1, False )
 displayBits( store )
 ```
 
-## Chapter <a href="#ch:objectorientation" data-reference-type="ref" data-reference="ch:objectorientation">21</a>
+### Chapter <a href="#ch:objectorientation" data-reference-type="ref" data-reference="ch:objectorientation">21</a>
 
-### Answer 20.1
+#### Answer 20.1
 
 ```python
 from copy import copy
@@ -2356,7 +2356,7 @@ else:
     print( "There is no overlap for the rectangles" )
 ```
 
-### Answer 20.2
+#### Answer 20.2
 
 Considering the list that must be displayed, I placed the `enroll()`
 method in `Student`. For the birth date I use the `datetime` module; as
@@ -2419,9 +2419,9 @@ for student in students:
         print( "\t{}".format( course ) )
 ```
 
-## Chapter <a href="#ch:operatoroverloading" data-reference-type="ref" data-reference="ch:operatoroverloading">22</a>
+### Chapter <a href="#ch:operatoroverloading" data-reference-type="ref" data-reference="ch:operatoroverloading">22</a>
 
-### Answer 21.1
+#### Answer 21.1
 
 ```python
 SUITS = ["Hearts","Spades","Clubs","Diamonds"]
@@ -2468,7 +2468,7 @@ print( c5 <= sk )
 > `__le__()`, as they are automatically changed into calls to the methods
 > that have been implemented.
 
-### Answer 21.2
+#### Answer 21.2
 
 For readability, I deleted the methods from `Card` that are not needed
 here.
@@ -2516,7 +2516,7 @@ print( dp1.draw() )
 print( dp1 )
 ```
 
-### Answer 21.3
+#### Answer 21.3
 
 ```python
 SUITS = ["Hearts","Spades","Clubs","Diamonds"]
@@ -2593,7 +2593,7 @@ else:
     print( "The second deck wins!" )
 ```
 
-### Answer 21.4
+#### Answer 21.4
 
 Do not forget that in the `__add__()` and `__sub__()` methods you have
 to create a (deep) copy of the fruit basket, which you change and
@@ -2690,9 +2690,9 @@ fb["orange"] = 0
 print( fb )
 ```
 
-## Chapter <a href="#ch:inheritance" data-reference-type="ref" data-reference="ch:inheritance">23</a>
+### Chapter <a href="#ch:inheritance" data-reference-type="ref" data-reference="ch:inheritance">23</a>
 
-### Answer 22.1
+#### Answer 22.1
 
 ```python
 class Rectangle:
@@ -2714,7 +2714,7 @@ s = Square( 1, 1, 4 )
 print( s, s.area(), s.circumference() )
 ```
 
-### Answer 22.2
+#### Answer 22.2
 
 ```python
 from math import pi
@@ -2756,7 +2756,7 @@ c = Circle( 1, 1, 4 )
 print( c, c.area(), c.circumference() )
 ```
 
-### Answer 22.3
+#### Answer 22.3
 
 I implemented a `MemoryStrategy` class to derive `TitForTat`,
 `TitForTwoTats`, and `Majority` from. `MemoryStrategy` keeps track of
@@ -2854,9 +2854,9 @@ print( "Score of", strategy1.name, "is", strategy1.score )
 print( "Score of", strategy2.name, "is", strategy2.score )
 ```
 
-## Chapter <a href="#ch:iteratorsandgenerators" data-reference-type="ref" data-reference="ch:iteratorsandgenerators">24</a>
+### Chapter <a href="#ch:iteratorsandgenerators" data-reference-type="ref" data-reference="ch:iteratorsandgenerators">24</a>
 
-### Answer 23.1
+#### Answer 23.1
 
 ```python
 from pcinput import getInteger
@@ -2896,7 +2896,7 @@ else:
         print( num, end=" " )
 ```
 
-### Answer 23.2
+#### Answer 23.2
 
 ```python
 def factorial():
@@ -2910,7 +2910,7 @@ for n in fseq:
     print( n, end=" " )
 ```
 
-### Answer 23.3
+#### Answer 23.3
 
 ```python
 from itertools import permutations
@@ -2921,7 +2921,7 @@ for item in seq:
     print( "".join( item ) )
 ```
 
-### Answer 23.4
+#### Answer 23.4
 
 The only change I made with respect to the previous answer is that I
 cast the iterable to a set.
@@ -2935,7 +2935,7 @@ for item in set( seq ):
     print( "".join( item ) )
 ```
 
-### Answer 23.5
+#### Answer 23.5
 
 ```python
 from itertools import combinations
@@ -2971,7 +2971,7 @@ else:
 > this solution works fine even for large lists of integers (though it may
 > get slow, which cannot be helped as this is an NP-hard problem).
 
-### Answer 23.6
+#### Answer 23.6
 
 ```python
 from itertools import combinations
@@ -2990,7 +2990,7 @@ for length in range( 1, len( testdict)+1 ):
 print( result )
 ```
 
-### Answer 23.7
+#### Answer 23.7
 
 If rows and columns are numbered 0 to 7, then every row and column
 number will occur exactly once in the solution. Take a list of the eight
@@ -3033,9 +3033,9 @@ else:
     print( "No solutions found" ) # Should not happen.
 ```
 
-## Chapter <a href="#ch:commandlineprocessing" data-reference-type="ref" data-reference="ch:commandlineprocessing">25</a>
+### Chapter <a href="#ch:commandlineprocessing" data-reference-type="ref" data-reference="ch:commandlineprocessing">25</a>
 
-### Answer 24.1
+#### Answer 24.1
 
 ```python
 import sys
@@ -3051,9 +3051,9 @@ for i in sys.argv[1:]:
 print( "The arguments add up to", total )
 ```
 
-## Chapter <a href="#ch:regularexpressions" data-reference-type="ref" data-reference="ch:regularexpressions">26</a>
+### Chapter <a href="#ch:regularexpressions" data-reference-type="ref" data-reference="ch:regularexpressions">26</a>
 
-### Answer 25.1
+#### Answer 25.1
 
 ```python
 import re
@@ -3068,7 +3068,7 @@ for word in wordlist:
     print( word )
 ```
 
-### Answer 25.2
+#### Answer 25.2
 
 ```python
 import re
@@ -3081,7 +3081,7 @@ thelist = pthe.findall( sentence )
 print( len( thelist ) )
 ```
 
-### Answer 25.3
+#### Answer 25.3
 
 ```python
 import re
@@ -3095,7 +3095,7 @@ for name in namelist:
     print( name )
 ```
 
-### Answer 25.4
+#### Answer 25.4
 
 ```python
 import re
@@ -3113,7 +3113,7 @@ for name in namelist:
     print( name.group(1) )
 ```
 
-### Answer 25.5
+#### Answer 25.5
 
 ```python
 import re
@@ -3129,7 +3129,7 @@ for text in spokenlist:
     print( text )
 ```
 
-### Answer 25.6
+#### Answer 25.6
 
 ```python
 import re
@@ -3155,9 +3155,9 @@ for m in mlist:
     print( m.group(1), m.group(2) )
 ```
 
-## Chapter <a href="#ch:fileformats" data-reference-type="ref" data-reference="ch:fileformats">27</a>
+### Chapter <a href="#ch:fileformats" data-reference-type="ref" data-reference="ch:fileformats">27</a>
 
-### Answer 26.1
+#### Answer 26.1
 
 ```python
 from csv import reader, writer
@@ -3179,7 +3179,7 @@ fp.close()
 If you did it correctly, you notice the quotes around "Blue Stilton,"
 which are there because it contains a space, which is the delimiter.
 
-### Answer 26.2
+#### Answer 26.2
 
 ```python
 from csv import reader
@@ -3202,9 +3202,9 @@ print( fp.read() )
 fp.close()
 ```
 
-## Chapter <a href="#ch:varioususefulmodules" data-reference-type="ref" data-reference="ch:varioususefulmodules">28</a>
+### Chapter <a href="#ch:varioususefulmodules" data-reference-type="ref" data-reference="ch:varioususefulmodules">28</a>
 
-### Answer 27.1
+#### Answer 27.1
 
 ```python
 from collections import Counter
@@ -3221,7 +3221,7 @@ for c in clist:
     print( "{}: {}".format( c[0], c[1] ) )
 ```
 
-### Answer 27.2
+#### Answer 27.2
 
 ```python
 from collections import Counter
