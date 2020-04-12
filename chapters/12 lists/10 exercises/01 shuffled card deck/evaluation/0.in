@@ -74,7 +74,7 @@ class DeckChecker(OutputProcessor):
 
         # check if decks are randomly shuffled
         if len(decks) < repeats // 2:
-            setMessage('generated decks are not randomly shuffled')
+            setMessage('decks are not randomly shuffled')
             return False
 
         # generated return value passed all tests
@@ -83,4 +83,4 @@ class DeckChecker(OutputProcessor):
 <OUTPUTPROCESSOR>
 DeckChecker(expected_type=[str])
 </OUTPUTPROCESSOR>
-['6S', 'QH', '10S', '10H', '7S', '7C', 'AS', '10C', '3C', '6C', 'JC', '7H', 'KC', '10D', '8C', '5S', '5C', 'QC', 'AC', '2S', '9D', '5D', '4C', '9S', 'JD', 'AD', '4H', '3D', 'KD', '3S', '4S', 'KH', 'QS', 'KS', 'JH', '5H', 'AH', '8S', '8D', '6D', '4D', '8H', '2D', '9H', '2C', 'JS', '3H', '7D', '2H', 'QD', '9C', '6H']
+['6D', '5S', 'AD', 'AS', 'JD', 'JH', '10D', 'AH', 'KH', '6H', '8H', 'JS', '9H', 'AC', 'QH', '4D', '4H', '5H', '10H', '2D', '3C', '4C', '7H', '3D', '8C', '10C', '7S', 'KC', '9C', 'KD', '7D', '9S', '5D', '9D', '8S', '4S', '10S', 'QD', 'QC', '6C', '7C', 'QS', '2C', '3S', '2H', '8D', 'KS', 'JC', '2S', '5C', '3H', '6S']

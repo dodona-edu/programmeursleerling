@@ -72,7 +72,7 @@ class DeckChecker(OutputProcessor):
 
         # check if decks are randomly shuffled
         if len(decks) < repeats // 2:
-            setMessage('generated decks are not randomly shuffled')
+            setMessage('decks are not randomly shuffled')
             return False
 
         # generated return value passed all tests
