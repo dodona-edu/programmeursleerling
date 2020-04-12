@@ -35,7 +35,7 @@ class DeckChecker(OutputProcessor):
                 invalid = sorted(set(deck) - expected)
                 message = f'deck contains invalid cards: {listing(invalid)}'
             elif len(deck) != len(expected):
-                message = 'deck should contain {len(expected)} cards but contains {len(deck)} cards'
+                message = f'deck should contain {len(expected)} cards but contains {len(deck)} cards'
             else:
                 valid = True
 

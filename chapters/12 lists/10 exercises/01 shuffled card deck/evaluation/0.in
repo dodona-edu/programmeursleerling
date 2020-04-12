@@ -37,7 +37,7 @@ class DeckChecker(OutputProcessor):
                 invalid = sorted(set(deck) - expected)
                 message = f'deck contains invalid cards: {listing(invalid)}'
             elif len(deck) != len(expected):
-                message = 'deck should contain {len(expected)} cards but contains {len(deck)} cards'
+                message = f'deck should contain {len(expected)} cards but contains {len(deck)} cards'
             else:
                 valid = True
 
@@ -83,4 +83,4 @@ class DeckChecker(OutputProcessor):
 <OUTPUTPROCESSOR>
 DeckChecker(expected_type=[str])
 </OUTPUTPROCESSOR>
-['6C', '10D', '4C', '4D', '7C', '7S', 'QC', '4S', '8S', '6S', '5S', '7D', 'AS', '4H', '3S', '2C', '2S', '10S', 'QS', 'JC', '9H', '2H', 'KS', '9C', '5H', 'QH', 'KD', '8H', 'AH', '8C', 'KC', 'AD', '10C', 'AC', '5D', '2D', 'QD', '3C', '3H', '6H', 'KH', '3D', 'JH', '9D', 'JS', '5C', '8D', '7H', 'JD', '10H', '9S', '6D']
+['6S', 'QH', '10S', '10H', '7S', '7C', 'AS', '10C', '3C', '6C', 'JC', '7H', 'KC', '10D', '8C', '5S', '5C', 'QC', 'AC', '2S', '9D', '5D', '4C', '9S', 'JD', 'AD', '4H', '3D', 'KD', '3S', '4S', 'KH', 'QS', 'KS', 'JH', '5H', 'AH', '8S', '8D', '6D', '4D', '8H', '2D', '9H', '2C', 'JS', '3H', '7D', '2H', 'QD', '9C', '6H']
