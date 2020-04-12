@@ -43,8 +43,7 @@ Merk op dat als de boolean expressie meteen `False` oplevert de eerste
 keer dat Python hem ziet, dan wordt het blok code onder de `while`
 onmiddellijk overgeslagen, net zoals gebeurt bij een `if` statement.
 
-<img src="img/Loop.png" style="width:60.0%" alt="image" />
-<img src="img/Loop.png" style="width:80.0%" alt="image" />
+![loop](media/Loop.png "loop"){:width="70%"}
 
 ### `while` loop, eerste voorbeeld
 
