@@ -5,5 +5,11 @@
       "en": "Answers to Exercises"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "tBr8nEvmM2-FkqfBMabsYS3aVue9u-KsdSrk6mSc6nuMBSBtSBics-473BUDeY_4",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }

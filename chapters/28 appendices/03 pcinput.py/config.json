@@ -5,5 +5,11 @@
       "en": "pcinput.py"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "E-PK-cKZ8vYqR5NfiMkghvbYAtFZYUXgfvF897rHTajtiyFtH7xRz_ySiYBpz5Mi",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }

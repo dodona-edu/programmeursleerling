@@ -5,5 +5,11 @@
       "en": "Troubleshooting"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "c-KC5pF5_EVx__uJMgCx9Qe5m5-JrmKGhfdvgGV6sI9w9F2Yeg3_iBStM8NzEQWS",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
