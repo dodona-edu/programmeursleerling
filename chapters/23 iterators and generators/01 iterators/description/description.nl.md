@@ -306,3 +306,6 @@ fruitlist = ["appel", "peer", "kers", "banaan"]
 for fruit in sorted( fruitlist ):
     print( fruit )
 ```
+
+[^24]: De naam "gedelegeerde iteratie" heb ik zelf bedacht. Als er een
+    "officiële" naam voor deze werkwijze bestaat, hoor ik dat graag.

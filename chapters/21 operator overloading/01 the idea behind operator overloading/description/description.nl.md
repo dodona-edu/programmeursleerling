@@ -39,3 +39,12 @@ Overigens is operator overloading een typisch voorbeeld van
 resultaten te produceren op basis van de types van de argumenten.
 Polymorphisme wordt vaak genoemd als een van de krachtige eigenschappen
 van object oriëntatie.
+
+[^23]: Quaternionen zijn een extensie van complexe getallen. Het zijn
+    4-dimensionale getallen, met een reëel deel en drie imaginaire
+    delen, die `i`, `j`, en `k` genoemd worden, met specifieke
+    definities voor de vermenigvuldiging van ieder van deze delen. Ik ga
+    geen details verstrekken, omdat ze niet belangrijk zijn voor dit
+    boek (je kunt ze opzoeken als je geïnteresseerd bent). Ik wil ze
+    slechts gebruiken als een voorbeeld van een type getallen dat niet
+    standaard in Python is opgenomen.

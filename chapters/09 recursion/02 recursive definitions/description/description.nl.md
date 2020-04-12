@@ -305,3 +305,13 @@ Feitelijk is er geen echt verschil tussen een recursieve functie aanroep
 en een reguliere functie aanroep, behalve dat je bij recursieve
 aanroepen ervoor moet zorgen dat ze wel op een bepaald moment eindigen.
 Recursie ziet er alleen vreemd uit de eerste keer dat je het tegenkomt.
+
+[^11]: Een data structuur is een manier om een bepaalde soort data in
+    het geheugen van de computer op te slaan. Een integer, bijvoorbeeld,
+    is een simpele data structuur die precies één geheel getal in het
+    geheugen vasthoudt. Er bestaan complexere data structuren, die
+    bijvoorbeeld een rij getallen vasthouden. Deze komen in latere
+    hoofdstukken aan bod.
+
+[^12]: Ik heb Engelstalige functiebenamingen gekozen om ervoor te zorgen
+    dat de code compatibel is met de Engelstalige versie van dit boek.

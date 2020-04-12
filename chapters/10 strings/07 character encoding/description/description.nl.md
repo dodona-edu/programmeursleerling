@@ -157,3 +157,7 @@ heeft met bestandsverwerking. Het zal een tijdje duren voordat je dat
 soort problemen krijgt, en ik zal er meer over zeggen in hoofdstuk
 <a href="#ch:textfiles" data-reference-type="ref" data-reference="ch:textfiles">17</a>
 en verder.
+
+[^14]: Er staat een vreemd teken in deze reeks Griekse letters, namelijk
+    tussen de Rho aen de Sigma, dat gelijk is aan `\u03A2`, dat
+    klaarblijkelijk geen legaal Unicode teken is.

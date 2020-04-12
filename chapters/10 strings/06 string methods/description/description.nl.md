@@ -163,3 +163,10 @@ kleine letters worden omgezet. Bijvoorbeeld, de string
 `"Ik heb zo'n honger."` produceert vijf woorden, namelijk `"ik"`,
 `"heb"`, `"zo"`, `"n"`, en `"honger"`. Je kunt de functie die je eerder
 hebt geschreven voor het schoonmaken van strings hier gebruiken.
+
+[^13]: In werkelijkheid is het vaak iets ingewikkelder omdat er komma's
+    kunnen staan in de waardes die zijn opgeslagen in het CSV bestand,
+    dus het is afhankelijk van de inhoud van het bestand of de genoemde
+    aanpak werkt. Ik ga meer zeggen over CSV bestanden in hoofdstuk
+    <a href="#ch:fileformats" data-reference-type="ref" data-reference="ch:fileformats">27</a>.
+

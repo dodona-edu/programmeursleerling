@@ -49,3 +49,7 @@ gewoonweg niet alle omstandigheden waarin je programma wordt uitgevoerd
 kunt voorzien. Dat is specifiek het geval als je programma afhangt van
 zaken die je niet onder controle kunt hebben, zoals bij het werken met
 bestanden en gebruikershandelingen.
+
+[^21]: In het Engels heet dit "raising an exception." `raise` is een
+    gereserveerd woord in Python, dat iets later in dit hoofdstuk
+    besproken wordt.

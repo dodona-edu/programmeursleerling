@@ -86,3 +86,8 @@ elements directly via their index, while a dictionary is a much better
 choice if the main way to find something is by scanning items. The `in`
 operator seems easy and reads well, but if you use it to seek something
 in a long list, you better think again.
+
+[^9]: Technically, Python stores the keys for the dictionary in a
+    so-called "hash table." I will not explain the details here, and
+    just tell you that a hash table allows for very fast look-up of keys
+    at the cost of some memory.

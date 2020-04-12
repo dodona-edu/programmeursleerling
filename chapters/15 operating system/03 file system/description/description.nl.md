@@ -62,3 +62,7 @@ directories bevat die Windows doorzoekt als een uitvoerbaar bestand niet
 in de huidige directory gevonden kan worden. Hoe je zo een
 omgevingsvariabele een waarde moet geven voert echter te ver voor dit
 boek.
+
+[^19]: De "root" is de wortel van de boomstructuur, maar ik heb
+    werkelijk nooit iemand dit "wortel" horen noemen.
+

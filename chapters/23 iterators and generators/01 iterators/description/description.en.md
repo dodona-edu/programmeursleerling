@@ -292,3 +292,6 @@ fruitlist = ["apple", "orange", "cherry", "banana"]
 for fruit in sorted( fruitlist ):
     print( fruit )
 ```
+
+[^12]: The name "delegated iteration" I came up with myself. If there is
+    an "official" name for the approach, I gladly update the book.

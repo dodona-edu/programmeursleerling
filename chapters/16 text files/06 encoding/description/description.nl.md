@@ -81,3 +81,19 @@ Ik geef meer details over UTF-8 encoding in hoofdstuk
 <a href="#ch:bitwiseoperators" data-reference-type="ref" data-reference="ch:bitwiseoperators">20</a>,
 maar voor het manipuleren van tekstbestanden heb je voldoende aan de
 bovenstaande informatie.
+
+[^20]: Ik moet hier een opmerking maken over een fenomeen dat wat bizar
+    kan overkomen als je het voor het eerst tegenkomt: Je kunt deze fout
+    krijgen als je bestand tekens bevat met een encoding die niet door
+    je besturingssysteem ondersteund wordt, zelfs als die tekens zich
+    bevinden in regels in het bestand die je niet eens probeert in te
+    lezen! Bijvoorbeeld, stel dat je zo'n speciaal teken hebt op regel
+    10 in het bestand, en je probeert alleen de eerste 5 regels van het
+    bestand te lezen voordat je het bestand weer sluit – je programma
+    kan dan nog steeds de genoemde fout geven! Ik vermoed dat dit
+    gerelateerd is aan het "bufferen" van data: als je Python vraagt een
+    klein stukje data uit een bestand te lezen, dan leest Python toch
+    grotere delen van het bestand, zodat het sneller is als je later
+    meer van het bestand gaat lezen. Dus door slim te zijn, kan Python
+    je met problemen opzadelen die je niet aan zag komen. Het is goed om
+    je bewust te zijn van dit soort eigenschappen van Python.

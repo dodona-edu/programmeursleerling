@@ -73,3 +73,17 @@ for i in range( 10, 16 ):
 More details on UTF-8 encoding will be given in Chapter
 <a href="#ch:bitwiseoperators" data-reference-type="ref" data-reference="ch:bitwiseoperators">20</a>,
 but for dealing with text files, the information above suffices.
+
+[^10]: I have to make note of some Python behavior that seems bizarre
+    when you first encounter it: you may get this error when your file
+    contains characters in an encoding that is not supported by your
+    system in lines that you are not even trying to read! E.g., suppose
+    that there is such an erroneous character on line 10 of your file,
+    but you are only trying to read the first 5 lines before closing the
+    file again – your program may still crash! I suspect that this is
+    related to the buffering of data: rather than reading exactly what
+    you ask Python to read, Python reads data in bigger chunks, so that
+    the program is faster when you actually want to go through the whole
+    file. So, by trying to be smart, Python may saddle you up with
+    problems that you did not expect could arise. It is good to be aware
+    of such issues.

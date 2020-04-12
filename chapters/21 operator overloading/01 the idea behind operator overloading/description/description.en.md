@@ -31,3 +31,10 @@ By the way, operator overloading is a typical example of "polymorphism,"
 a concept that allows a function to have different results depending on
 the type of its arguments. Polymorphism is often hailed as one of the
 powerful features of object orientation.
+
+[^11]: Quaternions are an extension of complex numbers. They consist of
+    4-dimensional numbers, with a real factor and three imaginary
+    factors called `i`, `j`, and `k`, with specific definitions for the
+    multiplication of these factors. Details are not important for this
+    book, they are just an example of numbers that are not native to
+    Python.

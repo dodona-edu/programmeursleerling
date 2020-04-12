@@ -68,3 +68,10 @@ fp.close()
 print( type( q ) )
 print( q )
 ```
+
+[^25]: In het Nederlands betekent dit "conservering," maar ik denk dat
+    niemand begrijpt waar je het over hebt als je voor Python deze
+    techniek zo noemt. Een leukere vertaling zou "pekelen" zijn, maar
+    aangezien pekelen met zout gebeurt terwijl "pickling" met zuur
+    gebeurt (augurken heten bijvoorbeeld "pickles" in het Engels), is
+    ook die vertaling te verwarrend. Net als "inmaken."

@@ -19,3 +19,8 @@ We stellen een complexe getal voor als een `tuple` met twee numerieke waardes. S
 >>> som((3, 4), (7, 2))
 (10, 6)
 ```
+
+[^16]: Python heeft een apart data type `complex` dat complexe getallen
+    representeert, dus er is eigenlijk geen noodzaak om complexe
+    getallen als tuples te beschrijven, maar met als doel te oefenen met
+    tuples werkt de opgave best.

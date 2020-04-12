@@ -87,3 +87,8 @@ kunt benaderen, terwijl een dictionary een betere keuze is als de enige
 manier om iets te zoeken is de elementen te scannen. De `in` operator
 lijkt gemakkelijk en is leesbaar, maar als je hem gebruikt om iets te
 zoeken in een lange list, dan ben je verkeerd bezig.
+
+[^18]: Python slaat de keys voor een dictionary op in een zogeheten
+    "hash tabel." Ik leg de details daarvan niet uit, maar weet dat dit
+    het mogelijk maakt om keys heel snel op te zoeken, ten koste van wat
+    geheugengebruik.

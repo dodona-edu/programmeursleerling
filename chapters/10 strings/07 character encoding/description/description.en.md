@@ -153,3 +153,7 @@ were concerned. It will be a while before you run into problems like
 that, and I will bring it up again in Chapter
 <a href="#ch:textfiles" data-reference-type="ref" data-reference="ch:textfiles">17</a>
 and later.
+
+[^7]: There is one weird character in this display, between the Rho and
+    the Sigma, which is `\u03A2`, which is evidently not a legal Unicode
+    character.
