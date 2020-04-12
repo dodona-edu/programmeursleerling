@@ -5,5 +5,11 @@
       "en": "Epilogue"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "HwDsvwCrN6BR4ctUBGPE7fyjNi_agFvqSIHYdq7fJIUv9fVt76HFFH24BDUj-mui",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
