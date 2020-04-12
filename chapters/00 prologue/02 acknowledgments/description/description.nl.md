@@ -26,7 +26,7 @@ danken heeft. Ik heb hier en daar vertalingen van stukjes van hun
 teksten gebruikt in demonstraties en opgaves in dit boek.
 
 Ik dank Myrthe Spronck, die de website bij dit boek gebouwd heeft. De
-website is te vinden via <http://www.spronck.net/pythonbook>.
+website is te vinden via <http://www.spronck.net/pythonbook>{:target="_blank"}.
 
 Tenslotte dank ik iedereen die suggesties of correcties heeft ingestuurd
 (een lijst volgt hieronder).
@@ -35,7 +35,7 @@ Als je een suggestie of correctie hebt, stuur dan een email naar
 [pythonbook@spronck.net](pythonbook@spronck.net) (dat adres is
 natuurlijk niet bedoeld om vragen over programma's te stellen – er zijn
 vele plaatsen op het Internet waar programmeerhulp geboden wordt), of
-een boodschap achterlaten op het forum <http://www.spronck.net/forum>.
+een boodschap achterlaten op het forum <http://www.spronck.net/forum>{:target="_blank"}. 
 Als ik een wijziging maak in het boek op basis van feedback, zal ik je
 naam in dit dankwoord opnemen (tenzij je aangeeft dat je dat liever niet
 hebt).

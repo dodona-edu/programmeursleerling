@@ -26,7 +26,7 @@ Python its name, and I have used quotes of their shows in some of the
 demonstrations and exercises in this book.
 
 Many thanks to Myrthe Spronck, for creating the website for this book,
-found at <http://www.spronck.net/pythonbook>.
+found at <http://www.spronck.net/pythonbook>{:target="_blank"}.
 
 Thanks to all the contributors (listed below) who sent in corrections
 and suggestions.
@@ -35,6 +35,6 @@ If you have a suggestion or correction, please send email to
 [pythonbook@spronck.net](pythonbook@spronck.net) (not to be used for
 assistance with programming problems, of course – there are plenty of
 places on the Internet where you can get such help), or leave a message
-at the forum <http://www.spronck.net/forum>. If I make a change based on
+at the forum <http://www.spronck.net/forum>{:target="_blank"}. If I make a change based on
 your feedback, I will add you to the contributor list (unless you ask to
 be omitted).
