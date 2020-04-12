@@ -6,6 +6,6 @@ tab name: deck
     <fixed from="deck contains invalid cards" to="kaartspel bevat ongeldige kaarten" detect="false" />
     <regex from="deck should contain ([0-9]+) cards but contains ([0-9]+) cards" to="kaartspel moet \1 kaarten bevatten, maar bevat \2 kaarten" detect="false" />
     <fixed from="decks are not randomly shuffled" to="kaarten worden niet geschud" detect="false" />
-    <fixed from="... \(([0-9]+) more\)" to="... (nog \1):" detect="false" />
+    <regex from="\\.\\.\\. \\(([0-9]+) more\\)" to="... (nog \1):" detect="false" />
     <fixed from="Error:" to="Fout:" detect="false" />
 </LANGUAGE>
