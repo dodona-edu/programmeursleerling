@@ -5,5 +5,11 @@
       "en": "Comma-Separated Values (CSV)"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "4gJKGV67TVnbHxr__4u9FSsbeFu-mDyeQhNsTi73K3WtqdaxaHcMicQcsEWI9akZ",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
