@@ -61,9 +61,9 @@ for index, movies_list in enumerate(cases):
 
     # generate test expression
     movies_dict = list2dict(movies_list)
-    print(f'>>> movies_dict_{index:02d} = list2dict({movies_list!r}) # doctest: +NOEXEC')
+    print(f'>>> movies_dict_{index:02d} = list2dict({movies_list!r}) # doctest: +NOEXEC +NEWCONTEXT')
     print(f'>>> movies_dict_{index:02d} = {movies_dict!r} # doctest: +NOSHOW')
-    print(f'>>> list2dict(movies_dict_{index:02d})')
+    print(f'>>> average_rating(movies_dict_{index:02d})')
 
     # generate return value
     try:
