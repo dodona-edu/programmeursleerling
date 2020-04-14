@@ -28,10 +28,7 @@ def gemiddelde(waarden):
 
 def list2dict(films):
 
-    return {
-        naam: beoordelingen
-        for naam, beoordelingen in films
-    }
+    return dict(films)
 
 def gemiddelde_beoordeling(films):
 

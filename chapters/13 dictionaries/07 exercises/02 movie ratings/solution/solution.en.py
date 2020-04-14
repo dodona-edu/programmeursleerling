@@ -28,10 +28,7 @@ def average(values):
 
 def list2dict(movies):
 
-    return {
-        name: ratings
-        for name, ratings in movies
-    }
+    return dict(movies)
 
 def average_rating(movies):
 
