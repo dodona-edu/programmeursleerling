@@ -20,6 +20,6 @@ time limit: 30
 <LANGUAGE code="nl">
     <regex from="non-decreasing sequence of ([0-9]+) dice" to="niet-dalende reeks van \1 dobbelstenen" />
     <fixed from="decreasing" to="dalende" />
-    <fixed from="reeks" to="sequence" />
+    <fixed from="sequence" to="reeks" />
     <fixed from="dice" to="dobbelstenen" />
 </LANGUAGE>
