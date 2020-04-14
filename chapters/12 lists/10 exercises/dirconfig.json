@@ -1,4 +1,5 @@
 {
+  "type": "exercise",
   "evaluation": {
     "pythia_judge": "doctest"
   }

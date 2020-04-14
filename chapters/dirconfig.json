@@ -1,6 +1,7 @@
 {
-  "programming_language": "python",
   "access": "public",
+  "type": "content",
+  "programming_language": "python",
   "author": "Pieter Spronck <pythonbook@spronck.net>",
-  "labels": ["The Coder's Apprentice", "De programmeursleerling"]
+  "labels": ["the coder's apprentice", "de programmeursleerling"]
 }
