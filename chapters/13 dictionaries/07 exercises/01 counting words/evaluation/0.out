@@ -1,0 +1,5 @@
+--------------------------------------------------------
+tab name: word_count
+<LANGUAGE code="nl">
+    <function from="word_count" to="woorden_tellen" />
+</LANGUAGE>

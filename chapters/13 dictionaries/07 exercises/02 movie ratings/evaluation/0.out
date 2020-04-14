@@ -1,0 +1,6 @@
+--------------------------------------------------------
+tab name: list2dict
+<LANGUAGE code="nl">
+    <function from="average_rating" to="gemiddelde_beoordeling" />
+    <fixed from="movies_dict" to="films_dict" detect="false" />
+</LANGUAGE>
