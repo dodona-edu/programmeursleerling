@@ -5,5 +5,11 @@
       "en": "Subset sum (TODO)"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "4pWPAc-CkU2M-Wnnwej6djyJTYxNpBrvd6McHpEJTf6H8XbcsxB9T8QFNC5w5WDb",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }

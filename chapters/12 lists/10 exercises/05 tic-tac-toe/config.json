@@ -5,5 +5,11 @@
       "en": "Tic-Tac-Toe (TODO)"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "TiX98VmP3MRM-Eg44bR9cWwM9aXV2CEcYbV_VSDgGR9vz2itDWGJz6a-rTXybX8z",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
