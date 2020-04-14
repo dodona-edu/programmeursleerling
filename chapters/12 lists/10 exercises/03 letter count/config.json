@@ -5,5 +5,11 @@
       "en": "Counting letters (TODO)"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "2bwXKW_-uhHzUE5F2uUZTrBa-M5T7N9gHNWhn4vG53rdbGjXzgwRShDkYnYaTh9B",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
