@@ -1,15 +1,15 @@
 {
   "description": {
     "names": {
-      "nl": "???",
-      "en": "???"
+      "nl": "Getallen raden (TODO)",
+      "en": "Number guessing game (TODO)"
     }
   },
   "labels": [
 
   ],
   "internals": {
-    "token": "kjQcsSH6sXZGDAeKXZRg8rvUPMjHViVafc5YwVHzcMuFGEAhuh2_gJsbFenTaePN",
+    "token": "Pcvws3cyCVBKu6diMCWw8jtv8TXiPQNxTCQpAtSisx5adpx5bM9WHRjfIVKkRSFj",
     "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
   }
 }

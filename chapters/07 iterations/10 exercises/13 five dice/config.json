@@ -1,15 +1,15 @@
 {
   "description": {
     "names": {
-      "nl": "???",
-      "en": "???"
+      "nl": "Vijf dobbelstenen",
+      "en": "Five dice"
     }
   },
   "labels": [
 
   ],
   "internals": {
-    "token": "E7U7MrywMg4_vqEnGX7MCbjwV9vw2eqe2tP7sextjIK_ZapNF6ebrntxHHCXIP59",
+    "token": "kjQcsSH6sXZGDAeKXZRg8rvUPMjHViVafc5YwVHzcMuFGEAhuh2_gJsbFenTaePN",
     "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
   }
 }

@@ -17,21 +17,24 @@ if not os.path.exists(solutiondir):
 
 # configuration settings
 settings = f'''
-tab name: Grades
+tab name: Tests
 python input without prompt: true
 block count: multi
 input block size: 1
 output block size: 1
+ignore fp rounding: -6
 comparison: exact match
+time limit: 30
+<LANGUAGE code="nl">
+    <regex from="non-decreasing sequence of ([0-9]+) dice" to="niet-dalende reeks van \1 dobbelstenen" />
+    <fixed from="decreasing" to="dalende" />
+    <fixed from="reeks" to="sequence" />
+    <fixed from="dice" to="dobbelstenen" />
+</LANGUAGE>
 '''
 
 # generate test data
-cases = list(range(60, 101))
-while len(cases) < 60:
-    grade = random.randrange(60)
-    if grade not in cases:
-        cases.append(grade)
-random.shuffle(cases)
+cases = list(range(1, 11))
 
 # configure test files
 infile = open(os.path.join(evaldir, '0.in'), 'w', encoding='utf-8')
