@@ -5,7 +5,7 @@ aantal_dobbelstenen = int(input())
 
 # worpen met dobbelsteen simuleren
 positief = 0
-aantal_simulaties = 1000000
+aantal_simulaties = 100000
 for _ in range(aantal_simulaties):
 
     # werp het gegeven aantal dobbelstenen

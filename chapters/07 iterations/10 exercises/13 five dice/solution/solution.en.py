@@ -5,7 +5,7 @@ dice = int(input())
 
 # simulate throwing dice
 positives = 0
-simulations = 1000000
+simulations = 100000
 for _ in range(simulations):
 
     # throw given number of dice
