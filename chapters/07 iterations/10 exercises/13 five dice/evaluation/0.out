@@ -15,7 +15,7 @@ block count: multi
 input block size: 1
 output block size: 1
 ignore fp rounding: -2
-time limit: 30
+time limit: 42
 <LANGUAGE code="nl">
     <regex from="non-decreasing sequence of ([0-9]+) dice" to="niet-dalende reeks van \1 dobbelstenen" />
     <fixed from="decreasing" to="dalende" />
