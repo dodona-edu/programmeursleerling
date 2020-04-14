@@ -14,7 +14,7 @@ python input without prompt: true
 block count: multi
 input block size: 1
 output block size: 1
-ignore fp rounding: -6
+ignore fp rounding: -2
 comparison: exact match
 time limit: 30
 <LANGUAGE code="nl">
