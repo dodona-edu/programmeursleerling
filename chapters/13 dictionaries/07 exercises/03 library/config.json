@@ -6,5 +6,11 @@
       "en": "Library"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "_erU5iMyIBt8RAiQtPFZAvey8FkumCmZbupDXshy6tvbEH-UiquteUHScnZBX3Ke",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }

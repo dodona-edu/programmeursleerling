@@ -5,5 +5,11 @@
       "en": "Movie ratings"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "Zt6fRnggPrvDzG_qABAIguZHNi3tCvVDR4BXbdGGQJjahQKI-fEapxMMYWrFKruP",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
