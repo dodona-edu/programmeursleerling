@@ -2,4 +2,5 @@
 tab name: vowel_removal
 <LANGUAGE code="nl">
     <function from="vowel_removal" to="zonder_klinkers" />
+    <function from=".copy." to=".kopie." detect="false" />
 </LANGUAGE>
