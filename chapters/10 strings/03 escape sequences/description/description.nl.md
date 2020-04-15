@@ -31,13 +31,13 @@ getal dat uit meerdere cijfers bestaat berekend door de cijfers te
 vermenigvuldigen met oplopende machten van 10, van rechts naar links;
 bijvoorbeeld, het getal `1426` is
 
-$$\begin{align} 1426 &= 1 \times 10^3 + 4 \times 10^2 + 2 \times 10^1 + 6 \times 10^0 &= 1 \times 1000 + 4 \times 100 + 2 \times 10 + 6 \times 1$$
+$$\begin{align} 1426 &= 1 \times 10^3 + 4 \times 10^2 + 2 \times 10^1 + 6 \times 10^0 \\ &= 1 \times 1000 + 4 \times 100 + 2 \times 10 + 6 \times 1 \end{align}$$
 
 Voor hexadecimale getallen doe je hetzelfde, maar vermenigvuldig je de
 cijfers met oplopende machten van 16; bijvoorbeeld, het hexadecimale
 getal `4AF2` is
 
-$$\begin{align} \text{4AF2} &= 4 \times 16^3 + 10 \times 16^2 + 15 \times 16^1 + 2 \times 16^0 &= 4 \times 4096 + 10 \times 256 + 15 \times 16 + 2 \times 1$$
+$$\begin{align} \text{4AF2} &= 4 \times 16^3 + 10 \times 16^2 + 15 \times 16^1 + 2 \times 16^0 \\ &= 4 \times 4096 + 10 \times 256 + 15 \times 16 + 2 \times 1 \end{align}$$
 
 Programmeurs gebruiken
 graag hexadecimale getallen, omdat computers als kleinste rekeneenheid

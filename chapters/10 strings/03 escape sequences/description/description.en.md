@@ -26,12 +26,12 @@ into 11, etcetera. In decimal counting, the value of a multi-digit
 number is found by multiplying the digits by increasing powers of 10,
 from right to left, e.g. `1426` is
 
-$$\begin{align} 1426 &= 1 \times 10^3 + 4 \times 10^2 + 2 \times 10^1 + 6 \times 10^0 &= 1 \times 1000 + 4 \times 100 + 2 \times 10 + 6 \times 1$$
+$$\begin{align} 1426 &= 1 \times 10^3 + 4 \times 10^2 + 2 \times 10^1 + 6 \times 10^0 \\ &= 1 \times 1000 + 4 \times 100 + 2 \times 10 + 6 \times 1 \end{align}$$
 
 For hexadecimal numbers you do the same
 thing, but multiply by powers of 16, e.g., the hexadecimal number `4AF2` is
 
-$$\begin{align} \text{4AF2} &= 4 \times 16^3 + 10 \times 16^2 + 15 \times 16^1 + 2 \times 16^0 &= 4 \times 4096 + 10 \times 256 + 15 \times 16 + 2 \times 1$$
+$$\begin{align} \text{4AF2} &= 4 \times 16^3 + 10 \times 16^2 + 15 \times 16^1 + 2 \times 16^0 \\ &= 4 \times 4096 + 10 \times 256 + 15 \times 16 + 2 \times 1 \end{align}$$
 
 Programmers tend to like hexadecimal
 numbers, as computers work with bytes as the smallest unit of memory
