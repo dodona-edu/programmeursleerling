@@ -5,5 +5,11 @@
       "en": "Socrates"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "769CtKIGS73zhBSqKSZ-PZbv_qEssv5IHXm3PS7Zyn9bzmFH-yInBCgmWkjhQzqm",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
