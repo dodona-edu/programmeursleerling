@@ -1,0 +1,6 @@
+--------------------------------------------------------
+tab name: Divisible
+<LANGUAGE code="nl">
+    <fixed from="divisible_by" to="deelbaar_door" detect="false" />
+    <fixed from="Divisible" to="Deelbaar" detect="false" />
+</LANGUAGE>
