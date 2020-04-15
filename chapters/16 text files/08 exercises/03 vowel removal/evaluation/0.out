@@ -1,6 +1,5 @@
 --------------------------------------------------------
-tab name: word_split
+tab name: vowel_removal
 <LANGUAGE code="nl">
-    <function from="word_split" to="woorden_splitsen" />
-    <function from="word_count" to="woorden_tellen" />
+    <function from="vowel_removal" to="zonder_klinkers" />
 </LANGUAGE>
