@@ -133,7 +133,7 @@ interpret them as, for instance, string boundaries.
 If you want to display Unicode characters, you can do so by using
 Unicode encodings. You have to know the UTF-8 number of the character
 that you want to display. If you know that, you can use a code
-`\u`$$xxxx$$, where $$xxxx$$ is a hexadecimal number, to incorporate a
+`\uxxxx`, where `xxxx` is a hexadecimal number, to incorporate a
 Unicode character in a string. For example, the code below displays the
 capitals of the Greek alphabet:[^7]
 

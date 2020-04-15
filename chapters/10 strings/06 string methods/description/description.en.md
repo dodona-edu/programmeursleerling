@@ -140,7 +140,7 @@ occurrences of this spelling error with the correct spelling.
 
 Display the contents of the string `"Nobody expects the Spanish`
 `Inquisition!# In fact, those who do expect the Spanish Inquisition..."`
-up to, but not including, the hash mark (\#). Use `find()` to get the
+up to, but not including, the hash mark (`#`). Use `find()` to get the
 index of the hash mark.
 
 Write a program that prints a "cleaned" version of all the words in a
@@ -149,3 +149,9 @@ considered a separator. All the letters should be lower case. For
 example, the string `"I'm sorry, sir."` should produce four words,
 namely `"i"`, `"m"`, `"sorry"`, and `"sir"`. You can use the function
 for string cleaning which you wrote as an exercise above.
+
+[^6]: In actuality it will be a bit more convoluted as there might be
+    commas in the fields that are stored in the CSV file, so it depends
+    a bit on the contents of the file whether this simple approach will
+    work. More on CSV files will be said in Chapter
+    <a href="#ch:fileformats" data-reference-type="ref" data-reference="ch:fileformats">27</a>.

@@ -4,8 +4,8 @@ heb ik strings kort geïntroduceerd. Ik heb uitgelegd dat een string een
 tekst is, die omsloten is door enkele of dubbele aanhalingstekens, en
 dat een string iedere lengte mag hebben, inclusief nul tekens lang. Het
 hoofdstuk legde ook uit dat je twee strings aan elkaar kunt plakken met
-behulp van de $$+$$, en dat je een string zichzelf kunt laten herhalen
-door middel van de $$*$$. Bijvoorbeeld:
+behulp van de `+`, en dat je een string zichzelf kunt laten herhalen
+door middel van de `*`. Bijvoorbeeld:
 
 ```python
 s1 = "appel"

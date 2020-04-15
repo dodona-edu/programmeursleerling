@@ -4,8 +4,8 @@ strings were quickly introduced. The brief discussion in that chapter
 ended with the statement that a string is a text, enclosed by either
 single or double quotes, which might be of any length, including zero
 characters long. The chapter also explained that you can concatenate two
-strings using the $$+$$, and that you can create a string that is the
-repetition of a shorter string by using a $$*$$. For example:
+strings using the `+`, and that you can create a string that is the
+repetition of a shorter string by using a `*`. For example:
 
 ```python
 s1 = "apple"

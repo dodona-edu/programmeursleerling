@@ -153,7 +153,7 @@ voorkomende gevallen van deze fout te verbeteren.
 
 Neem de string `"Niemand verwacht de Spaanse Inquisitie\`\# In feite,!
 `zij die de Spaanse Inquisitie wel verwachten..."` en toon hem tot aan,
-maar niet inclusief, de hash mark (\#). Gebruik `find()` om de index van
+maar niet inclusief, de hash mark (`#`). Gebruik `find()` om de index van
 de hash mark te bepalen.
 
 Schrijf een programma dat een "schone" versie van alle woorden in de
