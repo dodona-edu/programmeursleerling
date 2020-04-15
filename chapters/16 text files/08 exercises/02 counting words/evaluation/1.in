@@ -1,0 +1,4 @@
+>>> word_count('data_01.txt')
+<FILE name="data_01.txt" src="" href="media/workdir/data_01.txt" />
+{'how': 1, 'much': 3, 'wood': 3, 'would': 4, 'a': 4, 'woodchuck': 4, 'chuck': 5, 'if': 2, 'could': 3, 'he': 3, 'as': 4, 'and': 1}
+

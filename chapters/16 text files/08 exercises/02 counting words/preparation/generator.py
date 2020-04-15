@@ -1,7 +1,8 @@
 import os
 import sys
-import importlib
 import random
+import shutil
+import importlib
 
 # set fixed seed for generating test cases
 random.seed(123456789)
@@ -16,6 +17,16 @@ solutiondir = os.path.join('..', 'solution')
 if not os.path.exists(solutiondir):
     os.makedirs(solutiondir)
 
+# locate workdir
+workdir = os.path.join('..', 'workdir')
+if not os.path.exists(workdir):
+    os.makedirs(workdir)
+
+# locate datadir
+datadir = os.path.join('..', 'description', 'media', 'workdir')
+if not os.path.exists(datadir):
+    os.makedirs(datadir)
+
 # load functionality defined in sample solution
 module_name = 'solution'
 file_path = os.path.join(solutiondir, 'solution.en.py')
@@ -27,33 +38,23 @@ for name in dir(module):
     if not (name.startswith('__') and name.endswith('__')):
         globals()[name] = eval(f'module.{name}')
 
-# generate test data for functions discriminant and solutions
-cases = [
-    (1, 0, -1),
-    (1, 4, -5),
-]
-while len(cases) < 50:
-    a = random.randint(-10, 10)
-    while not a:
-        a = random.randint(-10, 10)
-    b = random.randint(-10, 10)
-    c = random.randint(-10, 10)
-    parameters = (a, b, c)
-    if parameters not in cases:
-        cases.append(parameters)
+# copy files from workdir to datadir
+for filename in os.listdir(workdir):
+    shutil.copyfile(os.path.join(workdir, filename), os.path.join(datadir, filename))
 
-# generate unit tests for functions discriminant and solutions
-functions = [discriminant, solutions]
+# generate unit tests for functions word_count
+functions = [word_split, word_count]
 for index, func in enumerate(functions):
     sys.stdout = open(os.path.join('..', 'evaluation', f'{index}.in'), 'w', encoding='utf-8')
-    for a, b, c in cases:
+    for filename in os.listdir(workdir):
 
         # generate test expression
-        print(f'>>> {func.__name__}({a}, {b}, {c})')
+        print(f'>>> {func.__name__}({filename!r})')
+        print(f'<FILE name="{filename}" src="" href="media/workdir/{filename}" />')
 
         # generate return value
         try:
-            print(f'{func(a, b, c)}')
+            print(f'{func(os.path.join(workdir, filename))!r}')
         except Exception as e:
             print('Traceback (most recent call last):\n{}: {}'.format(e.__class__.__name__, e))
 

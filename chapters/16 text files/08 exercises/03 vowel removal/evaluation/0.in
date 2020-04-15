@@ -1,0 +1,17 @@
+>>> vowel_removal('data_01.txt', 'data_01.copy.txt')
+<FILE name="data_01.txt" src="" href="media/workdir/data_01.txt" />
+<FILE name="data_01.copy.txt" src="memory">
+Hw mch wd wld  wdchck chck
+f  wdchck cld chck wd?
+H wld chck, h wld, s mch s h cld,
+nd chck s mch s  wdchck wld
+f  wdchck cld chck wd.
+</FILE>
+<OUTPUTPROCESSOR>
+OutputProcessor()
+</OUTPUTPROCESSOR>
+<OUTPUTPROCESSOR>
+FileContentChecker('data_01.copy.txt')
+</OUTPUTPROCESSOR>
+(190, 135)
+

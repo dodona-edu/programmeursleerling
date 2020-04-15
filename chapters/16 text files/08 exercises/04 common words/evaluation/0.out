@@ -1,0 +1,5 @@
+--------------------------------------------------------
+tab name: common_words
+<LANGUAGE code="nl">
+    <function from="common_words" to="gemeenschappelijke_woorden" />
+</LANGUAGE>

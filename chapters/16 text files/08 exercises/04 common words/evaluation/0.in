@@ -1,0 +1,6 @@
+>>> common_words('data_01a.txt', 'data_01b.txt', 'data_01c.txt')
+<FILE name="data_01a.txt" src="" href="media/workdir/data_01a.txt" />
+<FILE name="data_01b.txt" src="" href="media/workdir/data_01b.txt" />
+<FILE name="data_01c.txt" src="" href="media/workdir/data_01c.txt" />
+{'he', 'and', 'as'}
+

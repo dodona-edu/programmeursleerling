@@ -1,8 +1,7 @@
 import os
 import sys
-import imp
+import importlib
 import random
-import string
 
 # set fixed seed for generating test cases
 random.seed(123456789)
@@ -18,13 +17,15 @@ if not os.path.exists(solutiondir):
     os.makedirs(solutiondir)
 
 # load functionality defined in sample solution
-solution = imp.load_source(
-    'solution',
-    os.path.join(solutiondir, 'solution.en.py')
-)
-for name in dir(solution):
+module_name = 'solution'
+file_path = os.path.join(solutiondir, 'solution.en.py')
+spec = importlib.util.spec_from_file_location(module_name, file_path)
+module = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(module)
+
+for name in dir(module):
     if not (name.startswith('__') and name.endswith('__')):
-        globals()[name] = eval('solution.{}'.format(name))
+        globals()[name] = eval(f'module.{name}')
 
 # generate test data for function multiplication table
 cases = list(range(0, 13))
