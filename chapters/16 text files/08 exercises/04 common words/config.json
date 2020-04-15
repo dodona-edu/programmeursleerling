@@ -5,5 +5,11 @@
       "en": "Common words"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "d2PtKywmn5BNKSRPMK-bVHWjI2TtV75wItXgDwYD-c9kc2e8BtbP2udDwxNzN_7f",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }

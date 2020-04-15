@@ -5,5 +5,11 @@
       "en": "Counting words"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "xc7AY55zN2Fe4Cv499IZKwcznPyk2B7ZMYzeEgCRf_3dQ59jvcDAaUwtN2UUWa28",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
