@@ -2,7 +2,7 @@ Schrijf een functie `zonder_klinkers` waaraan twee locaties van tekstbestanden (
 
 ### Voorbeeld
 
-In onderstaande interactieve sessie gaan we ervan uit dat het tekstbestand [`data.txt`](media/data/data.txt) zich in de huidige directory bevindt.
+In onderstaande interactieve sessie gaan we ervan uit dat het tekstbestand [`data.txt`](media/data/data.txt){:target="_blank"} zich in de huidige directory bevindt.
 
 ```console?lang=python&prompt=>>>
 >>> print(open('data.txt', 'r').read(), end='')

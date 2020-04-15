@@ -16,7 +16,7 @@ A word in a text is defined as the longest sequence of letters, where every char
 
 ### Example
 
-In the following interactive session we assume the text file [`data.txt`](media/data/data.txt) to be located in the current directory.
+In the following interactive session we assume the text file [`data.txt`](media/data/data.txt){:target="_blank"} to be located in the current directory.
 
 ```console?lang=python&prompt=>>>
 >>> worden_split('data.txt')

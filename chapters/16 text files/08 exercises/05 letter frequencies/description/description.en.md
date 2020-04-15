@@ -8,7 +8,7 @@ The function must write a CSV-file to the fourth text file. This CSV file must c
 
 ### Example
 
-In the following interactive session we assume the text files [`data_a.txt`](media/data/data_a.txt), [`data_b.txt`](media/data/data_b.txt) and [`data_c.txt`](media/data/data_c.txt) to be located in the current directory.
+In the following interactive session we assume the text files [`data_a.txt`](media/data/data_a.txt){:target="_blank"}, [`data_b.txt`](media/data/data_b.txt){:target="_blank"} and [`data_c.txt`](media/data/data_c.txt){:target="_blank"} to be located in the current directory.
 
 ```console?lang=python&prompt=>>>
 >>> letter_frequencies('data_a.txt', 'data_b.txt', 'data_c.txt', 'data.csv')

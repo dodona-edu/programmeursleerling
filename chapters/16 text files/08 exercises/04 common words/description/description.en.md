@@ -1,22 +1,14 @@
-How often do words appear in a text?
+What words do three text files have in common?
 
 ### Assignment
 
-A word in a text is defined as the longest sequence of letters, where every character that is not a letter is considered a word boundary. Your task:
+A word in a text is defined as the longest sequence of letters, where every character that is not a letter is considered a word boundary.
 
-- Write a function `word_split` that takes the location of a text file (`str`). The function must return a `list` containing the sequence of words from the given text file.
-
-- Write a function `word_count` that takes the location of a text file (`str`). The function must return a dictionary (`dict`) that maps each word in the given text file onto the number of occurrences of the word in the given text file. The function may not make a distinction between uppercase and lowercase letters, and must lowercase words as keys in the dictionary it returns.
-
-{:class="callout callout-info"}
-> #### Note
-> This is the exact same assignment as the previous assignment, but now you have
-> to make sure to process the text line by line. This is something that you 
-> would have to do if you had to process a very long text.
+Write a function `common_words` that takes the locations of three text files (`str`). The function must return a `set` containing the words that occur in all three text files. The function must return a `set` containing the words that occur in all three text files. The function may not make a distinction between uppercase and lowercase letters, and the words in the `set` must be lowercase.
 
 ### Example
 
-In the following interactive session we assume the text file [`data.txt`](media/data/data.txt) to be located in the current directory.
+In the following interactive session we assume the text files [`data_a.txt`](media/data/data_a.txt){:target="_blank"}, [`data_b.txt`](media/data/data_b.txt){:target="_blank"} and [`data_c.txt`](media/data/data_c.txt){:target="_blank"} to be located in the current directory.
 
 ```console?lang=python&prompt=>>>
 >>> worden_split('data.txt')

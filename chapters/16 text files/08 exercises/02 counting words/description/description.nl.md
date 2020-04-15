@@ -16,7 +16,7 @@ als je een erg lange tekst onder handen hebt.
 
 ### Voorbeeld
 
-In onderstaande interactieve sessie gaan we ervan uit dat het tekstbestand [`data.txt`](media/data/data.txt) zich in de huidige directory bevindt.
+In onderstaande interactieve sessie gaan we ervan uit dat het tekstbestand [`data.txt`](media/data/data.txt){:target="_blank"} zich in de huidige directory bevindt.
 
 ```console?lang=python&prompt=>>>
 >>> woorden_splitsen('data.txt')

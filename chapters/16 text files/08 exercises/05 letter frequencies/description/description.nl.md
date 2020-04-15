@@ -8,7 +8,7 @@ De functie moet een CSV-bestand uitschrijven naar het vierde de tekstbestand. Di
 
 ### Voorbeeld
 
-In onderstaande interactieve sessie gaan we ervan uit dat de tekstbestanden [`data_a.txt`](media/data/data_a.txt), [`data_b.txt`](media/data/data_b.txt) en [`data_c.txt`](media/data/data_c.txt) zich in de huidige directory bevinden.
+In onderstaande interactieve sessie gaan we ervan uit dat de tekstbestanden [`data_a.txt`](media/data/data_a.txt){:target="_blank"}, [`data_b.txt`](media/data/data_b.txt){:target="_blank"} en [`data_c.txt`](media/data/data_c.txt){:target="_blank"} zich in de huidige directory bevinden.
 
 ```console?lang=python&prompt=>>>
 >>> letterfrequenties('data_a.txt', 'data_b.txt', 'data_c.txt', 'data.csv')
