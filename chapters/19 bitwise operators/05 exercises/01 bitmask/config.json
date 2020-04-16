@@ -5,5 +5,11 @@
       "en": "Bitmask"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "Mu26RPMpbPf9IKbEt95IVKpXszmUNGEd7JdtKsZ6AcGv_vkRAQvFvdJ5gj-BQ9t_",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
