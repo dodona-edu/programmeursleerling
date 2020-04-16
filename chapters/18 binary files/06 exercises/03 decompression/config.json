@@ -5,5 +5,11 @@
       "en": "Decompression (TODO)"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "Gr-795rk_hgyW3ZXsS3YBtynSq_sTyUe9n-dr4YjeUvGin6W9I8t9qNFkD5IswzH",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
