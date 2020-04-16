@@ -1,0 +1,2 @@
+>>> bitmask('Hello, world!', '00101010')
+'bOFFE\x06\n]EXFN\x0b'

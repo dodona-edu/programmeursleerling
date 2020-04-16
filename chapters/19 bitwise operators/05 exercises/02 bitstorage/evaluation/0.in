@@ -1,0 +1,150 @@
+>>> setbit(226, 6, True)
+226
+
+>>> setbit(138, 0, False)
+138
+
+>>> setbit(181, 7, False)
+53
+
+>>> setbit(231, 1, False)
+229
+
+>>> setbit(215, 0, False)
+214
+
+>>> setbit(234, 4, True)
+250
+
+>>> setbit(207, 3, True)
+207
+
+>>> setbit(154, 4, True)
+154
+
+>>> setbit(101, 5, False)
+69
+
+>>> setbit(239, 3, True)
+239
+
+>>> setbit(77, 2, False)
+73
+
+>>> setbit(176, 1, False)
+176
+
+>>> setbit(119, 5, False)
+87
+
+>>> setbit(247, 6, True)
+247
+
+>>> setbit(136, 4, True)
+152
+
+>>> setbit(89, 6, False)
+25
+
+>>> setbit(204, 6, True)
+204
+
+>>> setbit(102, 4, False)
+102
+
+>>> setbit(112, 6, False)
+48
+
+>>> setbit(139, 6, False)
+139
+
+>>> setbit(244, 6, True)
+244
+
+>>> setbit(53, 1, False)
+53
+
+>>> setbit(172, 0, False)
+172
+
+>>> setbit(153, 0, False)
+152
+
+>>> setbit(6, 5, True)
+38
+
+>>> setbit(69, 0, False)
+68
+
+>>> setbit(156, 3, False)
+148
+
+>>> setbit(47, 4, False)
+47
+
+>>> setbit(252, 4, False)
+236
+
+>>> setbit(189, 3, True)
+189
+
+>>> setbit(158, 4, True)
+158
+
+>>> setbit(36, 4, False)
+36
+
+>>> setbit(255, 6, False)
+191
+
+>>> setbit(220, 5, False)
+220
+
+>>> setbit(80, 3, True)
+88
+
+>>> setbit(210, 5, True)
+242
+
+>>> setbit(173, 7, True)
+173
+
+>>> setbit(118, 0, True)
+119
+
+>>> setbit(151, 1, False)
+149
+
+>>> setbit(245, 6, False)
+181
+
+>>> setbit(162, 7, True)
+162
+
+>>> setbit(22, 7, True)
+150
+
+>>> setbit(72, 3, False)
+64
+
+>>> setbit(221, 1, False)
+221
+
+>>> setbit(96, 0, False)
+96
+
+>>> setbit(171, 6, False)
+171
+
+>>> setbit(198, 4, True)
+214
+
+>>> setbit(11, 7, False)
+11
+
+>>> setbit(3, 4, True)
+19
+
+>>> setbit(26, 2, True)
+30
+

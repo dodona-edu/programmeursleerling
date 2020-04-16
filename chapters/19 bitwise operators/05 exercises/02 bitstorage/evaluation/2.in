@@ -1,0 +1,150 @@
+>>> bitstring(226)
+'11100010'
+
+>>> bitstring(138)
+'10001010'
+
+>>> bitstring(181)
+'10110101'
+
+>>> bitstring(231)
+'11100111'
+
+>>> bitstring(215)
+'11010111'
+
+>>> bitstring(234)
+'11101010'
+
+>>> bitstring(207)
+'11001111'
+
+>>> bitstring(154)
+'10011010'
+
+>>> bitstring(101)
+'01100101'
+
+>>> bitstring(239)
+'11101111'
+
+>>> bitstring(77)
+'01001101'
+
+>>> bitstring(176)
+'10110000'
+
+>>> bitstring(119)
+'01110111'
+
+>>> bitstring(247)
+'11110111'
+
+>>> bitstring(136)
+'10001000'
+
+>>> bitstring(89)
+'01011001'
+
+>>> bitstring(204)
+'11001100'
+
+>>> bitstring(102)
+'01100110'
+
+>>> bitstring(112)
+'01110000'
+
+>>> bitstring(139)
+'10001011'
+
+>>> bitstring(244)
+'11110100'
+
+>>> bitstring(53)
+'00110101'
+
+>>> bitstring(172)
+'10101100'
+
+>>> bitstring(153)
+'10011001'
+
+>>> bitstring(6)
+'00000110'
+
+>>> bitstring(69)
+'01000101'
+
+>>> bitstring(156)
+'10011100'
+
+>>> bitstring(47)
+'00101111'
+
+>>> bitstring(252)
+'11111100'
+
+>>> bitstring(189)
+'10111101'
+
+>>> bitstring(158)
+'10011110'
+
+>>> bitstring(36)
+'00100100'
+
+>>> bitstring(255)
+'11111111'
+
+>>> bitstring(220)
+'11011100'
+
+>>> bitstring(80)
+'01010000'
+
+>>> bitstring(210)
+'11010010'
+
+>>> bitstring(173)
+'10101101'
+
+>>> bitstring(118)
+'01110110'
+
+>>> bitstring(151)
+'10010111'
+
+>>> bitstring(245)
+'11110101'
+
+>>> bitstring(162)
+'10100010'
+
+>>> bitstring(22)
+'00010110'
+
+>>> bitstring(72)
+'01001000'
+
+>>> bitstring(221)
+'11011101'
+
+>>> bitstring(96)
+'01100000'
+
+>>> bitstring(171)
+'10101011'
+
+>>> bitstring(198)
+'11000110'
+
+>>> bitstring(11)
+'00001011'
+
+>>> bitstring(3)
+'00000011'
+
+>>> bitstring(26)
+'00011010'
+
