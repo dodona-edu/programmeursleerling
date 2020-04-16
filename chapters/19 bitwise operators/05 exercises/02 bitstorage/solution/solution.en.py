@@ -70,7 +70,7 @@ def getbit(store, index):
     """
 
     mask = 1 << index
-    return store & mask
+    return bool(store & mask)
 
 def bitstring(store):
 

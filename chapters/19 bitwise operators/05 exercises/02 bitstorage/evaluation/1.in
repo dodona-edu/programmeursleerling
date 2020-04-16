@@ -1,150 +1,150 @@
 >>> getbit(226, 6)
-64
+True
 
 >>> getbit(138, 0)
-0
+False
 
 >>> getbit(181, 7)
-128
+True
 
 >>> getbit(231, 1)
-2
+True
 
 >>> getbit(215, 0)
-1
+True
 
 >>> getbit(234, 4)
-0
+False
 
 >>> getbit(207, 3)
-8
+True
 
 >>> getbit(154, 4)
-16
+True
 
 >>> getbit(101, 5)
-32
+True
 
 >>> getbit(239, 3)
-8
+True
 
 >>> getbit(77, 2)
-4
+True
 
 >>> getbit(176, 1)
-0
+False
 
 >>> getbit(119, 5)
-32
+True
 
 >>> getbit(247, 6)
-64
+True
 
 >>> getbit(136, 4)
-0
+False
 
 >>> getbit(89, 6)
-64
+True
 
 >>> getbit(204, 6)
-64
+True
 
 >>> getbit(102, 4)
-0
+False
 
 >>> getbit(112, 6)
-64
+True
 
 >>> getbit(139, 6)
-0
+False
 
 >>> getbit(244, 6)
-64
+True
 
 >>> getbit(53, 1)
-0
+False
 
 >>> getbit(172, 0)
-0
+False
 
 >>> getbit(153, 0)
-1
+True
 
 >>> getbit(6, 5)
-0
+False
 
 >>> getbit(69, 0)
-1
+True
 
 >>> getbit(156, 3)
-8
+True
 
 >>> getbit(47, 4)
-0
+False
 
 >>> getbit(252, 4)
-16
+True
 
 >>> getbit(189, 3)
-8
+True
 
 >>> getbit(158, 4)
-16
+True
 
 >>> getbit(36, 4)
-0
+False
 
 >>> getbit(255, 6)
-64
+True
 
 >>> getbit(220, 5)
-0
+False
 
 >>> getbit(80, 3)
-0
+False
 
 >>> getbit(210, 5)
-0
+False
 
 >>> getbit(173, 7)
-128
+True
 
 >>> getbit(118, 0)
-0
+False
 
 >>> getbit(151, 1)
-2
+True
 
 >>> getbit(245, 6)
-64
+True
 
 >>> getbit(162, 7)
-128
+True
 
 >>> getbit(22, 7)
-0
+False
 
 >>> getbit(72, 3)
-8
+True
 
 >>> getbit(221, 1)
-0
+False
 
 >>> getbit(96, 0)
-0
+False
 
 >>> getbit(171, 6)
-0
+False
 
 >>> getbit(198, 4)
-0
+False
 
 >>> getbit(11, 7)
-0
+False
 
 >>> getbit(3, 4)
-0
+False
 
 >>> getbit(26, 2)
-0
+False
 
