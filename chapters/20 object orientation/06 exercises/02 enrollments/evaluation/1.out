@@ -1,0 +1,9 @@
+--------------------------------------------------------
+tab name: Student
+independent examples: false
+<LANGUAGE code="nl">
+    <class from="Course" to="Cursus" />
+    <method from="age" to="leetijd" />
+    <method from="enroll" to="inschrijven" />
+    <method from="courses" to="cursussen" />
+</LANGUAGE>

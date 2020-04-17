@@ -1,0 +1,13 @@
+--------------------------------------------------------
+tab name: Rectangle
+independent examples: false
+<LANGUAGE code="nl">
+    <class from="Point" to="Punt" />
+    <class from="Rectangle" to="Rechthoek" />
+    <method from="surface_area" to="oppervlakte" />
+    <method from="circumference" to="omtrek" />
+    <method from="bottom_right" to="rechtsonder" />
+    <fixed from="invalid rectangle" to="ongeldige rechthoek" />
+    <fixed from="point" to="punt" detect="false" />
+    <fixed from="rectangle" to="rechthoek" detect="false" />
+</LANGUAGE>

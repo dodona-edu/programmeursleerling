@@ -1,0 +1,73 @@
+>>> import datetime
+>>> harry = Student(29839339, 'Harry', 'Potter', datetime.date(1980, 7, 31)) # doctest: +NEWCONTEXT
+>>> harry # doctest: +REPR
+Student(29839339, 'Harry', 'Potter', datetime.date(1980, 7, 31))
+>>> print(harry) # doctest: +STDOUT
+Potter, Harry
+>>> harry.age()
+<DEFINITION>
+class AgeChecker(OutputProcessor):
+
+    """
+    Checks whether the regular date that corresponds to the given rollover date.
+    """
+
+    def __init__(self, day, month, year):
+
+
+        # call initialization method of base class
+        super().__init__()
+
+        # rollover the number of days
+        import datetime
+        self.date = datetime.date(year, month, day)
+
+    def evaluateReturn(self):
+
+        # function that computes the correct answer
+        import datetime
+        today = datetime.date.today()
+        years = today.year - self.date.year
+        if (today.month, today.day) < (self.date.month, self.date.day):
+            years -= 1
+
+        # compute the expected return value based on the current day
+        self.setExpectedOutput(channel='return', output=years)
+
+        super().evaluateReturn()
+</DEFINITION>
+<OUTPUTPROCESSOR>
+AgeChecker(31, 7, 1980)
+</OUTPUTPROCESSOR>
+39
+>>> harry.courses()
+set()
+
+>>> import datetime
+>>> hermione = Student(24837367, 'Hermione', 'Granger', datetime.date(1979, 9, 19)) # doctest: +NEWCONTEXT
+>>> hermione.age()
+<OUTPUTPROCESSOR>
+AgeChecker(19, 9, 1979)
+</OUTPUTPROCESSOR>
+40
+>>> hermione.courses()
+set()
+>>> str(hermione)
+'Granger, Hermione'
+>>> repr(hermione)
+"Student(24837367, 'Hermione', 'Granger', datetime.date(1979, 9, 19))"
+
+>>> import datetime
+>>> ron = Student(27373378, 'Ron', 'Weasley', datetime.date(1980, 3, 1)) # doctest: +NEWCONTEXT
+>>> ron # doctest: +REPR
+Student(27373378, 'Ron', 'Weasley', datetime.date(1980, 3, 1))
+>>> str(ron)
+'Weasley, Ron'
+>>> ron.courses()
+set()
+>>> ron.age()
+<OUTPUTPROCESSOR>
+AgeChecker(1, 3, 1980)
+</OUTPUTPROCESSOR>
+40
+

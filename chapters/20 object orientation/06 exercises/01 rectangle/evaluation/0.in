@@ -1,0 +1,300 @@
+>>> point_01 = Point(3, 4) # doctest: +NEWCONTEXT
+>>> point_01 # doctest: +REPR
+Point(3, 4)
+>>> print(point_01) # doctest: +STDOUT
+Point(3, 4)
+
+>>> point_02 = Point(10, 4) # doctest: +NEWCONTEXT
+>>> print(point_02) # doctest: +STDOUT
+Point(10, 4)
+>>> point_02 # doctest: +REPR
+Point(10, 4)
+
+>>> point_03 = Point(7, 9) # doctest: +NEWCONTEXT
+>>> str(point_03)
+'Point(7, 9)'
+>>> point_03 # doctest: +REPR
+Point(7, 9)
+
+>>> point_04 = Point(2, -1) # doctest: +NEWCONTEXT
+>>> print(point_04) # doctest: +STDOUT
+Point(2, -1)
+>>> point_04 # doctest: +REPR
+Point(2, -1)
+
+>>> point_05 = Point(4, 2) # doctest: +NEWCONTEXT
+>>> point_05 # doctest: +REPR
+Point(4, 2)
+>>> print(point_05) # doctest: +STDOUT
+Point(4, 2)
+
+>>> point_06 = Point(7, 1) # doctest: +NEWCONTEXT
+>>> str(point_06)
+'Point(7, 1)'
+>>> point_06 # doctest: +REPR
+Point(7, 1)
+
+>>> point_07 = Point(2, 4) # doctest: +NEWCONTEXT
+>>> print(point_07) # doctest: +STDOUT
+Point(2, 4)
+>>> point_07 # doctest: +REPR
+Point(2, 4)
+
+>>> point_08 = Point(7, -4) # doctest: +NEWCONTEXT
+>>> point_08 # doctest: +REPR
+Point(7, -4)
+>>> print(point_08) # doctest: +STDOUT
+Point(7, -4)
+
+>>> point_09 = Point(9, -10) # doctest: +NEWCONTEXT
+>>> repr(point_09)
+'Point(9, -10)'
+>>> str(point_09)
+'Point(9, -10)'
+
+>>> point_10 = Point(-2, 9) # doctest: +NEWCONTEXT
+>>> repr(point_10)
+'Point(-2, 9)'
+>>> print(point_10) # doctest: +STDOUT
+Point(-2, 9)
+
+>>> point_11 = Point(-5, -10) # doctest: +NEWCONTEXT
+>>> str(point_11)
+'Point(-5, -10)'
+>>> repr(point_11)
+'Point(-5, -10)'
+
+>>> point_12 = Point(9, -6) # doctest: +NEWCONTEXT
+>>> print(point_12) # doctest: +STDOUT
+Point(9, -6)
+>>> point_12 # doctest: +REPR
+Point(9, -6)
+
+>>> point_13 = Point(0, 4) # doctest: +NEWCONTEXT
+>>> point_13 # doctest: +REPR
+Point(0, 4)
+>>> str(point_13)
+'Point(0, 4)'
+
+>>> point_14 = Point(8, -1) # doctest: +NEWCONTEXT
+>>> repr(point_14)
+'Point(8, -1)'
+>>> str(point_14)
+'Point(8, -1)'
+
+>>> point_15 = Point(10, -8) # doctest: +NEWCONTEXT
+>>> repr(point_15)
+'Point(10, -8)'
+>>> print(point_15) # doctest: +STDOUT
+Point(10, -8)
+
+>>> point_16 = Point(-1, 0) # doctest: +NEWCONTEXT
+>>> print(point_16) # doctest: +STDOUT
+Point(-1, 0)
+>>> point_16 # doctest: +REPR
+Point(-1, 0)
+
+>>> point_17 = Point(2, -9) # doctest: +NEWCONTEXT
+>>> point_17 # doctest: +REPR
+Point(2, -9)
+>>> str(point_17)
+'Point(2, -9)'
+
+>>> point_18 = Point(-10, -7) # doctest: +NEWCONTEXT
+>>> point_18 # doctest: +REPR
+Point(-10, -7)
+>>> print(point_18) # doctest: +STDOUT
+Point(-10, -7)
+
+>>> point_19 = Point(10, 3) # doctest: +NEWCONTEXT
+>>> str(point_19)
+'Point(10, 3)'
+>>> repr(point_19)
+'Point(10, 3)'
+
+>>> point_20 = Point(7, -8) # doctest: +NEWCONTEXT
+>>> point_20 # doctest: +REPR
+Point(7, -8)
+>>> print(point_20) # doctest: +STDOUT
+Point(7, -8)
+
+>>> point_21 = Point(-10, 9) # doctest: +NEWCONTEXT
+>>> print(point_21) # doctest: +STDOUT
+Point(-10, 9)
+>>> repr(point_21)
+'Point(-10, 9)'
+
+>>> point_22 = Point(6, -1) # doctest: +NEWCONTEXT
+>>> point_22 # doctest: +REPR
+Point(6, -1)
+>>> str(point_22)
+'Point(6, -1)'
+
+>>> point_23 = Point(4, 2) # doctest: +NEWCONTEXT
+>>> point_23 # doctest: +REPR
+Point(4, 2)
+>>> str(point_23)
+'Point(4, 2)'
+
+>>> point_24 = Point(-7, 4) # doctest: +NEWCONTEXT
+>>> str(point_24)
+'Point(-7, 4)'
+>>> point_24 # doctest: +REPR
+Point(-7, 4)
+
+>>> point_25 = Point(-10, -2) # doctest: +NEWCONTEXT
+>>> str(point_25)
+'Point(-10, -2)'
+>>> point_25 # doctest: +REPR
+Point(-10, -2)
+
+>>> point_26 = Point(-1, -3) # doctest: +NEWCONTEXT
+>>> str(point_26)
+'Point(-1, -3)'
+>>> point_26 # doctest: +REPR
+Point(-1, -3)
+
+>>> point_27 = Point(-3, -9) # doctest: +NEWCONTEXT
+>>> print(point_27) # doctest: +STDOUT
+Point(-3, -9)
+>>> point_27 # doctest: +REPR
+Point(-3, -9)
+
+>>> point_28 = Point(-2, 7) # doctest: +NEWCONTEXT
+>>> print(point_28) # doctest: +STDOUT
+Point(-2, 7)
+>>> repr(point_28)
+'Point(-2, 7)'
+
+>>> point_29 = Point(-8, 1) # doctest: +NEWCONTEXT
+>>> repr(point_29)
+'Point(-8, 1)'
+>>> print(point_29) # doctest: +STDOUT
+Point(-8, 1)
+
+>>> point_30 = Point(5, -3) # doctest: +NEWCONTEXT
+>>> repr(point_30)
+'Point(5, -3)'
+>>> print(point_30) # doctest: +STDOUT
+Point(5, -3)
+
+>>> point_31 = Point(-4, 6) # doctest: +NEWCONTEXT
+>>> repr(point_31)
+'Point(-4, 6)'
+>>> str(point_31)
+'Point(-4, 6)'
+
+>>> point_32 = Point(-6, 1) # doctest: +NEWCONTEXT
+>>> str(point_32)
+'Point(-6, 1)'
+>>> repr(point_32)
+'Point(-6, 1)'
+
+>>> point_33 = Point(-7, 0) # doctest: +NEWCONTEXT
+>>> print(point_33) # doctest: +STDOUT
+Point(-7, 0)
+>>> repr(point_33)
+'Point(-7, 0)'
+
+>>> point_34 = Point(7, 1) # doctest: +NEWCONTEXT
+>>> print(point_34) # doctest: +STDOUT
+Point(7, 1)
+>>> repr(point_34)
+'Point(7, 1)'
+
+>>> point_35 = Point(6, 3) # doctest: +NEWCONTEXT
+>>> point_35 # doctest: +REPR
+Point(6, 3)
+>>> print(point_35) # doctest: +STDOUT
+Point(6, 3)
+
+>>> point_36 = Point(9, 6) # doctest: +NEWCONTEXT
+>>> point_36 # doctest: +REPR
+Point(9, 6)
+>>> str(point_36)
+'Point(9, 6)'
+
+>>> point_37 = Point(2, -4) # doctest: +NEWCONTEXT
+>>> print(point_37) # doctest: +STDOUT
+Point(2, -4)
+>>> point_37 # doctest: +REPR
+Point(2, -4)
+
+>>> point_38 = Point(10, -1) # doctest: +NEWCONTEXT
+>>> repr(point_38)
+'Point(10, -1)'
+>>> print(point_38) # doctest: +STDOUT
+Point(10, -1)
+
+>>> point_39 = Point(-6, 9) # doctest: +NEWCONTEXT
+>>> point_39 # doctest: +REPR
+Point(-6, 9)
+>>> str(point_39)
+'Point(-6, 9)'
+
+>>> point_40 = Point(7, 3) # doctest: +NEWCONTEXT
+>>> point_40 # doctest: +REPR
+Point(7, 3)
+>>> print(point_40) # doctest: +STDOUT
+Point(7, 3)
+
+>>> point_41 = Point(2, 3) # doctest: +NEWCONTEXT
+>>> print(point_41) # doctest: +STDOUT
+Point(2, 3)
+>>> repr(point_41)
+'Point(2, 3)'
+
+>>> point_42 = Point(7, -7) # doctest: +NEWCONTEXT
+>>> str(point_42)
+'Point(7, -7)'
+>>> point_42 # doctest: +REPR
+Point(7, -7)
+
+>>> point_43 = Point(-2, 5) # doctest: +NEWCONTEXT
+>>> point_43 # doctest: +REPR
+Point(-2, 5)
+>>> str(point_43)
+'Point(-2, 5)'
+
+>>> point_44 = Point(2, 4) # doctest: +NEWCONTEXT
+>>> print(point_44) # doctest: +STDOUT
+Point(2, 4)
+>>> repr(point_44)
+'Point(2, 4)'
+
+>>> point_45 = Point(8, 2) # doctest: +NEWCONTEXT
+>>> repr(point_45)
+'Point(8, 2)'
+>>> str(point_45)
+'Point(8, 2)'
+
+>>> point_46 = Point(8, -2) # doctest: +NEWCONTEXT
+>>> print(point_46) # doctest: +STDOUT
+Point(8, -2)
+>>> repr(point_46)
+'Point(8, -2)'
+
+>>> point_47 = Point(2, 6) # doctest: +NEWCONTEXT
+>>> repr(point_47)
+'Point(2, 6)'
+>>> print(point_47) # doctest: +STDOUT
+Point(2, 6)
+
+>>> point_48 = Point(-6, -7) # doctest: +NEWCONTEXT
+>>> print(point_48) # doctest: +STDOUT
+Point(-6, -7)
+>>> repr(point_48)
+'Point(-6, -7)'
+
+>>> point_49 = Point(6, -2) # doctest: +NEWCONTEXT
+>>> repr(point_49)
+'Point(6, -2)'
+>>> print(point_49) # doctest: +STDOUT
+Point(6, -2)
+
+>>> point_50 = Point(-10, 4) # doctest: +NEWCONTEXT
+>>> print(point_50) # doctest: +STDOUT
+Point(-10, 4)
+>>> point_50 # doctest: +REPR
+Point(-10, 4)
+

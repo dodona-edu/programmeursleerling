@@ -1,0 +1,24 @@
+>>> astronomy = Course(238273, 'Astronomy') # doctest: +NEWCONTEXT
+>>> astronomy # doctest: +REPR
+Course(238273, 'Astronomy')
+>>> print(astronomy) # doctest: +STDOUT
+Course(238273, 'Astronomy')
+
+>>> charms = Course(983448, 'Charms') # doctest: +NEWCONTEXT
+>>> charms # doctest: +REPR
+Course(983448, 'Charms')
+>>> print(charms) # doctest: +STDOUT
+Course(983448, 'Charms')
+
+>>> dark_arts = Course(746473, 'Dark Arts') # doctest: +NEWCONTEXT
+>>> dark_arts # doctest: +REPR
+Course(746473, 'Dark Arts')
+>>> print(dark_arts) # doctest: +STDOUT
+Course(746473, 'Dark Arts')
+
+>>> defence_against_dark_arts = Course(462763, 'Defence Against Dark Arts') # doctest: +NEWCONTEXT
+>>> defence_against_dark_arts # doctest: +REPR
+Course(462763, 'Defence Against Dark Arts')
+>>> str(defence_against_dark_arts)
+"Course(462763, 'Defence Against Dark Arts')"
+
