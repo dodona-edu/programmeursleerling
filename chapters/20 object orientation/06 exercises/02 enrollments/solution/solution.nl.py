@@ -36,6 +36,10 @@ class Cursus:
 
         return f'Cursus({self.id!r}, {self.naam!r})'
 
+    def __hash__(self):
+
+        return self.id
+
     def __eq__(self, other):
 
         return (self.id, self.naam) == (other.id, other.naam)
@@ -54,9 +58,13 @@ class Student:
 
         return f'Student({self.id}, {self.voornaam!r}, {self.familienaam!r}, {self.geboortedatum!r})'
 
-    def __str__( self ):
+    def __str__(self):
 
         return f'{self.familienaam}, {self.voornaam}'
+
+    def __hash__(self):
+
+        return self.id
 
     def __eq__(self, other):
 
