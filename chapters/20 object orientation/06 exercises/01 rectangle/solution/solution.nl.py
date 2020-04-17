@@ -19,6 +19,10 @@ class Punt:
 
         return f'Punt({self.x}, {self.y})'
 
+    def __eq__(self, other):
+
+        return (self.x, self.y) == (other.x, other.y)
+
 class Rechthoek:
 
     """
@@ -56,6 +60,10 @@ class Rechthoek:
 
         return f'Rechthoek({self.punt!r}, {self.breedte}, {self.hoogte})'
 
+    def __eq__(self, other):
+
+        return (self.punt, self.breedte, self.hoogte) == (other.punt, other.breedte, other.hoogte)
+
     def oppervlakte(self):
 
         return self.breedte * self.hoogte
@@ -91,7 +99,6 @@ class Rechthoek:
             min(r1.rechtsonder().x - r2.punt.x, r2.breedte),
             min(r1.rechtsonder().y - r2.punt.y, r2.hoogte)
         )
-
 
 if __name__ == '__main__':
     import doctest

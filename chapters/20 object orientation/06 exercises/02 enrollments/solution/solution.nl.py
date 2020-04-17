@@ -36,6 +36,10 @@ class Cursus:
 
         return f'Cursus({self.id!r}, {self.naam!r})'
 
+    def __eq__(self, other):
+
+        return (self.id, self.naam) == (other.id, other.naam)
+
 class Student:
 
     def __init__(self, id, voornaam, familienaam, geboortedatum):
@@ -53,6 +57,10 @@ class Student:
     def __str__( self ):
 
         return f'{self.familienaam}, {self.voornaam}'
+
+    def __eq__(self, other):
+
+        return (self.id, self.voornaam, self.familienaam, self.geboortedatum) == (other.id, other.voornaam, other.familienaam, other.geboortedatum)
 
     def leeftijd(self):
 

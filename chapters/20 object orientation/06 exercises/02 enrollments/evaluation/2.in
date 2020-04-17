@@ -15,34 +15,34 @@
 >>> hermione.enroll(astronomy).enroll(dark_arts).courses()
 {Course(238273, 'Astronomy'), Course(746473, 'Dark Arts')}
 >>> hermione.enroll(dark_arts).enroll(charms).courses()
-{Course(983448, 'Charms'), Course(238273, 'Astronomy'), Course(746473, 'Dark Arts')}
+{Course(238273, 'Astronomy'), Course(746473, 'Dark Arts'), Course(983448, 'Charms')}
 >>> harry.enroll(charms).courses()
-{Course(983448, 'Charms'), Course(462763, 'Defence Against Dark Arts')}
+{Course(462763, 'Defence Against Dark Arts'), Course(983448, 'Charms')}
 >>> harry.enroll(astronomy).courses()
-{Course(983448, 'Charms'), Course(238273, 'Astronomy'), Course(462763, 'Defence Against Dark Arts')}
+{Course(462763, 'Defence Against Dark Arts'), Course(983448, 'Charms'), Course(238273, 'Astronomy')}
 >>> hermione.enroll(charms).courses()
-{Course(983448, 'Charms'), Course(238273, 'Astronomy'), Course(746473, 'Dark Arts')}
+{Course(238273, 'Astronomy'), Course(746473, 'Dark Arts'), Course(983448, 'Charms')}
 >>> ron.enroll(charms).courses()
-{Course(983448, 'Charms'), Course(746473, 'Dark Arts')}
+{Course(746473, 'Dark Arts'), Course(983448, 'Charms')}
 >>> hermione.enroll(dark_arts).courses()
-{Course(983448, 'Charms'), Course(238273, 'Astronomy'), Course(746473, 'Dark Arts')}
+{Course(238273, 'Astronomy'), Course(746473, 'Dark Arts'), Course(983448, 'Charms')}
 >>> ron.enroll(defence_against_dark_arts).courses()
-{Course(983448, 'Charms'), Course(746473, 'Dark Arts'), Course(462763, 'Defence Against Dark Arts')}
+{Course(746473, 'Dark Arts'), Course(462763, 'Defence Against Dark Arts'), Course(983448, 'Charms')}
 >>> ron.enroll(charms).courses()
-{Course(983448, 'Charms'), Course(746473, 'Dark Arts'), Course(462763, 'Defence Against Dark Arts')}
+{Course(746473, 'Dark Arts'), Course(462763, 'Defence Against Dark Arts'), Course(983448, 'Charms')}
 >>> ron.enroll(defence_against_dark_arts).courses()
-{Course(983448, 'Charms'), Course(746473, 'Dark Arts'), Course(462763, 'Defence Against Dark Arts')}
+{Course(746473, 'Dark Arts'), Course(462763, 'Defence Against Dark Arts'), Course(983448, 'Charms')}
 >>> ron.enroll(astronomy).courses()
-{Course(983448, 'Charms'), Course(238273, 'Astronomy'), Course(746473, 'Dark Arts'), Course(462763, 'Defence Against Dark Arts')}
+{Course(746473, 'Dark Arts'), Course(462763, 'Defence Against Dark Arts'), Course(983448, 'Charms'), Course(238273, 'Astronomy')}
 >>> hermione.enroll(defence_against_dark_arts).courses()
-{Course(983448, 'Charms'), Course(462763, 'Defence Against Dark Arts'), Course(238273, 'Astronomy'), Course(746473, 'Dark Arts')}
+{Course(238273, 'Astronomy'), Course(462763, 'Defence Against Dark Arts'), Course(746473, 'Dark Arts'), Course(983448, 'Charms')}
 >>> ron.enroll(dark_arts).courses()
-{Course(983448, 'Charms'), Course(238273, 'Astronomy'), Course(746473, 'Dark Arts'), Course(462763, 'Defence Against Dark Arts')}
+{Course(746473, 'Dark Arts'), Course(462763, 'Defence Against Dark Arts'), Course(983448, 'Charms'), Course(238273, 'Astronomy')}
 >>> hermione.enroll(charms).courses()
-{Course(983448, 'Charms'), Course(462763, 'Defence Against Dark Arts'), Course(238273, 'Astronomy'), Course(746473, 'Dark Arts')}
+{Course(238273, 'Astronomy'), Course(462763, 'Defence Against Dark Arts'), Course(746473, 'Dark Arts'), Course(983448, 'Charms')}
 >>> harry.enroll(dark_arts).courses()
-{Course(983448, 'Charms'), Course(238273, 'Astronomy'), Course(462763, 'Defence Against Dark Arts'), Course(746473, 'Dark Arts')}
+{Course(462763, 'Defence Against Dark Arts'), Course(746473, 'Dark Arts'), Course(983448, 'Charms'), Course(238273, 'Astronomy')}
 >>> harry.enroll(astronomy).courses()
-{Course(983448, 'Charms'), Course(238273, 'Astronomy'), Course(462763, 'Defence Against Dark Arts'), Course(746473, 'Dark Arts')}
+{Course(462763, 'Defence Against Dark Arts'), Course(746473, 'Dark Arts'), Course(983448, 'Charms'), Course(238273, 'Astronomy')}
 >>> ron.enroll(charms).courses()
-{Course(983448, 'Charms'), Course(238273, 'Astronomy'), Course(746473, 'Dark Arts'), Course(462763, 'Defence Against Dark Arts')}
+{Course(746473, 'Dark Arts'), Course(462763, 'Defence Against Dark Arts'), Course(983448, 'Charms'), Course(238273, 'Astronomy')}

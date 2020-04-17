@@ -19,6 +19,10 @@ class Point:
 
         return f'Point({self.x}, {self.y})'
 
+    def __eq__(self, other):
+
+        return (self.x, self.y) == (other.x, other.y)
+
 class Rectangle:
 
     """
@@ -56,6 +60,10 @@ class Rectangle:
 
         return f'Rectangle({self.point!r}, {self.width}, {self.height})'
 
+    def __eq__(self, other):
+
+        return (self.point, self.width, self.height) == (other.point, other.width, other.height)
+
     def surface_area(self):
 
         return self.width * self.height
@@ -91,7 +99,6 @@ class Rectangle:
             min(r1.bottom_right().x - r2.point.x, r2.width),
             min(r1.bottom_right().y - r2.point.y, r2.height)
         )
-
 
 if __name__ == '__main__':
     import doctest
