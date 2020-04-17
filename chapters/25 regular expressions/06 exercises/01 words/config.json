@@ -5,5 +5,11 @@
       "en": "Words (TODO)"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "fxe93D-Qw6EhVPwsNSn-exPFszhvwK5XjH22kNyk-TggiCUKUiPYza-D2SK-3Qqf",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }

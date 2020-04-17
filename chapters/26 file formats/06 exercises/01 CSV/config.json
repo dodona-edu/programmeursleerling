@@ -5,5 +5,11 @@
       "en": "CSV (TODO)"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "BKprBCePEZv2ChPRBI5uRpYy2xxSgbtayxGSMwu4UfipqKdxhfCqidxiHabMUQPY",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }

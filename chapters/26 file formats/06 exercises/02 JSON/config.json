@@ -5,5 +5,11 @@
       "en": "JSON (TODO)"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "ag_QzNRfxuGd_yaAMUyRUrmfJ6tAweYG-avZBXpNuSH3fmDtPnUvAQ5zuF_K5-mq",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }

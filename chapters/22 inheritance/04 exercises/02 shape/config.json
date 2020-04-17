@@ -5,5 +5,11 @@
       "en": "Shape (TODO)"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "7QrTxYKdAk8PwpG7hC_SCv-2ATXYnryz2BqzUxS_kdfQ_hHeScNqAvFDmI2ryB9m",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
