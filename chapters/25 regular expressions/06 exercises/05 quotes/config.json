@@ -5,5 +5,11 @@
       "en": "Quotes (TODO)"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "nizYvD5wSGFZK56_Mk8hedIGsf-jxfbxmK3xbFqaYDbdsXRYeI4qMTUFiucSPgRv",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }

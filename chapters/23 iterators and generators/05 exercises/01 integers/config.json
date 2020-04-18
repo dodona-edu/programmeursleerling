@@ -5,5 +5,11 @@
       "en": "Integers (TODO)"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "FRH9h_FCG-aXsZbGr72BxWfSVpsMW-JcmH6xAUJNJTzPsKz6cfynUKMcnCW-D_we",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }

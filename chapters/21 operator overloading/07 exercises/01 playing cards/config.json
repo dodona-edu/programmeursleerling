@@ -5,5 +5,11 @@
       "en": "Playing card (TODO)"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "-suBJ6cfUykJ9iUJRsk9CwupDeTAC3jSbd__Pr3DPh4CwD2S44nQdHvfC8554KhF",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }

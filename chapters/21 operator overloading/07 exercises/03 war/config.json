@@ -5,5 +5,11 @@
       "en": "War (TODO)"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "xtIUryfJhInyZDTxSkfctWvFN_3gyDCX5rCQNPcW6P_gbg7GbR65GXS6P7bY4UCz",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }

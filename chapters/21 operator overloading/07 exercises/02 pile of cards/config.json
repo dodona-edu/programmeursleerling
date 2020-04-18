@@ -5,5 +5,11 @@
       "en": "Pile of cards (TODO)"
     }
   },
-  "labels": []
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "Qc3tNdrwscNCVYm5BgK-2iNmf33_M2vx2ud3k-Cxhz9uVUPNeYRcX4A-I-EdybNf",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
