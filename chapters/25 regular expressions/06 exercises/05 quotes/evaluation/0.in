@@ -1,0 +1,10 @@
+>>> quotes('data_01.en.txt')
+<LANGUAGE code="en notdetected" />
+<FILE name="data_01.en.txt" src="" href="media/workdir/data_01.en.txt" />
+['Pythonesque']
+
+>>> quotes('data_01.nl.txt')
+<LANGUAGE code="nl" />
+<FILE name="data_01.nl.txt" src="" href="media/workdir/data_01.nl.txt" />
+['Pythonesque']
+
