@@ -1,8 +1,8 @@
 {
   "description": {
     "names": {
-      "nl": "JSON (TODO)",
-      "en": "JSON (TODO)"
+      "nl": "Omzetten van CSV naar JSON",
+      "en": "Convert from CSV to JSON"
     }
   },
   "labels": [
