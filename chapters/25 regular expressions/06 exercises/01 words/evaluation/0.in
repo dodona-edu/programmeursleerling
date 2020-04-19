@@ -1,0 +1,4 @@
+>>> word_split('data_01.txt')
+<FILE name="data_01.txt" src="" href="media/workdir/data_01.txt" />
+['Broadcast', 'by', 'the', 'BBC', 'between', 'and', 'Monty', 'Python', 's', 'Flying', 'Circus', 'was', 'conceived', 'written', 'and', 'performed', 'by', 'its', 'members', 'Graham', 'Chapman', 'John', 'Cleese', 'Terry', 'Gilliam', 'Eric', 'Idle', 'Terry', 'Jones', 'and', 'Michael', 'Palin']
+
