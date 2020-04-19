@@ -1,0 +1,4 @@
+>>> webscraper('data_01.html')
+<FILE name="data_01.html" src="" href="media/workdir/data_01.html" />
+[(123123123, 'Groucho Marx'), (123123124, 'Harpo Marx'), (123123125, 'Chico Marx'), (123123126, 'Zeppo Marx'), (123123127, 'Gummo Marx')]
+

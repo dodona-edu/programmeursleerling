@@ -2,7 +2,7 @@ Als een persoon spreekt, dan wordt dit in een stuk tekst meestal weergegeven doo
 
 ### Opgave
 
-Schrijf een functie `citaten` waaraan de locatie van een tekstbestand (`str`) moet doorgegeven worden. De functie moet een lijst (`list`) teruggeven met citaten in de gegeven tekst. Hierbij is een citaat een fragment dat tussen dubbele aanhalingstekens geplaatst werd.
+Schrijf een functie `citaten` waaraan de locatie van een tekstbestand (`str`) moet doorgegeven worden. De functie moet een lijst (`list`) teruggeven met alle citaten in de gegeven tekst. Hierbij is een citaat een fragment dat tussen dubbele aanhalingstekens geplaatst werd.
 
 {:class="callout callout-info"}
 > #### Tip
