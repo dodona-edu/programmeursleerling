@@ -8,3 +8,13 @@
 <FILE name="data_01.nl.txt" src="" href="media/workdir/data_01.nl.txt" />
 ['Monty Python', 'Flying Circus', 'Graham Chapman', 'John\nCleese', 'Terry Gilliam', 'Eric Idle', 'Terry Jones', 'Michael Palin', 'Monty Python', 'Holy Grail', 'The Meaning', 'Noord Amerika', 'Saturday Night']
 
+>>> names('data_02.en.txt')
+<LANGUAGE code="en notdetected" />
+<FILE name="data_02.en.txt" src="" href="media/workdir/data_02.en.txt" />
+['Michael Jordan', 'Bill Gates', 'Dalai Lama']
+
+>>> names('data_02.nl.txt')
+<LANGUAGE code="nl" />
+<FILE name="data_02.nl.txt" src="" href="media/workdir/data_02.nl.txt" />
+['Michael Jordan', 'Bill Gates', 'Dalai Lama']
+

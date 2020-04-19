@@ -8,3 +8,13 @@
 <FILE name="data_01.nl.txt" src="" href="media/workdir/data_01.nl.txt" />
 ['Pythonesque']
 
+>>> quotes('data_02.en.txt')
+<LANGUAGE code="en notdetected" />
+<FILE name="data_02.en.txt" src="" href="media/workdir/data_02.en.txt" />
+['I wish to register a complaint!\nHello miss!', 'What do you mean, miss?', 'I am sorry, I have a cold.']
+
+>>> quotes('data_02.nl.txt')
+<LANGUAGE code="nl" />
+<FILE name="data_02.nl.txt" src="" href="media/workdir/data_02.nl.txt" />
+['Ik wens een klacht te deponeren!\nHallo mevrouw!', 'Hoe bedoelt u, mevrouw?', 'Het spijt me, ik ben verkouden.']
+

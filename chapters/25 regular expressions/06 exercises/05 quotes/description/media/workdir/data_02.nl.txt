@@ -1,0 +1,4 @@
+Klant: "Ik wens een klacht te deponeren!
+Hallo mevrouw!"
+Winkelier: "Hoe bedoelt u, mevrouw?"
+Klant: "Het spijt me, ik ben verkouden."

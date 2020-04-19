@@ -1,0 +1,4 @@
+Client: "I wish to register a complaint!
+Hello miss!"
+Shopkeeper: "What do you mean, miss?"
+Client: "I am sorry, I have a cold."

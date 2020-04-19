@@ -8,3 +8,13 @@
 <FILE name="data_01.nl.txt" src="" href="media/workdir/data_01.nl.txt" />
 ['Monty', 'Python', 's', 'Flying', 'Circus', 'werd', 'uitgezonden', 'door', 'de', 'BBC', 'tussen', 'en', 'en', 'werd', 'bedacht', 'geschreven', 'en', 'uitgevoerd', 'door', 'haar', 'leden', 'Graham', 'Chapman', 'John', 'Cleese', 'Terry', 'Gilliam', 'Eric', 'Idle', 'Terry', 'Jones', 'en', 'Michael', 'Palin']
 
+>>> word_split('data_02.en.txt')
+<LANGUAGE code="en notdetected" />
+<FILE name="data_02.en.txt" src="" href="media/workdir/data_02.en.txt" />
+['The', 'price', 'of', 'a', 'room', 'apartment', 'in', 'Manhattan', 'starts', 'at', 'million', 'dollars', 'and', 'may', 'actually', 'be', 'the', 'fold', 'of', 'that', 'on', 'nd', 'Street']
+
+>>> word_split('data_02.nl.txt')
+<LANGUAGE code="nl" />
+<FILE name="data_02.nl.txt" src="" href="media/workdir/data_02.nl.txt" />
+['De', 'prijs', 'voor', 'een', 'kamer', 'appartement', 'op', 'Manhattan', 'start', 'bij', 'miljoen', 'dollars', 'en', 'kan', 'oplopen', 'tot', 'het', 'tienvoudige', 'op', 'nd', 'Street']
+
