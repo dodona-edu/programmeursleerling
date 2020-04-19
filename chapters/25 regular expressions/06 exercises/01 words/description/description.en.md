@@ -1,6 +1,6 @@
 A word in a text is defined as the longest sequence of letters, where every character that is not a letter is considered a word boundary.
 
-### Opgave
+### Assignment
 
 Write a function `word_split` that takes the location of a text file (`str`). The function must return a `list` containing the sequence of words from the given text file.
 

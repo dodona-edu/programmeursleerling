@@ -1,0 +1,5 @@
+--------------------------------------------------------
+tab name: word_split
+<LANGUAGE code="nl">
+    <function from="word_split" to="woorden_splitsen" />
+</LANGUAGE>
