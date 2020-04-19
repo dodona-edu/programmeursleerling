@@ -1,5 +1,5 @@
 --------------------------------------------------------
-tab name: find_the_the
+tab name: names
 <LANGUAGE code="nl">
-    <function from="find_the_the" to="zoek_de_de" />
+    <function from="names" to="namen" />
 </LANGUAGE>

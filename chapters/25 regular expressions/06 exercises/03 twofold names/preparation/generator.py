@@ -29,7 +29,7 @@ for name in dir(module):
 for filename in os.listdir(workdir):
     shutil.copyfile(os.path.join(workdir, filename), os.path.join(datadir, filename))
 
-# generate unit tests for functions word_split
+# generate unit tests for functions names
 sys.stdout = open(os.path.join('..', 'evaluation', '0.in'), 'w', encoding='utf-8')
 for filename in os.listdir(workdir):
 
@@ -45,13 +45,13 @@ for filename in os.listdir(workdir):
     language = parts[1]
 
     # generate test expression
-    print(f'>>> word_split({filename!r})')
+    print(f'>>> names({filename!r})')
     print(f'<LANGUAGE code="{"en notdetected" if language == "en" else language}" />')
     print(f'<FILE name="{filename}" src="" href="media/workdir/{filename}" />')
 
     # generate return value
     try:
-        print(f'{word_split(os.path.join(workdir, filename))!r}')
+        print(f'{names(os.path.join(workdir, filename))!r}')
     except Exception as e:
         print('Traceback (most recent call last):\n{}: {}'.format(e.__class__.__name__, e))
 

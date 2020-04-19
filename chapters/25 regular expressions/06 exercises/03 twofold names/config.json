@@ -1,15 +1,15 @@
 {
   "description": {
     "names": {
-      "nl": "Naam (TODO)",
-      "en": "Name (TODO)"
+      "nl": "Tweeledige namen",
+      "en": "Twofold names"
     }
   },
   "labels": [
 
   ],
   "internals": {
-    "token": "hPcSCwSFTuZD6c-zswCjA4C_JafE6Y2qUKrFiEZqhBzisAfQ3Uhm8Q9kpRbdT-aP",
+    "token": "YXrxVHdf-YrwdTknzWEYD9MTId5nmxPpHGsS2guCHdZscbyY-9uetxUf7aGCeVNy",
     "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
   }
 }
