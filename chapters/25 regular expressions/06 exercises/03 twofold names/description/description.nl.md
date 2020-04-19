@@ -1,4 +1,4 @@
-De volledige naam van een persoon bestaat uit twee woorden, die elkaar opvolgen, en die alleen letters van het alfabet bevatten die allemaal kleine letters zijn behalve de eerste, die een hoofdletter moet zijn. Tussen de woorden mogen alleen spaties staan. De woorden beginnen en eindigen bij een woordscheider. Volgens  deze specificatie is bijvoorbeeld Kardinaal Richelieu een naam, maar Charles  d'Artagnan niet, noch Gilbert duPrez, Joe DiMaggio, of Unit X1138.
+De volledige naam van een persoon bestaat uit twee woorden, die elkaar opvolgen, en die alleen letters van het alfabet bevatten die allemaal kleine letters zijn behalve de eerste, die een hoofdletter moet zijn. Tussen de woorden mogen alleen spaties staan. De woorden beginnen en eindigen bij een woordscheider. Volgens deze specificatie is bijvoorbeeld Kardinaal Richelieu een naam, maar Charles  d'Artagnan niet, noch Gilbert duPrez, Joe DiMaggio, of Unit X1138.
 
 ### Opgave
 
