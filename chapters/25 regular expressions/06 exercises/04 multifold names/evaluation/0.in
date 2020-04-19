@@ -1,10 +1,10 @@
 >>> names('data_01.en.txt')
 <LANGUAGE code="en notdetected" />
 <FILE name="data_01.en.txt" src="" href="media/workdir/data_01.en.txt" />
-['Monty Python', 'Flying Circus', 'Graham Chapman', 'John Cleese', 'Terry Gilliam', 'Eric Idle', 'Terry Jones', 'Michael Palin', 'Monty Python', 'Holy Grail', 'The Meaning', 'North\nAmerica', 'Saturday Night']
+['Monty Python', 'Flying Circus', 'Graham Chapman', 'John Cleese', 'Terry Gilliam', 'Eric Idle', 'Terry Jones', 'Michael Palin', 'Monty Python', 'Holy Grail', 'The Meaning', 'North\nAmerica', 'Saturday Night Live']
 
 >>> names('data_01.nl.txt')
 <LANGUAGE code="nl" />
 <FILE name="data_01.nl.txt" src="" href="media/workdir/data_01.nl.txt" />
-['Monty Python', 'Flying Circus', 'Graham Chapman', 'John\nCleese', 'Terry Gilliam', 'Eric Idle', 'Terry Jones', 'Michael Palin', 'Monty Python', 'Holy Grail', 'The Meaning', 'Noord Amerika', 'Saturday Night']
+['Monty Python', 'Flying Circus', 'Graham Chapman', 'John\nCleese', 'Terry Gilliam', 'Eric Idle', 'Terry Jones', 'Michael Palin', 'Monty Python', 'Holy Grail', 'The Meaning', 'Noord Amerika', 'Saturday Night Live']
 
