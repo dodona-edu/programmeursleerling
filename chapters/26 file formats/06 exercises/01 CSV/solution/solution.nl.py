@@ -1,10 +1,4 @@
-Schrijf een functie `kopieer_csv` waaraan twee locaties van tekstbestanden (`str`) moeten doorgegeven worden. Het eerste bestand moet een CSV-bestand zijn. De functie moet de inhoud van dat CSV-bestand kopiëren naar het tweede tekstbestand, maar waarbij spatie als scheidingsteken gebruikt wordt en de informatievelden waarbij dat nodig is ingesloten worden tussen enkele aanhalingstekens.
-
-### Voorbeeld
-
-In onderstaande interactieve sessie gaan we ervan uit dat het CSV-bestand [`data.csv`](media/data/data.csv){:target="_blank"} zich in de huidige directory bevindt.
-
-```console?lang=python&prompt=>>>
+"""
 >>> print(open('data.csv', 'r').read(), end='')
 ID,CATEGORY,NAME,STOCK,UNITPRICE
 1,Fruit,apple,1000,0.87
@@ -30,4 +24,19 @@ ID CATEGORY NAME STOCK UNITPRICE
 8 Fruit orange 355 0.77
 9 Fruit mango 24 1.56
 10 Cheese Cheddar 333 13.15
-```
+"""
+
+def kopieer_csv(bronbestand, doelbestand):
+
+    from csv import reader, writer
+
+    with open(bronbestand, 'r') as bron:
+        bron_csv = reader(bron)
+        with open(doelbestand, 'w', newline='') as doel:
+            doel_csv = writer(doel, delimiter=' ', quotechar="'")
+            for record in bron_csv:
+                doel_csv.writerow(record)
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()

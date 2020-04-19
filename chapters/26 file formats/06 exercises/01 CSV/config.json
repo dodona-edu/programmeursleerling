@@ -1,8 +1,8 @@
 {
   "description": {
     "names": {
-      "nl": "CSV (TODO)",
-      "en": "CSV (TODO)"
+      "nl": "Kopieer CSV-bestand",
+      "en": "Copy CSV file"
     }
   },
   "labels": [

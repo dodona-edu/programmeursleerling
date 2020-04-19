@@ -1,0 +1,6 @@
+--------------------------------------------------------
+tab name: copy_csv
+<LANGUAGE code="nl">
+    <function from="copy_csv" to="kopieer_csv" />
+    <fixed from=".copy." to=".kopie." detect="false" />
+</LANGUAGE>

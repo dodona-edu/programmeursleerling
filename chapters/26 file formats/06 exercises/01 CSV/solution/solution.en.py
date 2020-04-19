@@ -1,10 +1,4 @@
-Write a function `copy_csv` that takes the location of two text files (`str`). The first file must be a CSV file. The function must copy the content of that CSV file to the second text file, with spaces as delimiters and information fields enclosed in single quotes wherever that is needed.
-
-### Example
-
-In the following interactive session we assume the CSV file [`data.csv`](media/data/data.csv){:target="_blank"} to be located in the current directory.
-
-```console?lang=python&prompt=>>>
+"""
 >>> print(open('data.csv', 'r').read(), end='')
 ID,CATEGORY,NAME,STOCK,UNITPRICE
 1,Fruit,apple,1000,0.87
@@ -30,4 +24,19 @@ ID CATEGORY NAME STOCK UNITPRICE
 8 Fruit orange 355 0.77
 9 Fruit mango 24 1.56
 10 Cheese Cheddar 333 13.15
-```
+"""
+
+def copy_csv(src, dest):
+
+    from csv import reader, writer
+
+    with open(src, 'r') as src:
+        src_csv = reader(src)
+        with open(dest, 'w', newline='') as dest:
+            dest_csv = writer(dest, delimiter=' ', quotechar="'")
+            for record in src_csv:
+                dest_csv.writerow(record)
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()
