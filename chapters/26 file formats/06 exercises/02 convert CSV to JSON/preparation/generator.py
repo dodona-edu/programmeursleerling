@@ -50,7 +50,7 @@ for filename in os.listdir(workdir):
         with open(copy_filename) as copy:
             print(copy.read(), end='')
         os.remove(copy_filename)
-        print('</FILE>')
+        print('\n</FILE>')
 
         # add output processor for file
         print('<OUTPUTPROCESSOR>')
