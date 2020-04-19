@@ -1,4 +1,10 @@
->>> word_split('data_01.txt')
-<FILE name="data_01.txt" src="" href="media/workdir/data_01.txt" />
+>>> word_split('data_01.en.txt')
+<LANGUAGE code="en notdetected" />
+<FILE name="data_01.en.txt" src="" href="media/workdir/data_01.en.txt" />
 ['Broadcast', 'by', 'the', 'BBC', 'between', 'and', 'Monty', 'Python', 's', 'Flying', 'Circus', 'was', 'conceived', 'written', 'and', 'performed', 'by', 'its', 'members', 'Graham', 'Chapman', 'John', 'Cleese', 'Terry', 'Gilliam', 'Eric', 'Idle', 'Terry', 'Jones', 'and', 'Michael', 'Palin']
+
+>>> word_split('data_01.nl.txt')
+<LANGUAGE code="nl" />
+<FILE name="data_01.nl.txt" src="" href="media/workdir/data_01.nl.txt" />
+['Monty', 'Python', 's', 'Flying', 'Circus', 'werd', 'uitgezonden', 'door', 'de', 'BBC', 'tussen', 'en', 'en', 'werd', 'bedacht', 'geschreven', 'en', 'uitgevoerd', 'door', 'haar', 'leden', 'Graham', 'Chapman', 'John', 'Cleese', 'Terry', 'Gilliam', 'Eric', 'Idle', 'Terry', 'Jones', 'en', 'Michael', 'Palin']
 

@@ -33,8 +33,20 @@ for filename in os.listdir(workdir):
 sys.stdout = open(os.path.join('..', 'evaluation', '0.in'), 'w', encoding='utf-8')
 for filename in os.listdir(workdir):
 
+    # parse filename parts
+    parts = filename.split('.')
+    if not (
+        len(parts) == 3 and
+        parts[0].startswith('data') and
+        len(parts[1]) == 2 and
+        parts[2] == 'txt'
+    ):
+        continue
+    language = parts[1]
+
     # generate test expression
     print(f'>>> word_split({filename!r})')
+    print(f'<LANGUAGE code="{"en notdetected" if language == "en" else language}" />')
     print(f'<FILE name="{filename}" src="" href="media/workdir/{filename}" />')
 
     # generate return value

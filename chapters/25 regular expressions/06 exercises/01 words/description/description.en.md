@@ -6,9 +6,9 @@ Write a function `word_split` that takes the location of a text file (`str`). Th
 
 ### Example
 
-In the following interactive session we assume the text file [`data.txt`](media/data/data.txt){:target="_blank"} to be located in the current directory.
+In the following interactive session we assume the text file [`data.en.txt`](media/data/data.en.txt){:target="_blank"} to be located in the current directory.
 
 ```console?lang=python&prompt=>>>
->>> word_split('data.txt')
+>>> word_split('data.en.txt')
 ['Broadcast', 'by', 'the', 'BBC', 'between', 'and', 'Monty', 'Python', 's', 'Flying', 'Circus', 'was', 'conceived', 'written', 'and', 'performed', 'by', 'its', 'members', 'Graham', 'Chapman', 'John', 'Cleese', 'Terry', 'Gilliam', 'Eric', 'Idle', 'Terry', 'Jones', 'and', 'Michael', 'Palin']
 ```
