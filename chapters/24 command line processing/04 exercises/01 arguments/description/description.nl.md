@@ -2,7 +2,7 @@ Schrijf een programma `som` waaraan nul of meer argumenten kunnen doorgegeven wo
 
 ### Voorbeeld
 
-```bash
+```console?lang=bash&prompt=$
 $ python ./som
 0
 $ python ./som 1 2 3 4 5 6 7 8 9 10

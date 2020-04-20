@@ -2,7 +2,7 @@ Write a program `sum` that takes zero or more arguments. If at least one of the 
 
 ### Example
 
-```bash
+```console?lang=bash&prompt=$
 $ python ./sum
 0
 $ python ./sum 1 2 3 4 5 6 7 8 9 10
