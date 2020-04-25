@@ -8,7 +8,7 @@ content_dir = os.path.join('..', 'chapters')
 # source files
 src_dir = os.path.join(content_dir, '00 prologue', '01 preface')
 assert os.path.exists(src_dir), f'missing directory {src_dir!r}'
-src_files = ['readme.md', 'about.nl.md']
+src_files = ['readme.md', 'about.nl.md', 'about.en.md']
 for src_file in src_files:
     src_file = os.path.join(src_dir, src_file)
     assert os.path.exists(src_file), f'missing src file {src_file!r}'
