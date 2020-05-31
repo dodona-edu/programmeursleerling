@@ -1,7 +1,7 @@
 {
   "tabs": [
     {
-      "name": "Correctheid",
+      "name": "Feedback",
       "contexts": [
         {
           "context_testcase": {
@@ -14,7 +14,9 @@
                 "evaluator": {
                   "type": "specific",
                   "evaluators": {
-                    "python": "evaluator.py"
+                    "python": {
+                      "file": "evaluator.py"
+                    }
                   }
                 }
               }
