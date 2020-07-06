@@ -8,6 +8,9 @@
   "labels": [
 
   ],
+  "evaluation": {
+    "handler": "universal"
+  },
   "internals": {
     "token": "uPxAgjhujZKktJxhJ6x8ihkeaqDUD2feTRyxIkPpenpebQEuB-BYIgrsKnqZ6V52",
     "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
