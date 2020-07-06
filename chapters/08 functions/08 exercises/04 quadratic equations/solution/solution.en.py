@@ -24,7 +24,7 @@ def solutions(a, b, c):
         x1 = (-b - D ** 0.5) / (2 * a)
         x2 = x1
     elif D > 0:
-        count = 1
+        count = 2
         x1 = (-b - D ** 0.5) / (2 * a)
         x2 = (-b + D ** 0.5) / (2 * a)
     else:
