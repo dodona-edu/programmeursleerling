@@ -163,7 +163,7 @@ uitgevoerd.
 ![conditie](media/Condition.png "conditie"){:width="65%"}
 
 Je kunt testen of een integer even of oneven is met de modulo operator.
-Namelijk als `x\%2` nul is, dan is `x` even, en anders is `x` oneven.
+Namelijk als `x % 2` nul is, dan is `x` even, en anders is `x` oneven.
 Schrijf code die vraagt om een integer en dan rapporteert of de integer
 even of oneven is (je kunt de `getInteger()` functie van `pcinput`
 gebruiken om om een integer te vragen).
