@@ -34,14 +34,14 @@ En regel die aangeeft hoeveel verschillende reële oplossingen de kwadratische v
 
 ```
 1
--6
-5
+4
+-5
 ```
 
 #### Uitvoer:
 
 ```
-Er zijn 2 reële oplossingen: 5.0 en 1.0
+Er zijn 2 reële oplossingen: -5.0 en 1.0
 ```
 
 ### Voorbeeld
