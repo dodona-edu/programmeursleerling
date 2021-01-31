@@ -34,14 +34,14 @@ A line that indicates the number of different real-valued solutions of the quadr
 
 ```
 1
--6
-5
+4
+-5
 ```
 
 #### Output:
 
 ```
-Er zijn 2 reële oplossingen: 5.0 en 1.0
+Er zijn 2 reële oplossingen: -5.0 en 1.0
 ```
 
 ### Example
