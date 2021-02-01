@@ -227,7 +227,7 @@ hetzelfde getal ingeven.
 
 De code hieronder begint bij nummer 1, en telt nummers op, totdat het
 een nummer tegenkomt dat, als het gekwadrateerd wordt, deelbaar is door
-1000. De loop bevat een fout. Kijk of je de fout weet te vinden (zonder
+1000\. De loop bevat een fout. Kijk of je de fout weet te vinden (zonder
 de code uit te voeren!).
 
 ```python
