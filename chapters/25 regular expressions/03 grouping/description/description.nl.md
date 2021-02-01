@@ -83,7 +83,7 @@ Omdat op dit punt deze reguliere expressie misschien wat moeilijk te
 begrijpen is, zal ik hem in detail doornemen. De `\S` is een speciaal
 teken dat een non-spatie voorstelt. Door er haakjes omheen te zetten,
 wordt het een groep, en omdat de eerste (en enige) groep is, is de index
-1. De `.*` stelt een serie van nul of meer tekens voor die alles kunnen
+1\. De `.*` stelt een serie van nul of meer tekens voor die alles kunnen
 zijn (de punt is een meta-teken dat ieder teken kan voorstellen).
 Tenslotte is de `\1` een referentie aan de eerste groep, en stelt dat
 je hier exact moet hebben wat de eerste groep is. Als je je afvraagt of

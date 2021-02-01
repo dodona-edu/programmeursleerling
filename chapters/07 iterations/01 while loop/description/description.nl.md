@@ -48,7 +48,7 @@ onmiddellijk overgeslagen, net zoals gebeurt bij een `if` statement.
 ### `while` loop, eerste voorbeeld
 
 Ik neem een eenvoudig voorbeeld: het printen van de nummers 1 tot en met
-5. Met een while loop kun je dat als volgt doen:
+5\. Met een while loop kun je dat als volgt doen:
 
 ```python
 num = 1
