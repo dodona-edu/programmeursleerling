@@ -57,7 +57,7 @@ Ik zoek een getal dat start met een 1, en als je die 1 verplaatst naar
 het einde van het getal, dan is het resultaat een getal dat drie keer zo
 groot is als het originele getal. Bijvoorbeeld, als ik het getal 1867
 neem, en ik verplaats de 1 van de start naar het einde, dan krijg ik
-8671. Als 8671 drie keer 1867 zou zijn, dan is dat het antwoord dat ik
+8671\. Als 8671 drie keer 1867 zou zijn, dan is dat het antwoord dat ik
 zoek. Maar dat is niet zo, dus 1867 is niet correct. De code om dit op
 te lossen is vrij kort, en geeft het laagste getal dat het probleem
 oplost:
