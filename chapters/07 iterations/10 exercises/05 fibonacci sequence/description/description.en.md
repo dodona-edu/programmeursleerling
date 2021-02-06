@@ -28,5 +28,5 @@ The numbers in the Fibonacci sequence, each on a separate line. Print the number
 3
 5
 8
-21
+13
 ```
