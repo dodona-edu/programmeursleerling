@@ -28,5 +28,5 @@ De getallen uit de rij van Fibonacci, elk op een afzonderlijke regel. Schrijf de
 3
 5
 8
-21
+13
 ```

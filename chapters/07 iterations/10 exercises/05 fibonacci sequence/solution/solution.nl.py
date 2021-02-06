@@ -1,11 +1,8 @@
-# bovengrens inlezen
 bovengrens = int(input())
 
 # rij van Fibonacci uitschrijven
 vorige, volgende = 0, 1
+print(vorige)
 while vorige <= bovengrens:
-    print(vorige)
+    print(volgende)
     vorige, volgende = volgende, vorige + volgende
-
-# eerste getal groter dan bovengrens uitschrijven
-print(volgende)
