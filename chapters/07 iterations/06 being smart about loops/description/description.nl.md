@@ -152,9 +152,9 @@ mensen werkt dit, maar als ik dit aan een computer wil vertellen, is dat
 best lastig.
 
 Om dit probleem op te lossen, moet ik beginnen met de kleinste eenheid
-van verwerking. In dit geval is de kleinste eenheid een "boek." Het is
-niet "woord," want ik hoef niks te doen met woorden; ik moet totalen
-woorden per boek hebben. In pseudo-code,[^8] wordt het tellen van
+van verwerking. In dit geval is de kleinste eenheid een "boek". Het is
+niet "woord", want ik hoef niks te doen met woorden; ik moet het totaal
+aantal woorden per boek hebben. In pseudo-code,[^8] wordt het tellen van
 woorden per boek iets als:
 
 ```python
@@ -165,11 +165,11 @@ for woord in boek:
 
 Als ik zoiets codeer, kan ik het al testen. Als ik tevreden ben dat ik
 woorden per boek kan tellen, kan ik naar een iets grotere eenheid gaan,
-en dat is de "plank." Hoe verwerk ik alle boeken op een plank? In
+en dat is de "plank". Hoe verwerk ik alle boeken op een plank? In
 pseudo-code is dat iets als:
 
 ```python
-for boek on plank:
+for boek in plank:
     verwerk_boek()
 ```
 
