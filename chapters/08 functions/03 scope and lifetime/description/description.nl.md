@@ -46,7 +46,7 @@ dubbeltje = "dubbeltje"
 
 def geboren():
     print( "Als je voor een", dubbeltje, "geboren wordt,",
-        "dan wordt je nooit een", kwartje )
+        "dan word je nooit een", kwartje )
 
 kwartje = "kwartje"
 geboren()
@@ -65,7 +65,7 @@ dubbeltje = "dubbeltje"
 def geboren():
     kwartje = "stuiver"
     print( "Als je voor een", dubbeltje, "geboren wordt,",
-        "dan wordt je nooit een", kwartje )
+        "dan word je nooit een", kwartje )
 
 kwartje = "kwartje"
 geboren()
