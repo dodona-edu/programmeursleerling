@@ -2,9 +2,9 @@
   "tabs": [
     {
       "name": "Feedback",
-      "contexts": [
+      "runs": [
         {
-          "context_testcase": {
+          "run": {
             "description": "Uitvoeren code",
             "input": {
               "main_call": true
