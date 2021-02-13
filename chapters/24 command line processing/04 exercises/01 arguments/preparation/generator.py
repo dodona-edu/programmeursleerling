@@ -54,7 +54,7 @@ if __name__ == '__main__':
                 }
             }
         contexts.append({
-            "context_testcase": {
+            "run": {
                 "input":  input_,
                 "output": output_
             }
@@ -64,7 +64,7 @@ if __name__ == '__main__':
         "tabs": [
             {
                 "name":     "Feedback",
-                "contexts": contexts
+                "runs": contexts
             }
         ]
     }
