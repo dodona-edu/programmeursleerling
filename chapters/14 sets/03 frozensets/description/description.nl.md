@@ -1,17 +1,18 @@
-Python supports a variant on the set type, namely the `frozenset`. You
-create a `frozenset` by using the `frozenset()` function. The elements
-of a `frozenset`, once assigned, cannot be changed. You therefore have
-to create the `frozenset` immediately when you call the `frozenset()`
-function, because it is impossible to add or remove elements later.
-I.e., `frozenset`s are immutable.
+Python kent als variant op het set type de `frozenset`. Je creëert een
+`frozenset` via de `frozenset()` functie. De elementen van een
+`frozenset` kunnen niet veranderd worden. Je creëert dus een `frozenset`
+onmiddellijk als je de `frozenset()` functie aanroept, want zodra de
+`frozenset` bestaat kun je geen elementen meer toevoegen of weghalen.
+Met andere woorden, `frozenset`s zijn onveranderbaar.
 
-All the regular set methods work for `frozenset`s, except for those that
-try to change the set. Trying to use such a method for a `frozenset`
-will lead to a syntax error.
+Alle reguliere set methodes werken ook op `frozenset`s, behalve de
+methodes die proberen de set te veranderen. Als je een dergelijke
+methode probeert aan te roepen voor een `frozenset` krijg je een syntax
+error.
 
 ```python
-fruit1 = frozenset( ["apple", "banana", "cherry"] )
-fruit2 = frozenset( ["banana", "cherry", "durian"] )
+fruit1 = frozenset( ["appel", "banaan", "kers"] )
+fruit2 = frozenset( ["banaan", "kers", "doerian"] )
 
 print( fruit1.union( fruit2 ) )
 ```
