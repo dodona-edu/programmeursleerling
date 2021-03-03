@@ -12,7 +12,7 @@ syntax:
 lambda <parameters>: <actie>
 ```
 
-`lambda` is een gereserveerd woord. `<parameters>` is a serie parameter
+`lambda` is een gereserveerd woord. `<parameters>` is een serie parameter
 namen, van elkaar gescheiden middels komma's als er meer dan één is.
 `<actie>` is één commando. De anonieme functie heeft geen `return`, maar
 de waarde van `<actie>` wordt gebruikt als retourwaarde.
