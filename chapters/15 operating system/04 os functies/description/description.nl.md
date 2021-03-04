@@ -43,7 +43,7 @@ from os import listdir
 
 flist = listdir( "." )
 for naam in flist:
-print( naam )
+    print( naam )
 ```
 
 ### `system()`
