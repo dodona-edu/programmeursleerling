@@ -9,7 +9,7 @@
 
   ],
   "evaluation": {
-    "handler": "universal"
+    "handler": "tested"
   },
   "internals": {
     "token": "uPxAgjhujZKktJxhJ6x8ihkeaqDUD2feTRyxIkPpenpebQEuB-BYIgrsKnqZ6V52",
