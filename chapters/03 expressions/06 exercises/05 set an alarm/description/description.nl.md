@@ -4,7 +4,7 @@ het als het alarm afgaat?
 
 ### Opgave
 
-Schrijf een programma dat het antwoord afdrukt.
+Schrijf een programma dat het antwoord afdrukt in de vorm `UU:MM`.
 
 {:class="callout callout-info"}
 > #### Tip
