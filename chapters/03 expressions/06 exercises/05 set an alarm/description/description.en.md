@@ -4,7 +4,7 @@ time will the alarm go off?
 
 ### Assignment
 
-Write a program that prints the answer.
+Write a program that prints the answer in the form `HH:MM` (24 hour time format).
 
 {:class="callout callout-info"}
 > #### Tip
