@@ -4,7 +4,7 @@ waardes in bestaande variabelen stoppen. Vaak wil je dat inderdaad doen.
 Bijvoorbeeld, het komt in code vaak voor dat er 1 moet worden opgeteld
 bij een numerieke variabele (waarom dat zo vaak voorkomt zul je zien in
 hoofdstuk
-<a href="#ch:iterations" data-reference-type="ref" data-reference="ch:iterations">8</a>).
+8).
 Omdat dit zo vaak gebeurt, bevat Python een aantal "verkorte notaties"
 om de inhoud van variabelen aan te passen.
 

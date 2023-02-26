@@ -1,5 +1,5 @@
 In hoofdstuk
-<a href="#ch:objectorientation" data-reference-type="ref" data-reference="ch:objectorientation">21</a>
+21
 beschreef ik dat objecten een alias van elkaar kunnen zijn, maar dat je
 ook echte kopieën van objecten kunt maken. Wat gebeurt er als ik probeer
 objecten met elkaar te vergelijken?
@@ -95,7 +95,7 @@ class Quaternion:
         self.c = c
         self.d = d
     def __repr__( self ):
-        return "({},{}i,{}j,{}k)".format( self.a, self.b, 
+        return "({},{}i,{}j,{}k)".format( self.a, self.b,
             self.c, self.d )
     def __eq__( self, n ):
         if isinstance( n, int ) or isinstance( n, float ):
@@ -138,7 +138,7 @@ else:
 if c3 == "3":
     print( c3, "== \"3\"" )
 else:
-    print( c3, "!= \"3\"" ) 
+    print( c3, "!= \"3\"" )
 if 3 == c3:
     print( 3, "==", c3 )
 else:
@@ -173,7 +173,7 @@ daar de operanden worden verwisseld, wordt ook een `<` omgewisseld met
 een `>`, en een `<=` met een `>=`, zoals je zou verwachten.
 
 In hoofdstuk
-<a href="#ch:objectorientation" data-reference-type="ref" data-reference="ch:objectorientation">21</a>
+21
 werd een class `Rechthoek` gedefinieerd. Voeg aan deze class operatoren
 toe die de gelijkheid van rechthoeken testen (twee rechthoeken zijn
 gelijk als ze exact dezelfde vorm hebben, zelfs als ze niet dezelfde
@@ -188,7 +188,7 @@ is het testen of een object `True` of `False` is. Veel objecten worden
 als `False` beschouwd in speciale omstandigheden; bijvoorbeeld, een lege
 list wordt als `False` geëvalueerd. Ik heb dit kort besproken in
 hoofdstuk
-<a href="#ch:conditions" data-reference-type="ref" data-reference="ch:conditions">7</a>.
+7.
 
 ```python
 buffer = []

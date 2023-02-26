@@ -71,7 +71,7 @@ for i in range( 10, 16 ):
 ```
 
 More details on UTF-8 encoding will be given in Chapter
-<a href="#ch:bitwiseoperators" data-reference-type="ref" data-reference="ch:bitwiseoperators">20</a>,
+20,
 but for dealing with text files, the information above suffices.
 
 [^10]: I have to make note of some Python behavior that seems bizarre

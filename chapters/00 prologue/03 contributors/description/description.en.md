@@ -1,16 +1,16 @@
 -   "oajns" indicated some spelling mistakes in Chapter
-    <a href="#ch:recursion" data-reference-type="ref" data-reference="ch:recursion">10</a>
+    10
     and in Appendices
-    <a href="#ch:pcinput" data-reference-type="ref" data-reference="ch:pcinput">31</a>
+    31
     and
-    <a href="#ch:pcmaze" data-reference-type="ref" data-reference="ch:pcmaze">32</a>
+    32
     (fixed in version 1.0.4).
 
 -   Larry Cali pointed out an error in the code for Exercise 4.3, which
     could give problems with floating-point values which Python cannot
     store exactly. I fixed the exercise and made a remark on this in
     Chapter
-    <a href="#ch:expressions" data-reference-type="ref" data-reference="ch:expressions">4</a>
+    4
     (fixed in version 1.0.5).
 
 -   Isaac Kramer noted a problem in Exercise 9.5, which made the issue
@@ -19,7 +19,7 @@
 
 -   Ruud van Cruchten indicated that my discussion of providing
     multi-line commentary in Chapter
-    <a href="#ch:variables" data-reference-type="ref" data-reference="ch:variables">5</a>
+    5
     was incomplete and could lead to problems. I have extended the text
     in this respect (fixed in version 1.0.7).
 

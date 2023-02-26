@@ -66,7 +66,7 @@ them reasonably intelligently to a legal name for a path, which it
 returns. This means that it will add and remove slashes as needed.
 `join()` is particularly handy in combination with `listdir()` (see
 Chapter
-<a href="#ch:operatingsystem" data-reference-type="ref" data-reference="ch:operatingsystem">16</a>,
+16,
 and the example below).
 
 The reason that `join()` is handy with `listdir()`, is that `listdir()`

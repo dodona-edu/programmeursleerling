@@ -1,5 +1,5 @@
 In hoofdstuk
-<a href="#ch:expressions" data-reference-type="ref" data-reference="ch:expressions">4</a>
+4
 heb ik strings kort geïntroduceerd. Ik heb uitgelegd dat een string een
 tekst is, die omsloten is door enkele of dubbele aanhalingstekens, en
 dat een string iedere lengte mag hebben, inclusief nul tekens lang. Het
@@ -19,23 +19,23 @@ print( 2 * s1 + 2 * s2 )
 ```
 
 Hoofdstuk
-<a href="#ch:simplefunctions" data-reference-type="ref" data-reference="ch:simplefunctions">6</a>
+6
 introduceerde de `format()` functie die strings op allerlei manieren kan
 formatteren. Ik gaf ook aan dat je de lengte van een string kunt bepalen
 met de `len()` functie.
 
 String vergelijkingen heb ik uitgelegd in hoofdstuk
-<a href="#ch:conditions" data-reference-type="ref" data-reference="ch:conditions">7</a>;
+7;
 ik noemde specifiek het feit dat bij vergelijkingen tussen strings de
 alfabetische regels worden aangehouden, waarbij hoofdletters altijd
 eerder in het alfabet staan dan kleine letters. Ik zal hier in dit
 hoofdstuk meer over zeggen. In hoofdstuk
-<a href="#ch:conditions" data-reference-type="ref" data-reference="ch:conditions">7</a>
+7
 gaf ik ook aan dat de `in` operator gebruikt kan worden om te testen of
 tekens of substrings voorkomen in een string.
 
 Hoofdstuk
-<a href="#ch:iterations" data-reference-type="ref" data-reference="ch:iterations">8</a>
+8
 legde uit hoe je met een `for` loop alle tekens in een string kunt
 doorlopen.
 

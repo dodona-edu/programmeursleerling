@@ -31,4 +31,4 @@ u.close()
 Merk op dat van `urllib` alleen `urlopen` geïmporteerd hoeft te worden.
 Zodra je een webpagina hebt geopend, beschik je over een handle, waarop
 je de reguliere methodes kunt gebruiken die zijn uitgelegd in hoofdstuk
-<a href="#ch:textfiles" data-reference-type="ref" data-reference="ch:textfiles">17</a>.
+17.

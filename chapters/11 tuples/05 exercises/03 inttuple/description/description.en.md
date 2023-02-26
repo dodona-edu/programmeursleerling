@@ -14,7 +14,7 @@ Write a function `flatten` that takes an `inttuple`. The function must return a 
 {:class="callout callout-info"}
 > #### Tip
 > Since the `inttuple` is defined recursively, a recursive function is probably the
-right approach. If you skipped Chapter <a href="#ch:recursion" data-reference-type="ref" data-reference="ch:recursion">10</a>, you probably should skip this exercise too. Use the `isinstance()` function (explained in Chapter <a href="#ch:functions" data-reference-type="ref" data-reference="ch:functions">9</a>) to determine whether you are dealing with an integer or a tuple.
+right approach. If you skipped Chapter 9) to determine whether you are dealing with an integer or a tuple.
 
 ### Example
 

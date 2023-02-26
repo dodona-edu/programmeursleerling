@@ -2,7 +2,7 @@ Tuples worden niet vaak in Python code gebruikt (behalve als
 retourwaardes van functies). Een logische applicatie van tuples zou zijn
 de afhandeling van waardes die altijd voorkomen in kleine verzamelingen.
 Echter, object oriëntatie (hoofdstuk
-<a href="#ch:objectorientation" data-reference-type="ref" data-reference="ch:objectorientation">21</a>
+21
 en verder) biedt veel technieken en hulpmiddelen om met zulke kleine
 verzamelingen om te gaan, wat betekent dat programmeurs meestal voor
 object oriëntatie kiezen als ze dat soort zaken onder handen hebben.
@@ -26,7 +26,7 @@ def afstand( p1, p2 ):
 
 punt1 = (1,2)
 punt2 = (5,5)
-print( "Afstand tussen", punt1, "en", punt2, "is", 
+print( "Afstand tussen", punt1, "en", punt2, "is",
     afstand( punt1, punt2 ) )
 ```
 
@@ -49,18 +49,18 @@ def afstand( p1, p2 ):
 # 1-dimensionale ruimte
 punt1 = (1,)
 punt2 = (5,)
-print( "1D: afstand tussen", punt1, "en", punt2, "is", 
+print( "1D: afstand tussen", punt1, "en", punt2, "is",
     afstand( punt1, punt2 ) )
 
 # 2-dimensionale ruimte
 punt1 = (1,2)
 punt2 = (5,5)
-print( "2D: afstand tussen", punt1, "en", punt2, "is", 
+print( "2D: afstand tussen", punt1, "en", punt2, "is",
     afstand( punt1, punt2 ) )
 
 # 3-dimensionale ruimte
 punt1 = (1,2,4)
 punt2 = (5,5,8)
-print( "3D: afstand tussen", punt1, "en", punt2, "is", 
+print( "3D: afstand tussen", punt1, "en", punt2, "is",
     afstand( punt1, punt2 ) )
 ```

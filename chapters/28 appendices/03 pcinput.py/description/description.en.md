@@ -11,7 +11,7 @@ Note that these functions are rather ugly as they print error messages
 if something is wrong. However, nicer functions would be more difficult
 to use (you would have to know about exceptions, which are not covered
 until Chapter
-<a href="#ch:exceptions" data-reference-type="ref" data-reference="ch:exceptions">18</a>).
+18).
 For the purpose of learning to code Python, they work fine.
 
 Each of the functions asks the user to supply a value of a certain type

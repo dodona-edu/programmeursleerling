@@ -22,7 +22,7 @@ similar to calculating the value of decimal numbers, where the rightmost
 digit is multiplied by 1, the digit next to that by 10, the digit next
 to that by 100, etcetera, and adding up all those resulting values. It
 is also similar to hexadecimal counting, which was discussed in Chapter
-<a href="#ch:strings" data-reference-type="ref" data-reference="ch:strings">11</a>.
+11.
 
 When bits are numbered, by convention numbering starts at zero at the
 rightmost end, and numbers are increased when counting to the left,
@@ -58,7 +58,7 @@ are 256 different values that can be expressed by one byte.
 
 The most basic character encoding mechanism is ASCII. The ASCII table
 was shown in Chapter
-<a href="#ch:strings" data-reference-type="ref" data-reference="ch:strings">11</a>,
+11,
 including hexadecimal codes. You may have noticed that the codes used
 ran from (hexadecimal) 20 to 7E. The codes below 20 are used for special
 sequences (such as the newline character). The code 7F usually represent
@@ -72,16 +72,16 @@ these unused bytes have a 1 as their leftmost bit. Naturally, some
 character encodings were introduced that assign a character to all 256
 different values that a byte can take. A typical one is `latin-1`, which
 is discussed in Chapter
-<a href="#ch:textfiles" data-reference-type="ref" data-reference="ch:textfiles">17</a>.
+17.
 Unfortunately, not all encoding mechanisms assign the same characters to
 the numbers between 128 and 255. However, all encoding mechanisms in use
 today at least have the basic ASCII characters for the values 0 to 127.
 
 Python is based on Unicode encoding. Specifically, it uses UTF-8 as
 character encoding mechanism (discussed in Chapters
-<a href="#ch:strings" data-reference-type="ref" data-reference="ch:strings">11</a>
+11
 and
-<a href="#ch:textfiles" data-reference-type="ref" data-reference="ch:textfiles">17</a>).
+17).
 UTF-8 encoding works as follows:
 
 -   A byte that has a zero as leftmost bit is an ASCII character.

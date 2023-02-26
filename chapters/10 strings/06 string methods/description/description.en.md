@@ -4,7 +4,7 @@ operation. Since strings are immutable, they never change the string
 they work on, but they always return a changed version of the string.
 
 Like the `format()` method introduced in Chapter
-<a href="#ch:simplefunctions" data-reference-type="ref" data-reference="ch:simplefunctions">6</a>,
+6,
 all these methods are called using the syntax `<string>.<method>()`,
 i.e., you have to write the string that they work on before the method
 call, with a period in between. You will encounter this more often, and
@@ -154,4 +154,4 @@ for string cleaning which you wrote as an exercise above.
     commas in the fields that are stored in the CSV file, so it depends
     a bit on the contents of the file whether this simple approach will
     work. More on CSV files will be said in Chapter
-    <a href="#ch:fileformats" data-reference-type="ref" data-reference="ch:fileformats">27</a>.
+    27.

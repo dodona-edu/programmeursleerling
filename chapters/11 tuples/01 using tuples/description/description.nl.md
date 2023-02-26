@@ -129,7 +129,7 @@ print( t1[2] )
 
 Je kunt zelfs sub-tuples maken, met dezelfde regels als je hebt voor
 substrings (als je die niet meer weet, lees dan nog eens hoofdstuk
-<a href="#ch:strings" data-reference-type="ref" data-reference="ch:strings">11</a>).
+11).
 Een sub-tuple is ook weer een tuple. Bijvoorbeeld:
 
 ```python
@@ -174,7 +174,7 @@ print( t3 > t4 )
 ### Tuple retourwaardes
 
 In hoofdstuk
-<a href="#ch:functions" data-reference-type="ref" data-reference="ch:functions">9</a>
+9
 legde ik uit dat functies meerdere waardes kunnen retourneren. Als je
 zoiets programmeert, dan komt het er in feite op neer dat de functie een
 tuple retourneert. Om zulke retourwaardes af te handelen, doe je wat

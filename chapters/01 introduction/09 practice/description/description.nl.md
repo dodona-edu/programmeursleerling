@@ -11,7 +11,7 @@ daarin één of meerdere genummerde opgaves. Je moet al die opgaves
 proberen te maken, en je moet ze zelfstandig maken (dus zonder hulp en
 zonder de antwoorden op te zoeken). Antwoorden voor die opgaves zijn
 opgenomen achterin het boek, in appendix
-<a href="#ch:answers" data-reference-type="ref" data-reference="ch:answers">34</a>.
+34.
 Je kunt ze ook downloaden via <http://www.spronck.net/pythonbook>{:target="_blank"}. Ik
 wil de volgende punten expliciet onder de aandacht brengen:
 

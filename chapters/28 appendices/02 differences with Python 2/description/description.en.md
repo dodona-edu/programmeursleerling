@@ -45,7 +45,7 @@ parentheses after the `print()` function are not necessary in Python 2,
 but obligatory in Python 3.
 
 In Python 3, the `range()` function is an iterator (see Chapter
-<a href="#ch:iteratorsandgenerators" data-reference-type="ref" data-reference="ch:iteratorsandgenerators">24</a>).
+24).
 This entails that it needs very little memory space: it only retains the
 last number generated, the step size, and the limit that it should
 reach. In Python 2 `range()` is implemented differently: it produces all

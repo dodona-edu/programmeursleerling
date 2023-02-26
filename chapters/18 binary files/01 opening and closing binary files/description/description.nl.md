@@ -11,7 +11,7 @@ ook een binair bestand openen voor zowel lezen als schrijven; dat geef
 je aan met de modus `"r+"`, dus lezen en schrijven in binaire modus is
 `"r+b"` (hoewel je eventueel ook een tekstbestand kunt openen in lezen
 plus schrijven modus, via `"r+"`, gaf ik dat niet aan in hoofdstuk
-<a href="#ch:textfiles" data-reference-type="ref" data-reference="ch:textfiles">17</a>,
+17,
 omdat dat zelden zinvol is). Net als bij tekstbestanden, kun je een
 binair bestand openen in "alleen schrijven" modus met `"wb"`; het
 bestand wordt dan leeggemaakt. `"w+b"` opent een bestand voor zowel

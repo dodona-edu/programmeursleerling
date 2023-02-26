@@ -82,7 +82,7 @@ returns `True` for all comparisons. For data types for which $$==$$ is not
 defined, it executes an identity comparison, but for lists it has been
 defined as a comparison of the contents. I will return to this topic
 when discussing "operator overloading" in Chapter
-<a href="#ch:operatoroverloading" data-reference-type="ref" data-reference="ch:operatoroverloading">22</a>.
+22.
 
 ### Shallow vs. deep copies
 

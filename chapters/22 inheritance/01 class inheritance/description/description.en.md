@@ -1,5 +1,5 @@
 In Chapter
-<a href="#ch:objectorientation" data-reference-type="ref" data-reference="ch:objectorientation">21</a>
+21
 I gave the example of `Apple` and `Orange` both being subclasses of a
 class `Fruit`, and `Student` and `Teacher` both being subclasses of a
 class `Person`. You can implement such a hierarchy of classes and

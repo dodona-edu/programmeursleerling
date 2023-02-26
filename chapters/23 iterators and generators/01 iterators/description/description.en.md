@@ -277,7 +277,7 @@ Moreover, it can get two optional arguments. The first is `key=<key>`,
 where `<key>` is the name of a function that is used to determine the
 key for the sorting process. This works exactly as the `key=<key>`
 parameter for the list `sort()` method – see Chapter
-<a href="#ch:lists" data-reference-type="ref" data-reference="ch:lists">13</a>
+13
 for more information. If no key is given, the sorting is alphabetical
 order for strings, and numerical order for numbers. For other data
 types, or mixed data types, it depends on the specification of the key

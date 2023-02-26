@@ -49,7 +49,7 @@ dat het teken met dat hexadecimale getal als nummer. Bijvoorbeeld, de
 hexadecimale code voor een spatie is `\x20`. Met andere woorden:
 `"Hello, world!\"` is hetzelfde als `"Hello,\\x20world!\"` (ik heb dit
 allemaal eerder besproken in hoofdstuk
-<a href="#ch:strings" data-reference-type="ref" data-reference="ch:strings">11</a>).
+11).
 
 ```python
 hw1 = "Hello,\x20world!"
@@ -125,7 +125,7 @@ print( hw2 )
 De reden dat het niet werkt, is dat als een string gegeven is als byte
 string, er een codering gebruikt wordt om de string op te slaan, volgens
 de Unicode standaard (die ik bediscussieerde in hoofdstuk
-<a href="#ch:textfiles" data-reference-type="ref" data-reference="ch:textfiles">17</a>).
+17).
 Je moet de byte string "decoderen" volgens een zeker coderingsschema,
 meestal `"utf-8"`, omdat die het meest gebruikte Unicode formaat
 vastlegt. Decoderen doe je middels de `decode()` methode, met het

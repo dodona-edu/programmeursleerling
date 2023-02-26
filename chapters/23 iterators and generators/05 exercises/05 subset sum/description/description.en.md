@@ -8,7 +8,7 @@ of integers that adds up to zero. Write a program that solves the
 print it; if not, report that there is no solution.
 
 This is a repetition of one of the exercises of Chapter
-<a href="#ch:lists" data-reference-type="ref" data-reference="ch:lists">13</a>
+13
 (Lists). In that chapter I said that you have to solve the exercise
 recursively. However, using the `itertools` module, you can now solve it
 without recursion (though I suspect that recursion still is used within

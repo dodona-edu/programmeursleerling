@@ -20,7 +20,7 @@ van een regel zetten, en je kunt deze manier van commentaar geven niet
 gebruiken in een blok code dat inspringt. De reden is dat je feitelijk
 een string die uit meerdere regels bestaat in je code plaatst (meer
 hierover in hoofdstuk
-<a href="#ch:strings" data-reference-type="ref" data-reference="ch:strings">11</a>).
+11).
 
 De volgende code laat voorbeelden zien van beide manieren van
 becommentariëren:
@@ -33,7 +33,7 @@ print( "en iets anders.." ) # Geef zo commentaar op je code!
 """Een andere manier van commentaar geven is middels
 drievoudige aanhalingstekens. Dit soort commentaar mag
 meerdere regels""" # beslaan.
-'''dit mag ook via enkele aanhalingstekens''' # maar pas op 
+'''dit mag ook via enkele aanhalingstekens''' # maar pas op
 # met het gebruik van aanhalingstekens IN je commentaar als
 # je de meerdere-regels method gebruikt.
 print( "Klaar." )

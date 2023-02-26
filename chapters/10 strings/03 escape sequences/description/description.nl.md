@@ -5,7 +5,7 @@ meerdere tekens beslaan. Python interpreteert zulke speciale tekens, als
 ze in een string staan, niet letterlijk.
 
 Naast het "newline" teken `"\n"`, heb ik in hoofdstuk
-<a href="#ch:expressions" data-reference-type="ref" data-reference="ch:expressions">4</a>
+4
 ook de speciale tekens `"\'"` en `"\""` geïntroduceerd, die je kunt
 gebruiken om een enkel respectievelijk dubbel aanhalingsteken in een
 string op te nemen, ongeacht het type aanhalingstekens dat je om de

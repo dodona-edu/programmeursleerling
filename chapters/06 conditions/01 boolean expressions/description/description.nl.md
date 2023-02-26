@@ -29,7 +29,7 @@ The volgende waardes worden beschouwd als zijnde `False`:
 -   De speciale waarde `False`
 
 -   De speciale waarde `None` (die ik heb besproken in hoofdstuk
-    <a href="#ch:simplefunctions" data-reference-type="ref" data-reference="ch:simplefunctions">6</a>)
+    6)
 
 -   Iedere numerieke waarde die nul is, bijvoorbeeld 0 en 0.0
 
@@ -37,7 +37,7 @@ The volgende waardes worden beschouwd als zijnde `False`:
 
 -   Iedere lege "afbeelding," bijvoorbeeld een lege "dictionary"
     (dictionaries zijn het onderwerp van hoofdstuk
-    <a href="#ch:dictionaries" data-reference-type="ref" data-reference="ch:dictionaries">14</a>)
+    14)
 
 -   Iedere functie of methode die één van de bovenstaande waardes
     retourneert (inclusief functies die niks retourneren)
@@ -73,7 +73,7 @@ strings. Vergelijkingen tussen strings zijn alfabetische vergelijkingen,
 waarbij je wel moet bedenken dat hoofdletters altijd beschouwd worden
 als kleiner dan kleine letters (en cijfers kleiner dan alle letters). Ik
 ga daar dieper op in in hoofdstuk
-<a href="#ch:strings" data-reference-type="ref" data-reference="ch:strings">11</a>.
+11.
 
 Hier volgen een paar voorbeelden van vergelijkingen:
 

@@ -9,8 +9,8 @@ geïdentificeerd door hun studentnummers.
 
 ```python
 curses = {
-    '880254':['u123456', 'u383213', 'u234178'], 
-    '822177':['u123456', 'u223416', 'u234178'], 
+    '880254':['u123456', 'u383213', 'u234178'],
+    '822177':['u123456', 'u223416', 'u234178'],
     '822164':['u123456', 'u223416', 'u383213', 'u234178']}
 
 for c in curses:
@@ -32,18 +32,18 @@ waardes.
 
 ```python
 curses = {
-    '880254': 
-    { "naam":"Onderzoeksvaardigheden Data Processing", "ects":3, 
-        "studenten":{'u123456':8, 'u383213':7.5, 'u234178':6} }, 
-    '822177': 
+    '880254':
+    { "naam":"Onderzoeksvaardigheden Data Processing", "ects":3,
+        "studenten":{'u123456':8, 'u383213':7.5, 'u234178':6} },
+    '822177':
     { "naam":"Logica", "ects":6,
-        "studenten":{'u123456':5, 'u223416':7, 'u234178':9} }, 
-    '822164': 
+        "studenten":{'u123456':5, 'u223416':7, 'u234178':9} },
+    '822164':
     { "naam":"Computer Games", "ects":6,
         "studenten":{'u123456':7.5, 'u223416':9 } } }
 
 for c in curses:
-    print( "{}: {} ({})".format( c, curses[c]["naam"], 
+    print( "{}: {} ({})".format( c, curses[c]["naam"],
         curses[c]["ects"] ) )
     for s in curses[c]["studenten"]:
         print( "{}: {}".format( s, curses[c]["studenten"][s] ) )
@@ -54,5 +54,5 @@ Data structuren kunnen nog complexer worden dan dit als je dat wilt.
 Echter, als je inderdaad overweegt om Python programma's te maken voor
 dit soort data structuren, doe je er goed aan om eerst object oriëntatie
 te bestuderen (hoofdstuk
-<a href="#ch:objectorientation" data-reference-type="ref" data-reference="ch:objectorientation">21</a>
+21
 en verder) en waarschijnlijk een aparte cursus over databases te volgen.

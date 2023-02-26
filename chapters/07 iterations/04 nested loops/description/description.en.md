@@ -68,4 +68,4 @@ for i in range( 3 ):
 [^3]: Unless you use them in a function, then you can exit the function
     at any time and so interrupt both the inner and the outer loop. But
     that will follow in Chapter
-    <a href="#ch:functions" data-reference-type="ref" data-reference="ch:functions">9</a>.
+    9.

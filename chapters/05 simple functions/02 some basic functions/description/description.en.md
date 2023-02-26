@@ -237,9 +237,9 @@ such a way that a variable (or value) of that data type has to be placed
 in front of the function call, with a period in between. The reason why
 this is, has to do with something called "object orientation," which I
 will discuss in Chapters
-<a href="#ch:objectorientation" data-reference-type="ref" data-reference="ch:objectorientation">21</a>
+21
 to
-<a href="#ch:iteratorsandgenerators" data-reference-type="ref" data-reference="ch:iteratorsandgenerators">24</a>.
+24.
 For now, just know that such functions are called "methods," and to call
 them, you have to place the variable (or value) of the right data type
 in front of them, with a period in between. The variable (or value) that
@@ -261,7 +261,7 @@ left to right, inserting them in the order that they are given. For
 example:
 
 ```python
-print( "The first 3 numbers are {}, {} and {}.".format( 
+print( "The first 3 numbers are {}, {} and {}.".format(
     "one", "two", "three" ) )
 ```
 
@@ -273,7 +273,7 @@ that this is very common in programming languages and you will see this
 many more times). For example:
 
 ```python
-print( "Backwards they are {2}, {1} and {0}.".format( 
+print( "Backwards they are {2}, {1} and {0}.".format(
     "one", "two", "three" ) )
 ```
 
@@ -282,7 +282,7 @@ suitable string representation. For instance, it can deal with integers
 and floats, and you can mix those up with strings as you like:
 
 ```python
-print( "The first 3 numbers are {}, {} and {}.".format( 
+print( "The first 3 numbers are {}, {} and {}.".format(
     "one", 2, 3.0 ) )
 ```
 
@@ -300,7 +300,7 @@ colon. This is called the "precision." The following code uses a
 precision of 7.
 
 ```python
-print( "The first 3 numbers are {:7}, {:7} and {:7}.".format( 
+print( "The first 3 numbers are {:7}, {:7} and {:7}.".format(
     "one", "two", "three" ) )
 ```
 
@@ -309,7 +309,7 @@ precision, `format()` will take as much space as it needs. So you cannot
 use the precision to, for instance, break off a string prematurely.
 
 ```python
-print( "The first 3 numbers are {:4}, {:4} and {:4}.".format( 
+print( "The first 3 numbers are {:4}, {:4} and {:4}.".format(
     "one", "two", "three" ) )
 ```
 
@@ -319,7 +319,7 @@ colon and the precision. Alignment characters are `<` for align left,
 `^` for align center, and `>` for align right.
 
 ```python
-print( "The first 3 numbers are {:>7}, {:^7} and {:<7}.".format( 
+print( "The first 3 numbers are {:>7}, {:^7} and {:<7}.".format(
     "one", "two", "three" ) )
 ```
 

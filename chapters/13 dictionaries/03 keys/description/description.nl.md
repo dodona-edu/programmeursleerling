@@ -7,7 +7,7 @@ nuttig.
 Een eenvoudig voorbeeld van het nut van tuples als keys is een
 dictionary waarbij je informatie wilt opslaan die geassocieerd is met
 punten in een 2-dimensionale ruimte (ik besprak dit in hoofdstuk
-<a href="#ch:tuples" data-reference-type="ref" data-reference="ch:tuples">12</a>).
+12).
 Er is geen goede manier waarmee je een 2-dimensionaal punt kunt opslaan
 als een enkel getal of string. Het is niet onmogelijk (je kunt
 bijvoorbeeld het getallenpaar omzetten naar hun string-representatie en

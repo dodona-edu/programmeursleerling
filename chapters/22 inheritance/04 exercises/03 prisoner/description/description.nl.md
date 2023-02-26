@@ -50,7 +50,7 @@ Merk op dat de manier waarop ik de score telling heb gecodeerd (met een
 statement als `3 if c1 == COOPERATIE else 1`) een verkorte manier is om
 met Python een eenvoudige conditie te schrijven, die lijkt op list
 comprehension (zie hoofdstuk
-<a href="#ch:lists" data-reference-type="ref" data-reference="ch:lists">13</a>).
+13).
 Dat heb ik alleen gedaan om ruimte te besparen en leesbaarheid te
 verhogen; je mag dit natuurlijk ook doen met de 4 regels code die nodig
 zijn om dit in een `if`-statement te zetten.

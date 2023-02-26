@@ -4,7 +4,7 @@ multiple characters. Python interprets escape sequences in a string as a
 special character.
 
 Besides the newline character `"\n"`, in Chapter
-<a href="#ch:expressions" data-reference-type="ref" data-reference="ch:expressions">4</a>
+4
 I also introduced the special characters `"\'"` and `"\""`, which can be
 used to place a single respectively double quote in a string, regardless
 of what characters surround the string. I also mentioned that you can

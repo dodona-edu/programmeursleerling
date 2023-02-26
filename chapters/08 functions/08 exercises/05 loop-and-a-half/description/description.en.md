@@ -1,5 +1,5 @@
 In Chapter
-<a href="#ch:iterations" data-reference-type="ref" data-reference="ch:iterations">8</a>,
+8,
 the loop-and-a-half was explained. The final code for the example that
 was presented is given below, and I made the remark that there is still
 something ugly about this code, namely the fact that if `x` is smaller

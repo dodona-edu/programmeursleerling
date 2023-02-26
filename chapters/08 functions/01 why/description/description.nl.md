@@ -58,4 +58,4 @@ samengevat als een middel om de volgende zaken te bewerkstelligen:
 
 -   *Recursie*: Het beschikbaar maken van een techniek die "recursie"
     heet, wat het onderwerp is van hoofdstuk
-    <a href="#ch:recursion" data-reference-type="ref" data-reference="ch:recursion">10</a>.
+    10.

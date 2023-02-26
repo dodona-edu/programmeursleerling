@@ -1,5 +1,5 @@
 In hoofstuk
-<a href="#ch:objectorientation" data-reference-type="ref" data-reference="ch:objectorientation">21</a>
+21
 gaf ik een voorbeeld van een class `Appel` en een class `Peer`, die
 beide "afgeleid" waren van een class `Fruit`. Ik gaf ook een voorbeeld
 van een class `Student` en een class `Docent` die beide zijn afgeleid
@@ -113,7 +113,7 @@ class Persoon:
         return self.leeftijd < 18
 
 class Student( Persoon ):
-    def __init__( self, voornaam, achternaam, 
+    def __init__( self, voornaam, achternaam,
         leeftijd, programma ):
         super().__init__( voornaam, achternaam, leeftijd )
         self.cursussen = []

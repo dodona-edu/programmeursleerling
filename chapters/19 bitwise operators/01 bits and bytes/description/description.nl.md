@@ -25,7 +25,7 @@ van decimale getallen, waarbij het rechtse cijfer vermenigvuldigd wordt
 met 1, het cijfer ernaast met 10, het cijfer daarnaast met 100,
 etcetera, en dan alle uitkomsten worden opgeteld. Het is ook equivalent
 met het hexadecimaal tellen, dat ik besprak in hoofdstuk
-<a href="#ch:strings" data-reference-type="ref" data-reference="ch:strings">11</a>.
+11.
 
 Als de bits genummerd worden, is het de gewoonte om de meest rechtse bit
 van een binair getal nummer nul te geven, en de nummering te laten
@@ -61,7 +61,7 @@ kunnen worden.
 
 De meest basale manier om tekens te coderen is via de ASCII tabel, die
 ik toonde in hoofdstuk
-<a href="#ch:strings" data-reference-type="ref" data-reference="ch:strings">11</a>.
+11.
 In die tabel staan ook voor alle tekens de hexadecimale codes. Het is je
 wellicht opgevallen dat de codes liepen van (hexadecimaal) 20 tot en met
 7E. De codes onder de 20 worden gebruikt voor speciale controle tekens
@@ -77,7 +77,7 @@ worden gebruikt, hebben alle een 1 als de linkerbit. Het ligt voor de
 hand dat er teken coderingen zijn die een teken toekennen aan alle 256
 waardes die een byte kan bevatten. Een typische manier van zo'n codering
 is `latin-1`, die ik in hoofdstuk
-<a href="#ch:textfiles" data-reference-type="ref" data-reference="ch:textfiles">17</a>
+17
 noemde. Helaas gebruiken niet alle coderingen dezelfde tekens voor byte
 waardes 128 tot en met 255. Maar alle manieren van codering die vandaag
 de dag in gebruik zijn hebben wel dezelfde basis ASCII tekens in de byte
@@ -85,9 +85,9 @@ waardes 0 tot en met 127.
 
 Python is gebaseerd op de Unicode codering. Meer specifiek gebruikt het
 UTF-8 als coderingsmechanisme (die ik eerder noemde in hoofdstukken
-<a href="#ch:strings" data-reference-type="ref" data-reference="ch:strings">11</a>
+11
 en
-<a href="#ch:textfiles" data-reference-type="ref" data-reference="ch:textfiles">17</a>).
+17).
 UTF-8 werkt als volgt:
 
 -   Een byte die een 0 heeft als meest linker bit is een ASCII teken.

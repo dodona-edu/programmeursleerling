@@ -1,5 +1,5 @@
 In Chapter
-<a href="#ch:recursion" data-reference-type="ref" data-reference="ch:recursion">10</a>
+10
 an example of searching a maze is presented. In that example a module
 `pcmaze` is used, that I wrote for this book. The module contains a
 specific maze, and functions to access features of the maze. To create
@@ -16,10 +16,10 @@ def connected( x, y ):
         (15,16)):
         return True
     return False
-    
+
 def entrance():
     return 1
-    
+
 def exit():
     return 16
 ```

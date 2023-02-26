@@ -102,7 +102,7 @@ kleinste, en hoeveel er deelbaar zijn door 3. Je kunt dan zeggen: "Het
 is gemakkelijk te bepalen wat de grootste en de kleinste zijn: daar
 gebruik ik gewoon de `max()` en `min()` functies voor (besproken in
 hoofdstuk
-<a href="#ch:simplefunctions" data-reference-type="ref" data-reference="ch:simplefunctions">6</a>).
+6).
 Deelbaar door 3 is misschien wat moeilijker, daar moet ik over denken."
 Maar `max()` en `min()` maken het noodzakelijk dat alle tien de getallen
 tegelijkertijd in het geheugen worden gehouden. Dat is nog te doen voor

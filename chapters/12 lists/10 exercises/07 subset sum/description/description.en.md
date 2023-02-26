@@ -9,5 +9,5 @@ print it; if not, report that there is no solution.
 
 Hint: This problem is tackled best using recursion. If you skipped
 Chapter
-<a href="#ch:recursion" data-reference-type="ref" data-reference="ch:recursion">10</a>,
+10,
 you better skip this exercise too.

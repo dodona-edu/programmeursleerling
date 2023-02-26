@@ -66,4 +66,4 @@ except IOError as ex:
 
 {:class="callout callout-info"}
 > #### Opmerking
-> `FileNotFoundError` is een "subclass" (zie hoofdstuk <a href="#ch:inheritance" data-reference-type="ref" data-reference="ch:inheritance">23</a>) van `IOError`. Dit betekent dat het afvangen van `FileNotFoundError` equivalent is met het afvangen van `IOError` `as ex` en testen of `ex.args[0]` de waarde `errno.ENOENT` bevat.
+> `FileNotFoundError` is een "subclass" (zie hoofdstuk 23) van `IOError`. Dit betekent dat het afvangen van `FileNotFoundError` equivalent is met het afvangen van `IOError` `as ex` en testen of `ex.args[0]` de waarde `errno.ENOENT` bevat.

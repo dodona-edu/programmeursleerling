@@ -46,7 +46,7 @@ two-character hexadecimal code that represents the character with the
 specified number. For example, the hexadecimal code for a space is
 `\x20`, i.e., `"Hello, world!\"` is the same as `"Hello,\\x20world!\"`
 (this was discussed in Chapter
-<a href="#ch:strings" data-reference-type="ref" data-reference="ch:strings">11</a>).
+11).
 
 ```python
 hw1 = "Hello,\x20world!"
@@ -118,7 +118,7 @@ print( hw2 )
 The reason that it does not, is that when a string is in the format of a
 byte string, it uses an encoding scheme, according to the Unicode
 standard (discussed in Chapter
-<a href="#ch:textfiles" data-reference-type="ref" data-reference="ch:textfiles">17</a>).
+17).
 You have to "decode" the byte string according to a certain decoding
 scheme, which usually is `"utf-8"`, as that is the most common Unicode
 format. You decode using the `decode()` method, with the encoding scheme

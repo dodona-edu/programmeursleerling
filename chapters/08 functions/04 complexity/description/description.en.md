@@ -66,17 +66,17 @@ def middle( n1, n2, n3 ):
 def largest( n1, n2, n3 ):
     return n1 # just return something for now
 
-print( "sum of smallest =", smallest( num11, num12, num13 ) + 
+print( "sum of smallest =", smallest( num11, num12, num13 ) +
     smallest( num21, num22, num23 ) )
-print( "sum of middle =", middle( num11, num12, num13 ) + 
+print( "sum of middle =", middle( num11, num12, num13 ) +
     middle( num21, num22, num23 ) )
-print( "sum of largest =", largest( num11, num12, num13 ) + 
+print( "sum of largest =", largest( num11, num12, num13 ) +
     largest( num21, num22, num23 ) )
 ```
 
 {:class="callout callout-info"}
 > #### Note
-> In the code above, to reduce the size, I used a "multiple assignment" to give the variables `num`$$xx$$ their values. You can have multiple variables at the right of the assignment operator, and an equal number of values to the left, and the first value will then go to the first variable, the second value to the second variable, etcetera. I will discuss this in more depth in Chapter <a href="#ch:tuples" data-reference-type="ref" data-reference="ch:tuples">12</a>.
+> In the code above, to reduce the size, I used a "multiple assignment" to give the variables `num`$$xx$$ their values. You can have multiple variables at the right of the assignment operator, and an equal number of values to the left, and the first value will then go to the first variable, the second value to the second variable, etcetera. I will discuss this in more depth in Chapter 12.
 
 The program above readable, understandable, and can already be tested.
 True, the functions `smallest()`, `middle()`, and `largest()` do not
@@ -128,11 +128,11 @@ def middle( n1, n2, n3 ):
 def largest( n1, n2, n3 ):
     return largest_of_two( largest_of_two( n1, n2 ), n3 )
 
-print( "sum of smallest =", smallest( num11, num12, num13 ) + 
+print( "sum of smallest =", smallest( num11, num12, num13 ) +
     smallest( num21, num22, num23 ) )
-print( "sum of middle =", middle( num11, num12, num13 ) + 
+print( "sum of middle =", middle( num11, num12, num13 ) +
     middle( num21, num22, num23 ) )
-print( "sum of largest =", largest( num11, num12, num13 ) + 
+print( "sum of largest =", largest( num11, num12, num13 ) +
     largest( num21, num22, num23 ) )
 ```
 
@@ -181,17 +181,17 @@ def smallest( n1, n2, n3 ):
     return smallest_of_two( smallest_of_two( n1, n2 ), n3 )
 
 def middle( n1, n2, n3 ):
-    return remove_two_of_three( n1, n2, n3, 
+    return remove_two_of_three( n1, n2, n3,
         smallest( n1, n2, n3 ), largest( n1, n2, n3 ) )
 
 def largest( n1, n2, n3 ):
     return largest_of_two( largest_of_two( n1, n2 ), n3 )
 
-print( "sum of smallest =", smallest( num11, num12, num13 ) + 
+print( "sum of smallest =", smallest( num11, num12, num13 ) +
     smallest( num21, num22, num23 ) )
-print( "sum of middle =", middle( num11, num12, num13 ) + 
+print( "sum of middle =", middle( num11, num12, num13 ) +
     middle( num21, num22, num23 ) )
-print( "sum of largest =", largest( num11, num12, num13 ) + 
+print( "sum of largest =", largest( num11, num12, num13 ) +
     largest( num21, num22, num23 ) )
 ```
 

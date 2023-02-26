@@ -32,7 +32,7 @@ Python programs and modules have been converted to Python 3, this book
 is written for Python 3. If you ever have to revert back to Python 2, it
 is not hard to make the change. An overview of the differences between
 Python 2 and Python 3 is given in Appendix
-<a href="#ch:python2" data-reference-type="ref" data-reference="ch:python2">30</a>
+30
 (which is not a complete overview, but contains all the differences that
 I am aware of). If you are only using Python 3, you can ignore this
 appendix. However, considering how often I see the question "What

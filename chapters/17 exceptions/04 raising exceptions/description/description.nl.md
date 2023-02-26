@@ -2,9 +2,9 @@ Je mag zelf in je code ook exceptions genereren. Daarvoor is het
 gereserveerde woord `raise` bestemd. Je laat het volgen door één van de
 bekende exceptions (je mag eventueel ook je eigen exceptions definiëren,
 maar daarvoor moet je de hoofdstukken
-<a href="#ch:objectorientation" data-reference-type="ref" data-reference="ch:objectorientation">21</a>
+21
 tot en met
-<a href="#ch:inheritance" data-reference-type="ref" data-reference="ch:inheritance">23</a>
+23
 bestuderen). Je mag een exception die je genereert willekeurige
 argumenten meegeven, en die zijn dan weer via het `args` attribuut te
 benaderen.

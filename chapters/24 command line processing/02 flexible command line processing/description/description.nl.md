@@ -69,7 +69,7 @@ etcetera.
 In de code hierboven wordt het programma afgebroken via `sys.exit()` als
 een argument niet voldoet aan de gestelde eisen. `sys.exit()` heb ik
 geïntroduceerd in hoofdstuk
-<a href="#ch:conditions" data-reference-type="ref" data-reference="ch:conditions">7</a>.
+7.
 Ik vertelde er toen niet bij dat `sys.exit()` een numeriek argument kan
 krijgen, zoals je hierboven ziet. Dit argument wordt geretourneerd naar
 het batchbestand waarin het programma is aangeroepen, en het

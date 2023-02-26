@@ -29,7 +29,7 @@ aantal basale functies die op een enkel object werken.
 -   `__bytes__()` implementeert de representatie van het object als een
     byte string. Hierin is de methode gelijkwaardig met de `__str__()`
     methode die in hoofdstuk
-    <a href="#ch:objectorientation" data-reference-type="ref" data-reference="ch:objectorientation">21</a>
+    21
     beschreven werd
 
 ```python
@@ -37,12 +37,12 @@ class Quaternion:
     def __init__( self, a, b, c, d ):
         self.a, self.b, self.c, self.d = a, b, c, d
     def __repr__( self ):
-        return "({},{}i,{}j,{}k)".format( self.a, self.b, 
+        return "({},{}i,{}j,{}k)".format( self.a, self.b,
             self.c, self.d )
     def __neg__( self ):
         return Quaternion( -self.a, -self.b, -self.c, -self.d )
     def __abs__( self ):
-        return Quaternion( abs( self.a ), abs( self.b ), 
+        return Quaternion( abs( self.a ), abs( self.b ),
             abs( self.c ), abs( self.d ) )
     def __bytes__( self ):
         return self.__str__().encode( "utf-8" )

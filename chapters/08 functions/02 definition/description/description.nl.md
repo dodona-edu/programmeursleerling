@@ -1,5 +1,5 @@
 Hoofdstuk
-<a href="#ch:simplefunctions" data-reference-type="ref" data-reference="ch:simplefunctions">6</a>
+6
 beschrijft hoe iedere functie een naam heeft, nul of meer parameters, en
 mogelijk een retourwaarde. Als je je eigen functies maakt, moet je al
 deze elementen definiëren. Je gebruikt de volgende syntax:
@@ -137,7 +137,7 @@ Als je de parameters zo test, moet je natuurlijk wel besluiten wat je
 doet als de functie met verkeerde argumenten is aangeroepen. De
 standaard manier om dit af te handelen is door een "exception" te
 genereren. Dat bespreek ik in hoofdstuk
-<a href="#ch:exceptions" data-reference-type="ref" data-reference="ch:exceptions">18</a>.
+18.
 Vooralsnog mag je aannemen dat functies die je zelf schrijft worden
 aangeroepen met argumenten van het correcte type. Zolang je alleen zelf
 de functies gebruikt, kun je dat altijd garanderen.
@@ -170,7 +170,7 @@ De volgende code geeft voorbeelden van deze mogelijkheden:
 ```python
 def vermenigvuldig_xyz( x, y=1, z=7 ):
     print( x * y * z )
-    
+
 vermenigvuldig_xyz( 2, 2, 2 ) # x=2, y=2, z=2
 vermenigvuldig_xyz( 2, 5 )    # x=2, y=5, z=7
 vermenigvuldig_xyz( 2, z=5 )  # x=2, y=1, z=5
@@ -248,7 +248,7 @@ berekenen is voor negatieve getallen, retourneert het geen waarde als er
 een negatief argument wordt verstrekt. Echter, als je het programma
 uitvoert zie je dat het de speciale waarde `None` afdrukt. Ik heb deze
 speciale waarde besproken in hoofdstuk
-<a href="#ch:simplefunctions" data-reference-type="ref" data-reference="ch:simplefunctions">6</a>.
+6.
 Het hoofdprogramma verwacht dat de functie `pythagoras()` een getal
 teruggeeft dat afgedrukt kan worden, dus `pythagoras()` voldoet niet aan
 de verwachting aangezien het niets retourneert in bepaalde
@@ -458,7 +458,7 @@ in elkaar zit. Je kunt de functie gebruiken zonder kennis van het
 interne proces. Dus je mag gewoon negeren wat je in `plusDagen()` ziet
 staan (overigens gebruikt de code van `plusDagen()` de `datetime`
 module, die aan de orde komt in hoofdstuk
-<a href="#ch:varioususefulmodules" data-reference-type="ref" data-reference="ch:varioususefulmodules">28</a>).
+28).
 
 ### Functies aanroepen vanuit functies
 
@@ -625,4 +625,3 @@ ik voor andere doeleinden gebruik.
     collega ophemelen door te zeggen: "Hij is zo briljant, als ik zijn
     code zie snap ik er niks van!" Als iemand dat over mijn code zou
     zeggen zou ik me diep schamen.
-

@@ -13,7 +13,7 @@ Schrijf een functie `afvlakken` waaraan een `inttuple` moet doorgegeven worden. 
 
 {:class="callout callout-info"}
 > #### Tip
-> Omdat de `inttuple` recursief is gedefinieerd, is een recursieve functie waarschijnlijk de beste aanpak. Als je hoofdstuk <a href="#ch:recursion" data-reference-type="ref" data-reference="ch:recursion">10</a> hebt overgeslagen, kun je waarschijnlijk deze opdracht beter ook overslaan. Als je hem wel maakt, dan kun je de `isinstance()` functie (uitgelegd in hoofdstuk <a href="#ch:functions" data-reference-type="ref" data-reference="ch:functions">9</a>) gebruiken om te bepalen of een element een integer of een tuple is.
+> Omdat de `inttuple` recursief is gedefinieerd, is een recursieve functie waarschijnlijk de beste aanpak. Als je hoofdstuk 9) gebruiken om te bepalen of een element een integer of een tuple is.
 
 ### Voorbeeld
 

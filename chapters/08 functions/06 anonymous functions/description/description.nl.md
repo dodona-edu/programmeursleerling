@@ -50,4 +50,4 @@ woord eraan hechten.
 
 Af en toe hebben anonieme functies nut, omdat ze een programma iets
 beter leesbaar kunnen maken. Ik toon hiervan een voorbeeld in hoofdstuk
-<a href="#ch:lists" data-reference-type="ref" data-reference="ch:lists">13</a>.
+13.

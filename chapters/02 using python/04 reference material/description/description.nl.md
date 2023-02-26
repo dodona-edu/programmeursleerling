@@ -30,4 +30,4 @@ het te doen.
 In dit boek heb ik ook een lijst met veelvoorkomende problemen die je
 kunt tegenkomen bij het schrijven en draaien van Python programma's, en
 mogelijke oplossingen voor deze problemen, opgenomen in appendix
-<a href="#ch:troubleshooting" data-reference-type="ref" data-reference="ch:troubleshooting">29</a>).
+29).

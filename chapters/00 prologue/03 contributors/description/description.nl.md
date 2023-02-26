@@ -2,7 +2,7 @@
     problemen konden optreden met waardes die Python niet precies kan
     opslaan. Ik heb het antwoord verbeterd en een opmerking gemaakt in
     hoofdstuk
-    <a href="#ch:expressions" data-reference-type="ref" data-reference="ch:expressions">4</a>
+    4
     (gecorrigeerd in versie 1.0.5).
 
 -   Isaac Kramer ontdekte een fout in opgave 9.5, die het probleem in de
@@ -12,7 +12,7 @@
 
 -   Ruud van Cruchten gaf aan dat de uitleg over het geven van
     commentaar over meerdere regels in hoofdstuk
-    <a href="#ch:variables" data-reference-type="ref" data-reference="ch:variables">5</a>
+    5
     incompleet was en tot fouten kon leiden. Ik heb deze beschrijving
     uitgebreid (gecorrigeerd in versie 1.0.7).
 
@@ -49,7 +49,7 @@
 
 -   Jaap van der Heide wees mij op een stukje onvertaalde tekst in
     hoofdstuk
-    <a href="#ch:variables" data-reference-type="ref" data-reference="ch:variables">5</a>
+    5
     (opgelost in versie 1.0.13).
 
 -   Patrick Vekemans wees mij op een fout in de code in subsectie

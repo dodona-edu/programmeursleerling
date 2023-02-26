@@ -103,7 +103,7 @@ need you to create a program that tells me which is the largest, which
 is the smallest, and how many are divisible by 3. You might say: "It is
 easy to determine the largest and the smallest; I just use the `max()`
 and `min()` functions (introduced in Chapter
-<a href="#ch:simplefunctions" data-reference-type="ref" data-reference="ch:simplefunctions">6</a>).
+6).
 Divisible by 3 is a bit tricky, I have to think about that." But `max()`
 and `min()` require you to keep all the numbers in memory. That's fine
 for 10 numbers, but what about one hundred? Or a million?

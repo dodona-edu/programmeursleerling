@@ -293,7 +293,7 @@ optionele argumenten. De eerste is `key=<key>`, waarbij `<key>` de naam
 is van een functie die gebruikt wordt om de key van het sorteerproces te
 definiëren. Dit werkt gelijk aan de `key=<key>` parameter voor de list
 `sort()` methode – zie hoofdstuk
-<a href="#ch:lists" data-reference-type="ref" data-reference="ch:lists">13</a>
+13
 voor meer informatie. Als geen key wordt meegegeven is de
 sorteervolgorde voor strings alfabetisch, en voor getallen numeriek.
 Voor andere data types, of gemixte data types, hangt het van de

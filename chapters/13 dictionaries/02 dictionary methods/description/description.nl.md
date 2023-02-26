@@ -6,7 +6,7 @@ Net als met lists, kun je een variabele die een dictionary bevat via de
 assignment operator aan een andere variabele koppelen, en daarmee maak
 je dan een alias voor de dictionary (als je je dat niet herinnert, moet
 je er hoofdstuk
-<a href="#ch:lists" data-reference-type="ref" data-reference="ch:lists">13</a>
+13
 nog eens op naslaan). Het is niet mogelijk dezelfde "truuk" die bij
 lists bestaat te gebruiken om een kopie te maken. In plaats daarvan
 hebben dictionaries een methode `copy()` die een kopie van de dictionary
@@ -23,7 +23,7 @@ print( id( fruitmandcopy ) )
 ```
 
 Merk op dat een dergelijke kopie een ondiepe kopie is (zie hoofdstuk
-<a href="#ch:lists" data-reference-type="ref" data-reference="ch:lists">13</a>
+13
 als je je het verschil tussen ondiepe en diepe kopieën niet herinnert).
 Als je een diepe kopie wilt maken, moet je de `deepcopy()` functie van
 de `copy` module gebruiken.
@@ -39,7 +39,7 @@ bevatten.
 Ik zeg specifiek dat deze methodes iterators retourneren en niet lists.
 Als je wat ze retourneren in lists wil veranderen, moet je list casting
 gebruiken (zie hoofdstuk
-<a href="#ch:lists" data-reference-type="ref" data-reference="ch:lists">13</a>).
+13).
 
 ```python
 fruitmand = { "appel":3, "banaan":5, "kers":50 }
@@ -163,7 +163,7 @@ die ook weglaten (het is best veel werk om de interpunctie intact te
 houden en het heeft niks van doen met dictionaries, dus het is niet
 belangrijk – het is ook veel gemakkelijker om dit te doen als je eenmaal
 geleerd hebt om te gaan met reguliere expressies, in hoofdstuk
-<a href="#ch:regularexpressions" data-reference-type="ref" data-reference="ch:regularexpressions">26</a>).
+26).
 Ik besef heel goed dat de vertaling uitermate slecht is, maar daar gaat
 het niet om.
 
@@ -173,8 +173,8 @@ engels_nederlands = { "last":"laatst", "week":"week", "the":"de",
     "saw":"zaag", "first":"eerst", "performance":"optreden",
     "of":"van", "a":"een", "new":"nieuw", "symphony":"symphonie",
     "by":"bij", "one":"een", "world":"wereld", "leading":
-    "leidend", "modern":"modern", "composer":"componist", 
-    "composers":"componisten", "two":"twee", "shed":"schuur", 
+    "leidend", "modern":"modern", "composer":"componist",
+    "composers":"componisten", "two":"twee", "shed":"schuur",
     "sheds":"schuren" }
 
 zin = "Last week The Royal Festival Hall saw the first \

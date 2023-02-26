@@ -21,7 +21,7 @@ your code solves the problem at hand, before you look into making the
 code more efficient. Readability and maintainability are far more
 important than efficiency.
 
-### Chapter <a href="#ch:introduction" data-reference-type="ref" data-reference="ch:introduction">2</a>
+### Chapter 2
 
 #### Answer 1.1
 
@@ -99,7 +99,7 @@ program. Variables will be explained in one of the early chapters.
 Trying to write instructions for the more efficient procedure outlined
 above is harder, because you need nested conditions and an early escape.
 
-### Chapter <a href="#ch:usingpython" data-reference-type="ref" data-reference="ch:usingpython">3</a>
+### Chapter 3
 
 #### Answer 2.1
 
@@ -116,7 +116,7 @@ displays the result of running the program. But since a program has no
 result by itself, there is nothing for the shell to display either. So
 you see nothing.
 
-### Chapter <a href="#ch:expressions" data-reference-type="ref" data-reference="ch:expressions">4</a>
+### Chapter 4
 
 #### Answer 3.1
 
@@ -170,18 +170,18 @@ required parenthesis or single or double quote. Keep this in mind.
 print( str( (14 + 535) % 24 ) + ".00" )
 ```
 
-### Chapter <a href="#ch:variables" data-reference-type="ref" data-reference="ch:variables">5</a>
+### Chapter 5
 
 #### Answer 4.1
 
 ```python
-# This program calculates the average of three variables, 
+# This program calculates the average of three variables,
 # var1, var2, and var3
 var1 = 12.83
 var2 = 99.99
 var3 = 0.12
 average = (var1 + var2 + var3) / 3 # Calculate the average
-print( average ) # May look a bit ugly, but we might make this 
+print( average ) # May look a bit ugly, but we might make this
 # look a bit better when we have learned about formatting
 ```
 
@@ -190,7 +190,7 @@ print( average ) # May look a bit ugly, but we might make this
 ```python
 pi = 3.14159
 radius = 12
-print( "The surface area of a circle with radius", 
+print( "The surface area of a circle with radius",
     radius, "is", pi * radius * radius )
 ```
 
@@ -235,7 +235,7 @@ a -= b
 print( "a =", a, "and b =", b )
 ```
 
-### Chapter <a href="#ch:simplefunctions" data-reference-type="ref" data-reference="ch:simplefunctions">6</a>
+### Chapter 6
 
 #### Answer 5.1
 
@@ -288,11 +288,11 @@ print( s.format( 3, exp( 3 ) ) )
 ```python
 from random import random
 
-print( "A random integer between 1 and 10 is", 
+print( "A random integer between 1 and 10 is",
     1 + int( random() * 10 ) )
 ```
 
-### Chapter <a href="#ch:conditions" data-reference-type="ref" data-reference="ch:conditions">7</a>
+### Chapter 7
 
 #### Answer 6.1
 
@@ -340,7 +340,7 @@ if ("o" in s) or ("O" in s):
     count += 1
 if ("u" in s) or ("U" in s):
     count += 1
-    
+
 if count == 0:
     print( "There are no vowels in the string." )
 elif count == 1:
@@ -371,12 +371,12 @@ else:
     elif discriminant == 0:
         print( "There is one solution, namely", -b/(2*a) )
     else:
-        print( "There are two solutions, namely",  
-                (-b+sqrt(discriminant))/(2*a), "and", 
+        print( "There are two solutions, namely",
+                (-b+sqrt(discriminant))/(2*a), "and",
                 (-b-sqrt(discriminant))/(2*a) )
 ```
 
-### Chapter <a href="#ch:iterations" data-reference-type="ref" data-reference="ch:iterations">8</a>
+### Chapter 8
 
 #### Answer 7.1
 
@@ -422,7 +422,7 @@ for i in range( TOTAL ):
         smallest = num
     if num > largest:
         largest = num
-        
+
 print( "Smallest is", smallest )
 print( "Largest is", largest )
 print( "Dividable by 3 is", div3 )
@@ -452,7 +452,7 @@ concatenates the string on the next line to the string after which the
 backslash is found. I use that feature here to make the code fit in the
 box. Use of the backslash to allow code to span multiple lines is
 discussed in Chapter
-<a href="#ch:strings" data-reference-type="ref" data-reference="ch:strings">11</a>.
+11.
 You do not need it at this time: you can just put the whole `print()`
 statement on one long line.
 
@@ -469,7 +469,7 @@ while True:
         break
     print( num3, end=" " )
     num1 = num2
-    num2 = num3    
+    num2 = num3
 ```
 
 #### Answer 7.6
@@ -501,7 +501,7 @@ for i in range( DARTS ):
     y = random()
     if x*x + y*y < 1:
         hits += 1
-        
+
 print( "A reasonable approximation of pi is", 4 * hits / DARTS )
 ```
 
@@ -527,7 +527,7 @@ while True:
     else:
         print( "You guessed it!" )
         break
-        
+
 if count == 1:
     print( "You needed only one guess. Lucky bastard." )
 else:
@@ -561,7 +561,7 @@ while True:
         print( "Please enter H, L, or C." )
         continue
     if lowest >= highest-1:
-        print( "You must have made a mistake,", 
+        print( "You must have made a mistake,",
             "because you said that the answer is higher than",
             lowest, "but also lower than", highest )
         print( "I quit this game" )
@@ -680,7 +680,7 @@ for i in range( TRIALS ):
         lastdie = roll
     else:
         success += 1
-        
+
 print( "The probability of an increasing sequence",
     "of five die rolls is {:.3f}".format( success/TRIALS ) )
 ```
@@ -701,7 +701,7 @@ for A in range( 1, 10 ):
                 num1 = 1000*A + 100*B + 10*C + D
                 num2 = 1000*D + 100*C + 10*B + A
                 if num1 * 4 == num2:
-                    print( "A={}, B={}, C={}, D={}".format( 
+                    print( "A={}, B={}, C={}, D={}".format(
                         A, B, C, D ) )
 ```
 
@@ -826,7 +826,7 @@ print( "{:.2f}".format( estimate ) )
 By the way, the exact answer is $$2\frac{1}{3}$$ days; an approximation
 should give 2.33 or 2.34.
 
-### Chapter <a href="#ch:functions" data-reference-type="ref" data-reference="ch:functions">9</a>
+### Chapter 9
 
 #### Answer 8.1
 
@@ -875,8 +875,8 @@ else:
 
 ```python
 # The function gregoryLeibnitz approximates pi using the Gregory-
-# Leibnitz series. It gets one parameter, which is an integer 
-# that indicates how many terms are calculated. It returns the 
+# Leibnitz series. It gets one parameter, which is an integer
+# that indicates how many terms are calculated. It returns the
 # approximation as a float.
 def gregoryLeibnitz( num ):
     appr = 0
@@ -897,11 +897,11 @@ from pcinput import getFloat
 from math import sqrt
 
 # This function solves a quadratic equation.
-# Its parameters are the numeric values for A, B, and C in the 
-# equation Ax**2 + Bx + C = 0. It returns three values: an int 
-# 0, 1, or 2, indicating the number of solutions, followed by two 
-# numbers which are the solutions. With no solutions, both 
-# solutions are set to zero. With one solution, it is returned as 
+# Its parameters are the numeric values for A, B, and C in the
+# equation Ax**2 + Bx + C = 0. It returns three values: an int
+# 0, 1, or 2, indicating the number of solutions, followed by two
+# numbers which are the solutions. With no solutions, both
+# solutions are set to zero. With one solution, it is returned as
 # the first of the two, while the other is set to zero.
 def quadraticFormula( a, b, c ):
     if a == 0:
@@ -916,8 +916,8 @@ def quadraticFormula( a, b, c ):
     else:
         return 2, (-b+sqrt(discriminant))/(2*a), \
             (-b-sqrt(discriminant))/(2*a)
-    
-num, sol1, sol2 = quadraticFormula( getFloat( "A: " ), 
+
+num, sol1, sol2 = quadraticFormula( getFloat( "A: " ),
     getFloat( "B: " ), getFloat( "C: " ) )
 if num == 0:
     print( "There are no solutions" )
@@ -961,7 +961,7 @@ if __name__ == '__main__':
 #### Answer 8.6
 
 ```python
-# Calculates the factorial of parameter n, which must be an 
+# Calculates the factorial of parameter n, which must be an
 # integer. Returns the value of the factorial as an integer.
 def factorial( n ):
     value = 1
@@ -969,19 +969,19 @@ def factorial( n ):
         value *= i
     return value
 
-# Calculates n over k; parameters n and k are integers. Returns 
-# the value n over k as an integer (because it always must be 
+# Calculates n over k; parameters n and k are integers. Returns
+# the value n over k as an integer (because it always must be
 # an integer).
 def binomialCoefficient( n, k ):
     if k > n:
         return 0
-    return int( factorial( n ) / 
+    return int( factorial( n ) /
         (factorial( k )*factorial( n - k )) )
 
 def main():
     print( factorial( 5 ) )
     print( binomialCoefficient( 8, 3 ) )
-    
+
 if __name__ == '__main__':
     main()
 ```
@@ -1000,9 +1000,9 @@ the function `area_of_triangle()`, if it just returns the area instead
 of printing it, you can not only use the function to print the area, but
 also use the area in calculations). If you do not understand the
 explanation given here, revisit Chapter
-<a href="#ch:simplefunctions" data-reference-type="ref" data-reference="ch:simplefunctions">6</a>.
+6.
 
-### Chapter <a href="#ch:recursion" data-reference-type="ref" data-reference="ch:recursion">10</a>
+### Chapter 10
 
 #### Answer 9.1
 
@@ -1048,7 +1048,7 @@ def gcd( m, n ):
     if m % n == 0:
         return n
     return gcd( n, m%n )
-    
+
 print( gcd( 7*5*13, 2*3*7*11 ) )
 ```
 
@@ -1100,20 +1100,20 @@ which means that it works for bigger disc sizes than the recursive
 solution tends to allow. However, it is more complex to implement as you
 have to represent each pole as a list of discs (lists will be introduced
 in Chapter
-<a href="#ch:lists" data-reference-type="ref" data-reference="ch:lists">13</a>),
+13),
 and you have to find a way to check whether the game is solved (you can
 just take the number of necessary moves, which is $$2^N-1$$).
 
-### Chapter <a href="#ch:strings" data-reference-type="ref" data-reference="ch:strings">11</a>
+### Chapter 11
 
 #### Answer 10.1
 
 ```python
 text = """And Saint Attila raised the hand grenade up on high,
 saying, "O Lord, bless this thy hand grenade, that with it
-thou mayst blow thine enemies to tiny bits, in thy mercy." 
-And the Lord did grin. And the people did feast upon the lambs, 
-and sloths, and carp, and anchovies, and orangutans, and 
+thou mayst blow thine enemies to tiny bits, in thy mercy."
+And the Lord did grin. And the people did feast upon the lambs,
+and sloths, and carp, and anchovies, and orangutans, and
 breakfast cereals, and fruit bats, and large chu..."""
 
 counta, counte, counti, counto, countu = 0, 0, 0, 0, 0
@@ -1128,22 +1128,22 @@ for c in text:
         counto += 1
     elif c.upper() == "U":
         countu += 1
-        
-print( "Counts: a={}, e={}, i={}, o={}, u={}".format( 
+
+print( "Counts: a={}, e={}, i={}, o={}, u={}".format(
     counta, counte, counti, counto, countu ) )
 ```
 
 #### Answer 10.2
 
 ```python
-text = """And sending tinted postcards of places they don't 
-realise they haven't even visited to 'All at nu[m]ber 22, weather 
-w[on]derful, our room is marked with an 'X'. Wish you were here. 
-Food very greasy but we've found a charming li[t]tle local place 
-hidden awa[y ]in the back streets where they serve Watney's Red 
-Barrel and cheese and onion cris[p]s and the accordionist pla[y]s 
-"Maybe i[t]'s because I'm a Londoner"' and spending four days on 
-the tarmac at Luton airport on a five-day package tour wit[h] 
+text = """And sending tinted postcards of places they don't
+realise they haven't even visited to 'All at nu[m]ber 22, weather
+w[on]derful, our room is marked with an 'X'. Wish you were here.
+Food very greasy but we've found a charming li[t]tle local place
+hidden awa[y ]in the back streets where they serve Watney's Red
+Barrel and cheese and onion cris[p]s and the accordionist pla[y]s
+"Maybe i[t]'s because I'm a Londoner"' and spending four days on
+the tarmac at Luton airport on a five-day package tour wit[h]
 n[o]thing to eat but dried Watney's sa[n]dwiches..."""
 
 start = -1
@@ -1155,7 +1155,7 @@ while True:
     if finish < 0:
         break
     print( text[start+1:finish], end="" )
-    start = finish 
+    start = finish
 print()
 ```
 
@@ -1222,7 +1222,7 @@ while len( text ) > 0:
         j += 1
     text = text[:i] + text[i+1:]
     newtext += ch
-    
+
 print( newtext )
 ```
 
@@ -1240,7 +1240,7 @@ and Jam..."
 if len( sentence  ) <= 0:
     exit()
 
-# Capitalize first letter 
+# Capitalize first letter
 newsentence = sentence[0].upper() + sentence[1:]
 
 wordlist = newsentence.split()
@@ -1254,14 +1254,14 @@ for word in wordlist:
         word[1] >= "A" and word[1] <= "Z" and word[2] >= "a" and\
         word[2] <= "z":
         word = word[0] + word[1].lower() + word[2:]
-    
+
     # Capitalize days
     day = word.lower()
     if day == "sunday" or day == "monday" or day == "tuesday" or\
         day == "wednesday" or day == "thursday" or \
         day == "friday" or day == "saturday":
         word = day[0].upper() + day[1:]
-    
+
     # Correct CAPS LOCK
     if word[0] >= "a" and word[0] <= "z":
         allcaps = True
@@ -1271,19 +1271,19 @@ for word in wordlist:
                 break
         if allcaps:
             word = word[0].upper() + word[1:].lower()
-    
+
     # Remove duplicates
-    if word == lastword: 
+    if word == lastword:
         continue
-        
+
     newsentence += word + " "
     lastword = word
-    
+
 newsentence = newsentence.strip()
 print( newsentence )
 ```
 
-### Chapter <a href="#ch:tuples" data-reference-type="ref" data-reference="ch:tuples">12</a>
+### Chapter 12
 
 #### Answer 11.1
 
@@ -1314,7 +1314,7 @@ def display_complex( c ):
 
 num1 = (2,1)
 num2 = (0,2)
-print( display_complex( num1 ), "+", display_complex( num2 ), 
+print( display_complex( num1 ), "+", display_complex( num2 ),
     "=", display_complex( add_complex( num1, num2 ) ) )
 ```
 
@@ -1331,14 +1331,14 @@ def display_complex( c ):
 
 num1 = (2,1)
 num2 = (0,2)
-print( display_complex( num1 ), "*", display_complex( num2 ), 
+print( display_complex( num1 ), "*", display_complex( num2 ),
     "=", display_complex( multiply_complex( num1, num2 ) ) )
 ```
 
 #### Answer 11.3
 
 ```python
-inttuple = ( 1, 2, ( 3, 4 ), 5, ( ( 6, 7, 8, ( 9, 10 ), 11 ), 12, 
+inttuple = ( 1, 2, ( 3, 4 ), 5, ( ( 6, 7, 8, ( 9, 10 ), 11 ), 12,
     13 ), ( ( 14, 15, 16 ), ( 17, 18, 19, 20 ) ) )
 
 def display_inttuple( it ):
@@ -1351,7 +1351,7 @@ def display_inttuple( it ):
 display_inttuple( inttuple )
 ```
 
-### Chapter <a href="#ch:lists" data-reference-type="ref" data-reference="ch:lists">13</a>
+### Chapter 13
 
 #### Answer 12.1
 
@@ -1360,7 +1360,7 @@ from random import choice
 
 answers = [ "It is certain", "It is decidedly so", "Without a \
 doubt", "Yes, definitely", "You may rely on it", "As I see it, \
-yes", "Most likely", "Outlook good", "Yes", "Signs point to yes", 
+yes", "Most likely", "Outlook good", "Yes", "Signs point to yes",
 "Reply hazy try again", "Ask again later", "Better not tell you \
 now", "Cannot predict now", "Concentrate and ask again", "Don't \
 count on it", "My reply is no", "My sources say no", "Outlook \
@@ -1380,15 +1380,15 @@ You could also have used `randint()`, selecting an index from the range
 from random import randint
 
 deck = []
-for value in ("Ace", "2", "3", "4", "5", "6", "7", "8", 
+for value in ("Ace", "2", "3", "4", "5", "6", "7", "8",
     "10", "Jack", "Queen", "King"):
     for suit in ("Hearts", "Spaces", "Clubs", "Diamonds"):
         deck.append( value + " of " + suit )
-        
+
 for i in range( len( deck ) ):
     j = randint( i, len( deck )-1 )
     deck[i], deck[j] = deck[j], deck[i]
-    
+
 for card in deck:
     print( card )
 ```
@@ -1412,24 +1412,24 @@ while True:
 #### Answer 12.4
 
 ```python
-text = """Now, it's quite simple to defend yourself against a 
-man armed with a banana. First of all you force him to drop 
-the banana; then, second, you eat the banana, thus disarming 
+text = """Now, it's quite simple to defend yourself against a
+man armed with a banana. First of all you force him to drop
+the banana; then, second, you eat the banana, thus disarming
 him. You have now rendered him helpless."""
 
 def count_letter( x ):
-    return x[0], -ord(x[1]) 
+    return x[0], -ord(x[1])
 
 countlist = []
 for i in range( 26 ):
     countlist.append( [0, chr(ord("a")+i)] )
-    
+
 for letter in text.lower():
     if letter >= "a" and letter <= "z":
         countlist[ord(letter)-ord("a")][0] += 1
-        
+
 countlist.sort( reverse=True, key=count_letter )
-    
+
 for count in countlist:
     print( "{:3}: {}".format( count[0],count[1] ) )
 ```
@@ -1499,7 +1499,7 @@ def opponent( p ):
     if p == PLAYERX:
         return PLAYERO
     return PLAYERX
-        
+
 def getRowCol( player, what ):
     while True:
         num = getInteger( "Player "+player+", which "+what+
@@ -1508,7 +1508,7 @@ def getRowCol( player, what ):
             print( "Please enter 1, 2, or 3" )
             continue
         return num
-    
+
 def winner( b ):
     for row in range( 3 ):
         if b[row][0] != EMPTY and b[row][0] == b[row][1] \
@@ -1535,7 +1535,7 @@ while True:
     row = getRowCol( player, "row" )
     col = getRowCol( player, "column" )
     if board[row-1][col-1] != EMPTY:
-        print( "There is already a piece at row", row, 
+        print( "There is already a piece at row", row,
             "and column", col )
         continue
     board[row-1][col-1] = player
@@ -1590,7 +1590,7 @@ def placeBattleships( b ):
                 continue
             break
         b[y][x] = BATTLESHIP
-    
+
 def getTarget():
     while True:
         cell = getString( "Which cell do you target? " ).upper()
@@ -1607,8 +1607,8 @@ def getTarget():
             print( "The second character of the cell should be",
                 "a digit in the range 1-"+str( HEIGHT ) )
             continue
-        return ord(cell[0])-ord("A"), ord(cell[1])-ord("1")      
-    
+        return ord(cell[0])-ord("A"), ord(cell[1])-ord("1")
+
 board = []
 for i in range( HEIGHT ):
     row = WIDTH * [EMPTY]
@@ -1634,8 +1634,8 @@ print( "You needed", moves, "moves to sink all battleships." )
 #### Answer 12.8
 
 ```python
-# Recursive function that determines if intlist, which is a list 
-# of integers, contains a subset that adds up to total. It  
+# Recursive function that determines if intlist, which is a list
+# of integers, contains a subset that adds up to total. It
 # returns the subset, or empty list if there is no such subset.
 def subset_that_adds_up_to( intlist, total ):
     for num in intlist:
@@ -1690,7 +1690,7 @@ algorithm is known that avoids having to process each and every subset
 if there is no solution. For those who know some complexity theory: the
 subset sum problem is "NP-hard."
 
-### Chapter <a href="#ch:dictionaries" data-reference-type="ref" data-reference="ch:dictionaries">14</a>
+### Chapter 14
 
 #### Answer 13.1
 
@@ -1714,7 +1714,7 @@ def clean( s ):
 worddict = {}
 for word in clean( text ).split():
     worddict[word] = worddict.get( word, 0 ) + 1
-    
+
 keylist = list( worddict.keys() )
 keylist.sort()
 for key in keylist:
@@ -1724,19 +1724,19 @@ for key in keylist:
 #### Answer 13.2
 
 ```python
-movies = {  "Monty Python and the Holy Grail": 
+movies = {  "Monty Python and the Holy Grail":
             [ 9, 10, 9.5, 8.5, 3, 7.5,8 ],
-            "Monty Python's Life of Brian": 
+            "Monty Python's Life of Brian":
             [ 10, 10, 0, 9, 1, 8, 7.5, 8, 6, 9 ],
-            "Monty Python's Meaning of Life": 
+            "Monty Python's Meaning of Life":
             [ 7, 6, 5 ],
-            "And Now For Something Completely Different": 
+            "And Now For Something Completely Different":
             [ 6, 5, 6, 6 ] }
 
 keylist = list( movies.keys() )
 keylist.sort()
 for key in keylist:
-    print( "{}: {}".format( key, round( 
+    print( "{}: {}".format( key, round(
         sum( movies[key] )/len( movies[key] ), 1 ) ) )
 ```
 
@@ -1758,12 +1758,12 @@ described. I can't complain if you want to introduce easier and less
 ambiguous keys in such a data structure (but in general, you should
 divert to a database system to deal with libraries).
 
-### Chapter <a href="#ch:sets" data-reference-type="ref" data-reference="ch:sets">15</a>
+### Chapter 15
 
 #### Answer 14.1
 
 ```python
-allthings = {"Socrates", "Plato", "Eratosthenes", "Zeus", "Hera", 
+allthings = {"Socrates", "Plato", "Eratosthenes", "Zeus", "Hera",
     "Athens", "Acropolis", "Cat", "Dog"}
 men = {"Socrates", "Plato", "Eratosthenes"}
 mortalthings = {"Socrates","Plato","Eratosthenes","Cat","Dog"}
@@ -1787,7 +1787,7 @@ setb = (set3 & set7) - set11
 setc = set( range( 1, 1001 ) ) - set3 - set7 - set11
 ```
 
-### Chapter <a href="#ch:operatingsystem" data-reference-type="ref" data-reference="ch:operatingsystem">16</a>
+### Chapter 16
 
 #### Answer 15.1
 
@@ -1799,12 +1799,12 @@ for name in flist:
     print( getcwd() + "/" + name )
 ```
 
-### Chapter <a href="#ch:textfiles" data-reference-type="ref" data-reference="ch:textfiles">17</a>
+### Chapter 17
 
 #### Answer 16.1
 
 The code below is mostly a copy of some code you had to write in Chapter
-<a href="#ch:dictionaries" data-reference-type="ref" data-reference="ch:dictionaries">14</a>.
+14.
 The only difference is that the text here is not provided as a string,
 but read from a file.
 
@@ -1826,7 +1826,7 @@ fp.close()
 wdict = {}
 for word in clean( text ).split():
     wdict[word] = wdict.get( word, 0 ) + 1
-    
+
 keylist = list( wdict.keys() )
 keylist.sort()
 for key in keylist:
@@ -1855,7 +1855,7 @@ while True:
     for word in clean( line ).split():
         wdict[word] = wdict.get( word, 0 ) + 1
 fp.close()
-    
+
 keylist = list( wdict.keys() )
 keylist.sort()
 for key in keylist:
@@ -1973,7 +1973,7 @@ letterlist = [ len( files )*[0] for i in range( 26 ) ]
 totallist = len( files ) * [0]
 
 # Process all the input files, read their contents line by line,
-# make them lower case, and keep track of the letter counts in 
+# make them lower case, and keep track of the letter counts in
 # letterlist, while keeping track of total counts in totallist.
 filecount = 0
 for name in files:
@@ -2007,7 +2007,7 @@ print( fp.read() )
 fp.close()
 ```
 
-### Chapter <a href="#ch:exceptions" data-reference-type="ref" data-reference="ch:exceptions">18</a>
+### Chapter 18
 
 #### Answer 17.1
 
@@ -2036,7 +2036,7 @@ except:
     raise
 ```
 
-### Chapter <a href="#ch:binaryfiles" data-reference-type="ref" data-reference="ch:binaryfiles">19</a>
+### Chapter 19
 
 #### Answer 18.1
 
@@ -2051,7 +2051,7 @@ def display_contents( filename ):
     fp = open( filename, "rb" )
     print( fp.read() )
     fp.close()
-    
+
 def encrypt( filename ):
     fp = open( filename, "r+b" )
     buffer = fp.read()
@@ -2062,7 +2062,7 @@ def encrypt( filename ):
         else:
             fp.write( bytes( [c+128] ) )
     fp.close()
-    
+
 display_contents( FILENAME )
 encrypt( FILENAME )
 display_contents( FILENAME )
@@ -2093,7 +2093,7 @@ bytelist = []
 for i in range( 0, len( halfbytelist ), 2 ):
     bytelist.append( 16*halfbytelist[i] + halfbytelist[i+1] )
 
-# Turn the byte-list into a byte string and print it, as a check. 
+# Turn the byte-list into a byte string and print it, as a check.
 encoded = bytes( bytelist )
 print( encoded, len( encoded ) )
 ```
@@ -2117,7 +2117,7 @@ for c in encoded:
     halfbytelist.extend( [ int( c/16 ), c%16 ] )
 if halfbytelist[-1] == 0:
     del halfbytelist[-1]
-    
+
 # Turn the half-byte-list into a string.
 decoded = ""
 while len( halfbytelist ) > 0:
@@ -2195,7 +2195,7 @@ while True:
         print( "Error [{}]: {}".format( ex.args[0], ex.args[1] ))
         continue
     break
-    
+
 # Ask for the output file and create it.
 while True:
     fileout = getString( "Which is the output file? " )
@@ -2218,13 +2218,13 @@ while True:
         print( "Please choose C or D" )
         continue
     break
-    
+
 # Compress or decompress the buffer.
 if dc == 'C':
     buffer = compress( buffer )
 else:
     buffer = decompress( buffer )
-    
+
 # Store the (de)compressed buffer in the output file.
 try:
     fp.write( buffer )
@@ -2238,7 +2238,7 @@ print( getsize( filein ), "bytes read" )
 print( getsize( fileout ), "bytes written" )
 ```
 
-### Chapter <a href="#ch:bitwiseoperators" data-reference-type="ref" data-reference="ch:bitwiseoperators">20</a>
+### Chapter 20
 
 #### Answer 19.1
 
@@ -2283,7 +2283,7 @@ def displayBits( store ):
         else:
             print( "0", end="" )
     print()
-    
+
 store = 0
 store = setBit( store, 0, True )
 store = setBit( store, 1, True )
@@ -2297,7 +2297,7 @@ store = setBit( store, 1, False )
 displayBits( store )
 ```
 
-### Chapter <a href="#ch:objectorientation" data-reference-type="ref" data-reference="ch:objectorientation">21</a>
+### Chapter 21
 
 #### Answer 20.1
 
@@ -2310,7 +2310,7 @@ class Point:
         self.y = y
     def __repr__( self ):
         return "({}, {})".format( self.x, self.y )
-        
+
 class Rectangle:
     def __init__( self, point, width, height ):
         self.point = copy( point )
@@ -2321,14 +2321,14 @@ class Rectangle:
         if self.height == 0:
             self.height = 1
     def __repr__( self ):
-        return "[{},w={},h={}]".format( self.point, 
+        return "[{},w={},h={}]".format( self.point,
             self.width, self.height )
     def surface_area( self ):
         return self.width * self.height
     def circumference( self ):
         return 2*(self.width + self.height)
     def bottom_right( self ):
-        return Point( self.point.x + self.width, 
+        return Point( self.point.x + self.width,
             self.point.y + self.height )
     def overlap( self,r ):
         r1, r2 = self, r
@@ -2339,10 +2339,10 @@ class Rectangle:
         if r1.bottom_right().x <= r2.point.x or \
             r1.bottom_right().y <= r2.point.y:
             return None
-        return Rectangle( r2.point, 
-            min( r1.bottom_right().x - r2.point.x, r2.width ), 
+        return Rectangle( r2.point,
+            min( r1.bottom_right().x - r2.point.x, r2.width ),
             min( r1.bottom_right().y - r2.point.y, r2.height ) )
-    
+
 r1 = Rectangle( Point( 1, 1 ), 8, 5 )
 r2 = Rectangle( Point( 2, 3 ), 9, 2 )
 
@@ -2394,8 +2394,8 @@ class Student:
     def enroll( self, course ):
         if course not in self.courses:
             self.courses.append( course )
-    
-students = [ 
+
+students = [
     Student( "Arkansas", "Adrian", date( 1989, 10, 3 ), 453211 ),
     Student( "Bonzo", "Beatrice", date( 1991, 12, 29 ), 476239 ),
     Student( "Continuum", "Carola", date( 1992, 3, 7 ), 784322 ),
@@ -2411,7 +2411,7 @@ for student in students:
             student.enroll( course )
 
 for student in students:
-    print( "{}: {} {} ({})".format( student.anr, 
+    print( "{}: {} {} ({})".format( student.anr,
         student.firstname, student.lastname, student.age() ) )
     if len( student.courses ) == 0:
         print( "\tNo courses" )
@@ -2419,7 +2419,7 @@ for student in students:
         print( "\t{}".format( course ) )
 ```
 
-### Chapter <a href="#ch:operatoroverloading" data-reference-type="ref" data-reference="ch:operatoroverloading">22</a>
+### Chapter 22
 
 #### Answer 21.1
 
@@ -2449,7 +2449,7 @@ class Card:
         if isinstance( c, Card ):
             return self.rank >= c.rank
         return NotImplemented
-    
+
 c5 = Card( 2, 3 )
 d5 = Card( 3, 3 )
 sk = Card( 1, 11 )
@@ -2480,8 +2480,8 @@ RANKS = ["2","3","4","5","6","7","8","9","10",
 
 class Card:
     def __init__( self, suit, rank ):
-        self.suit = suit 
-        self.rank = rank 
+        self.suit = suit
+        self.rank = rank
     def __str__( self ):
         return "{} of {}".format(
             RANKS[self.rank], SUITS[self.suit] )
@@ -2506,7 +2506,7 @@ class Drawpile:
             s += sep + str( c )
             sep = ", "
         return s
-    
+
 dp1 = Drawpile( [Card(0,1), Card(0,5), Card(2,4), Card(1,12)] )
 print( dp1 )
 print( dp1[1] )
@@ -2565,7 +2565,7 @@ class Drawpile:
             s += sep + str( c )
             sep = ", "
         return s
-    
+
 dp1 = Drawpile( [Card(3,0), Card(0,11), Card(2,5)] )
 dp2 = Drawpile( [Card(3,2), Card(3,1), Card(1,6)] )
 
@@ -2583,7 +2583,7 @@ while len( dp1 ) > 0 and len( dp2 ) > 0:
         dp2.add( c2 )
         dp2.add( c1 )
     i += 1
-        
+
 print( "The game has ended" )
 if len( dp1 ) > 0:
     print( "Deck1:", dp1 )
@@ -2617,10 +2617,10 @@ dropped to zero or less.
 from copy import deepcopy
 
 class FruitBasket:
-    
+
     def __init__( self, fruits={} ):
         self.fruits = fruits
-        
+
     def __repr__( self ):
         s = ""
         sep = "["
@@ -2629,19 +2629,19 @@ class FruitBasket:
             sep = ", "
         s += "]"
         return s
-    
+
     def __contains__( self, fruit ):
         return fruit in self.fruits
-    
+
     def __add__( self, fruit ):
         fbcopy = deepcopy( self )
         fbcopy.fruits[fruit] = fbcopy.fruits.get( fruit, 0 ) + 1
         return fbcopy
-    
+
     def __iadd__( self, fruit ):
         self.fruits[fruit] = self.fruits.get( fruit, 0 ) + 1
         return self
-    
+
     def __sub__( self, fruit ):
         if fruit not in self.fruits:
             return self
@@ -2650,26 +2650,26 @@ class FruitBasket:
         if fbcopy.fruits[fruit] <= 0:
             del fbcopy.fruits[fruit]
         return fbcopy
-    
+
     def __isub__( self, fruit ):
         self.fruits[fruit] = self.fruits.get( fruit, 0 ) - 1
         if self.fruits[fruit] <= 0:
             del self.fruits[fruit]
         return self
-    
+
     def __len__( self ):
         return len( self.fruits )
-    
+
     def __getitem__( self, fruit ):
         return self.fruits.get( fruit, 0 )
-    
+
     def __setitem__( self, fruit, n ):
         if n <= 0:
             if fruit in self.fruits:
                 del self.fruits[fruit]
         else:
             self.fruits[fruit] = n
-    
+
 fb = FruitBasket()
 fb += "apple"
 fb += "apple"
@@ -2690,7 +2690,7 @@ fb["orange"] = 0
 print( fb )
 ```
 
-### Chapter <a href="#ch:inheritance" data-reference-type="ref" data-reference="ch:inheritance">23</a>
+### Chapter 23
 
 #### Answer 22.1
 
@@ -2699,7 +2699,7 @@ class Rectangle:
     def __init__( self, x, y, w, h ):
         self.x, self.y, self.w, self.h = x, y, w, h
     def __repr__( self ):
-        return "[({},{}),w={},h={}]".format( self.x, self.y, 
+        return "[({},{}),w={},h={}]".format( self.x, self.y,
           self.w, self.h )
     def area( self ):
         return self.w * self.h
@@ -2709,7 +2709,7 @@ class Rectangle:
 class Square( Rectangle ):
     def __init__( self, x, y, w ):
         super().__init__( x, y, w, w )
-        
+
 s = Square( 1, 1, 4 )
 print( s, s.area(), s.circumference() )
 ```
@@ -2734,12 +2734,12 @@ class Circle( Shape ):
         return pi * self.r * self.r
     def circumference( self ):
         return 2 * pi * self.r
-    
+
 class Rectangle( Shape ):
     def __init__( self, x, y, w, h ):
         self.x, self.y, self.w, self.h = x, y, w, h
     def __repr__( self ):
-        return "[({},{}),w={},h={}]".format( self.x, self.y, 
+        return "[({},{}),w={},h={}]".format( self.x, self.y,
             self.w, self.h )
     def area( self ):
         return self.w * self.h
@@ -2749,7 +2749,7 @@ class Rectangle( Shape ):
 class Square( Rectangle ):
     def __init__( self, x, y, w ):
         super().__init__( x, y, w, w )
-        
+
 s = Square( 1, 1, 4 )
 print( s, s.area(), s.circumference() )
 c = Circle( 1, 1, 4 )
@@ -2792,11 +2792,11 @@ class Strategy:
         pass
     def incscore( self, n ):
         self.score += n
-        
+
 class AlwaysDefect( Strategy ):
     def choice( self ):
         return DEFECT
-        
+
 class Random( Strategy ):
     def choice( self ):
         if random() >= 0.5:
@@ -2809,7 +2809,7 @@ class MemoryStrategy( Strategy ):
         self.history = []
     def lastmove( self, mymove, opponentmove ):
         self.history.append( (mymove, opponentmove) )
-        
+
 class TitForTat( MemoryStrategy ):
     def choice( self ):
         if len( self.history ) < 1:
@@ -2834,7 +2834,7 @@ class Majority( MemoryStrategy ):
         if countD > len( self.history ) / 2:
             return DEFECT
         return COOPERATE
-            
+
 strategy1 = AlwaysDefect( "Always Defect" )
 strategy2 = Majority( "Majority" )
 
@@ -2849,12 +2849,12 @@ for i in range( ROUNDS ):
         strategy2.incscore( 0 if c2 == COOPERATE else 6 )
     strategy1.lastmove( c1, c2 )
     strategy2.lastmove( c2, c1 )
-        
+
 print( "Score of", strategy1.name, "is", strategy1.score )
 print( "Score of", strategy2.name, "is", strategy2.score )
 ```
 
-### Chapter <a href="#ch:iteratorsandgenerators" data-reference-type="ref" data-reference="ch:iteratorsandgenerators">24</a>
+### Chapter 24
 
 #### Answer 23.1
 
@@ -2904,7 +2904,7 @@ def factorial():
     for i in range( 1, 11 ):
         total *= i
         yield total
-        
+
 fseq = factorial()
 for n in fseq:
     print( n, end=" " )
@@ -2951,7 +2951,7 @@ for i in range( 1, len( numlist )+1 ):
             break
     if len( solution ) > 0:
         break
-        
+
 if len( solution ) <= 0:
     print( "There is no subset which adds up to zero" )
 else:
@@ -3022,7 +3022,7 @@ def is_solution( columns ):
             if i - row == abs( columns[i] - col ):
                 return False
     return True
-        
+
 columns = list( range( SIZE ) )
 
 for p in permutations( columns ):
@@ -3033,7 +3033,7 @@ else:
     print( "No solutions found" ) # Should not happen.
 ```
 
-### Chapter <a href="#ch:commandlineprocessing" data-reference-type="ref" data-reference="ch:commandlineprocessing">25</a>
+### Chapter 25
 
 #### Answer 24.1
 
@@ -3051,7 +3051,7 @@ for i in sys.argv[1:]:
 print( "The arguments add up to", total )
 ```
 
-### Chapter <a href="#ch:regularexpressions" data-reference-type="ref" data-reference="ch:regularexpressions">26</a>
+### Chapter 26
 
 #### Answer 25.1
 
@@ -3155,7 +3155,7 @@ for m in mlist:
     print( m.group(1), m.group(2) )
 ```
 
-### Chapter <a href="#ch:fileformats" data-reference-type="ref" data-reference="ch:fileformats">27</a>
+### Chapter 27
 
 #### Answer 26.1
 
@@ -3202,7 +3202,7 @@ print( fp.read() )
 fp.close()
 ```
 
-### Chapter <a href="#ch:varioususefulmodules" data-reference-type="ref" data-reference="ch:varioususefulmodules">28</a>
+### Chapter 28
 
 #### Answer 27.1
 
@@ -3239,7 +3239,7 @@ while True:
 if len( numlist ) <= 0:
     print( "No numbers were entered" )
     exit()
-    
+
 print( "Mean:", mean( numlist ) )
 print( "Median:", median( numlist ) )
 

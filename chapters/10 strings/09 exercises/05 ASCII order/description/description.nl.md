@@ -10,7 +10,7 @@ Alle karakters van de tekst in ASCII volgorde.
 
 {:class="callout callout-info"}
 > #### Tip
-> Dit kan vrij gemakkelijk gedaan worden met `list` methodes, maar die komen pas aan bod in hoofdstuk <a href="#ch:lists" data-reference-type="ref" data-reference="ch:lists">13</a>, dus probeer het nu te doen met string manipulaties.
+> Dit kan vrij gemakkelijk gedaan worden met `list` methodes, maar die komen pas aan bod in hoofdstuk 13, dus probeer het nu te doen met string manipulaties.
 
 ### Voorbeeld
 

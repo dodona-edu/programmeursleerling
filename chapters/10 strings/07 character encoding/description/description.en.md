@@ -151,7 +151,7 @@ functionalities support Unicode. Occasionally I have run into
 translation problems from Unicode to ASCII, in particular where files
 were concerned. It will be a while before you run into problems like
 that, and I will bring it up again in Chapter
-<a href="#ch:textfiles" data-reference-type="ref" data-reference="ch:textfiles">17</a>
+17
 and later.
 
 [^7]: There is one weird character in this display, between the Rho and

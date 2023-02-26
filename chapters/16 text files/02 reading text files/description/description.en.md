@@ -79,7 +79,7 @@ print( buffer )
 
 This code assumes that a file is available with the name "pc_rose.txt,"
 and that it is located in the same directory as the program. Appendix
-<a href="#ch:testtextfiles" data-reference-type="ref" data-reference="ch:testtextfiles">33</a>
+33
 explains how to get it. If the file is unavailable, you get a runtime
 error. How to deal with such errors will be explained in the next
 chapter.

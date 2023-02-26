@@ -180,7 +180,7 @@ i.e., to not let them access any of the global variables. If you do need
 to communicate values from outside a function to the function, then do
 so by means of parameters. An exception can be made for variables that
 are used as constants (see Chapter
-<a href="#ch:variables" data-reference-type="ref" data-reference="ch:variables">5</a>).
+5).
 If you do let a function access a constant, then make sure it is clear
 to anyone who inspects the function that you are referring to a
 constant, i.e., that the name of the constant is written in all

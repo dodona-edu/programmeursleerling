@@ -153,9 +153,9 @@ Soms moet je een data type of waarde veranderen in een ander data type.
 Je kunt dat doen met "type casting" functies.
 
 In latere hoofdstukken
-(<a href="#ch:simplefunctions" data-reference-type="ref" data-reference="ch:simplefunctions">6</a>
+(6
 en
-<a href="#ch:functions" data-reference-type="ref" data-reference="ch:functions">9</a>)
+9)
 ga ik in detail op functies in, maar voor nu is het voldoende als je
 weet dat een functie een naam heeft, en parameters kan hebben tussen de
 haakjes die achter de naam staan. De functie doet iets met die
@@ -205,4 +205,3 @@ print( "Ik heb " + str( 15 ) + " appels." )
     Nederlandse volgorde incorrect, omdat worteltrekken na delen wordt
     geplaatst, terwijl wiskundig gezien worteltrekken een vorm van
     machtsverheffen is, en dus voor vermenigvuldigen komt.
-

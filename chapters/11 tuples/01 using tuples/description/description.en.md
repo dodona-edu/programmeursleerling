@@ -127,7 +127,7 @@ print( t1[2] )
 
 You can even use slices, with the same rules as for strings (if you do
 not remember, check Chapter
-<a href="#ch:strings" data-reference-type="ref" data-reference="ch:strings">11</a>
+11
 again). A slice of a tuple is another tuple. For example:
 
 ```python
@@ -172,7 +172,7 @@ print( t3 > t4 )
 ### Tuple return values
 
 In Chapter
-<a href="#ch:functions" data-reference-type="ref" data-reference="ch:functions">9</a>,
+9,
 you learned that functions can return multiple values. If you code
 something like that, what actually happens is that the function is
 returning a tuple. To deal with such return values, you assign them to

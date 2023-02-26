@@ -8,19 +8,19 @@ For a brief course on the basics of the Python language, using it for
 "imperative programming," you should study variables and expressions,
 conditions and loops, functions, string handling, lists and
 dictionaries, and files. I.e., you can limit yourself to Chapters
-<a href="#ch:introduction" data-reference-type="ref" data-reference="ch:introduction">2</a>
+2
 to
-<a href="#ch:bitwiseoperators" data-reference-type="ref" data-reference="ch:bitwiseoperators">20</a>,
+20,
 whereby the Chapters
-<a href="#ch:recursion" data-reference-type="ref" data-reference="ch:recursion">10</a>
+10
 (Recursion),
-<a href="#ch:sets" data-reference-type="ref" data-reference="ch:sets">15</a>
+15
 (Sets),
-<a href="#ch:exceptions" data-reference-type="ref" data-reference="ch:exceptions">18</a>
+18
 (Exceptions),
-<a href="#ch:binaryfiles" data-reference-type="ref" data-reference="ch:binaryfiles">19</a>
+19
 (Binary files), and
-<a href="#ch:bitwiseoperators" data-reference-type="ref" data-reference="ch:bitwiseoperators">20</a>
+20
 (Bitwise operators) may be considered advanced material, which you can
 skip until you need them (though I highly recommend that you at least
 try to understand recursion, as it helps solving some of the exercises
@@ -29,11 +29,11 @@ in later chapters).
 For an advanced course on the basics of the Python language, you will
 have to delve into object orientation, meaning that you also have to
 study Chapters
-<a href="#ch:objectorientation" data-reference-type="ref" data-reference="ch:objectorientation">21</a>
+21
 to
-<a href="#ch:iteratorsandgenerators" data-reference-type="ref" data-reference="ch:iteratorsandgenerators">24</a>,
+24,
 whereby Chapter
-<a href="#ch:iteratorsandgenerators" data-reference-type="ref" data-reference="ch:iteratorsandgenerators">24</a>
+24
 (Iterators and Generators) can be considered optional material.
 
 The remainder of the chapters are all useful, but optional material,
@@ -43,7 +43,7 @@ editions of this book may have extra optional material added to the end.
 
 When studying this book, you should have a computer with Python
 installed at hand (Chapter
-<a href="#ch:usingpython" data-reference-type="ref" data-reference="ch:usingpython">3</a>
+3
 explains how to get Python for your computer). The book contains many
 small and larger exercises, and you should do all of those while
 studying. There is no way that you will learn how to program if you skip

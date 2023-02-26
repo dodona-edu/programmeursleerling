@@ -1,8 +1,8 @@
 In hoofdstuk
-<a href="#ch:textfiles" data-reference-type="ref" data-reference="ch:textfiles">17</a>
+17
 worden verscheidene korte tekstbestanden gebruikt om functionaliteiten
 te demonstreren. In het hoofdstuk
-<a href="#ch:fileformats" data-reference-type="ref" data-reference="ch:fileformats">27</a>
+27
 gebruik ik ook een CSV bestand als demonstratie. Je kunt deze bestanden
 downloaden via <http://www.spronck.net/pythonbook>{:target="_blank"}, of je kunt ze zelf
 creëren. De inhoud van deze bestanden is hieronder gegeven: je kunt ze
