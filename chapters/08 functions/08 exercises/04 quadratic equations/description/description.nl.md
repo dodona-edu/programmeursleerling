@@ -1,4 +1,4 @@
-Een **kwadratische vergelijking** is een vergelijking van de vorm 
+Een **kwadratische vergelijking** is een vergelijking van de vorm
 
 $$ax^2 + bx + c = 0\,,$$
 
@@ -35,7 +35,7 @@ $$x_{1} = \frac{-b - \sqrt{\Delta}}{2a}\ \ \ \text{en}\ \ \ x_{2} = \frac{-b + \
 36.0
 
 >>> oplossingen(1, 0, -1)
-(1, -1.0, 1.0)
+(2, -1.0, 1.0)
 >>> oplossingen(1, 4, -5)
-(1, -5.0, 1.0)
+(2, -5.0, 1.0)
 ```
