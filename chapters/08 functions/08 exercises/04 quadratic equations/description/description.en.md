@@ -1,4 +1,4 @@
-A **quadratic equation** is any equation that can be rearranged in standard form as 
+A **quadratic equation** is any equation that can be rearranged in standard form as
 
 $$ax^2 + bx + c = 0\,,$$
 
@@ -17,7 +17,7 @@ is called the **discriminant** of the quadratic equation. The sign of $$\Delta$$
 - als $$\Delta < 0$$, then there are no real-valued solutions
 
 The real-valued solutions can be determined as:
- 
+
 $$x_{1} = \frac{-b - \sqrt{\Delta}}{2a}\ \ \ \text{en}\ \ \ x_{2} = \frac{-b + \sqrt{\Delta}}{2a}$$
 
 ### Assignment
@@ -35,7 +35,7 @@ $$x_{1} = \frac{-b - \sqrt{\Delta}}{2a}\ \ \ \text{en}\ \ \ x_{2} = \frac{-b + \
 36.0
 
 >>> solutions(1, 0, -1)
-(1, -1.0, 1.0)
+(2, -1.0, 1.0)
 >>> solutions(1, 4, -5)
-(1, -5.0, 1.0)
+(2, -5.0, 1.0)
 ```
