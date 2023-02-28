@@ -65,17 +65,17 @@ def middelste( n1, n2, n3 ):
 def grootste( n1, n2, n3 ):
     return n1 # Geef iets terug
 
-print( "som van kleinste =", kleinste( num11, num12, num13 ) + 
+print( "som van kleinste =", kleinste( num11, num12, num13 ) +
     kleinste( num21, num22, num23 ) )
-print( "som van middelste =", middelste( num11, num12, num13 ) + 
+print( "som van middelste =", middelste( num11, num12, num13 ) +
     middelste( num21, num22, num23 ) )
-print( "som van grootste =", grootste( num11, num12, num13 ) + 
+print( "som van grootste =", grootste( num11, num12, num13 ) +
     grootste( num21, num22, num23 ) )
 ```
 
 {:class="callout callout-info"}
 > #### Opmerking
-> In de code hierboven heb ik een meervoudige assignment gebruikt om de variabelen `num`$$xx$$ een waarde te geven, om de lengte van de code te reduceren. Hierbij kun je in één statement meerdere variabele een waarde geven door links van het is-gelijk-teken een aantal variabelen te zetten, en rechts ervan evenveel waardes. De eerste waarde gaat naar de eerste variabele, de tweede waarde naar de tweede variabele, etcetera. Dit wordt verder uitgelegd in hoofdstuk <a href="#ch:tuples" data-reference-type="ref" data-reference="ch:tuples">12</a>.
+> In de code hierboven heb ik een meervoudige assignment gebruikt om de variabelen `num`$$xx$$ een waarde te geven, om de lengte van de code te reduceren. Hierbij kun je in één statement meerdere variabele een waarde geven door links van het is-gelijk-teken een aantal variabelen te zetten, en rechts ervan evenveel waardes. De eerste waarde gaat naar de eerste variabele, de tweede waarde naar de tweede variabele, etcetera. Dit wordt verder uitgelegd in hoofdstuk 12.
 
 Het programma hierboven is leesbaar, begrijpbaar, en kan al getest
 worden. Natuurlijk, de functies `kleinste()`, `middelste()`, en
@@ -129,11 +129,11 @@ def middelste( n1, n2, n3 ):
 def grootste( n1, n2, n3 ):
     return grootste_van_twee( grootste_van_twee( n1, n2 ), n3 )
 
-print( "som van kleinste =", kleinste( num11, num12, num13 ) + 
+print( "som van kleinste =", kleinste( num11, num12, num13 ) +
     kleinste( num21, num22, num23 ) )
-print( "som van middelste =", middelste( num11, num12, num13 ) + 
+print( "som van middelste =", middelste( num11, num12, num13 ) +
     middelste( num21, num22, num23 ) )
-print( "som van grootste =", grootste( num11, num12, num13 ) + 
+print( "som van grootste =", grootste( num11, num12, num13 ) +
     grootste( num21, num22, num23 ) )
 ```
 
@@ -181,17 +181,17 @@ def kleinste( n1, n2, n3 ):
     return kleinste_van_twee( kleinste_van_twee( n1, n2 ), n3 )
 
 def middelste( n1, n2, n3 ):
-    return verwijder_twee_van_drie( n1, n2, n3, 
+    return verwijder_twee_van_drie( n1, n2, n3,
         kleinste( n1, n2, n3 ), grootste( n1, n2, n3 ) )
 
 def grootste( n1, n2, n3 ):
     return grootste_van_twee( grootste_van_twee( n1, n2 ), n3 )
 
-print( "som van kleinste =", kleinste( num11, num12, num13 ) + 
+print( "som van kleinste =", kleinste( num11, num12, num13 ) +
     kleinste( num21, num22, num23 ) )
-print( "som van middelste =", middelste( num11, num12, num13 ) + 
+print( "som van middelste =", middelste( num11, num12, num13 ) +
     middelste( num21, num22, num23 ) )
-print( "som van grootste =", grootste( num11, num12, num13 ) + 
+print( "som van grootste =", grootste( num11, num12, num13 ) +
     grootste( num21, num22, num23 ) )
 ```
 

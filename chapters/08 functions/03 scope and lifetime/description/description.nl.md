@@ -185,7 +185,7 @@ globale variabelen. Als je waardes van buiten een functie beschikbaar
 wilt maken voor de functie, kun je dat doen middels parameters. Een
 uitzondering kan gemaakt worden voor globale variabelen die als
 constanten voor een programma gebruikt worden (zie hoofdstuk
-<a href="#ch:variables" data-reference-type="ref" data-reference="ch:variables">5</a>).
+5).
 Als je een functie aan een constante laat refereren, zorg er dan wel
 voor dat het duidelijk is voor eenieder die de functie bekijkt dat het
 inderdaad een constante is, dus dat de naam van de variabele volledig

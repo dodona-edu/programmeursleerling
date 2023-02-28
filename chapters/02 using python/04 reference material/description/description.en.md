@@ -28,6 +28,6 @@ possible to learn programming mainly from watching a video. The only way
 to learn programming is by doing.
 
 I have included a troubleshooting appendix (Appendix
-<a href="#ch:troubleshooting" data-reference-type="ref" data-reference="ch:troubleshooting">29</a>)
+29)
 to explain the most common problems that you may encounter during the
 writing and running of programs.

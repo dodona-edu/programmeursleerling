@@ -96,7 +96,7 @@ Als je een integer hebt die je wilt gebruiken als float, kun je dat doen
 door er `.0` achter te zetten. Bijvoorbeeld, `13` is een integer, maar
 `13.0` is een float. Ze geven nog steeds dezelfde waarde weer, en als je
 ze in code met elkaar vergelijkt (dat bespreek ik in hoofdstuk
-<a href="#ch:conditions" data-reference-type="ref" data-reference="ch:conditions">7</a>),
+7),
 dan zal Python stellen dat ze hetzelfde zijn.
 
 Er zijn bepaalde begrenzingen aan de grootte van de floats, en aan de
@@ -116,4 +116,4 @@ berekening waarin floats zitten een integer moet zijn, dan doe je er
 goed aan om de uitkomst af te ronden naar het dichtstbijzijnde gehele
 getal. Dat kun je doen met behulp van de `round()` functie, die ik
 bespreek in hoofdstuk
-<a href="#ch:simplefunctions" data-reference-type="ref" data-reference="ch:simplefunctions">6</a>.
+6.

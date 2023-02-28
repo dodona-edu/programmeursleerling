@@ -2,7 +2,7 @@ Tuples are not used often in Python code (except as return values of
 functions). A logical application of tuples would be to deal with values
 that always occur in small collections. However, object orientation
 (Chapter
-<a href="#ch:objectorientation" data-reference-type="ref" data-reference="ch:objectorientation">21</a>
+21
 and further) offers many tools and techniques to deal with such small
 collections, which means that programmers usually revert to object
 orientation when they need something like that.
@@ -19,14 +19,14 @@ coordinates are always communicated in the form of tuples.
 from math import sqrt
 
 # Returns the distance between two points in 2-dimensional space.
-# The points are the parameters of the function; each point is a 
+# The points are the parameters of the function; each point is a
 # tuple of two numeric values.
 def distance( p1, p2 ):
     return sqrt( (p1[0] - p2[0])**2 + (p1[1] - p2[1])**2 )
 
 point1 = (1,2)
 point2 = (5,5)
-print( "Distance between", point1, "and", point2, "is", 
+print( "Distance between", point1, "and", point2, "is",
     distance( point1, point2 ) )
 ```
 
@@ -38,7 +38,7 @@ higher-dimensional spaces too.
 from math import sqrt
 
 # Distance between two points in N-dimensional space.
-# The points should have the same dimension, i.e., they are tuples 
+# The points should have the same dimension, i.e., they are tuples
 # of numeric values, and they should have the same length.
 def distance( p1, p2 ):
     total = 0
@@ -49,18 +49,18 @@ def distance( p1, p2 ):
 # 1-dimensional space
 point1 = (1,)
 point2 = (5,)
-print( "1D: Distance between", point1, "and", point2, "is", 
+print( "1D: Distance between", point1, "and", point2, "is",
     distance( point1, point2 ) )
 
 # 2-dimensional space
 point1 = (1,2)
 point2 = (5,5)
-print( "2D: Distance between", point1, "and", point2, "is", 
+print( "2D: Distance between", point1, "and", point2, "is",
     distance( point1, point2 ) )
 
 # 3-dimensional space
 point1 = (1,2,4)
 point2 = (5,5,8)
-print( "3D: Distance between", point1, "and", point2, "is", 
+print( "3D: Distance between", point1, "and", point2, "is",
     distance( point1, point2 ) )
 ```

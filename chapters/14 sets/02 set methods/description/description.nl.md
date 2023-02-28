@@ -167,7 +167,7 @@ methode implementeren via de combinatie van een aantal van bovenstaande
 methodes?
 
 In hoofdstuk
-<a href="#ch:iterations" data-reference-type="ref" data-reference="ch:iterations">8</a>
+8
 was een oefening die je vroeg om alle letters te vinden die twee woorden
 gemeen hebben, waarbij iedere letter slechts eenmalig gerapporteerd
 wordt. Dit kun je zeer efficiënt doen met sets. Schrijf de code

@@ -15,7 +15,7 @@ Dit is soms nodig, specifiek wanneer je een "iterator" hebt en je wilt
 de elementen van de iterator als een list gebruiken. Een iterator is een
 functie die een collectie van elementen één voor één creëert (meer over
 iteratoren volgt in hoofdstuk
-<a href="#ch:iteratorsandgenerators" data-reference-type="ref" data-reference="ch:iteratorsandgenerators">24</a>).
+24).
 Een voorbeeld van een iterator dat ik al genoemd heb is de `range()`
 functie. `range()` genereert een collectie getallen. Als je deze
 getallen wilt gebruiken in de vorm van een list, moet je list casting

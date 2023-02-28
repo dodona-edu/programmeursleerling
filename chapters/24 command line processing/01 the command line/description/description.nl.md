@@ -1,5 +1,5 @@
 Hoofdstuk
-<a href="#ch:operatingsystem" data-reference-type="ref" data-reference="ch:operatingsystem">16</a>
+16
 legde uit hoe je de "command prompt" of "command shell" van de computer
 kunt benaderen. Als je dat niet meer weet, neem dat hoofdstuk nog eens
 door. Het hoofdstuk gaf ook aan dat je Python programma's kunt starten

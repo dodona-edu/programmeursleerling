@@ -1,5 +1,5 @@
 Chapter
-<a href="#ch:simplefunctions" data-reference-type="ref" data-reference="ch:simplefunctions">6</a>
+6
 described how each function has a name, may have some parameters, and
 may have a return value. When you create your own functions, you need to
 define each of these. To create a function, you use the following
@@ -130,7 +130,7 @@ Of course, should you decide to do such type checking in a function, you
 must decide what you will do if the user provides the wrong type. The
 regular way to handle this is by "raising an exception." This will be
 discussed in Chapter
-<a href="#ch:exceptions" data-reference-type="ref" data-reference="ch:exceptions">18</a>.
+18.
 For now, you may assume that the functions that you write are called
 with parameters of the correct types. As long as you write functions for
 your own use, you can always guarantee that.
@@ -162,7 +162,7 @@ The following code gives examples of these possibilities:
 ```python
 def multiply_xyz( x, y=1, z=7 ):
     print( x * y * z )
-    
+
 multiply_xyz( 2, 2, 2 ) # x=2, y=2, z=2
 multiply_xyz( 2, 5 )    # x=2, y=5, z=7
 multiply_xyz( 2, z=5 )  # x=2, y=1, z=5
@@ -234,7 +234,7 @@ At first glance this code might seem fine: as it has nothing to
 calculate for negative numbers, it just returns no value. However, when
 you run this program you find it prints the special value `None`. I
 discussed this special value in Chapter
-<a href="#ch:simplefunctions" data-reference-type="ref" data-reference="ch:simplefunctions">6</a>.
+6.
 The main program expected the function `pythagoras()` to return a
 number, so `pythagoras()` is failing its duties by returning nothing in
 certain circumstances. You should always be very clear about what data
@@ -438,7 +438,7 @@ it wants and what it returns, you can use the function without any
 knowledge of its internal process. So you can just ignore the code for
 `addDays()` (note: the contents of `addDays()` use the `datetime`
 module, which is discussed in Chapter
-<a href="#ch:varioususefulmodules" data-reference-type="ref" data-reference="ch:varioususefulmodules">28</a>).
+28).
 
 ### Calling functions from functions
 

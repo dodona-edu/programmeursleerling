@@ -69,5 +69,4 @@ for i in range( 3 ):
 
 [^7]: Tenzij je ze in een functie gebruikt, dan kun je wel in één keer
     de functie en dus de loops afbreken. Maar dat volgt in hoofdstuk
-    <a href="#ch:functions" data-reference-type="ref" data-reference="ch:functions">9</a>.
-
+    9.

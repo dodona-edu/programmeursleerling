@@ -11,12 +11,12 @@ wortel van een getal trekt) te gebruiken, roep je `math.sqrt()` aan
 nadat je `math` geïmporteerd hebt.
 
 Als alternatief kun je ook specifieke functies vanuit een module
-importeren, via:  
+importeren, via:
 
 ```python
 from <module> import <functie1>, <functie2>, <functie3>, …
 ```
-  
+
 Het voordeel van een dergelijke manier van functies importeren is dat je
 in je code niet de naam van de module voor de functie-aanroep hoeft te
 zetten.
@@ -51,7 +51,7 @@ print( squareroot( 4 ) )
 Ik bespreek nu een aantal functies uit twee veelgebruikte standaard
 modules, en een aantal functies die in een module staan die ik voor dit
 boek gebouwd heb (in hoofdstuk
-<a href="#ch:functions" data-reference-type="ref" data-reference="ch:functions">9</a>
+9
 leg ik uit hoe je je eigen modules kunt maken). Er zijn veel meer
 standaard modules naast de modules die ik hieronder noem, en sommige
 ervan komen later nog aan de orde. Andere zul je zelf moeten opzoeken
@@ -143,7 +143,7 @@ print( "Dezelfde 3 zijn:", random(), random(), random() )
 
 `pcinput` is een module die ik voor dit boek geschreven heb. Je vindt
 hem in appendix
-<a href="#ch:pcinput" data-reference-type="ref" data-reference="ch:pcinput">31</a>,
+31,
 en je kunt hem gemakkelijk zelf maken (of eenvoudigweg downloaden via
 <http://www.spronck.net/pythonbook>{:target="_blank"}). De module bevat vier handige
 functies, die de gebruiker op een veilige manier om specifieke input
@@ -204,4 +204,4 @@ prompt om de gebruiker te vragen een float in te geven.
 
 {:class="callout callout-info"}
 > #### Opmerking
-> Ik leg niet uit hoe `pcinput` werkt, omdat ik er concepten voor gebruik die pas in hoofdstuk <a href="#ch:exceptions" data-reference-type="ref" data-reference="ch:exceptions">18</a> aan bod komen. Je zult later leren hoe je zelf dit soort functies kunt maken. Je hoeft je vooralsnog niet druk te maken over hoe ze werken, je hoeft ze alleen maar te gebruiken. Dat is de houding die je tegenover de meeste standaardfuncties moet hebben: zolang je maar weet wat ze doen, welke parameters ze nodig hebben, en wat ze retourneren, heeft het geen zin na te denken over hoe ze werken.
+> Ik leg niet uit hoe `pcinput` werkt, omdat ik er concepten voor gebruik die pas in hoofdstuk 18 aan bod komen. Je zult later leren hoe je zelf dit soort functies kunt maken. Je hoeft je vooralsnog niet druk te maken over hoe ze werken, je hoeft ze alleen maar te gebruiken. Dat is de houding die je tegenover de meeste standaardfuncties moet hebben: zolang je maar weet wat ze doen, welke parameters ze nodig hebben, en wat ze retourneren, heeft het geen zin na te denken over hoe ze werken.

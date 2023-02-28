@@ -18,9 +18,9 @@ Ook al gaat dit hoofdstuk over expressies, ik moet toch eerst iets
 uitleggen dat geen expressie is, maar een functie, namelijk een functie
 die het mogelijk maakt resultaten te laten zien. De functie die dat doet
 is `print`. Ik heb deze functie al gebruikt in hoofdstukken
-<a href="#ch:introduction" data-reference-type="ref" data-reference="ch:introduction">2</a>
+2
 en
-<a href="#ch:usingpython" data-reference-type="ref" data-reference="ch:usingpython">3</a>.
+3.
 
 De `print` functie gebruik je als volgt: je schrijft het woord `print`,
 gevolgd door een rond openingshaakje, gevolgd door hetgeen je wilt laten

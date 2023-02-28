@@ -58,7 +58,7 @@ maar dat de functie kopieën krijgt van de waardes die in de parameters
 staan. Ik zeg "over het algemeen" omdat dit niet geldt voor alle data
 types, maar het geldt in ieder geval voor de data types die tot op dit
 moment bediscussieerd zijn. Pas in hoofdstuk
-<a href="#ch:lists" data-reference-type="ref" data-reference="ch:lists">13</a>
+13
 ga ik spreken over data types die wel door functies gewijzigd kunnen
 worden, en op dat moment zal ik dat heel duidelijk maken.
 
@@ -81,7 +81,7 @@ andere (nogal verwarrende) volgorde aan de functie worden doorgegeven.
 ```python
 basis = 2
 exponent = 3
-print( pow( exponent, basis ) ) # verwarrende variabele namen 
+print( pow( exponent, basis ) ) # verwarrende variabele namen
 ```
 
 Wat gebeurt er als je een functie aanroept met parameter waardes waarmee

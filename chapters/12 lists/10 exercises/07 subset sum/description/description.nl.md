@@ -10,5 +10,5 @@ Als er een oplossing is, druk die af; als er geen oplossing is, geef dat
 dan aan.
 
 Hint: Dit probleem pak je het beste aan met recursie. Als je hoofdstuk
-<a href="#ch:recursion" data-reference-type="ref" data-reference="ch:recursion">10</a>
+10
 hebt overgeslagen, kun je het beste ook deze opgave overslaan.

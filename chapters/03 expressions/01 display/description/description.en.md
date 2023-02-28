@@ -17,9 +17,9 @@ So, even though this chapter is about expressions, the first thing I
 need to explain is not an expression, but a function, that allows you to
 display results. The function that does that is `print`. I already
 showed the `print` function in Chapters
-<a href="#ch:introduction" data-reference-type="ref" data-reference="ch:introduction">2</a>
+2
 and
-<a href="#ch:usingpython" data-reference-type="ref" data-reference="ch:usingpython">3</a>.
+3.
 
 The `print` function is used as follows: you write the word `print`,
 followed by an opening parenthesis, followed by whatever you want to

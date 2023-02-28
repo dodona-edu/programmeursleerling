@@ -14,7 +14,7 @@ This is sometimes necessary, in particular when you have an "iterator"
 available and you want to use the elements in a list format. An iterator
 is a function that generates a sequence (more on iterators is given in
 Chapter
-<a href="#ch:iteratorsandgenerators" data-reference-type="ref" data-reference="ch:iteratorsandgenerators">24</a>).
+24).
 An example of an iterator that I already discussed is the `range()`
 function. The `range()` function generates a sequence of numbers. If you
 want to use these numbers as a list, you can use list casting.

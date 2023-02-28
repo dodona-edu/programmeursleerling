@@ -48,9 +48,8 @@ dit beschouwen als een nette manier van afbreken.
 In principe moet je meldingen van Python over je programma niet negeren,
 maar deze is een uitzondering. Je mag je programma op deze manier
 afbreken. In hoofdstuk
-<a href="#ch:functions" data-reference-type="ref" data-reference="ch:functions">9</a>
+9
 zal ik een andere manier van programma afbreken bespreken, die ervoor
 zorgt dat je deze melding niet krijgt. Dat kun je tegen die tijd
 gebruiken (als de melding je echt stoort), maar vooralsnog moet je hem
 maar accepteren.
-

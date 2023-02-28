@@ -10,7 +10,7 @@ dezelfde directory als waar je je eigen code schrijft.
 Deze functies zijn wat lelijk omdat ze foutmeldingen geven als er iets
 mis is. Maar mooiere functies zouden lastiger zijn om te gebruiken (je
 moet dan exceptions afhandelen, en die behandel ik pas in hoofdstuk
-<a href="#ch:exceptions" data-reference-type="ref" data-reference="ch:exceptions">18</a>).
+18).
 Om Python te leren zijn ze uitstekend geschikt.
 
 Ieder van de functies vraagt de gebruiker om een waarde in te geven van

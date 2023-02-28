@@ -1,5 +1,5 @@
 In Chapter
-<a href="#ch:objectorientation" data-reference-type="ref" data-reference="ch:objectorientation">21</a>
+21
 I discussed that objects can be aliases of each other, but that you can
 also make actual copies. What happens if you try to compare them?
 
@@ -89,7 +89,7 @@ class Quaternion:
         self.c = c
         self.d = d
     def __repr__( self ):
-        return "({},{}i,{}j,{}k)".format( self.a, self.b, 
+        return "({},{}i,{}j,{}k)".format( self.a, self.b,
             self.c, self.d )
     def __eq__( self, n ):
         if isinstance( n, int ) or isinstance( n, float ):
@@ -132,7 +132,7 @@ else:
 if c3 == "3":
     print( c3, "== \"3\"" )
 else:
-    print( c3, "!= \"3\"" ) 
+    print( c3, "!= \"3\"" )
 if 3 == c3:
     print( 3, "==", c3 )
 else:
@@ -161,7 +161,7 @@ inverted, `<` is swapped with `>`, and `<=` is swapped with `>=`, just
 as you would expect.
 
 In Chapter
-<a href="#ch:objectorientation" data-reference-type="ref" data-reference="ch:objectorientation">21</a>,
+21,
 a `Rectangle` class was defined. Add to this class operators to test for
 equality of rectangles (two rectangles are equal if they have exactly
 the same shape), and greater/smaller operators (a rectangle is smaller
@@ -174,7 +174,7 @@ There is one special comparison I want to bring up, and that is testing
 whether an object is `True` or `False`. Many objects are considered to
 be `False` in particular circumstances; for instance, and empty list
 evaluates to `False`. This was briefly discussed in Chapter
-<a href="#ch:conditions" data-reference-type="ref" data-reference="ch:conditions">7</a>.
+7.
 
 ```python
 buffer = []

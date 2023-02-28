@@ -1,8 +1,8 @@
 In Chapter
-<a href="#ch:textfiles" data-reference-type="ref" data-reference="ch:textfiles">17</a>
+17
 several small text files are used to demonstrate functionalities.
 Moreover, in Chapter
-<a href="#ch:fileformats" data-reference-type="ref" data-reference="ch:fileformats">27</a>
+27
 I use a CSV file as demonstration. You can download these files either
 from <http://www.spronck.net/pythonbook>{:target="_blank"}, or create them yourself. The
 contents of these files are given below: just create them with any text
@@ -38,7 +38,7 @@ Glass*. The last one is an example CSV file that I built.
 ## pc_jabberwocky.txt
 
     JABBERWOCKY
-                 
+
     'Twas brillig, and the slithy toves
      Did gyre and gimble in the wabe;
     All mimsy were the borogoves,

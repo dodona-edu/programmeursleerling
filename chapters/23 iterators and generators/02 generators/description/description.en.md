@@ -37,7 +37,7 @@ for n in fseq:
 ### Generator expressions
 
 In Chapter
-<a href="#ch:lists" data-reference-type="ref" data-reference="ch:lists">13</a>,
+13,
 I introduced the concept of list comprehension. Since any list can be
 turned into an iterator, and thus into a generator, Python introduced a
 similar concept for generators, and calls it "generator expressions."

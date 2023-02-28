@@ -173,7 +173,7 @@ geen `Appel`s met `Peer`en vergelijken.
 Een klasse hiërarchie wordt geïmplementeerd met behulp van een
 mechanisme dat "inheritance" ("overerving") wordt genoemd, wat het
 onderwerp is van hoofdstuk
-<a href="#ch:inheritance" data-reference-type="ref" data-reference="ch:inheritance">23</a>.
+23.
 
 ### Klassen en data types in Python
 
@@ -196,4 +196,4 @@ zijn dat ook. Ze hebben zelfs methodes, maar die worden zelden expliciet
 aangeroepen. Methodes worden vaak wel impliciet aangeroepen,
 bijvoorbeeld, als je twee getallen optelt met $$+$$, is dat eigenlijk de
 aanroep van een methode. Ik zal dit bediscussiëren in hoofdstuk
-<a href="#ch:operatoroverloading" data-reference-type="ref" data-reference="ch:operatoroverloading">22</a>.
+22.

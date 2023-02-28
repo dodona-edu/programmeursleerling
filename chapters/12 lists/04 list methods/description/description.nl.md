@@ -153,7 +153,7 @@ elementen gemixt zijn, volgt een runtime error, tenzij bepaalde extra
 argumenten zijn meegegeven.
 
 ```python
-fruitlist = ["appel", "aardbei", "banaan", "framboos", 
+fruitlist = ["appel", "aardbei", "banaan", "framboos",
     "kers", "banaan", "doerian", "mango"]
 fruitlist.sort()
 print( fruitlist )
@@ -187,7 +187,7 @@ het volgende voorbeeld:
 
 ```python
 fruitlist = ["appel", "Aardbei", "banaan", "framboos", "KERS", "banaana", "doerian", "mango"]
-fruitlist.sort() 
+fruitlist.sort()
 print( fruitlist )
 fruitlist.sort( key=str.lower ) # case-insensitive sort
 print( fruitlist )
@@ -215,9 +215,9 @@ alleen bij gelijke lengte op alfabetische volgorde:
 
 ```python
 def len_alfabetisch( element ):
-    return len( element ), element 
+    return len( element ), element
 
-fruitlist = ["appel", "aardbei", "banaan", "framboos", 
+fruitlist = ["appel", "aardbei", "banaan", "framboos",
     "kers", "banaan", "doerian", "mango"]
 fruitlist.sort( key=len_alfabetisch )
 print( fruitlist )
@@ -225,14 +225,14 @@ print( fruitlist )
 
 Merk op dat de `len_alfabetisch()` functie een tuple retourneert. Zoals
 in hoofdstuk
-<a href="#ch:tuples" data-reference-type="ref" data-reference="ch:tuples">12</a>
+12
 werd uitgelegd, als je twee tuples vergelijkt worden eerst de eerste
 elementen van de tuples vergeleken, en alleen als die gelijk zijn worden
 de tweede elementen vergeleken.
 
 Op dit punt kan ik een typisch voorbeeld geven van het gebruik van een
 "anonieme functie," die ik introduceerde in hoofdstuk
-<a href="#ch:functions" data-reference-type="ref" data-reference="ch:functions">9</a>
+9
 (als je die niet hebt overgeslagen). Als je een anonieme functie
 gebruikt om de key voor een `sort()` methode te specificeren, in plaats
 van als een separate functie elders in het programma, houd je de code
@@ -273,4 +273,4 @@ de letters geteld zijn, druk je alle resulterende tellingen af. Als
 index voor de list kun je `ord(letter) - ord("a")` gebruiken, waarbij
 "letter" een kleine letter is (de functie `ord()` is uitgelegd in
 hoofdstuk
-<a href="#ch:strings" data-reference-type="ref" data-reference="ch:strings">11</a>).
+11).

@@ -78,7 +78,7 @@ for i in range( 10, 16 ):
 ```
 
 Ik geef meer details over UTF-8 encoding in hoofdstuk
-<a href="#ch:bitwiseoperators" data-reference-type="ref" data-reference="ch:bitwiseoperators">20</a>,
+20,
 maar voor het manipuleren van tekstbestanden heb je voldoende aan de
 bovenstaande informatie.
 

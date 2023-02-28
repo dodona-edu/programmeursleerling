@@ -178,7 +178,7 @@ element. You call the `sort()` method as in the following example:
 
 ```python
 fruitlist = ["apple", "Strawberry", "banana", "raspberry", "CHERRY", "banana", "durian", "blueberry"]
-fruitlist.sort() 
+fruitlist.sort()
 print( fruitlist )
 fruitlist.sort( key=str.lower ) # case-insensitive sort
 print( fruitlist )
@@ -204,7 +204,7 @@ alphabetical order:
 
 ```python
 def len_alphabetical( element ):
-    return len( element ), element 
+    return len( element ), element
 
 fruitlist = ["apple", "strawberry", "banana", "raspberry", "cherry", "banana", "durian", "blueberry"]
 fruitlist.sort( key=len_alphabetical )
@@ -217,7 +217,7 @@ compared, and if they are equal, the second elements are compared.
 
 At this point I can give a typical example of the use of "anonymous
 functions," which I introduced in Chapter
-<a href="#ch:functions" data-reference-type="ref" data-reference="ch:functions">9</a>.
+9.
 Using an anonymous function to specify the key for the `sort()` method
 keeps the code for the key next to where you call the `sort()`, instead
 of elsewhere in the program. This may improve readability.
@@ -254,4 +254,4 @@ can ignore every character that is not a letter. Store the counts in a
 list of 26 items that all start at zero. Print the resulting counts. As
 index you can use `ord(letter) - ord("a")`, where letter is a lower case
 letter (the `ord()` function is explained in Chapter
-<a href="#ch:strings" data-reference-type="ref" data-reference="ch:strings">11</a>).
+11).

@@ -87,7 +87,7 @@ At this point in the book it is hard to give a good demonstration of
 recursion, as it needs particular data structures to show its power. But
 to still show something non-trivial, I have created a module called
 `pcmaze`. You can find it in Appendix
-<a href="#ch:pcmaze" data-reference-type="ref" data-reference="ch:pcmaze">32</a>,
+32,
 and you need to either create it or download it from the same place
 where you got `pcinput.py` to be able to run the code in this
 subsection.
@@ -244,7 +244,7 @@ calls, so that the path as a whole is returned from the first call, in
 the main program. This is what the pseudo-code above proposed. A good
 way to return a path is in the form of a list, but lists will be
 discussed in Chapter
-<a href="#ch:lists" data-reference-type="ref" data-reference="ch:lists">13</a>.
+13.
 Instead, I will do it in the form of a string.
 
 It works as follows: A call that finds the exit cell, returns the number

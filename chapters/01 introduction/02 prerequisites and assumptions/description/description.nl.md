@@ -32,6 +32,6 @@ termen is het verstandig dat gewoon de Engelstalige variant gebruikt
 wordt, omdat die bij iedereen bekend is. Ik zal dit soort termen
 uitleggen de eerste keer dat ze gebruikt worden, maar later in het boek
 staan ze dan zonder verdere uitleg in de tekst. Ik som ze op in appendix
-<a href="#ch:english" data-reference-type="ref" data-reference="ch:english">35</a>,
+35,
 die je eventueel erop na kunt slaan als je een term nogmaals wilt
 opzoeken.

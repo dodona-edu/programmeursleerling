@@ -155,7 +155,7 @@ omdat Python Unicode ondersteunt. Af en toe zie ik vertalingsproblemen
 als van Unicode naar ASCII moet worden gegaan, wat meestal te maken
 heeft met bestandsverwerking. Het zal een tijdje duren voordat je dat
 soort problemen krijgt, en ik zal er meer over zeggen in hoofdstuk
-<a href="#ch:textfiles" data-reference-type="ref" data-reference="ch:textfiles">17</a>
+17
 en verder.
 
 [^14]: Er staat een vreemd teken in deze reeks Griekse letters, namelijk

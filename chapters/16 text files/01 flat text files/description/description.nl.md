@@ -9,7 +9,7 @@ teksteditor (bijvoorbeeld IDLE). Als je dat doet en alleen leesbare
 tekst ziet, betreft het waarschijnlijk een tekstbestand. Anders wordt
 het een "binair bestand" genoemd (binaire bestanden worden besproken in
 hoofdstuk
-<a href="#ch:binaryfiles" data-reference-type="ref" data-reference="ch:binaryfiles">19</a>).
+19).
 
 Tekstbestanden bestaan uit regels tekst. Aan het einde van iedere regel
 staat een "newline" symbool, in Python voorgesteld als het teken `"\n"`.
@@ -72,7 +72,7 @@ methodes waarmee je de pointer handmatig kunt verplaatsen, maar zulke
 methodes worden over het algemeen alleen gebruikt bij binaire bestanden.
 In dit hoofdstuk zal ik daarom deze methodes niet bespreken, maar ik
 breng ze aan de orde in hoofdstuk
-<a href="#ch:binaryfiles" data-reference-type="ref" data-reference="ch:binaryfiles">19</a>.
+19.
 
 ### Buffers
 

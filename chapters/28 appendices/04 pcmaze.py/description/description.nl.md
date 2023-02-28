@@ -1,5 +1,5 @@
 In hoofdstuk
-<a href="#ch:recursion" data-reference-type="ref" data-reference="ch:recursion">10</a>
+10
 laat ik in een voorbeeld een doolhof doorzoeken. In dat voorbeeld
 gebruik ik een module `pcmaze`, die ik voor dit boek heb geschreven. De
 module bevat een doolhof, en geeft functies om eigenschappen van het
@@ -17,10 +17,10 @@ def connected( x, y ):
         (15,16)):
         return True
     return False
-    
+
 def entrance():
     return 1
-    
+
 def exit():
     return 16
 ```

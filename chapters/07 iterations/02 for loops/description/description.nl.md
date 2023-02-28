@@ -47,7 +47,7 @@ lastig voor `for` loops).
 Als de `for` loop wordt aangetroffen, neemt Python de collectie (de
 string `"banaan"` in dit geval) en maakt er een zogeheten "iterabele"
 van. Wat dat precies is komt pas in hoofdstuk
-<a href="#ch:iteratorsandgenerators" data-reference-type="ref" data-reference="ch:iteratorsandgenerators">24</a>
+24
 aan de orde, maar vooralsnog mag je aannemen dat het een lijst is van
 alle tekens in de string, in de volgorde dat ze in de string staan.
 Python neemt dan de eerste van deze tekens, en stopt hem in de variabele
@@ -154,7 +154,7 @@ Als je een serie items hebt in een collectie die je "handmatig" hebt
 samengesteld, kun je die middels een `for` loop verwerken als je de
 items tussen haakjes zet. Een serie items tussen haakjes is een "tuple."
 Tuples worden in hoofdstuk
-<a href="#ch:tuples" data-reference-type="ref" data-reference="ch:tuples">12</a>
+12
 uitgebreid besproken.
 
 ```python
@@ -188,7 +188,7 @@ Ik ga geen oefening geven waarin je met een `for` loop de gebruiker
 vraagt om getallen totdat de gebruiker nul ingeeft. Waarom niet?
 
 [^6]: Helaas zal ik deze uitspraak moeten aanpassen in hoofdstuk
-    <a href="#ch:iteratorsandgenerators" data-reference-type="ref" data-reference="ch:iteratorsandgenerators">24</a>,
+    24,
     maar je hebt erg geavanceerde kennis van Python nodig om een
     eindeloze `for` loop te maken – je mag er op dit moment van uitgaan
     (en in de praktijk zal dit ook altijd zo zijn) dat `for` loops

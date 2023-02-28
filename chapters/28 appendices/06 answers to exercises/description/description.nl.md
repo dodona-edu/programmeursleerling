@@ -23,7 +23,7 @@ is, moet je overwegen of de oplossing efficiënter gemaakt kan worden.
 Leesbaarheid en onderhoudbaarheid zijn veel belangrijker dan
 efficiëntie.
 
-### Hoofdstuk <a href="#ch:introduction" data-reference-type="ref" data-reference="ch:introduction">2</a>
+### Hoofdstuk 2
 
 #### Antwoord 1.1
 
@@ -108,11 +108,11 @@ hierboven beschrijf:
 Het idee om genummerde rechthoeken te gebruiken om aan kaarten te
 refereren is vergelijkbaar met het gebruiken van variabelen in een
 computerprogramma. Variabelen worden uitgelegd in hoofdstuk
-<a href="#ch:variables" data-reference-type="ref" data-reference="ch:variables">5</a>.
+5.
 Het uitleggen van de meer efficiënte procedure die hierboven staat is
 een stuk lastiger, omdat je er geneste condities voor nodig hebt.
 
-### Hoofdstuk <a href="#ch:usingpython" data-reference-type="ref" data-reference="ch:usingpython">3</a>
+### Hoofdstuk 3
 
 #### Antwoord 2.1
 
@@ -128,7 +128,7 @@ De shell toont het resultaat van het draaien van het programma. Maar
 omdat het programma zelf geen resultaat heeft, is er ook niks dat de
 shell kan laten zien. Dus je ziet niets.
 
-### Hoofdstuk <a href="#ch:expressions" data-reference-type="ref" data-reference="ch:expressions">4</a>
+### Hoofdstuk 4
 
 #### Antwoord 3.1
 
@@ -180,7 +180,7 @@ haakjes of aanhalingstekens. Houd daar rekening mee.
 print( str( (14 + 535) % 24 ) + ".00" )
 ```
 
-### Hoofdstuk <a href="#ch:variables" data-reference-type="ref" data-reference="ch:variables">5</a>
+### Hoofdstuk 5
 
 #### Antwoord 4.1
 
@@ -201,7 +201,7 @@ print( gemiddelde ) # Ziet er wat lelijk uit, maar
 ```python
 pi = 3.14159
 straal = 12
-print( "De oppervlakte van een cirkel met straal", 
+print( "De oppervlakte van een cirkel met straal",
     straal, "is", pi * straal * straal )
 ```
 
@@ -246,7 +246,7 @@ a -= b
 print( "a =", a, "en b =", b )
 ```
 
-### Hoofdstuk <a href="#ch:simplefunctions" data-reference-type="ref" data-reference="ch:simplefunctions">6</a>
+### Hoofdstuk 6
 
 #### Antwoord 5.1
 
@@ -299,11 +299,11 @@ print( s.format( 3, exp( 3 ) ) )
 ```python
 from random import random
 
-print( "Een toevalsgetal tussen 1 en 10 is", 
+print( "Een toevalsgetal tussen 1 en 10 is",
     1 + int( random() * 10 ) )
 ```
 
-### Hoofdstuk <a href="#ch:conditions" data-reference-type="ref" data-reference="ch:conditions">7</a>
+### Hoofdstuk 7
 
 #### Antwoord 6.1
 
@@ -352,7 +352,7 @@ if ("o" in s) or ("O" in s):
     count += 1
 if ("u" in s) or ("U" in s):
     count += 1
-    
+
 if count == 0:
     print( "Er zitten geen klinkers in de string." )
 elif count == 1:
@@ -383,12 +383,12 @@ else:
     elif discriminant == 0:
         print( "Er is 1 oplossing, namelijk", -b/(2*a) )
     else:
-        print( "Er zijn 2 oplossingen, namelijk",  
-                (-b+sqrt(discriminant))/(2*a), "en", 
+        print( "Er zijn 2 oplossingen, namelijk",
+                (-b+sqrt(discriminant))/(2*a), "en",
                 (-b-sqrt(discriminant))/(2*a) )
 ```
 
-### Hoofdstuk <a href="#ch:iterations" data-reference-type="ref" data-reference="ch:iterations">8</a>
+### Hoofdstuk 8
 
 #### Antwoord 7.1
 
@@ -434,7 +434,7 @@ for i in range( AANTAL ):
         kleinste = num
     if num > grootste:
         grootste = num
-        
+
 print( "Kleinste is", kleinste )
 print( "Grootste is", grootste )
 print( "Deelbaar door 3 is", deelbaar3 )
@@ -464,7 +464,7 @@ hierdoor twee strings tegen elkaar aan komen te staan, dan worden die
 samen als één string beschouwd. Ik gebruik dat hier om ervoor te zorgen
 dat de code past binnen de breedte van de pagina. Ik vertel er meer over
 in hoofdstuk
-<a href="#ch:strings" data-reference-type="ref" data-reference="ch:strings">11</a>.
+11.
 Je hebt het zelf niet nodig: je kunt het hele `print()` statement op een
 lange regel schrijven.
 
@@ -480,7 +480,7 @@ while True:
         break
     print( num3, end=" " )
     num1 = num2
-    num2 = num3    
+    num2 = num3
 ```
 
 #### Antwoord 7.6
@@ -538,7 +538,7 @@ while True:
     else:
         print( "Je hebt het geraden!" )
         break
-        
+
 if teller == 1:
     print( "Je hoefde maar 1 keer te raden. Geluksvogel." )
 else:
@@ -572,7 +572,7 @@ while True:
         print( "Antwoord H, L, of C." )
         continue
     if laagste >= hoogste-1:
-        print( "Je moet een fout gemaakt hebben,", 
+        print( "Je moet een fout gemaakt hebben,",
             "want je hebt gezegd dat het getal hoger is dan",
             laagste, "maar ook lager dan", hoogste )
         print( "Ik stop ermee" )
@@ -696,7 +696,7 @@ for i in range( POGINGEN ):
         laatste = waarde
     else:
         succes += 1
-        
+
 print( "De waarschijnlijkheid van een oplopende serie van vijf",
     "dobbelsteen worpen is {:.3f}".format( succes/POGINGEN ) )
 ```
@@ -717,7 +717,7 @@ for A in range( 1, 10 ):
                 num1 = 1000*A + 100*B + 10*C + D
                 num2 = 1000*D + 100*C + 10*B + A
                 if num1 * 4 == num2:
-                    print( "A={}, B={}, C={}, D={}".format( 
+                    print( "A={}, B={}, C={}, D={}".format(
                         A, B, C, D ) )
 ```
 
@@ -771,7 +771,7 @@ leeftijd = NUMKRUIPERS # Ze leven minstens een dag
 for i in range( NUMKRUIPERS ):
     if randint( 0, 2 ): # Sterf niet op dag 1
         leeftijd += 1
-        while randint( 0, 1 ): # Sterf niet 
+        while randint( 0, 1 ): # Sterf niet
             leeftijd += 1
 
 print( "{:.2f}".format( leeftijd / NUMKRUIPERS ) )
@@ -839,14 +839,14 @@ print( "{:.2f}".format( schatting ) )
 Het exacte antwoord is overigens $$2\frac{1}{3}$$ dagen; een benadering
 moet 2.33 of 2.34 geven.
 
-### Hoofdstuk <a href="#ch:functions" data-reference-type="ref" data-reference="ch:functions">9</a>
+### Hoofdstuk 9
 
 #### Antwoord 8.1
 
 ```python
 from pcinput import getInteger
 
-# tafel krijgt een integer als parameter. Het drukt de 
+# tafel krijgt een integer als parameter. Het drukt de
 # tafel van vermenigvuldiging voor deze integer af.
 def tafel( n ):
     i = 1
@@ -887,7 +887,7 @@ else:
 #### Antwoord 8.3
 
 ```python
-# gregoryLeibnitz benadert pi middels de Gregory-Leibnitz 
+# gregoryLeibnitz benadert pi middels de Gregory-Leibnitz
 # reeks. Hij krijgt 1 parameter, een integer, die aangeeft
 # hoeveel termen berekend worden. De benadering wordt als
 # float geretourneerd.
@@ -910,9 +910,9 @@ from pcinput import getFloat
 from math import sqrt
 
 # Deze functie lost een kwadratische vergelijking op.
-# De parameters zijn numerieke waardes voor A, B, and C in de 
+# De parameters zijn numerieke waardes voor A, B, and C in de
 # vergelijking Ax**2 + Bx + C = 0. Het retourneert drie waardes.
-# De eerste is een integer 0, 1, of 2, die aangeeft hoeveel 
+# De eerste is een integer 0, 1, of 2, die aangeeft hoeveel
 # oplossingen er zijn. Daarna volgen de oplossingen.
 # Zonder oplossingen zijn beide 0. 1 oplossing wordt geretourneerd
 # als de eerste van de twee, en de tweede is 0.
@@ -929,8 +929,8 @@ def wortelformule( a, b, c ):
     else:
         return 2, (-b+sqrt(discriminant))/(2*a), \
             (-b-sqrt(discriminant))/(2*a)
-    
-num, opl1, opl2 = wortelformule( getFloat( "A: " ), 
+
+num, opl1, opl2 = wortelformule( getFloat( "A: " ),
     getFloat( "B: " ), getFloat( "C: " ) )
 if num == 0:
     print( "Er zijn geen oplossingen" )
@@ -983,17 +983,17 @@ def faculteit( n ):
     return waarde
 
 # Berekent n boven k; n en k zijn integer parameters;
-# Retourneert n boven k als integer (want dat is het altijd). 
+# Retourneert n boven k als integer (want dat is het altijd).
 def binomiaalcoefficient( n, k ):
     if k > n:
         return 0
-    return int( faculteit( n ) / 
+    return int( faculteit( n ) /
         (faculteit( k )*faculteit( n - k )) )
 
 def main():
     print( faculteit( 5 ) )
     print( binomiaalcoefficient( 8, 3 ) )
-    
+
 if __name__ == '__main__':
     main()
 ```
@@ -1012,9 +1012,9 @@ als ze een waarde retourneren maakt dat ze meer algemeen bruikbaar
 oppervlakte van een driehoek vanaf dat moment elders in het programma in
 berekeningen gebruikt worden). Als je deze uitleg niet begrijpt, lees
 dan nogmaals hoofdstuk
-<a href="#ch:simplefunctions" data-reference-type="ref" data-reference="ch:simplefunctions">6</a>.
+6.
 
-### Hoofdstuk <a href="#ch:recursion" data-reference-type="ref" data-reference="ch:recursion">10</a>
+### Hoofdstuk 10
 
 #### Antwoord 9.1
 
@@ -1061,7 +1061,7 @@ def gcd( m, n ):
     if m % n == 0:
         return n
     return gcd( n, m%n )
-    
+
 print( gcd( 7*5*13, 2*3*7*11 ) )
 ```
 
@@ -1118,12 +1118,12 @@ en vermijdt recursie, wat betekent dat hij bruikbaar is voor grotere
 schijven dan de recursieve oplossing toestaat. Hij is echter complexer
 om te implementeren omdat je iedere paal moet representeren als een list
 (lists volgen in hoofdstuk
-<a href="#ch:lists" data-reference-type="ref" data-reference="ch:lists">13</a>),
+13),
 en je moet een manier bedenken om te bepalen dat de puzzel is opgelost
 (dat kan door simpelweg de stappen te tellen, dat wil zeggen, te tellen
 tot $$2^N-1$$).
 
-### Hoofdstuk <a href="#ch:strings" data-reference-type="ref" data-reference="ch:strings">11</a>
+### Hoofdstuk 11
 
 #### Antwoord 10.1
 
@@ -1147,23 +1147,23 @@ for c in text:
         telo += 1
     elif c.upper() == "U":
         telu += 1
-        
-print( "tels: a={}, e={}, i={}, o={}, u={}".format( 
+
+print( "tels: a={}, e={}, i={}, o={}, u={}".format(
     tela, tele, teli, telo, telu ) )
 ```
 
 #### Antwoord 10.2
 
 ```python
-tekst = """En ze stu[re]n [i]ngekleurde prentbriefkaarten van 
-plekken waarvan ze zich niet reali[s]eren dat ze er nooit 
-geweest zijn [a]an 'Iedereen op nummer 22, weer is prachti[g], 
-onz[e] kamer is aa[n]gekruisd. Missen jullie. E[t]en[ ]i[s] 
-vettig, maar we hebben een geweldig leuk restaurantje gevonden 
-in de achterstraatjes waar ze Heine[ke]n hebben en kaas en 
-uien chips en iemand die "Een beetje verliefd" speel[t] op een 
-a[c]cordeon' en je zit vier dagen vast op Schip[h]ol voor je 
-vijfdaagse vliegvakantie met niks anders te eten dan 
+tekst = """En ze stu[re]n [i]ngekleurde prentbriefkaarten van
+plekken waarvan ze zich niet reali[s]eren dat ze er nooit
+geweest zijn [a]an 'Iedereen op nummer 22, weer is prachti[g],
+onz[e] kamer is aa[n]gekruisd. Missen jullie. E[t]en[ ]i[s]
+vettig, maar we hebben een geweldig leuk restaurantje gevonden
+in de achterstraatjes waar ze Heine[ke]n hebben en kaas en
+uien chips en iemand die "Een beetje verliefd" speel[t] op een
+a[c]cordeon' en je zit vier dagen vast op Schip[h]ol voor je
+vijfdaagse vliegvakantie met niks anders te eten dan
 uitgedroogde voorverpakte boterhammen..."""
 
 start = -1
@@ -1175,7 +1175,7 @@ while True:
     if eind < 0:
         break
     print( tekst[start+1:eind], end="" )
-    start = eind 
+    start = eind
 print()
 ```
 
@@ -1197,8 +1197,8 @@ for i in range( 26 ):
 #### Antwoord 10.4
 
 ```python
-tekst = """Kapper Knap, de knappe kapper, knipt en kapt heel 
-knap, maar de knecht van kapper Knap, de knappe kapper, 
+tekst = """Kapper Knap, de knappe kapper, knipt en kapt heel
+knap, maar de knecht van kapper Knap, de knappe kapper,
 knipt en kapt nog knapper dan kapper Knap, de knappe kapper."""
 
 def schoon( s ):
@@ -1266,14 +1266,14 @@ for w in woordlijst:
         w[1] >= "A" and w[1] <= "Z" and w[2] >= "a" and \
         w[2] <= "z":
         w = w[0] + w[1].lower() + w[2:]
-    
+
     # Dagen met een hoofdletter
     dag = w.lower()
     if dag == "zondag" or dag == "maandag" or dag == "dinsdag" \
         or dag == "woensdag" or dag == "donderdag" or \
         dag == "vrijdag" or dag == "zaterdag":
         w = dag[0].upper() + dag[1:]
-    
+
     # CAPS LOCK correctie
     if w[0] >= "a" and w[0] <= "z":
         hoofdletters = True
@@ -1283,19 +1283,19 @@ for w in woordlijst:
                 break
         if hoofdletters:
             w = w[0].upper() + w[1:].lower()
-    
+
     # Duplicaten verwijderen
-    if w == laatstewoord: 
+    if w == laatstewoord:
         continue
-        
+
     nieuwezin += w + " "
     laatstewoord = w
-    
+
 nieuwezin = nieuwezin.strip()
 print( nieuwezin )
 ```
 
-### Hoofdstuk <a href="#ch:tuples" data-reference-type="ref" data-reference="ch:tuples">12</a>
+### Hoofdstuk 12
 
 #### Antwoord 11.1
 
@@ -1351,7 +1351,7 @@ print( toon_complex( num1 ), "*", toon_complex( num2 ), "=",
 #### Antwoord 11.3
 
 ```python
-inttuple = ( 1, 2, ( 3, 4 ), 5, ( ( 6, 7, 8, ( 9, 10 ), 11 ), 12, 
+inttuple = ( 1, 2, ( 3, 4 ), 5, ( ( 6, 7, 8, ( 9, 10 ), 11 ), 12,
     13 ), ( ( 14, 15, 16 ), ( 17, 18, 19, 20 ) ) )
 
 def toon_inttuple( it ):
@@ -1364,20 +1364,20 @@ def toon_inttuple( it ):
 toon_inttuple( inttuple )
 ```
 
-### Hoofdstuk <a href="#ch:lists" data-reference-type="ref" data-reference="ch:lists">13</a>
+### Hoofdstuk 13
 
 #### Antwoord 12.1
 
 ```python
 from random import choice
 
-antwoord = [ "Dat is zeker", "Het is zeker zo", "Zonder twijfel", 
-"Ja, zeker", "Je kunt erop vertrouwen", "Zoals ik het zie, ja", 
-"Waarschijnlijk", "Ziet er goed uit", "Ja", "Lijkt van wel", 
+antwoord = [ "Dat is zeker", "Het is zeker zo", "Zonder twijfel",
+"Ja, zeker", "Je kunt erop vertrouwen", "Zoals ik het zie, ja",
+"Waarschijnlijk", "Ziet er goed uit", "Ja", "Lijkt van wel",
 "Vaag, probeer het nog eens", "Vraag later nog eens", "Kan ik \
 beter niet zeggen", "Kan ik nu niet voorspellen", "Concentreer \
 je en vraag nog eens", "Reken er maar niet op", "Ik zeg van \
-niet", "Mijn bronnen zeggen van niet", "Lijkt er niet op", 
+niet", "Mijn bronnen zeggen van niet", "Lijkt er niet op",
 "Zeer twijfelachtig" ]
 
 input( "Stel je vraag aan de magische bol: " )
@@ -1394,15 +1394,15 @@ index per toeval selecteert.
 from random import randint
 
 stok = []
-for value in ("Aas", "2", "3", "4", "5", "6", "7", "8", 
+for value in ("Aas", "2", "3", "4", "5", "6", "7", "8",
     "10", "Boer", "Vrouw", "Heer"):
     for kleur in ("Harten", "Schoppen", "Klaveren", "Ruiten"):
         stok.append( kleur + ' ' + value )
-        
+
 for i in range( len( stok ) ):
     j = randint( i, len( stok )-1 )
     stok[i], stok[j] = stok[j], stok[i]
-    
+
 for kaart in stok:
     print( kaart )
 ```
@@ -1426,24 +1426,24 @@ while True:
 #### Antwoord 12.4
 
 ```python
-tekst = """Let op, het is heel eenvoudig om je te verdedigen 
-tegen een man die gewapend is met een banaan. Eerst dwing je 
-hem de banaan te laten vallen; dan ontwapen je hem door de 
+tekst = """Let op, het is heel eenvoudig om je te verdedigen
+tegen een man die gewapend is met een banaan. Eerst dwing je
+hem de banaan te laten vallen; dan ontwapen je hem door de
 banaan op te eten. Dat maakt hem onschadelijk."""
 
 def tel_letter( x ):
-    return x[0], -ord(x[1]) 
+    return x[0], -ord(x[1])
 
 tellist = []
 for i in range( 26 ):
     tellist.append( [0, chr(ord("a")+i)] )
-    
+
 for letter in tekst.lower():
     if letter >= "a" and letter <= "z":
         tellist[ord(letter)-ord("a")][0] += 1
-        
+
 tellist.sort( reverse=True, key=tel_letter )
-    
+
 for tel in tellist:
     print( "{:3}: {}".format( tel[0],tel[1] ) )
 ```
@@ -1516,7 +1516,7 @@ def opponent( p ):
     if p == SPELERX:
         return SPELERO
     return SPELERX
-        
+
 def neemRowKolom( speler, wat ):
     while True:
         num = getInteger( "Speler "+speler+", welke "+wat+
@@ -1525,7 +1525,7 @@ def neemRowKolom( speler, wat ):
             print( "Geef 1, 2, of 3" )
             continue
         return num
-    
+
 def winnaar( b ):
     for rij in range( 3 ):
         if b[rij][0] != LEEG and b[rij][0] == b[rij][1] \
@@ -1605,7 +1605,7 @@ def plaatsSchepen( b ):
                 continue
             break
         b[y][x] = SCHIP
-    
+
 def neemDoel():
     while True:
         cel = getString( "Welke cel kies je? " ).upper()
@@ -1620,8 +1620,8 @@ def neemDoel():
         if cel[1] not in "123":
             print( "Cijfer moet tussen 1 en", HOOGTE, "liggen" )
             continue
-        return ord(cel[0])-ord("A"), ord(cel[1])-ord("1")      
-    
+        return ord(cel[0])-ord("A"), ord(cel[1])-ord("1")
+
 bord = []
 for i in range( HOOGTE ):
     rij = BREEDTE * [LEEG]
@@ -1647,8 +1647,8 @@ print( "Je had", zetten, "zetten nodig om mij te verslaan." )
 #### Antwoord 12.8
 
 ```python
-# Recursieve functie die bepaalt of intlist (integer-list) een 
-# subset heeft die optelt tot totaal. Het retourneert de 
+# Recursieve functie die bepaalt of intlist (integer-list) een
+# subset heeft die optelt tot totaal. Het retourneert de
 # subset, of een lege list als er geen subset is die werkt.
 def subset_telt_op_tot( intlist, totaal ):
     for num in intlist:
@@ -1703,13 +1703,13 @@ het probleem oplost zonder alle deelverzamelingen te testen als er geen
 oplossing is. Voor degenen die iets weten van complexiteitstheorie: het
 subset som probleem is "NP-hard."
 
-### Hoofdstuk <a href="#ch:dictionaries" data-reference-type="ref" data-reference="ch:dictionaries">14</a>
+### Hoofdstuk 14
 
 #### Antwoord 13.1
 
 ```python
-tekst = """Kapper Knap, de knappe kapper, knipt en kapt heel 
-knap, maar de knecht van kapper Knap, de knappe kapper, knipt 
+tekst = """Kapper Knap, de knappe kapper, knipt en kapt heel
+knap, maar de knecht van kapper Knap, de knappe kapper, knipt
 en kapt nog knapper dan kapper Knap, de knappe kapper."""
 
 def schoon( s ):
@@ -1725,7 +1725,7 @@ def schoon( s ):
 wdict = {}
 for woord in schoon( tekst ).split():
     wdict[woord] = wdict.get( woord, 0 ) + 1
-    
+
 keylist = list( wdict.keys() )
 keylist.sort()
 for key in keylist:
@@ -1735,19 +1735,19 @@ for key in keylist:
 #### Antwoord 13.2
 
 ```python
-movies = {  "Monty Python and the Holy Grail": 
+movies = {  "Monty Python and the Holy Grail":
             [ 9, 10, 9.5, 8.5, 3, 7.5,8 ],
-            "Monty Python's Life of Brian": 
+            "Monty Python's Life of Brian":
             [ 10, 10, 0, 9, 1, 8, 7.5, 8, 6, 9 ],
-            "Monty Python's Meaning of Life": 
+            "Monty Python's Meaning of Life":
             [ 7, 6, 5 ],
-            "And Now For Something Completely Different": 
+            "And Now For Something Completely Different":
             [ 6, 5, 6, 6 ] }
 
 keylist = list( movies.keys() )
 keylist.sort()
 for key in keylist:
-    print( "{}: {}".format( key, round( 
+    print( "{}: {}".format( key, round(
         sum( movies[key] )/len( movies[key] ), 1 ) ) )
 ```
 
@@ -1773,15 +1773,15 @@ dubbelzinnige keys introduceert in de data structuur (maar over het
 algemeen geldt dat je beter een database systeem kunt gebruiken om een
 bibliotheek in op te slaan).
 
-### Hoofdstuk <a href="#ch:sets" data-reference-type="ref" data-reference="ch:sets">15</a>
+### Hoofdstuk 15
 
 #### Antwoord 14.1
 
 ```python
-alles = { "Socrates", "Plato", "Eratosthenes", "Zeus", "Hera", 
+alles = { "Socrates", "Plato", "Eratosthenes", "Zeus", "Hera",
     "Athene", "Acropolis", "Kat", "Hond" }
 mensen = { "Socrates", "Plato", "Eratosthenes" }
-sterfelijken = { "Socrates", "Plato", "Eratosthenes", "Kat", 
+sterfelijken = { "Socrates", "Plato", "Eratosthenes", "Kat",
     "Hond" }
 
 print( mensen.issubset( sterfelijken ) ) # (a)
@@ -1805,7 +1805,7 @@ setc = set( range( 1, 1001 ) ) - set3 - set7 - set11
 
 Je kunt de sets afdrukken om te zien dat ze correct zijn.
 
-### Hoofdstuk <a href="#ch:operatingsystem" data-reference-type="ref" data-reference="ch:operatingsystem">16</a>
+### Hoofdstuk 16
 
 #### Antwoord 15.1
 
@@ -1817,19 +1817,19 @@ for name in flist:
     print( getcwd() + "/" + name )
 ```
 
-### Hoofdstuk <a href="#ch:textfiles" data-reference-type="ref" data-reference="ch:textfiles">17</a>
+### Hoofdstuk 17
 
 #### Antwoord 16.1
 
 Hopelijk herinnerde je je dat je iets soortgelijks hebt gedaan in
 hoofdstukken
-<a href="#ch:strings" data-reference-type="ref" data-reference="ch:strings">11</a>
+11
 en
-<a href="#ch:dictionaries" data-reference-type="ref" data-reference="ch:dictionaries">14</a>.
+14.
 De code hieronder is voor het grootste deel een kopie van de code die je
 eerder geschreven hebt. Het enige verschil met de code die je schreef in
 hoofdstuk
-<a href="#ch:dictionaries" data-reference-type="ref" data-reference="ch:dictionaries">14</a>
+14
 is dat de tekst niet aangeleverd is als een string, maar gelezen wordt
 uit een bestand.
 
@@ -1851,7 +1851,7 @@ fp.close()
 wdict = {}
 for woord in schoon( tekst ).split():
     wdict[woord] = wdict.get( woord, 0 ) + 1
-    
+
 keylist = list( wdict.keys() )
 keylist.sort()
 for key in keylist:
@@ -1880,7 +1880,7 @@ while True:
     for woord in schoon( regel ).split():
         wdict[woord] = wdict.get( woord, 0 ) + 1
 fp.close()
-    
+
 keylist = list( wdict.keys() )
 keylist.sort()
 for key in keylist:
@@ -1999,8 +1999,8 @@ lijst = ["pc_jabberwocky.txt","pc_rose.txt","pc_woodchuck.txt"]
 letterlist = [ len( lijst )*[0] for i in range( 26 ) ]
 totaallist = len( lijst ) * [0]
 
-# Verwerk de invoerlijst regel voor regel, maak kleine letters 
-# en tel de letters in letterlist, en houd totaaltellingen 
+# Verwerk de invoerlijst regel voor regel, maak kleine letters
+# en tel de letters in letterlist, en houd totaaltellingen
 # bij in totaallist.
 aantal = 0
 for naam in lijst:
@@ -2034,7 +2034,7 @@ print( fp.read() )
 fp.close()
 ```
 
-### Hoofdstuk <a href="#ch:exceptions" data-reference-type="ref" data-reference="ch:exceptions">18</a>
+### Hoofdstuk 18
 
 #### Antwoord 17.1
 
@@ -2065,7 +2065,7 @@ except:
     raise
 ```
 
-### Hoofdstuk <a href="#ch:binaryfiles" data-reference-type="ref" data-reference="ch:binaryfiles">19</a>
+### Hoofdstuk 19
 
 #### Antwoord 18.1
 
@@ -2079,7 +2079,7 @@ def toon_inhoud( filename ):
     fp = open( filename, "rb" )
     print( fp.read() )
     fp.close()
-    
+
 def encryptie( filename ):
     fp = open( filename, "r+b" )
     buffer = fp.read()
@@ -2090,7 +2090,7 @@ def encryptie( filename ):
         else:
             fp.write( bytes( [c+128] ) )
     fp.close()
-    
+
 toon_inhoud( NAAM )
 encryptie( NAAM )
 toon_inhoud( NAAM )
@@ -2121,7 +2121,7 @@ bytelist = []
 for i in range( 0, len( halfbytelist ), 2 ):
     bytelist.append( 16*halfbytelist[i] + halfbytelist[i+1] )
 
-# Maak van de bytelist een bytestring en toon die ter controle. 
+# Maak van de bytelist een bytestring en toon die ter controle.
 gecodeerd = bytes( bytelist )
 print( gecodeerd, len( gecodeerd ) )
 ```
@@ -2145,7 +2145,7 @@ for c in gecodeerd:
     halfbytelist.extend( [ int( c/16 ), c%16 ] )
 if halfbytelist[-1] == 0:
     del halfbytelist[-1]
-    
+
 # Maak van de half-byte-string een string.
 gedecodeerd = ""
 while len( halfbytelist ) > 0:
@@ -2223,7 +2223,7 @@ while True:
         print( "Error [{}]: {}".format( ex.args[0], ex.args[1] ))
         continue
     break
-    
+
 # Vraag om output bestand en creeer het
 while True:
     fileout = getString( "Geef output bestand: " )
@@ -2246,13 +2246,13 @@ while True:
         print( "Kies C of D" )
         continue
     break
-    
+
 # Comprimeer of decomprimeer de buffer.
 if dc == 'C':
     buffer = comprimeer( buffer )
 else:
     buffer = decomprimeer( buffer )
-    
+
 # Sla de verwerkte buffer op in het output bestand.
 try:
     fp.write( buffer )
@@ -2266,7 +2266,7 @@ print( getsize( filein ), "bytes gelezen" )
 print( getsize( fileout ), "bytes geschreven" )
 ```
 
-### Hoofdstuk <a href="#ch:bitwiseoperators" data-reference-type="ref" data-reference="ch:bitwiseoperators">20</a>
+### Hoofdstuk 20
 
 #### Antwoord 19.1
 
@@ -2297,7 +2297,7 @@ def setBit( opslag, index, value ):
     return opslag
 
 # getBit() retourneert 0 als de bit behorende bij de index op 1
-# staat, en anders retourneert het iets anders. Omdat alleen 0 
+# staat, en anders retourneert het iets anders. Omdat alleen 0
 # als False wordt beschouwd, kun je deze functie gebruiken om de
 # waarde van een bit te testen.
 def getBit( opslag, index ):
@@ -2312,7 +2312,7 @@ def toonBits( opslag ):
         else:
             print( "0", end="" )
     print()
-    
+
 opslag = 0
 opslag = setBit( opslag, 0, True )
 opslag = setBit( opslag, 1, True )
@@ -2326,7 +2326,7 @@ opslag = setBit( opslag, 1, False )
 toonBits( opslag )
 ```
 
-### Hoofdstuk <a href="#ch:objectorientation" data-reference-type="ref" data-reference="ch:objectorientation">21</a>
+### Hoofdstuk 21
 
 #### Antwoord 20.1
 
@@ -2339,7 +2339,7 @@ class Punt:
         self.y = y
     def __repr__( self ):
         return "({}, {})".format( self.x, self.y )
-        
+
 class Rechthoek:
     def __init__( self, punt, breedte, hoogte ):
         self.punt = copy( punt )
@@ -2350,14 +2350,14 @@ class Rechthoek:
         if self.hoogte == 0:
             self.hoogte = 1
     def __repr__( self ):
-        return "[{},w={},h={}]".format( self.punt, 
+        return "[{},w={},h={}]".format( self.punt,
             self.breedte, self.hoogte )
     def oppervlakte( self ):
         return self.breedte * self.hoogte
     def omtrek( self ):
         return 2*(self.breedte + self.hoogte)
     def rechtsonder( self ):
-        return Punt( self.punt.x + self.breedte, 
+        return Punt( self.punt.x + self.breedte,
             self.punt.y + self.hoogte )
     def overlap( self, r ):
         r1, r2 = self, r
@@ -2368,10 +2368,10 @@ class Rechthoek:
         if r1.rechtsonder().x <= r2.punt.x or \
             r1.rechtsonder().y <= r2.punt.y:
             return None
-        return Rechthoek( r2.punt, 
-            min( r1.rechtsonder().x - r2.punt.x, r2.breedte ), 
+        return Rechthoek( r2.punt,
+            min( r1.rechtsonder().x - r2.punt.x, r2.breedte ),
             min( r1.rechtsonder().y - r2.punt.y, r2.hoogte ) )
-    
+
 r1 = Rechthoek( Punt( 1, 1 ), 8, 5 )
 r2 = Rechthoek( Punt( 2, 3 ), 9, 2 )
 
@@ -2424,8 +2424,8 @@ class Student:
     def inschrijven( self, cursus ):
         if cursus not in self.cursussen:
             self.cursussen.append( cursus )
-    
-studenten = [ 
+
+studenten = [
     Student( "Alikruik", "Adrie", date( 1989, 10, 3 ), 453211 ),
     Student( "Bonzo", "Beatrijs", date( 1991, 12, 29 ), 476239 ),
     Student( "Continuum", "Carola", date( 1992, 3, 7 ), 784322 ),
@@ -2441,7 +2441,7 @@ for student in studenten:
             student.inschrijven( cursus )
 
 for student in studenten:
-    print( "{}: {} {} ({})".format( student.anr, 
+    print( "{}: {} {} ({})".format( student.anr,
         student.voornaam, student.achternaam, student.age() ) )
     if len( student.cursussen ) == 0:
         print( "\tNo cursussen" )
@@ -2449,7 +2449,7 @@ for student in studenten:
         print( "\t{}".format( cursus ) )
 ```
 
-### Hoofdstuk <a href="#ch:operatoroverloading" data-reference-type="ref" data-reference="ch:operatoroverloading">22</a>
+### Hoofdstuk 22
 
 #### Antwoord 21.1
 
@@ -2478,7 +2478,7 @@ class Kaart:
         if isinstance( c, Kaart ):
             return self.rang >= c.rang
         return NotImplemented
-    
+
 k5 = Kaart( 2, 3 )
 r5 = Kaart( 3, 3 )
 sh = Kaart( 1, 11 )
@@ -2534,7 +2534,7 @@ class Trekstapel:
             s += sep + str( c )
             sep = ", "
         return s
-    
+
 ts1 = Trekstapel( [Kaart(0,1),Kaart(0,5),Kaart(2,4),Kaart(1,12)])
 print( ts1 )
 print( ts1[1] )
@@ -2592,7 +2592,7 @@ class Trekstapel:
             s += sep + str( c )
             sep = ", "
         return s
-    
+
 ts1 = Trekstapel( [Kaart(3,0), Kaart(0,11), Kaart(2,5)] )
 ts2 = Trekstapel( [Kaart(3,2), Kaart(3,1), Kaart(1,6)] )
 
@@ -2610,7 +2610,7 @@ while len( ts1 ) > 0 and len( ts2 ) > 0:
         ts2.voegtoe( c2 )
         ts2.voegtoe( c1 )
     i += 1
-        
+
 print( "Het spel is uit" )
 if len( ts1 ) > 0:
     print( "Stapel1:", ts1 )
@@ -2645,10 +2645,10 @@ of minder stuks in de mand zitten.
 from copy import deepcopy
 
 class Fruitmand:
-    
+
     def __init__( self, stukken={} ):
         self.stukken = stukken
-        
+
     def __repr__( self ):
         s = ""
         sep = "["
@@ -2657,19 +2657,19 @@ class Fruitmand:
             sep = ", "
         s += "]"
         return s
-    
+
     def __contains__( self, fruit ):
         return fruit in self.stukken
-    
+
     def __add__( self, fruit ):
         fmcopy = deepcopy( self )
         fmcopy.stukken[fruit] = fmcopy.stukken.get( fruit, 0 )+1
         return fmcopy
-    
+
     def __iadd__( self, fruit ):
         self.stukken[fruit] = self.stukken.get( fruit, 0 )+1
         return self
-    
+
     def __sub__( self, fruit ):
         if fruit not in self.stukken:
             return self
@@ -2678,26 +2678,26 @@ class Fruitmand:
         if fmcopy.stukken[fruit] <= 0:
             del fmcopy.stukken[fruit]
         return fmcopy
-    
+
     def __isub__( self, fruit ):
         self.stukken[fruit] = self.stukken.get( fruit, 0 )-1
         if self.stukken[fruit] <= 0:
             del self.stukken[fruit]
         return self
-    
+
     def __len__( self ):
         return len( self.stukken )
-    
+
     def __getitem__( self, fruit ):
         return self.stukken.get( fruit, 0 )
-    
+
     def __setitem__( self, fruit, n ):
         if n <= 0:
             if fruit in self.stukken:
                 del self.stukken[fruit]
         else:
             self.stukken[fruit] = n
-    
+
 fm = Fruitmand()
 fm += "appel"
 fm += "appel"
@@ -2718,7 +2718,7 @@ fm["mango"] = 0
 print( fm )
 ```
 
-### Hoofdstuk <a href="#ch:inheritance" data-reference-type="ref" data-reference="ch:inheritance">23</a>
+### Hoofdstuk 23
 
 #### Antwoord 22.1
 
@@ -2727,7 +2727,7 @@ class Rechthoek:
     def __init__( self, x, y, b, h ):
         self.x, self.y, self.b, self.h = x, y, b, h
     def __repr__( self ):
-        return "[({},{}),b={},h={}]".format( self.x, self.y, 
+        return "[({},{}),b={},h={}]".format( self.x, self.y,
           self.b, self.h )
     def oppervlakte( self ):
         return self.b * self.h
@@ -2737,7 +2737,7 @@ class Rechthoek:
 class Vierkant( Rechthoek ):
     def __init__( self, x, y, b ):
         super().__init__( x, y, b, b )
-        
+
 s = Vierkant( 1, 1, 4 )
 print( s, s.oppervlakte(), s.omtrek() )
 ```
@@ -2762,12 +2762,12 @@ class Cirkel( Vorm ):
         return pi * self.s * self.s
     def omtrek( self ):
         return 2 * pi * self.s
-    
+
 class Rechthoek( Vorm ):
     def __init__( self, x, y, b, h ):
         self.x, self.y, self.b, self.h = x, y, b, h
     def __repr__( self ):
-        return "[({},{}),w={},h={}]".format( self.x, self.y, 
+        return "[({},{}),w={},h={}]".format( self.x, self.y,
             self.b, self.h )
     def oppervlakte( self ):
         return self.b * self.h
@@ -2777,7 +2777,7 @@ class Rechthoek( Vorm ):
 class Vierkant( Rechthoek ):
     def __init__( self, x, y, b ):
         super().__init__( x, y, b, b )
-        
+
 v = Vierkant( 1, 1, 4 )
 print( v, v.oppervlakte(), v.omtrek() )
 c = Cirkel( 1, 1, 4 )
@@ -2820,11 +2820,11 @@ class Strategie:
         pass
     def plusscore( self, n ):
         self.score += n
-        
+
 class AltijdD( Strategie ):
     def keuze( self ):
         return DEFECTIE
-        
+
 class Random( Strategie ):
     def keuze( self ):
         if random() >= 0.5:
@@ -2837,7 +2837,7 @@ class GeheugenStrategie( Strategie ):
         self.historie = []
     def laatstezet( self, mijnzet, tegenstanderzet ):
         self.historie.append( (mijnzet, tegenstanderzet) )
-        
+
 class OogOmOog( GeheugenStrategie ):
     def keuze( self ):
         if len( self.historie ) < 1:
@@ -2862,7 +2862,7 @@ class Meerderheid( GeheugenStrategie ):
         if telD > len( self.historie ) / 2:
             return DEFECTIE
         return COOPERATIE
-            
+
 strategie1 = AltijdD( "Altijd Defectie" )
 strategie2 = Meerderheid( "Meerderheid" )
 
@@ -2877,12 +2877,12 @@ for i in range( RONDES ):
         strategie2.plusscore( 0 if c2 == COOPERATIE else 6 )
     strategie1.laatstezet( c1, c2 )
     strategie2.laatstezet( c2, c1 )
-        
+
 print( "Score van", strategie1.naam, "is", strategie1.score )
 print( "Score van", strategie2.naam, "is", strategie2.score )
 ```
 
-### Hoofdstuk <a href="#ch:iteratorsandgenerators" data-reference-type="ref" data-reference="ch:iteratorsandgenerators">24</a>
+### Hoofdstuk 24
 
 #### Antwoord 23.1
 
@@ -2932,7 +2932,7 @@ def faculteit():
     for i in range( 1, 11 ):
         totaal *= i
         yield totaal
-        
+
 fseq = faculteit()
 for n in fseq:
     print( n, end=" " )
@@ -2979,7 +2979,7 @@ for i in range( 1, len( numlist )+1 ):
             break
     if len( oplossing ) > 0:
         break
-        
+
 if len( oplossing ) <= 0:
     print( "Er is geen subset die optelt tot nul" )
 else:
@@ -3051,7 +3051,7 @@ def is_oplossing( kols ):
             if i - rij == abs( kols[i] - kol ):
                 return False
     return True
-        
+
 kols = list( range( SIZE ) )
 
 for p in permutations( kols ):
@@ -3062,7 +3062,7 @@ else:
     print( "Geen oplossing gevonden" ) # Should not happen.
 ```
 
-### Hoofdstuk <a href="#ch:commandlineprocessing" data-reference-type="ref" data-reference="ch:commandlineprocessing">25</a>
+### Hoofdstuk 25
 
 #### Antwoord 24.1
 
@@ -3080,7 +3080,7 @@ for i in sys.argv[1:]:
 print( "The arguments add up to", totaal )
 ```
 
-### Hoofdstuk <a href="#ch:regularexpressions" data-reference-type="ref" data-reference="ch:regularexpressions">26</a>
+### Hoofdstuk 26
 
 #### Antwoord 25.1
 
@@ -3183,7 +3183,7 @@ for m in mlist:
     print( m.group(1), m.group(2) )
 ```
 
-### Hoofdstuk <a href="#ch:fileformats" data-reference-type="ref" data-reference="ch:fileformats">27</a>
+### Hoofdstuk 27
 
 #### Antwoord 26.1
 
@@ -3230,7 +3230,7 @@ print( fp.read() )
 fp.close()
 ```
 
-### Hoofdstuk <a href="#ch:varioususefulmodules" data-reference-type="ref" data-reference="ch:varioususefulmodules">28</a>
+### Hoofdstuk 28
 
 #### Antwoord 27.1
 
@@ -3266,7 +3266,7 @@ while True:
 if len( numlist ) <= 0:
     print( "Geen getallen ingegeven" )
     exit()
-    
+
 print( "Gemiddelde:", mean( numlist ) )
 print( "Mediaan:", median( numlist ) )
 

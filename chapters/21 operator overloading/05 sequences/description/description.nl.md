@@ -15,7 +15,7 @@ class geven te overloaden.
     de key of index van het gezochte element. Als `key` een index is en
     de index valt buiten het correcte bereik, dan moet de methode een
     `IndexError` genereren (zie hoofdstuk
-    <a href="#ch:exceptions" data-reference-type="ref" data-reference="ch:exceptions">18</a>).
+    18).
     Als `key` iets anders is (bijvoorbeeld een sleutel voor een
     dictionary) en deze refereert niet aan een bestaand element, dan
     moet de methode een `KeyError` genereren. Als `key` een index is,
@@ -79,7 +79,7 @@ class Filippine:
     def toon( self ):
         print( self.naam )
         for i in range( len( self ) ):
-            print( "{}. {}".format( i+1, self[i].vraag ), 
+            print( "{}. {}".format( i+1, self[i].vraag ),
                 end = "  " )
             for j in range( len( self[i].woord ) ):
                 if j == self[i].index:
@@ -92,20 +92,20 @@ class Filippine:
         for i in range( len( self ) ):
             s += self[i].woord[self[i].index]
         return s
-    
-puzzel = Filippine( 
+
+puzzel = Filippine(
     "De Monty Python en de Heilige Graal Filippine",
-    [ FilippineWoord( "ANTHRAX", 5, 
+    [ FilippineWoord( "ANTHRAX", 5,
           "Sir Galahad bestormde kasteel" ),
       FilippineWoord( "BORS", 2, "Een konijn doodde Sir" ),
       FilippineWoord( "TIM", 0, "De wijze tovenaar heet" ),
-      FilippineWoord( "HERBERT", 0, 
+      FilippineWoord( "HERBERT", 0,
           "De erfgenaam van het Moeras Kasteel is prins" ),
-      FilippineWoord( "ZWALUW", 4, 
+      FilippineWoord( "ZWALUW", 4,
           "Een kokosnoot is te zwaar voor een Europese" ),
-      FilippineWoord( "MINSTREELS", 5, 
+      FilippineWoord( "MINSTREELS", 5,
           "De ridders aten Robins" ) ] )
-          
+
 puzzel.toon()
 ```
 
@@ -125,7 +125,7 @@ dat niet van belang).
 Er is nog een belangrijke methode die je voor een sequentie class kunt
 implementeren, namelijk `__iter__()`. Ik stel een discussie van deze
 methode echter uit tot hoofdstuk
-<a href="#ch:iteratorsandgenerators" data-reference-type="ref" data-reference="ch:iteratorsandgenerators">24</a>.
+24.
 
 Als je een sequentie class bouwt, kun je overwegen om ook de methode
 `__add__()` te implementeren, en wellicht ook een goede interpretatie
@@ -142,8 +142,8 @@ class Zin:
     def __repr__( self ):
         return " ".join( self.words )
 
-s = Zin( [ "Er", "is", "slechts", "een", "ding", "ter", 
-"wereld", "erger" "dan", "beroddeld", "worden", "en", 
+s = Zin( [ "Er", "is", "slechts", "een", "ding", "ter",
+"wereld", "erger" "dan", "beroddeld", "worden", "en",
 "dat", "is", "niet", "beroddeld", "worden" ] )
 print( s )
 print( len( s ) )

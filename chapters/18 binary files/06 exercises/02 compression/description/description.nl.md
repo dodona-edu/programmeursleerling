@@ -47,7 +47,7 @@ string letterlijk is opgeslagen, dus bestaat uit de tweede half-byte van
 `\x04`, en de eerste half-byte van de volgende byte, die `\x81` is. Dat
 is de byte `\x48`. Als je de hexadecimale code 48 opzoekt in de ASCII
 tabel (die je vindt in hoofdstuk
-<a href="#ch:strings" data-reference-type="ref" data-reference="ch:strings">11</a>),
+11),
 zie je dat het de letter `H` representeert. De volgende half-byte is de
 tweede half-byte van `\x81`, dus 1. Omdat dit geen nul is, is het een
 van de veel voorkomende tekens, namelijk de eerste, de letter `e`. Zo

@@ -8,7 +8,7 @@ open it in a text editor (such as the editor for the IDLE environment,
 which comes with Python). If you see only readable text, the file is
 likely to be a text file. Otherwise, it is a so-called "binary file"
 (binary files are discussed in Chapter
-<a href="#ch:binaryfiles" data-reference-type="ref" data-reference="ch:binaryfiles">19</a>).
+19).
 
 Text files consist of lines of text. At the end of a line, there is a
 "newline" symbol, which in Python is the character `"\n"`. Different

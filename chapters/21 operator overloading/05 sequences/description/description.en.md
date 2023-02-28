@@ -15,7 +15,7 @@ elements of the class.
     element. If `key` is an index and the index is not appropriately
     referring to an object, then you are supposed to raise an
     `IndexError` (see Chapter
-    <a href="#ch:exceptions" data-reference-type="ref" data-reference="ch:exceptions">18</a>).
+    18).
     If `key` is something else (as with, for instance, a dictionary) and
     it is not appropriately referring to an object, then you are
     supposed to raise a `KeyError`. When `key` is an index, for a
@@ -85,7 +85,7 @@ class Mesostic:
     def display( self ):
         print( self.name )
         for i in range( len( self ) ):
-            print( "{}. {}".format( i+1, self[i].question ), 
+            print( "{}. {}".format( i+1, self[i].question ),
                 end = "  " )
             for j in range( len( self[i].word ) ):
                 if j == self[i].index:
@@ -98,20 +98,20 @@ class Mesostic:
         for i in range( len( self ) ):
             s += self[i].word[self[i].index]
         return s
-    
-puzzle = Mesostic( 
+
+puzzle = Mesostic(
     "The Monty Python and the Holy Grail Mesostic Puzzle",
-    [ MesosticWord( "ANTHRAX", 5, 
+    [ MesosticWord( "ANTHRAX", 5,
           "Sir Galahad's tale took place in the Castle" ),
-      MesosticWord( "PERIL", 2, 
+      MesosticWord( "PERIL", 2,
           "Sir Robin was thrown into the Gorge of Eternal" ),
-      MesosticWord( "RABBIT", 5, 
+      MesosticWord( "RABBIT", 5,
           "Sir Bors was killed by a" ),
-      MesosticWord( "SHRUBBERY", 1, 
+      MesosticWord( "SHRUBBERY", 1,
           "The Knights of Ni!'s first demand was to get a" ),
-      MesosticWord( "COCONUT", 5, 
+      MesosticWord( "COCONUT", 5,
           "A horse can be replaced by a" ),
-      MesosticWord( "MINSTRELS", 5, 
+      MesosticWord( "MINSTRELS", 5,
           "They were forced to eat Robin's" ) ] )
 
 puzzle.display()
@@ -125,7 +125,7 @@ your own, if you like (it is not relevant for the theme of the chapter).
 
 Another important method that you can implement for sequence classes is
 `__iter__()`. This one will be discussed in Chapter
-<a href="#ch:iteratorsandgenerators" data-reference-type="ref" data-reference="ch:iteratorsandgenerators">24</a>.
+24.
 
 When implementing a sequence class, you should also consider creating a
 suitable implementation of the `__add__()` method, and possibly a
@@ -142,8 +142,8 @@ class Sentence:
     def __repr__( self ):
         return " ".join( self.words )
 
-s = Sentence( [ "There", "is", "only", "one", "thing", "worse", 
-"than", "being", "talked", "about", 
+s = Sentence( [ "There", "is", "only", "one", "thing", "worse",
+"than", "being", "talked", "about",
 "and", "that", "is", "not", "being", "talked", "about" ] )
 print( s )
 print( len( s ) )

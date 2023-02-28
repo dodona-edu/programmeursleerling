@@ -60,4 +60,4 @@ except IOError as ex:
 
 {:class="callout callout-info"}
 > #### Note
-> Exception `FileNotFoundError` is a "subclass" (see Chapter <a href="#ch:inheritance" data-reference-type="ref" data-reference="ch:inheritance">23</a>) of `IOError`, which, in Python 3, is actually an alias for yet another exception, namely `OSError`. This means that capturing `FileNotFoundError` is equivalent with capturing `IOError` (or `OSError`) `as ex` and testing whether `ex.args[0]` holds `errno.ENOENT`.
+> Exception `FileNotFoundError` is a "subclass" (see Chapter 23) of `IOError`, which, in Python 3, is actually an alias for yet another exception, namely `OSError`. This means that capturing `FileNotFoundError` is equivalent with capturing `IOError` (or `OSError`) `as ex` and testing whether `ex.args[0]` holds `errno.ENOENT`.

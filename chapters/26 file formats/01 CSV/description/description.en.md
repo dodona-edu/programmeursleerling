@@ -7,7 +7,7 @@ the file may or may not consist of names for the fields in the CSV file.
 
 The code below loads and displays the contents of a typical CSV file.
 Appendix
-<a href="#ch:testtextfiles" data-reference-type="ref" data-reference="ch:testtextfiles">33</a>
+33
 explains how to get this CSV file.
 
 ```python

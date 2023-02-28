@@ -16,19 +16,19 @@ the starting triple quotes should always be at the start of a line, and
 you cannot use this way of commenting in an indented code block. The
 reason is that you are basically placing a multi-line string in your
 code (more on this in Chapter
-<a href="#ch:strings" data-reference-type="ref" data-reference="ch:strings">11</a>).
+11).
 
 Learn more about comments by studying the code below.
 
 ```python
 # comment: insert your code here.
-# BTW: Have you noticed that everything right of the hash mark 
+# BTW: Have you noticed that everything right of the hash mark
 print( "Something..." ) # is ignored by your python interpreter?
 print( "and something else.." ) # Use this to comment your code!
-"""Another way of commenting on your code is via triple quotes 
+"""Another way of commenting on your code is via triple quotes
 -- these can be distributed over multiple """ # lines
-'''which can also be done with single quotes''' # but be careful 
-# with there being quotes IN your comments when you use this 
+'''which can also be done with single quotes''' # but be careful
+# with there being quotes IN your comments when you use this
 # multi-line method
 print( "Done." )
 ```

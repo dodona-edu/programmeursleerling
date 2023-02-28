@@ -32,7 +32,7 @@ De eenvoudigste manier om de inhoud van een bestand te lezen is via de
 `read()` methode, zonder argumenten, via de handle. Dit levert een
 string die de complete inhoud van het bestand bevat. `read()` kan een
 argument krijgen, dat ik zal bespreken in hoofdstuk
-<a href="#ch:binaryfiles" data-reference-type="ref" data-reference="ch:binaryfiles">19</a>,
+19,
 dat gaat over binaire bestanden.
 
 Lezen uit een bestand verplaatst de pointer naar het teken dat volgt
@@ -86,7 +86,7 @@ print( buffer )
 Deze code verkeert in de veronderstelling dat een bestand met de naam
 "pc_rose.txt" beschikbaar is in dezelfde directory als waar het
 programma staat. Appendix
-<a href="#ch:testtextfiles" data-reference-type="ref" data-reference="ch:testtextfiles">33</a>
+33
 legt uit hoe je dit bestand kunt krijgen (als je het nog niet hebt). Als
 het bestand niet bestaat, krijg je een runtime error. Hoe je met zulke
 fouten om moet gaan wordt in het volgende hoofdstuk uitgelegd.

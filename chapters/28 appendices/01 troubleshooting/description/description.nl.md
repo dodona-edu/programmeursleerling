@@ -5,9 +5,9 @@ Controleer de naam van de module die je probeert te importeren. Als het
 spelfout gemaakt. Of je hebt `.py` achter de naam gezet – dat moet je
 niet doen. Als de fout optreedt bij `pcinput` of `pcmaze`, dan heb je
 ofwel deze modules niet gebouwd of gedownload (zie appendix
-<a href="#ch:pcinput" data-reference-type="ref" data-reference="ch:pcinput">31</a>
+31
 of
-<a href="#ch:pcmaze" data-reference-type="ref" data-reference="ch:pcmaze">32</a>
+32
 om dit op te lossen), of je hebt ze geplaatst op een locatie waar Python
 ze niet kan vinden. Zorg dat je ze kopieert naar dezelfde plaats als
 waar je je Python programma's zet.
@@ -20,7 +20,7 @@ denkt dat het bestand in de huidige directory staat terwijl dat niet zo
 is. Of misschien probeert je code één van de standaard tekstbestanden te
 openen die ik gebruik voor het boek, en je hebt die nog niet. Als dat
 het geval is, zie dan appendix
-<a href="#ch:testtextfiles" data-reference-type="ref" data-reference="ch:testtextfiles">33</a>
+33
 om ze te krijgen.
 
 ### Ik krijg een SyntaxError maar ik heb geen idee wat ik fout heb gedaan

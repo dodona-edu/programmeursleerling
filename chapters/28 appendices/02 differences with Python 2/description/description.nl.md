@@ -45,7 +45,7 @@ gebruik van haakjes bij de `print()` functie niet nodig voor Python 2,
 maar verplicht voor Python 3.
 
 In Python 3 is de `range()` functie een iterator (zie hoofdstuk
-<a href="#ch:iteratorsandgenerators" data-reference-type="ref" data-reference="ch:iteratorsandgenerators">24</a>).
+24).
 Dit betekent dat het erg weinig geheugen gebruikt: het onthoudt alleen
 het laatst gegenereerde getal, de stapgrootte, en de limiet die bereikt
 moet worden. In Python 2 is `range()` anders geïmplementeerd: het

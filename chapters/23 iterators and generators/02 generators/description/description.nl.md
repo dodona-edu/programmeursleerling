@@ -40,7 +40,7 @@ for n in fseq:
 ### Generator expressies
 
 In hoofdstuk
-<a href="#ch:lists" data-reference-type="ref" data-reference="ch:lists">13</a>
+13
 introduceerde ik het concept "list comprehension." Omdat een list in een
 iterator veranderd kan worden, en daarom in een generator, heeft Python
 een gelijksoortig concept geïntroduceerd voor generatoren, en noemt dit

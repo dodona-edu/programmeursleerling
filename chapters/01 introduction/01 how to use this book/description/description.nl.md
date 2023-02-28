@@ -9,19 +9,19 @@ te worden. Voor een korte cursus Python, waarbij je je concentreert op
 variabelen en expressies, condities en iteraties, functies, strings,
 lists en dictionaries, en bestandsverwerking. Met andere woorden, je
 kunt je beperken tot de hoofdstukken
-<a href="#ch:introduction" data-reference-type="ref" data-reference="ch:introduction">2</a>
+2
 tot en met
-<a href="#ch:bitwiseoperators" data-reference-type="ref" data-reference="ch:bitwiseoperators">20</a>,
+20,
 waarbij de hoofdstukken
-<a href="#ch:recursion" data-reference-type="ref" data-reference="ch:recursion">10</a>
+10
 (recursie),
-<a href="#ch:sets" data-reference-type="ref" data-reference="ch:sets">15</a>
+15
 (sets),
-<a href="#ch:exceptions" data-reference-type="ref" data-reference="ch:exceptions">18</a>
+18
 (exceptions),
-<a href="#ch:binaryfiles" data-reference-type="ref" data-reference="ch:binaryfiles">19</a>
+19
 (binaire bestanden), and
-<a href="#ch:bitwiseoperators" data-reference-type="ref" data-reference="ch:bitwiseoperators">20</a>
+20
 (bitsgewijze operatoren) beschouwd kunnen worden als optioneel
 materiaal, dat je kunt overslaan totdat je ze nodig hebt (waarbij ik wel
 aanbeveel dat je probeert recursie te begrijpen, aangezien het je helpt
@@ -29,11 +29,11 @@ om sommige opgaven uit latere hoofdstukken op te lossen).
 
 Voor een uitgebreidere cursus Python moet je in ieder geval ook object
 oriëntatie bestuderen, dat wil zeggen hoofdstukken
-<a href="#ch:objectorientation" data-reference-type="ref" data-reference="ch:objectorientation">21</a>
+21
 tot en met
-<a href="#ch:iteratorsandgenerators" data-reference-type="ref" data-reference="ch:iteratorsandgenerators">24</a>,
+24,
 waarbij hoofdstuk
-<a href="#ch:iteratorsandgenerators" data-reference-type="ref" data-reference="ch:iteratorsandgenerators">24</a>
+24
 (iteratoren en generatoren) beschouwd kan worden als geavanceerde stof.
 
 De overige hoofdstukken zijn alle nuttig maar optioneel. Je kunt hiervan
@@ -43,7 +43,7 @@ boek kunnen extra optioneel materiaal bevatten.
 
 Tijdens het bestuderen van dit boek moet je een computer bij de hand
 houden waarop je Python hebt geïnstalleerd (hoofdstuk
-<a href="#ch:usingpython" data-reference-type="ref" data-reference="ch:usingpython">3</a>
+3
 legt uit hoe je Python kunt krijgen voor jouw computer). Het boek bevat
 vele kleine en grotere oefeningen, die je allemaal moet doen tijdens het
 bestuderen. Als je veel van de oefeningen overslaat, zul je zeker niet

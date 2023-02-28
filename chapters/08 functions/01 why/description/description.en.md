@@ -56,4 +56,4 @@ effectuate:
 
 -   *Recursion*: Allowing the use of a technique called "recursion,"
     which is the topic of Chapter
-    <a href="#ch:recursion" data-reference-type="ref" data-reference="ch:recursion">10</a>.
+    10.

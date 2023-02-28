@@ -6,9 +6,9 @@ spelling mistake in the name. Either that, or you added `.py` to the
 name – you should not do that. If the error concerns `pcinput` or
 `pcmaze`, then probably you either did not build these files (check
 Appendix
-<a href="#ch:pcinput" data-reference-type="ref" data-reference="ch:pcinput">31</a>
+31
 or
-<a href="#ch:pcmaze" data-reference-type="ref" data-reference="ch:pcmaze">32</a>
+32
 to solve the problem), or you placed them in a location that Python has
 no access to. In the last case, make sure you copy them to the same
 place as where you keep your Python programs.
@@ -20,7 +20,7 @@ to include the complete pathname in the file name, or you think the file
 is located in the current directory while actually it is not. Or maybe
 your code tries to use one of the standard test files that I use for the
 book, and you do not have those yet. If that is the case, check Appendix
-<a href="#ch:testtextfiles" data-reference-type="ref" data-reference="ch:testtextfiles">33</a>
+33
 to learn how to make them.
 
 ### I get a SyntaxError but I have no idea what I did wrong

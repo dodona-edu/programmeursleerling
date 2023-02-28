@@ -91,7 +91,7 @@ recursie te geven, aangezien het specifieke data structuren[^11] nodig
 heeft om de kracht te tonen. Om toch iets niet-triviaals te tonen, heb
 ik een module genaamd `pcmaze` gecreëerd. Je vindt deze module in
 appendix
-<a href="#ch:pcmaze" data-reference-type="ref" data-reference="ch:pcmaze">32</a>,
+32,
 en je moet hem ofwel zelf maken, ofwel downloaden van dezelfde site waar
 je `pcinput.py` hebt gevonden, om de code van deze paragraaf te kunnen
 uitvoeren.
@@ -256,7 +256,7 @@ hoger liggende aanroep zouden retourneren, zodat uiteindelijk het pad
 als geheel zou worden geretourneerd naar de eerste aanroep. Dit is wat
 de pseudo-code beoogde. Een goede manier om een pad te retourneren is in
 de vorm van een list, maar dat is het onderwerp van hoofdstuk
-<a href="#ch:lists" data-reference-type="ref" data-reference="ch:lists">13</a>.
+13.
 In plaats daarvan doe ik het als een string.
 
 Het werkt als volgt: een aanroep die de uitgang vindt, retourneert het

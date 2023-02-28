@@ -49,4 +49,4 @@ Python users who like to use it.
 
 Occasionally, anonymous functions have their uses, and can actually make
 programs a bit more readable. I will show an example in Chapter
-<a href="#ch:lists" data-reference-type="ref" data-reference="ch:lists">13</a>.
+13.

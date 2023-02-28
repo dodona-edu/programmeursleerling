@@ -4,7 +4,7 @@ kunt gebruiken.
 ### Type casting
 
 Ik heb al gesproken over type casting functies in hoofdstuk
-<a href="#ch:variables" data-reference-type="ref" data-reference="ch:variables">5</a>,
+5,
 maar nu ik meer details van functies heb gegeven, kan ik de beschrijving
 completeren.
 
@@ -153,7 +153,7 @@ niet in een getal omgezet kan worden, krijg je toch weer een runtime
 error. Ook dat probleem kan opgelost worden, maar ik heb nog niet de
 zaken uitgelegd die je nodig hebt om dit probleem aan te pakken, en het
 zal nog tot hoofdstuk
-<a href="#ch:exceptions" data-reference-type="ref" data-reference="ch:exceptions">18</a>
+18
 duren voordat ik eraan toekom. Tot dat moment geef ik iets later in dit
 hoofdstuk een methode die je kunt gebruiken om je programma om een getal
 te laten vragen zonder dat het "crasht" als de gebruiker een wijsneus
@@ -249,9 +249,9 @@ manier gedefinieerd zijn dat een variabele (of waarde) van dat data type
 vóór de functie naam moet staan, met een punt tussen de variabele (of
 waarde) en de naam van de functie. De reden hiervoor is een techniek die
 "object oriëntatie" heet, en die ik zal bediscussiëren in hoofdstukken
-<a href="#ch:objectorientation" data-reference-type="ref" data-reference="ch:objectorientation">21</a>
+21
 tot en met
-<a href="#ch:iteratorsandgenerators" data-reference-type="ref" data-reference="ch:iteratorsandgenerators">24</a>.
+24.
 Je hoeft nu alleen te weten dat zulke functie "methodes" genoemd worden,
 en dat je, om ze aan te roepen, een variabele (of waarde) van het juiste
 type voor de aanroep van de methode moet zetten, met een punt ertussen.
@@ -272,7 +272,7 @@ alleen `{}` gebruikt om de parameters aan te duiden, worden ze van
 links naar rechts afgehandeld. Bijvoorbeeld:
 
 ```python
-    print( "De eerste drie getallen zijn {}, {} en {}.".format( 
+    print( "De eerste drie getallen zijn {}, {} en {}.".format(
         "een", "twee", "drie" ) )
 ```
 
@@ -284,7 +284,7 @@ gebruikelijk is in programmeertalen, en dat je het nog vaker zult
 tegenkomen in dit boek). Bijvoorbeeld:
 
 ```python
-print( "Achterwaarts zijn ze {2}, {1} en {0}.".format( 
+print( "Achterwaarts zijn ze {2}, {1} en {0}.".format(
     "een", "twee", "drie" ) )
 ```
 
@@ -293,7 +293,7 @@ fatsoenlijke string representatie hebben. Bijvoorbeeld, `format()` kan
 getallen verwerken, en zelfs verschillende soorten data types mixen:
 
 ```python
-print( "De eerste drie getallen zijn {}, {} en {}.".format( 
+print( "De eerste drie getallen zijn {}, {} en {}.".format(
     1, "twee", 3.0 ) )
 ```
 
@@ -309,7 +309,7 @@ aangeven met een integer rechts van de dubbele-punt. Dit wordt de
 "precisie" genoemd. De volgende code gebruikt een precisie van 7.
 
 ```python
-print( "De eerste drie getallen zijn {:7}, {:7} en {:7}.".format( 
+print( "De eerste drie getallen zijn {:7}, {:7} en {:7}.".format(
     "een", "twee", "drie" ) )
 ```
 
@@ -318,7 +318,7 @@ Als de precisie te kort is voor de lengte van de string, neemt
 niet gebruiken om een string voortijdig af te breken.
 
 ```python
-print( "De eerste drie getallen zijn {:3}, {:3} en {:3}.".format( 
+print( "De eerste drie getallen zijn {:3}, {:3} en {:3}.".format(
     "een", "twee", "drie" ) )
 ```
 

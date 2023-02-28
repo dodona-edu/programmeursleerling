@@ -158,7 +158,7 @@ subclasses of `Fruit`. While an `Apple` is `Fruit`, `Fruit` is not an
 
 Such a hierarchy is implemented using "inheritance," which is the topic
 of Chapter
-<a href="#ch:inheritance" data-reference-type="ref" data-reference="ch:inheritance">23</a>.
+23.
 
 ### Classes and data types in Python
 
@@ -179,4 +179,4 @@ They even have methods, though these are seldom used explicitly. Some
 methods are used implicitly, e.g., when you add two numbers together
 with $$+$$, that is actually a method call. This will be discussed in
 Chapter
-<a href="#ch:operatoroverloading" data-reference-type="ref" data-reference="ch:operatoroverloading">22</a>.
+22.

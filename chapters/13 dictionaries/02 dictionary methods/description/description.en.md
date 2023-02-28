@@ -6,7 +6,7 @@ Just like lists, if you assign a variable that contains a dictionary to
 another variable, you are not creating a copy of the dictionary; you are
 actually creating an alias (if you do not remember what an alias is, see
 Chapter
-<a href="#ch:lists" data-reference-type="ref" data-reference="ch:lists">13</a>).
+13).
 You cannot use the trick which is used for lists to create a copy, as it
 uses a slice-syntax, and dictionaries do not support slices. Therefore,
 there is a method `copy()` that returns a copy of a dictionary.
@@ -23,7 +23,7 @@ print( id( fruitbasketcopy ) )
 
 Note that this method makes a shallow copy of the dictionary (see
 Chapter
-<a href="#ch:lists" data-reference-type="ref" data-reference="ch:lists">13</a>
+13
 if you do not remember the difference between shallow and deep copies).
 If you want to make a deep copy, use the `deepcopy()` function from the
 `copy` module.
@@ -38,7 +38,7 @@ that lists all the key-value pairs of a dictionary as tuples.
 I specifically say that these methods returns an iterator and not a
 list. If you want to turn them into lists, you have to use list casting
 (see Chapter
-<a href="#ch:lists" data-reference-type="ref" data-reference="ch:lists">13</a>).
+13).
 
 ```python
 fruitbasket = { "apple":3, "banana":5, "cherry":50 }
@@ -160,10 +160,10 @@ expressions).
 ```python
 english_dutch = { "last":"laatst", "week":"week", "the":"de",
     "royal":"koninklijk", "festival":"feest", "hall":"hal", "saw":
-    "zaag", "first":"eerst", "performance":"optreden", "of":"van", 
-    "a":"een", "new":"nieuw", "symphony":"symphonie", "by":"bij", 
+    "zaag", "first":"eerst", "performance":"optreden", "of":"van",
+    "a":"een", "new":"nieuw", "symphony":"symphonie", "by":"bij",
     "one":"een", "world":"wereld", "leading":"leidend", "modern":
-    "modern", "composer":"componist", "composers":"componisten", 
+    "modern", "composer":"componist", "composers":"componisten",
     "two":"twee", "shed":"schuur", "sheds":"schuren" }
 
 sentence = "Last week The Royal Festival Hall saw the first \

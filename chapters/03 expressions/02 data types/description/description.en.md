@@ -110,4 +110,4 @@ not 431 as you might expect. If you know that the outcome of a
 floating-point calculation must be an integer, then you best make sure
 that you round the outcome to the nearest whole number. You can use the
 `round()` function for that, which will be explained in Chapter
-<a href="#ch:simplefunctions" data-reference-type="ref" data-reference="ch:simplefunctions">6</a>.
+6.

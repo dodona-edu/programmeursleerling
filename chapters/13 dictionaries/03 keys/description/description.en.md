@@ -6,7 +6,7 @@ tuples as keys. This can occasionally be useful.
 A very straightforward example of tuples being useful as keys is a
 dictionary in which you want to store information associated with points
 in two-dimensional space (a discussion of which was given in Chapter
-<a href="#ch:tuples" data-reference-type="ref" data-reference="ch:tuples">12</a>).
+12).
 There is no good way in which you can store the identification of a
 point in a single number or string. It is not impossible (for instance,
 you could store the number-pair as their string-representations,

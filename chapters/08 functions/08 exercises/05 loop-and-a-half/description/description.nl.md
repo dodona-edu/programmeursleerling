@@ -1,5 +1,5 @@
 In hoofdstuk
-<a href="#ch:iterations" data-reference-type="ref" data-reference="ch:iterations">8</a>
+8
 legde ik de loop-en-een-half uit. De uiteindelijke code voor het
 voorbeeld dat ik gebruikte had nog steeds iets lelijks, namelijk dat als
 `x` kleiner dan 0 of groter dan 1000 was, dat de code nog steeds vroeg

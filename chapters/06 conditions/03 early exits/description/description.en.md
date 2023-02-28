@@ -47,7 +47,6 @@ exit.
 In general, you are not allowed to ignore error messages and warnings.
 This one is the exception to the rule. You are allowed to exit your
 program this way. In Chapter
-<a href="#ch:functions" data-reference-type="ref" data-reference="ch:functions">9</a>
+9
 I will explain how you can suppress this ugly message (if you get it and
 if you really want to), but for now, just accept it.
-

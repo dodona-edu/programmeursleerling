@@ -41,7 +41,7 @@ the parentheses).
 Note that the shorthand way that I use in this code to write a simple
 condition (with a statement like `3 if c1 == COOPERATE else 1`), which
 looks like a list comprehension (see Chapter
-<a href="#ch:lists" data-reference-type="ref" data-reference="ch:lists">13</a>),
+13),
 is just to save some space and make the code a bit more readable. It
 would be just as well to write the 4 lines of code that would be needed
 to do this with a regular `if` statement.

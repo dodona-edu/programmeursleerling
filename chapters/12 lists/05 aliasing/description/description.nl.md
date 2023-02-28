@@ -85,7 +85,7 @@ niet speciaal gedefinieerd is, wordt een identiteitsvergelijking
 uitgevoerd. Maar voor lists is de $$==$$ operator gedefinieerd als een
 vergelijking van list inhoud. Ik ga dieper op dit onderwerp in als ik
 het ga hebben over "operator overloading" in hoofdstuk
-<a href="#ch:operatoroverloading" data-reference-type="ref" data-reference="ch:operatoroverloading">22</a>.
+22.
 
 ### Ondiepe versus diepe kopieën
 

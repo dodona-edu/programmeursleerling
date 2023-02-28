@@ -8,7 +8,7 @@ lijst van de namen van de velden bevatten.
 
 De code hieronder laadt en toont de inhoud van een typisch CSV bestand.
 Appendix
-<a href="#ch:testtextfiles" data-reference-type="ref" data-reference="ch:testtextfiles">33</a>
+33
 legt uit hoe je dit CSV bestand kunt krijgen (als je het niet al
 gedownload hebt).
 

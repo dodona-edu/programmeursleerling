@@ -25,7 +25,7 @@ The following values are interpreted as `False`:
 -   The special value `False`
 
 -   The special value `None` (which you encountered in Chapter
-    <a href="#ch:simplefunctions" data-reference-type="ref" data-reference="ch:simplefunctions">6</a>)
+    6)
 
 -   Every numerical value that is zero, e.g., 0 and 0.0
 
@@ -33,7 +33,7 @@ The following values are interpreted as `False`:
 
 -   Every empty "mapping," e.g., an empty dictionary (dictionaries
     follow in Chapter
-    <a href="#ch:dictionaries" data-reference-type="ref" data-reference="ch:dictionaries">14</a>)
+    14)
 
 -   Any function or method call that returns one of these listed values
     (this includes functions that return nothing)
@@ -68,7 +68,7 @@ You can use the comparison operators to compare both numbers and
 strings. Comparison for strings is an alphabetical comparison, whereby
 all capitals come before all lower case letters (and digits come before
 both of them). More on this will follow in Chapter
-<a href="#ch:strings" data-reference-type="ref" data-reference="ch:strings">11</a>.
+11.
 
 Here are some examples of the results of comparisons:
 

@@ -10,7 +10,7 @@ oplost voor een list met integers. Als er een oplossing is, druk die af;
 als er geen oplossing is, geef dat dan aan.
 
 Dit is een herhaling van één van de opgaves uit hoofdstuk
-<a href="#ch:lists" data-reference-type="ref" data-reference="ch:lists">13</a>
+13
 (Lists). In dat hoofdstuk zei ik dat je deze opgave het beste recursief
 kunt aanpakken. Echter, door de `itertools` module te gebruiken, kun je
 hem nu oplossen zonder recursie (ik vermoed dat recursie nog steeds

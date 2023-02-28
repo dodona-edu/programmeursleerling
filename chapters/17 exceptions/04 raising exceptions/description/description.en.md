@@ -2,9 +2,9 @@ You are allowed to raise exceptions yourself. For that, you use the
 keyword `raise`, and follow that with one of the known exceptions
 (potentially, you could create your own, new exceptions if you like, but
 you need to have studied Chapters
-<a href="#ch:objectorientation" data-reference-type="ref" data-reference="ch:objectorientation">21</a>
+21
 and
-<a href="#ch:inheritance" data-reference-type="ref" data-reference="ch:inheritance">23</a>
+23
 before you are ready for it). You can give the exception arguments of
 any kind that you like.
 

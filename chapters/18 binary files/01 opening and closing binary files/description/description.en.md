@@ -11,7 +11,7 @@ open a file both for reading and writing; reading and writing you
 indicate with mode `"r+"`, so reading and writing in binary mode is
 `"r+b"` (while it is also possible to open text files in `"r+"` mode, I
 did not indicate it in Chapter
-<a href="#ch:textfiles" data-reference-type="ref" data-reference="ch:textfiles">17</a>,
+17,
 as it seldom makes sense to open text files in this mode). Just as with
 text files, if you open a binary file in write-mode, with `"wb"`, the
 file gets emptied. The mode `"w+b"` will open a file for both reading

@@ -44,7 +44,7 @@ did not make a flow chart, as that is not easy for `for` loops).
 When the `for` loop is encountered, Python takes the collection (i.e.,
 the string `"banana"`) and turns it into an "iterable." What that is
 exactly I will get to in Chapter
-<a href="#ch:iteratorsandgenerators" data-reference-type="ref" data-reference="ch:iteratorsandgenerators">24</a>,
+24,
 but for now assume that it is a list of all the letters in the string,
 in the order that they appear in the string. Python then takes the first
 of those letters, and puts it in the variable `letter`. It then executes
@@ -146,7 +146,7 @@ If you want to use a `for` loop to cycle through items in a collection
 that you create manually, you can do so by listing all your items
 between parentheses. This defines a "tuple" for the items of your
 collection. Tuples will be discussed in detail in Chapter
-<a href="#ch:tuples" data-reference-type="ref" data-reference="ch:tuples">12</a>.
+12.
 
 ```python
 for x in ( 10, 100, 1000, 10000 ):
@@ -178,7 +178,7 @@ I am not going to ask you to build a `for` loop that asks the user to
 enter numbers until the user enters zero. Why not?
 
 [^2]: Unfortunately, I will have to revise this statement in Chapter
-    <a href="#ch:iteratorsandgenerators" data-reference-type="ref" data-reference="ch:iteratorsandgenerators">24</a>,
+    24,
     but it requires knowledge of pretty advanced Python to create an
     endless `for` loop – for now, and in general practice, you may
     assume that `for` loops are guaranteed to end.

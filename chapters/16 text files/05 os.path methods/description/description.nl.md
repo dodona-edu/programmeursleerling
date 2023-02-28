@@ -68,7 +68,7 @@ plakt die op een redelijk slimme manier aan elkaar om een geschikte naam
 voor een pad te vormen, die het retourneert. Dit betekent dat het
 "slashes" verwijdert of toevoegt waar nodig. `join()` is vooral handig
 in combinatie met `listdir()` (uitgelegd in hoofdstuk
-<a href="#ch:operatingsystem" data-reference-type="ref" data-reference="ch:operatingsystem">16</a>,
+16,
 en als voorbeeld gebruikt hieronder).
 
 De reden dat `join()` handig is in combinatie met `listdir()`, is dat

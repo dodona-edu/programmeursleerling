@@ -8,8 +8,8 @@ identified by their student numbers.
 
 ```python
 courses = {
-    '880254':['u123456', 'u383213', 'u234178'], 
-    '822177':['u123456', 'u223416', 'u234178'], 
+    '880254':['u123456', 'u383213', 'u234178'],
+    '822177':['u123456', 'u223416', 'u234178'],
     '822164':['u123456', 'u223416', 'u383213', 'u234178']}
 
 for c in courses:
@@ -30,15 +30,15 @@ dictionary, which contains student numbers as keys and grades as values.
 
 ```python
 courses = {
-    '880254': { "name":"RS: Data Processing", "ects":3, 
-        "students":{'u123456':8, 'u383213':7.5, 'u234178':6} }, 
+    '880254': { "name":"RS: Data Processing", "ects":3,
+        "students":{'u123456':8, 'u383213':7.5, 'u234178':6} },
     '822177': { "name":"Understanding Intelligence", "ects":6,
-        "students":{'u123456':5, 'u223416':7, 'u234178':9} }, 
+        "students":{'u123456':5, 'u223416':7, 'u234178':9} },
     '822164': { "name":"Computer Games", "ects":6,
         "students":{'u383213':6, 'u234178':4} } }
 
 for c in courses:
-    print( "{}: {} ({})".format( c, courses[c]["name"], 
+    print( "{}: {} ({})".format( c, courses[c]["name"],
         courses[c]["ects"] ) )
     for s in courses[c]["students"]:
         print( "{}: {}".format( s, courses[c]["students"][s] ) )
@@ -49,5 +49,5 @@ Data structures can become a lot more complex than this if you want.
 However, if you are really considering designing Python programs for
 data structures like this, you should at least investigate object
 orientation first (Chapter
-<a href="#ch:objectorientation" data-reference-type="ref" data-reference="ch:objectorientation">21</a>
+21
 and onward) and probably do a separate course on databases.

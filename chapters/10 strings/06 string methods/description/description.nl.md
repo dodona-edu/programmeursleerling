@@ -5,13 +5,13 @@ methodes nooit de string waarop ze werken wijzigen, maar ze retourneren
 in plaats daarvan een gewijzigde versie van de string.
 
 Net als de `format()` methode die in hoofdstuk
-<a href="#ch:simplefunctions" data-reference-type="ref" data-reference="ch:simplefunctions">6</a>
+6
 besproken is, worden al de string methodes aangeroepen via de syntax
 `<string>.<methode>()`, met andere woorden, je specificeert de string
 waarop de methode moet werken, gevolgd door een punt, gevolgd door de
 methode. Je zult dit vanaf nu vaker tegenkomen, en de reden dat methodes
 op deze manier aangeroepen moeten worden volgt in latere hoofdstukken
-(<a href="#ch:objectorientation" data-reference-type="ref" data-reference="ch:objectorientation">21</a>
+(21
 en verder).
 
 De meeste string methodes zijn geen deel van een module, en je kunt ze
@@ -98,7 +98,7 @@ uitmaakt of er tussen twee woorden één spatie staat, of meerdere).
 
 Het resultaat van deze opsplitsing is een "lijst" van woorden. Lijsten
 komen aan bod in hoofdstuk
-<a href="#ch:lists" data-reference-type="ref" data-reference="ch:lists">13</a>,
+13,
 dus ik ga er nu weinig over zeggen. Ik zeg alleen dat als je de
 afzonderlijke woorden in de lijst wilt benaderen, je de constructie
 `for <woord> in <``lijst``>` kunt gebruiken.
@@ -168,5 +168,4 @@ hebt geschreven voor het schoonmaken van strings hier gebruiken.
     kunnen staan in de waardes die zijn opgeslagen in het CSV bestand,
     dus het is afhankelijk van de inhoud van het bestand of de genoemde
     aanpak werkt. Ik ga meer zeggen over CSV bestanden in hoofdstuk
-    <a href="#ch:fileformats" data-reference-type="ref" data-reference="ch:fileformats">27</a>.
-
+    27.

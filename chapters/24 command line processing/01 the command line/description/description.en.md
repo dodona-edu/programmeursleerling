@@ -1,5 +1,5 @@
 Chapter
-<a href="#ch:operatingsystem" data-reference-type="ref" data-reference="ch:operatingsystem">16</a>
+16
 explained how you can get access to your computer's "command prompt". If
 you do not remember, please go refresh your memory. The chapter also
 explained that you can start Python programs directly from the command
@@ -132,7 +132,7 @@ inputfile = "input.txt"
 outputfile = "output.txt"
 shift = 3
 
-# Processing the command line parameters 
+# Processing the command line parameters
 # (works with 0, 1, 2, or 3 parameters)
 if len( sys.argv ) > 1:
     inputfile = sys.argv[1]
@@ -166,7 +166,7 @@ variables will retain their default value; etcetera.
 In the example code above the program is aborted using `sys.exit()` if
 an argument is not meeting the requirements set to it. `sys.exit()` was
 introduced in Chapter
-<a href="#ch:conditions" data-reference-type="ref" data-reference="ch:conditions">7</a>.
+7.
 However, I did not explain at that time that `sys.exit()` can get a
 numerical argument, which you see above. The use of this argument is
 that it will be returned to the batch file that is running the program,
