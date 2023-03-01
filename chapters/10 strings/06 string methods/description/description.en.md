@@ -138,8 +138,7 @@ In the string
 the word `"wood"` is misspelled. Use `replace()` to replace all
 occurrences of this spelling error with the correct spelling.
 
-Display the contents of the string `"Nobody expects the Spanish`
-`Inquisition!# In fact, those who do expect the Spanish Inquisition..."`
+Display the contents of the string `"Nobody expects the Spanish Inquisition!# In fact, those who do expect the Spanish Inquisition..."`
 up to, but not including, the hash mark (`#`). Use `find()` to get the
 index of the hash mark.
 
