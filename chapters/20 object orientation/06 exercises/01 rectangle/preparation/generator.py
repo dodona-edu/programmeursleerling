@@ -92,7 +92,7 @@ for index, (x, y, w, h) in enumerate(cases):
                 while bool(obj.overlap(rectangle)) == test.startswith('non'):
                     x, y, w, h = generate_rectangle()
                     rectangle = Rectangle(Point(x, y), w, h)
-                test_method(obj, 'overlap', rectangle, representation=True, varname=varname)
+                test_method(obj, 'overlap', rectangle, representation=obj.overlap(rectangle) is not None, varname=varname)
             else:
                 test_method(obj, test, representation=(True if test=='bottom_right' else False), varname=varname)
 
