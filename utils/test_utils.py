@@ -112,14 +112,15 @@ def test_property(obj, property, varname=None):
     # generate test result
     print(repr(getattr(obj, property)))
 
-def test_method(obj, method, *args, varname=None, processor=None, **kwargs):
+def test_method(obj, method, *args, varname=None, representation=False, processor=None, **kwargs):
 
     if varname is None:
         varname = repr(obj)
 
     # generate test statement
     method = getattr(obj.__class__, method)
-    print(f'>>> {varname}.{method.__name__}({arguments_str(*args, **kwargs)})')
+    doctest_repr = ' # doctest: +REPR' if representation else ''
+    print(f'>>> {varname}.{method.__name__}({arguments_str(*args, **kwargs)}){doctest_repr}')
 
     try:
 

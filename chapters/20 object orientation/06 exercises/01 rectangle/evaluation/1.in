@@ -7,17 +7,17 @@ Rectangle(Point(1, 1), 8, 5)
 40
 >>> rectangle_01.circumference()
 26
->>> rectangle_01.bottom_right()
+>>> rectangle_01.bottom_right() # doctest: +REPR
 Point(9, 6)
->>> rectangle_01.overlap(Rectangle(Point(-5, 5), 8, 10))
+>>> rectangle_01.overlap(Rectangle(Point(-5, 5), 8, 10)) # doctest: +REPR
 Rectangle(Point(1, 5), 2, 1)
->>> rectangle_01.overlap(Rectangle(Point(-3, -5), 8, 1))
+>>> rectangle_01.overlap(Rectangle(Point(-3, -5), 8, 1)) # doctest: +REPR
 
 >>> rectangle_02 = Rectangle(Point(2, 3), 9, 2) # doctest: +NEWCONTEXT
->>> rectangle_02.overlap(Rectangle(Point(1, -3), 3, 8))
+>>> rectangle_02.overlap(Rectangle(Point(1, -3), 3, 8)) # doctest: +REPR
 Rectangle(Point(2, 3), 2, 2)
->>> rectangle_02.overlap(Rectangle(Point(5, 5), 4, 2))
->>> rectangle_02.bottom_right()
+>>> rectangle_02.overlap(Rectangle(Point(5, 5), 4, 2)) # doctest: +REPR
+>>> rectangle_02.bottom_right() # doctest: +REPR
 Point(11, 5)
 >>> rectangle_02.surface_area()
 18
@@ -29,18 +29,18 @@ Rectangle(Point(2, 3), 9, 2)
 22
 
 >>> rectangle_03 = Rectangle(Point(-9, -6), 9, 2) # doctest: +NEWCONTEXT
->>> rectangle_03.overlap(Rectangle(Point(-4, -9), 10, 5))
+>>> rectangle_03.overlap(Rectangle(Point(-4, -9), 10, 5)) # doctest: +REPR
 Rectangle(Point(-4, -6), 4, 2)
 >>> str(rectangle_03)
 'Rectangle(Point(-9, -6), 9, 2)'
 >>> rectangle_03.circumference()
 22
->>> rectangle_03.overlap(Rectangle(Point(7, 5), 8, 6))
+>>> rectangle_03.overlap(Rectangle(Point(7, 5), 8, 6)) # doctest: +REPR
 >>> repr(rectangle_03)
 'Rectangle(Point(-9, -6), 9, 2)'
 >>> rectangle_03.surface_area()
 18
->>> rectangle_03.bottom_right()
+>>> rectangle_03.bottom_right() # doctest: +REPR
 Point(0, -4)
 
 >>> rectangle_04 = Rectangle(Point(-5, 0), 2, 1) # doctest: +NEWCONTEXT
@@ -48,42 +48,42 @@ Point(0, -4)
 'Rectangle(Point(-5, 0), 2, 1)'
 >>> rectangle_04.circumference()
 6
->>> rectangle_04.overlap(Rectangle(Point(-8, -4), 10, 10))
+>>> rectangle_04.overlap(Rectangle(Point(-8, -4), 10, 10)) # doctest: +REPR
 Rectangle(Point(-5, 0), 2, 1)
->>> rectangle_04.overlap(Rectangle(Point(-6, -9), 3, 5))
+>>> rectangle_04.overlap(Rectangle(Point(-6, -9), 3, 5)) # doctest: +REPR
 >>> rectangle_04.surface_area()
 2
 >>> rectangle_04 # doctest: +REPR
 Rectangle(Point(-5, 0), 2, 1)
->>> rectangle_04.bottom_right()
+>>> rectangle_04.bottom_right() # doctest: +REPR
 Point(-3, 1)
 
 >>> rectangle_05 = Rectangle(Point(8, 5), 8, 3) # doctest: +NEWCONTEXT
->>> rectangle_05.bottom_right()
+>>> rectangle_05.bottom_right() # doctest: +REPR
 Point(16, 8)
 >>> rectangle_05.circumference()
 22
->>> rectangle_05.overlap(Rectangle(Point(4, -8), 4, 10))
+>>> rectangle_05.overlap(Rectangle(Point(4, -8), 4, 10)) # doctest: +REPR
 >>> str(rectangle_05)
 'Rectangle(Point(8, 5), 8, 3)'
 >>> rectangle_05.surface_area()
 24
->>> rectangle_05.overlap(Rectangle(Point(0, -1), 9, 9))
+>>> rectangle_05.overlap(Rectangle(Point(0, -1), 9, 9)) # doctest: +REPR
 Rectangle(Point(8, 5), 1, 3)
 >>> rectangle_05 # doctest: +REPR
 Rectangle(Point(8, 5), 8, 3)
 
 >>> rectangle_06 = Rectangle(Point(-9, -7), 4, 1) # doctest: +NEWCONTEXT
->>> rectangle_06.bottom_right()
+>>> rectangle_06.bottom_right() # doctest: +REPR
 Point(-5, -6)
->>> rectangle_06.overlap(Rectangle(Point(10, 6), 6, 1))
+>>> rectangle_06.overlap(Rectangle(Point(10, 6), 6, 1)) # doctest: +REPR
 >>> rectangle_06.surface_area()
 4
 >>> rectangle_06.circumference()
 10
 >>> str(rectangle_06)
 'Rectangle(Point(-9, -7), 4, 1)'
->>> rectangle_06.overlap(Rectangle(Point(-6, -7), 1, 4))
+>>> rectangle_06.overlap(Rectangle(Point(-6, -7), 1, 4)) # doctest: +REPR
 Rectangle(Point(-6, -7), 1, 1)
 >>> rectangle_06 # doctest: +REPR
 Rectangle(Point(-9, -7), 4, 1)
@@ -93,28 +93,28 @@ Traceback (most recent call last):
 AssertionError: invalid rectangle
 
 >>> rectangle_08 = Rectangle(Point(3, -5), 6, 1) # doctest: +NEWCONTEXT
->>> rectangle_08.overlap(Rectangle(Point(-2, 6), 9, 10))
+>>> rectangle_08.overlap(Rectangle(Point(-2, 6), 9, 10)) # doctest: +REPR
 >>> rectangle_08.surface_area()
 6
->>> rectangle_08.bottom_right()
+>>> rectangle_08.bottom_right() # doctest: +REPR
 Point(9, -4)
 >>> print(rectangle_08) # doctest: +STDOUT
 Rectangle(Point(3, -5), 6, 1)
 >>> rectangle_08 # doctest: +REPR
 Rectangle(Point(3, -5), 6, 1)
->>> rectangle_08.overlap(Rectangle(Point(8, -7), 2, 9))
+>>> rectangle_08.overlap(Rectangle(Point(8, -7), 2, 9)) # doctest: +REPR
 Rectangle(Point(8, -5), 1, 1)
 >>> rectangle_08.circumference()
 14
 
 >>> rectangle_09 = Rectangle(Point(5, -4), 6, 7) # doctest: +NEWCONTEXT
->>> rectangle_09.bottom_right()
+>>> rectangle_09.bottom_right() # doctest: +REPR
 Point(11, 3)
->>> rectangle_09.overlap(Rectangle(Point(9, -4), 6, 2))
+>>> rectangle_09.overlap(Rectangle(Point(9, -4), 6, 2)) # doctest: +REPR
 Rectangle(Point(9, -4), 2, 2)
 >>> rectangle_09.circumference()
 26
->>> rectangle_09.overlap(Rectangle(Point(-10, -1), 9, 10))
+>>> rectangle_09.overlap(Rectangle(Point(-10, -1), 9, 10)) # doctest: +REPR
 >>> rectangle_09.surface_area()
 42
 >>> repr(rectangle_09)
@@ -125,14 +125,14 @@ Rectangle(Point(5, -4), 6, 7)
 >>> rectangle_10 = Rectangle(Point(5, 5), 7, 10) # doctest: +NEWCONTEXT
 >>> rectangle_10.circumference()
 34
->>> rectangle_10.bottom_right()
+>>> rectangle_10.bottom_right() # doctest: +REPR
 Point(12, 15)
->>> rectangle_10.overlap(Rectangle(Point(-5, -6), 3, 3))
+>>> rectangle_10.overlap(Rectangle(Point(-5, -6), 3, 3)) # doctest: +REPR
 >>> print(rectangle_10) # doctest: +STDOUT
 Rectangle(Point(5, 5), 7, 10)
 >>> repr(rectangle_10)
 'Rectangle(Point(5, 5), 7, 10)'
->>> rectangle_10.overlap(Rectangle(Point(9, 9), 4, 2))
+>>> rectangle_10.overlap(Rectangle(Point(9, 9), 4, 2)) # doctest: +REPR
 Rectangle(Point(9, 9), 3, 2)
 >>> rectangle_10.surface_area()
 70
@@ -140,23 +140,23 @@ Rectangle(Point(9, 9), 3, 2)
 >>> rectangle_11 = Rectangle(Point(-6, -2), 7, 6) # doctest: +NEWCONTEXT
 >>> print(rectangle_11) # doctest: +STDOUT
 Rectangle(Point(-6, -2), 7, 6)
->>> rectangle_11.overlap(Rectangle(Point(-5, -7), 10, 2))
+>>> rectangle_11.overlap(Rectangle(Point(-5, -7), 10, 2)) # doctest: +REPR
 >>> rectangle_11.surface_area()
 42
 >>> rectangle_11.circumference()
 26
->>> rectangle_11.bottom_right()
+>>> rectangle_11.bottom_right() # doctest: +REPR
 Point(1, 4)
->>> rectangle_11.overlap(Rectangle(Point(-5, -9), 6, 9))
+>>> rectangle_11.overlap(Rectangle(Point(-5, -9), 6, 9)) # doctest: +REPR
 Rectangle(Point(-5, -2), 6, 2)
 >>> rectangle_11 # doctest: +REPR
 Rectangle(Point(-6, -2), 7, 6)
 
 >>> rectangle_12 = Rectangle(Point(0, -7), 6, 5) # doctest: +NEWCONTEXT
->>> rectangle_12.bottom_right()
+>>> rectangle_12.bottom_right() # doctest: +REPR
 Point(6, -2)
->>> rectangle_12.overlap(Rectangle(Point(10, -4), 4, 6))
->>> rectangle_12.overlap(Rectangle(Point(0, -7), 3, 1))
+>>> rectangle_12.overlap(Rectangle(Point(10, -4), 4, 6)) # doctest: +REPR
+>>> rectangle_12.overlap(Rectangle(Point(0, -7), 3, 1)) # doctest: +REPR
 Rectangle(Point(0, -7), 3, 1)
 >>> rectangle_12.circumference()
 22
@@ -170,35 +170,35 @@ Rectangle(Point(0, -7), 6, 5)
 >>> rectangle_13 = Rectangle(Point(7, 9), 8, 1) # doctest: +NEWCONTEXT
 >>> repr(rectangle_13)
 'Rectangle(Point(7, 9), 8, 1)'
->>> rectangle_13.overlap(Rectangle(Point(2, 3), 8, 6))
+>>> rectangle_13.overlap(Rectangle(Point(2, 3), 8, 6)) # doctest: +REPR
 >>> str(rectangle_13)
 'Rectangle(Point(7, 9), 8, 1)'
 >>> rectangle_13.surface_area()
 8
->>> rectangle_13.overlap(Rectangle(Point(7, 5), 1, 7))
+>>> rectangle_13.overlap(Rectangle(Point(7, 5), 1, 7)) # doctest: +REPR
 Rectangle(Point(7, 9), 1, 1)
->>> rectangle_13.bottom_right()
+>>> rectangle_13.bottom_right() # doctest: +REPR
 Point(15, 10)
 >>> rectangle_13.circumference()
 18
 
 >>> rectangle_14 = Rectangle(Point(3, 4), 5, 3) # doctest: +NEWCONTEXT
->>> rectangle_14.overlap(Rectangle(Point(-9, 1), 10, 7))
+>>> rectangle_14.overlap(Rectangle(Point(-9, 1), 10, 7)) # doctest: +REPR
 >>> repr(rectangle_14)
 'Rectangle(Point(3, 4), 5, 3)'
 >>> rectangle_14.surface_area()
 15
 >>> rectangle_14.circumference()
 16
->>> rectangle_14.overlap(Rectangle(Point(5, -5), 5, 10))
+>>> rectangle_14.overlap(Rectangle(Point(5, -5), 5, 10)) # doctest: +REPR
 Rectangle(Point(5, 4), 3, 1)
->>> rectangle_14.bottom_right()
+>>> rectangle_14.bottom_right() # doctest: +REPR
 Point(8, 7)
 >>> print(rectangle_14) # doctest: +STDOUT
 Rectangle(Point(3, 4), 5, 3)
 
 >>> rectangle_15 = Rectangle(Point(-8, 7), 5, 8) # doctest: +NEWCONTEXT
->>> rectangle_15.overlap(Rectangle(Point(-8, 10), 10, 6))
+>>> rectangle_15.overlap(Rectangle(Point(-8, 10), 10, 6)) # doctest: +REPR
 Rectangle(Point(-8, 10), 5, 5)
 >>> rectangle_15.circumference()
 26
@@ -208,21 +208,21 @@ Rectangle(Point(-8, 7), 5, 8)
 40
 >>> repr(rectangle_15)
 'Rectangle(Point(-8, 7), 5, 8)'
->>> rectangle_15.overlap(Rectangle(Point(2, -4), 4, 1))
->>> rectangle_15.bottom_right()
+>>> rectangle_15.overlap(Rectangle(Point(2, -4), 4, 1)) # doctest: +REPR
+>>> rectangle_15.bottom_right() # doctest: +REPR
 Point(-3, 15)
 
 >>> rectangle_16 = Rectangle(Point(-1, -2), 2, 6) # doctest: +NEWCONTEXT
 >>> rectangle_16.circumference()
 16
->>> rectangle_16.overlap(Rectangle(Point(0, -3), 7, 2))
+>>> rectangle_16.overlap(Rectangle(Point(0, -3), 7, 2)) # doctest: +REPR
 Rectangle(Point(0, -2), 1, 1)
->>> rectangle_16.overlap(Rectangle(Point(-7, -10), 7, 3))
+>>> rectangle_16.overlap(Rectangle(Point(-7, -10), 7, 3)) # doctest: +REPR
 >>> rectangle_16.surface_area()
 12
 >>> repr(rectangle_16)
 'Rectangle(Point(-1, -2), 2, 6)'
->>> rectangle_16.bottom_right()
+>>> rectangle_16.bottom_right() # doctest: +REPR
 Point(1, 4)
 >>> print(rectangle_16) # doctest: +STDOUT
 Rectangle(Point(-1, -2), 2, 6)
@@ -236,16 +236,16 @@ Rectangle(Point(9, 8), 9, 3)
 24
 >>> repr(rectangle_17)
 'Rectangle(Point(9, 8), 9, 3)'
->>> rectangle_17.bottom_right()
+>>> rectangle_17.bottom_right() # doctest: +REPR
 Point(18, 11)
->>> rectangle_17.overlap(Rectangle(Point(6, 8), 4, 2))
+>>> rectangle_17.overlap(Rectangle(Point(6, 8), 4, 2)) # doctest: +REPR
 Rectangle(Point(9, 8), 1, 2)
->>> rectangle_17.overlap(Rectangle(Point(-2, -4), 3, 9))
+>>> rectangle_17.overlap(Rectangle(Point(-2, -4), 3, 9)) # doctest: +REPR
 
 >>> rectangle_18 = Rectangle(Point(3, 9), 3, 7) # doctest: +NEWCONTEXT
 >>> print(rectangle_18) # doctest: +STDOUT
 Rectangle(Point(3, 9), 3, 7)
->>> rectangle_18.bottom_right()
+>>> rectangle_18.bottom_right() # doctest: +REPR
 Point(6, 16)
 >>> rectangle_18.circumference()
 20
@@ -253,29 +253,29 @@ Point(6, 16)
 Rectangle(Point(3, 9), 3, 7)
 >>> rectangle_18.surface_area()
 21
->>> rectangle_18.overlap(Rectangle(Point(3, -4), 5, 4))
->>> rectangle_18.overlap(Rectangle(Point(1, 4), 10, 8))
+>>> rectangle_18.overlap(Rectangle(Point(3, -4), 5, 4)) # doctest: +REPR
+>>> rectangle_18.overlap(Rectangle(Point(1, 4), 10, 8)) # doctest: +REPR
 Rectangle(Point(3, 9), 3, 3)
 
 >>> rectangle_19 = Rectangle(Point(-9, -7), 3, 8) # doctest: +NEWCONTEXT
 >>> print(rectangle_19) # doctest: +STDOUT
 Rectangle(Point(-9, -7), 3, 8)
->>> rectangle_19.overlap(Rectangle(Point(-10, -7), 9, 6))
+>>> rectangle_19.overlap(Rectangle(Point(-10, -7), 9, 6)) # doctest: +REPR
 Rectangle(Point(-9, -7), 3, 6)
 >>> rectangle_19.surface_area()
 24
 >>> rectangle_19 # doctest: +REPR
 Rectangle(Point(-9, -7), 3, 8)
->>> rectangle_19.bottom_right()
+>>> rectangle_19.bottom_right() # doctest: +REPR
 Point(-6, 1)
 >>> rectangle_19.circumference()
 22
->>> rectangle_19.overlap(Rectangle(Point(1, 0), 4, 6))
+>>> rectangle_19.overlap(Rectangle(Point(1, 0), 4, 6)) # doctest: +REPR
 
 >>> rectangle_20 = Rectangle(Point(3, -8), 6, 3) # doctest: +NEWCONTEXT
->>> rectangle_20.bottom_right()
+>>> rectangle_20.bottom_right() # doctest: +REPR
 Point(9, -5)
->>> rectangle_20.overlap(Rectangle(Point(-1, -8), 10, 3))
+>>> rectangle_20.overlap(Rectangle(Point(-1, -8), 10, 3)) # doctest: +REPR
 Rectangle(Point(3, -8), 6, 3)
 >>> repr(rectangle_20)
 'Rectangle(Point(3, -8), 6, 3)'
@@ -283,34 +283,34 @@ Rectangle(Point(3, -8), 6, 3)
 18
 >>> rectangle_20.circumference()
 18
->>> rectangle_20.overlap(Rectangle(Point(1, 1), 5, 9))
+>>> rectangle_20.overlap(Rectangle(Point(1, 1), 5, 9)) # doctest: +REPR
 >>> print(rectangle_20) # doctest: +STDOUT
 Rectangle(Point(3, -8), 6, 3)
 
 >>> rectangle_21 = Rectangle(Point(-2, 9), 5, 6) # doctest: +NEWCONTEXT
 >>> print(rectangle_21) # doctest: +STDOUT
 Rectangle(Point(-2, 9), 5, 6)
->>> rectangle_21.bottom_right()
+>>> rectangle_21.bottom_right() # doctest: +REPR
 Point(3, 15)
 >>> rectangle_21 # doctest: +REPR
 Rectangle(Point(-2, 9), 5, 6)
->>> rectangle_21.overlap(Rectangle(Point(-2, 4), 2, 7))
+>>> rectangle_21.overlap(Rectangle(Point(-2, 4), 2, 7)) # doctest: +REPR
 Rectangle(Point(-2, 9), 2, 2)
 >>> rectangle_21.surface_area()
 30
->>> rectangle_21.overlap(Rectangle(Point(5, -9), 5, 3))
+>>> rectangle_21.overlap(Rectangle(Point(5, -9), 5, 3)) # doctest: +REPR
 >>> rectangle_21.circumference()
 22
 
 >>> rectangle_22 = Rectangle(Point(8, -7), 1, 6) # doctest: +NEWCONTEXT
->>> rectangle_22.overlap(Rectangle(Point(6, -6), 6, 9))
+>>> rectangle_22.overlap(Rectangle(Point(6, -6), 6, 9)) # doctest: +REPR
 Rectangle(Point(8, -6), 1, 5)
 >>> rectangle_22.surface_area()
 6
->>> rectangle_22.overlap(Rectangle(Point(9, -1), 10, 2))
+>>> rectangle_22.overlap(Rectangle(Point(9, -1), 10, 2)) # doctest: +REPR
 >>> print(rectangle_22) # doctest: +STDOUT
 Rectangle(Point(8, -7), 1, 6)
->>> rectangle_22.bottom_right()
+>>> rectangle_22.bottom_right() # doctest: +REPR
 Point(9, -1)
 >>> rectangle_22 # doctest: +REPR
 Rectangle(Point(8, -7), 1, 6)
@@ -318,10 +318,10 @@ Rectangle(Point(8, -7), 1, 6)
 14
 
 >>> rectangle_23 = Rectangle(Point(5, -2), 2, 7) # doctest: +NEWCONTEXT
->>> rectangle_23.overlap(Rectangle(Point(0, 7), 3, 2))
->>> rectangle_23.bottom_right()
+>>> rectangle_23.overlap(Rectangle(Point(0, 7), 3, 2)) # doctest: +REPR
+>>> rectangle_23.bottom_right() # doctest: +REPR
 Point(7, 5)
->>> rectangle_23.overlap(Rectangle(Point(3, -4), 7, 6))
+>>> rectangle_23.overlap(Rectangle(Point(3, -4), 7, 6)) # doctest: +REPR
 Rectangle(Point(5, -2), 2, 4)
 >>> repr(rectangle_23)
 'Rectangle(Point(5, -2), 2, 7)'
@@ -341,23 +341,23 @@ Rectangle(Point(-6, -8), 8, 2)
 20
 >>> rectangle_24 # doctest: +REPR
 Rectangle(Point(-6, -8), 8, 2)
->>> rectangle_24.overlap(Rectangle(Point(0, -10), 1, 3))
+>>> rectangle_24.overlap(Rectangle(Point(0, -10), 1, 3)) # doctest: +REPR
 Rectangle(Point(0, -8), 1, 1)
->>> rectangle_24.overlap(Rectangle(Point(2, 4), 2, 10))
->>> rectangle_24.bottom_right()
+>>> rectangle_24.overlap(Rectangle(Point(2, 4), 2, 10)) # doctest: +REPR
+>>> rectangle_24.bottom_right() # doctest: +REPR
 Point(2, -6)
 
 >>> rectangle_25 = Rectangle(Point(3, 8), 9, 10) # doctest: +NEWCONTEXT
->>> rectangle_25.overlap(Rectangle(Point(8, 5), 8, 10))
+>>> rectangle_25.overlap(Rectangle(Point(8, 5), 8, 10)) # doctest: +REPR
 Rectangle(Point(8, 8), 4, 7)
 >>> rectangle_25.circumference()
 38
 >>> repr(rectangle_25)
 'Rectangle(Point(3, 8), 9, 10)'
->>> rectangle_25.overlap(Rectangle(Point(10, -2), 5, 7))
+>>> rectangle_25.overlap(Rectangle(Point(10, -2), 5, 7)) # doctest: +REPR
 >>> print(rectangle_25) # doctest: +STDOUT
 Rectangle(Point(3, 8), 9, 10)
->>> rectangle_25.bottom_right()
+>>> rectangle_25.bottom_right() # doctest: +REPR
 Point(12, 18)
 >>> rectangle_25.surface_area()
 90
@@ -365,11 +365,11 @@ Point(12, 18)
 >>> rectangle_26 = Rectangle(Point(-2, 7), 4, 7) # doctest: +NEWCONTEXT
 >>> rectangle_26.circumference()
 22
->>> rectangle_26.bottom_right()
+>>> rectangle_26.bottom_right() # doctest: +REPR
 Point(2, 14)
->>> rectangle_26.overlap(Rectangle(Point(1, 4), 9, 4))
+>>> rectangle_26.overlap(Rectangle(Point(1, 4), 9, 4)) # doctest: +REPR
 Rectangle(Point(1, 7), 1, 1)
->>> rectangle_26.overlap(Rectangle(Point(-1, -3), 9, 7))
+>>> rectangle_26.overlap(Rectangle(Point(-1, -3), 9, 7)) # doctest: +REPR
 >>> rectangle_26 # doctest: +REPR
 Rectangle(Point(-2, 7), 4, 7)
 >>> rectangle_26.surface_area()
@@ -380,10 +380,10 @@ Rectangle(Point(-2, 7), 4, 7)
 >>> rectangle_27 = Rectangle(Point(5, 4), 7, 3) # doctest: +NEWCONTEXT
 >>> rectangle_27.surface_area()
 21
->>> rectangle_27.overlap(Rectangle(Point(8, 3), 8, 8))
+>>> rectangle_27.overlap(Rectangle(Point(8, 3), 8, 8)) # doctest: +REPR
 Rectangle(Point(8, 4), 4, 3)
->>> rectangle_27.overlap(Rectangle(Point(6, -5), 2, 9))
->>> rectangle_27.bottom_right()
+>>> rectangle_27.overlap(Rectangle(Point(6, -5), 2, 9)) # doctest: +REPR
+>>> rectangle_27.bottom_right() # doctest: +REPR
 Point(12, 7)
 >>> str(rectangle_27)
 'Rectangle(Point(5, 4), 7, 3)'
@@ -393,14 +393,14 @@ Point(12, 7)
 20
 
 >>> rectangle_28 = Rectangle(Point(-1, 6), 9, 5) # doctest: +NEWCONTEXT
->>> rectangle_28.bottom_right()
+>>> rectangle_28.bottom_right() # doctest: +REPR
 Point(8, 11)
 >>> print(rectangle_28) # doctest: +STDOUT
 Rectangle(Point(-1, 6), 9, 5)
->>> rectangle_28.overlap(Rectangle(Point(-8, 5), 1, 9))
+>>> rectangle_28.overlap(Rectangle(Point(-8, 5), 1, 9)) # doctest: +REPR
 >>> rectangle_28.circumference()
 28
->>> rectangle_28.overlap(Rectangle(Point(-7, 4), 10, 8))
+>>> rectangle_28.overlap(Rectangle(Point(-7, 4), 10, 8)) # doctest: +REPR
 Rectangle(Point(-1, 6), 4, 5)
 >>> rectangle_28 # doctest: +REPR
 Rectangle(Point(-1, 6), 9, 5)
@@ -412,35 +412,35 @@ Rectangle(Point(-1, 6), 9, 5)
 16
 >>> repr(rectangle_29)
 'Rectangle(Point(6, 8), 1, 7)'
->>> rectangle_29.overlap(Rectangle(Point(5, 9), 8, 2))
+>>> rectangle_29.overlap(Rectangle(Point(5, 9), 8, 2)) # doctest: +REPR
 Rectangle(Point(6, 9), 1, 2)
->>> rectangle_29.bottom_right()
+>>> rectangle_29.bottom_right() # doctest: +REPR
 Point(7, 15)
 >>> rectangle_29.surface_area()
 7
 >>> str(rectangle_29)
 'Rectangle(Point(6, 8), 1, 7)'
->>> rectangle_29.overlap(Rectangle(Point(-7, -8), 10, 2))
+>>> rectangle_29.overlap(Rectangle(Point(-7, -8), 10, 2)) # doctest: +REPR
 
 >>> rectangle_30 = Rectangle(Point(-7, 5), 1, 7) # doctest: +NEWCONTEXT
->>> rectangle_30.overlap(Rectangle(Point(-8, 4), 9, 10))
+>>> rectangle_30.overlap(Rectangle(Point(-8, 4), 9, 10)) # doctest: +REPR
 Rectangle(Point(-7, 5), 1, 7)
 >>> repr(rectangle_30)
 'Rectangle(Point(-7, 5), 1, 7)'
->>> rectangle_30.overlap(Rectangle(Point(9, -9), 2, 10))
+>>> rectangle_30.overlap(Rectangle(Point(9, -9), 2, 10)) # doctest: +REPR
 >>> rectangle_30.circumference()
 16
 >>> rectangle_30.surface_area()
 7
->>> rectangle_30.bottom_right()
+>>> rectangle_30.bottom_right() # doctest: +REPR
 Point(-6, 12)
 >>> print(rectangle_30) # doctest: +STDOUT
 Rectangle(Point(-7, 5), 1, 7)
 
 >>> rectangle_31 = Rectangle(Point(-5, 7), 5, 9) # doctest: +NEWCONTEXT
->>> rectangle_31.bottom_right()
+>>> rectangle_31.bottom_right() # doctest: +REPR
 Point(0, 16)
->>> rectangle_31.overlap(Rectangle(Point(-5, 5), 2, 5))
+>>> rectangle_31.overlap(Rectangle(Point(-5, 5), 2, 5)) # doctest: +REPR
 Rectangle(Point(-5, 7), 2, 3)
 >>> rectangle_31.circumference()
 28
@@ -448,21 +448,21 @@ Rectangle(Point(-5, 7), 2, 3)
 Rectangle(Point(-5, 7), 5, 9)
 >>> print(rectangle_31) # doctest: +STDOUT
 Rectangle(Point(-5, 7), 5, 9)
->>> rectangle_31.overlap(Rectangle(Point(10, -9), 2, 4))
+>>> rectangle_31.overlap(Rectangle(Point(10, -9), 2, 4)) # doctest: +REPR
 >>> rectangle_31.surface_area()
 45
 
 >>> rectangle_32 = Rectangle(Point(-9, -7), 7, 3) # doctest: +NEWCONTEXT
 >>> rectangle_32 # doctest: +REPR
 Rectangle(Point(-9, -7), 7, 3)
->>> rectangle_32.overlap(Rectangle(Point(-7, -7), 9, 3))
+>>> rectangle_32.overlap(Rectangle(Point(-7, -7), 9, 3)) # doctest: +REPR
 Rectangle(Point(-7, -7), 5, 3)
->>> rectangle_32.overlap(Rectangle(Point(-1, 1), 9, 6))
+>>> rectangle_32.overlap(Rectangle(Point(-1, 1), 9, 6)) # doctest: +REPR
 >>> rectangle_32.surface_area()
 21
 >>> rectangle_32.circumference()
 20
->>> rectangle_32.bottom_right()
+>>> rectangle_32.bottom_right() # doctest: +REPR
 Point(-2, -4)
 >>> str(rectangle_32)
 'Rectangle(Point(-9, -7), 7, 3)'
@@ -470,14 +470,14 @@ Point(-2, -4)
 >>> rectangle_33 = Rectangle(Point(3, 3), 8, 1) # doctest: +NEWCONTEXT
 >>> rectangle_33 # doctest: +REPR
 Rectangle(Point(3, 3), 8, 1)
->>> rectangle_33.bottom_right()
+>>> rectangle_33.bottom_right() # doctest: +REPR
 Point(11, 4)
 >>> str(rectangle_33)
 'Rectangle(Point(3, 3), 8, 1)'
 >>> rectangle_33.surface_area()
 8
->>> rectangle_33.overlap(Rectangle(Point(4, 10), 6, 8))
->>> rectangle_33.overlap(Rectangle(Point(6, -3), 10, 9))
+>>> rectangle_33.overlap(Rectangle(Point(4, 10), 6, 8)) # doctest: +REPR
+>>> rectangle_33.overlap(Rectangle(Point(6, -3), 10, 9)) # doctest: +REPR
 Rectangle(Point(6, 3), 5, 1)
 >>> rectangle_33.circumference()
 18
@@ -485,16 +485,16 @@ Rectangle(Point(6, 3), 5, 1)
 >>> rectangle_34 = Rectangle(Point(-5, -8), 10, 6) # doctest: +NEWCONTEXT
 >>> print(rectangle_34) # doctest: +STDOUT
 Rectangle(Point(-5, -8), 10, 6)
->>> rectangle_34.overlap(Rectangle(Point(4, 6), 7, 2))
+>>> rectangle_34.overlap(Rectangle(Point(4, 6), 7, 2)) # doctest: +REPR
 >>> rectangle_34 # doctest: +REPR
 Rectangle(Point(-5, -8), 10, 6)
 >>> rectangle_34.circumference()
 32
->>> rectangle_34.bottom_right()
+>>> rectangle_34.bottom_right() # doctest: +REPR
 Point(5, -2)
 >>> rectangle_34.surface_area()
 60
->>> rectangle_34.overlap(Rectangle(Point(-2, -3), 9, 5))
+>>> rectangle_34.overlap(Rectangle(Point(-2, -3), 9, 5)) # doctest: +REPR
 Rectangle(Point(-2, -3), 7, 1)
 
 >>> rectangle_35 = Rectangle(Point(6, 10), 7, 4) # doctest: +NEWCONTEXT
@@ -504,10 +504,10 @@ Rectangle(Point(-2, -3), 7, 1)
 22
 >>> str(rectangle_35)
 'Rectangle(Point(6, 10), 7, 4)'
->>> rectangle_35.overlap(Rectangle(Point(1, 6), 1, 1))
->>> rectangle_35.overlap(Rectangle(Point(7, 4), 4, 10))
+>>> rectangle_35.overlap(Rectangle(Point(1, 6), 1, 1)) # doctest: +REPR
+>>> rectangle_35.overlap(Rectangle(Point(7, 4), 4, 10)) # doctest: +REPR
 Rectangle(Point(7, 10), 4, 4)
->>> rectangle_35.bottom_right()
+>>> rectangle_35.bottom_right() # doctest: +REPR
 Point(13, 14)
 >>> repr(rectangle_35)
 'Rectangle(Point(6, 10), 7, 4)'
@@ -517,12 +517,12 @@ Point(13, 14)
 Rectangle(Point(1, -5), 8, 5)
 >>> rectangle_36.circumference()
 26
->>> rectangle_36.overlap(Rectangle(Point(-2, -5), 8, 1))
+>>> rectangle_36.overlap(Rectangle(Point(-2, -5), 8, 1)) # doctest: +REPR
 Rectangle(Point(1, -5), 5, 1)
 >>> repr(rectangle_36)
 'Rectangle(Point(1, -5), 8, 5)'
->>> rectangle_36.overlap(Rectangle(Point(0, 2), 10, 5))
->>> rectangle_36.bottom_right()
+>>> rectangle_36.overlap(Rectangle(Point(0, 2), 10, 5)) # doctest: +REPR
+>>> rectangle_36.bottom_right() # doctest: +REPR
 Point(9, 0)
 >>> rectangle_36.surface_area()
 40
@@ -530,12 +530,12 @@ Point(9, 0)
 >>> rectangle_37 = Rectangle(Point(-6, -10), 4, 5) # doctest: +NEWCONTEXT
 >>> repr(rectangle_37)
 'Rectangle(Point(-6, -10), 4, 5)'
->>> rectangle_37.bottom_right()
+>>> rectangle_37.bottom_right() # doctest: +REPR
 Point(-2, -5)
 >>> rectangle_37.circumference()
 18
->>> rectangle_37.overlap(Rectangle(Point(3, 7), 1, 2))
->>> rectangle_37.overlap(Rectangle(Point(-8, -8), 10, 5))
+>>> rectangle_37.overlap(Rectangle(Point(3, 7), 1, 2)) # doctest: +REPR
+>>> rectangle_37.overlap(Rectangle(Point(-8, -8), 10, 5)) # doctest: +REPR
 Rectangle(Point(-6, -8), 4, 3)
 >>> rectangle_37.surface_area()
 20
@@ -549,13 +549,13 @@ Rectangle(Point(-6, -10), 4, 5)
 24
 >>> rectangle_38 # doctest: +REPR
 Rectangle(Point(-10, 3), 8, 4)
->>> rectangle_38.overlap(Rectangle(Point(-9, 6), 1, 9))
+>>> rectangle_38.overlap(Rectangle(Point(-9, 6), 1, 9)) # doctest: +REPR
 Rectangle(Point(-9, 6), 1, 1)
 >>> print(rectangle_38) # doctest: +STDOUT
 Rectangle(Point(-10, 3), 8, 4)
->>> rectangle_38.bottom_right()
+>>> rectangle_38.bottom_right() # doctest: +REPR
 Point(-2, 7)
->>> rectangle_38.overlap(Rectangle(Point(-5, -7), 3, 8))
+>>> rectangle_38.overlap(Rectangle(Point(-5, -7), 3, 8)) # doctest: +REPR
 
 >>> rectangle_39 = Rectangle(Point(8, 4), 10, -1) # doctest: +NEWCONTEXT
 Traceback (most recent call last):
@@ -566,12 +566,12 @@ AssertionError: invalid rectangle
 16
 >>> rectangle_40 # doctest: +REPR
 Rectangle(Point(5, 1), 6, 2)
->>> rectangle_40.overlap(Rectangle(Point(4, -6), 1, 6))
->>> rectangle_40.overlap(Rectangle(Point(6, -3), 1, 9))
+>>> rectangle_40.overlap(Rectangle(Point(4, -6), 1, 6)) # doctest: +REPR
+>>> rectangle_40.overlap(Rectangle(Point(6, -3), 1, 9)) # doctest: +REPR
 Rectangle(Point(6, 1), 1, 2)
 >>> rectangle_40.surface_area()
 12
->>> rectangle_40.bottom_right()
+>>> rectangle_40.bottom_right() # doctest: +REPR
 Point(11, 3)
 >>> print(rectangle_40) # doctest: +STDOUT
 Rectangle(Point(5, 1), 6, 2)
@@ -581,14 +581,14 @@ Rectangle(Point(5, 1), 6, 2)
 Rectangle(Point(-4, -8), 3, 8)
 >>> rectangle_41.surface_area()
 24
->>> rectangle_41.overlap(Rectangle(Point(0, -10), 3, 6))
+>>> rectangle_41.overlap(Rectangle(Point(0, -10), 3, 6)) # doctest: +REPR
 >>> rectangle_41 # doctest: +REPR
 Rectangle(Point(-4, -8), 3, 8)
->>> rectangle_41.overlap(Rectangle(Point(-6, -9), 10, 8))
+>>> rectangle_41.overlap(Rectangle(Point(-6, -9), 10, 8)) # doctest: +REPR
 Rectangle(Point(-4, -8), 3, 7)
 >>> rectangle_41.circumference()
 22
->>> rectangle_41.bottom_right()
+>>> rectangle_41.bottom_right() # doctest: +REPR
 Point(-1, 0)
 
 >>> rectangle_42 = Rectangle(Point(-1, 6), 4, -10) # doctest: +NEWCONTEXT
@@ -598,10 +598,10 @@ AssertionError: invalid rectangle
 >>> rectangle_43 = Rectangle(Point(0, -7), 4, 3) # doctest: +NEWCONTEXT
 >>> repr(rectangle_43)
 'Rectangle(Point(0, -7), 4, 3)'
->>> rectangle_43.overlap(Rectangle(Point(6, 7), 2, 6))
->>> rectangle_43.bottom_right()
+>>> rectangle_43.overlap(Rectangle(Point(6, 7), 2, 6)) # doctest: +REPR
+>>> rectangle_43.bottom_right() # doctest: +REPR
 Point(4, -4)
->>> rectangle_43.overlap(Rectangle(Point(-3, -5), 6, 6))
+>>> rectangle_43.overlap(Rectangle(Point(-3, -5), 6, 6)) # doctest: +REPR
 Rectangle(Point(0, -5), 3, 1)
 >>> print(rectangle_43) # doctest: +STDOUT
 Rectangle(Point(0, -7), 4, 3)
@@ -611,7 +611,7 @@ Rectangle(Point(0, -7), 4, 3)
 12
 
 >>> rectangle_44 = Rectangle(Point(4, 7), 7, 7) # doctest: +NEWCONTEXT
->>> rectangle_44.bottom_right()
+>>> rectangle_44.bottom_right() # doctest: +REPR
 Point(11, 14)
 >>> rectangle_44 # doctest: +REPR
 Rectangle(Point(4, 7), 7, 7)
@@ -621,23 +621,23 @@ Rectangle(Point(4, 7), 7, 7)
 49
 >>> rectangle_44.circumference()
 28
->>> rectangle_44.overlap(Rectangle(Point(-5, 6), 9, 7))
->>> rectangle_44.overlap(Rectangle(Point(-3, 9), 10, 10))
+>>> rectangle_44.overlap(Rectangle(Point(-5, 6), 9, 7)) # doctest: +REPR
+>>> rectangle_44.overlap(Rectangle(Point(-3, 9), 10, 10)) # doctest: +REPR
 Rectangle(Point(4, 9), 3, 5)
 
 >>> rectangle_45 = Rectangle(Point(-3, 6), 9, 3) # doctest: +NEWCONTEXT
 >>> rectangle_45.circumference()
 24
->>> rectangle_45.overlap(Rectangle(Point(8, -5), 5, 5))
+>>> rectangle_45.overlap(Rectangle(Point(8, -5), 5, 5)) # doctest: +REPR
 >>> str(rectangle_45)
 'Rectangle(Point(-3, 6), 9, 3)'
->>> rectangle_45.overlap(Rectangle(Point(-2, 5), 4, 5))
+>>> rectangle_45.overlap(Rectangle(Point(-2, 5), 4, 5)) # doctest: +REPR
 Rectangle(Point(-2, 6), 4, 3)
 >>> repr(rectangle_45)
 'Rectangle(Point(-3, 6), 9, 3)'
 >>> rectangle_45.surface_area()
 27
->>> rectangle_45.bottom_right()
+>>> rectangle_45.bottom_right() # doctest: +REPR
 Point(6, 9)
 
 >>> rectangle_46 = Rectangle(Point(3, 8), 2, 4) # doctest: +NEWCONTEXT
@@ -645,13 +645,13 @@ Point(6, 9)
 'Rectangle(Point(3, 8), 2, 4)'
 >>> rectangle_46.surface_area()
 8
->>> rectangle_46.bottom_right()
+>>> rectangle_46.bottom_right() # doctest: +REPR
 Point(5, 12)
->>> rectangle_46.overlap(Rectangle(Point(2, 3), 2, 6))
+>>> rectangle_46.overlap(Rectangle(Point(2, 3), 2, 6)) # doctest: +REPR
 Rectangle(Point(3, 8), 1, 1)
 >>> repr(rectangle_46)
 'Rectangle(Point(3, 8), 2, 4)'
->>> rectangle_46.overlap(Rectangle(Point(6, -9), 9, 4))
+>>> rectangle_46.overlap(Rectangle(Point(6, -9), 9, 4)) # doctest: +REPR
 >>> rectangle_46.circumference()
 12
 
@@ -664,33 +664,33 @@ Rectangle(Point(3, 8), 1, 1)
 Rectangle(Point(-4, 8), 9, 8)
 >>> rectangle_47.circumference()
 34
->>> rectangle_47.overlap(Rectangle(Point(2, 3), 7, 9))
+>>> rectangle_47.overlap(Rectangle(Point(2, 3), 7, 9)) # doctest: +REPR
 Rectangle(Point(2, 8), 3, 4)
->>> rectangle_47.overlap(Rectangle(Point(9, 3), 5, 6))
->>> rectangle_47.bottom_right()
+>>> rectangle_47.overlap(Rectangle(Point(9, 3), 5, 6)) # doctest: +REPR
+>>> rectangle_47.bottom_right() # doctest: +REPR
 Point(5, 16)
 
 >>> rectangle_48 = Rectangle(Point(3, 5), 8, 1) # doctest: +NEWCONTEXT
 >>> rectangle_48.surface_area()
 8
->>> rectangle_48.overlap(Rectangle(Point(-1, 1), 5, 10))
+>>> rectangle_48.overlap(Rectangle(Point(-1, 1), 5, 10)) # doctest: +REPR
 Rectangle(Point(3, 5), 1, 1)
 >>> print(rectangle_48) # doctest: +STDOUT
 Rectangle(Point(3, 5), 8, 1)
 >>> repr(rectangle_48)
 'Rectangle(Point(3, 5), 8, 1)'
->>> rectangle_48.bottom_right()
+>>> rectangle_48.bottom_right() # doctest: +REPR
 Point(11, 6)
->>> rectangle_48.overlap(Rectangle(Point(7, -10), 1, 5))
+>>> rectangle_48.overlap(Rectangle(Point(7, -10), 1, 5)) # doctest: +REPR
 >>> rectangle_48.circumference()
 18
 
 >>> rectangle_49 = Rectangle(Point(-2, -4), 4, 3) # doctest: +NEWCONTEXT
->>> rectangle_49.bottom_right()
+>>> rectangle_49.bottom_right() # doctest: +REPR
 Point(2, -1)
 >>> rectangle_49.circumference()
 14
->>> rectangle_49.overlap(Rectangle(Point(-1, -4), 6, 1))
+>>> rectangle_49.overlap(Rectangle(Point(-1, -4), 6, 1)) # doctest: +REPR
 Rectangle(Point(-1, -4), 3, 1)
 >>> print(rectangle_49) # doctest: +STDOUT
 Rectangle(Point(-2, -4), 4, 3)
@@ -698,10 +698,10 @@ Rectangle(Point(-2, -4), 4, 3)
 12
 >>> rectangle_49 # doctest: +REPR
 Rectangle(Point(-2, -4), 4, 3)
->>> rectangle_49.overlap(Rectangle(Point(-8, 10), 10, 4))
+>>> rectangle_49.overlap(Rectangle(Point(-8, 10), 10, 4)) # doctest: +REPR
 
 >>> rectangle_50 = Rectangle(Point(5, -5), 2, 8) # doctest: +NEWCONTEXT
->>> rectangle_50.overlap(Rectangle(Point(-9, 2), 4, 7))
+>>> rectangle_50.overlap(Rectangle(Point(-9, 2), 4, 7)) # doctest: +REPR
 >>> rectangle_50.circumference()
 20
 >>> print(rectangle_50) # doctest: +STDOUT
@@ -710,8 +710,8 @@ Rectangle(Point(5, -5), 2, 8)
 16
 >>> repr(rectangle_50)
 'Rectangle(Point(5, -5), 2, 8)'
->>> rectangle_50.bottom_right()
+>>> rectangle_50.bottom_right() # doctest: +REPR
 Point(7, 3)
->>> rectangle_50.overlap(Rectangle(Point(-1, -4), 8, 5))
+>>> rectangle_50.overlap(Rectangle(Point(-1, -4), 8, 5)) # doctest: +REPR
 Rectangle(Point(5, -4), 2, 5)
 
