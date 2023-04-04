@@ -12,6 +12,7 @@ Definieer een klasse `Rechthoek` waarmee rechthoeken kunnen voorgesteld worden i
 
 Als een punt (`Punt`) of een rechthoek (`Rechthoek`) doorgegeven wordt aan de ingebouwde functies `repr` of `str`, dan moet een stringvoorstelling (`str`) van het punt of de rechthoek teruggegeven worden die leest als een Python expressie waarmee een punt of een rechthoek op dezelfde positie aangemaakt wordt.
 
+Neem bij conventie aan dat de y-as naar benenden gericht is, `Punt(1, 1)` ligt dus boven `Punt(1, 2)`.
 
 ### Voorbeeld
 

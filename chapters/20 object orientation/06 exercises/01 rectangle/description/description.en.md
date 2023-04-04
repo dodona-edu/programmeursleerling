@@ -12,6 +12,8 @@ Define a class `Rectangle` that can be used to represent rectangles in the two-d
 
 If a point (`Point`) or a rectangle (`Rectangle`) is passed to the builtin functions `repr` or `str`, a string representation (`str`) of the point or the rectangle must be returned that reads as a Python expression that creates a point or a rectangle at the same location.
 
+Use the convention that the y-axis is pointed downward, that is: `Point(1, 1)` is above `Point(1, 2)`.
+
 ### Example
 
 ```console?lang=python&prompt=>>>
