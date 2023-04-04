@@ -8,11 +8,11 @@ Definieer een klasse `Rechthoek` waarmee rechthoeken kunnen voorgesteld worden i
 
 - Een methode `rechtsonder` die het punt (`Punt`) in de rechteronderhoek van de rechthoek teruggeeft.
 
-- Een methode `overlap` waaraan een rechthoek (`Rechthoek`) moet doorgegeven worden. Als de twee rechthoeken (de rechthoek waarop de methode wordt aangeroepen en de rechthoek die als argument wordt doorgegeven) overlapen, dan moet de methode een rechthoek (`Rechthoek`) teruggeven die het overlappende gebied van de twee rechthoeken beschrijft. Anders moet de waarde `None` teruggegeven worden.
+- Een methode `overlap` waaraan een rechthoek (`Rechthoek`) moet doorgegeven worden. Als de twee rechthoeken (de rechthoek waarop de methode wordt aangeroepen en de rechthoek die als argument wordt doorgegeven) overlappen, dan moet de methode een rechthoek (`Rechthoek`) teruggeven die het overlappende gebied van de twee rechthoeken beschrijft. Anders moet de waarde `None` teruggegeven worden.
 
 Als een punt (`Punt`) of een rechthoek (`Rechthoek`) doorgegeven wordt aan de ingebouwde functies `repr` of `str`, dan moet een stringvoorstelling (`str`) van het punt of de rechthoek teruggegeven worden die leest als een Python expressie waarmee een punt of een rechthoek op dezelfde positie aangemaakt wordt.
 
-Neem bij conventie aan dat de y-as naar benenden gericht is, `Punt(1, 1)` ligt dus boven `Punt(1, 2)`.
+Neem bij conventie aan dat de y-as naar benenden gericht is, waardoor `Punt(1, 1)` dus boven `Punt(1, 2)` ligt.
 
 ### Voorbeeld
 

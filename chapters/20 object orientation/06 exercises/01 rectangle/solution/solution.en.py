@@ -1,5 +1,3 @@
-from copy import copy
-
 class Point:
 
     """
@@ -10,7 +8,7 @@ class Point:
     Point(3, 4)
     """
 
-    def __init__(self, x=0.0, y=0.0):
+    def __init__(self, x, y):
 
         self.x = x
         self.y = y
@@ -52,7 +50,7 @@ class Rectangle:
         assert width > 0, 'invalid rectangle'
         assert height > 0, 'invalid rectangle'
 
-        self.point = copy(point)
+        self.point = point
         self.width = width
         self.height = height
 
@@ -76,29 +74,17 @@ class Rectangle:
 
         return Point(self.point.x + self.width, self.point.y + self.height)
 
-    def overlap(self, r):
+    def overlap(self, other):
 
-        r1, r2 = self, r
-        if (
-            r1.point.x > r2.point.x or
-            (
-                r1.point.x == r2.point.x and
-                r1.point.y > r2.point.y
-            )
-        ):
-            r1, r2 = r, self
+        # determine top-left point
+        x1 = max(self.point.x, other.point.x)
+        y1 = max(self.point.y, other.point.y)
 
-        if (
-            r1.bottom_right().x <= r2.point.x or
-            r1.bottom_right().y <= r2.point.y
-        ):
-            return None
+        # determine bottom-right point
+        x2 = min(self.bottom_right().x, other.bottom_right().x)
+        y2 = min(self.bottom_right().y, other.bottom_right().y)
 
-        return Rectangle(
-            r2.point,
-            min(r1.bottom_right().x - r2.point.x, r2.width),
-            min(r1.bottom_right().y - r2.point.y, r2.height)
-        )
+        return Rectangle(Point(x1, y1), x2 - x1, y2 - y1) if x1 < x2 and y1 < y2 else None
 
 if __name__ == '__main__':
     import doctest

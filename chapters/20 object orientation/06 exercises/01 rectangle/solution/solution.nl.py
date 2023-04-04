@@ -1,5 +1,3 @@
-from copy import copy
-
 class Punt:
 
     """
@@ -10,7 +8,7 @@ class Punt:
     Punt(3, 4)
     """
 
-    def __init__(self, x=0.0, y=0.0):
+    def __init__(self, x, y):
 
         self.x = x
         self.y = y
@@ -52,7 +50,7 @@ class Rechthoek:
         assert breedte > 0, 'ongeldige rechthoek'
         assert hoogte > 0, 'ongeldige rechthoek'
 
-        self.punt = copy(punt)
+        self.punt = punt
         self.breedte = breedte
         self.hoogte = hoogte
 
@@ -76,29 +74,17 @@ class Rechthoek:
 
         return Punt(self.punt.x + self.breedte, self.punt.y + self.hoogte)
 
-    def overlap(self, r):
+    def overlap(self, other):
 
-        r1, r2 = self, r
-        if (
-            r1.punt.x > r2.punt.x or
-            (
-                r1.punt.x == r2.punt.x and
-                r1.punt.y > r2.punt.y
-            )
-        ):
-            r1, r2 = r, self
+        # bepaal punt linkboven
+        x1 = max(self.punt.x, other.punt.x)
+        y1 = max(self.punt.y, other.punt.y)
 
-        if (
-            r1.rechtsonder().x <= r2.punt.x or
-            r1.rechtsonder().y <= r2.punt.y
-        ):
-            return None
+        # bepaal punt rechtsonder
+        x2 = min(self.rechtsonder().x, other.rechtsonder().x)
+        y2 = min(self.rechtsonder().y, other.rechtsonder().y)
 
-        return Rechthoek(
-            r2.punt,
-            min(r1.rechtsonder().x - r2.punt.x, r2.breedte),
-            min(r1.rechtsonder().y - r2.punt.y, r2.hoogte)
-        )
+        return Rechthoek(Punt(x1, y1), x2 - x1, y2 - y1) if x1 < x2 and y1 < y2 else None
 
 if __name__ == '__main__':
     import doctest
