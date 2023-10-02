@@ -1,5 +1,5 @@
 P(non-decreasing sequence of 1 dice) = 1.0
-P(non-decreasing sequence of 2 dice) = 0.584256
+P(non-decreasing sequence of 2 dice) = 0.583333
 P(non-decreasing sequence of 3 dice) = 0.25944
 P(non-decreasing sequence of 4 dice) = 0.097104
 P(non-decreasing sequence of 5 dice) = 0.032293
