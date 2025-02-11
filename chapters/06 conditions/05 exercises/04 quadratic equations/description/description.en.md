@@ -1,4 +1,4 @@
-A **quadratic equation** iss any equation that can be rearranged in standard form as 
+A **quadratic equation** is any equation that can be rearranged in standard form as 
 
 $$ax^2 + bx + c = 0\,,$$
 
