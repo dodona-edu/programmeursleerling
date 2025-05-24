@@ -91,7 +91,7 @@ Alle studenten, ongeacht hun richting, moeten kunnen programmeren. Niet
 omdat iedereen programmeur moet worden – professioneel programmeren is
 hoogst gespecialiseerd werk dat slechts weinigen hoeven te beheersen.
 Maar de kennis om programma's te kunnen bouwen geeft studenten de
-mogelijkheid te problemen aan te pakken als een programmeur, geeft hen
+mogelijkheid problemen aan te pakken als een programmeur, geeft hen
 inzicht in de mogelijkheden en beperkingen van computers, en geeft hen
 de kracht computers in te zetten in een specifiek domein op een uniek
 menselijke manier.
