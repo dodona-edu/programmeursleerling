@@ -54,3 +54,20 @@ than 30 lines of code, including comments, empty lines, and testing
 statements.  
 
 ![compression](media/compression.png "compression"){:width="65%" data-caption="Compression example."}
+
+### Assignment
+
+Write a function `compress` that takes a text (`str`). The function must return the compressed version of that text as a byte string (`bytes`), following the procedure described above. You may assume that every character of the given text has an ordinal value smaller than 256.
+
+### Example
+
+```console?lang=python&prompt=>>>
+>>> compress('Hello, world!')
+b'\x04\x81\xbb@,\xf0wI\xba\x02\x10'
+>>> compress('etaoinshrdlcum ')
+b'\x124Vx\x9a\xbc\xde\xf0'
+>>> compress('QWERTY')
+b'\x05\x10W\x04PR\x05@Y'
+>>> compress('')
+b''
+```

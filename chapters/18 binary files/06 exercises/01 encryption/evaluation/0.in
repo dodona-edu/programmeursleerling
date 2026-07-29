@@ -1,0 +1,60 @@
+>>> print(open('poem.txt', 'r').read(), end='') # doctest: +STDOUT
+<FILE name="poem.txt" href="media/workdir/poem.txt" />
+How much wood would a woodchuck chuck
+If a woodchuck could chuck wood?
+
+>>> encrypt('poem.txt')
+
+>>> open('poem.txt', 'rb').read()
+b'\xc8\xef\xf7\xa0\xed\xf5\xe3\xe8\xa0\xf7\xef\xef\xe4\xa0\xf7\xef\xf5\xec\xe4\xa0\xe1\xa0\xf7\xef\xef\xe4\xe3\xe8\xf5\xe3\xeb\xa0\xe3\xe8\xf5\xe3\xeb\x8a\xc9\xe6\xa0\xe1\xa0\xf7\xef\xef\xe4\xe3\xe8\xf5\xe3\xeb\xa0\xe3\xef\xf5\xec\xe4\xa0\xe3\xe8\xf5\xe3\xeb\xa0\xf7\xef\xef\xe4\xbf\x8a'
+
+>>> encrypt('poem.txt')
+
+>>> print(open('poem.txt', 'r').read(), end='') # doctest: +STDOUT
+How much wood would a woodchuck chuck
+If a woodchuck could chuck wood?
+
+>>> open('borders.bin', 'rb').read()
+<FILE name="borders.bin" href="media/workdir/borders.bin" />
+b'\x00\x7f\x80\xff'
+
+>>> encrypt('borders.bin')
+
+>>> open('borders.bin', 'rb').read()
+b'\x80\xff\x00\x7f'
+
+>>> encrypt('borders.bin')
+
+>>> open('borders.bin', 'rb').read()
+b'\x00\x7f\x80\xff'
+
+>>> encrypt('empty.bin')
+<FILE name="empty.bin" href="media/workdir/empty.bin" />
+
+>>> open('empty.bin', 'rb').read()
+b''
+
+>>> encrypt('single.bin')
+<FILE name="single.bin" href="media/workdir/single.bin" />
+
+>>> open('single.bin', 'rb').read()
+b'\x80'
+
+>>> encrypt('single.bin')
+
+>>> open('single.bin', 'rb').read()
+b'\x00'
+
+>>> open('bytes.bin', 'rb').read() == bytes(range(256))
+<FILE name="bytes.bin" href="media/workdir/bytes.bin" />
+True
+
+>>> encrypt('bytes.bin')
+
+>>> open('bytes.bin', 'rb').read() == bytes(range(128, 256)) + bytes(range(128))
+True
+
+>>> encrypt('bytes.bin')
+
+>>> open('bytes.bin', 'rb').read() == bytes(range(256))
+True
