@@ -1,0 +1,23 @@
+--------------------------------------------------------
+tab name: Drawpile
+independent examples: false
+<LANGUAGE code="nl">
+    <class from="Card" to="Kaart" />
+    <class from="Drawpile" to="Trekstapel" />
+    <function from="war" to="oorlogje" />
+    <method from="add" to="voegtoe" />
+    <method from="draw" to="trek" />
+    <fixed from="invalid card" to="ongeldige kaart" />
+    <fixed from="Hearts" to="Harten" />
+    <fixed from="Spades" to="Schoppen" />
+    <fixed from="Clubs" to="Klaveren" />
+    <fixed from="Diamonds" to="Ruiten" />
+    <fixed from="Jack" to="Boer" />
+    <fixed from="Queen" to="Vrouw" />
+    <fixed from="King" to="Heer" />
+    <fixed from="Ace" to="Aas" />
+    <fixed from=" of " to=" van " />
+    <fixed from="winner" to="winnaar" detect="false" />
+    <fixed from="card" to="kaart" detect="false" />
+    <fixed from="pile" to="stapel" detect="false" />
+</LANGUAGE>

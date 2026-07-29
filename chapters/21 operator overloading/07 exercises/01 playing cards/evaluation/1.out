@@ -1,0 +1,21 @@
+--------------------------------------------------------
+tab name: comparisons
+independent examples: false
+<LANGUAGE code="nl">
+    <class from="Card" to="Kaart" />
+    <fixed from="invalid card" to="ongeldige kaart" />
+    <fixed from="Hearts" to="Harten" />
+    <fixed from="Spades" to="Schoppen" />
+    <fixed from="Clubs" to="Klaveren" />
+    <fixed from="Diamonds" to="Ruiten" />
+    <fixed from="Jack" to="Boer" />
+    <fixed from="Queen" to="Vrouw" />
+    <fixed from="King" to="Heer" />
+    <fixed from="Ace" to="Aas" />
+    <fixed from="Joker" to="Joker" />
+    <fixed from="Trees" to="Bomen" />
+    <fixed from="hearts" to="harten" />
+    <fixed from=" of " to=" van " />
+    <fixed from="comparisons" to="vergelijkingen" detect="false" />
+    <fixed from="card" to="kaart" detect="false" />
+</LANGUAGE>

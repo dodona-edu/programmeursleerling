@@ -1,0 +1,116 @@
+>>> card_01 = Card('Hearts', 'Ace') # doctest: +NEWCONTEXT
+>>> card_01 # doctest: +REPR
+Card('Hearts', 'Ace')
+>>> print(card_01) # doctest: +STDOUT
+Ace of Hearts
+
+>>> card_02 = Card('Spades', 2) # doctest: +NEWCONTEXT
+>>> repr(card_02)
+"Card('Spades', 2)"
+>>> str(card_02)
+'2 of Spades'
+
+>>> card_03 = Card('Clubs', 10) # doctest: +NEWCONTEXT
+>>> repr(card_03)
+"Card('Clubs', 10)"
+>>> str(card_03)
+'10 of Clubs'
+
+>>> card_04 = Card('Diamonds', 'Jack') # doctest: +NEWCONTEXT
+>>> repr(card_04)
+"Card('Diamonds', 'Jack')"
+>>> str(card_04)
+'Jack of Diamonds'
+
+>>> card_05 = Card('Hearts', 'Queen') # doctest: +NEWCONTEXT
+>>> card_05 # doctest: +REPR
+Card('Hearts', 'Queen')
+>>> print(card_05) # doctest: +STDOUT
+Queen of Hearts
+
+>>> card_06 = Card('Clubs', 'King') # doctest: +NEWCONTEXT
+>>> print(card_06) # doctest: +STDOUT
+King of Clubs
+>>> repr(card_06)
+"Card('Clubs', 'King')"
+
+>>> card_07 = Card('Diamonds', 7) # doctest: +NEWCONTEXT
+>>> print(card_07) # doctest: +STDOUT
+7 of Diamonds
+>>> repr(card_07)
+"Card('Diamonds', 7)"
+
+>>> card_08 = Card('Spades', 9) # doctest: +NEWCONTEXT
+>>> card_08 # doctest: +REPR
+Card('Spades', 9)
+>>> str(card_08)
+'9 of Spades'
+
+>>> card_09 = Card('Hearts', 7) # doctest: +NEWCONTEXT
+>>> card_09 # doctest: +REPR
+Card('Hearts', 7)
+>>> str(card_09)
+'7 of Hearts'
+
+>>> card_10 = Card('Hearts', 2) # doctest: +NEWCONTEXT
+>>> str(card_10)
+'2 of Hearts'
+>>> card_10 # doctest: +REPR
+Card('Hearts', 2)
+
+>>> card_11 = Card('Spades', 'King') # doctest: +NEWCONTEXT
+>>> print(card_11) # doctest: +STDOUT
+King of Spades
+>>> card_11 # doctest: +REPR
+Card('Spades', 'King')
+
+>>> card_12 = Card('Hearts', 9) # doctest: +NEWCONTEXT
+>>> repr(card_12)
+"Card('Hearts', 9)"
+>>> str(card_12)
+'9 of Hearts'
+
+>>> card_13 = Card('Spades', 5) # doctest: +NEWCONTEXT
+>>> print(card_13) # doctest: +STDOUT
+5 of Spades
+>>> card_13 # doctest: +REPR
+Card('Spades', 5)
+
+>>> card_14 = Card('Spades', 3) # doctest: +NEWCONTEXT
+>>> print(card_14) # doctest: +STDOUT
+3 of Spades
+>>> card_14 # doctest: +REPR
+Card('Spades', 3)
+
+>>> card_15 = Card('Hearts', 5) # doctest: +NEWCONTEXT
+>>> card_15 # doctest: +REPR
+Card('Hearts', 5)
+>>> print(card_15) # doctest: +STDOUT
+5 of Hearts
+
+>>> card_16 = Card('Spades', 6) # doctest: +NEWCONTEXT
+>>> print(card_16) # doctest: +STDOUT
+6 of Spades
+>>> card_16 # doctest: +REPR
+Card('Spades', 6)
+
+>>> card_17 = Card('Trees', 7) # doctest: +NEWCONTEXT
+Traceback (most recent call last):
+AssertionError: invalid card
+
+>>> card_18 = Card('Hearts', 1) # doctest: +NEWCONTEXT
+Traceback (most recent call last):
+AssertionError: invalid card
+
+>>> card_19 = Card('Diamonds', 'Joker') # doctest: +NEWCONTEXT
+Traceback (most recent call last):
+AssertionError: invalid card
+
+>>> card_20 = Card('hearts', 'Ace') # doctest: +NEWCONTEXT
+Traceback (most recent call last):
+AssertionError: invalid card
+
+>>> card_21 = Card('Spades', '9') # doctest: +NEWCONTEXT
+Traceback (most recent call last):
+AssertionError: invalid card
+

@@ -1,0 +1,152 @@
+>>> card_01 = Card('Diamonds', 2) # doctest: +NEWCONTEXT
+>>> card_02 = Card('Hearts', 'King')
+>>> card_01 # doctest: +REPR
+Card('Diamonds', 2)
+>>> print(card_02) # doctest: +STDOUT
+King of Hearts
+>>> card_01 == card_02
+False
+>>> card_01 != card_02
+True
+>>> card_01 < card_02
+True
+>>> card_01 <= card_02
+True
+>>> card_01 > card_02
+False
+>>> card_01 >= card_02
+False
+
+>>> card_03 = Card('Clubs', 7) # doctest: +NEWCONTEXT
+>>> card_04 = Card('Spades', 8)
+>>> card_03 > card_04
+False
+>>> card_03 >= card_04
+False
+>>> card_03 <= card_04
+True
+>>> card_03 == card_04
+False
+>>> print(card_04) # doctest: +STDOUT
+8 of Spades
+>>> card_03 < card_04
+True
+>>> card_03 != card_04
+True
+>>> card_03 # doctest: +REPR
+Card('Clubs', 7)
+
+>>> card_05 = Card('Hearts', 'Ace') # doctest: +NEWCONTEXT
+>>> card_06 = Card('Diamonds', 'Ace')
+>>> card_05 >= card_06
+True
+>>> card_05 != card_06
+False
+>>> card_05 < card_06
+False
+>>> card_05 == card_06
+True
+>>> repr(card_05)
+"Card('Hearts', 'Ace')"
+>>> str(card_06)
+'Ace of Diamonds'
+>>> card_05 <= card_06
+True
+>>> card_05 > card_06
+False
+
+>>> card_07 = Card('Spades', 10) # doctest: +NEWCONTEXT
+>>> card_08 = Card('Clubs', 'Jack')
+>>> repr(card_07)
+"Card('Spades', 10)"
+>>> card_07 >= card_08
+False
+>>> card_07 != card_08
+True
+>>> card_07 <= card_08
+True
+>>> str(card_08)
+'Jack of Clubs'
+>>> card_07 > card_08
+False
+>>> card_07 == card_08
+False
+>>> card_07 < card_08
+True
+
+>>> card_09 = Card('Clubs', 'Queen') # doctest: +NEWCONTEXT
+>>> card_10 = Card('Diamonds', 5)
+>>> card_09 >= card_10
+True
+>>> card_09 # doctest: +REPR
+Card('Clubs', 'Queen')
+>>> print(card_10) # doctest: +STDOUT
+5 of Diamonds
+>>> card_09 <= card_10
+False
+>>> card_09 != card_10
+True
+>>> card_09 < card_10
+False
+>>> card_09 == card_10
+False
+>>> card_09 > card_10
+True
+
+>>> card_11 = Card('Spades', 'Queen') # doctest: +NEWCONTEXT
+>>> card_12 = Card('Clubs', 3)
+>>> card_11 <= card_12
+False
+>>> repr(card_11)
+"Card('Spades', 'Queen')"
+>>> card_11 != card_12
+True
+>>> print(card_12) # doctest: +STDOUT
+3 of Clubs
+>>> card_11 < card_12
+False
+>>> card_11 > card_12
+True
+>>> card_11 == card_12
+False
+>>> card_11 >= card_12
+True
+
+>>> card_13 = Card('Diamonds', 'King') # doctest: +NEWCONTEXT
+>>> card_14 = Card('Spades', 'King')
+>>> card_13 == card_14
+True
+>>> card_13 <= card_14
+True
+>>> card_13 # doctest: +REPR
+Card('Diamonds', 'King')
+>>> card_13 != card_14
+False
+>>> card_13 >= card_14
+True
+>>> card_13 > card_14
+False
+>>> str(card_14)
+'King of Spades'
+>>> card_13 < card_14
+False
+
+>>> card_15 = Card('Spades', 3) # doctest: +NEWCONTEXT
+>>> card_16 = Card('Diamonds', 'Queen')
+>>> card_15 <= card_16
+True
+>>> card_15 >= card_16
+False
+>>> card_15 != card_16
+True
+>>> repr(card_15)
+"Card('Spades', 3)"
+>>> card_15 < card_16
+True
+>>> card_15 > card_16
+False
+>>> card_15 == card_16
+False
+>>> str(card_16)
+'Queen of Diamonds'
+

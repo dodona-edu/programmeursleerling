@@ -1,0 +1,440 @@
+>>> basket_01 = FruitBasket({}) # doctest: +NEWCONTEXT
+>>> basket_01 + 'kiwi' # doctest: +REPR
+FruitBasket({'kiwi': 1})
+>>> basket_01 # doctest: +REPR
+FruitBasket({})
+>>> basket_01 += 'kiwi'
+>>> basket_01['kiwi']
+1
+>>> basket_01 - 'kiwi' # doctest: +REPR
+FruitBasket({})
+>>> basket_01 # doctest: +REPR
+FruitBasket({'kiwi': 1})
+>>> basket_01 -= 'kiwi'
+>>> basket_01['kiwi']
+0
+>>> basket_01 - 'avocado' # doctest: +REPR
+FruitBasket({})
+>>> basket_01 -= 'avocado'
+>>> 'avocado' in basket_01
+False
+>>> len(basket_01)
+0
+>>> other_01 = basket_01 + 'kiwi'
+>>> other_01 is basket_01
+False
+>>> other_01 += 'avocado'
+>>> other_01 # doctest: +REPR
+FruitBasket({'avocado': 1, 'kiwi': 1})
+>>> basket_01 # doctest: +REPR
+FruitBasket({})
+>>> basket_01 # doctest: +REPR
+FruitBasket({})
+>>> len(basket_01)
+0
+
+>>> basket_02 = FruitBasket({'mango': 1}) # doctest: +NEWCONTEXT
+>>> basket_02 - 'mango' # doctest: +REPR
+FruitBasket({})
+>>> basket_02 # doctest: +REPR
+FruitBasket({'mango': 1})
+>>> basket_02 - 'lychee' # doctest: +REPR
+FruitBasket({'mango': 1})
+>>> basket_02 -= 'lychee'
+>>> 'lychee' in basket_02
+False
+>>> len(basket_02)
+1
+>>> basket_02 += 'kiwi'
+>>> basket_02['kiwi']
+1
+>>> basket_02 -= 'kiwi'
+>>> 'kiwi' in basket_02
+False
+>>> basket_02['kiwi']
+0
+>>> basket_02 -= 'mango'
+>>> basket_02['mango']
+0
+>>> basket_02 + 'avocado' # doctest: +REPR
+FruitBasket({'avocado': 1})
+>>> basket_02 # doctest: +REPR
+FruitBasket({})
+>>> other_02 = basket_02 + 'avocado'
+>>> other_02 is basket_02
+False
+>>> other_02 += 'cranberry'
+>>> other_02 # doctest: +REPR
+FruitBasket({'avocado': 1, 'cranberry': 1})
+>>> basket_02 # doctest: +REPR
+FruitBasket({})
+>>> basket_02 # doctest: +REPR
+FruitBasket({})
+>>> len(basket_02)
+0
+
+>>> basket_03 = FruitBasket({'kiwi': 4, 'papaya': 1}) # doctest: +NEWCONTEXT
+>>> basket_03 -= 'papaya'
+>>> basket_03['papaya']
+0
+>>> basket_03 - 'kiwi' # doctest: +REPR
+FruitBasket({'kiwi': 3})
+>>> basket_03 # doctest: +REPR
+FruitBasket({'kiwi': 4})
+>>> basket_03 + 'kiwi' # doctest: +REPR
+FruitBasket({'kiwi': 5})
+>>> basket_03 # doctest: +REPR
+FruitBasket({'kiwi': 4})
+>>> basket_03 += 'kiwi'
+>>> basket_03['kiwi']
+5
+>>> basket_03 - 'kumquat' # doctest: +REPR
+FruitBasket({'kiwi': 5})
+>>> basket_03 -= 'kumquat'
+>>> 'kumquat' in basket_03
+False
+>>> len(basket_03)
+1
+>>> other_03 = basket_03 + 'cranberry'
+>>> other_03 is basket_03
+False
+>>> other_03 += 'cranberry'
+>>> other_03 # doctest: +REPR
+FruitBasket({'cranberry': 2, 'kiwi': 5})
+>>> basket_03 # doctest: +REPR
+FruitBasket({'kiwi': 5})
+>>> basket_03 # doctest: +REPR
+FruitBasket({'kiwi': 5})
+>>> len(basket_03)
+1
+
+>>> basket_04 = FruitBasket({'avocado': 2, 'lychee': 7, 'kumquat': 1}) # doctest: +NEWCONTEXT
+>>> basket_04 + 'kiwi' # doctest: +REPR
+FruitBasket({'avocado': 2, 'kiwi': 1, 'kumquat': 1, 'lychee': 7})
+>>> basket_04 # doctest: +REPR
+FruitBasket({'avocado': 2, 'kumquat': 1, 'lychee': 7})
+>>> basket_04 - 'avocado' # doctest: +REPR
+FruitBasket({'avocado': 1, 'kumquat': 1, 'lychee': 7})
+>>> basket_04 # doctest: +REPR
+FruitBasket({'avocado': 2, 'kumquat': 1, 'lychee': 7})
+>>> basket_04 -= 'avocado'
+>>> basket_04['avocado']
+1
+>>> basket_04 - 'papaya' # doctest: +REPR
+FruitBasket({'avocado': 1, 'kumquat': 1, 'lychee': 7})
+>>> basket_04 -= 'papaya'
+>>> 'papaya' in basket_04
+False
+>>> len(basket_04)
+3
+>>> other_04 = basket_04 + 'nectarine'
+>>> other_04 is basket_04
+False
+>>> other_04 += 'cranberry'
+>>> other_04 # doctest: +REPR
+FruitBasket({'avocado': 1, 'cranberry': 1, 'kumquat': 1, 'lychee': 7, 'nectarine': 1})
+>>> basket_04 # doctest: +REPR
+FruitBasket({'avocado': 1, 'kumquat': 1, 'lychee': 7})
+>>> basket_04 += 'papaya'
+>>> basket_04['papaya']
+1
+>>> basket_04 -= 'avocado'
+>>> 'avocado' in basket_04
+False
+>>> basket_04['avocado']
+0
+>>> basket_04 # doctest: +REPR
+FruitBasket({'kumquat': 1, 'lychee': 7, 'papaya': 1})
+>>> len(basket_04)
+3
+
+>>> basket_05 = FruitBasket({'cranberry': 7}) # doctest: +NEWCONTEXT
+>>> basket_05 + 'cranberry' # doctest: +REPR
+FruitBasket({'cranberry': 8})
+>>> basket_05 # doctest: +REPR
+FruitBasket({'cranberry': 7})
+>>> basket_05 - 'nectarine' # doctest: +REPR
+FruitBasket({'cranberry': 7})
+>>> basket_05 -= 'nectarine'
+>>> 'nectarine' in basket_05
+False
+>>> len(basket_05)
+1
+>>> other_05 = basket_05 + 'avocado'
+>>> other_05 is basket_05
+False
+>>> other_05 += 'papaya'
+>>> other_05 # doctest: +REPR
+FruitBasket({'avocado': 1, 'cranberry': 7, 'papaya': 1})
+>>> basket_05 # doctest: +REPR
+FruitBasket({'cranberry': 7})
+>>> basket_05 - 'cranberry' # doctest: +REPR
+FruitBasket({'cranberry': 6})
+>>> basket_05 # doctest: +REPR
+FruitBasket({'cranberry': 7})
+>>> basket_05 -= 'cranberry'
+>>> basket_05['cranberry']
+6
+>>> basket_05 += 'cranberry'
+>>> basket_05['cranberry']
+7
+>>> basket_05 # doctest: +REPR
+FruitBasket({'cranberry': 7})
+>>> len(basket_05)
+1
+
+>>> basket_06 = FruitBasket({'papaya': 10, 'lychee': 9, 'kumquat': 1, 'cranberry': 10}) # doctest: +NEWCONTEXT
+>>> basket_06 - 'avocado' # doctest: +REPR
+FruitBasket({'cranberry': 10, 'kumquat': 1, 'lychee': 9, 'papaya': 10})
+>>> basket_06 -= 'avocado'
+>>> 'avocado' in basket_06
+False
+>>> len(basket_06)
+4
+>>> basket_06 + 'cranberry' # doctest: +REPR
+FruitBasket({'cranberry': 11, 'kumquat': 1, 'lychee': 9, 'papaya': 10})
+>>> basket_06 # doctest: +REPR
+FruitBasket({'cranberry': 10, 'kumquat': 1, 'lychee': 9, 'papaya': 10})
+>>> other_06 = basket_06 + 'kumquat'
+>>> other_06 is basket_06
+False
+>>> other_06 += 'kiwi'
+>>> other_06 # doctest: +REPR
+FruitBasket({'cranberry': 10, 'kiwi': 1, 'kumquat': 2, 'lychee': 9, 'papaya': 10})
+>>> basket_06 # doctest: +REPR
+FruitBasket({'cranberry': 10, 'kumquat': 1, 'lychee': 9, 'papaya': 10})
+>>> basket_06 -= 'kumquat'
+>>> basket_06['kumquat']
+0
+>>> basket_06 += 'nectarine'
+>>> basket_06['nectarine']
+1
+>>> basket_06 - 'cranberry' # doctest: +REPR
+FruitBasket({'cranberry': 9, 'lychee': 9, 'nectarine': 1, 'papaya': 10})
+>>> basket_06 # doctest: +REPR
+FruitBasket({'cranberry': 10, 'lychee': 9, 'nectarine': 1, 'papaya': 10})
+>>> basket_06 # doctest: +REPR
+FruitBasket({'cranberry': 10, 'lychee': 9, 'nectarine': 1, 'papaya': 10})
+>>> len(basket_06)
+4
+
+>>> basket_07 = FruitBasket({'kiwi': 2, 'cranberry': 8, 'papaya': 2}) # doctest: +NEWCONTEXT
+>>> basket_07 + 'mango' # doctest: +REPR
+FruitBasket({'cranberry': 8, 'kiwi': 2, 'mango': 1, 'papaya': 2})
+>>> basket_07 # doctest: +REPR
+FruitBasket({'cranberry': 8, 'kiwi': 2, 'papaya': 2})
+>>> other_07 = basket_07 + 'mango'
+>>> other_07 is basket_07
+False
+>>> other_07 += 'lychee'
+>>> other_07 # doctest: +REPR
+FruitBasket({'cranberry': 8, 'kiwi': 2, 'lychee': 1, 'mango': 1, 'papaya': 2})
+>>> basket_07 # doctest: +REPR
+FruitBasket({'cranberry': 8, 'kiwi': 2, 'papaya': 2})
+>>> basket_07 -= 'kiwi'
+>>> basket_07['kiwi']
+1
+>>> basket_07 - 'papaya' # doctest: +REPR
+FruitBasket({'cranberry': 8, 'kiwi': 1, 'papaya': 1})
+>>> basket_07 # doctest: +REPR
+FruitBasket({'cranberry': 8, 'kiwi': 1, 'papaya': 2})
+>>> basket_07 - 'mango' # doctest: +REPR
+FruitBasket({'cranberry': 8, 'kiwi': 1, 'papaya': 2})
+>>> basket_07 -= 'mango'
+>>> 'mango' in basket_07
+False
+>>> len(basket_07)
+3
+>>> basket_07 += 'papaya'
+>>> basket_07['papaya']
+3
+>>> basket_07 # doctest: +REPR
+FruitBasket({'cranberry': 8, 'kiwi': 1, 'papaya': 3})
+>>> len(basket_07)
+3
+
+>>> basket_08 = FruitBasket({'nectarine': 1, 'mango': 10, 'avocado': 4, 'papaya': 4}) # doctest: +NEWCONTEXT
+>>> basket_08 + 'kiwi' # doctest: +REPR
+FruitBasket({'avocado': 4, 'kiwi': 1, 'mango': 10, 'nectarine': 1, 'papaya': 4})
+>>> basket_08 # doctest: +REPR
+FruitBasket({'avocado': 4, 'mango': 10, 'nectarine': 1, 'papaya': 4})
+>>> basket_08 -= 'nectarine'
+>>> 'nectarine' in basket_08
+False
+>>> basket_08['nectarine']
+0
+>>> other_08 = basket_08 + 'cranberry'
+>>> other_08 is basket_08
+False
+>>> other_08 += 'kumquat'
+>>> other_08 # doctest: +REPR
+FruitBasket({'avocado': 4, 'cranberry': 1, 'kumquat': 1, 'mango': 10, 'papaya': 4})
+>>> basket_08 # doctest: +REPR
+FruitBasket({'avocado': 4, 'mango': 10, 'papaya': 4})
+>>> basket_08 - 'papaya' # doctest: +REPR
+FruitBasket({'avocado': 4, 'mango': 10, 'papaya': 3})
+>>> basket_08 # doctest: +REPR
+FruitBasket({'avocado': 4, 'mango': 10, 'papaya': 4})
+>>> basket_08 -= 'mango'
+>>> basket_08['mango']
+9
+>>> basket_08 += 'avocado'
+>>> basket_08['avocado']
+5
+>>> basket_08 - 'nectarine' # doctest: +REPR
+FruitBasket({'avocado': 5, 'mango': 9, 'papaya': 4})
+>>> basket_08 -= 'nectarine'
+>>> 'nectarine' in basket_08
+False
+>>> len(basket_08)
+3
+>>> basket_08 # doctest: +REPR
+FruitBasket({'avocado': 5, 'mango': 9, 'papaya': 4})
+>>> len(basket_08)
+3
+
+>>> basket_09 = FruitBasket({'lychee': 10, 'cranberry': 8}) # doctest: +NEWCONTEXT
+>>> basket_09 + 'kiwi' # doctest: +REPR
+FruitBasket({'cranberry': 8, 'kiwi': 1, 'lychee': 10})
+>>> basket_09 # doctest: +REPR
+FruitBasket({'cranberry': 8, 'lychee': 10})
+>>> basket_09 -= 'cranberry'
+>>> basket_09['cranberry']
+7
+>>> basket_09 - 'nectarine' # doctest: +REPR
+FruitBasket({'cranberry': 7, 'lychee': 10})
+>>> basket_09 -= 'nectarine'
+>>> 'nectarine' in basket_09
+False
+>>> len(basket_09)
+2
+>>> other_09 = basket_09 + 'avocado'
+>>> other_09 is basket_09
+False
+>>> other_09 += 'lychee'
+>>> other_09 # doctest: +REPR
+FruitBasket({'avocado': 1, 'cranberry': 7, 'lychee': 11})
+>>> basket_09 # doctest: +REPR
+FruitBasket({'cranberry': 7, 'lychee': 10})
+>>> basket_09 - 'lychee' # doctest: +REPR
+FruitBasket({'cranberry': 7, 'lychee': 9})
+>>> basket_09 # doctest: +REPR
+FruitBasket({'cranberry': 7, 'lychee': 10})
+>>> basket_09 += 'cranberry'
+>>> basket_09['cranberry']
+8
+>>> basket_09 # doctest: +REPR
+FruitBasket({'cranberry': 8, 'lychee': 10})
+>>> len(basket_09)
+2
+
+>>> basket_10 = FruitBasket({'kiwi': 6, 'avocado': 9, 'cranberry': 7}) # doctest: +NEWCONTEXT
+>>> basket_10 + 'lychee' # doctest: +REPR
+FruitBasket({'avocado': 9, 'cranberry': 7, 'kiwi': 6, 'lychee': 1})
+>>> basket_10 # doctest: +REPR
+FruitBasket({'avocado': 9, 'cranberry': 7, 'kiwi': 6})
+>>> basket_10 - 'kiwi' # doctest: +REPR
+FruitBasket({'avocado': 9, 'cranberry': 7, 'kiwi': 5})
+>>> basket_10 # doctest: +REPR
+FruitBasket({'avocado': 9, 'cranberry': 7, 'kiwi': 6})
+>>> basket_10 -= 'avocado'
+>>> basket_10['avocado']
+8
+>>> basket_10 += 'avocado'
+>>> basket_10['avocado']
+9
+>>> basket_10 - 'lychee' # doctest: +REPR
+FruitBasket({'avocado': 9, 'cranberry': 7, 'kiwi': 6})
+>>> basket_10 -= 'lychee'
+>>> 'lychee' in basket_10
+False
+>>> len(basket_10)
+3
+>>> other_10 = basket_10 + 'lychee'
+>>> other_10 is basket_10
+False
+>>> other_10 += 'mango'
+>>> other_10 # doctest: +REPR
+FruitBasket({'avocado': 9, 'cranberry': 7, 'kiwi': 6, 'lychee': 1, 'mango': 1})
+>>> basket_10 # doctest: +REPR
+FruitBasket({'avocado': 9, 'cranberry': 7, 'kiwi': 6})
+>>> basket_10 # doctest: +REPR
+FruitBasket({'avocado': 9, 'cranberry': 7, 'kiwi': 6})
+>>> len(basket_10)
+3
+
+>>> basket_11 = FruitBasket({'cranberry': 11, 'lychee': 2, 'papaya': 7}) # doctest: +NEWCONTEXT
+>>> basket_11 - 'avocado' # doctest: +REPR
+FruitBasket({'cranberry': 11, 'lychee': 2, 'papaya': 7})
+>>> basket_11 -= 'avocado'
+>>> 'avocado' in basket_11
+False
+>>> len(basket_11)
+3
+>>> basket_11 - 'cranberry' # doctest: +REPR
+FruitBasket({'cranberry': 10, 'lychee': 2, 'papaya': 7})
+>>> basket_11 # doctest: +REPR
+FruitBasket({'cranberry': 11, 'lychee': 2, 'papaya': 7})
+>>> basket_11 + 'nectarine' # doctest: +REPR
+FruitBasket({'cranberry': 11, 'lychee': 2, 'nectarine': 1, 'papaya': 7})
+>>> basket_11 # doctest: +REPR
+FruitBasket({'cranberry': 11, 'lychee': 2, 'papaya': 7})
+>>> basket_11 -= 'papaya'
+>>> basket_11['papaya']
+6
+>>> other_11 = basket_11 + 'nectarine'
+>>> other_11 is basket_11
+False
+>>> other_11 += 'papaya'
+>>> other_11 # doctest: +REPR
+FruitBasket({'cranberry': 11, 'lychee': 2, 'nectarine': 1, 'papaya': 7})
+>>> basket_11 # doctest: +REPR
+FruitBasket({'cranberry': 11, 'lychee': 2, 'papaya': 6})
+>>> basket_11 += 'kumquat'
+>>> basket_11['kumquat']
+1
+>>> basket_11 # doctest: +REPR
+FruitBasket({'cranberry': 11, 'kumquat': 1, 'lychee': 2, 'papaya': 6})
+>>> len(basket_11)
+4
+
+>>> basket_12 = FruitBasket({'avocado': 1, 'lychee': 5, 'nectarine': 1}) # doctest: +NEWCONTEXT
+>>> basket_12 - 'kumquat' # doctest: +REPR
+FruitBasket({'avocado': 1, 'lychee': 5, 'nectarine': 1})
+>>> basket_12 -= 'kumquat'
+>>> 'kumquat' in basket_12
+False
+>>> len(basket_12)
+3
+>>> basket_12 - 'avocado' # doctest: +REPR
+FruitBasket({'lychee': 5, 'nectarine': 1})
+>>> basket_12 # doctest: +REPR
+FruitBasket({'avocado': 1, 'lychee': 5, 'nectarine': 1})
+>>> basket_12 + 'cranberry' # doctest: +REPR
+FruitBasket({'avocado': 1, 'cranberry': 1, 'lychee': 5, 'nectarine': 1})
+>>> basket_12 # doctest: +REPR
+FruitBasket({'avocado': 1, 'lychee': 5, 'nectarine': 1})
+>>> basket_12 += 'lychee'
+>>> basket_12['lychee']
+6
+>>> other_12 = basket_12 + 'lychee'
+>>> other_12 is basket_12
+False
+>>> other_12 += 'cranberry'
+>>> other_12 # doctest: +REPR
+FruitBasket({'avocado': 1, 'cranberry': 1, 'lychee': 7, 'nectarine': 1})
+>>> basket_12 # doctest: +REPR
+FruitBasket({'avocado': 1, 'lychee': 6, 'nectarine': 1})
+>>> basket_12 -= 'lychee'
+>>> basket_12['lychee']
+5
+>>> basket_12 -= 'nectarine'
+>>> 'nectarine' in basket_12
+False
+>>> basket_12['nectarine']
+0
+>>> basket_12 # doctest: +REPR
+FruitBasket({'avocado': 1, 'lychee': 5})
+>>> len(basket_12)
+2
+

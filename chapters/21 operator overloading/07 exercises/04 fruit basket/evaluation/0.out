@@ -1,0 +1,8 @@
+--------------------------------------------------------
+tab name: FruitBasket
+independent examples: false
+<LANGUAGE code="nl">
+    <class from="FruitBasket" to="Fruitmand" />
+    <fixed from="basket" to="mand" detect="false" />
+    <fixed from="other" to="andere" detect="false" />
+</LANGUAGE>
