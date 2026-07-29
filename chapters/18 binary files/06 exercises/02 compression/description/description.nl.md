@@ -13,10 +13,10 @@ vijftien hoort, dan geef je dat aan door halve byte met waarde 0 op te
 slaan, gevolgd door de hele byte die het niet-geëncrypte teken bevat. In
 deze opzet is het mogelijk dat de hele byte verdeeld wordt over halve
 bytes van twee opeenvolgende bytes, namelijk de tweede helft van de ene
-byte, en de eerst helft van de tweede byte. Je mag zelf kiezen of je het
-programma schrijft met de Nederlandse of de Engelse letters (het
-verschil in het programma is maar één regel), maar in de rest van deze
-beschrijving en in mijn oplossing gebruik ik de Engelse letters.
+byte, en de eerst helft van de tweede byte. In de rest van deze
+beschrijving, en dus ook in de oplossing die getest wordt, gebruik ik de
+Engelse letters `etaoinshrdlcum` (aangevuld met de spatie als vijftiende
+teken).
 
 Hint: een eenvoudige manier om dit probleem aan te pakken is het bouwen
 van een list van "half-bytes." Voor de tekens die het meest voorkomen,

@@ -32,3 +32,35 @@ while True:
 
 print( "Tot ziens!" )
 ```
+
+### Opgave
+
+Schrijf een functie `vraag_geldig_getal` waaraan een prompt (`str`) moet
+doorgegeven worden. De functie moet via `getInteger` blijven vragen om een
+geheel getal met de gegeven prompt, tot de gebruiker een waarde tussen 0 en
+1000 (inclusief) invoert; voor elke waarde buiten dat bereik print je
+`De nummers moeten tussen 0 en 1000 liggen` voor je opnieuw vraagt. De functie
+moet het gevalideerde getal (`int`) teruggeven.
+
+Herschrijf bovenstaande code naar een functie `main` die geen argumenten
+neemt, en gebruik daarbij `vraag_geldig_getal` om het probleem hierboven op
+te lossen. Verwijder ook de `exit()` door in de plaats `return` te gebruiken.
+
+### Voorbeeld
+
+```console?lang=python&prompt=>>>
+>>> vraag_geldig_getal("Geef nummer 1: ")
+Geef nummer 1: -42
+De nummers moeten tussen 0 en 1000 liggen
+Geef nummer 1: 314
+314
+
+>>> main()
+Geef nummer 1: -5
+De nummers moeten tussen 0 en 1000 liggen
+Geef nummer 1: 250
+Geef nummer 2: 999
+Vermenigvuldiging van 250 met 999 geeft 249750
+Geef nummer 1: 0
+Tot ziens!
+```

@@ -31,3 +31,34 @@ while True:
 
 print( "Goodbye!" )
 ```
+
+### Assignment
+
+Write a function `get_valid_number` that takes a prompt (`str`). The function
+must use `getInteger` to keep asking for an integer using the given prompt,
+until the user enters a value between 0 and 1000 (inclusive); for every value
+outside that range, print `The numbers should be between 0 and 1000` before
+asking again. The function must return the validated integer (`int`).
+
+Rewrite the code above into a function `main` that takes no arguments, using
+`get_valid_number` to fix the issue described above. Also get rid of the
+`exit()` by using `return` instead.
+
+### Example
+
+```console?lang=python&prompt=>>>
+>>> get_valid_number("Enter number 1: ")
+Enter number 1: -42
+The numbers should be between 0 and 1000
+Enter number 1: 314
+314
+
+>>> main()
+Enter number 1: -5
+The numbers should be between 0 and 1000
+Enter number 1: 250
+Enter number 2: 999
+Multiplication of 250 and 999 gives 249750
+Enter number 1: 0
+Goodbye!
+```
