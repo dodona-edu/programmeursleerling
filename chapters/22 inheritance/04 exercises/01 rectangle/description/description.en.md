@@ -18,3 +18,29 @@ class Rectangle:
     def circumference( self ):
         return 2*(self.w + self.h)
 ```
+
+### Example
+
+```console?lang=python&prompt=>>>
+>>> r = Rectangle(1, 1, 8, 5)
+>>> r
+[(1,1),w=8,h=5]
+>>> print(r)
+[(1,1),w=8,h=5]
+>>> r.area()
+40
+>>> r.circumference()
+26
+
+>>> s = Square(2, 3, 4)
+>>> s
+[(2,3),w=4,h=4]
+>>> print(s)
+[(2,3),w=4,h=4]
+>>> s.area()
+16
+>>> s.circumference()
+16
+>>> isinstance(s, Rectangle)
+True
+```
