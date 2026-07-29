@@ -1,0 +1,29 @@
+>>> decompress_file('poem.cmp', 'poem.raw')
+<FILE name="poem.cmp" href="media/workdir/poem.cmp" />
+(52, 71)
+
+>>> open('poem.raw', 'rb').read() == open('poem.txt', 'rb').read()
+<FILE name="poem.txt" href="media/workdir/poem.txt" />
+True
+
+>>> decompress_file('bytes.cmp', 'bytes.raw')
+<FILE name="bytes.cmp" href="media/workdir/bytes.cmp" />
+(369, 256)
+
+>>> open('bytes.raw', 'rb').read() == bytes(range(256))
+True
+
+>>> decompress_file('empty.cmp', 'empty.raw')
+<FILE name="empty.cmp" href="media/workdir/empty.cmp" />
+(0, 0)
+
+>>> open('empty.raw', 'rb').read()
+b''
+
+>>> decompress_file('missing.cmp', 'missing.raw')
+Traceback (most recent call last):
+AssertionError: input file does not exist
+
+>>> decompress_file('poem.cmp', 'poem.txt')
+Traceback (most recent call last):
+AssertionError: output file already exists

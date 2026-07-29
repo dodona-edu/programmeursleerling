@@ -1,0 +1,6 @@
+--------------------------------------------------------
+tab name: get_valid_number
+<LANGUAGE code="nl">
+    <function from="get_valid_number" to="vraag_geldig_getal" />
+    <fixed from="The numbers should be between 0 and 1000" to="De nummers moeten tussen 0 en 1000 liggen" />
+</LANGUAGE>

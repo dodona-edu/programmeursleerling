@@ -13,3 +13,24 @@ This is a repetition of one of the exercises of Chapter
 recursively. However, using the `itertools` module, you can now solve it
 without recursion (though I suspect that recursion still is used within
 the `itertools` module – you, however, do not have to).
+
+### Assignment
+
+"Print one solution" is hard to check automatically, since a list can have
+several correct solutions. So instead, write a **generator function**
+`zero_subsets` that takes one argument: a list of distinct integers. The
+function must `yield` every non-empty subset of the list whose elements sum
+to zero, as a `tuple` containing the elements in the same relative order as
+in the input list. The empty subset is never yielded, even though it
+trivially sums to zero (it is not a solution to the original problem). The
+order in which the different subsets are produced does not matter.
+
+### Example
+
+```console?lang=python&prompt=>>>
+>>> sorted(zero_subsets([1, 4, -3, -5, 7]))
+[(1, -3, -5, 7), (1, 4, -5)]
+
+>>> sorted(zero_subsets([1, 4, -3, 7]))
+[]
+```

@@ -1,0 +1,8 @@
+--------------------------------------------------------
+tab name: Shape
+independent examples: false
+<LANGUAGE code="nl">
+    <class from="Shape" to="Vorm" />
+    <method from="area" to="oppervlakte" />
+    <method from="circumference" to="omtrek" />
+</LANGUAGE>

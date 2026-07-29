@@ -1,0 +1,120 @@
+>>> display_board([['.', '.', '.'], ['.', '.', '.'], ['.', '.', '.']]) # doctest: +STDOUT
+  1 2 3
+1 . . .
+2 . . .
+3 . . .
+
+>>> display_board([['X', 'O', '.'], ['.', 'X', '.'], ['O', '.', 'X']]) # doctest: +STDOUT
+  1 2 3
+1 X O .
+2 . X .
+3 O . X
+
+>>> display_board([['X', 'O', 'X'], ['X', 'O', 'O'], ['O', 'X', 'X']]) # doctest: +STDOUT
+  1 2 3
+1 X O X
+2 X O O
+3 O X X
+
+>>> display_board([['O', 'O', 'O'], ['X', 'X', '.'], ['.', '.', '.']]) # doctest: +STDOUT
+  1 2 3
+1 O O O
+2 X X .
+3 . . .
+
+>>> display_board([['.', '.', 'X'], ['.', 'X', '.'], ['X', '.', '.']]) # doctest: +STDOUT
+  1 2 3
+1 . . X
+2 . X .
+3 X . .
+
+>>> display_board([['X', 'O', '.'], ['X', 'O', 'O'], ['.', '.', 'X']]) # doctest: +STDOUT
+  1 2 3
+1 X O .
+2 X O O
+3 . . X
+
+>>> display_board([['O', 'X', '.'], ['.', 'X', '.'], ['.', '.', 'O']]) # doctest: +STDOUT
+  1 2 3
+1 O X .
+2 . X .
+3 . . O
+
+>>> display_board([['O', 'O', 'X'], ['X', 'O', '.'], ['O', 'X', 'X']]) # doctest: +STDOUT
+  1 2 3
+1 O O X
+2 X O .
+3 O X X
+
+>>> display_board([['.', '.', 'X'], ['O', 'X', 'X'], ['O', 'O', 'X']]) # doctest: +STDOUT
+  1 2 3
+1 . . X
+2 O X X
+3 O O X
+
+>>> display_board([['.', '.', '.'], ['O', '.', 'X'], ['X', 'X', 'O']]) # doctest: +STDOUT
+  1 2 3
+1 . . .
+2 O . X
+3 X X O
+
+>>> display_board([['O', 'X', 'X'], ['.', 'O', '.'], ['.', '.', 'X']]) # doctest: +STDOUT
+  1 2 3
+1 O X X
+2 . O .
+3 . . X
+
+>>> display_board([['.', 'O', 'X'], ['.', '.', '.'], ['.', '.', '.']]) # doctest: +STDOUT
+  1 2 3
+1 . O X
+2 . . .
+3 . . .
+
+>>> display_board([['O', 'X', 'X'], ['.', 'O', '.'], ['.', '.', '.']]) # doctest: +STDOUT
+  1 2 3
+1 O X X
+2 . O .
+3 . . .
+
+>>> display_board([['.', '.', '.'], ['.', '.', 'X'], ['.', '.', '.']]) # doctest: +STDOUT
+  1 2 3
+1 . . .
+2 . . X
+3 . . .
+
+>>> display_board([['.', 'O', 'X'], ['.', '.', 'X'], ['O', 'X', '.']]) # doctest: +STDOUT
+  1 2 3
+1 . O X
+2 . . X
+3 O X .
+
+>>> display_board([['.', '.', '.'], ['O', '.', 'O'], ['X', 'X', '.']]) # doctest: +STDOUT
+  1 2 3
+1 . . .
+2 O . O
+3 X X .
+
+>>> display_board([['X', 'X', 'O'], ['.', 'X', 'O'], ['.', 'O', 'X']]) # doctest: +STDOUT
+  1 2 3
+1 X X O
+2 . X O
+3 . O X
+
+>>> display_board([['O', 'X', 'X'], ['O', 'X', '.'], ['O', 'X', 'O']]) # doctest: +STDOUT
+  1 2 3
+1 O X X
+2 O X .
+3 O X O
+
+>>> display_board([['O', 'X', 'O'], ['X', 'O', 'X'], ['O', 'X', '.']]) # doctest: +STDOUT
+  1 2 3
+1 O X O
+2 X O X
+3 O X .
+
+>>> display_board([['O', '.', 'X'], ['.', '.', '.'], ['O', '.', 'X']]) # doctest: +STDOUT
+  1 2 3
+1 O . X
+2 . . .
+3 O . X
+

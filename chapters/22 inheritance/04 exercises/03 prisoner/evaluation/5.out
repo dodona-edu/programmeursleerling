@@ -1,0 +1,9 @@
+--------------------------------------------------------
+tab name: Majority
+independent examples: false
+<LANGUAGE code="nl">
+    <class from="Strategy" to="Strategie" />
+    <class from="Majority" to="Meerderheid" />
+    <method from="choice" to="keuze" />
+    <method from="lastmove" to="laatstezet" />
+</LANGUAGE>

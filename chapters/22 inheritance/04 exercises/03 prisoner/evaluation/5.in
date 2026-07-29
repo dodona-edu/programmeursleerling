@@ -1,0 +1,64 @@
+>>> poll_01 = Majority('Mia') # doctest: +NEWCONTEXT
+>>> poll_01.choice()
+'C'
+>>> poll_01.lastmove('C', 'D')
+>>> poll_01.choice()
+'D'
+>>> poll_01.lastmove('C', 'D')
+>>> poll_01.choice()
+'D'
+>>> poll_01.lastmove('C', 'C')
+>>> poll_01.choice()
+'D'
+
+>>> poll_02 = Majority('Nils') # doctest: +NEWCONTEXT
+>>> poll_02.choice()
+'C'
+>>> poll_02.lastmove('C', 'C')
+>>> poll_02.choice()
+'C'
+>>> poll_02.lastmove('C', 'C')
+>>> poll_02.choice()
+'C'
+>>> poll_02.lastmove('C', 'D')
+>>> poll_02.choice()
+'C'
+>>> poll_02.lastmove('C', 'D')
+>>> poll_02.choice()
+'C'
+
+>>> poll_03 = Majority('') # doctest: +NEWCONTEXT
+>>> poll_03.choice()
+'C'
+>>> poll_03.lastmove('C', 'D')
+>>> poll_03.choice()
+'D'
+>>> poll_03.lastmove('C', 'C')
+>>> poll_03.choice()
+'C'
+>>> poll_03.lastmove('C', 'D')
+>>> poll_03.choice()
+'D'
+>>> poll_03.lastmove('C', 'C')
+>>> poll_03.choice()
+'C'
+>>> poll_03.lastmove('C', 'D')
+>>> poll_03.choice()
+'D'
+
+>>> poll_04 = Majority('Pia') # doctest: +NEWCONTEXT
+>>> poll_04.choice()
+'C'
+>>> poll_04.lastmove('C', 'C')
+>>> poll_04.choice()
+'C'
+>>> poll_04.lastmove('C', 'D')
+>>> poll_04.choice()
+'C'
+>>> poll_04.lastmove('C', 'D')
+>>> poll_04.choice()
+'D'
+>>> poll_04.lastmove('C', 'D')
+>>> poll_04.choice()
+'D'
+

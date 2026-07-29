@@ -1,0 +1,9 @@
+--------------------------------------------------------
+tab name: adding and removing fruit
+independent examples: false
+<LANGUAGE code="nl">
+    <class from="FruitBasket" to="Fruitmand" />
+    <fixed from="adding and removing fruit" to="fruit toevoegen en verwijderen" detect="false" />
+    <fixed from="basket" to="mand" detect="false" />
+    <fixed from="other" to="andere" detect="false" />
+</LANGUAGE>

@@ -37,3 +37,50 @@ Het hoofdprogramma zal er ongeveer als volgt uitzien (in pseudo-code):
             zeg dat het gelijkspel is
             break
         wissel spelers
+
+### Opgave
+
+Stel het bord voor als een lijst (`list`) van drie rijen, waarbij elke rij zelf een lijst (`list`) is van drie strings (`str`): `X` voor een cel die door de eerste speler ingenomen is, `O` voor een cel die door de tweede speler ingenomen is, en `.` voor een lege cel. De rijen en de kolommen worden genummerd van 1 tot en met 3. Schrijf de volgende vijf functies, en gebruik ze om het hoofdprogramma te schrijven dat hierboven geschetst wordt.
+
+- Schrijf een functie `opponent` waaraan een speler (`X` of `O`) moet doorgegeven worden. De functie moet de andere speler teruggeven.
+
+- Schrijf een functie `toon_bord` waaraan een bord moet doorgegeven worden. De functie moet het bord afdrukken, voorafgegaan door een regel met de kolomnummers, en met voor elke rij haar rijnummer. Scheid de cellen van een rij door één spatie.
+
+- Schrijf een functie `plaats` waaraan een bord, een speler, een rij en een kolom moeten doorgegeven worden. Als de gegeven rij en kolom op het bord liggen en de overeenkomstige cel nog leeg is, dan moet de functie het teken van de gegeven speler in die cel plaatsen en `True` teruggeven. Anders moet de functie het bord ongewijzigd laten en `False` teruggeven.
+
+- Schrijf een functie `winnaar` waaraan een bord moet doorgegeven worden. Als een speler drie tekens op een rij, op een kolom of op een diagonaal heeft staan, dan moet de functie die speler teruggeven. Anders moet de functie `None` teruggeven.
+
+- Schrijf een functie `vol` waaraan een bord moet doorgegeven worden. De functie moet een Booleaanse waarde (`bool`) teruggeven die aangeeft of alle cellen van het bord ingenomen zijn.
+
+### Voorbeeld
+
+```console?lang=python&prompt=>>>
+>>> opponent('X')
+'O'
+>>> bord = [['.', '.', '.'], ['.', '.', '.'], ['.', '.', '.']]
+>>> plaats(bord, 'X', 2, 2)
+True
+>>> plaats(bord, 'O', 2, 2)
+False
+>>> plaats(bord, 'O', 4, 1)
+False
+>>> plaats(bord, 'O', 1, 3)
+True
+>>> toon_bord(bord)
+  1 2 3
+1 . . O
+2 . X .
+3 . . .
+>>> winnaar(bord)
+>>> vol(bord)
+False
+>>> toon_bord([['X', 'O', 'O'], ['.', 'X', '.'], ['O', '.', 'X']])
+  1 2 3
+1 X O O
+2 . X .
+3 O . X
+>>> winnaar([['X', 'O', 'O'], ['.', 'X', '.'], ['O', '.', 'X']])
+'X'
+>>> vol([['X', 'O', 'X'], ['X', 'O', 'O'], ['O', 'X', 'X']])
+True
+```

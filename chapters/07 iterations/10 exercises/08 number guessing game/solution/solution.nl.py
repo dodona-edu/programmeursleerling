@@ -1,17 +1,25 @@
-# numerieke score inlezen
-numerieke_score = int(input())
+import random
 
-# letterscore bepalen
-if numerieke_score >= 90:
-    letterscore = 'A'
-elif numerieke_score >= 80:
-    letterscore = 'B'
-elif numerieke_score >= 70:
-    letterscore = 'C'
-elif numerieke_score >= 60:
-    letterscore = 'D'
-else:
-    letterscore = 'F'
+# het te raden getal nemen
+getal = random.randint(1, 1000)
 
-# letterscore uitschrijven
-print(letterscore)
+# gokken inlezen tot het getal geraden is
+pogingen = 0
+geraden = False
+while not geraden:
+
+    # volgende gok inlezen
+    gok = int(input())
+    pogingen += 1
+
+    # zeggen hoe het te raden getal zich tot de gok verhoudt
+    if getal < gok:
+        print('Lager')
+    elif getal > gok:
+        print('Hoger')
+    else:
+        print('Je hebt het geraden!')
+        geraden = True
+
+# afdrukken hoeveel pogingen er nodig waren
+print(f'Aantal pogingen: {pogingen}')

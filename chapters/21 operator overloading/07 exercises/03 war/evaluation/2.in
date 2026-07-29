@@ -1,0 +1,196 @@
+>>> pile_01 = Drawpile([Card('Hearts', 'Jack'), Card('Diamonds', 3)]) # doctest: +NEWCONTEXT
+>>> pile_02 = Drawpile([Card('Diamonds', 6)])
+>>> winner = war(pile_01, pile_02)
+>>> winner is pile_01
+True
+>>> winner is pile_02
+False
+>>> winner # doctest: +REPR
+Drawpile([Card('Diamonds', 3), Card('Hearts', 'Jack'), Card('Diamonds', 6)])
+>>> len(pile_01)
+3
+>>> len(pile_02)
+0
+
+>>> pile_03 = Drawpile([Card('Hearts', 3), Card('Diamonds', 7)]) # doctest: +NEWCONTEXT
+>>> pile_04 = Drawpile([Card('Spades', 2), Card('Diamonds', 'Queen'), Card('Hearts', 'Jack')])
+>>> winner = war(pile_03, pile_04)
+>>> len(pile_03)
+0
+>>> winner is pile_03
+False
+>>> winner is pile_04
+True
+>>> winner # doctest: +REPR
+Drawpile([Card('Diamonds', 7), Card('Hearts', 'Jack'), Card('Hearts', 3), Card('Diamonds', 'Queen'), Card('Spades', 2)])
+>>> len(pile_04)
+5
+
+>>> pile_05 = Drawpile([Card('Diamonds', 2), Card('Hearts', 'King'), Card('Clubs', 7)]) # doctest: +NEWCONTEXT
+>>> pile_06 = Drawpile([Card('Hearts', 4), Card('Hearts', 3), Card('Spades', 8)])
+>>> winner = war(pile_05, pile_06)
+>>> winner is pile_05
+True
+>>> winner is pile_06
+False
+>>> winner # doctest: +REPR
+Drawpile([Card('Spades', 8), Card('Hearts', 3), Card('Hearts', 'King'), Card('Hearts', 4), Card('Clubs', 7), Card('Diamonds', 2)])
+>>> len(pile_06)
+0
+>>> len(pile_05)
+6
+
+>>> pile_07 = Drawpile([]) # doctest: +NEWCONTEXT
+>>> pile_08 = Drawpile([Card('Clubs', 9), Card('Diamonds', 'Queen')])
+>>> winner = war(pile_07, pile_08)
+>>> winner # doctest: +REPR
+Drawpile([Card('Clubs', 9), Card('Diamonds', 'Queen')])
+>>> len(pile_08)
+2
+>>> len(pile_07)
+0
+>>> winner is pile_07
+False
+>>> winner is pile_08
+True
+
+>>> pile_09 = Drawpile([Card('Spades', 6), Card('Hearts', 'Jack')]) # doctest: +NEWCONTEXT
+>>> pile_10 = Drawpile([])
+>>> winner = war(pile_09, pile_10)
+>>> winner is pile_09
+True
+>>> winner is pile_10
+False
+>>> len(pile_09)
+2
+>>> winner # doctest: +REPR
+Drawpile([Card('Spades', 6), Card('Hearts', 'Jack')])
+>>> len(pile_10)
+0
+
+>>> pile_11 = Drawpile([Card('Hearts', 5)]) # doctest: +NEWCONTEXT
+>>> pile_12 = Drawpile([Card('Spades', 'Jack')])
+>>> winner = war(pile_11, pile_12)
+>>> winner is pile_11
+False
+>>> winner is pile_12
+True
+>>> len(pile_12)
+2
+>>> len(pile_11)
+0
+>>> winner # doctest: +REPR
+Drawpile([Card('Spades', 'Jack'), Card('Hearts', 5)])
+
+>>> pile_13 = Drawpile([Card('Diamonds', 'Ace')]) # doctest: +NEWCONTEXT
+>>> pile_14 = Drawpile([Card('Clubs', 'King'), Card('Hearts', 4)])
+>>> winner = war(pile_13, pile_14)
+>>> len(pile_14)
+0
+>>> winner # doctest: +REPR
+Drawpile([Card('Clubs', 'King'), Card('Diamonds', 'Ace'), Card('Hearts', 4)])
+>>> winner is pile_13
+True
+>>> winner is pile_14
+False
+>>> len(pile_13)
+3
+
+>>> pile_15 = Drawpile([Card('Clubs', 'Ace'), Card('Spades', 3)]) # doctest: +NEWCONTEXT
+>>> pile_16 = Drawpile([Card('Diamonds', 'Queen'), Card('Hearts', 8), Card('Spades', 5)])
+>>> winner = war(pile_15, pile_16)
+>>> winner # doctest: +REPR
+Drawpile([Card('Spades', 5), Card('Diamonds', 'Queen'), Card('Hearts', 8), Card('Clubs', 'Ace'), Card('Spades', 3)])
+>>> len(pile_16)
+0
+>>> len(pile_15)
+5
+>>> winner is pile_15
+True
+>>> winner is pile_16
+False
+
+>>> pile_17 = Drawpile([Card('Diamonds', 6)]) # doctest: +NEWCONTEXT
+>>> pile_18 = Drawpile([Card('Hearts', 2), Card('Hearts', 8), Card('Clubs', 5), Card('Spades', 9), Card('Diamonds', 3)])
+>>> winner = war(pile_17, pile_18)
+>>> winner # doctest: +REPR
+Drawpile([Card('Spades', 9), Card('Diamonds', 3), Card('Hearts', 8), Card('Diamonds', 6), Card('Clubs', 5), Card('Hearts', 2)])
+>>> len(pile_18)
+6
+>>> winner is pile_17
+False
+>>> winner is pile_18
+True
+>>> len(pile_17)
+0
+
+>>> pile_19 = Drawpile([Card('Diamonds', 9), Card('Hearts', 'King'), Card('Clubs', 'Ace')]) # doctest: +NEWCONTEXT
+>>> pile_20 = Drawpile([Card('Clubs', 6)])
+>>> winner = war(pile_19, pile_20)
+>>> winner # doctest: +REPR
+Drawpile([Card('Hearts', 'King'), Card('Clubs', 'Ace'), Card('Diamonds', 9), Card('Clubs', 6)])
+>>> len(pile_19)
+4
+>>> winner is pile_19
+True
+>>> winner is pile_20
+False
+>>> len(pile_20)
+0
+
+>>> pile_21 = Drawpile([Card('Diamonds', 4), Card('Hearts', 5), Card('Clubs', 9)]) # doctest: +NEWCONTEXT
+>>> pile_22 = Drawpile([Card('Spades', 'Jack'), Card('Diamonds', 2), Card('Clubs', 'Ace')])
+>>> winner = war(pile_21, pile_22)
+>>> len(pile_22)
+6
+>>> len(pile_21)
+0
+>>> winner # doctest: +REPR
+Drawpile([Card('Clubs', 'Ace'), Card('Clubs', 9), Card('Spades', 'Jack'), Card('Hearts', 5), Card('Diamonds', 4), Card('Diamonds', 2)])
+>>> winner is pile_21
+False
+>>> winner is pile_22
+True
+
+>>> pile_23 = Drawpile([Card('Spades', 3), Card('Clubs', 4), Card('Hearts', 7)]) # doctest: +NEWCONTEXT
+>>> pile_24 = Drawpile([Card('Clubs', 5), Card('Diamonds', 'Jack'), Card('Clubs', 'Queen'), Card('Hearts', 6)])
+>>> winner = war(pile_23, pile_24)
+>>> winner is pile_23
+False
+>>> winner is pile_24
+True
+>>> len(pile_24)
+7
+>>> len(pile_23)
+0
+>>> winner # doctest: +REPR
+Drawpile([Card('Hearts', 6), Card('Clubs', 5), Card('Spades', 3), Card('Diamonds', 'Jack'), Card('Clubs', 4), Card('Clubs', 'Queen'), Card('Hearts', 7)])
+
+>>> pile_25 = Drawpile([Card('Clubs', 'Ace'), Card('Diamonds', 10), Card('Spades', 7)]) # doctest: +NEWCONTEXT
+>>> pile_26 = Drawpile([Card('Diamonds', 'Queen')])
+>>> winner = war(pile_25, pile_26)
+>>> winner # doctest: +REPR
+Drawpile([Card('Diamonds', 10), Card('Spades', 7), Card('Clubs', 'Ace'), Card('Diamonds', 'Queen')])
+>>> winner is pile_25
+True
+>>> winner is pile_26
+False
+>>> len(pile_25)
+4
+>>> len(pile_26)
+0
+
+>>> pile_27 = Drawpile([Card('Diamonds', 8)]) # doctest: +NEWCONTEXT
+>>> pile_28 = Drawpile([Card('Hearts', 4), Card('Clubs', 2), Card('Spades', 'King'), Card('Spades', 'Jack'), Card('Hearts', 'Ace'), Card('Spades', 9)])
+>>> winner = war(pile_27, pile_28)
+>>> winner is pile_27
+False
+>>> winner is pile_28
+True
+>>> len(pile_27)
+0
+>>> len(pile_28)
+7
+>>> winner # doctest: +REPR
+Drawpile([Card('Spades', 9), Card('Spades', 'King'), Card('Hearts', 4), Card('Spades', 'Jack'), Card('Diamonds', 8), Card('Hearts', 'Ace'), Card('Clubs', 2)])
+

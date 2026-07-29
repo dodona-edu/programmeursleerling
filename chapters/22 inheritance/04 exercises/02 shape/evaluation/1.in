@@ -1,0 +1,72 @@
+>>> rectangle_01 = Rectangle(1, 1, 8, 5) # doctest: +NEWCONTEXT
+>>> rectangle_01 # doctest: +REPR
+[(1,1),w=8,h=5]
+>>> print(rectangle_01) # doctest: +STDOUT
+[(1,1),w=8,h=5]
+>>> rectangle_01.area()
+40
+>>> rectangle_01.circumference()
+26
+>>> isinstance(rectangle_01, Shape)
+True
+
+>>> rectangle_02 = Rectangle(-3, 4, 1, 9) # doctest: +NEWCONTEXT
+>>> print(rectangle_02) # doctest: +STDOUT
+[(-3,4),w=1,h=9]
+>>> rectangle_02.circumference()
+20
+>>> isinstance(rectangle_02, Shape)
+True
+>>> repr(rectangle_02)
+'[(-3,4),w=1,h=9]'
+>>> rectangle_02.area()
+9
+
+>>> rectangle_03 = Rectangle(-4, -1, 4, 3) # doctest: +NEWCONTEXT
+>>> rectangle_03 # doctest: +REPR
+[(-4,-1),w=4,h=3]
+>>> rectangle_03.area()
+12
+>>> str(rectangle_03)
+'[(-4,-1),w=4,h=3]'
+>>> rectangle_03.circumference()
+14
+>>> isinstance(rectangle_03, Shape)
+True
+
+>>> rectangle_04 = Rectangle(-5, -3, 5, 9) # doctest: +NEWCONTEXT
+>>> repr(rectangle_04)
+'[(-5,-3),w=5,h=9]'
+>>> print(rectangle_04) # doctest: +STDOUT
+[(-5,-3),w=5,h=9]
+>>> rectangle_04.area()
+45
+>>> isinstance(rectangle_04, Shape)
+True
+>>> rectangle_04.circumference()
+28
+
+>>> rectangle_05 = Rectangle(-6, 4, 6, 10) # doctest: +NEWCONTEXT
+>>> str(rectangle_05)
+'[(-6,4),w=6,h=10]'
+>>> rectangle_05.circumference()
+32
+>>> rectangle_05.area()
+60
+>>> isinstance(rectangle_05, Shape)
+True
+>>> rectangle_05 # doctest: +REPR
+[(-6,4),w=6,h=10]
+
+>>> rectangle_06 = Rectangle(0, 1, 4, 12) # doctest: +NEWCONTEXT
+>>> rectangle_06 # doctest: +REPR
+[(0,1),w=4,h=12]
+>>> isinstance(rectangle_06, Shape)
+True
+>>> rectangle_06.circumference()
+32
+>>> str(rectangle_06)
+'[(0,1),w=4,h=12]'
+>>> rectangle_06.area()
+48
+

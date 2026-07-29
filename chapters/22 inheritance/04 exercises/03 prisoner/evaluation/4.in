@@ -1,0 +1,64 @@
+>>> grudge_01 = TitForTwoTats('Toby') # doctest: +NEWCONTEXT
+>>> grudge_01.choice()
+'C'
+>>> grudge_01.lastmove('C', 'D')
+>>> grudge_01.choice()
+'C'
+>>> grudge_01.lastmove('C', 'D')
+>>> grudge_01.choice()
+'D'
+>>> grudge_01.lastmove('C', 'C')
+>>> grudge_01.choice()
+'C'
+>>> grudge_01.lastmove('C', 'D')
+>>> grudge_01.choice()
+'C'
+>>> grudge_01.lastmove('C', 'D')
+>>> grudge_01.choice()
+'D'
+
+>>> grudge_02 = TitForTwoTats('Vic') # doctest: +NEWCONTEXT
+>>> grudge_02.choice()
+'C'
+>>> grudge_02.lastmove('C', 'C')
+>>> grudge_02.choice()
+'C'
+>>> grudge_02.lastmove('C', 'D')
+>>> grudge_02.choice()
+'C'
+>>> grudge_02.lastmove('C', 'D')
+>>> grudge_02.choice()
+'D'
+
+>>> grudge_03 = TitForTwoTats('') # doctest: +NEWCONTEXT
+>>> grudge_03.choice()
+'C'
+>>> grudge_03.lastmove('C', 'D')
+>>> grudge_03.choice()
+'C'
+>>> grudge_03.lastmove('C', 'C')
+>>> grudge_03.choice()
+'C'
+>>> grudge_03.lastmove('C', 'D')
+>>> grudge_03.choice()
+'C'
+>>> grudge_03.lastmove('C', 'C')
+>>> grudge_03.choice()
+'C'
+
+>>> grudge_04 = TitForTwoTats('Yara') # doctest: +NEWCONTEXT
+>>> grudge_04.choice()
+'C'
+>>> grudge_04.lastmove('C', 'D')
+>>> grudge_04.choice()
+'C'
+>>> grudge_04.lastmove('C', 'D')
+>>> grudge_04.choice()
+'D'
+>>> grudge_04.lastmove('C', 'D')
+>>> grudge_04.choice()
+'D'
+>>> grudge_04.lastmove('C', 'D')
+>>> grudge_04.choice()
+'D'
+

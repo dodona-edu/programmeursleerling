@@ -1,0 +1,20 @@
+Is it 500?
+Is it 250?
+Is it 125?
+Is it 62?
+Is it 31?
+Is it 15?
+Is it 7?
+Is it 3?
+Is it 1?
+Number of attempts: 9
+------------------------------------------------------------
+tab name: Game 2
+python input without prompt: true
+block count: one
+comparison: exact match
+<LANGUAGE code="nl">
+    <fixed from="Number of attempts" to="Aantal pogingen" />
+    <fixed from="That is impossible!" to="Dat is onmogelijk!" />
+    <fixed from="Is it" to="Is het" />
+</LANGUAGE>

@@ -1,0 +1,100 @@
+import math
+
+class Shape:
+
+    """
+    Interface class: defines the common protocol shared by every kind of
+    shape, but leaves the actual computations to its subclasses.
+
+    >>> s = Shape()
+    >>> s.area()
+    NotImplemented
+    >>> s.circumference()
+    NotImplemented
+    """
+
+    def area( self ):
+        return NotImplemented
+    def circumference( self ):
+        return NotImplemented
+
+class Rectangle(Shape):
+
+    """
+    >>> r = Rectangle(1, 1, 8, 5)
+    >>> r
+    [(1,1),w=8,h=5]
+    >>> print(r)
+    [(1,1),w=8,h=5]
+    >>> r.area()
+    40
+    >>> r.circumference()
+    26
+    """
+
+    def __init__( self, x, y, w, h ):
+        self.x = x
+        self.y = y
+        self.w = w
+        self.h = h
+    def __repr__( self ):
+        return "[({},{}),w={},h={}]".format( self.x, self.y,
+            self.w, self.h )
+    def area( self ):
+        return self.w * self.h
+    def circumference( self ):
+        return 2*(self.w + self.h)
+
+class Square(Rectangle):
+
+    """
+    A Square is a sub(sub)class of Shape: it inherits from Rectangle,
+    which in turn inherits from Shape.
+
+    >>> s = Square(2, 3, 4)
+    >>> s
+    [(2,3),w=4,h=4]
+    >>> s.area()
+    16
+    >>> s.circumference()
+    16
+    >>> isinstance(s, Rectangle) and isinstance(s, Shape)
+    True
+    """
+
+    def __init__( self, x, y, side ):
+        Rectangle.__init__( self, x, y, side, side )
+
+class Circle(Shape):
+
+    """
+    A Circle is a direct subclass of Shape, overriding area() and
+    circumference() with its own formulas.
+
+    >>> c = Circle(0, 0, 3)
+    >>> c
+    [(0,0),r=3]
+    >>> print(c)
+    [(0,0),r=3]
+    >>> c.area()
+    28.274333882308138
+    >>> c.circumference()
+    18.84955592153876
+    >>> isinstance(c, Shape)
+    True
+    """
+
+    def __init__( self, x, y, r ):
+        self.x = x
+        self.y = y
+        self.r = r
+    def __repr__( self ):
+        return "[({},{}),r={}]".format( self.x, self.y, self.r )
+    def area( self ):
+        return math.pi * self.r ** 2
+    def circumference( self ):
+        return 2 * math.pi * self.r
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()

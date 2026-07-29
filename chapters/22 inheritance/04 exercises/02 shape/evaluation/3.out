@@ -1,0 +1,13 @@
+--------------------------------------------------------
+tab name: Circle
+independent examples: false
+<LANGUAGE code="nl">
+    <class from="Shape" to="Vorm" />
+    <class from="Rectangle" to="Rechthoek" />
+    <class from="Circle" to="Cirkel" />
+    <method from="area" to="oppervlakte" />
+    <method from="circumference" to="omtrek" />
+    <fixed from="r=" to="straal=" />
+    <fixed from="rectangle" to="rechthoek" detect="false" />
+    <fixed from="circle" to="cirkel" detect="false" />
+</LANGUAGE>

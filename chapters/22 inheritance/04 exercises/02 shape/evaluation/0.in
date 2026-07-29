@@ -1,0 +1,24 @@
+>>> shape_01 = Shape() # doctest: +NEWCONTEXT
+>>> shape_01.area()
+NotImplemented
+>>> shape_01.circumference()
+NotImplemented
+
+>>> shape_02 = Shape() # doctest: +NEWCONTEXT
+>>> shape_02.area()
+NotImplemented
+>>> shape_02.circumference()
+NotImplemented
+
+>>> shape_03 = Shape() # doctest: +NEWCONTEXT
+>>> shape_03.area()
+NotImplemented
+>>> shape_03.circumference()
+NotImplemented
+
+>>> shape_04 = Shape() # doctest: +NEWCONTEXT
+>>> shape_04.area()
+NotImplemented
+>>> shape_04.circumference()
+NotImplemented
+

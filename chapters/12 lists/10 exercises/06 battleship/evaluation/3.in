@@ -1,0 +1,448 @@
+>>> grid_01 = [['.', '.', 'X', '.'], ['X', '.', '.', '.'], ['.', '.', 'X', '.']] # doctest: +NEWCONTEXT
+>>> ships(grid_01)
+3
+>>> shoot(grid_01, 'C1')
+'You sunk my battleship!'
+>>> ships(grid_01)
+2
+>>> shoot(grid_01, 'C1')
+'Miss!'
+>>> ships(grid_01)
+2
+>>> shoot(grid_01, 'B2')
+'Miss!'
+>>> ships(grid_01)
+2
+>>> shoot(grid_01, 'A2')
+'You sunk my battleship!'
+>>> ships(grid_01)
+1
+>>> shoot(grid_01, 'E1')
+Traceback (most recent call last):
+AssertionError: invalid cell
+>>> ships(grid_01)
+1
+>>> shoot(grid_01, 'C3')
+'You sunk my battleship!'
+>>> ships(grid_01)
+0
+>>> display_grid(grid_01) # doctest: +STDOUT
+  A B C D
+1 . . . .
+2 . . . .
+3 . . . .
+
+>>> grid_02 = [['.', '.', '.', '.'], ['.', 'X', '.', '.'], ['.', '.', '.', '.']] # doctest: +NEWCONTEXT
+>>> ships(grid_02)
+1
+>>> shoot(grid_02, 'A1')
+'Miss!'
+>>> ships(grid_02)
+1
+>>> shoot(grid_02, 'B1')
+'Miss!'
+>>> ships(grid_02)
+1
+>>> shoot(grid_02, 'C1')
+'Miss!'
+>>> ships(grid_02)
+1
+>>> shoot(grid_02, 'D1')
+'Miss!'
+>>> ships(grid_02)
+1
+>>> shoot(grid_02, 'A2')
+'Miss!'
+>>> ships(grid_02)
+1
+>>> shoot(grid_02, 'B2')
+'You sunk my battleship!'
+>>> ships(grid_02)
+0
+>>> shoot(grid_02, 'B2')
+'Miss!'
+>>> ships(grid_02)
+0
+>>> display_grid(grid_02) # doctest: +STDOUT
+  A B C D
+1 . . . .
+2 . . . .
+3 . . . .
+
+>>> grid_03 = [['.', '.', '.', '.'], ['.', '.', '.', '.'], ['.', '.', '.', '.']] # doctest: +NEWCONTEXT
+>>> ships(grid_03)
+0
+>>> shoot(grid_03, 'A1')
+'Miss!'
+>>> ships(grid_03)
+0
+>>> shoot(grid_03, 'D3')
+'Miss!'
+>>> ships(grid_03)
+0
+>>> shoot(grid_03, 'B2')
+'Miss!'
+>>> ships(grid_03)
+0
+>>> display_grid(grid_03) # doctest: +STDOUT
+  A B C D
+1 . . . .
+2 . . . .
+3 . . . .
+
+>>> grid_04 = [['X', '.', '.', 'X'], ['.', '.', '.', '.'], ['X', '.', '.', '.']] # doctest: +NEWCONTEXT
+>>> ships(grid_04)
+3
+>>> shoot(grid_04, 'a1')
+Traceback (most recent call last):
+AssertionError: invalid cell
+>>> ships(grid_04)
+3
+>>> shoot(grid_04, 'A1')
+'You sunk my battleship!'
+>>> ships(grid_04)
+2
+>>> shoot(grid_04, 'A1')
+'Miss!'
+>>> ships(grid_04)
+2
+>>> shoot(grid_04, 'D1')
+'You sunk my battleship!'
+>>> ships(grid_04)
+1
+>>> shoot(grid_04, 'A3')
+'You sunk my battleship!'
+>>> ships(grid_04)
+0
+>>> shoot(grid_04, 'A3')
+'Miss!'
+>>> ships(grid_04)
+0
+>>> display_grid(grid_04) # doctest: +STDOUT
+  A B C D
+1 . . . .
+2 . . . .
+3 . . . .
+
+>>> grid_05 = [['X', '.', 'X', '.'], ['.', '.', '.', '.'], ['X', '.', 'X', '.']] # doctest: +NEWCONTEXT
+>>> ships(grid_05)
+4
+>>> shoot(grid_05, 'A4')
+Traceback (most recent call last):
+AssertionError: invalid cell
+>>> ships(grid_05)
+4
+>>> shoot(grid_05, 'A3')
+'You sunk my battleship!'
+>>> ships(grid_05)
+3
+>>> shoot(grid_05, 'C3')
+'You sunk my battleship!'
+>>> ships(grid_05)
+2
+>>> shoot(grid_05, 'C1')
+'You sunk my battleship!'
+>>> ships(grid_05)
+1
+>>> shoot(grid_05, 'A1')
+'You sunk my battleship!'
+>>> ships(grid_05)
+0
+>>> shoot(grid_05, 'B2')
+'Miss!'
+>>> ships(grid_05)
+0
+>>> display_grid(grid_05) # doctest: +STDOUT
+  A B C D
+1 . . . .
+2 . . . .
+3 . . . .
+
+>>> grid_06 = [['.', '.', '.', '.'], ['X', 'X', '.', '.'], ['X', 'X', '.', '.']] # doctest: +NEWCONTEXT
+>>> ships(grid_06)
+4
+>>> shoot(grid_06, '3')
+Traceback (most recent call last):
+AssertionError: invalid cell
+>>> ships(grid_06)
+4
+>>> shoot(grid_06, 'A2')
+'You sunk my battleship!'
+>>> ships(grid_06)
+3
+>>> shoot(grid_06, 'B2')
+'You sunk my battleship!'
+>>> ships(grid_06)
+2
+>>> shoot(grid_06, 'B3')
+'You sunk my battleship!'
+>>> ships(grid_06)
+1
+>>> shoot(grid_06, 'A3')
+'You sunk my battleship!'
+>>> ships(grid_06)
+0
+>>> display_grid(grid_06) # doctest: +STDOUT
+  A B C D
+1 . . . .
+2 . . . .
+3 . . . .
+
+>>> grid_07 = [['X', '.', '.', '.'], ['X', '.', '.', 'X'], ['.', '.', '.', '.']] # doctest: +NEWCONTEXT
+>>> ships(grid_07)
+3
+>>> shoot(grid_07, 'A1')
+'You sunk my battleship!'
+>>> ships(grid_07)
+2
+>>> shoot(grid_07, 'A2')
+'You sunk my battleship!'
+>>> ships(grid_07)
+1
+>>> shoot(grid_07, 'D2')
+'You sunk my battleship!'
+>>> ships(grid_07)
+0
+>>> display_grid(grid_07) # doctest: +STDOUT
+  A B C D
+1 . . . .
+2 . . . .
+3 . . . .
+
+>>> grid_08 = [['.', '.', '.', '.'], ['.', '.', 'X', '.'], ['.', '.', '.', '.']] # doctest: +NEWCONTEXT
+>>> ships(grid_08)
+1
+>>> shoot(grid_08, 'C2')
+'You sunk my battleship!'
+>>> ships(grid_08)
+0
+>>> display_grid(grid_08) # doctest: +STDOUT
+  A B C D
+1 . . . .
+2 . . . .
+3 . . . .
+
+>>> grid_09 = [['.', '.', 'X', '.'], ['.', '.', '.', '.'], ['.', '.', '.', '.']] # doctest: +NEWCONTEXT
+>>> ships(grid_09)
+1
+>>> shoot(grid_09, 'D3')
+'Miss!'
+>>> ships(grid_09)
+1
+>>> shoot(grid_09, 'C1')
+'You sunk my battleship!'
+>>> ships(grid_09)
+0
+>>> display_grid(grid_09) # doctest: +STDOUT
+  A B C D
+1 . . . .
+2 . . . .
+3 . . . .
+
+>>> grid_10 = [['.', 'X', 'X', '.'], ['.', '.', '.', 'X'], ['.', '.', '.', 'X']] # doctest: +NEWCONTEXT
+>>> ships(grid_10)
+4
+>>> shoot(grid_10, 'D1')
+'Miss!'
+>>> ships(grid_10)
+4
+>>> shoot(grid_10, 'C1')
+'You sunk my battleship!'
+>>> ships(grid_10)
+3
+>>> shoot(grid_10, 'D3')
+'You sunk my battleship!'
+>>> ships(grid_10)
+2
+>>> shoot(grid_10, '3D')
+Traceback (most recent call last):
+AssertionError: invalid cell
+>>> ships(grid_10)
+2
+>>> shoot(grid_10, 'B3')
+'Miss!'
+>>> ships(grid_10)
+2
+>>> shoot(grid_10, '3')
+Traceback (most recent call last):
+AssertionError: invalid cell
+>>> ships(grid_10)
+2
+>>> shoot(grid_10, 'A3')
+'Miss!'
+>>> ships(grid_10)
+2
+>>> shoot(grid_10, 'D2')
+'You sunk my battleship!'
+>>> ships(grid_10)
+1
+>>> shoot(grid_10, 'C1')
+'Miss!'
+>>> ships(grid_10)
+1
+>>> shoot(grid_10, 'd3')
+Traceback (most recent call last):
+AssertionError: invalid cell
+>>> ships(grid_10)
+1
+>>> shoot(grid_10, 'B1')
+'You sunk my battleship!'
+>>> ships(grid_10)
+0
+>>> display_grid(grid_10) # doctest: +STDOUT
+  A B C D
+1 . . . .
+2 . . . .
+3 . . . .
+
+>>> grid_11 = [['.', '.', 'X', '.'], ['.', '.', '.', '.'], ['.', '.', '.', '.']] # doctest: +NEWCONTEXT
+>>> ships(grid_11)
+1
+>>> shoot(grid_11, 'D3')
+'Miss!'
+>>> ships(grid_11)
+1
+>>> shoot(grid_11, 'D3')
+'Miss!'
+>>> ships(grid_11)
+1
+>>> shoot(grid_11, 'A2')
+'Miss!'
+>>> ships(grid_11)
+1
+>>> shoot(grid_11, 'C1')
+'You sunk my battleship!'
+>>> ships(grid_11)
+0
+>>> display_grid(grid_11) # doctest: +STDOUT
+  A B C D
+1 . . . .
+2 . . . .
+3 . . . .
+
+>>> grid_12 = [['.', '.', '.', 'X'], ['.', '.', '.', '.'], ['.', '.', '.', '.']] # doctest: +NEWCONTEXT
+>>> ships(grid_12)
+1
+>>> shoot(grid_12, 'D1')
+'You sunk my battleship!'
+>>> ships(grid_12)
+0
+>>> display_grid(grid_12) # doctest: +STDOUT
+  A B C D
+1 . . . .
+2 . . . .
+3 . . . .
+
+>>> grid_13 = [['.', '.', 'X', '.'], ['X', '.', 'X', '.'], ['.', '.', '.', '.']] # doctest: +NEWCONTEXT
+>>> ships(grid_13)
+3
+>>> shoot(grid_13, 'C1')
+'You sunk my battleship!'
+>>> ships(grid_13)
+2
+>>> shoot(grid_13, 'D3')
+'Miss!'
+>>> ships(grid_13)
+2
+>>> shoot(grid_13, 'D2')
+'Miss!'
+>>> ships(grid_13)
+2
+>>> shoot(grid_13, 'D2')
+'Miss!'
+>>> ships(grid_13)
+2
+>>> shoot(grid_13, 'E1')
+Traceback (most recent call last):
+AssertionError: invalid cell
+>>> ships(grid_13)
+2
+>>> shoot(grid_13, 'C2')
+'You sunk my battleship!'
+>>> ships(grid_13)
+1
+>>> shoot(grid_13, 'C2')
+'Miss!'
+>>> ships(grid_13)
+1
+>>> shoot(grid_13, 'A2')
+'You sunk my battleship!'
+>>> ships(grid_13)
+0
+>>> display_grid(grid_13) # doctest: +STDOUT
+  A B C D
+1 . . . .
+2 . . . .
+3 . . . .
+
+>>> grid_14 = [['.', 'X', 'X', '.'], ['.', 'X', '.', '.'], ['.', 'X', '.', '.']] # doctest: +NEWCONTEXT
+>>> ships(grid_14)
+4
+>>> shoot(grid_14, 'B3')
+'You sunk my battleship!'
+>>> ships(grid_14)
+3
+>>> shoot(grid_14, 'C1')
+'You sunk my battleship!'
+>>> ships(grid_14)
+2
+>>> shoot(grid_14, 'B1')
+'You sunk my battleship!'
+>>> ships(grid_14)
+1
+>>> shoot(grid_14, 'A1')
+'Miss!'
+>>> ships(grid_14)
+1
+>>> shoot(grid_14, 'B2')
+'You sunk my battleship!'
+>>> ships(grid_14)
+0
+>>> display_grid(grid_14) # doctest: +STDOUT
+  A B C D
+1 . . . .
+2 . . . .
+3 . . . .
+
+>>> grid_15 = [['.', '.', '.', '.'], ['X', '.', '.', '.'], ['.', '.', 'X', '.']] # doctest: +NEWCONTEXT
+>>> ships(grid_15)
+2
+>>> shoot(grid_15, 'C3')
+'You sunk my battleship!'
+>>> ships(grid_15)
+1
+>>> shoot(grid_15, 'A1')
+'Miss!'
+>>> ships(grid_15)
+1
+>>> shoot(grid_15, 'B2')
+'Miss!'
+>>> ships(grid_15)
+1
+>>> shoot(grid_15, 'C1')
+'Miss!'
+>>> ships(grid_15)
+1
+>>> shoot(grid_15, '')
+Traceback (most recent call last):
+AssertionError: invalid cell
+>>> ships(grid_15)
+1
+>>> shoot(grid_15, 'B1')
+'Miss!'
+>>> ships(grid_15)
+1
+>>> shoot(grid_15, 'B2')
+'Miss!'
+>>> ships(grid_15)
+1
+>>> shoot(grid_15, 'A2')
+'You sunk my battleship!'
+>>> ships(grid_15)
+0
+>>> display_grid(grid_15) # doctest: +STDOUT
+  A B C D
+1 . . . .
+2 . . . .
+3 . . . .
+

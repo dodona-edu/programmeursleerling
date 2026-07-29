@@ -1,0 +1,61 @@
+>>> player_01 = AlwaysDefect('Al') # doctest: +NEWCONTEXT
+>>> player_01.name
+'Al'
+>>> player_01.choice()
+'D'
+>>> player_01.choice()
+'D'
+>>> player_01.choice()
+'D'
+>>> player_01.lastmove('D', 'C')
+>>> player_01.lastmove('D', 'C')
+>>> player_01.incscore(6)
+>>> player_01.score
+6
+
+>>> player_02 = AlwaysDefect('Beth') # doctest: +NEWCONTEXT
+>>> player_02.name
+'Beth'
+>>> player_02.choice()
+'D'
+>>> player_02.choice()
+'D'
+>>> player_02.lastmove('D', 'D')
+>>> player_02.incscore(1)
+>>> player_02.incscore(1)
+>>> player_02.score
+2
+
+>>> player_03 = AlwaysDefect('') # doctest: +NEWCONTEXT
+>>> player_03.name
+''
+>>> player_03.choice()
+'D'
+>>> player_03.choice()
+'D'
+>>> player_03.choice()
+'D'
+>>> player_03.choice()
+'D'
+>>> player_03.lastmove('D', 'C')
+>>> player_03.lastmove('D', 'D')
+>>> player_03.lastmove('D', 'C')
+>>> player_03.incscore(6)
+>>> player_03.incscore(1)
+>>> player_03.incscore(0)
+>>> player_03.score
+7
+
+>>> player_04 = AlwaysDefect('Chuy') # doctest: +NEWCONTEXT
+>>> player_04.name
+'Chuy'
+>>> player_04.choice()
+'D'
+>>> player_04.choice()
+'D'
+>>> player_04.lastmove('D', 'C')
+>>> player_04.incscore(6)
+>>> player_04.incscore(6)
+>>> player_04.score
+12
+

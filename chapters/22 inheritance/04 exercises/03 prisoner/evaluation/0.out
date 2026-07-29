@@ -1,0 +1,9 @@
+--------------------------------------------------------
+tab name: Strategy
+independent examples: false
+<LANGUAGE code="nl">
+    <class from="Strategy" to="Strategie" />
+    <method from="choice" to="keuze" />
+    <method from="lastmove" to="laatstezet" />
+    <method from="incscore" to="plusscore" />
+</LANGUAGE>

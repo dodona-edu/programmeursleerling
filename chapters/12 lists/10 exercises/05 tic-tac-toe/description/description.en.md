@@ -35,3 +35,50 @@ The main program will be something along the lines of (in pseudo-code):
             announce draw
             break
         switch players
+
+### Assignment
+
+Represent the board as a list (`list`) of three rows, where each row is a list (`list`) of three strings (`str`): `X` for a cell taken by the first player, `O` for a cell taken by the second player, and `.` for an empty cell. Rows and columns are numbered 1 up to and including 3. Write the following five functions, and use them to write the main program sketched above.
+
+- Write a function `opponent` that takes a player (`X` or `O`). The function must return the other player.
+
+- Write a function `display_board` that takes a board. The function must print the board, preceded by a line that holds the column numbers, and with every row preceded by its row number. Separate the cells of a row by a single space.
+
+- Write a function `place` that takes a board, a player, a row and a column. If the given row and column are on the board and the corresponding cell is still empty, then the function must place the marker of the given player in that cell and return `True`. Otherwise, the function must leave the board untouched and return `False`.
+
+- Write a function `winner` that takes a board. If a player has three markers on a row, on a column or on a diagonal, then the function must return that player. Otherwise, the function must return `None`.
+
+- Write a function `full` that takes a board. The function must return a Boolean value (`bool`) that indicates whether all cells of the board are taken.
+
+### Example
+
+```console?lang=python&prompt=>>>
+>>> opponent('X')
+'O'
+>>> board = [['.', '.', '.'], ['.', '.', '.'], ['.', '.', '.']]
+>>> place(board, 'X', 2, 2)
+True
+>>> place(board, 'O', 2, 2)
+False
+>>> place(board, 'O', 4, 1)
+False
+>>> place(board, 'O', 1, 3)
+True
+>>> display_board(board)
+  1 2 3
+1 . . O
+2 . X .
+3 . . .
+>>> winner(board)
+>>> full(board)
+False
+>>> display_board([['X', 'O', 'O'], ['.', 'X', '.'], ['O', '.', 'X']])
+  1 2 3
+1 X O O
+2 . X .
+3 O . X
+>>> winner([['X', 'O', 'O'], ['.', 'X', '.'], ['O', '.', 'X']])
+'X'
+>>> full([['X', 'O', 'X'], ['X', 'O', 'O'], ['O', 'X', 'X']])
+True
+```

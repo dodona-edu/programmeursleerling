@@ -1,0 +1,384 @@
+>>> card_01 = Card('Hearts', 'Ace') # doctest: +NEWCONTEXT
+>>> card_02 = Card('Spades', 2)
+>>> card_01 == card_02
+False
+>>> card_01 != card_02
+True
+>>> card_01 < card_02
+False
+>>> card_01 <= card_02
+False
+>>> card_01 > card_02
+True
+>>> card_01 >= card_02
+True
+>>> card_03 = Card('Spades', 5)
+>>> sorted([card_01, card_02, card_03]) # doctest: +REPR
+[Card('Spades', 2), Card('Spades', 5), Card('Hearts', 'Ace')]
+>>> max(card_01, card_02, card_03) # doctest: +REPR
+Card('Hearts', 'Ace')
+>>> min(card_01, card_02, card_03) # doctest: +REPR
+Card('Spades', 2)
+>>> card_01 <= card_02 <= card_03
+False
+
+>>> card_04 = Card('Clubs', 10) # doctest: +NEWCONTEXT
+>>> card_05 = Card('Diamonds', 'Jack')
+>>> card_04 > card_05
+False
+>>> card_04 != card_05
+True
+>>> card_04 <= card_05
+True
+>>> card_04 == card_05
+False
+>>> card_04 < card_05
+True
+>>> card_04 >= card_05
+False
+>>> card_06 = Card('Clubs', 'Queen')
+>>> min(card_04, card_05, card_06) # doctest: +REPR
+Card('Clubs', 10)
+>>> sorted([card_04, card_05, card_06]) # doctest: +REPR
+[Card('Clubs', 10), Card('Diamonds', 'Jack'), Card('Clubs', 'Queen')]
+>>> card_04 <= card_05 <= card_06
+True
+>>> max(card_04, card_05, card_06) # doctest: +REPR
+Card('Clubs', 'Queen')
+
+>>> card_07 = Card('Hearts', 'King') # doctest: +NEWCONTEXT
+>>> card_08 = Card('Clubs', 'King')
+>>> card_07 == card_08
+True
+>>> card_07 < card_08
+False
+>>> card_07 >= card_08
+True
+>>> card_07 <= card_08
+True
+>>> card_07 > card_08
+False
+>>> card_07 != card_08
+False
+>>> card_09 = Card('Diamonds', 6)
+>>> card_07 <= card_08 <= card_09
+False
+>>> sorted([card_07, card_08, card_09]) # doctest: +REPR
+[Card('Diamonds', 6), Card('Hearts', 'King'), Card('Clubs', 'King')]
+>>> min(card_07, card_08, card_09) # doctest: +REPR
+Card('Diamonds', 6)
+>>> max(card_07, card_08, card_09) # doctest: +REPR
+Card('Hearts', 'King')
+
+>>> card_10 = Card('Spades', 7) # doctest: +NEWCONTEXT
+>>> card_11 = Card('Spades', 7)
+>>> card_10 < card_11
+False
+>>> card_10 == card_11
+True
+>>> card_10 > card_11
+False
+>>> card_10 <= card_11
+True
+>>> card_10 >= card_11
+True
+>>> card_10 != card_11
+False
+>>> card_12 = Card('Diamonds', 3)
+>>> min(card_10, card_11, card_12) # doctest: +REPR
+Card('Diamonds', 3)
+>>> max(card_10, card_11, card_12) # doctest: +REPR
+Card('Spades', 7)
+>>> card_10 <= card_11 <= card_12
+False
+>>> sorted([card_10, card_11, card_12]) # doctest: +REPR
+[Card('Diamonds', 3), Card('Spades', 7), Card('Spades', 7)]
+
+>>> card_13 = Card('Diamonds', 'Queen') # doctest: +NEWCONTEXT
+>>> card_14 = Card('Hearts', 'King')
+>>> card_13 < card_14
+True
+>>> card_13 <= card_14
+True
+>>> card_13 >= card_14
+False
+>>> card_13 != card_14
+True
+>>> card_13 == card_14
+False
+>>> card_13 > card_14
+False
+>>> card_15 = Card('Diamonds', 10)
+>>> max(card_13, card_14, card_15) # doctest: +REPR
+Card('Hearts', 'King')
+>>> sorted([card_13, card_14, card_15]) # doctest: +REPR
+[Card('Diamonds', 10), Card('Diamonds', 'Queen'), Card('Hearts', 'King')]
+>>> card_13 <= card_14 <= card_15
+False
+>>> min(card_13, card_14, card_15) # doctest: +REPR
+Card('Diamonds', 10)
+
+>>> card_16 = Card('Clubs', 3) # doctest: +NEWCONTEXT
+>>> card_17 = Card('Clubs', 9)
+>>> card_16 <= card_17
+True
+>>> card_16 > card_17
+False
+>>> card_16 >= card_17
+False
+>>> card_16 != card_17
+True
+>>> card_16 == card_17
+False
+>>> card_16 < card_17
+True
+>>> card_18 = Card('Diamonds', 'Jack')
+>>> sorted([card_16, card_17, card_18]) # doctest: +REPR
+[Card('Clubs', 3), Card('Clubs', 9), Card('Diamonds', 'Jack')]
+>>> min(card_16, card_17, card_18) # doctest: +REPR
+Card('Clubs', 3)
+>>> max(card_16, card_17, card_18) # doctest: +REPR
+Card('Diamonds', 'Jack')
+>>> card_16 <= card_17 <= card_18
+True
+
+>>> card_19 = Card('Spades', 'Ace') # doctest: +NEWCONTEXT
+>>> card_20 = Card('Diamonds', 'Ace')
+>>> card_19 == card_20
+True
+>>> card_19 > card_20
+False
+>>> card_19 < card_20
+False
+>>> card_19 <= card_20
+True
+>>> card_19 != card_20
+False
+>>> card_19 >= card_20
+True
+>>> card_21 = Card('Hearts', 2)
+>>> max(card_19, card_20, card_21) # doctest: +REPR
+Card('Spades', 'Ace')
+>>> min(card_19, card_20, card_21) # doctest: +REPR
+Card('Hearts', 2)
+>>> card_19 <= card_20 <= card_21
+False
+>>> sorted([card_19, card_20, card_21]) # doctest: +REPR
+[Card('Hearts', 2), Card('Spades', 'Ace'), Card('Diamonds', 'Ace')]
+
+>>> card_22 = Card('Hearts', 2) # doctest: +NEWCONTEXT
+>>> card_23 = Card('Clubs', 3)
+>>> card_22 != card_23
+True
+>>> card_22 == card_23
+False
+>>> card_22 >= card_23
+False
+>>> card_22 <= card_23
+True
+>>> card_22 < card_23
+True
+>>> card_22 > card_23
+False
+>>> card_24 = Card('Clubs', 'Queen')
+>>> card_22 <= card_23 <= card_24
+True
+>>> max(card_22, card_23, card_24) # doctest: +REPR
+Card('Clubs', 'Queen')
+>>> sorted([card_22, card_23, card_24]) # doctest: +REPR
+[Card('Hearts', 2), Card('Clubs', 3), Card('Clubs', 'Queen')]
+>>> min(card_22, card_23, card_24) # doctest: +REPR
+Card('Hearts', 2)
+
+>>> card_25 = Card('Clubs', 7) # doctest: +NEWCONTEXT
+>>> card_26 = Card('Clubs', 'Ace')
+>>> card_25 > card_26
+False
+>>> card_25 < card_26
+True
+>>> card_25 != card_26
+True
+>>> card_25 == card_26
+False
+>>> card_25 <= card_26
+True
+>>> card_25 >= card_26
+False
+>>> card_27 = Card('Hearts', 'Queen')
+>>> sorted([card_25, card_26, card_27]) # doctest: +REPR
+[Card('Clubs', 7), Card('Hearts', 'Queen'), Card('Clubs', 'Ace')]
+>>> max(card_25, card_26, card_27) # doctest: +REPR
+Card('Clubs', 'Ace')
+>>> card_25 <= card_26 <= card_27
+False
+>>> min(card_25, card_26, card_27) # doctest: +REPR
+Card('Clubs', 7)
+
+>>> card_28 = Card('Spades', 'Jack') # doctest: +NEWCONTEXT
+>>> card_29 = Card('Spades', 'Queen')
+>>> card_28 >= card_29
+False
+>>> card_28 == card_29
+False
+>>> card_28 != card_29
+True
+>>> card_28 < card_29
+True
+>>> card_28 <= card_29
+True
+>>> card_28 > card_29
+False
+>>> card_30 = Card('Clubs', 7)
+>>> min(card_28, card_29, card_30) # doctest: +REPR
+Card('Clubs', 7)
+>>> card_28 <= card_29 <= card_30
+False
+>>> sorted([card_28, card_29, card_30]) # doctest: +REPR
+[Card('Clubs', 7), Card('Spades', 'Jack'), Card('Spades', 'Queen')]
+>>> max(card_28, card_29, card_30) # doctest: +REPR
+Card('Spades', 'Queen')
+
+>>> card_31 = Card('Clubs', 'King') # doctest: +NEWCONTEXT
+>>> card_32 = Card('Spades', 3)
+>>> card_31 < card_32
+False
+>>> card_31 <= card_32
+False
+>>> card_31 > card_32
+True
+>>> card_31 >= card_32
+True
+>>> card_31 != card_32
+True
+>>> card_31 == card_32
+False
+>>> card_33 = Card('Clubs', 4)
+>>> max(card_31, card_32, card_33) # doctest: +REPR
+Card('Clubs', 'King')
+>>> min(card_31, card_32, card_33) # doctest: +REPR
+Card('Spades', 3)
+>>> sorted([card_31, card_32, card_33]) # doctest: +REPR
+[Card('Spades', 3), Card('Clubs', 4), Card('Clubs', 'King')]
+>>> card_31 <= card_32 <= card_33
+False
+
+>>> card_34 = Card('Clubs', 7) # doctest: +NEWCONTEXT
+>>> card_35 = Card('Clubs', 8)
+>>> card_34 < card_35
+True
+>>> card_34 > card_35
+False
+>>> card_34 <= card_35
+True
+>>> card_34 != card_35
+True
+>>> card_34 == card_35
+False
+>>> card_34 >= card_35
+False
+>>> card_36 = Card('Clubs', 4)
+>>> min(card_34, card_35, card_36) # doctest: +REPR
+Card('Clubs', 4)
+>>> sorted([card_34, card_35, card_36]) # doctest: +REPR
+[Card('Clubs', 4), Card('Clubs', 7), Card('Clubs', 8)]
+>>> card_34 <= card_35 <= card_36
+False
+>>> max(card_34, card_35, card_36) # doctest: +REPR
+Card('Clubs', 8)
+
+>>> card_37 = Card('Spades', 3) # doctest: +NEWCONTEXT
+>>> card_38 = Card('Diamonds', 'Jack')
+>>> card_37 >= card_38
+False
+>>> card_37 <= card_38
+True
+>>> card_37 != card_38
+True
+>>> card_37 > card_38
+False
+>>> card_37 < card_38
+True
+>>> card_37 == card_38
+False
+>>> card_39 = Card('Spades', 7)
+>>> card_37 <= card_38 <= card_39
+False
+>>> min(card_37, card_38, card_39) # doctest: +REPR
+Card('Spades', 3)
+>>> max(card_37, card_38, card_39) # doctest: +REPR
+Card('Diamonds', 'Jack')
+>>> sorted([card_37, card_38, card_39]) # doctest: +REPR
+[Card('Spades', 3), Card('Spades', 7), Card('Diamonds', 'Jack')]
+
+>>> card_40 = Card('Spades', 5) # doctest: +NEWCONTEXT
+>>> card_41 = Card('Diamonds', 4)
+>>> card_40 >= card_41
+True
+>>> card_40 == card_41
+False
+>>> card_40 < card_41
+False
+>>> card_40 > card_41
+True
+>>> card_40 != card_41
+True
+>>> card_40 <= card_41
+False
+>>> card_42 = Card('Clubs', 3)
+>>> max(card_40, card_41, card_42) # doctest: +REPR
+Card('Spades', 5)
+>>> min(card_40, card_41, card_42) # doctest: +REPR
+Card('Clubs', 3)
+>>> card_40 <= card_41 <= card_42
+False
+>>> sorted([card_40, card_41, card_42]) # doctest: +REPR
+[Card('Clubs', 3), Card('Diamonds', 4), Card('Spades', 5)]
+
+>>> card_43 = Card('Clubs', 7) # doctest: +NEWCONTEXT
+>>> card_44 = Card('Diamonds', 8)
+>>> card_43 != card_44
+True
+>>> card_43 >= card_44
+False
+>>> card_43 < card_44
+True
+>>> card_43 > card_44
+False
+>>> card_43 <= card_44
+True
+>>> card_43 == card_44
+False
+>>> card_45 = Card('Diamonds', 10)
+>>> min(card_43, card_44, card_45) # doctest: +REPR
+Card('Clubs', 7)
+>>> sorted([card_43, card_44, card_45]) # doctest: +REPR
+[Card('Clubs', 7), Card('Diamonds', 8), Card('Diamonds', 10)]
+>>> max(card_43, card_44, card_45) # doctest: +REPR
+Card('Diamonds', 10)
+>>> card_43 <= card_44 <= card_45
+True
+
+>>> card_46 = Card('Diamonds', 8) # doctest: +NEWCONTEXT
+>>> card_47 = Card('Clubs', 4)
+>>> card_46 != card_47
+True
+>>> card_46 == card_47
+False
+>>> card_46 < card_47
+False
+>>> card_46 >= card_47
+True
+>>> card_46 > card_47
+True
+>>> card_46 <= card_47
+False
+>>> card_48 = Card('Hearts', 'Queen')
+>>> card_46 <= card_47 <= card_48
+False
+>>> min(card_46, card_47, card_48) # doctest: +REPR
+Card('Clubs', 4)
+>>> sorted([card_46, card_47, card_48]) # doctest: +REPR
+[Card('Clubs', 4), Card('Diamonds', 8), Card('Hearts', 'Queen')]
+>>> max(card_46, card_47, card_48) # doctest: +REPR
+Card('Hearts', 'Queen')
+

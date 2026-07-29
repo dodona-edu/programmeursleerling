@@ -1,0 +1,17 @@
+--------------------------------------------------------
+tab name: shoot
+independent examples: false
+<LANGUAGE code="nl">
+    <function from="place_ships" to="plaats_schepen" />
+    <function from="display_grid" to="toon_matrix" />
+    <function from="ships" to="schepen" />
+    <function from="shoot" to="schiet" />
+    <fixed from="You sunk my battleship!" to="Raak!" />
+    <fixed from="Miss!" to="Mis!" />
+    <fixed from="invalid cell" to="ongeldige cel" />
+    <fixed from="Error: the grid must have three rows of four cells" to="Fout: de matrix moet drie rijen van vier cellen hebben" detect="false" />
+    <fixed from="Error: the cells of the grid must be either . or X" to="Fout: de cellen van de matrix moeten . of X zijn" detect="false" />
+    <regex from="Error: the grid must hide three battleships but hides ([0-9]+)" to="Fout: de matrix moet drie schepen verbergen, maar verbergt er \1" detect="false" />
+    <fixed from="Error: battleships are not allowed to touch each other" to="Fout: de schepen mogen elkaar niet raken" detect="false" />
+    <fixed from="Error: battleships are not placed randomly" to="Fout: de schepen worden niet per toeval geplaatst" detect="false" />
+</LANGUAGE>

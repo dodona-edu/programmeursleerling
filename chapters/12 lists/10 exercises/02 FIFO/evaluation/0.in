@@ -1,0 +1,159 @@
+>>> queue_01 = [] # doctest: +NEWCONTEXT
+>>> push(queue_01, 'apple')
+>>> queue_01
+['apple']
+>>> push(queue_01, 'pear')
+>>> queue_01
+['apple', 'pear']
+>>> push(queue_01, 'fig')
+>>> queue_01
+['apple', 'pear', 'fig']
+
+>>> queue_02 = ['plum'] # doctest: +NEWCONTEXT
+>>> push(queue_02, 'kiwi')
+>>> queue_02
+['plum', 'kiwi']
+
+>>> queue_03 = [] # doctest: +NEWCONTEXT
+>>> push(queue_03, 'the whole shebang')
+>>> queue_03
+['the whole shebang']
+
+>>> queue_04 = ['a', 'b', 'c', 'd', 'e', 'f', 'g'] # doctest: +NEWCONTEXT
+>>> push(queue_04, 'h')
+>>> queue_04
+['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+>>> push(queue_04, 'i')
+>>> queue_04
+['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i']
+
+>>> queue_05 = ['3.14', 'the whole shebang', 'apricot'] # doctest: +NEWCONTEXT
+>>> push(queue_05, 'the whole shebang')
+>>> queue_05
+['3.14', 'the whole shebang', 'apricot', 'the whole shebang']
+>>> push(queue_05, '3.14')
+>>> queue_05
+['3.14', 'the whole shebang', 'apricot', 'the whole shebang', '3.14']
+>>> push(queue_05, 'x')
+>>> queue_05
+['3.14', 'the whole shebang', 'apricot', 'the whole shebang', '3.14', 'x']
+>>> push(queue_05, 'multiple  spaces')
+>>> queue_05
+['3.14', 'the whole shebang', 'apricot', 'the whole shebang', '3.14', 'x', 'multiple  spaces']
+
+>>> queue_06 = ['3.14', 'papaya', 'apple'] # doctest: +NEWCONTEXT
+>>> push(queue_06, 'mango')
+>>> queue_06
+['3.14', 'papaya', 'apple', 'mango']
+>>> push(queue_06, 'apple')
+>>> queue_06
+['3.14', 'papaya', 'apple', 'mango', 'apple']
+>>> push(queue_06, 'kiwi')
+>>> queue_06
+['3.14', 'papaya', 'apple', 'mango', 'apple', 'kiwi']
+
+>>> queue_07 = ['!', 'apricot'] # doctest: +NEWCONTEXT
+>>> push(queue_07, 'apricot')
+>>> queue_07
+['!', 'apricot', 'apricot']
+
+>>> queue_08 = ['the whole shebang', 'pear'] # doctest: +NEWCONTEXT
+>>> push(queue_08, 'plum')
+>>> queue_08
+['the whole shebang', 'pear', 'plum']
+
+>>> queue_09 = ['3.14', 'fig', 'apple'] # doctest: +NEWCONTEXT
+>>> push(queue_09, 'a?b')
+>>> queue_09
+['3.14', 'fig', 'apple', 'a?b']
+>>> push(queue_09, 'apricot')
+>>> queue_09
+['3.14', 'fig', 'apple', 'a?b', 'apricot']
+>>> push(queue_09, '!')
+>>> queue_09
+['3.14', 'fig', 'apple', 'a?b', 'apricot', '!']
+>>> push(queue_09, 'the whole shebang')
+>>> queue_09
+['3.14', 'fig', 'apple', 'a?b', 'apricot', '!', 'the whole shebang']
+>>> push(queue_09, 'pear')
+>>> queue_09
+['3.14', 'fig', 'apple', 'a?b', 'apricot', '!', 'the whole shebang', 'pear']
+
+>>> queue_10 = ['apple', 'quince', 'apricot'] # doctest: +NEWCONTEXT
+>>> push(queue_10, 'lychee')
+>>> queue_10
+['apple', 'quince', 'apricot', 'lychee']
+>>> push(queue_10, 'pear')
+>>> queue_10
+['apple', 'quince', 'apricot', 'lychee', 'pear']
+
+>>> queue_11 = ['3.14', 'fig'] # doctest: +NEWCONTEXT
+>>> push(queue_11, 'Miss Marple')
+>>> queue_11
+['3.14', 'fig', 'Miss Marple']
+>>> push(queue_11, 'lychee')
+>>> queue_11
+['3.14', 'fig', 'Miss Marple', 'lychee']
+>>> push(queue_11, 'papaya')
+>>> queue_11
+['3.14', 'fig', 'Miss Marple', 'lychee', 'papaya']
+
+>>> queue_12 = ['kiwi', 'x', 'plum', '42'] # doctest: +NEWCONTEXT
+>>> push(queue_12, 'x')
+>>> queue_12
+['kiwi', 'x', 'plum', '42', 'x']
+>>> push(queue_12, 'a?b')
+>>> queue_12
+['kiwi', 'x', 'plum', '42', 'x', 'a?b']
+>>> push(queue_12, '???')
+>>> queue_12
+['kiwi', 'x', 'plum', '42', 'x', 'a?b', '???']
+>>> push(queue_12, 'the whole shebang')
+>>> queue_12
+['kiwi', 'x', 'plum', '42', 'x', 'a?b', '???', 'the whole shebang']
+>>> push(queue_12, 'plum')
+>>> queue_12
+['kiwi', 'x', 'plum', '42', 'x', 'a?b', '???', 'the whole shebang', 'plum']
+
+>>> queue_13 = ['kiwi', '3.14'] # doctest: +NEWCONTEXT
+>>> push(queue_13, 'the whole shebang')
+>>> queue_13
+['kiwi', '3.14', 'the whole shebang']
+>>> push(queue_13, '???')
+>>> queue_13
+['kiwi', '3.14', 'the whole shebang', '???']
+>>> push(queue_13, 'plum')
+>>> queue_13
+['kiwi', '3.14', 'the whole shebang', '???', 'plum']
+>>> push(queue_13, 'quince')
+>>> queue_13
+['kiwi', '3.14', 'the whole shebang', '???', 'plum', 'quince']
+
+>>> queue_14 = ['the whole shebang', '!', 'multiple  spaces'] # doctest: +NEWCONTEXT
+>>> push(queue_14, 'quince')
+>>> queue_14
+['the whole shebang', '!', 'multiple  spaces', 'quince']
+>>> push(queue_14, 'the whole shebang')
+>>> queue_14
+['the whole shebang', '!', 'multiple  spaces', 'quince', 'the whole shebang']
+>>> push(queue_14, 'a?b')
+>>> queue_14
+['the whole shebang', '!', 'multiple  spaces', 'quince', 'the whole shebang', 'a?b']
+>>> push(queue_14, 'kiwi')
+>>> queue_14
+['the whole shebang', '!', 'multiple  spaces', 'quince', 'the whole shebang', 'a?b', 'kiwi']
+>>> push(queue_14, 'pear')
+>>> queue_14
+['the whole shebang', '!', 'multiple  spaces', 'quince', 'the whole shebang', 'a?b', 'kiwi', 'pear']
+
+>>> queue_15 = ['quince', 'apple', '!', 'pear'] # doctest: +NEWCONTEXT
+>>> push(queue_15, '42')
+>>> queue_15
+['quince', 'apple', '!', 'pear', '42']
+>>> push(queue_15, 'kiwi')
+>>> queue_15
+['quince', 'apple', '!', 'pear', '42', 'kiwi']
+>>> push(queue_15, 'apple')
+>>> queue_15
+['quince', 'apple', '!', 'pear', '42', 'kiwi', 'apple']
+

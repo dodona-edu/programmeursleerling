@@ -1,0 +1,72 @@
+>>> process(['apple', 'pear', '?', 'fig', '?', '?', '?', '', 'plum']) # doctest: +STDOUT
+apple
+pear
+fig
+The queue is empty.
+
+>>> process(['']) # doctest: +STDOUT
+
+>>> process([]) # doctest: +STDOUT
+
+>>> process(['?']) # doctest: +STDOUT
+The queue is empty.
+
+>>> process(['?', '?', '?']) # doctest: +STDOUT
+The queue is empty.
+The queue is empty.
+The queue is empty.
+
+>>> process(['apple', 'pear', 'fig']) # doctest: +STDOUT
+
+>>> process(['apple', '?', '?', 'pear', '?']) # doctest: +STDOUT
+apple
+The queue is empty.
+pear
+
+>>> process(['???', '?', 'a?b', '?', '?']) # doctest: +STDOUT
+???
+a?b
+The queue is empty.
+
+>>> process(['', '?', 'apple']) # doctest: +STDOUT
+
+>>> process(['multiple  spaces', '?', '?']) # doctest: +STDOUT
+multiple  spaces
+The queue is empty.
+
+>>> process(['42', '?', 'apple']) # doctest: +STDOUT
+42
+
+>>> process(['?', 'lychee', 'multiple  spaces', '?', '', 'quince', '?', 'apple', '', '?']) # doctest: +STDOUT
+The queue is empty.
+lychee
+
+>>> process(['the whole shebang', '?', 'mango', '?', '?', '?', '?']) # doctest: +STDOUT
+the whole shebang
+mango
+The queue is empty.
+The queue is empty.
+The queue is empty.
+
+>>> process(['Miss Marple', 'x', 'quince', 'kiwi', '?', '?', '?', '?', 'a?b', '?']) # doctest: +STDOUT
+Miss Marple
+x
+quince
+kiwi
+a?b
+
+>>> process(['kiwi', 'lychee', '?']) # doctest: +STDOUT
+kiwi
+
+>>> process(['', 'plum', '?', '', '?', 'quince', '']) # doctest: +STDOUT
+
+>>> process(['!', 'mango', 'apricot']) # doctest: +STDOUT
+
+>>> process(['!', '', 'Miss Marple', 'apple', '?', '?', '', 'the whole shebang', '?']) # doctest: +STDOUT
+
+>>> process(['?', 'x', 'quince', 'kiwi', 'multiple  spaces', 'papaya', 'apricot', '?']) # doctest: +STDOUT
+The queue is empty.
+x
+
+>>> process(['apple', '42', 'kiwi', 'a?b', 'fig']) # doctest: +STDOUT
+

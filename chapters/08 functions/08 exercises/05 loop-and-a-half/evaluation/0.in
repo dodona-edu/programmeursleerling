@@ -1,0 +1,33 @@
+>>> import builtins
+>>> def _mock_input(*values):
+...     _iterator = iter(values)
+...     builtins.input = lambda prompt='': str(next(_iterator))
+
+>>> _mock_input(77)
+>>> get_valid_number("Enter number 1: ")
+77
+
+>>> _mock_input(0)
+>>> get_valid_number("Enter number 1: ")
+0
+
+>>> _mock_input(1000)
+>>> get_valid_number("Enter number 1: ")
+1000
+
+>>> _mock_input(-42, 314)
+>>> get_valid_number("Enter number 1: ") # doctest: +STDOUT +RETURN
+314
+The numbers should be between 0 and 1000
+
+>>> _mock_input(1200, 999)
+>>> get_valid_number("Enter number 1: ") # doctest: +STDOUT +RETURN
+999
+The numbers should be between 0 and 1000
+
+>>> _mock_input(-100, 5000, 1)
+>>> get_valid_number("Enter number 1: ") # doctest: +STDOUT +RETURN
+1
+The numbers should be between 0 and 1000
+The numbers should be between 0 and 1000
+

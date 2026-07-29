@@ -1,0 +1,8 @@
+--------------------------------------------------------
+tab name: compress_file
+<LANGUAGE code="nl">
+    <function from="compress_file" to="comprimeer_bestand" />
+    <function from="decompress_file" to="decomprimeer_bestand" />
+    <fixed from="input file does not exist" to="invoerbestand bestaat niet" detect="false" />
+    <fixed from="output file already exists" to="uitvoerbestand bestaat al" detect="false" />
+</LANGUAGE>

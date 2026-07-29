@@ -1,0 +1,14 @@
+--------------------------------------------------------
+tab name: Match
+independent examples: false
+<LANGUAGE code="nl">
+    <class from="Strategy" to="Strategie" />
+    <class from="TitForTat" to="OogOmOog" />
+    <class from="TitForTwoTats" to="OogOmTweeOgen" />
+    <class from="AlwaysDefect" to="AltijdD" />
+    <class from="Majority" to="Meerderheid" />
+    <class from="Random" to="Random" />
+    <method from="choice" to="keuze" />
+    <method from="lastmove" to="laatstezet" />
+    <method from="incscore" to="plusscore" />
+</LANGUAGE>

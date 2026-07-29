@@ -1,0 +1,102 @@
+>>> pile_01 = Drawpile([Card('Diamonds', 2), Card('Hearts', 'King'), Card('Clubs', 7)]) # doctest: +NEWCONTEXT
+>>> pile_01 # doctest: +REPR
+Drawpile([Card('Diamonds', 2), Card('Hearts', 'King'), Card('Clubs', 7)])
+>>> len(pile_01)
+3
+>>> pile_01[1] # doctest: +REPR
+Card('Hearts', 'King')
+>>> pile_01.add(Card('Hearts', 10))
+>>> pile_01.draw() # doctest: +REPR
+Card('Diamonds', 2)
+>>> pile_01 # doctest: +REPR
+Drawpile([Card('Hearts', 'King'), Card('Clubs', 7), Card('Hearts', 10)])
+
+>>> pile_02 = Drawpile([]) # doctest: +NEWCONTEXT
+>>> pile_02 # doctest: +REPR
+Drawpile([])
+>>> pile_02.add(Card('Clubs', 10))
+>>> pile_02.draw() # doctest: +REPR
+Card('Clubs', 10)
+>>> len(pile_02)
+0
+>>> pile_02 # doctest: +REPR
+Drawpile([])
+
+>>> pile_03 = Drawpile([Card('Hearts', 4), Card('Hearts', 3), Card('Spades', 8)]) # doctest: +NEWCONTEXT
+>>> len(pile_03)
+3
+>>> pile_03.draw() # doctest: +REPR
+Card('Hearts', 4)
+>>> pile_03[1] # doctest: +REPR
+Card('Spades', 8)
+>>> pile_03.add(Card('Spades', 10))
+>>> pile_03 # doctest: +REPR
+Drawpile([Card('Hearts', 3), Card('Spades', 8), Card('Spades', 10)])
+>>> pile_03 # doctest: +REPR
+Drawpile([Card('Hearts', 3), Card('Spades', 8), Card('Spades', 10)])
+
+>>> pile_04 = Drawpile([Card('Diamonds', 'King'), Card('Diamonds', 8), Card('Hearts', 10)]) # doctest: +NEWCONTEXT
+>>> len(pile_04)
+3
+>>> pile_04.draw() # doctest: +REPR
+Card('Diamonds', 'King')
+>>> pile_04 # doctest: +REPR
+Drawpile([Card('Diamonds', 8), Card('Hearts', 10)])
+>>> pile_04[1] # doctest: +REPR
+Card('Hearts', 10)
+>>> pile_04.add(Card('Hearts', 5))
+>>> pile_04 # doctest: +REPR
+Drawpile([Card('Diamonds', 8), Card('Hearts', 10), Card('Hearts', 5)])
+
+>>> pile_05 = Drawpile([Card('Diamonds', 8), Card('Spades', 8)]) # doctest: +NEWCONTEXT
+>>> pile_05 # doctest: +REPR
+Drawpile([Card('Diamonds', 8), Card('Spades', 8)])
+>>> pile_05.add(Card('Hearts', 3))
+>>> pile_05.draw() # doctest: +REPR
+Card('Diamonds', 8)
+>>> len(pile_05)
+2
+>>> pile_05[0] # doctest: +REPR
+Card('Spades', 8)
+>>> pile_05 # doctest: +REPR
+Drawpile([Card('Spades', 8), Card('Hearts', 3)])
+
+>>> pile_06 = Drawpile([Card('Diamonds', 'King'), Card('Spades', 'Queen'), Card('Diamonds', 'Jack'), Card('Hearts', 4), Card('Spades', 7)]) # doctest: +NEWCONTEXT
+>>> pile_06 # doctest: +REPR
+Drawpile([Card('Diamonds', 'King'), Card('Spades', 'Queen'), Card('Diamonds', 'Jack'), Card('Hearts', 4), Card('Spades', 7)])
+>>> len(pile_06)
+5
+>>> pile_06.add(Card('Hearts', 9))
+>>> pile_06.draw() # doctest: +REPR
+Card('Diamonds', 'King')
+>>> pile_06[4] # doctest: +REPR
+Card('Hearts', 9)
+>>> pile_06 # doctest: +REPR
+Drawpile([Card('Spades', 'Queen'), Card('Diamonds', 'Jack'), Card('Hearts', 4), Card('Spades', 7), Card('Hearts', 9)])
+
+>>> pile_07 = Drawpile([Card('Clubs', 10), Card('Hearts', 'King'), Card('Hearts', 'King'), Card('Hearts', 6), Card('Spades', 3)]) # doctest: +NEWCONTEXT
+>>> pile_07[2] # doctest: +REPR
+Card('Hearts', 'King')
+>>> pile_07.add(Card('Diamonds', 'Jack'))
+>>> pile_07 # doctest: +REPR
+Drawpile([Card('Clubs', 10), Card('Hearts', 'King'), Card('Hearts', 'King'), Card('Hearts', 6), Card('Spades', 3), Card('Diamonds', 'Jack')])
+>>> len(pile_07)
+6
+>>> pile_07.draw() # doctest: +REPR
+Card('Clubs', 10)
+>>> pile_07 # doctest: +REPR
+Drawpile([Card('Hearts', 'King'), Card('Hearts', 'King'), Card('Hearts', 6), Card('Spades', 3), Card('Diamonds', 'Jack')])
+
+>>> pile_08 = Drawpile([Card('Diamonds', 10), Card('Hearts', 'King'), Card('Diamonds', 2)]) # doctest: +NEWCONTEXT
+>>> pile_08[0] # doctest: +REPR
+Card('Diamonds', 10)
+>>> pile_08.draw() # doctest: +REPR
+Card('Diamonds', 10)
+>>> pile_08.add(Card('Hearts', 10))
+>>> pile_08 # doctest: +REPR
+Drawpile([Card('Hearts', 'King'), Card('Diamonds', 2), Card('Hearts', 10)])
+>>> len(pile_08)
+3
+>>> pile_08 # doctest: +REPR
+Drawpile([Card('Hearts', 'King'), Card('Diamonds', 2), Card('Hearts', 10)])
+

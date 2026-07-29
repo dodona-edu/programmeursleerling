@@ -1,0 +1,36 @@
+>>> opponent('X') # doctest: +NEWCONTEXT
+'O'
+
+>>> opponent('O')
+'X'
+
+>>> opponent(opponent('X'))
+'X'
+
+>>> opponent(opponent('O'))
+'O'
+
+>>> opponent(opponent(opponent('X')))
+'O'
+
+>>> opponent(opponent(opponent(opponent('O'))))
+'O'
+
+>>> player = 'X' # doctest: +NEWCONTEXT
+
+>>> player = opponent(player)
+>>> player
+'O'
+
+>>> player = opponent(player)
+>>> player
+'X'
+
+>>> player = opponent(player)
+>>> player
+'O'
+
+>>> player = opponent(player)
+>>> player
+'X'
+

@@ -1,0 +1,752 @@
+>>> board_01 = [['.', '.', '.'], ['.', '.', '.'], ['.', '.', '.']] # doctest: +NEWCONTEXT
+>>> place(board_01, 'X', 3, 2)
+True
+>>> board_01
+[['.', '.', '.'], ['.', '.', '.'], ['.', 'X', '.']]
+>>> place(board_01, 'O', 3, 2)
+False
+>>> place(board_01, 'O', 3, 3)
+True
+>>> board_01
+[['.', '.', '.'], ['.', '.', '.'], ['.', 'X', 'O']]
+>>> place(board_01, 'X', 3, 2)
+False
+>>> place(board_01, 'X', 2, 1)
+True
+>>> board_01
+[['.', '.', '.'], ['X', '.', '.'], ['.', 'X', 'O']]
+>>> place(board_01, 'O', 3, 3)
+False
+>>> place(board_01, 'O', 1, 3)
+True
+>>> board_01
+[['.', '.', 'O'], ['X', '.', '.'], ['.', 'X', 'O']]
+>>> place(board_01, 'X', -1, 2)
+False
+>>> place(board_01, 'X', 1, 2)
+True
+>>> board_01
+[['.', 'X', 'O'], ['X', '.', '.'], ['.', 'X', 'O']]
+>>> place(board_01, 'O', 1, 1)
+True
+>>> board_01
+[['O', 'X', 'O'], ['X', '.', '.'], ['.', 'X', 'O']]
+>>> place(board_01, 'X', 2, 2)
+True
+>>> board_01
+[['O', 'X', 'O'], ['X', 'X', '.'], ['.', 'X', 'O']]
+>>> display_board(board_01) # doctest: +STDOUT
+  1 2 3
+1 O X O
+2 X X .
+3 . X O
+>>> winner(board_01)
+'X'
+>>> full(board_01)
+False
+
+>>> board_02 = [['.', '.', '.'], ['.', '.', '.'], ['.', '.', '.']] # doctest: +NEWCONTEXT
+>>> place(board_02, 'X', 1, 1)
+True
+>>> board_02
+[['X', '.', '.'], ['.', '.', '.'], ['.', '.', '.']]
+>>> place(board_02, 'O', 4, 2)
+False
+>>> place(board_02, 'O', 1, 2)
+True
+>>> board_02
+[['X', 'O', '.'], ['.', '.', '.'], ['.', '.', '.']]
+>>> place(board_02, 'X', 2, 3)
+True
+>>> board_02
+[['X', 'O', '.'], ['.', '.', 'X'], ['.', '.', '.']]
+>>> place(board_02, 'O', 0, 0)
+False
+>>> place(board_02, 'O', 3, 1)
+True
+>>> board_02
+[['X', 'O', '.'], ['.', '.', 'X'], ['O', '.', '.']]
+>>> place(board_02, 'X', 7, 7)
+False
+>>> place(board_02, 'X', 1, 3)
+True
+>>> board_02
+[['X', 'O', 'X'], ['.', '.', 'X'], ['O', '.', '.']]
+>>> place(board_02, 'O', 3, 2)
+True
+>>> board_02
+[['X', 'O', 'X'], ['.', '.', 'X'], ['O', 'O', '.']]
+>>> place(board_02, 'X', 2, 2)
+True
+>>> board_02
+[['X', 'O', 'X'], ['.', 'X', 'X'], ['O', 'O', '.']]
+>>> place(board_02, 'O', 3, 3)
+True
+>>> board_02
+[['X', 'O', 'X'], ['.', 'X', 'X'], ['O', 'O', 'O']]
+>>> display_board(board_02) # doctest: +STDOUT
+  1 2 3
+1 X O X
+2 . X X
+3 O O O
+>>> winner(board_02)
+'O'
+>>> full(board_02)
+False
+
+>>> board_03 = [['.', '.', '.'], ['.', '.', '.'], ['.', '.', '.']] # doctest: +NEWCONTEXT
+>>> place(board_03, 'X', 3, 1)
+True
+>>> board_03
+[['.', '.', '.'], ['.', '.', '.'], ['X', '.', '.']]
+>>> place(board_03, 'O', 2, 2)
+True
+>>> board_03
+[['.', '.', '.'], ['.', 'O', '.'], ['X', '.', '.']]
+>>> place(board_03, 'X', 1, 0)
+False
+>>> place(board_03, 'X', 2, 1)
+True
+>>> board_03
+[['.', '.', '.'], ['X', 'O', '.'], ['X', '.', '.']]
+>>> place(board_03, 'O', 1, 2)
+True
+>>> board_03
+[['.', 'O', '.'], ['X', 'O', '.'], ['X', '.', '.']]
+>>> place(board_03, 'X', 3, 3)
+True
+>>> board_03
+[['.', 'O', '.'], ['X', 'O', '.'], ['X', '.', 'X']]
+>>> place(board_03, 'O', 3, 2)
+True
+>>> board_03
+[['.', 'O', '.'], ['X', 'O', '.'], ['X', 'O', 'X']]
+>>> display_board(board_03) # doctest: +STDOUT
+  1 2 3
+1 . O .
+2 X O .
+3 X O X
+>>> winner(board_03)
+'O'
+>>> full(board_03)
+False
+
+>>> board_04 = [['.', '.', '.'], ['.', '.', '.'], ['.', '.', '.']] # doctest: +NEWCONTEXT
+>>> place(board_04, 'X', 3, 2)
+True
+>>> board_04
+[['.', '.', '.'], ['.', '.', '.'], ['.', 'X', '.']]
+>>> place(board_04, 'O', 7, 7)
+False
+>>> place(board_04, 'O', 3, 1)
+True
+>>> board_04
+[['.', '.', '.'], ['.', '.', '.'], ['O', 'X', '.']]
+>>> place(board_04, 'X', 3, 1)
+False
+>>> place(board_04, 'X', 1, 2)
+True
+>>> board_04
+[['.', 'X', '.'], ['.', '.', '.'], ['O', 'X', '.']]
+>>> place(board_04, 'O', 3, 2)
+False
+>>> place(board_04, 'O', 1, 1)
+True
+>>> board_04
+[['O', 'X', '.'], ['.', '.', '.'], ['O', 'X', '.']]
+>>> place(board_04, 'X', 2, 3)
+True
+>>> board_04
+[['O', 'X', '.'], ['.', '.', 'X'], ['O', 'X', '.']]
+>>> place(board_04, 'O', 1, 0)
+False
+>>> place(board_04, 'O', 2, 2)
+True
+>>> board_04
+[['O', 'X', '.'], ['.', 'O', 'X'], ['O', 'X', '.']]
+>>> place(board_04, 'X', 2, 1)
+True
+>>> board_04
+[['O', 'X', '.'], ['X', 'O', 'X'], ['O', 'X', '.']]
+>>> place(board_04, 'O', 2, 1)
+False
+>>> place(board_04, 'O', 1, 3)
+True
+>>> board_04
+[['O', 'X', 'O'], ['X', 'O', 'X'], ['O', 'X', '.']]
+>>> display_board(board_04) # doctest: +STDOUT
+  1 2 3
+1 O X O
+2 X O X
+3 O X .
+>>> winner(board_04)
+'O'
+>>> full(board_04)
+False
+
+>>> board_05 = [['.', '.', '.'], ['.', '.', '.'], ['.', '.', '.']] # doctest: +NEWCONTEXT
+>>> place(board_05, 'X', 1, 1)
+True
+>>> board_05
+[['X', '.', '.'], ['.', '.', '.'], ['.', '.', '.']]
+>>> place(board_05, 'O', 3, 4)
+False
+>>> place(board_05, 'O', 3, 1)
+True
+>>> board_05
+[['X', '.', '.'], ['.', '.', '.'], ['O', '.', '.']]
+>>> place(board_05, 'X', 1, 3)
+True
+>>> board_05
+[['X', '.', 'X'], ['.', '.', '.'], ['O', '.', '.']]
+>>> place(board_05, 'O', 3, 1)
+False
+>>> place(board_05, 'O', 2, 2)
+True
+>>> board_05
+[['X', '.', 'X'], ['.', 'O', '.'], ['O', '.', '.']]
+>>> place(board_05, 'X', 2, 3)
+True
+>>> board_05
+[['X', '.', 'X'], ['.', 'O', 'X'], ['O', '.', '.']]
+>>> place(board_05, 'O', 1, 1)
+False
+>>> place(board_05, 'O', 2, 1)
+True
+>>> board_05
+[['X', '.', 'X'], ['O', 'O', 'X'], ['O', '.', '.']]
+>>> place(board_05, 'X', 2, 1)
+False
+>>> place(board_05, 'X', 1, 2)
+True
+>>> board_05
+[['X', 'X', 'X'], ['O', 'O', 'X'], ['O', '.', '.']]
+>>> display_board(board_05) # doctest: +STDOUT
+  1 2 3
+1 X X X
+2 O O X
+3 O . .
+>>> winner(board_05)
+'X'
+>>> full(board_05)
+False
+
+>>> board_06 = [['.', '.', '.'], ['.', '.', '.'], ['.', '.', '.']] # doctest: +NEWCONTEXT
+>>> place(board_06, 'X', 3, 2)
+True
+>>> board_06
+[['.', '.', '.'], ['.', '.', '.'], ['.', 'X', '.']]
+>>> place(board_06, 'O', 4, 2)
+False
+>>> place(board_06, 'O', 3, 1)
+True
+>>> board_06
+[['.', '.', '.'], ['.', '.', '.'], ['O', 'X', '.']]
+>>> place(board_06, 'X', 2, 3)
+True
+>>> board_06
+[['.', '.', '.'], ['.', '.', 'X'], ['O', 'X', '.']]
+>>> place(board_06, 'O', 3, 1)
+False
+>>> place(board_06, 'O', 1, 1)
+True
+>>> board_06
+[['O', '.', '.'], ['.', '.', 'X'], ['O', 'X', '.']]
+>>> place(board_06, 'X', 3, 1)
+False
+>>> place(board_06, 'X', 3, 3)
+True
+>>> board_06
+[['O', '.', '.'], ['.', '.', 'X'], ['O', 'X', 'X']]
+>>> place(board_06, 'O', 1, 2)
+True
+>>> board_06
+[['O', 'O', '.'], ['.', '.', 'X'], ['O', 'X', 'X']]
+>>> place(board_06, 'X', 2, 2)
+True
+>>> board_06
+[['O', 'O', '.'], ['.', 'X', 'X'], ['O', 'X', 'X']]
+>>> place(board_06, 'O', 3, 4)
+False
+>>> place(board_06, 'O', 1, 3)
+True
+>>> board_06
+[['O', 'O', 'O'], ['.', 'X', 'X'], ['O', 'X', 'X']]
+>>> display_board(board_06) # doctest: +STDOUT
+  1 2 3
+1 O O O
+2 . X X
+3 O X X
+>>> winner(board_06)
+'O'
+>>> full(board_06)
+False
+
+>>> board_07 = [['.', '.', '.'], ['.', '.', '.'], ['.', '.', '.']] # doctest: +NEWCONTEXT
+>>> place(board_07, 'X', 2, 2)
+True
+>>> board_07
+[['.', '.', '.'], ['.', 'X', '.'], ['.', '.', '.']]
+>>> place(board_07, 'O', 2, 2)
+False
+>>> place(board_07, 'O', 2, 1)
+True
+>>> board_07
+[['.', '.', '.'], ['O', 'X', '.'], ['.', '.', '.']]
+>>> place(board_07, 'X', 3, 3)
+True
+>>> board_07
+[['.', '.', '.'], ['O', 'X', '.'], ['.', '.', 'X']]
+>>> place(board_07, 'O', 1, 1)
+True
+>>> board_07
+[['O', '.', '.'], ['O', 'X', '.'], ['.', '.', 'X']]
+>>> place(board_07, 'X', 2, 1)
+False
+>>> place(board_07, 'X', 2, 3)
+True
+>>> board_07
+[['O', '.', '.'], ['O', 'X', 'X'], ['.', '.', 'X']]
+>>> place(board_07, 'O', 3, 2)
+True
+>>> board_07
+[['O', '.', '.'], ['O', 'X', 'X'], ['.', 'O', 'X']]
+>>> place(board_07, 'X', 3, 3)
+False
+>>> place(board_07, 'X', 1, 2)
+True
+>>> board_07
+[['O', 'X', '.'], ['O', 'X', 'X'], ['.', 'O', 'X']]
+>>> place(board_07, 'O', 3, 3)
+False
+>>> place(board_07, 'O', 1, 3)
+True
+>>> board_07
+[['O', 'X', 'O'], ['O', 'X', 'X'], ['.', 'O', 'X']]
+>>> place(board_07, 'X', 2, 2)
+False
+>>> place(board_07, 'X', 3, 1)
+True
+>>> board_07
+[['O', 'X', 'O'], ['O', 'X', 'X'], ['X', 'O', 'X']]
+>>> display_board(board_07) # doctest: +STDOUT
+  1 2 3
+1 O X O
+2 O X X
+3 X O X
+>>> winner(board_07)
+>>> full(board_07)
+True
+
+>>> board_08 = [['.', '.', '.'], ['.', '.', '.'], ['.', '.', '.']] # doctest: +NEWCONTEXT
+>>> place(board_08, 'X', 2, 3)
+True
+>>> board_08
+[['.', '.', '.'], ['.', '.', 'X'], ['.', '.', '.']]
+>>> place(board_08, 'O', 2, 2)
+True
+>>> board_08
+[['.', '.', '.'], ['.', 'O', 'X'], ['.', '.', '.']]
+>>> place(board_08, 'X', 3, 2)
+True
+>>> board_08
+[['.', '.', '.'], ['.', 'O', 'X'], ['.', 'X', '.']]
+>>> place(board_08, 'O', 2, 3)
+False
+>>> place(board_08, 'O', 2, 1)
+True
+>>> board_08
+[['.', '.', '.'], ['O', 'O', 'X'], ['.', 'X', '.']]
+>>> place(board_08, 'X', 2, -3)
+False
+>>> place(board_08, 'X', 1, 2)
+True
+>>> board_08
+[['.', 'X', '.'], ['O', 'O', 'X'], ['.', 'X', '.']]
+>>> place(board_08, 'O', 3, 3)
+True
+>>> board_08
+[['.', 'X', '.'], ['O', 'O', 'X'], ['.', 'X', 'O']]
+>>> place(board_08, 'X', 2, 3)
+False
+>>> place(board_08, 'X', 1, 1)
+True
+>>> board_08
+[['X', 'X', '.'], ['O', 'O', 'X'], ['.', 'X', 'O']]
+>>> place(board_08, 'O', 1, 3)
+True
+>>> board_08
+[['X', 'X', 'O'], ['O', 'O', 'X'], ['.', 'X', 'O']]
+>>> place(board_08, 'X', 0, 0)
+False
+>>> place(board_08, 'X', 3, 1)
+True
+>>> board_08
+[['X', 'X', 'O'], ['O', 'O', 'X'], ['X', 'X', 'O']]
+>>> display_board(board_08) # doctest: +STDOUT
+  1 2 3
+1 X X O
+2 O O X
+3 X X O
+>>> winner(board_08)
+>>> full(board_08)
+True
+
+>>> board_09 = [['.', '.', '.'], ['.', '.', '.'], ['.', '.', '.']] # doctest: +NEWCONTEXT
+>>> place(board_09, 'X', 3, 3)
+True
+>>> board_09
+[['.', '.', '.'], ['.', '.', '.'], ['.', '.', 'X']]
+>>> place(board_09, 'O', 3, 1)
+True
+>>> board_09
+[['.', '.', '.'], ['.', '.', '.'], ['O', '.', 'X']]
+>>> place(board_09, 'X', 3, 3)
+False
+>>> place(board_09, 'X', 1, 3)
+True
+>>> board_09
+[['.', '.', 'X'], ['.', '.', '.'], ['O', '.', 'X']]
+>>> place(board_09, 'O', 1, 3)
+False
+>>> place(board_09, 'O', 2, 2)
+True
+>>> board_09
+[['.', '.', 'X'], ['.', 'O', '.'], ['O', '.', 'X']]
+>>> place(board_09, 'X', 2, 2)
+False
+>>> place(board_09, 'X', 2, 1)
+True
+>>> board_09
+[['.', '.', 'X'], ['X', 'O', '.'], ['O', '.', 'X']]
+>>> place(board_09, 'O', 2, 3)
+True
+>>> board_09
+[['.', '.', 'X'], ['X', 'O', 'O'], ['O', '.', 'X']]
+>>> place(board_09, 'X', 3, 2)
+True
+>>> board_09
+[['.', '.', 'X'], ['X', 'O', 'O'], ['O', 'X', 'X']]
+>>> place(board_09, 'O', 1, 0)
+False
+>>> place(board_09, 'O', 1, 1)
+True
+>>> board_09
+[['O', '.', 'X'], ['X', 'O', 'O'], ['O', 'X', 'X']]
+>>> place(board_09, 'X', 1, 2)
+True
+>>> board_09
+[['O', 'X', 'X'], ['X', 'O', 'O'], ['O', 'X', 'X']]
+>>> display_board(board_09) # doctest: +STDOUT
+  1 2 3
+1 O X X
+2 X O O
+3 O X X
+>>> winner(board_09)
+>>> full(board_09)
+True
+
+>>> board_10 = [['.', '.', '.'], ['.', '.', '.'], ['.', '.', '.']] # doctest: +NEWCONTEXT
+>>> place(board_10, 'X', 2, 1)
+True
+>>> board_10
+[['.', '.', '.'], ['X', '.', '.'], ['.', '.', '.']]
+>>> place(board_10, 'O', 1, 3)
+True
+>>> board_10
+[['.', '.', 'O'], ['X', '.', '.'], ['.', '.', '.']]
+>>> place(board_10, 'X', 3, 3)
+True
+>>> board_10
+[['.', '.', 'O'], ['X', '.', '.'], ['.', '.', 'X']]
+>>> place(board_10, 'O', 3, 2)
+True
+>>> board_10
+[['.', '.', 'O'], ['X', '.', '.'], ['.', 'O', 'X']]
+>>> place(board_10, 'X', 1, 0)
+False
+>>> place(board_10, 'X', 1, 1)
+True
+>>> board_10
+[['X', '.', 'O'], ['X', '.', '.'], ['.', 'O', 'X']]
+>>> place(board_10, 'O', 3, 1)
+True
+>>> board_10
+[['X', '.', 'O'], ['X', '.', '.'], ['O', 'O', 'X']]
+>>> place(board_10, 'X', 1, 2)
+True
+>>> board_10
+[['X', 'X', 'O'], ['X', '.', '.'], ['O', 'O', 'X']]
+>>> place(board_10, 'O', 7, 7)
+False
+>>> place(board_10, 'O', 2, 3)
+True
+>>> board_10
+[['X', 'X', 'O'], ['X', '.', 'O'], ['O', 'O', 'X']]
+>>> place(board_10, 'X', 2, 2)
+True
+>>> board_10
+[['X', 'X', 'O'], ['X', 'X', 'O'], ['O', 'O', 'X']]
+>>> display_board(board_10) # doctest: +STDOUT
+  1 2 3
+1 X X O
+2 X X O
+3 O O X
+>>> winner(board_10)
+'X'
+>>> full(board_10)
+True
+
+>>> board_11 = [['.', '.', '.'], ['.', '.', '.'], ['.', '.', '.']] # doctest: +NEWCONTEXT
+>>> place(board_11, 'X', 1, 2)
+True
+>>> board_11
+[['.', 'X', '.'], ['.', '.', '.'], ['.', '.', '.']]
+>>> place(board_11, 'O', 1, 2)
+False
+>>> place(board_11, 'O', 2, 2)
+True
+>>> board_11
+[['.', 'X', '.'], ['.', 'O', '.'], ['.', '.', '.']]
+>>> place(board_11, 'X', -1, 2)
+False
+>>> place(board_11, 'X', 2, 1)
+True
+>>> board_11
+[['.', 'X', '.'], ['X', 'O', '.'], ['.', '.', '.']]
+>>> place(board_11, 'O', 3, 2)
+True
+>>> board_11
+[['.', 'X', '.'], ['X', 'O', '.'], ['.', 'O', '.']]
+>>> place(board_11, 'X', 2, 1)
+False
+>>> place(board_11, 'X', 3, 1)
+True
+>>> board_11
+[['.', 'X', '.'], ['X', 'O', '.'], ['X', 'O', '.']]
+>>> place(board_11, 'O', 1, 3)
+True
+>>> board_11
+[['.', 'X', 'O'], ['X', 'O', '.'], ['X', 'O', '.']]
+>>> place(board_11, 'X', 1, 0)
+False
+>>> place(board_11, 'X', 3, 3)
+True
+>>> board_11
+[['.', 'X', 'O'], ['X', 'O', '.'], ['X', 'O', 'X']]
+>>> place(board_11, 'O', 2, 3)
+True
+>>> board_11
+[['.', 'X', 'O'], ['X', 'O', 'O'], ['X', 'O', 'X']]
+>>> place(board_11, 'X', 0, 0)
+False
+>>> place(board_11, 'X', 1, 1)
+True
+>>> board_11
+[['X', 'X', 'O'], ['X', 'O', 'O'], ['X', 'O', 'X']]
+>>> display_board(board_11) # doctest: +STDOUT
+  1 2 3
+1 X X O
+2 X O O
+3 X O X
+>>> winner(board_11)
+'X'
+>>> full(board_11)
+True
+
+>>> board_12 = [['.', '.', '.'], ['.', '.', '.'], ['.', '.', '.']] # doctest: +NEWCONTEXT
+>>> place(board_12, 'X', 3, 2)
+True
+>>> board_12
+[['.', '.', '.'], ['.', '.', '.'], ['.', 'X', '.']]
+>>> place(board_12, 'O', 2, -3)
+False
+>>> place(board_12, 'O', 3, 3)
+True
+>>> board_12
+[['.', '.', '.'], ['.', '.', '.'], ['.', 'X', 'O']]
+>>> place(board_12, 'X', 2, 1)
+True
+>>> board_12
+[['.', '.', '.'], ['X', '.', '.'], ['.', 'X', 'O']]
+>>> place(board_12, 'O', 2, 1)
+False
+>>> place(board_12, 'O', 2, 2)
+True
+>>> board_12
+[['.', '.', '.'], ['X', 'O', '.'], ['.', 'X', 'O']]
+>>> place(board_12, 'X', 2, 2)
+False
+>>> place(board_12, 'X', 1, 2)
+True
+>>> board_12
+[['.', 'X', '.'], ['X', 'O', '.'], ['.', 'X', 'O']]
+>>> place(board_12, 'O', 1, 3)
+True
+>>> board_12
+[['.', 'X', 'O'], ['X', 'O', '.'], ['.', 'X', 'O']]
+>>> place(board_12, 'X', 3, 3)
+False
+>>> place(board_12, 'X', 2, 3)
+True
+>>> board_12
+[['.', 'X', 'O'], ['X', 'O', 'X'], ['.', 'X', 'O']]
+>>> place(board_12, 'O', 1, 1)
+True
+>>> board_12
+[['O', 'X', 'O'], ['X', 'O', 'X'], ['.', 'X', 'O']]
+>>> display_board(board_12) # doctest: +STDOUT
+  1 2 3
+1 O X O
+2 X O X
+3 . X O
+>>> winner(board_12)
+'O'
+>>> full(board_12)
+False
+
+>>> board_13 = [['.', '.', '.'], ['.', '.', '.'], ['.', '.', '.']] # doctest: +NEWCONTEXT
+>>> place(board_13, 'X', 3, 2)
+True
+>>> board_13
+[['.', '.', '.'], ['.', '.', '.'], ['.', 'X', '.']]
+>>> place(board_13, 'O', 0, 1)
+False
+>>> place(board_13, 'O', 3, 1)
+True
+>>> board_13
+[['.', '.', '.'], ['.', '.', '.'], ['O', 'X', '.']]
+>>> place(board_13, 'X', 4, 2)
+False
+>>> place(board_13, 'X', 1, 2)
+True
+>>> board_13
+[['.', 'X', '.'], ['.', '.', '.'], ['O', 'X', '.']]
+>>> place(board_13, 'O', 3, 1)
+False
+>>> place(board_13, 'O', 1, 1)
+True
+>>> board_13
+[['O', 'X', '.'], ['.', '.', '.'], ['O', 'X', '.']]
+>>> place(board_13, 'X', 1, 1)
+False
+>>> place(board_13, 'X', 2, 3)
+True
+>>> board_13
+[['O', 'X', '.'], ['.', '.', 'X'], ['O', 'X', '.']]
+>>> place(board_13, 'O', 3, 2)
+False
+>>> place(board_13, 'O', 2, 1)
+True
+>>> board_13
+[['O', 'X', '.'], ['O', '.', 'X'], ['O', 'X', '.']]
+>>> display_board(board_13) # doctest: +STDOUT
+  1 2 3
+1 O X .
+2 O . X
+3 O X .
+>>> winner(board_13)
+'O'
+>>> full(board_13)
+False
+
+>>> board_14 = [['.', '.', '.'], ['.', '.', '.'], ['.', '.', '.']] # doctest: +NEWCONTEXT
+>>> place(board_14, 'X', 2, 1)
+True
+>>> board_14
+[['.', '.', '.'], ['X', '.', '.'], ['.', '.', '.']]
+>>> place(board_14, 'O', 2, 2)
+True
+>>> board_14
+[['.', '.', '.'], ['X', 'O', '.'], ['.', '.', '.']]
+>>> place(board_14, 'X', 3, 2)
+True
+>>> board_14
+[['.', '.', '.'], ['X', 'O', '.'], ['.', 'X', '.']]
+>>> place(board_14, 'O', 2, 2)
+False
+>>> place(board_14, 'O', 3, 1)
+True
+>>> board_14
+[['.', '.', '.'], ['X', 'O', '.'], ['O', 'X', '.']]
+>>> place(board_14, 'X', 1, 2)
+True
+>>> board_14
+[['.', 'X', '.'], ['X', 'O', '.'], ['O', 'X', '.']]
+>>> place(board_14, 'O', 7, 7)
+False
+>>> place(board_14, 'O', 2, 3)
+True
+>>> board_14
+[['.', 'X', '.'], ['X', 'O', 'O'], ['O', 'X', '.']]
+>>> place(board_14, 'X', 3, 3)
+True
+>>> board_14
+[['.', 'X', '.'], ['X', 'O', 'O'], ['O', 'X', 'X']]
+>>> place(board_14, 'O', 2, -3)
+False
+>>> place(board_14, 'O', 1, 3)
+True
+>>> board_14
+[['.', 'X', 'O'], ['X', 'O', 'O'], ['O', 'X', 'X']]
+>>> display_board(board_14) # doctest: +STDOUT
+  1 2 3
+1 . X O
+2 X O O
+3 O X X
+>>> winner(board_14)
+'O'
+>>> full(board_14)
+False
+
+>>> board_15 = [['.', '.', '.'], ['.', '.', '.'], ['.', '.', '.']] # doctest: +NEWCONTEXT
+>>> place(board_15, 'X', 2, 1)
+True
+>>> board_15
+[['.', '.', '.'], ['X', '.', '.'], ['.', '.', '.']]
+>>> place(board_15, 'O', 3, 3)
+True
+>>> board_15
+[['.', '.', '.'], ['X', '.', '.'], ['.', '.', 'O']]
+>>> place(board_15, 'X', 3, 3)
+False
+>>> place(board_15, 'X', 3, 2)
+True
+>>> board_15
+[['.', '.', '.'], ['X', '.', '.'], ['.', 'X', 'O']]
+>>> place(board_15, 'O', 1, 2)
+True
+>>> board_15
+[['.', 'O', '.'], ['X', '.', '.'], ['.', 'X', 'O']]
+>>> place(board_15, 'X', 0, 1)
+False
+>>> place(board_15, 'X', 3, 1)
+True
+>>> board_15
+[['.', 'O', '.'], ['X', '.', '.'], ['X', 'X', 'O']]
+>>> place(board_15, 'O', 1, 1)
+True
+>>> board_15
+[['O', 'O', '.'], ['X', '.', '.'], ['X', 'X', 'O']]
+>>> place(board_15, 'X', 2, 2)
+True
+>>> board_15
+[['O', 'O', '.'], ['X', 'X', '.'], ['X', 'X', 'O']]
+>>> place(board_15, 'O', 2, 3)
+True
+>>> board_15
+[['O', 'O', '.'], ['X', 'X', 'O'], ['X', 'X', 'O']]
+>>> place(board_15, 'X', 1, 3)
+True
+>>> board_15
+[['O', 'O', 'X'], ['X', 'X', 'O'], ['X', 'X', 'O']]
+>>> display_board(board_15) # doctest: +STDOUT
+  1 2 3
+1 O O X
+2 X X O
+3 X X O
+>>> winner(board_15)
+'X'
+>>> full(board_15)
+True
+

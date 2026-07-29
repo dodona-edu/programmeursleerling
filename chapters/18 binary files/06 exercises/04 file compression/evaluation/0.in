@@ -1,0 +1,30 @@
+>>> compress_file('poem.txt', 'poem.new')
+<FILE name="poem.txt" href="media/workdir/poem.txt" />
+(71, 52)
+
+>>> open('poem.new', 'rb').read() == open('poem.cmp', 'rb').read()
+<FILE name="poem.cmp" href="media/workdir/poem.cmp" />
+True
+
+>>> compress_file('bytes.bin', 'bytes.new')
+<FILE name="bytes.bin" href="media/workdir/bytes.bin" />
+(256, 369)
+
+>>> open('bytes.new', 'rb').read() == open('bytes.cmp', 'rb').read()
+<FILE name="bytes.cmp" href="media/workdir/bytes.cmp" />
+True
+
+>>> compress_file('empty.bin', 'empty.new')
+<FILE name="empty.bin" href="media/workdir/empty.bin" />
+(0, 0)
+
+>>> open('empty.new', 'rb').read()
+b''
+
+>>> compress_file('missing.bin', 'missing.new')
+Traceback (most recent call last):
+AssertionError: input file does not exist
+
+>>> compress_file('poem.txt', 'poem.cmp')
+Traceback (most recent call last):
+AssertionError: output file already exists

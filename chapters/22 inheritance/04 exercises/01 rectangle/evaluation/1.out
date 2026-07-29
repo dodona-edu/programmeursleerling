@@ -1,0 +1,12 @@
+--------------------------------------------------------
+tab name: Square
+independent examples: false
+<LANGUAGE code="nl">
+    <class from="Rectangle" to="Rechthoek" />
+    <class from="Square" to="Vierkant" />
+    <method from="area" to="oppervlakte" />
+    <method from="circumference" to="omtrek" />
+    <fixed from="w=" to="b=" />
+    <fixed from="rectangle" to="rechthoek" detect="false" />
+    <fixed from="square" to="vierkant" detect="false" />
+</LANGUAGE>

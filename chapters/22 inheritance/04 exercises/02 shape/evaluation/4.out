@@ -1,0 +1,11 @@
+--------------------------------------------------------
+tab name: Polymorphism
+independent examples: false
+<LANGUAGE code="nl">
+    <class from="Shape" to="Vorm" />
+    <class from="Rectangle" to="Rechthoek" />
+    <class from="Square" to="Vierkant" />
+    <class from="Circle" to="Cirkel" />
+    <method from="area" to="oppervlakte" />
+    <method from="circumference" to="omtrek" />
+</LANGUAGE>

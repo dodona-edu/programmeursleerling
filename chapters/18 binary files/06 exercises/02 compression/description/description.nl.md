@@ -60,3 +60,20 @@ Ondanks de lange beschrijving, kan dit programma geschreven worden in
 minder dan 30 regels code, inclusief commentaar, lege regels, en tests.
 
 ![compressie](media/compression.png "compressie"){:width="65%" data-caption="Voorbeeld van compressie."}
+
+### Opgave
+
+Schrijf een functie `comprimeer` waaraan een tekst (`str`) moet doorgegeven worden. De functie moet de gecomprimeerde versie van die tekst teruggeven als een byte string (`bytes`), volgens de hierboven beschreven procedure. Je mag ervan uitgaan dat elk teken van de gegeven tekst een ordinale waarde kleiner dan 256 heeft.
+
+### Voorbeeld
+
+```console?lang=python&prompt=>>>
+>>> comprimeer('Hello, world!')
+b'\x04\x81\xbb@,\xf0wI\xba\x02\x10'
+>>> comprimeer('etaoinshrdlcum ')
+b'\x124Vx\x9a\xbc\xde\xf0'
+>>> comprimeer('QWERTY')
+b'\x05\x10W\x04PR\x05@Y'
+>>> comprimeer('')
+b''
+```
