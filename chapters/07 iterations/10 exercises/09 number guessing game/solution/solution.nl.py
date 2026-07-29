@@ -1,17 +1,28 @@
-# numerieke score inlezen
-numerieke_score = int(input())
+# het te raden getal ligt nog tussen deze twee getallen
+kleinste = 1
+grootste = 1000
 
-# letterscore bepalen
-if numerieke_score >= 90:
-    letterscore = 'A'
-elif numerieke_score >= 80:
-    letterscore = 'B'
-elif numerieke_score >= 70:
-    letterscore = 'C'
-elif numerieke_score >= 60:
-    letterscore = 'D'
+# gokken zolang een getal mogelijk is en het getal niet geraden is
+pogingen = 0
+geraden = False
+while not geraden and kleinste <= grootste:
+
+    # het midden van de getallen die nog mogelijk zijn gokken
+    gok = (kleinste + grootste) // 2
+    pogingen += 1
+    print(f'Is het {gok}?')
+
+    # antwoord van de gebruiker verwerken
+    antwoord = input()
+    if antwoord == 'C':
+        geraden = True
+    elif antwoord == 'L':
+        grootste = gok - 1
+    else:
+        kleinste = gok + 1
+
+# afdrukken hoeveel pogingen er nodig waren, of dat de antwoorden onmogelijk zijn
+if geraden:
+    print(f'Aantal pogingen: {pogingen}')
 else:
-    letterscore = 'F'
-
-# letterscore uitschrijven
-print(letterscore)
+    print('Dat is onmogelijk!')

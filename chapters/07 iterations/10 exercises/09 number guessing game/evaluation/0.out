@@ -1,0 +1,12 @@
+Is it 500?
+Number of attempts: 1
+------------------------------------------------------------
+tab name: Game 1
+python input without prompt: true
+block count: one
+comparison: exact match
+<LANGUAGE code="nl">
+    <fixed from="Number of attempts" to="Aantal pogingen" />
+    <fixed from="That is impossible!" to="Dat is onmogelijk!" />
+    <fixed from="Is it" to="Is het" />
+</LANGUAGE>

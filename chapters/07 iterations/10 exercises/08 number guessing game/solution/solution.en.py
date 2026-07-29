@@ -1,17 +1,25 @@
-# read numeric grade
-numeric_grade = int(input())
+import random
 
-# determine corresponding letter grade
-if numeric_grade >= 90:
-    letter_grade = 'A'
-elif numeric_grade >= 80:
-    letter_grade = 'B'
-elif numeric_grade >= 70:
-    letter_grade = 'C'
-elif numeric_grade >= 60:
-    letter_grade = 'D'
-else:
-    letter_grade = 'F'
+# pick the number that has to be guessed
+number = random.randint(1, 1000)
 
-# print corresponding letter grade
-print(letter_grade)
+# read guesses until the number has been guessed
+attempts = 0
+guessed = False
+while not guessed:
+
+    # read the next guess
+    guess = int(input())
+    attempts += 1
+
+    # tell how the number to guess relates to the guess
+    if number < guess:
+        print('Lower')
+    elif number > guess:
+        print('Higher')
+    else:
+        print('You guessed it!')
+        guessed = True
+
+# report the number of attempts that were needed
+print(f'Number of attempts: {attempts}')

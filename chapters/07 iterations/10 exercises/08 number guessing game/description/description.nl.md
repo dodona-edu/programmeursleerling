@@ -8,24 +8,56 @@ pogingen de gebruiker nodig had om het getal te raden. Voor
 test-doeleinden kan het slim zijn om het te raden getal op het scherm te
 laten zien, totdat je zeker weet dat het programma goed werkt.
 
+{:class="callout callout-warning"}
+> #### Opgelet
+> Alleen de regels die hieronder beschreven staan mogen uitgeschreven worden. Als je tijdens het testen het te raden getal liet afdrukken, haal dat er dan weer uit voor je je oplossing indient.
+
 ### Invoer
 
-Een numerieke score (percentage) voorgesteld als een natuurlijk getal $$s \in [0, 100]$$.
+Een reeks gokken, één geheel getal per regel. Het programma leest enkel gokken
+tot het getal dat het genomen heeft geraden is, de resterende gokken worden dus
+genegeerd.
 
 ### Uitvoer
 
-De letterscore die correspondeert met $$s$$.
+Eén regel voor iedere gok die ingelezen werd:
+
+- `Lager` als het te raden getal lager is dan de gok
+
+- `Hoger` als het te raden getal hoger is dan de gok
+
+- `Je hebt het geraden!` als de gok het te raden getal is
+
+Na de juiste gok nog één laatste regel `Aantal pogingen: n`, waarbij $$n$$ het
+aantal gokken is dat de gebruiker nodig had.
 
 ### Voorbeeld
+
+In deze sessie had het programma het getal 42 genomen.
 
 #### Invoer:
 
 ```
-87
+500
+250
+125
+62
+31
+46
+39
+42
 ```
 
 #### Uitvoer:
 
 ```
-B
+Lager
+Lager
+Lager
+Lager
+Hoger
+Lager
+Hoger
+Je hebt het geraden!
+Aantal pogingen: 8
 ```

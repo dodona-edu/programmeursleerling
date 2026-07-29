@@ -1,0 +1,122 @@
+Higher
+Higher
+Higher
+Higher
+Higher
+Higher
+Higher
+Higher
+Higher
+Higher
+Higher
+Higher
+Higher
+Higher
+Higher
+Higher
+Higher
+Higher
+Higher
+Higher
+Higher
+Higher
+Higher
+Higher
+Higher
+Higher
+Higher
+Higher
+Higher
+Higher
+Higher
+Higher
+Higher
+Higher
+Higher
+Higher
+You guessed it!
+Number of attempts: 37
+------------------------------------------------------------
+tab name: Increasing
+python input without prompt: true
+block count: one
+<LANGUAGE code="nl">
+    <fixed from="You guessed it!" to="Je hebt het geraden!" />
+    <fixed from="Number of attempts" to="Aantal pogingen" />
+    <fixed from="Lower" to="Lager" />
+    <fixed from="Higher" to="Hoger" />
+</LANGUAGE>
+<DEFINITION>
+def customEvaluate(expected_output, generated_output):
+
+    """
+    Checks that the generated output is a consistent reaction to the guesses
+    that were fed to the program, and that it uses the same wording as the
+    sample solution. The number to guess is picked at random by the program
+    itself, so the expected output and the generated output are reactions to
+    the same guesses, but almost always to a different number to guess.
+    """
+
+    # the guesses that were fed to the program, in the order they are read
+    guesses = list(range(1, 1001))
+
+    def analyse(output):
+
+        # the program writes one line for each guess it reads, and ends with a
+        # line that reports the number of attempts
+        lines = [line.rstrip('\n') for line in output]
+        if len(lines) < 2 or len(lines) > len(guesses) + 1:
+            return None
+        responses, report = lines[:-1], lines[-1]
+
+        # the last response announces the correct guess, so the number to
+        # guess must have been the last guess that was read
+        number = guesses[len(responses) - 1]
+
+        # all earlier responses must consistently say lower or higher
+        words = dict(lower=None, higher=None)
+        for guess, response in zip(guesses, responses[:-1]):
+            key = 'lower' if number < guess else 'higher'
+            if words[key] is None:
+                words[key] = response
+            elif words[key] != response:
+                return None
+        words['correct'] = responses[-1]
+        if words['correct'] in (words['lower'], words['higher']):
+            return None
+
+        # the last line must report the number of guesses that were read
+        attempts = str(len(responses))
+        head, found, tail = report.rpartition(attempts)
+        if not found:
+            return None
+        words['report'] = (head, tail)
+
+        return words
+
+    expected = analyse(expected_output)
+    generated = analyse(generated_output)
+    if expected is None or generated is None:
+        return False
+
+    # the number of attempts must be reported as the sample solution reports it
+    if generated['report'] != expected['report']:
+        return False
+
+    # the responses must be worded as the sample solution words them; a
+    # response the sample run did not produce must at least differ from all
+    # responses it did produce
+    for key in ('lower', 'higher', 'correct'):
+        response = generated[key]
+        if response is None:
+            continue
+        if expected[key] is not None:
+            if response != expected[key]:
+                return False
+        elif response in (
+            expected['lower'], expected['higher'], expected['correct']
+        ):
+            return False
+
+    return True
+</DEFINITION>

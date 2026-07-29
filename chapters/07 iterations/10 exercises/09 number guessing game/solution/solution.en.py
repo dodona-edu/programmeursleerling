@@ -1,17 +1,28 @@
-# read numeric grade
-numeric_grade = int(input())
+# the number to guess still lies between these two numbers
+smallest = 1
+largest = 1000
 
-# determine corresponding letter grade
-if numeric_grade >= 90:
-    letter_grade = 'A'
-elif numeric_grade >= 80:
-    letter_grade = 'B'
-elif numeric_grade >= 70:
-    letter_grade = 'C'
-elif numeric_grade >= 60:
-    letter_grade = 'D'
+# guess as long as a number is possible and the number has not been guessed
+attempts = 0
+guessed = False
+while not guessed and smallest <= largest:
+
+    # guess the middle of the numbers that are still possible
+    guess = (smallest + largest) // 2
+    attempts += 1
+    print(f'Is it {guess}?')
+
+    # process the answer of the user
+    answer = input()
+    if answer == 'C':
+        guessed = True
+    elif answer == 'L':
+        largest = guess - 1
+    else:
+        smallest = guess + 1
+
+# report the number of attempts, or that the answers were impossible
+if guessed:
+    print(f'Number of attempts: {attempts}')
 else:
-    letter_grade = 'F'
-
-# print corresponding letter grade
-print(letter_grade)
+    print('That is impossible!')
