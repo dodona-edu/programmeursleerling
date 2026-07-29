@@ -1,0 +1,5 @@
+--------------------------------------------------------
+tab name: factorials
+<LANGUAGE code="nl">
+    <function from="factorials" to="faculteiten" />
+</LANGUAGE>

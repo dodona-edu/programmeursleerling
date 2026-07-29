@@ -1,0 +1,49 @@
+>>> sorted(anagrams(''))
+['']
+
+>>> sorted(anagrams('q'))
+['q']
+
+>>> sorted(anagrams('ab'))
+['ab', 'ba']
+
+>>> sorted(set(anagrams('oo')))
+['oo']
+
+>>> sorted(anagrams('cat'))
+['act', 'atc', 'cat', 'cta', 'tac', 'tca']
+
+>>> sorted(set(anagrams('eve')))
+['eev', 'eve', 'vee']
+
+>>> sorted(set(anagrams('gag')))
+['agg', 'gag', 'gga']
+
+>>> sorted(anagrams('lamp'))
+['almp', 'alpm', 'amlp', 'ampl', 'aplm', 'apml', 'lamp', 'lapm', 'lmap', 'lmpa', 'lpam', 'lpma', 'malp', 'mapl', 'mlap', 'mlpa', 'mpal', 'mpla', 'palm', 'paml', 'plam', 'plma', 'pmal', 'pmla']
+
+>>> sorted(anagrams('monk'))
+['kmno', 'kmon', 'knmo', 'knom', 'komn', 'konm', 'mkno', 'mkon', 'mnko', 'mnok', 'mokn', 'monk', 'nkmo', 'nkom', 'nmko', 'nmok', 'nokm', 'nomk', 'okmn', 'oknm', 'omkn', 'omnk', 'onkm', 'onmk']
+
+>>> sorted(set(anagrams('noon')))
+['nnoo', 'nono', 'noon', 'onno', 'onon', 'oonn']
+
+>>> sorted(set(anagrams('roar')))
+['aorr', 'aror', 'arro', 'oarr', 'orar', 'orra', 'raor', 'raro', 'roar', 'rora', 'rrao', 'rroa']
+
+>>> sorted(anagrams('cider'))
+['cdeir', 'cderi', 'cdier', 'cdire', 'cdrei', 'cdrie', 'cedir', 'cedri', 'ceidr', 'ceird', 'cerdi', 'cerid', 'cider', 'cidre', 'ciedr', 'cierd', 'cirde', 'cired', 'crdei', 'crdie', 'credi', 'creid', 'cride', 'cried', 'dceir', 'dceri', 'dcier', 'dcire', 'dcrei', 'dcrie', 'decir', 'decri', 'deicr', 'deirc', 'derci', 'deric', 'dicer', 'dicre', 'diecr', 'dierc', 'dirce', 'direc', 'drcei', 'drcie', 'dreci', 'dreic', 'drice', 'driec', 'ecdir', 'ecdri', 'ecidr', 'ecird', 'ecrdi', 'ecrid', 'edcir', 'edcri', 'edicr', 'edirc', 'edrci', 'edric', 'eicdr', 'eicrd', 'eidcr', 'eidrc', 'eircd', 'eirdc', 'ercdi', 'ercid', 'erdci', 'erdic', 'ericd', 'eridc', 'icder', 'icdre', 'icedr', 'icerd', 'icrde', 'icred', 'idcer', 'idcre', 'idecr', 'iderc', 'idrce', 'idrec', 'iecdr', 'iecrd', 'iedcr', 'iedrc', 'iercd', 'ierdc', 'ircde', 'irced', 'irdce', 'irdec', 'irecd', 'iredc', 'rcdei', 'rcdie', 'rcedi', 'rceid', 'rcide', 'rcied', 'rdcei', 'rdcie', 'rdeci', 'rdeic', 'rdice', 'rdiec', 'recdi', 'recid', 'redci', 'redic', 'reicd', 'reidc', 'ricde', 'riced', 'ridce', 'ridec', 'riecd', 'riedc']
+
+>>> g = anagrams('ab')
+>>> first = next(g)
+>>> second = next(g)
+>>> sorted([first, second])
+['ab', 'ba']
+
+>>> g = anagrams('a')
+>>> next(g)
+'a'
+>>> next(g)
+Traceback (most recent call last):
+StopIteration
+

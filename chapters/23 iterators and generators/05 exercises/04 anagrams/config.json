@@ -1,8 +1,8 @@
 {
   "description": {
     "names": {
-      "nl": "Anagrammen (TODO)",
-      "en": "Anagrams (TODO)"
+      "nl": "Unieke anagrammen",
+      "en": "Unique anagrams"
     }
   },
   "labels": [

@@ -1,0 +1,59 @@
+>>> sorted(unique_anagrams(""))
+['']
+
+>>> sorted(unique_anagrams("a"))
+['a']
+
+>>> sorted(unique_anagrams("ab"))
+['ab', 'ba']
+
+>>> sorted(unique_anagrams("sss"))
+['sss']
+
+>>> len(list(unique_anagrams("sss")))
+1
+
+>>> sorted(unique_anagrams("aab"))
+['aab', 'aba', 'baa']
+
+>>> len(list(unique_anagrams("aab")))
+3
+
+>>> sorted(unique_anagrams("aab")) == sorted(set(unique_anagrams("aab")))
+True
+
+>>> sorted(unique_anagrams("aaab"))
+['aaab', 'aaba', 'abaa', 'baaa']
+
+>>> len(list(unique_anagrams("aaab")))
+4
+
+>>> sorted(unique_anagrams("noon"))
+['nnoo', 'nono', 'noon', 'onno', 'onon', 'oonn']
+
+>>> len(list(unique_anagrams("noon")))
+6
+
+>>> sorted(unique_anagrams("noon")) == sorted(set(unique_anagrams("noon")))
+True
+
+>>> sorted(unique_anagrams("cat"))
+['act', 'atc', 'cat', 'cta', 'tac', 'tca']
+
+>>> len(list(unique_anagrams("wolf")))
+24
+
+>>> sorted(unique_anagrams("bee"))
+['bee', 'ebe', 'eeb']
+
+>>> g = unique_anagrams("sss")
+>>> next(g)
+'sss'
+
+>>> g = unique_anagrams("a")
+>>> next(g)
+'a'
+>>> next(g)
+Traceback (most recent call last):
+StopIteration
+
