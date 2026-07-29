@@ -1,0 +1,40 @@
+>>> import builtins
+>>> def _mock_input(*values):
+...     _iterator = iter(values)
+...     builtins.input = lambda prompt='': str(next(_iterator))
+
+>>> _mock_input(0)
+>>> main() # doctest: +STDOUT
+Goodbye!
+
+>>> _mock_input(6, 4, 0)
+>>> main() # doctest: +STDOUT
+Multiplication of 6 and 4 gives 24
+Goodbye!
+
+>>> _mock_input(-5, 250, 999, 0)
+>>> main() # doctest: +STDOUT
+The numbers should be between 0 and 1000
+Multiplication of 250 and 999 gives 249750
+Goodbye!
+
+>>> _mock_input(3, 1001, 1000, 0)
+>>> main() # doctest: +STDOUT
+The numbers should be between 0 and 1000
+Multiplication of 3 and 1000 gives 3000
+Goodbye!
+
+>>> _mock_input(4, 8)
+>>> main() # doctest: +STDOUT
+Error: the numbers cannot be dividers
+
+>>> _mock_input(10, 0)
+>>> main() # doctest: +STDOUT
+Goodbye!
+
+>>> _mock_input(2, 9, 5, 7, 0)
+>>> main() # doctest: +STDOUT
+Multiplication of 2 and 9 gives 18
+Multiplication of 5 and 7 gives 35
+Goodbye!
+

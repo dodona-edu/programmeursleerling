@@ -1,0 +1,10 @@
+--------------------------------------------------------
+tab name: main
+<LANGUAGE code="nl">
+    <fixed from="The numbers should be between 0 and 1000" to="De nummers moeten tussen 0 en 1000 liggen" />
+    <fixed from="Error: the numbers cannot be dividers" to="Fout: de nummers mogen geen delers zijn" />
+    <fixed from="Multiplication of" to="Vermenigvuldiging van" />
+    <fixed from=" and " to=" met " detect="false" />
+    <fixed from=" gives " to=" geeft " detect="false" />
+    <fixed from="Goodbye!" to="Tot ziens!" />
+</LANGUAGE>
