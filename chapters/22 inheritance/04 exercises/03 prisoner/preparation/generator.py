@@ -91,28 +91,54 @@ for index, (name, ncalls, lastmoves, increments) in enumerate(scenarios):
     print()
 
 # ---------------------------------------------------------------------
-# tab 2: Random -- overrides choice() using the random module; tested
-# with a fixed seed so the outcomes are reproducible
+# tab 2: Random -- overrides choice() using the random module, and
+# inherits everything else unchanged from Strategy. A strategy that
+# picks its move at random can call the random module in any reasonable
+# way, so seeding the random module and pinning down the exact sequence
+# of moves that follows would reject correct solutions that happen to
+# consume the random stream differently. The shape of the returned
+# moves is checked instead, by a custom output processor.
 # ---------------------------------------------------------------------
+
+# read the custom output processor that checks the return value of choice()
+with open('randomchecker.py', 'r', encoding='utf-8') as handle:
+    CHECKER = handle.read().strip()
+
+DEFINITION = '<DEFINITION>\n{}\n</DEFINITION>\n'.format(CHECKER)
+PROCESSOR = '<OUTPUTPROCESSOR>\nRandomMoveChecker(expected_type=str)\n</OUTPUTPROCESSOR>'
+
 sys.stdout = open(os.path.join('..', 'evaluation', '2.in'), 'w', encoding='utf-8')
 
-seeds_and_names = [(11, 'Rae'), (202, 'Noor'), (37, ''), (9001, 'Kofi'), (555, 'Ida')]
+scenarios = [
+    ('Rae', [('C', 'D')], [6]),
+    ('', [('D', 'D')], [1, 1]),
+    ('Kofi', [], [3]),
+]
 
-for index, (seed, name) in enumerate(seeds_and_names):
+for index, (name, lastmoves, increments) in enumerate(scenarios):
 
     varname = f'gambler_{index + 1:02d}'
-    print(f'>>> random.seed({seed}) # doctest: +NEWCONTEXT')
-    random.seed(seed)
+    obj = test_instantiation(Random, name, varname=varname)
 
-    if name:
-        print(f'>>> {varname} = Random({name!r})')
-        obj = Random(name)
-    else:
-        print(f'>>> {varname} = Random()')
-        obj = Random()
+    test_property(obj, 'name', varname=varname)
+    test_property(obj, 'score', varname=varname)
 
-    for _ in range(5):
-        test_method(obj, 'choice', varname=varname)
+    # Random adds nothing but choice(), so it must remain a Strategy
+    print(f'>>> isinstance({varname}, Strategy)')
+    print(repr(isinstance(obj, Strategy)))
+
+    # the definition of the custom output processor is only needed once,
+    # after which it stays available in the doctest scope
+    processor = (DEFINITION if index == 0 else '') + PROCESSOR
+    test_method(obj, 'choice', varname=varname, processor=processor)
+
+    for mymove, oppmove in lastmoves:
+        test_method(obj, 'lastmove', mymove, oppmove, varname=varname)
+
+    for n in increments:
+        test_method(obj, 'incscore', n, varname=varname)
+
+    test_property(obj, 'score', varname=varname)
 
     print()
 
@@ -203,7 +229,12 @@ for index, (name, opponent_moves) in enumerate(scenarios):
 # of the actual game against each other, driven purely through the
 # common Strategy interface (choice/incscore/lastmove); this exercises
 # polymorphism: the same calling code works correctly regardless of
-# which concrete Strategy subclass is behind strategy1/strategy2
+# which concrete Strategy subclass is behind strategy1/strategy2. Only
+# deterministic strategies are matched up here: pitting Random against
+# another strategy would make the outcome of the match depend on the way
+# a solution happens to consume the random stream, which is exactly what
+# tab 2 avoids. Random playing an actual match adds nothing anyway,
+# since it inherits everything but choice() from Strategy.
 # ---------------------------------------------------------------------
 sys.stdout = open(os.path.join('..', 'evaluation', '6.in'), 'w', encoding='utf-8')
 
@@ -237,24 +268,17 @@ def play_round(varname1, obj1, varname2, obj2):
     print(repr(obj2.score))
 
 matches = [
-    ('TitForTat', 'Tessa', 'AlwaysDefect', 'Aiden', None, 4),
-    ('TitForTwoTats', 'Deon', 'AlwaysDefect', 'Femke', None, 5),
-    ('Random', 'Kai', 'Majority', 'Lina', 4242, 4),
+    ('TitForTat', 'Tessa', 'AlwaysDefect', 'Aiden', 4),
+    ('TitForTwoTats', 'Deon', 'AlwaysDefect', 'Femke', 5),
+    ('Majority', 'Lina', 'AlwaysDefect', 'Kai', 5),
 ]
 
-for varname1_class, name1, varname2_class, name2, seed, rounds in matches:
-
-    if seed is not None:
-        print(f'>>> random.seed({seed}) # doctest: +NEWCONTEXT')
-        random.seed(seed)
-        newcontext = False
-    else:
-        newcontext = True
+for varname1_class, name1, varname2_class, name2, rounds in matches:
 
     varname1 = name1.lower()
     varname2 = name2.lower()
 
-    context = ' # doctest: +NEWCONTEXT' if newcontext else ''
+    context = ' # doctest: +NEWCONTEXT'
     print(f'>>> {varname1} = {varname1_class}({name1!r}){context}')
     obj1 = eval(varname1_class)(name1)
     print(f'>>> {varname2} = {varname2_class}({name2!r})')

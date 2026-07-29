@@ -18,7 +18,8 @@ implement the `lastmove()` method, and extend the `__init__()` method.
 
 Implement the following strategies:
 
--   `Random` just plays COOPERATE or DEFECT at random.
+-   `Random` just plays COOPERATE or DEFECT at random. It does not matter
+    how you pick the move, as long as both moves really can come up.
 
 -   `AlwaysDefect` always plays DEFECT.
 
@@ -31,7 +32,8 @@ Implement the following strategies:
     COOPERATEs.
 
 -   `Majority` starts with COOPERATE, then plays what the opponent
-    played on the majority of the previous moves.
+    played on the majority of the previous moves. If the opponent played
+    COOPERATE and DEFECT equally often, `Majority` plays COOPERATE.
 
 If you want to implement more strategies, be my guest. Test out some of
 the strategies against each other by filling in the assignments for
@@ -83,3 +85,41 @@ for i in range( ROUNDS ):
 print( "End score of", strategy1.name, "is", strategy1.score )
 print( "End score of", strategy2.name, "is", strategy2.score )
 ```
+
+### Example
+
+```console?lang=python&prompt=>>>
+>>> tia = TitForTat('Tia')
+>>> tia.choice()
+'C'
+>>> tia.lastmove('C', 'D')
+>>> tia.choice()
+'D'
+>>> tia.lastmove('C', 'C')
+>>> tia.choice()
+'C'
+>>> tia.incscore(3)
+>>> tia.score
+3
+
+>>> mia = Majority('Mia')
+>>> mia.choice()
+'C'
+>>> mia.lastmove('C', 'D')
+>>> mia.choice()
+'D'
+>>> mia.lastmove('C', 'C')
+>>> mia.choice()
+'C'
+>>> mia.lastmove('C', 'D')
+>>> mia.choice()
+'D'
+
+>>> rae = Random('Rae')
+>>> rae.choice() in (COOPERATE, DEFECT)
+True
+```
+
+The third choice `Mia` makes shows the tie-break: the opponent played
+COOPERATE once and DEFECT once, so there is no majority and `Majority`
+falls back on COOPERATE.

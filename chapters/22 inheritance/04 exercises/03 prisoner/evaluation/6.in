@@ -116,57 +116,68 @@ True
 >>> isinstance(deon, Strategy) and isinstance(femke, Strategy)
 True
 
->>> random.seed(4242) # doctest: +NEWCONTEXT
->>> kai = Random('Kai')
->>> lina = Majority('Lina')
->>> c1 = kai.choice()
->>> c2 = lina.choice()
->>> c1, c2
-('D', 'C')
->>> kai.incscore(6)
->>> lina.incscore(0)
->>> kai.lastmove(c1, c2)
->>> lina.lastmove(c2, c1)
->>> kai.score
-6
->>> lina.score
-0
->>> c1 = kai.choice()
->>> c2 = lina.choice()
+>>> lina = Majority('Lina') # doctest: +NEWCONTEXT
+>>> kai = AlwaysDefect('Kai')
+>>> c1 = lina.choice()
+>>> c2 = kai.choice()
 >>> c1, c2
 ('C', 'D')
->>> kai.incscore(0)
->>> lina.incscore(6)
->>> kai.lastmove(c1, c2)
->>> lina.lastmove(c2, c1)
->>> kai.score
-6
->>> lina.score
-6
->>> c1 = kai.choice()
->>> c2 = lina.choice()
->>> c1, c2
-('C', 'C')
->>> kai.incscore(3)
->>> lina.incscore(3)
->>> kai.lastmove(c1, c2)
->>> lina.lastmove(c2, c1)
->>> kai.score
-9
->>> lina.score
-9
->>> c1 = kai.choice()
->>> c2 = lina.choice()
->>> c1, c2
-('D', 'C')
->>> kai.incscore(6)
 >>> lina.incscore(0)
->>> kai.lastmove(c1, c2)
->>> lina.lastmove(c2, c1)
->>> kai.score
-15
+>>> kai.incscore(6)
+>>> lina.lastmove(c1, c2)
+>>> kai.lastmove(c2, c1)
 >>> lina.score
+0
+>>> kai.score
+6
+>>> c1 = lina.choice()
+>>> c2 = kai.choice()
+>>> c1, c2
+('D', 'D')
+>>> lina.incscore(1)
+>>> kai.incscore(1)
+>>> lina.lastmove(c1, c2)
+>>> kai.lastmove(c2, c1)
+>>> lina.score
+1
+>>> kai.score
+7
+>>> c1 = lina.choice()
+>>> c2 = kai.choice()
+>>> c1, c2
+('D', 'D')
+>>> lina.incscore(1)
+>>> kai.incscore(1)
+>>> lina.lastmove(c1, c2)
+>>> kai.lastmove(c2, c1)
+>>> lina.score
+2
+>>> kai.score
+8
+>>> c1 = lina.choice()
+>>> c2 = kai.choice()
+>>> c1, c2
+('D', 'D')
+>>> lina.incscore(1)
+>>> kai.incscore(1)
+>>> lina.lastmove(c1, c2)
+>>> kai.lastmove(c2, c1)
+>>> lina.score
+3
+>>> kai.score
 9
->>> isinstance(kai, Strategy) and isinstance(lina, Strategy)
+>>> c1 = lina.choice()
+>>> c2 = kai.choice()
+>>> c1, c2
+('D', 'D')
+>>> lina.incscore(1)
+>>> kai.incscore(1)
+>>> lina.lastmove(c1, c2)
+>>> kai.lastmove(c2, c1)
+>>> lina.score
+4
+>>> kai.score
+10
+>>> isinstance(lina, Strategy) and isinstance(kai, Strategy)
 True
 

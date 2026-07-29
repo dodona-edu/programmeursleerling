@@ -18,3 +18,29 @@ class Rechthoek:
     def omtrek( self ):
         return 2*(self.b + self.h)
 ```
+
+### Voorbeeld
+
+```console?lang=python&prompt=>>>
+>>> r = Rechthoek(1, 1, 8, 5)
+>>> r
+[(1,1),b=8,h=5]
+>>> print(r)
+[(1,1),b=8,h=5]
+>>> r.oppervlakte()
+40
+>>> r.omtrek()
+26
+
+>>> v = Vierkant(2, 3, 4)
+>>> v
+[(2,3),b=4,h=4]
+>>> print(v)
+[(2,3),b=4,h=4]
+>>> v.oppervlakte()
+16
+>>> v.omtrek()
+16
+>>> isinstance(v, Rechthoek)
+True
+```

@@ -7,7 +7,6 @@ independent examples: false
     <class from="TitForTwoTats" to="OogOmTweeOgen" />
     <class from="AlwaysDefect" to="AltijdD" />
     <class from="Majority" to="Meerderheid" />
-    <class from="Random" to="Random" />
     <method from="choice" to="keuze" />
     <method from="lastmove" to="laatstezet" />
     <method from="incscore" to="plusscore" />

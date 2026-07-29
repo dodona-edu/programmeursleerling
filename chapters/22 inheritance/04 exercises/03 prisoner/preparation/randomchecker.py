@@ -1,12 +1,3 @@
->>> gambler_01 = Random('Rae') # doctest: +NEWCONTEXT
->>> gambler_01.name
-'Rae'
->>> gambler_01.score
-0
->>> isinstance(gambler_01, Strategy)
-True
->>> gambler_01.choice()
-<DEFINITION>
 class RandomMoveChecker(OutputProcessor):
 
     """
@@ -87,47 +78,3 @@ class RandomMoveChecker(OutputProcessor):
 
         # generated return value passed all tests
         return True
-</DEFINITION>
-<OUTPUTPROCESSOR>
-RandomMoveChecker(expected_type=str)
-</OUTPUTPROCESSOR>
-'D'
->>> gambler_01.lastmove('C', 'D')
->>> gambler_01.incscore(6)
->>> gambler_01.score
-6
-
->>> gambler_02 = Random('') # doctest: +NEWCONTEXT
->>> gambler_02.name
-''
->>> gambler_02.score
-0
->>> isinstance(gambler_02, Strategy)
-True
->>> gambler_02.choice()
-<OUTPUTPROCESSOR>
-RandomMoveChecker(expected_type=str)
-</OUTPUTPROCESSOR>
-'D'
->>> gambler_02.lastmove('D', 'D')
->>> gambler_02.incscore(1)
->>> gambler_02.incscore(1)
->>> gambler_02.score
-2
-
->>> gambler_03 = Random('Kofi') # doctest: +NEWCONTEXT
->>> gambler_03.name
-'Kofi'
->>> gambler_03.score
-0
->>> isinstance(gambler_03, Strategy)
-True
->>> gambler_03.choice()
-<OUTPUTPROCESSOR>
-RandomMoveChecker(expected_type=str)
-</OUTPUTPROCESSOR>
-'D'
->>> gambler_03.incscore(3)
->>> gambler_03.score
-3
-
