@@ -1,0 +1,15 @@
+>>> most_common_letters('mississippi')
+[('i', 4), ('s', 4), ('p', 2), ('m', 1)]
+
+>>> most_common_letters('The quick brown fox jumps over the lazy dog, again and again!')
+[('a', 6), ('o', 4), ('n', 4), ('e', 3), ('i', 3)]
+
+>>> most_common_letters('AaAaBbBcCcC')
+[('a', 4), ('c', 4), ('b', 3)]
+
+>>> most_common_letters('Hello, World! 2024 edition.')
+[('l', 3), ('o', 3), ('e', 2), ('d', 2), ('i', 2)]
+
+>>> most_common_letters('')
+[]
+
