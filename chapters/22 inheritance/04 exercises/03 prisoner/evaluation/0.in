@@ -1,0 +1,66 @@
+>>> strategy_01 = Strategy('Sam') # doctest: +NEWCONTEXT
+>>> strategy_01.name
+'Sam'
+>>> strategy_01.score
+0
+>>> strategy_01.choice()
+NotImplemented
+>>> strategy_01.lastmove('C', 'D')
+>>> strategy_01.incscore(3)
+>>> strategy_01.score
+3
+
+>>> strategy_02 = Strategy() # doctest: +NEWCONTEXT
+>>> strategy_02.name
+''
+>>> strategy_02.score
+0
+>>> strategy_02.choice()
+NotImplemented
+>>> strategy_02.lastmove('D', 'C')
+>>> strategy_02.incscore(1)
+>>> strategy_02.score
+1
+>>> strategy_02.incscore(1)
+>>> strategy_02.score
+2
+>>> strategy_02.incscore(4)
+>>> strategy_02.score
+6
+
+>>> strategy_03 = Strategy('Priya') # doctest: +NEWCONTEXT
+>>> strategy_03.name
+'Priya'
+>>> strategy_03.score
+0
+>>> strategy_03.choice()
+NotImplemented
+>>> strategy_03.lastmove('C', 'D')
+>>> strategy_03.incscore(6)
+>>> strategy_03.score
+6
+>>> strategy_03.incscore(0)
+>>> strategy_03.score
+6
+
+>>> strategy_04 = Strategy('Zoe') # doctest: +NEWCONTEXT
+>>> strategy_04.name
+'Zoe'
+>>> strategy_04.score
+0
+>>> strategy_04.choice()
+NotImplemented
+>>> strategy_04.lastmove('D', 'C')
+>>> strategy_04.incscore(0)
+>>> strategy_04.score
+0
+>>> strategy_04.incscore(3)
+>>> strategy_04.score
+3
+>>> strategy_04.incscore(3)
+>>> strategy_04.score
+6
+>>> strategy_04.incscore(1)
+>>> strategy_04.score
+7
+

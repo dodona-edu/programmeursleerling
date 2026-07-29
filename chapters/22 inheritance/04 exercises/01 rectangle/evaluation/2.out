@@ -1,0 +1,9 @@
+--------------------------------------------------------
+tab name: Polymorphism
+independent examples: false
+<LANGUAGE code="nl">
+    <class from="Rectangle" to="Rechthoek" />
+    <class from="Square" to="Vierkant" />
+    <method from="area" to="oppervlakte" />
+    <method from="circumference" to="omtrek" />
+</LANGUAGE>

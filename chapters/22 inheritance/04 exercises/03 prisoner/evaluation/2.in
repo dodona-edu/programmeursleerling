@@ -1,0 +1,65 @@
+>>> random.seed(11) # doctest: +NEWCONTEXT
+>>> gambler_01 = Random('Rae')
+>>> gambler_01.choice()
+'D'
+>>> gambler_01.choice()
+'D'
+>>> gambler_01.choice()
+'D'
+>>> gambler_01.choice()
+'C'
+>>> gambler_01.choice()
+'C'
+
+>>> random.seed(202) # doctest: +NEWCONTEXT
+>>> gambler_02 = Random('Noor')
+>>> gambler_02.choice()
+'D'
+>>> gambler_02.choice()
+'D'
+>>> gambler_02.choice()
+'D'
+>>> gambler_02.choice()
+'C'
+>>> gambler_02.choice()
+'C'
+
+>>> random.seed(37) # doctest: +NEWCONTEXT
+>>> gambler_03 = Random()
+>>> gambler_03.choice()
+'C'
+>>> gambler_03.choice()
+'C'
+>>> gambler_03.choice()
+'D'
+>>> gambler_03.choice()
+'D'
+>>> gambler_03.choice()
+'C'
+
+>>> random.seed(9001) # doctest: +NEWCONTEXT
+>>> gambler_04 = Random('Kofi')
+>>> gambler_04.choice()
+'C'
+>>> gambler_04.choice()
+'D'
+>>> gambler_04.choice()
+'D'
+>>> gambler_04.choice()
+'C'
+>>> gambler_04.choice()
+'D'
+
+>>> random.seed(555) # doctest: +NEWCONTEXT
+>>> gambler_05 = Random('Ida')
+>>> gambler_05.choice()
+'C'
+>>> gambler_05.choice()
+'D'
+>>> gambler_05.choice()
+'C'
+>>> gambler_05.choice()
+'C'
+>>> gambler_05.choice()
+'C'
+

@@ -1,0 +1,172 @@
+>>> tessa = TitForTat('Tessa') # doctest: +NEWCONTEXT
+>>> aiden = AlwaysDefect('Aiden')
+>>> c1 = tessa.choice()
+>>> c2 = aiden.choice()
+>>> c1, c2
+('C', 'D')
+>>> tessa.incscore(0)
+>>> aiden.incscore(6)
+>>> tessa.lastmove(c1, c2)
+>>> aiden.lastmove(c2, c1)
+>>> tessa.score
+0
+>>> aiden.score
+6
+>>> c1 = tessa.choice()
+>>> c2 = aiden.choice()
+>>> c1, c2
+('D', 'D')
+>>> tessa.incscore(1)
+>>> aiden.incscore(1)
+>>> tessa.lastmove(c1, c2)
+>>> aiden.lastmove(c2, c1)
+>>> tessa.score
+1
+>>> aiden.score
+7
+>>> c1 = tessa.choice()
+>>> c2 = aiden.choice()
+>>> c1, c2
+('D', 'D')
+>>> tessa.incscore(1)
+>>> aiden.incscore(1)
+>>> tessa.lastmove(c1, c2)
+>>> aiden.lastmove(c2, c1)
+>>> tessa.score
+2
+>>> aiden.score
+8
+>>> c1 = tessa.choice()
+>>> c2 = aiden.choice()
+>>> c1, c2
+('D', 'D')
+>>> tessa.incscore(1)
+>>> aiden.incscore(1)
+>>> tessa.lastmove(c1, c2)
+>>> aiden.lastmove(c2, c1)
+>>> tessa.score
+3
+>>> aiden.score
+9
+>>> isinstance(tessa, Strategy) and isinstance(aiden, Strategy)
+True
+
+>>> deon = TitForTwoTats('Deon') # doctest: +NEWCONTEXT
+>>> femke = AlwaysDefect('Femke')
+>>> c1 = deon.choice()
+>>> c2 = femke.choice()
+>>> c1, c2
+('C', 'D')
+>>> deon.incscore(0)
+>>> femke.incscore(6)
+>>> deon.lastmove(c1, c2)
+>>> femke.lastmove(c2, c1)
+>>> deon.score
+0
+>>> femke.score
+6
+>>> c1 = deon.choice()
+>>> c2 = femke.choice()
+>>> c1, c2
+('C', 'D')
+>>> deon.incscore(0)
+>>> femke.incscore(6)
+>>> deon.lastmove(c1, c2)
+>>> femke.lastmove(c2, c1)
+>>> deon.score
+0
+>>> femke.score
+12
+>>> c1 = deon.choice()
+>>> c2 = femke.choice()
+>>> c1, c2
+('D', 'D')
+>>> deon.incscore(1)
+>>> femke.incscore(1)
+>>> deon.lastmove(c1, c2)
+>>> femke.lastmove(c2, c1)
+>>> deon.score
+1
+>>> femke.score
+13
+>>> c1 = deon.choice()
+>>> c2 = femke.choice()
+>>> c1, c2
+('D', 'D')
+>>> deon.incscore(1)
+>>> femke.incscore(1)
+>>> deon.lastmove(c1, c2)
+>>> femke.lastmove(c2, c1)
+>>> deon.score
+2
+>>> femke.score
+14
+>>> c1 = deon.choice()
+>>> c2 = femke.choice()
+>>> c1, c2
+('D', 'D')
+>>> deon.incscore(1)
+>>> femke.incscore(1)
+>>> deon.lastmove(c1, c2)
+>>> femke.lastmove(c2, c1)
+>>> deon.score
+3
+>>> femke.score
+15
+>>> isinstance(deon, Strategy) and isinstance(femke, Strategy)
+True
+
+>>> random.seed(4242) # doctest: +NEWCONTEXT
+>>> kai = Random('Kai')
+>>> lina = Majority('Lina')
+>>> c1 = kai.choice()
+>>> c2 = lina.choice()
+>>> c1, c2
+('D', 'C')
+>>> kai.incscore(6)
+>>> lina.incscore(0)
+>>> kai.lastmove(c1, c2)
+>>> lina.lastmove(c2, c1)
+>>> kai.score
+6
+>>> lina.score
+0
+>>> c1 = kai.choice()
+>>> c2 = lina.choice()
+>>> c1, c2
+('C', 'D')
+>>> kai.incscore(0)
+>>> lina.incscore(6)
+>>> kai.lastmove(c1, c2)
+>>> lina.lastmove(c2, c1)
+>>> kai.score
+6
+>>> lina.score
+6
+>>> c1 = kai.choice()
+>>> c2 = lina.choice()
+>>> c1, c2
+('C', 'C')
+>>> kai.incscore(3)
+>>> lina.incscore(3)
+>>> kai.lastmove(c1, c2)
+>>> lina.lastmove(c2, c1)
+>>> kai.score
+9
+>>> lina.score
+9
+>>> c1 = kai.choice()
+>>> c2 = lina.choice()
+>>> c1, c2
+('D', 'C')
+>>> kai.incscore(6)
+>>> lina.incscore(0)
+>>> kai.lastmove(c1, c2)
+>>> lina.lastmove(c2, c1)
+>>> kai.score
+15
+>>> lina.score
+9
+>>> isinstance(kai, Strategy) and isinstance(lina, Strategy)
+True
+

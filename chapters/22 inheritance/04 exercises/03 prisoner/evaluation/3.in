@@ -1,0 +1,72 @@
+>>> mimic_01 = TitForTat('Tia') # doctest: +NEWCONTEXT
+>>> mimic_01.choice()
+'C'
+>>> mimic_01.lastmove('C', 'D')
+>>> mimic_01.choice()
+'D'
+>>> mimic_01.lastmove('C', 'D')
+>>> mimic_01.choice()
+'D'
+>>> mimic_01.lastmove('C', 'C')
+>>> mimic_01.choice()
+'C'
+>>> mimic_01.incscore(3)
+>>> mimic_01.score
+3
+>>> mimic_01.name
+'Tia'
+
+>>> mimic_02 = TitForTat('Umar') # doctest: +NEWCONTEXT
+>>> mimic_02.choice()
+'C'
+>>> mimic_02.lastmove('C', 'C')
+>>> mimic_02.choice()
+'C'
+>>> mimic_02.lastmove('C', 'D')
+>>> mimic_02.choice()
+'D'
+>>> mimic_02.lastmove('C', 'D')
+>>> mimic_02.choice()
+'D'
+>>> mimic_02.lastmove('C', 'C')
+>>> mimic_02.choice()
+'C'
+>>> mimic_02.incscore(3)
+>>> mimic_02.score
+3
+>>> mimic_02.name
+'Umar'
+
+>>> mimic_03 = TitForTat('') # doctest: +NEWCONTEXT
+>>> mimic_03.choice()
+'C'
+>>> mimic_03.lastmove('C', 'D')
+>>> mimic_03.choice()
+'D'
+>>> mimic_03.lastmove('C', 'C')
+>>> mimic_03.choice()
+'C'
+>>> mimic_03.incscore(3)
+>>> mimic_03.score
+3
+>>> mimic_03.name
+''
+
+>>> mimic_04 = TitForTat('Wren') # doctest: +NEWCONTEXT
+>>> mimic_04.choice()
+'C'
+>>> mimic_04.lastmove('C', 'C')
+>>> mimic_04.choice()
+'C'
+>>> mimic_04.lastmove('C', 'C')
+>>> mimic_04.choice()
+'C'
+>>> mimic_04.lastmove('C', 'D')
+>>> mimic_04.choice()
+'D'
+>>> mimic_04.incscore(3)
+>>> mimic_04.score
+3
+>>> mimic_04.name
+'Wren'
+

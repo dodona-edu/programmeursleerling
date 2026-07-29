@@ -1,0 +1,54 @@
+class Rectangle:
+
+    """
+    >>> r = Rectangle(1, 1, 8, 5)
+    >>> r
+    [(1,1),w=8,h=5]
+    >>> print(r)
+    [(1,1),w=8,h=5]
+    >>> r.area()
+    40
+    >>> r.circumference()
+    26
+    """
+
+    def __init__( self, x, y, w, h ):
+        self.x = x
+        self.y = y
+        self.w = w
+        self.h = h
+    def __repr__( self ):
+        return "[({},{}),w={},h={}]".format( self.x, self.y,
+            self.w, self.h )
+    def area( self ):
+        return self.w * self.h
+    def circumference( self ):
+        return 2*(self.w + self.h)
+
+class Square(Rectangle):
+
+    """
+    A Square is just a Rectangle whose width and height happen to be
+    equal, so it inherits as much as possible from Rectangle: only
+    __init__ needs to be adapted, everything else (repr, area,
+    circumference) is reused unchanged.
+
+    >>> s = Square(2, 3, 4)
+    >>> s
+    [(2,3),w=4,h=4]
+    >>> print(s)
+    [(2,3),w=4,h=4]
+    >>> s.area()
+    16
+    >>> s.circumference()
+    16
+    >>> isinstance(s, Rectangle)
+    True
+    """
+
+    def __init__( self, x, y, side ):
+        Rectangle.__init__( self, x, y, side, side )
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()

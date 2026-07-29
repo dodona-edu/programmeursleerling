@@ -1,0 +1,112 @@
+>>> circle_01 = Circle(0, 0, 3) # doctest: +NEWCONTEXT
+>>> circle_01 # doctest: +REPR
+[(0,0),r=3]
+>>> print(circle_01) # doctest: +STDOUT
+[(0,0),r=3]
+>>> circle_01.area()
+28.274333882308138
+>>> circle_01.circumference()
+18.84955592153876
+>>> isinstance(circle_01, Shape)
+True
+>>> isinstance(circle_01, Rectangle)
+False
+
+>>> circle_02 = Circle(5, -2, 1) # doctest: +NEWCONTEXT
+>>> circle_02 # doctest: +REPR
+[(5,-2),r=1]
+>>> circle_02.circumference()
+6.283185307179586
+>>> isinstance(circle_02, Shape)
+True
+>>> circle_02.area()
+3.141592653589793
+>>> isinstance(circle_02, Rectangle)
+False
+>>> print(circle_02) # doctest: +STDOUT
+[(5,-2),r=1]
+
+>>> circle_03 = Circle(6, -1, 3) # doctest: +NEWCONTEXT
+>>> circle_03.area()
+28.274333882308138
+>>> circle_03 # doctest: +REPR
+[(6,-1),r=3]
+>>> isinstance(circle_03, Shape)
+True
+>>> isinstance(circle_03, Rectangle)
+False
+>>> print(circle_03) # doctest: +STDOUT
+[(6,-1),r=3]
+>>> circle_03.circumference()
+18.84955592153876
+
+>>> circle_04 = Circle(0, -7, 4) # doctest: +NEWCONTEXT
+>>> str(circle_04)
+'[(0,-7),r=4]'
+>>> isinstance(circle_04, Shape)
+True
+>>> isinstance(circle_04, Rectangle)
+False
+>>> circle_04.circumference()
+25.132741228718345
+>>> circle_04 # doctest: +REPR
+[(0,-7),r=4]
+>>> circle_04.area()
+50.26548245743669
+
+>>> circle_05 = Circle(-4, -6, 8) # doctest: +NEWCONTEXT
+>>> print(circle_05) # doctest: +STDOUT
+[(-4,-6),r=8]
+>>> circle_05.area()
+201.06192982974676
+>>> isinstance(circle_05, Shape)
+True
+>>> circle_05.circumference()
+50.26548245743669
+>>> isinstance(circle_05, Rectangle)
+False
+>>> repr(circle_05)
+'[(-4,-6),r=8]'
+
+>>> circle_06 = Circle(-3, 7, 4) # doctest: +NEWCONTEXT
+>>> isinstance(circle_06, Rectangle)
+False
+>>> circle_06.circumference()
+25.132741228718345
+>>> circle_06 # doctest: +REPR
+[(-3,7),r=4]
+>>> isinstance(circle_06, Shape)
+True
+>>> str(circle_06)
+'[(-3,7),r=4]'
+>>> circle_06.area()
+50.26548245743669
+
+>>> circle_07 = Circle(7, -7, 1) # doctest: +NEWCONTEXT
+>>> isinstance(circle_07, Rectangle)
+False
+>>> circle_07.circumference()
+6.283185307179586
+>>> isinstance(circle_07, Shape)
+True
+>>> circle_07.area()
+3.141592653589793
+>>> str(circle_07)
+'[(7,-7),r=1]'
+>>> repr(circle_07)
+'[(7,-7),r=1]'
+
+>>> circle_08 = Circle(7, -3, 6) # doctest: +NEWCONTEXT
+>>> isinstance(circle_08, Rectangle)
+False
+>>> circle_08.area()
+113.09733552923255
+>>> repr(circle_08)
+'[(7,-3),r=6]'
+>>> circle_08.circumference()
+37.69911184307752
+>>> isinstance(circle_08, Shape)
+True
+>>> print(circle_08) # doctest: +STDOUT
+[(7,-3),r=6]
+

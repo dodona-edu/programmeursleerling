@@ -1,0 +1,120 @@
+>>> square_01 = Square(2, 3, 4) # doctest: +NEWCONTEXT
+>>> square_01 # doctest: +REPR
+[(2,3),w=4,h=4]
+>>> print(square_01) # doctest: +STDOUT
+[(2,3),w=4,h=4]
+>>> square_01.area()
+16
+>>> square_01.circumference()
+16
+>>> isinstance(square_01, Rectangle)
+True
+
+>>> square_02 = Square(0, 0, 1) # doctest: +NEWCONTEXT
+>>> square_02.circumference()
+4
+>>> str(square_02)
+'[(0,0),w=1,h=1]'
+>>> repr(square_02)
+'[(0,0),w=1,h=1]'
+>>> isinstance(square_02, Rectangle)
+True
+>>> square_02.area()
+1
+
+>>> square_03 = Square(3, 10, 12) # doctest: +NEWCONTEXT
+>>> isinstance(square_03, Rectangle)
+True
+>>> str(square_03)
+'[(3,10),w=12,h=12]'
+>>> square_03.area()
+144
+>>> square_03.circumference()
+48
+>>> square_03 # doctest: +REPR
+[(3,10),w=12,h=12]
+
+>>> square_04 = Square(7, -5, 1) # doctest: +NEWCONTEXT
+>>> repr(square_04)
+'[(7,-5),w=1,h=1]'
+>>> square_04.area()
+1
+>>> print(square_04) # doctest: +STDOUT
+[(7,-5),w=1,h=1]
+>>> isinstance(square_04, Rectangle)
+True
+>>> square_04.circumference()
+4
+
+>>> square_05 = Square(-5, 5, 10) # doctest: +NEWCONTEXT
+>>> square_05.area()
+100
+>>> print(square_05) # doctest: +STDOUT
+[(-5,5),w=10,h=10]
+>>> isinstance(square_05, Rectangle)
+True
+>>> square_05.circumference()
+40
+>>> repr(square_05)
+'[(-5,5),w=10,h=10]'
+
+>>> square_06 = Square(-7, 6, 8) # doctest: +NEWCONTEXT
+>>> isinstance(square_06, Rectangle)
+True
+>>> print(square_06) # doctest: +STDOUT
+[(-7,6),w=8,h=8]
+>>> repr(square_06)
+'[(-7,6),w=8,h=8]'
+>>> square_06.area()
+64
+>>> square_06.circumference()
+32
+
+>>> square_07 = Square(-8, 6, 9) # doctest: +NEWCONTEXT
+>>> square_07.circumference()
+36
+>>> isinstance(square_07, Rectangle)
+True
+>>> repr(square_07)
+'[(-8,6),w=9,h=9]'
+>>> square_07.area()
+81
+>>> str(square_07)
+'[(-8,6),w=9,h=9]'
+
+>>> square_08 = Square(-3, 8, 10) # doctest: +NEWCONTEXT
+>>> repr(square_08)
+'[(-3,8),w=10,h=10]'
+>>> square_08.circumference()
+40
+>>> square_08.area()
+100
+>>> isinstance(square_08, Rectangle)
+True
+>>> str(square_08)
+'[(-3,8),w=10,h=10]'
+
+>>> square_09 = Square(5, 9, 10) # doctest: +NEWCONTEXT
+>>> print(square_09) # doctest: +STDOUT
+[(5,9),w=10,h=10]
+>>> square_09.area()
+100
+>>> square_09.circumference()
+40
+>>> repr(square_09)
+'[(5,9),w=10,h=10]'
+>>> isinstance(square_09, Rectangle)
+True
+
+>>> square_10 = Square(7, -2, 8) # doctest: +NEWCONTEXT
+>>> square_10 # doctest: +REPR
+[(7,-2),w=8,h=8]
+>>> square_10.circumference()
+32
+>>> isinstance(square_10, Rectangle)
+True
+>>> square_10.area()
+64
+>>> print(square_10) # doctest: +STDOUT
+[(7,-2),w=8,h=8]
+
