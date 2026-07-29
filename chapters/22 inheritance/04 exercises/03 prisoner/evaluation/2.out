@@ -5,4 +5,6 @@ independent examples: false
     <class from="Strategy" to="Strategie" />
     <class from="Random" to="Random" />
     <method from="choice" to="keuze" />
+    <method from="lastmove" to="laatstezet" />
+    <method from="incscore" to="plusscore" />
 </LANGUAGE>

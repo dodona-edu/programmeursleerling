@@ -25,7 +25,8 @@ uitbreiden.
 
 Implementeer de volgende strategieën:
 
--   `Random` speelt COOPERATIE of DEFECTIE per toeval
+-   `Random` speelt COOPERATIE of DEFECTIE per toeval. Het maakt niet uit
+    hoe je de zet kiest, zolang beide zetten er echt uit kunnen komen
 
 -   `AltijdD` speelt altijd DEFECTIE
 
@@ -39,7 +40,9 @@ Implementeer de volgende strategieën:
     rondes, en anders COOPERATIE
 
 -   `Meerderheid` start met COOPERATIE, en speelt dan wat de
-    tegenstander speelde in de meerderheid van de voorgaande rondes
+    tegenstander speelde in de meerderheid van de voorgaande rondes. Als
+    de tegenstander even vaak COOPERATIE als DEFECTIE speelde, dan speelt
+    `Meerderheid` COOPERATIE
 
 Als je nog meer strategieën wilt implementeren, mag dat natuurlijk. Test
 sommige strategieën uit tegen elkaar door ze in te vullen bij de
@@ -91,3 +94,41 @@ for i in range( RONDES ):
 print( "Eind score", strategie1.name, "is", strategie1.score )
 print( "Eind score", strategie2.name, "is", strategie2.score )
 ```
+
+### Voorbeeld
+
+```console?lang=python&prompt=>>>
+>>> tia = OogOmOog('Tia')
+>>> tia.keuze()
+'C'
+>>> tia.laatstezet('C', 'D')
+>>> tia.keuze()
+'D'
+>>> tia.laatstezet('C', 'C')
+>>> tia.keuze()
+'C'
+>>> tia.plusscore(3)
+>>> tia.score
+3
+
+>>> mia = Meerderheid('Mia')
+>>> mia.keuze()
+'C'
+>>> mia.laatstezet('C', 'D')
+>>> mia.keuze()
+'D'
+>>> mia.laatstezet('C', 'C')
+>>> mia.keuze()
+'C'
+>>> mia.laatstezet('C', 'D')
+>>> mia.keuze()
+'D'
+
+>>> rae = Random('Rae')
+>>> rae.keuze() in (COOPERATIE, DEFECTIE)
+True
+```
+
+De derde keuze van `Mia` toont hoe een gelijke stand beslecht wordt: de
+tegenstander speelde één keer COOPERATIE en één keer DEFECTIE, dus is er
+geen meerderheid en valt `Meerderheid` terug op COOPERATIE.
