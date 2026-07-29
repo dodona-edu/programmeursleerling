@@ -1,0 +1,174 @@
+>>> queue_01 = ['apple', 'pear', 'fig'] # doctest: +NEWCONTEXT
+>>> pop(queue_01)
+'apple'
+>>> queue_01
+['pear', 'fig']
+>>> pop(queue_01)
+'pear'
+>>> queue_01
+['fig']
+>>> pop(queue_01)
+'fig'
+>>> queue_01
+[]
+>>> pop(queue_01)
+>>> queue_01
+[]
+
+>>> queue_02 = [] # doctest: +NEWCONTEXT
+>>> pop(queue_02)
+>>> queue_02
+[]
+>>> pop(queue_02)
+>>> queue_02
+[]
+
+>>> queue_03 = ['plum'] # doctest: +NEWCONTEXT
+>>> pop(queue_03)
+'plum'
+>>> queue_03
+[]
+
+>>> queue_04 = ['a', 'b', 'c', 'd', 'e', 'f'] # doctest: +NEWCONTEXT
+>>> pop(queue_04)
+'a'
+>>> queue_04
+['b', 'c', 'd', 'e', 'f']
+>>> pop(queue_04)
+'b'
+>>> queue_04
+['c', 'd', 'e', 'f']
+>>> pop(queue_04)
+'c'
+>>> queue_04
+['d', 'e', 'f']
+
+>>> queue_05 = ['???', '!', 'a?b'] # doctest: +NEWCONTEXT
+>>> pop(queue_05)
+'???'
+>>> queue_05
+['!', 'a?b']
+>>> pop(queue_05)
+'!'
+>>> queue_05
+['a?b']
+>>> pop(queue_05)
+'a?b'
+>>> queue_05
+[]
+>>> pop(queue_05)
+>>> queue_05
+[]
+>>> pop(queue_05)
+>>> queue_05
+[]
+
+>>> queue_06 = ['quince', 'papaya', '42', 'apricot'] # doctest: +NEWCONTEXT
+>>> pop(queue_06)
+'quince'
+>>> queue_06
+['papaya', '42', 'apricot']
+>>> pop(queue_06)
+'papaya'
+>>> queue_06
+['42', 'apricot']
+>>> pop(queue_06)
+'42'
+>>> queue_06
+['apricot']
+>>> pop(queue_06)
+'apricot'
+>>> queue_06
+[]
+
+>>> queue_07 = ['the whole shebang', 'papaya'] # doctest: +NEWCONTEXT
+>>> pop(queue_07)
+'the whole shebang'
+>>> queue_07
+['papaya']
+
+>>> queue_08 = ['papaya', 'apricot'] # doctest: +NEWCONTEXT
+>>> pop(queue_08)
+'papaya'
+>>> queue_08
+['apricot']
+>>> pop(queue_08)
+'apricot'
+>>> queue_08
+[]
+>>> pop(queue_08)
+>>> queue_08
+[]
+>>> pop(queue_08)
+>>> queue_08
+[]
+
+>>> queue_09 = ['Miss Marple', '42', '3.14'] # doctest: +NEWCONTEXT
+>>> pop(queue_09)
+'Miss Marple'
+>>> queue_09
+['42', '3.14']
+>>> pop(queue_09)
+'42'
+>>> queue_09
+['3.14']
+
+>>> queue_10 = ['42'] # doctest: +NEWCONTEXT
+>>> pop(queue_10)
+'42'
+>>> queue_10
+[]
+
+>>> queue_11 = ['papaya', 'a?b', '3.14'] # doctest: +NEWCONTEXT
+>>> pop(queue_11)
+'papaya'
+>>> queue_11
+['a?b', '3.14']
+
+>>> queue_12 = [] # doctest: +NEWCONTEXT
+>>> pop(queue_12)
+>>> queue_12
+[]
+
+>>> queue_13 = ['???', 'the whole shebang', 'Miss Marple'] # doctest: +NEWCONTEXT
+>>> pop(queue_13)
+'???'
+>>> queue_13
+['the whole shebang', 'Miss Marple']
+>>> pop(queue_13)
+'the whole shebang'
+>>> queue_13
+['Miss Marple']
+>>> pop(queue_13)
+'Miss Marple'
+>>> queue_13
+[]
+>>> pop(queue_13)
+>>> queue_13
+[]
+>>> pop(queue_13)
+>>> queue_13
+[]
+
+>>> queue_14 = ['lychee', '!', 'a?b', 'multiple  spaces', 'plum'] # doctest: +NEWCONTEXT
+>>> pop(queue_14)
+'lychee'
+>>> queue_14
+['!', 'a?b', 'multiple  spaces', 'plum']
+>>> pop(queue_14)
+'!'
+>>> queue_14
+['a?b', 'multiple  spaces', 'plum']
+>>> pop(queue_14)
+'a?b'
+>>> queue_14
+['multiple  spaces', 'plum']
+
+>>> queue_15 = [] # doctest: +NEWCONTEXT
+>>> pop(queue_15)
+>>> queue_15
+[]
+>>> pop(queue_15)
+>>> queue_15
+[]
+

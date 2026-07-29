@@ -26,3 +26,41 @@ which has the battleships already placed. Once the rest of the code
 works, add a function that places the battleships at random, at first
 without checking if they are touching one another. Once that works, add
 code that disallows battleships touching each other.
+
+### Assignment
+
+Represent the grid as a list (`list`) of three rows, where each row is a list (`list`) of four strings (`str`): `X` for a cell that hides a battleship, and `.` for an empty cell. A cell of the grid is referred to by a string (`str`) that holds its column letter (`A` up to and including `D`) followed by its row number (`1` up to and including `3`). Write the following four functions, and use them to write the game.
+
+- Write a function `place_ships` that takes no arguments. The function must return a new grid that hides three battleships in three randomly chosen cells. Battleships are not allowed to touch each other horizontally or vertically.
+
+- Write a function `display_grid` that takes a grid. The function must print the grid, preceded by a line that holds the column letters, and with every row preceded by its row number. Separate the cells of a row by a single space.
+
+- Write a function `ships` that takes a grid. The function must return how many battleships the grid still hides.
+
+- Write a function `shoot` that takes a grid and a cell. If the given cell hides a battleship, then the function must remove that battleship from the grid and return the string `You sunk my battleship!`. Otherwise, the function must return the string `Miss!`. If the given cell is not on the grid, then the function must raise an `AssertionError` with the message `invalid cell`.
+
+### Example
+
+```console?lang=python&prompt=>>>
+>>> grid = [['.', '.', 'X', '.'], ['X', '.', '.', '.'], ['.', '.', 'X', '.']]
+>>> display_grid(grid)
+  A B C D
+1 . . X .
+2 X . . .
+3 . . X .
+>>> ships(grid)
+3
+>>> shoot(grid, 'C1')
+'You sunk my battleship!'
+>>> shoot(grid, 'C1')
+'Miss!'
+>>> shoot(grid, 'B2')
+'Miss!'
+>>> ships(grid)
+2
+>>> shoot(grid, 'E1')
+Traceback (most recent call last):
+AssertionError: invalid cell
+>>> ships(place_ships())
+3
+```

@@ -1,8 +1,8 @@
 {
   "description": {
     "names": {
-      "nl": "Zeef van Eratosthenes (TODO)",
-      "en": "Sieve of Eratosthenes (TODO)"
+      "nl": "Zeef van Eratosthenes",
+      "en": "Sieve of Eratosthenes"
     }
   },
   "labels": [

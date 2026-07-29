@@ -1,8 +1,8 @@
 {
   "description": {
     "names": {
-      "nl": "Letters tellen (TODO)",
-      "en": "Counting letters (TODO)"
+      "nl": "Letters tellen",
+      "en": "Counting letters"
     }
   },
   "labels": [

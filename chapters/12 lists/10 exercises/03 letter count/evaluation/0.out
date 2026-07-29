@@ -1,0 +1,5 @@
+--------------------------------------------------------
+tab name: letter_count
+<LANGUAGE code="nl">
+    <function from="letter_count" to="tel_letters" />
+</LANGUAGE>

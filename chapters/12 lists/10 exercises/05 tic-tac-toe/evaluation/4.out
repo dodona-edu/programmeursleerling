@@ -1,0 +1,9 @@
+--------------------------------------------------------
+tab name: place
+independent examples: false
+<LANGUAGE code="nl">
+    <function from="display_board" to="toon_bord" />
+    <function from="winner" to="winnaar" />
+    <function from="full" to="vol" />
+    <function from="place" to="plaats" />
+</LANGUAGE>

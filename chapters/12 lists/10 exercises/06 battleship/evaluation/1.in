@@ -1,0 +1,120 @@
+>>> display_grid([['.', '.', '.', '.'], ['.', '.', '.', '.'], ['.', '.', '.', '.']]) # doctest: +STDOUT
+  A B C D
+1 . . . .
+2 . . . .
+3 . . . .
+
+>>> display_grid([['.', '.', 'X', '.'], ['X', '.', '.', '.'], ['.', '.', 'X', '.']]) # doctest: +STDOUT
+  A B C D
+1 . . X .
+2 X . . .
+3 . . X .
+
+>>> display_grid([['X', 'X', 'X', 'X'], ['.', '.', '.', '.'], ['.', '.', '.', '.']]) # doctest: +STDOUT
+  A B C D
+1 X X X X
+2 . . . .
+3 . . . .
+
+>>> display_grid([['.', '.', '.', '.'], ['.', '.', '.', '.'], ['.', '.', '.', 'X']]) # doctest: +STDOUT
+  A B C D
+1 . . . .
+2 . . . .
+3 . . . X
+
+>>> display_grid([['X', 'X', 'X', 'X'], ['X', 'X', 'X', 'X'], ['X', 'X', 'X', 'X']]) # doctest: +STDOUT
+  A B C D
+1 X X X X
+2 X X X X
+3 X X X X
+
+>>> display_grid([['.', '.', '.', '.'], ['X', '.', 'X', 'X'], ['.', 'X', 'X', '.']]) # doctest: +STDOUT
+  A B C D
+1 . . . .
+2 X . X X
+3 . X X .
+
+>>> display_grid([['.', '.', '.', '.'], ['.', 'X', 'X', 'X'], ['X', '.', '.', '.']]) # doctest: +STDOUT
+  A B C D
+1 . . . .
+2 . X X X
+3 X . . .
+
+>>> display_grid([['X', '.', '.', 'X'], ['X', '.', '.', '.'], ['.', 'X', 'X', '.']]) # doctest: +STDOUT
+  A B C D
+1 X . . X
+2 X . . .
+3 . X X .
+
+>>> display_grid([['X', '.', 'X', '.'], ['.', '.', '.', '.'], ['.', 'X', '.', 'X']]) # doctest: +STDOUT
+  A B C D
+1 X . X .
+2 . . . .
+3 . X . X
+
+>>> display_grid([['.', 'X', '.', '.'], ['X', 'X', '.', 'X'], ['.', '.', 'X', '.']]) # doctest: +STDOUT
+  A B C D
+1 . X . .
+2 X X . X
+3 . . X .
+
+>>> display_grid([['.', '.', '.', '.'], ['.', 'X', 'X', '.'], ['.', '.', '.', '.']]) # doctest: +STDOUT
+  A B C D
+1 . . . .
+2 . X X .
+3 . . . .
+
+>>> display_grid([['X', 'X', '.', '.'], ['.', '.', 'X', '.'], ['.', 'X', '.', 'X']]) # doctest: +STDOUT
+  A B C D
+1 X X . .
+2 . . X .
+3 . X . X
+
+>>> display_grid([['.', '.', '.', '.'], ['X', '.', 'X', 'X'], ['X', '.', '.', '.']]) # doctest: +STDOUT
+  A B C D
+1 . . . .
+2 X . X X
+3 X . . .
+
+>>> display_grid([['X', '.', '.', 'X'], ['X', '.', '.', 'X'], ['.', 'X', '.', '.']]) # doctest: +STDOUT
+  A B C D
+1 X . . X
+2 X . . X
+3 . X . .
+
+>>> display_grid([['X', 'X', '.', 'X'], ['X', '.', '.', '.'], ['.', '.', '.', 'X']]) # doctest: +STDOUT
+  A B C D
+1 X X . X
+2 X . . .
+3 . . . X
+
+>>> display_grid([['.', '.', '.', 'X'], ['.', '.', '.', 'X'], ['.', '.', '.', '.']]) # doctest: +STDOUT
+  A B C D
+1 . . . X
+2 . . . X
+3 . . . .
+
+>>> display_grid([['.', '.', 'X', 'X'], ['.', 'X', '.', '.'], ['X', '.', 'X', '.']]) # doctest: +STDOUT
+  A B C D
+1 . . X X
+2 . X . .
+3 X . X .
+
+>>> display_grid([['.', 'X', '.', '.'], ['.', 'X', 'X', '.'], ['X', '.', 'X', '.']]) # doctest: +STDOUT
+  A B C D
+1 . X . .
+2 . X X .
+3 X . X .
+
+>>> display_grid([['.', '.', '.', 'X'], ['X', '.', 'X', '.'], ['X', '.', '.', '.']]) # doctest: +STDOUT
+  A B C D
+1 . . . X
+2 X . X .
+3 X . . .
+
+>>> display_grid([['.', '.', '.', '.'], ['.', '.', '.', '.'], ['.', 'X', '.', '.']]) # doctest: +STDOUT
+  A B C D
+1 . . . .
+2 . . . .
+3 . X . .
+

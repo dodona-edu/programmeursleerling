@@ -1,0 +1,6 @@
+--------------------------------------------------------
+tab name: process
+<LANGUAGE code="nl">
+    <function from="process" to="verwerk" />
+    <fixed from="The queue is empty." to="De queue is leeg." detect="false" />
+</LANGUAGE>

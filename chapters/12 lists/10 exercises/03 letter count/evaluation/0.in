@@ -1,0 +1,486 @@
+>>> letter_count('Hello, World!') # doctest: +STDOUT
+l: 3
+o: 2
+d: 1
+e: 1
+h: 1
+r: 1
+w: 1
+
+>>> letter_count('') # doctest: +STDOUT
+
+>>> letter_count('   ') # doctest: +STDOUT
+
+>>> letter_count('12345 + 67890 = ?') # doctest: +STDOUT
+
+>>> letter_count('z') # doctest: +STDOUT
+z: 1
+
+>>> letter_count('ZzZzZ') # doctest: +STDOUT
+z: 5
+
+>>> letter_count('aA bB cC') # doctest: +STDOUT
+a: 2
+b: 2
+c: 2
+
+>>> letter_count('The quick brown fox jumps over the lazy dog.') # doctest: +STDOUT
+o: 4
+e: 3
+h: 2
+r: 2
+t: 2
+u: 2
+a: 1
+b: 1
+c: 1
+d: 1
+f: 1
+g: 1
+i: 1
+j: 1
+k: 1
+l: 1
+m: 1
+n: 1
+p: 1
+q: 1
+s: 1
+v: 1
+w: 1
+x: 1
+y: 1
+z: 1
+
+>>> letter_count('abcdefghijklmnopqrstuvwxyz') # doctest: +STDOUT
+a: 1
+b: 1
+c: 1
+d: 1
+e: 1
+f: 1
+g: 1
+h: 1
+i: 1
+j: 1
+k: 1
+l: 1
+m: 1
+n: 1
+o: 1
+p: 1
+q: 1
+r: 1
+s: 1
+t: 1
+u: 1
+v: 1
+w: 1
+x: 1
+y: 1
+z: 1
+
+>>> letter_count('Mississippi') # doctest: +STDOUT
+i: 4
+s: 4
+p: 2
+m: 1
+
+>>> letter_count("It's a UNIX system! I know this!") # doctest: +STDOUT
+i: 4
+s: 4
+t: 3
+n: 2
+a: 1
+e: 1
+h: 1
+k: 1
+m: 1
+o: 1
+u: 1
+w: 1
+x: 1
+y: 1
+
+>>> letter_count('A man, a plan, a canal: Panama') # doctest: +STDOUT
+a: 10
+n: 4
+l: 2
+m: 2
+p: 2
+c: 1
+
+>>> letter_count('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx') # doctest: +STDOUT
+x: 37
+
+>>> letter_count('Portez ce vieux whisky au juge blond qui fume') # doctest: +STDOUT
+e: 5
+u: 5
+i: 3
+o: 2
+a: 1
+b: 1
+c: 1
+d: 1
+f: 1
+g: 1
+h: 1
+j: 1
+k: 1
+l: 1
+m: 1
+n: 1
+p: 1
+q: 1
+r: 1
+s: 1
+t: 1
+v: 1
+w: 1
+x: 1
+y: 1
+z: 1
+
+>>> letter_count('Als de kat van huis is, dansen de muizen op tafel.') # doctest: +STDOUT
+a: 5
+e: 5
+n: 4
+s: 4
+d: 3
+i: 3
+l: 2
+t: 2
+u: 2
+f: 1
+h: 1
+k: 1
+m: 1
+o: 1
+p: 1
+v: 1
+z: 1
+
+>>> letter_count('aabbccddee') # doctest: +STDOUT
+a: 2
+b: 2
+c: 2
+d: 2
+e: 2
+
+>>> letter_count('tic-tac-toe') # doctest: +STDOUT
+t: 3
+c: 2
+a: 1
+e: 1
+i: 1
+o: 1
+
+>>> letter_count('3.14159265358979') # doctest: +STDOUT
+
+>>> letter_count('Sphinx of black quartz, judge my vow') # doctest: +STDOUT
+a: 2
+o: 2
+u: 2
+b: 1
+c: 1
+d: 1
+e: 1
+f: 1
+g: 1
+h: 1
+i: 1
+j: 1
+k: 1
+l: 1
+m: 1
+n: 1
+p: 1
+q: 1
+r: 1
+s: 1
+t: 1
+v: 1
+w: 1
+x: 1
+y: 1
+z: 1
+
+>>> letter_count('wxyz WXYZ wxy WX w') # doctest: +STDOUT
+w: 5
+x: 4
+y: 3
+z: 2
+
+>>> letter_count('veniam do incididunt incididunt adipiscing lorem CONSECTETUR VENIAM?') # doctest: +STDOUT
+i: 11
+n: 8
+d: 6
+c: 5
+e: 5
+t: 4
+a: 3
+m: 3
+o: 3
+u: 3
+r: 2
+s: 2
+v: 2
+g: 1
+l: 1
+p: 1
+
+>>> letter_count('labore quis do nostrud lorem UT!') # doctest: +STDOUT
+o: 4
+r: 3
+u: 3
+d: 2
+e: 2
+l: 2
+s: 2
+t: 2
+a: 1
+b: 1
+i: 1
+m: 1
+n: 1
+q: 1
+
+>>> letter_count('do-') # doctest: +STDOUT
+d: 1
+o: 1
+
+>>> letter_count('LABORE sed nostrud elit ENIM tempor elit,') # doctest: +STDOUT
+e: 6
+t: 4
+i: 3
+l: 3
+o: 3
+r: 3
+d: 2
+m: 2
+n: 2
+s: 2
+a: 1
+b: 1
+p: 1
+u: 1
+
+>>> letter_count('tempor eiusmod aliqua aliqua quis VENIAM nostrud enim sed-') # doctest: +STDOUT
+i: 6
+a: 5
+e: 5
+u: 5
+m: 4
+s: 4
+d: 3
+n: 3
+o: 3
+q: 3
+l: 2
+r: 2
+t: 2
+p: 1
+v: 1
+
+>>> letter_count('minim sed aliqua amet SED labore nostrud.') # doctest: +STDOUT
+a: 4
+e: 4
+d: 3
+i: 3
+m: 3
+s: 3
+l: 2
+n: 2
+o: 2
+r: 2
+t: 2
+u: 2
+b: 1
+q: 1
+
+>>> letter_count('lorem adipiscing eiusmod incididunt ADIPISCING!') # doctest: +STDOUT
+i: 10
+d: 5
+n: 4
+c: 3
+s: 3
+a: 2
+e: 2
+g: 2
+m: 2
+o: 2
+p: 2
+u: 2
+l: 1
+r: 1
+t: 1
+
+>>> letter_count('adipiscing labore eiusmod elit SIT-') # doctest: +STDOUT
+i: 6
+e: 3
+s: 3
+a: 2
+d: 2
+l: 2
+o: 2
+t: 2
+b: 1
+c: 1
+g: 1
+m: 1
+n: 1
+p: 1
+r: 1
+u: 1
+
+>>> letter_count('ipsum SIT ut aliqua,') # doctest: +STDOUT
+i: 3
+u: 3
+a: 2
+s: 2
+t: 2
+l: 1
+m: 1
+p: 1
+q: 1
+
+>>> letter_count('elit SIT sed incididunt veniam aliqua MAGNA do,') # doctest: +STDOUT
+i: 7
+a: 5
+d: 4
+n: 4
+e: 3
+t: 3
+l: 2
+m: 2
+s: 2
+u: 2
+c: 1
+g: 1
+o: 1
+q: 1
+v: 1
+
+>>> letter_count('minim minim SED-') # doctest: +STDOUT
+i: 4
+m: 4
+n: 2
+d: 1
+e: 1
+s: 1
+
+>>> letter_count('LOREM incididunt sed INCIDIDUNT elit.') # doctest: +STDOUT
+i: 7
+d: 5
+n: 4
+e: 3
+t: 3
+c: 2
+l: 2
+u: 2
+m: 1
+o: 1
+r: 1
+s: 1
+
+>>> letter_count('consectetur labore QUIS-') # doctest: +STDOUT
+e: 3
+c: 2
+o: 2
+r: 2
+s: 2
+t: 2
+u: 2
+a: 1
+b: 1
+i: 1
+l: 1
+n: 1
+q: 1
+
+>>> letter_count('elit ipsum ') # doctest: +STDOUT
+i: 2
+e: 1
+l: 1
+m: 1
+p: 1
+s: 1
+t: 1
+u: 1
+
+>>> letter_count('labore sit sed.') # doctest: +STDOUT
+e: 2
+s: 2
+a: 1
+b: 1
+d: 1
+i: 1
+l: 1
+o: 1
+r: 1
+t: 1
+
+>>> letter_count('amet ELIT do.') # doctest: +STDOUT
+e: 2
+t: 2
+a: 1
+d: 1
+i: 1
+l: 1
+m: 1
+o: 1
+
+>>> letter_count('sed magna veniam;') # doctest: +STDOUT
+a: 3
+e: 2
+m: 2
+n: 2
+d: 1
+g: 1
+i: 1
+s: 1
+v: 1
+
+>>> letter_count('LABORE ') # doctest: +STDOUT
+a: 1
+b: 1
+e: 1
+l: 1
+o: 1
+r: 1
+
+>>> letter_count('DO elit labore incididunt MAGNA LOREM aliqua.') # doctest: +STDOUT
+a: 5
+i: 5
+l: 4
+d: 3
+e: 3
+n: 3
+o: 3
+m: 2
+r: 2
+t: 2
+u: 2
+b: 1
+c: 1
+g: 1
+q: 1
+
+>>> letter_count('tempor amet TEMPOR VENIAM adipiscing lorem lorem EIUSMOD NOSTRUD?') # doctest: +STDOUT
+e: 7
+m: 7
+o: 6
+i: 5
+r: 5
+t: 4
+a: 3
+d: 3
+n: 3
+p: 3
+s: 3
+l: 2
+u: 2
+c: 1
+g: 1
+v: 1
+

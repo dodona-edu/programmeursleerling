@@ -1,0 +1,1478 @@
+>>> subset_sum([1, 4, -3, -5, 7])
+<DEFINITION>
+class SubsetChecker(OutputProcessor):
+
+    """
+    Checks whether the return value is a non-empty sub-collection of the given
+    list of numbers that adds up to zero. Such a subset is not necessarily
+    unique, so the return value cannot simply be compared to the one produced
+    by the sample solution.
+    """
+
+    def checkReturnValue(self, expected, generated, **kwargs):
+
+        numbers = list(self.getParameter('numbers'))
+
+        def setMessage(message):
+
+            self.addMessage('Error: ' + message)
+            self.setGeneratedOutput(
+                channel='return',
+                output=generated
+            )
+
+        # the subset must be a list of numbers
+        if not isinstance(generated, list):
+            setMessage('the subset must be a list')
+            return False
+
+        # the empty subset adds up to zero, but does not solve the problem
+        if not generated:
+            setMessage('the subset must contain at least one number')
+            return False
+
+        # every number of the subset must be taken from the given list, and no
+        # number can be taken more often than it occurs in the given list
+        remaining = list(numbers)
+        for number in generated:
+            if number not in remaining:
+                setMessage('the subset contains numbers that are not in the given list')
+                return False
+            remaining.remove(number)
+
+        # the numbers of the subset must add up to zero
+        if sum(generated) != 0:
+            setMessage('the numbers of the subset do not add up to zero')
+            return False
+
+        # generated return value passed all tests
+        return True
+</DEFINITION>
+<OUTPUTPROCESSOR>
+SubsetChecker(expected_type=[int], numbers=[1, 4, -3, -5, 7])
+</OUTPUTPROCESSOR>
+[1, 4, -5]
+
+>>> subset_sum([1, 4, -3, 7])
+
+>>> subset_sum([])
+
+>>> subset_sum([0])
+<DEFINITION>
+class SubsetChecker(OutputProcessor):
+
+    """
+    Checks whether the return value is a non-empty sub-collection of the given
+    list of numbers that adds up to zero. Such a subset is not necessarily
+    unique, so the return value cannot simply be compared to the one produced
+    by the sample solution.
+    """
+
+    def checkReturnValue(self, expected, generated, **kwargs):
+
+        numbers = list(self.getParameter('numbers'))
+
+        def setMessage(message):
+
+            self.addMessage('Error: ' + message)
+            self.setGeneratedOutput(
+                channel='return',
+                output=generated
+            )
+
+        # the subset must be a list of numbers
+        if not isinstance(generated, list):
+            setMessage('the subset must be a list')
+            return False
+
+        # the empty subset adds up to zero, but does not solve the problem
+        if not generated:
+            setMessage('the subset must contain at least one number')
+            return False
+
+        # every number of the subset must be taken from the given list, and no
+        # number can be taken more often than it occurs in the given list
+        remaining = list(numbers)
+        for number in generated:
+            if number not in remaining:
+                setMessage('the subset contains numbers that are not in the given list')
+                return False
+            remaining.remove(number)
+
+        # the numbers of the subset must add up to zero
+        if sum(generated) != 0:
+            setMessage('the numbers of the subset do not add up to zero')
+            return False
+
+        # generated return value passed all tests
+        return True
+</DEFINITION>
+<OUTPUTPROCESSOR>
+SubsetChecker(expected_type=[int], numbers=[0])
+</OUTPUTPROCESSOR>
+[0]
+
+>>> subset_sum([13])
+
+>>> subset_sum([-13])
+
+>>> subset_sum([6, -6])
+<DEFINITION>
+class SubsetChecker(OutputProcessor):
+
+    """
+    Checks whether the return value is a non-empty sub-collection of the given
+    list of numbers that adds up to zero. Such a subset is not necessarily
+    unique, so the return value cannot simply be compared to the one produced
+    by the sample solution.
+    """
+
+    def checkReturnValue(self, expected, generated, **kwargs):
+
+        numbers = list(self.getParameter('numbers'))
+
+        def setMessage(message):
+
+            self.addMessage('Error: ' + message)
+            self.setGeneratedOutput(
+                channel='return',
+                output=generated
+            )
+
+        # the subset must be a list of numbers
+        if not isinstance(generated, list):
+            setMessage('the subset must be a list')
+            return False
+
+        # the empty subset adds up to zero, but does not solve the problem
+        if not generated:
+            setMessage('the subset must contain at least one number')
+            return False
+
+        # every number of the subset must be taken from the given list, and no
+        # number can be taken more often than it occurs in the given list
+        remaining = list(numbers)
+        for number in generated:
+            if number not in remaining:
+                setMessage('the subset contains numbers that are not in the given list')
+                return False
+            remaining.remove(number)
+
+        # the numbers of the subset must add up to zero
+        if sum(generated) != 0:
+            setMessage('the numbers of the subset do not add up to zero')
+            return False
+
+        # generated return value passed all tests
+        return True
+</DEFINITION>
+<OUTPUTPROCESSOR>
+SubsetChecker(expected_type=[int], numbers=[6, -6])
+</OUTPUTPROCESSOR>
+[6, -6]
+
+>>> subset_sum([6, 6, -6])
+<DEFINITION>
+class SubsetChecker(OutputProcessor):
+
+    """
+    Checks whether the return value is a non-empty sub-collection of the given
+    list of numbers that adds up to zero. Such a subset is not necessarily
+    unique, so the return value cannot simply be compared to the one produced
+    by the sample solution.
+    """
+
+    def checkReturnValue(self, expected, generated, **kwargs):
+
+        numbers = list(self.getParameter('numbers'))
+
+        def setMessage(message):
+
+            self.addMessage('Error: ' + message)
+            self.setGeneratedOutput(
+                channel='return',
+                output=generated
+            )
+
+        # the subset must be a list of numbers
+        if not isinstance(generated, list):
+            setMessage('the subset must be a list')
+            return False
+
+        # the empty subset adds up to zero, but does not solve the problem
+        if not generated:
+            setMessage('the subset must contain at least one number')
+            return False
+
+        # every number of the subset must be taken from the given list, and no
+        # number can be taken more often than it occurs in the given list
+        remaining = list(numbers)
+        for number in generated:
+            if number not in remaining:
+                setMessage('the subset contains numbers that are not in the given list')
+                return False
+            remaining.remove(number)
+
+        # the numbers of the subset must add up to zero
+        if sum(generated) != 0:
+            setMessage('the numbers of the subset do not add up to zero')
+            return False
+
+        # generated return value passed all tests
+        return True
+</DEFINITION>
+<OUTPUTPROCESSOR>
+SubsetChecker(expected_type=[int], numbers=[6, 6, -6])
+</OUTPUTPROCESSOR>
+[6, -6]
+
+>>> subset_sum([-8, 3, 5])
+<DEFINITION>
+class SubsetChecker(OutputProcessor):
+
+    """
+    Checks whether the return value is a non-empty sub-collection of the given
+    list of numbers that adds up to zero. Such a subset is not necessarily
+    unique, so the return value cannot simply be compared to the one produced
+    by the sample solution.
+    """
+
+    def checkReturnValue(self, expected, generated, **kwargs):
+
+        numbers = list(self.getParameter('numbers'))
+
+        def setMessage(message):
+
+            self.addMessage('Error: ' + message)
+            self.setGeneratedOutput(
+                channel='return',
+                output=generated
+            )
+
+        # the subset must be a list of numbers
+        if not isinstance(generated, list):
+            setMessage('the subset must be a list')
+            return False
+
+        # the empty subset adds up to zero, but does not solve the problem
+        if not generated:
+            setMessage('the subset must contain at least one number')
+            return False
+
+        # every number of the subset must be taken from the given list, and no
+        # number can be taken more often than it occurs in the given list
+        remaining = list(numbers)
+        for number in generated:
+            if number not in remaining:
+                setMessage('the subset contains numbers that are not in the given list')
+                return False
+            remaining.remove(number)
+
+        # the numbers of the subset must add up to zero
+        if sum(generated) != 0:
+            setMessage('the numbers of the subset do not add up to zero')
+            return False
+
+        # generated return value passed all tests
+        return True
+</DEFINITION>
+<OUTPUTPROCESSOR>
+SubsetChecker(expected_type=[int], numbers=[-8, 3, 5])
+</OUTPUTPROCESSOR>
+[-8, 3, 5]
+
+>>> subset_sum([-8, 3, 6])
+
+>>> subset_sum([17, -4, -4, -4, -4, -1])
+<DEFINITION>
+class SubsetChecker(OutputProcessor):
+
+    """
+    Checks whether the return value is a non-empty sub-collection of the given
+    list of numbers that adds up to zero. Such a subset is not necessarily
+    unique, so the return value cannot simply be compared to the one produced
+    by the sample solution.
+    """
+
+    def checkReturnValue(self, expected, generated, **kwargs):
+
+        numbers = list(self.getParameter('numbers'))
+
+        def setMessage(message):
+
+            self.addMessage('Error: ' + message)
+            self.setGeneratedOutput(
+                channel='return',
+                output=generated
+            )
+
+        # the subset must be a list of numbers
+        if not isinstance(generated, list):
+            setMessage('the subset must be a list')
+            return False
+
+        # the empty subset adds up to zero, but does not solve the problem
+        if not generated:
+            setMessage('the subset must contain at least one number')
+            return False
+
+        # every number of the subset must be taken from the given list, and no
+        # number can be taken more often than it occurs in the given list
+        remaining = list(numbers)
+        for number in generated:
+            if number not in remaining:
+                setMessage('the subset contains numbers that are not in the given list')
+                return False
+            remaining.remove(number)
+
+        # the numbers of the subset must add up to zero
+        if sum(generated) != 0:
+            setMessage('the numbers of the subset do not add up to zero')
+            return False
+
+        # generated return value passed all tests
+        return True
+</DEFINITION>
+<OUTPUTPROCESSOR>
+SubsetChecker(expected_type=[int], numbers=[17, -4, -4, -4, -4, -1])
+</OUTPUTPROCESSOR>
+[17, -4, -4, -4, -4, -1]
+
+>>> subset_sum([2, 4, 8, 16, 32, 64, -126])
+<DEFINITION>
+class SubsetChecker(OutputProcessor):
+
+    """
+    Checks whether the return value is a non-empty sub-collection of the given
+    list of numbers that adds up to zero. Such a subset is not necessarily
+    unique, so the return value cannot simply be compared to the one produced
+    by the sample solution.
+    """
+
+    def checkReturnValue(self, expected, generated, **kwargs):
+
+        numbers = list(self.getParameter('numbers'))
+
+        def setMessage(message):
+
+            self.addMessage('Error: ' + message)
+            self.setGeneratedOutput(
+                channel='return',
+                output=generated
+            )
+
+        # the subset must be a list of numbers
+        if not isinstance(generated, list):
+            setMessage('the subset must be a list')
+            return False
+
+        # the empty subset adds up to zero, but does not solve the problem
+        if not generated:
+            setMessage('the subset must contain at least one number')
+            return False
+
+        # every number of the subset must be taken from the given list, and no
+        # number can be taken more often than it occurs in the given list
+        remaining = list(numbers)
+        for number in generated:
+            if number not in remaining:
+                setMessage('the subset contains numbers that are not in the given list')
+                return False
+            remaining.remove(number)
+
+        # the numbers of the subset must add up to zero
+        if sum(generated) != 0:
+            setMessage('the numbers of the subset do not add up to zero')
+            return False
+
+        # generated return value passed all tests
+        return True
+</DEFINITION>
+<OUTPUTPROCESSOR>
+SubsetChecker(expected_type=[int], numbers=[2, 4, 8, 16, 32, 64, -126])
+</OUTPUTPROCESSOR>
+[2, 4, 8, 16, 32, 64, -126]
+
+>>> subset_sum([2, 4, 8, 16, 32, 64, -127])
+
+>>> subset_sum([0, 0])
+<DEFINITION>
+class SubsetChecker(OutputProcessor):
+
+    """
+    Checks whether the return value is a non-empty sub-collection of the given
+    list of numbers that adds up to zero. Such a subset is not necessarily
+    unique, so the return value cannot simply be compared to the one produced
+    by the sample solution.
+    """
+
+    def checkReturnValue(self, expected, generated, **kwargs):
+
+        numbers = list(self.getParameter('numbers'))
+
+        def setMessage(message):
+
+            self.addMessage('Error: ' + message)
+            self.setGeneratedOutput(
+                channel='return',
+                output=generated
+            )
+
+        # the subset must be a list of numbers
+        if not isinstance(generated, list):
+            setMessage('the subset must be a list')
+            return False
+
+        # the empty subset adds up to zero, but does not solve the problem
+        if not generated:
+            setMessage('the subset must contain at least one number')
+            return False
+
+        # every number of the subset must be taken from the given list, and no
+        # number can be taken more often than it occurs in the given list
+        remaining = list(numbers)
+        for number in generated:
+            if number not in remaining:
+                setMessage('the subset contains numbers that are not in the given list')
+                return False
+            remaining.remove(number)
+
+        # the numbers of the subset must add up to zero
+        if sum(generated) != 0:
+            setMessage('the numbers of the subset do not add up to zero')
+            return False
+
+        # generated return value passed all tests
+        return True
+</DEFINITION>
+<OUTPUTPROCESSOR>
+SubsetChecker(expected_type=[int], numbers=[0, 0])
+</OUTPUTPROCESSOR>
+[0]
+
+>>> subset_sum([-1, -2, -3, -4, -5])
+
+>>> subset_sum([1, 2, 3, 4, 5])
+
+>>> subset_sum([-19, 7, 7, 7, -2])
+<DEFINITION>
+class SubsetChecker(OutputProcessor):
+
+    """
+    Checks whether the return value is a non-empty sub-collection of the given
+    list of numbers that adds up to zero. Such a subset is not necessarily
+    unique, so the return value cannot simply be compared to the one produced
+    by the sample solution.
+    """
+
+    def checkReturnValue(self, expected, generated, **kwargs):
+
+        numbers = list(self.getParameter('numbers'))
+
+        def setMessage(message):
+
+            self.addMessage('Error: ' + message)
+            self.setGeneratedOutput(
+                channel='return',
+                output=generated
+            )
+
+        # the subset must be a list of numbers
+        if not isinstance(generated, list):
+            setMessage('the subset must be a list')
+            return False
+
+        # the empty subset adds up to zero, but does not solve the problem
+        if not generated:
+            setMessage('the subset must contain at least one number')
+            return False
+
+        # every number of the subset must be taken from the given list, and no
+        # number can be taken more often than it occurs in the given list
+        remaining = list(numbers)
+        for number in generated:
+            if number not in remaining:
+                setMessage('the subset contains numbers that are not in the given list')
+                return False
+            remaining.remove(number)
+
+        # the numbers of the subset must add up to zero
+        if sum(generated) != 0:
+            setMessage('the numbers of the subset do not add up to zero')
+            return False
+
+        # generated return value passed all tests
+        return True
+</DEFINITION>
+<OUTPUTPROCESSOR>
+SubsetChecker(expected_type=[int], numbers=[-19, 7, 7, 7, -2])
+</OUTPUTPROCESSOR>
+[-19, 7, 7, 7, -2]
+
+>>> subset_sum([9, 30, 55, 47, 57, 43, 17, -10, 59, -22, 28])
+
+>>> subset_sum([8, -16, 42, -9, -4, 9, 28, -34])
+<DEFINITION>
+class SubsetChecker(OutputProcessor):
+
+    """
+    Checks whether the return value is a non-empty sub-collection of the given
+    list of numbers that adds up to zero. Such a subset is not necessarily
+    unique, so the return value cannot simply be compared to the one produced
+    by the sample solution.
+    """
+
+    def checkReturnValue(self, expected, generated, **kwargs):
+
+        numbers = list(self.getParameter('numbers'))
+
+        def setMessage(message):
+
+            self.addMessage('Error: ' + message)
+            self.setGeneratedOutput(
+                channel='return',
+                output=generated
+            )
+
+        # the subset must be a list of numbers
+        if not isinstance(generated, list):
+            setMessage('the subset must be a list')
+            return False
+
+        # the empty subset adds up to zero, but does not solve the problem
+        if not generated:
+            setMessage('the subset must contain at least one number')
+            return False
+
+        # every number of the subset must be taken from the given list, and no
+        # number can be taken more often than it occurs in the given list
+        remaining = list(numbers)
+        for number in generated:
+            if number not in remaining:
+                setMessage('the subset contains numbers that are not in the given list')
+                return False
+            remaining.remove(number)
+
+        # the numbers of the subset must add up to zero
+        if sum(generated) != 0:
+            setMessage('the numbers of the subset do not add up to zero')
+            return False
+
+        # generated return value passed all tests
+        return True
+</DEFINITION>
+<OUTPUTPROCESSOR>
+SubsetChecker(expected_type=[int], numbers=[8, -16, 42, -9, -4, 9, 28, -34])
+</OUTPUTPROCESSOR>
+[8, -16, 42, -9, 9, -34]
+
+>>> subset_sum([-238, -112, 63, -156, -237, 128, 67, -177, 128, 190, -90])
+
+>>> subset_sum([15, -22, 21, -49, -24, -20, -12, 25, 39, -55, 49, -59, -47, 23])
+<DEFINITION>
+class SubsetChecker(OutputProcessor):
+
+    """
+    Checks whether the return value is a non-empty sub-collection of the given
+    list of numbers that adds up to zero. Such a subset is not necessarily
+    unique, so the return value cannot simply be compared to the one produced
+    by the sample solution.
+    """
+
+    def checkReturnValue(self, expected, generated, **kwargs):
+
+        numbers = list(self.getParameter('numbers'))
+
+        def setMessage(message):
+
+            self.addMessage('Error: ' + message)
+            self.setGeneratedOutput(
+                channel='return',
+                output=generated
+            )
+
+        # the subset must be a list of numbers
+        if not isinstance(generated, list):
+            setMessage('the subset must be a list')
+            return False
+
+        # the empty subset adds up to zero, but does not solve the problem
+        if not generated:
+            setMessage('the subset must contain at least one number')
+            return False
+
+        # every number of the subset must be taken from the given list, and no
+        # number can be taken more often than it occurs in the given list
+        remaining = list(numbers)
+        for number in generated:
+            if number not in remaining:
+                setMessage('the subset contains numbers that are not in the given list')
+                return False
+            remaining.remove(number)
+
+        # the numbers of the subset must add up to zero
+        if sum(generated) != 0:
+            setMessage('the numbers of the subset do not add up to zero')
+            return False
+
+        # generated return value passed all tests
+        return True
+</DEFINITION>
+<OUTPUTPROCESSOR>
+SubsetChecker(expected_type=[int], numbers=[15, -22, 21, -49, -24, -20, -12, 25, 39, -55, 49, -59, -47, 23])
+</OUTPUTPROCESSOR>
+[15, -22, 21, -24, -20, -12, 25, -55, 49, 23]
+
+>>> subset_sum([-217, -239, 55, 16, -94, -22, 234])
+
+>>> subset_sum([2, 0, -3, -1, -1, -2, 2])
+<DEFINITION>
+class SubsetChecker(OutputProcessor):
+
+    """
+    Checks whether the return value is a non-empty sub-collection of the given
+    list of numbers that adds up to zero. Such a subset is not necessarily
+    unique, so the return value cannot simply be compared to the one produced
+    by the sample solution.
+    """
+
+    def checkReturnValue(self, expected, generated, **kwargs):
+
+        numbers = list(self.getParameter('numbers'))
+
+        def setMessage(message):
+
+            self.addMessage('Error: ' + message)
+            self.setGeneratedOutput(
+                channel='return',
+                output=generated
+            )
+
+        # the subset must be a list of numbers
+        if not isinstance(generated, list):
+            setMessage('the subset must be a list')
+            return False
+
+        # the empty subset adds up to zero, but does not solve the problem
+        if not generated:
+            setMessage('the subset must contain at least one number')
+            return False
+
+        # every number of the subset must be taken from the given list, and no
+        # number can be taken more often than it occurs in the given list
+        remaining = list(numbers)
+        for number in generated:
+            if number not in remaining:
+                setMessage('the subset contains numbers that are not in the given list')
+                return False
+            remaining.remove(number)
+
+        # the numbers of the subset must add up to zero
+        if sum(generated) != 0:
+            setMessage('the numbers of the subset do not add up to zero')
+            return False
+
+        # generated return value passed all tests
+        return True
+</DEFINITION>
+<OUTPUTPROCESSOR>
+SubsetChecker(expected_type=[int], numbers=[2, 0, -3, -1, -1, -2, 2])
+</OUTPUTPROCESSOR>
+[2, 0, -3, -1, 2]
+
+>>> subset_sum([-7, -3, 1, 3, -6, -2, 0, 4, -4, 4, 3, -4])
+<DEFINITION>
+class SubsetChecker(OutputProcessor):
+
+    """
+    Checks whether the return value is a non-empty sub-collection of the given
+    list of numbers that adds up to zero. Such a subset is not necessarily
+    unique, so the return value cannot simply be compared to the one produced
+    by the sample solution.
+    """
+
+    def checkReturnValue(self, expected, generated, **kwargs):
+
+        numbers = list(self.getParameter('numbers'))
+
+        def setMessage(message):
+
+            self.addMessage('Error: ' + message)
+            self.setGeneratedOutput(
+                channel='return',
+                output=generated
+            )
+
+        # the subset must be a list of numbers
+        if not isinstance(generated, list):
+            setMessage('the subset must be a list')
+            return False
+
+        # the empty subset adds up to zero, but does not solve the problem
+        if not generated:
+            setMessage('the subset must contain at least one number')
+            return False
+
+        # every number of the subset must be taken from the given list, and no
+        # number can be taken more often than it occurs in the given list
+        remaining = list(numbers)
+        for number in generated:
+            if number not in remaining:
+                setMessage('the subset contains numbers that are not in the given list')
+                return False
+            remaining.remove(number)
+
+        # the numbers of the subset must add up to zero
+        if sum(generated) != 0:
+            setMessage('the numbers of the subset do not add up to zero')
+            return False
+
+        # generated return value passed all tests
+        return True
+</DEFINITION>
+<OUTPUTPROCESSOR>
+SubsetChecker(expected_type=[int], numbers=[-7, -3, 1, 3, -6, -2, 0, 4, -4, 4, 3, -4])
+</OUTPUTPROCESSOR>
+[-7, -3, 1, 3, -2, 0, 4, 4]
+
+>>> subset_sum([199, -184, -66, 121, -201, 215, -82, 28, -63, 172, 12, -27, 60])
+<DEFINITION>
+class SubsetChecker(OutputProcessor):
+
+    """
+    Checks whether the return value is a non-empty sub-collection of the given
+    list of numbers that adds up to zero. Such a subset is not necessarily
+    unique, so the return value cannot simply be compared to the one produced
+    by the sample solution.
+    """
+
+    def checkReturnValue(self, expected, generated, **kwargs):
+
+        numbers = list(self.getParameter('numbers'))
+
+        def setMessage(message):
+
+            self.addMessage('Error: ' + message)
+            self.setGeneratedOutput(
+                channel='return',
+                output=generated
+            )
+
+        # the subset must be a list of numbers
+        if not isinstance(generated, list):
+            setMessage('the subset must be a list')
+            return False
+
+        # the empty subset adds up to zero, but does not solve the problem
+        if not generated:
+            setMessage('the subset must contain at least one number')
+            return False
+
+        # every number of the subset must be taken from the given list, and no
+        # number can be taken more often than it occurs in the given list
+        remaining = list(numbers)
+        for number in generated:
+            if number not in remaining:
+                setMessage('the subset contains numbers that are not in the given list')
+                return False
+            remaining.remove(number)
+
+        # the numbers of the subset must add up to zero
+        if sum(generated) != 0:
+            setMessage('the numbers of the subset do not add up to zero')
+            return False
+
+        # generated return value passed all tests
+        return True
+</DEFINITION>
+<OUTPUTPROCESSOR>
+SubsetChecker(expected_type=[int], numbers=[199, -184, -66, 121, -201, 215, -82, 28, -63, 172, 12, -27, 60])
+</OUTPUTPROCESSOR>
+[199, -184, -66, 121, -201, 215, -82, 28, -63, -27, 60]
+
+>>> subset_sum([-34, 58, 21, -22, -43, 19, 9, -5, 59])
+<DEFINITION>
+class SubsetChecker(OutputProcessor):
+
+    """
+    Checks whether the return value is a non-empty sub-collection of the given
+    list of numbers that adds up to zero. Such a subset is not necessarily
+    unique, so the return value cannot simply be compared to the one produced
+    by the sample solution.
+    """
+
+    def checkReturnValue(self, expected, generated, **kwargs):
+
+        numbers = list(self.getParameter('numbers'))
+
+        def setMessage(message):
+
+            self.addMessage('Error: ' + message)
+            self.setGeneratedOutput(
+                channel='return',
+                output=generated
+            )
+
+        # the subset must be a list of numbers
+        if not isinstance(generated, list):
+            setMessage('the subset must be a list')
+            return False
+
+        # the empty subset adds up to zero, but does not solve the problem
+        if not generated:
+            setMessage('the subset must contain at least one number')
+            return False
+
+        # every number of the subset must be taken from the given list, and no
+        # number can be taken more often than it occurs in the given list
+        remaining = list(numbers)
+        for number in generated:
+            if number not in remaining:
+                setMessage('the subset contains numbers that are not in the given list')
+                return False
+            remaining.remove(number)
+
+        # the numbers of the subset must add up to zero
+        if sum(generated) != 0:
+            setMessage('the numbers of the subset do not add up to zero')
+            return False
+
+        # generated return value passed all tests
+        return True
+</DEFINITION>
+<OUTPUTPROCESSOR>
+SubsetChecker(expected_type=[int], numbers=[-34, 58, 21, -22, -43, 19, 9, -5, 59])
+</OUTPUTPROCESSOR>
+[-34, 58, -43, 19]
+
+>>> subset_sum([-7, 57, 8, 46, -46, 59, -25, 2, -12, -3, 12, -9, 15, -25])
+<DEFINITION>
+class SubsetChecker(OutputProcessor):
+
+    """
+    Checks whether the return value is a non-empty sub-collection of the given
+    list of numbers that adds up to zero. Such a subset is not necessarily
+    unique, so the return value cannot simply be compared to the one produced
+    by the sample solution.
+    """
+
+    def checkReturnValue(self, expected, generated, **kwargs):
+
+        numbers = list(self.getParameter('numbers'))
+
+        def setMessage(message):
+
+            self.addMessage('Error: ' + message)
+            self.setGeneratedOutput(
+                channel='return',
+                output=generated
+            )
+
+        # the subset must be a list of numbers
+        if not isinstance(generated, list):
+            setMessage('the subset must be a list')
+            return False
+
+        # the empty subset adds up to zero, but does not solve the problem
+        if not generated:
+            setMessage('the subset must contain at least one number')
+            return False
+
+        # every number of the subset must be taken from the given list, and no
+        # number can be taken more often than it occurs in the given list
+        remaining = list(numbers)
+        for number in generated:
+            if number not in remaining:
+                setMessage('the subset contains numbers that are not in the given list')
+                return False
+            remaining.remove(number)
+
+        # the numbers of the subset must add up to zero
+        if sum(generated) != 0:
+            setMessage('the numbers of the subset do not add up to zero')
+            return False
+
+        # generated return value passed all tests
+        return True
+</DEFINITION>
+<OUTPUTPROCESSOR>
+SubsetChecker(expected_type=[int], numbers=[-7, 57, 8, 46, -46, 59, -25, 2, -12, -3, 12, -9, 15, -25])
+</OUTPUTPROCESSOR>
+[-7, 57, 8, -46, 59, -25, -12, -9, -25]
+
+>>> subset_sum([97, 127, -174, -193, 20, 150, -121])
+
+>>> subset_sum([4])
+
+>>> subset_sum([3, 2, -1, -1, -2, -3, 1, -1, -2, 2, 1])
+<DEFINITION>
+class SubsetChecker(OutputProcessor):
+
+    """
+    Checks whether the return value is a non-empty sub-collection of the given
+    list of numbers that adds up to zero. Such a subset is not necessarily
+    unique, so the return value cannot simply be compared to the one produced
+    by the sample solution.
+    """
+
+    def checkReturnValue(self, expected, generated, **kwargs):
+
+        numbers = list(self.getParameter('numbers'))
+
+        def setMessage(message):
+
+            self.addMessage('Error: ' + message)
+            self.setGeneratedOutput(
+                channel='return',
+                output=generated
+            )
+
+        # the subset must be a list of numbers
+        if not isinstance(generated, list):
+            setMessage('the subset must be a list')
+            return False
+
+        # the empty subset adds up to zero, but does not solve the problem
+        if not generated:
+            setMessage('the subset must contain at least one number')
+            return False
+
+        # every number of the subset must be taken from the given list, and no
+        # number can be taken more often than it occurs in the given list
+        remaining = list(numbers)
+        for number in generated:
+            if number not in remaining:
+                setMessage('the subset contains numbers that are not in the given list')
+                return False
+            remaining.remove(number)
+
+        # the numbers of the subset must add up to zero
+        if sum(generated) != 0:
+            setMessage('the numbers of the subset do not add up to zero')
+            return False
+
+        # generated return value passed all tests
+        return True
+</DEFINITION>
+<OUTPUTPROCESSOR>
+SubsetChecker(expected_type=[int], numbers=[3, 2, -1, -1, -2, -3, 1, -1, -2, 2, 1])
+</OUTPUTPROCESSOR>
+[3, 2, -1, -1, -2, -3, 1, -1, 2]
+
+>>> subset_sum([-1, 4, -3, 4, -8, -13, -3, -8, -2, 9, 5, 11])
+<DEFINITION>
+class SubsetChecker(OutputProcessor):
+
+    """
+    Checks whether the return value is a non-empty sub-collection of the given
+    list of numbers that adds up to zero. Such a subset is not necessarily
+    unique, so the return value cannot simply be compared to the one produced
+    by the sample solution.
+    """
+
+    def checkReturnValue(self, expected, generated, **kwargs):
+
+        numbers = list(self.getParameter('numbers'))
+
+        def setMessage(message):
+
+            self.addMessage('Error: ' + message)
+            self.setGeneratedOutput(
+                channel='return',
+                output=generated
+            )
+
+        # the subset must be a list of numbers
+        if not isinstance(generated, list):
+            setMessage('the subset must be a list')
+            return False
+
+        # the empty subset adds up to zero, but does not solve the problem
+        if not generated:
+            setMessage('the subset must contain at least one number')
+            return False
+
+        # every number of the subset must be taken from the given list, and no
+        # number can be taken more often than it occurs in the given list
+        remaining = list(numbers)
+        for number in generated:
+            if number not in remaining:
+                setMessage('the subset contains numbers that are not in the given list')
+                return False
+            remaining.remove(number)
+
+        # the numbers of the subset must add up to zero
+        if sum(generated) != 0:
+            setMessage('the numbers of the subset do not add up to zero')
+            return False
+
+        # generated return value passed all tests
+        return True
+</DEFINITION>
+<OUTPUTPROCESSOR>
+SubsetChecker(expected_type=[int], numbers=[-1, 4, -3, 4, -8, -13, -3, -8, -2, 9, 5, 11])
+</OUTPUTPROCESSOR>
+[-1, 4, -3]
+
+>>> subset_sum([-5, -12, 0, -13, 10, 18])
+<DEFINITION>
+class SubsetChecker(OutputProcessor):
+
+    """
+    Checks whether the return value is a non-empty sub-collection of the given
+    list of numbers that adds up to zero. Such a subset is not necessarily
+    unique, so the return value cannot simply be compared to the one produced
+    by the sample solution.
+    """
+
+    def checkReturnValue(self, expected, generated, **kwargs):
+
+        numbers = list(self.getParameter('numbers'))
+
+        def setMessage(message):
+
+            self.addMessage('Error: ' + message)
+            self.setGeneratedOutput(
+                channel='return',
+                output=generated
+            )
+
+        # the subset must be a list of numbers
+        if not isinstance(generated, list):
+            setMessage('the subset must be a list')
+            return False
+
+        # the empty subset adds up to zero, but does not solve the problem
+        if not generated:
+            setMessage('the subset must contain at least one number')
+            return False
+
+        # every number of the subset must be taken from the given list, and no
+        # number can be taken more often than it occurs in the given list
+        remaining = list(numbers)
+        for number in generated:
+            if number not in remaining:
+                setMessage('the subset contains numbers that are not in the given list')
+                return False
+            remaining.remove(number)
+
+        # the numbers of the subset must add up to zero
+        if sum(generated) != 0:
+            setMessage('the numbers of the subset do not add up to zero')
+            return False
+
+        # generated return value passed all tests
+        return True
+</DEFINITION>
+<OUTPUTPROCESSOR>
+SubsetChecker(expected_type=[int], numbers=[-5, -12, 0, -13, 10, 18])
+</OUTPUTPROCESSOR>
+[-5, 0, -13, 18]
+
+>>> subset_sum([1, 1, 5, -7, -7, 5, -6, -1, 5, 7, 6])
+<DEFINITION>
+class SubsetChecker(OutputProcessor):
+
+    """
+    Checks whether the return value is a non-empty sub-collection of the given
+    list of numbers that adds up to zero. Such a subset is not necessarily
+    unique, so the return value cannot simply be compared to the one produced
+    by the sample solution.
+    """
+
+    def checkReturnValue(self, expected, generated, **kwargs):
+
+        numbers = list(self.getParameter('numbers'))
+
+        def setMessage(message):
+
+            self.addMessage('Error: ' + message)
+            self.setGeneratedOutput(
+                channel='return',
+                output=generated
+            )
+
+        # the subset must be a list of numbers
+        if not isinstance(generated, list):
+            setMessage('the subset must be a list')
+            return False
+
+        # the empty subset adds up to zero, but does not solve the problem
+        if not generated:
+            setMessage('the subset must contain at least one number')
+            return False
+
+        # every number of the subset must be taken from the given list, and no
+        # number can be taken more often than it occurs in the given list
+        remaining = list(numbers)
+        for number in generated:
+            if number not in remaining:
+                setMessage('the subset contains numbers that are not in the given list')
+                return False
+            remaining.remove(number)
+
+        # the numbers of the subset must add up to zero
+        if sum(generated) != 0:
+            setMessage('the numbers of the subset do not add up to zero')
+            return False
+
+        # generated return value passed all tests
+        return True
+</DEFINITION>
+<OUTPUTPROCESSOR>
+SubsetChecker(expected_type=[int], numbers=[1, 1, 5, -7, -7, 5, -6, -1, 5, 7, 6])
+</OUTPUTPROCESSOR>
+[1, 1, 5, -7]
+
+>>> subset_sum([2, 37, 34, 29, 7, 24, -31])
+<DEFINITION>
+class SubsetChecker(OutputProcessor):
+
+    """
+    Checks whether the return value is a non-empty sub-collection of the given
+    list of numbers that adds up to zero. Such a subset is not necessarily
+    unique, so the return value cannot simply be compared to the one produced
+    by the sample solution.
+    """
+
+    def checkReturnValue(self, expected, generated, **kwargs):
+
+        numbers = list(self.getParameter('numbers'))
+
+        def setMessage(message):
+
+            self.addMessage('Error: ' + message)
+            self.setGeneratedOutput(
+                channel='return',
+                output=generated
+            )
+
+        # the subset must be a list of numbers
+        if not isinstance(generated, list):
+            setMessage('the subset must be a list')
+            return False
+
+        # the empty subset adds up to zero, but does not solve the problem
+        if not generated:
+            setMessage('the subset must contain at least one number')
+            return False
+
+        # every number of the subset must be taken from the given list, and no
+        # number can be taken more often than it occurs in the given list
+        remaining = list(numbers)
+        for number in generated:
+            if number not in remaining:
+                setMessage('the subset contains numbers that are not in the given list')
+                return False
+            remaining.remove(number)
+
+        # the numbers of the subset must add up to zero
+        if sum(generated) != 0:
+            setMessage('the numbers of the subset do not add up to zero')
+            return False
+
+        # generated return value passed all tests
+        return True
+</DEFINITION>
+<OUTPUTPROCESSOR>
+SubsetChecker(expected_type=[int], numbers=[2, 37, 34, 29, 7, 24, -31])
+</OUTPUTPROCESSOR>
+[2, 29, -31]
+
+>>> subset_sum([28, 6, 44, -29, -33, -28, -47, 60, 43, 44])
+<DEFINITION>
+class SubsetChecker(OutputProcessor):
+
+    """
+    Checks whether the return value is a non-empty sub-collection of the given
+    list of numbers that adds up to zero. Such a subset is not necessarily
+    unique, so the return value cannot simply be compared to the one produced
+    by the sample solution.
+    """
+
+    def checkReturnValue(self, expected, generated, **kwargs):
+
+        numbers = list(self.getParameter('numbers'))
+
+        def setMessage(message):
+
+            self.addMessage('Error: ' + message)
+            self.setGeneratedOutput(
+                channel='return',
+                output=generated
+            )
+
+        # the subset must be a list of numbers
+        if not isinstance(generated, list):
+            setMessage('the subset must be a list')
+            return False
+
+        # the empty subset adds up to zero, but does not solve the problem
+        if not generated:
+            setMessage('the subset must contain at least one number')
+            return False
+
+        # every number of the subset must be taken from the given list, and no
+        # number can be taken more often than it occurs in the given list
+        remaining = list(numbers)
+        for number in generated:
+            if number not in remaining:
+                setMessage('the subset contains numbers that are not in the given list')
+                return False
+            remaining.remove(number)
+
+        # the numbers of the subset must add up to zero
+        if sum(generated) != 0:
+            setMessage('the numbers of the subset do not add up to zero')
+            return False
+
+        # generated return value passed all tests
+        return True
+</DEFINITION>
+<OUTPUTPROCESSOR>
+SubsetChecker(expected_type=[int], numbers=[28, 6, 44, -29, -33, -28, -47, 60, 43, 44])
+</OUTPUTPROCESSOR>
+[28, 6, -29, -33, -28, -47, 60, 43]
+
+>>> subset_sum([0, 0, -1, 1, -1])
+<DEFINITION>
+class SubsetChecker(OutputProcessor):
+
+    """
+    Checks whether the return value is a non-empty sub-collection of the given
+    list of numbers that adds up to zero. Such a subset is not necessarily
+    unique, so the return value cannot simply be compared to the one produced
+    by the sample solution.
+    """
+
+    def checkReturnValue(self, expected, generated, **kwargs):
+
+        numbers = list(self.getParameter('numbers'))
+
+        def setMessage(message):
+
+            self.addMessage('Error: ' + message)
+            self.setGeneratedOutput(
+                channel='return',
+                output=generated
+            )
+
+        # the subset must be a list of numbers
+        if not isinstance(generated, list):
+            setMessage('the subset must be a list')
+            return False
+
+        # the empty subset adds up to zero, but does not solve the problem
+        if not generated:
+            setMessage('the subset must contain at least one number')
+            return False
+
+        # every number of the subset must be taken from the given list, and no
+        # number can be taken more often than it occurs in the given list
+        remaining = list(numbers)
+        for number in generated:
+            if number not in remaining:
+                setMessage('the subset contains numbers that are not in the given list')
+                return False
+            remaining.remove(number)
+
+        # the numbers of the subset must add up to zero
+        if sum(generated) != 0:
+            setMessage('the numbers of the subset do not add up to zero')
+            return False
+
+        # generated return value passed all tests
+        return True
+</DEFINITION>
+<OUTPUTPROCESSOR>
+SubsetChecker(expected_type=[int], numbers=[0, 0, -1, 1, -1])
+</OUTPUTPROCESSOR>
+[0]
+
+>>> subset_sum([0, 1, 0, -1, 2, 2, -2, -2, 3])
+<DEFINITION>
+class SubsetChecker(OutputProcessor):
+
+    """
+    Checks whether the return value is a non-empty sub-collection of the given
+    list of numbers that adds up to zero. Such a subset is not necessarily
+    unique, so the return value cannot simply be compared to the one produced
+    by the sample solution.
+    """
+
+    def checkReturnValue(self, expected, generated, **kwargs):
+
+        numbers = list(self.getParameter('numbers'))
+
+        def setMessage(message):
+
+            self.addMessage('Error: ' + message)
+            self.setGeneratedOutput(
+                channel='return',
+                output=generated
+            )
+
+        # the subset must be a list of numbers
+        if not isinstance(generated, list):
+            setMessage('the subset must be a list')
+            return False
+
+        # the empty subset adds up to zero, but does not solve the problem
+        if not generated:
+            setMessage('the subset must contain at least one number')
+            return False
+
+        # every number of the subset must be taken from the given list, and no
+        # number can be taken more often than it occurs in the given list
+        remaining = list(numbers)
+        for number in generated:
+            if number not in remaining:
+                setMessage('the subset contains numbers that are not in the given list')
+                return False
+            remaining.remove(number)
+
+        # the numbers of the subset must add up to zero
+        if sum(generated) != 0:
+            setMessage('the numbers of the subset do not add up to zero')
+            return False
+
+        # generated return value passed all tests
+        return True
+</DEFINITION>
+<OUTPUTPROCESSOR>
+SubsetChecker(expected_type=[int], numbers=[0, 1, 0, -1, 2, 2, -2, -2, 3])
+</OUTPUTPROCESSOR>
+[0]
+
+>>> subset_sum([220, 243, 43, -219, 183, 229, -109, -13, -120, -219])
+<DEFINITION>
+class SubsetChecker(OutputProcessor):
+
+    """
+    Checks whether the return value is a non-empty sub-collection of the given
+    list of numbers that adds up to zero. Such a subset is not necessarily
+    unique, so the return value cannot simply be compared to the one produced
+    by the sample solution.
+    """
+
+    def checkReturnValue(self, expected, generated, **kwargs):
+
+        numbers = list(self.getParameter('numbers'))
+
+        def setMessage(message):
+
+            self.addMessage('Error: ' + message)
+            self.setGeneratedOutput(
+                channel='return',
+                output=generated
+            )
+
+        # the subset must be a list of numbers
+        if not isinstance(generated, list):
+            setMessage('the subset must be a list')
+            return False
+
+        # the empty subset adds up to zero, but does not solve the problem
+        if not generated:
+            setMessage('the subset must contain at least one number')
+            return False
+
+        # every number of the subset must be taken from the given list, and no
+        # number can be taken more often than it occurs in the given list
+        remaining = list(numbers)
+        for number in generated:
+            if number not in remaining:
+                setMessage('the subset contains numbers that are not in the given list')
+                return False
+            remaining.remove(number)
+
+        # the numbers of the subset must add up to zero
+        if sum(generated) != 0:
+            setMessage('the numbers of the subset do not add up to zero')
+            return False
+
+        # generated return value passed all tests
+        return True
+</DEFINITION>
+<OUTPUTPROCESSOR>
+SubsetChecker(expected_type=[int], numbers=[220, 243, 43, -219, 183, 229, -109, -13, -120, -219])
+</OUTPUTPROCESSOR>
+[229, -109, -120]
+
+>>> subset_sum([3, 3, 0, 3, 3, -1])
+<DEFINITION>
+class SubsetChecker(OutputProcessor):
+
+    """
+    Checks whether the return value is a non-empty sub-collection of the given
+    list of numbers that adds up to zero. Such a subset is not necessarily
+    unique, so the return value cannot simply be compared to the one produced
+    by the sample solution.
+    """
+
+    def checkReturnValue(self, expected, generated, **kwargs):
+
+        numbers = list(self.getParameter('numbers'))
+
+        def setMessage(message):
+
+            self.addMessage('Error: ' + message)
+            self.setGeneratedOutput(
+                channel='return',
+                output=generated
+            )
+
+        # the subset must be a list of numbers
+        if not isinstance(generated, list):
+            setMessage('the subset must be a list')
+            return False
+
+        # the empty subset adds up to zero, but does not solve the problem
+        if not generated:
+            setMessage('the subset must contain at least one number')
+            return False
+
+        # every number of the subset must be taken from the given list, and no
+        # number can be taken more often than it occurs in the given list
+        remaining = list(numbers)
+        for number in generated:
+            if number not in remaining:
+                setMessage('the subset contains numbers that are not in the given list')
+                return False
+            remaining.remove(number)
+
+        # the numbers of the subset must add up to zero
+        if sum(generated) != 0:
+            setMessage('the numbers of the subset do not add up to zero')
+            return False
+
+        # generated return value passed all tests
+        return True
+</DEFINITION>
+<OUTPUTPROCESSOR>
+SubsetChecker(expected_type=[int], numbers=[3, 3, 0, 3, 3, -1])
+</OUTPUTPROCESSOR>
+[0]
+
+>>> subset_sum([18, -26])
+
+>>> subset_sum([-122, 211, 225, -227, -140])
+
+>>> subset_sum([122, -112, -143, 184])
+
+>>> subset_sum([-2])
+
+>>> subset_sum([-14, -3, -3, 1, 12, 10])
+
+>>> subset_sum([3, 1, 2])
+
+>>> subset_sum([2])
+
+>>> subset_sum([150, -81, 200, 187, -115])
+
+>>> subset_sum([32, 2, 25, -1, -52])
+
+>>> subset_sum([-59, 18, -38])
+
+>>> subset_sum([-5, 4])
+

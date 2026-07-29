@@ -1,0 +1,9 @@
+--------------------------------------------------------
+tab name: subset_sum
+<LANGUAGE code="nl">
+    <function from="subset_sum" to="subset_som" />
+    <fixed from="Error: the subset must be a list" to="Fout: de deelverzameling moet een lijst zijn" detect="false" />
+    <fixed from="Error: the subset must contain at least one number" to="Fout: de deelverzameling moet minstens één getal bevatten" detect="false" />
+    <fixed from="Error: the subset contains numbers that are not in the given list" to="Fout: de deelverzameling bevat getallen die niet in de gegeven lijst staan" detect="false" />
+    <fixed from="Error: the numbers of the subset do not add up to zero" to="Fout: de getallen van de deelverzameling tellen niet op tot nul" detect="false" />
+</LANGUAGE>
