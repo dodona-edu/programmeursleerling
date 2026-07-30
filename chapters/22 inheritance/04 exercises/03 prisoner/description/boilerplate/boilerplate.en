@@ -1,0 +1,139 @@
+import random
+
+COOPERATE = 'C'
+DEFECT = 'D'
+ROUNDS = 100
+
+class Strategy:
+
+    """
+    >>> s = Strategy('Sam')
+    >>> s.name
+    'Sam'
+    >>> s.score
+    0
+    >>> s.choice()
+    NotImplemented
+    >>> s.lastmove('C', 'D')
+    >>> s.incscore(3)
+    >>> s.score
+    3
+    """
+
+    def __init__( self, name="" ):
+        self.name = name
+        self.score = 0
+    def choice( self ):
+        # Should return COOPERATE or DEFECT
+        return NotImplemented
+    def lastmove( self, mymove, opponentmove ):
+        # Gets passed the last move made, after a call of choice()
+        pass
+    def incscore( self, n ):
+        self.score += n
+
+class Random(Strategy):
+
+    """
+    >>> random.seed(1)
+    >>> r = Random('Rae')
+    >>> r.choice() in (COOPERATE, DEFECT)
+    True
+    """
+
+    def choice( self ):
+        pass
+
+class AlwaysDefect(Strategy):
+
+    """
+    >>> a = AlwaysDefect('Al')
+    >>> a.choice()
+    'D'
+    >>> a.choice()
+    'D'
+    >>> a.lastmove('D', 'C')
+    >>> a.incscore(6)
+    >>> a.score
+    6
+    """
+
+    def choice( self ):
+        pass
+
+class TitForTat(Strategy):
+
+    """
+    >>> t = TitForTat('Tia')
+    >>> t.choice()
+    'C'
+    >>> t.lastmove('C', 'D')
+    >>> t.choice()
+    'D'
+    >>> t.lastmove('D', 'C')
+    >>> t.choice()
+    'C'
+    """
+
+    def choice( self ):
+        pass
+
+class TitForTwoTats(Strategy):
+
+    """
+    >>> t = TitForTwoTats('Toby')
+    >>> t.choice()
+    'C'
+    >>> t.lastmove('C', 'D')
+    >>> t.choice()
+    'C'
+    >>> t.lastmove('C', 'D')
+    >>> t.choice()
+    'D'
+    >>> t.lastmove('D', 'C')
+    >>> t.choice()
+    'C'
+    """
+
+    def choice( self ):
+        pass
+
+class Majority(Strategy):
+
+    """
+    >>> m = Majority('Mia')
+    >>> m.choice()
+    'C'
+    >>> m.lastmove('C', 'D')
+    >>> m.lastmove('C', 'D')
+    >>> m.choice()
+    'D'
+    >>> m.lastmove('D', 'C')
+    >>> m.lastmove('D', 'C')
+    >>> m.choice()
+    'C'
+    """
+
+    def choice( self ):
+        pass
+
+strategy1 = Strategy()
+strategy2 = Strategy()
+
+for i in range( ROUNDS ):
+    c1 = strategy1.choice()
+    c2 = strategy2.choice()
+    if c1 == c2:
+        strategy1.incscore( 3 if c1 == COOPERATE else 1 )
+        strategy2.incscore( 3 if c2 == COOPERATE else 1 )
+    else:
+        strategy1.incscore( 0 if c1 == COOPERATE else 6 )
+        strategy2.incscore( 0 if c2 == COOPERATE else 6 )
+    strategy1.lastmove( c1, c2 )
+    strategy2.lastmove( c2, c1 )
+
+if __name__ == '__main__':
+    print( "End score of", strategy1.name, "is", strategy1.score )
+    print( "End score of", strategy2.name, "is", strategy2.score )
+    import doctest
+    doctest.testmod()

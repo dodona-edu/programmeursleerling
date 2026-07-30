@@ -1,0 +1,70 @@
+class FruitBasket:
+
+    """
+    >>> basket = FruitBasket({'mango': 2})
+    >>> basket
+    FruitBasket({'mango': 2})
+    >>> len(basket)
+    1
+    >>> basket['mango']
+    2
+    >>> basket['kiwi']
+    0
+    >>> 'kiwi' in basket
+    False
+    >>> basket['kiwi'] = 3
+    >>> basket + 'kiwi'
+    FruitBasket({'kiwi': 4, 'mango': 2})
+    >>> basket
+    FruitBasket({'kiwi': 3, 'mango': 2})
+    >>> basket -= 'mango'
+    >>> basket -= 'mango'
+    >>> basket
+    FruitBasket({'kiwi': 3})
+    >>> basket - 'papaya'
+    FruitBasket({'kiwi': 3})
+    """
+
+    def __init__(self, fruits=None):
+
+        pass
+
+    def __repr__(self):
+
+        pass
+
+    def __len__(self):
+
+        pass
+
+    def __contains__(self, fruit):
+
+        pass
+
+    def __getitem__(self, fruit):
+
+        pass
+
+    def __setitem__(self, fruit, number):
+
+        pass
+
+    def __add__(self, fruit):
+
+        pass
+
+    def __iadd__(self, fruit):
+
+        pass
+
+    def __sub__(self, fruit):
+
+        pass
+
+    def __isub__(self, fruit):
+
+        pass
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()

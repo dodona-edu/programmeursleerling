@@ -1,0 +1,68 @@
+"""
+>>> store = setbit(0, 0, True)
+>>> store
+1
+>>> getbit(store, 0)
+True
+>>> bitstring(store)
+'00000001'
+>>> store = setbit(store, 1, True)
+>>> store
+3
+>>> getbit(store, 1)
+True
+>>> bitstring(store)
+'00000011'
+>>> store = setbit(store, 2, False)
+>>> store
+3
+>>> getbit(store, 2)
+False
+>>> bitstring(store)
+'00000011'
+>>> store = setbit(store, 3, True)
+>>> store
+11
+>>> getbit(store, 3)
+True
+>>> bitstring(store)
+'00001011'
+>>> store = setbit(store, 4, False)
+>>> store
+11
+>>> getbit(store, 4)
+False
+>>> bitstring(store)
+'00001011'
+>>> store = setbit(store, 5, True)
+>>> store
+43
+>>> getbit(store, 5)
+True
+>>> bitstring(store)
+'00101011'
+>>> store = setbit(store, 1, False)
+>>> store
+41
+>>> getbit(store, 1)
+False
+>>> bitstring(store)
+'00101001'
+"""
+
+
+def setbit(store, index, value):
+
+    pass
+
+def getbit(store, index):
+
+    pass
+
+def bitstring(store):
+
+    pass
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()

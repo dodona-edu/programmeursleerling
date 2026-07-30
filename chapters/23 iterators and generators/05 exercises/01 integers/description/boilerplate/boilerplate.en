@@ -1,0 +1,15 @@
+def not_divisible(divisors):
+
+    """
+    >>> list(not_divisible([2, 3]))[:5]
+    [1, 5, 7, 11, 13]
+    >>> list(not_divisible([1]))
+    []
+    """
+
+    for n in range(1, 101):
+        yield
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()

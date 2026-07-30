@@ -1,0 +1,58 @@
+class Card:
+
+    """
+    >>> card_1 = Card('Hearts', 'Ace')
+    >>> card_2 = Card('Spades', 'King')
+    >>> card_3 = Card('Clubs', 'King')
+    >>> card_1
+    Card('Hearts', 'Ace')
+    >>> print(card_2)
+    King of Spades
+    >>> card_1 == card_2
+    False
+    >>> card_2 == card_3
+    True
+    >>> card_1 > card_2
+    True
+    >>> card_2 >= card_3
+    True
+    >>> Card('Trees', 7)
+    Traceback (most recent call last):
+    AssertionError: invalid card
+    """
+
+    def __init__(self, suit, rank):
+
+        pass
+
+    def __repr__(self):
+
+        pass
+
+    def __str__(self):
+
+        pass
+
+    def __eq__(self, other):
+
+        pass
+
+    def __lt__(self, other):
+
+        pass
+
+    def __le__(self, other):
+
+        pass
+
+    def __gt__(self, other):
+
+        pass
+
+    def __ge__(self, other):
+
+        pass
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()

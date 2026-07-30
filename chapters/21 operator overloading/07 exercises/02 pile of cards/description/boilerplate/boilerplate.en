@@ -1,0 +1,97 @@
+class Card:
+
+    """
+    >>> card_1 = Card('Hearts', 'Ace')
+    >>> card_2 = Card('Spades', 'King')
+    >>> card_1
+    Card('Hearts', 'Ace')
+    >>> print(card_2)
+    King of Spades
+    >>> card_1 > card_2
+    True
+    >>> Card('Trees', 7)
+    Traceback (most recent call last):
+    AssertionError: invalid card
+    """
+
+    def __init__(self, suit, rank):
+
+        pass
+
+    def __repr__(self):
+
+        pass
+
+    def __str__(self):
+
+        pass
+
+    def __eq__(self, other):
+
+        pass
+
+    def __lt__(self, other):
+
+        pass
+
+    def __le__(self, other):
+
+        pass
+
+    def __gt__(self, other):
+
+        pass
+
+    def __ge__(self, other):
+
+        pass
+
+class Drawpile:
+
+    """
+    >>> pile = Drawpile([Card('Hearts', 4), Card('Clubs', 7)])
+    >>> pile
+    Drawpile([Card('Hearts', 4), Card('Clubs', 7)])
+    >>> len(pile)
+    2
+    >>> pile[0]
+    Card('Hearts', 4)
+    >>> pile[0] < pile[1]
+    True
+    >>> pile.add(Card('Spades', 'Ace'))
+    >>> pile.draw()
+    Card('Hearts', 4)
+    >>> pile
+    Drawpile([Card('Clubs', 7), Card('Spades', 'Ace')])
+    >>> Drawpile().draw()
+    >>> len(Drawpile())
+    0
+    """
+
+    def __init__(self, cards=None):
+
+        pass
+
+    def __repr__(self):
+
+        pass
+
+    def __len__(self):
+
+        pass
+
+    def __getitem__(self, index):
+
+        pass
+
+    def add(self, card):
+
+        pass
+
+    def draw(self):
+
+        pass
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()
