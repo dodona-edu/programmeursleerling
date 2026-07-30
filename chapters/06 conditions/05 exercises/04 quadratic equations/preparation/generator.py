@@ -1,6 +1,7 @@
 import os
 import random
 import subprocess
+import sys
 
 # set fixed seed for generating test cases
 random.seed(123456789)
@@ -71,11 +72,11 @@ for stdin in cases:
 
     # generate output to output file
     script = os.path.join(solutiondir, 'solution.en.py')
-    process= subprocess.run(
-        ['python', script],
+    process = subprocess.run(
+        [sys.executable, script],
         input=stdin,
         encoding='utf-8',
-        capture_output=True, shell=True, check=True
+        capture_output=True, check=True
     )
     stdout = process.stdout
 

@@ -3,13 +3,10 @@ a = float(input())
 b = float(input())
 c = float(input())
 
+# an equation is only quadratic if a is different from zero
 if a == 0:
 
-    if b == 0:
-        print('Invalid equation')
-    else:
-        x1 = -c / b
-        print(f'There is 1 real-valued solution: {x1}')
+    print('Invalid equation')
 
 else:
 
