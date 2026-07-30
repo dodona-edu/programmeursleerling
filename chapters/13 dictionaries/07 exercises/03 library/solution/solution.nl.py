@@ -27,7 +27,10 @@ def list2dict(boeken):
 
     bibliotheek = {}
     for achternaam, voornaam, titel, nummer in boeken:
-        bibliotheek.setdefault((achternaam, voornaam), {})[titel] = nummer
+        schrijver = (achternaam, voornaam)
+        if schrijver not in bibliotheek:
+            bibliotheek[schrijver] = {}
+        bibliotheek[schrijver][titel] = nummer
     return bibliotheek
 
 def locatie(bibliotheek, achternaam, voornaam, titel):
@@ -36,7 +39,9 @@ def locatie(bibliotheek, achternaam, voornaam, titel):
 
 def titels(bibliotheek, achternaam, voornaam):
 
-    return sorted(bibliotheek.get((achternaam, voornaam), {}))
+    titellijst = list(bibliotheek.get((achternaam, voornaam), {}).keys())
+    titellijst.sort()
+    return titellijst
 
 if __name__ == '__main__':
     import doctest
