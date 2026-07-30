@@ -258,11 +258,10 @@ print( "Je hebt", len( s ), "letters ingegeven" )
 #### Antwoord 5.2
 
 ```python
-from pcinput import getFloat
 from math import sqrt
 
-zijde1 = getFloat( "Geef de lengte van de eerste zijde: " )
-zijde2 = getFloat( "Geef de lengte van de tweede zijde: " )
+zijde1 = float( input( "Geef de lengte van de eerste zijde: " ) )
+zijde2 = float( input( "Geef de lengte van de tweede zijde: " ) )
 zijde3 = sqrt( zijde1 * zijde1 + zijde2 * zijde2 )
 print( "De lengte van de diagonaal is {:.3f}.".format( zijde3 ) )
 ```
@@ -270,11 +269,9 @@ print( "De lengte van de diagonaal is {:.3f}.".format( zijde3 ) )
 #### Antwoord 5.3
 
 ```python
-from pcinput import getFloat
-
-num1 = getFloat( "Geef nummer 1: " )
-num2 = getFloat( "Geef nummer 2: " )
-num3 = getFloat( "Geef nummer 3: " )
+num1 = float( input( "Geef nummer 1: " ) )
+num2 = float( input( "Geef nummer 2: " ) )
+num3 = float( input( "Geef nummer 3: " ) )
 
 print( "De grootste is", max( num1, num2, num3 ) )
 print( "De kleinste is", min( num1, num2, num3 ) )
@@ -308,9 +305,7 @@ print( "Een toevalsgetal tussen 1 en 10 is",
 #### Antwoord 6.1
 
 ```python
-from pcinput import getFloat
-
-grade = getFloat( "Geef een cijfer: " )
+grade = float( input( "Geef een cijfer: " ) )
 check = int( grade * 10 )
 if grade < 0 or grade > 10:
     print( "Cijfers liggen tussen 0 en 10." )
@@ -338,9 +333,7 @@ uitkomst zal dan "D" zijn.
 #### Antwoord 6.3
 
 ```python
-from pcinput import getString
-
-s = getString( "Geef een string: " )
+s = input( "Geef een string: " )
 count = 0
 if ("a" in s) or ("A" in s):
     count += 1
@@ -364,12 +357,11 @@ else:
 #### Antwoord 6.4
 
 ```python
-from pcinput import getFloat
 from math import sqrt
 
-a = getFloat( "A: " )
-b = getFloat( "B: " )
-c = getFloat( "C: " )
+a = float( input( "A: " ) )
+b = float( input( "B: " ) )
+c = float( input( "C: " ) )
 
 if a == 0:
     if b == 0:
@@ -393,9 +385,7 @@ else:
 #### Antwoord 7.1
 
 ```python
-from pcinput import getInteger
-
-num = getInteger( "Geef een nummer: " )
+num = int( input( "Geef een nummer: " ) )
 i = 1
 while i <= 10:
     print( i, "*", num, "=", i*num )
@@ -405,9 +395,7 @@ while i <= 10:
 #### Antwoord 7.2
 
 ```python
-from pcinput import getInteger
-
-num = getInteger( "Geef een nummer: " )
+num = int( input( "Geef een nummer: " ) )
 for i in range( 1, 11 ):
     print( i, "*", num, "=", i*num )
 ```
@@ -415,15 +403,13 @@ for i in range( 1, 11 ):
 #### Antwoord 7.3
 
 ```python
-from pcinput import getInteger
-
 AANTAL = 10
 grootste = 0
 kleinste = 0
 deelbaar3 = 0
 
 for i in range( AANTAL ):
-    num = getInteger( "Geef nummer "+str( i+1 )+": " )
+    num = int( input( "Geef nummer "+str( i+1 )+": " ) )
     if num%3 == 0:
         deelbaar3 += 1
     if i == 0:
@@ -486,10 +472,8 @@ while True:
 #### Antwoord 7.6
 
 ```python
-from pcinput import getString
-
-woord1 = getString( "Geef woord 1: " )
-woord2 = getString( "Geef woord 2: " )
+woord1 = input( "Geef woord 1: " )
+woord2 = input( "Geef woord 2: " )
 gemeen = ""
 for letter in woord1:
     if (letter in woord2) and (letter not in gemeen):
@@ -521,12 +505,11 @@ print( "Een redelijke benadering van pi is", 4 * raak / DARTS )
 
 ```python
 from random import randint
-from pcinput import getInteger
 
 antwoord = randint( 1, 1000 )
 teller = 0
 while True:
-    poging = getInteger( "Raad een getal: " )
+    poging = int( input( "Raad een getal: " ) )
     if poging < 1 or poging > 1000:
         print( "Je moet een getal tussen de 1 en 1000 noemen" )
         continue
@@ -548,7 +531,6 @@ else:
 #### Antwoord 7.9
 
 ```python
-from pcinput import getLetter
 from sys import exit
 
 teller = 0
@@ -561,7 +543,7 @@ while True:
     teller += 1
     prompt = "Ik raad "+str( poging )+". Is jouw getal"+\
         " (L)ager of (H)oger, of is dit (C)orrect? "
-    antwoord = getLetter( prompt )
+    antwoord = input( prompt )
     if antwoord == "C":
         break
     elif antwoord == "L":
@@ -587,9 +569,7 @@ else:
 #### Antwoord 7.10
 
 ```python
-from pcinput import getInteger
-
-num = getInteger( "Geef een nummer: " )
+num = int( input( "Geef een nummer: " ) )
 if num < 2:
     print( num, "is niet priem" )
 else:
@@ -844,8 +824,6 @@ moet 2.33 of 2.34 geven.
 #### Antwoord 8.1
 
 ```python
-from pcinput import getInteger
-
 # tafel krijgt een integer als parameter. Het drukt de
 # tafel van vermenigvuldiging voor deze integer af.
 def tafel( n ):
@@ -854,15 +832,13 @@ def tafel( n ):
         print( i, "*", n, "=", i*n )
         i += 1
 
-num = getInteger( "Geef een getal: " )
+num = int( input( "Geef een getal: " ) )
 tafel( num )
 ```
 
 #### Antwoord 8.2
 
 ```python
-from pcinput import getString
-
 # gemeen krijgt twee strings als parameters. Het retourneert
 # het aantal tekens dat de strings gemeen hebben.
 def gemeen( w1, w2 ):
@@ -872,8 +848,8 @@ def gemeen( w1, w2 ):
             tekens += letter
     return len( tekens )
 
-woord1 = getString( "Geef woord 1: " )
-woord2 = getString( "Geef woord 2: " )
+woord1 = input( "Geef woord 1: " )
+woord2 = input( "Geef woord 2: " )
 
 num = gemeen( woord1, woord2 )
 if num <= 0:
@@ -906,7 +882,6 @@ print( gregoryLeibnitz( 50 ) )
 #### Antwoord 8.4
 
 ```python
-from pcinput import getFloat
 from math import sqrt
 
 # Deze functie lost een kwadratische vergelijking op.
@@ -930,8 +905,8 @@ def wortelformule( a, b, c ):
         return 2, (-b+sqrt(discriminant))/(2*a), \
             (-b-sqrt(discriminant))/(2*a)
 
-num, opl1, opl2 = wortelformule( getFloat( "A: " ),
-    getFloat( "B: " ), getFloat( "C: " ) )
+num, opl1, opl2 = wortelformule( float( input( "A: " ) ),
+    float( input( "B: " ) ), float( input( "C: " ) ) )
 if num == 0:
     print( "Er zijn geen oplossingen" )
 elif num == 1:
@@ -943,11 +918,9 @@ else:
 #### Antwoord 8.5
 
 ```python
-from pcinput import getInteger
-
 def getNummer( prompt ):
     while True:
-        num = getInteger( prompt )
+        num = int( input( prompt ) )
         if num < 0 or num > 1000:
             print( "Geef een getal tussen 1 en 1000" )
             continue
@@ -1497,8 +1470,6 @@ for i in nummers:
 #### Antwoord 12.6
 
 ```python
-from pcinput import getInteger
-
 LEEG = "-"
 SPELERX = "X"
 SPELERO = "O"
@@ -1519,8 +1490,8 @@ def opponent( p ):
 
 def neemRowKolom( speler, wat ):
     while True:
-        num = getInteger( "Speler "+speler+", welke "+wat+
-            " kies je? " )
+        num = int( input( "Speler "+speler+", welke "+wat+
+            " kies je? " ) )
         if num < 1 or num > 3:
             print( "Geef 1, 2, of 3" )
             continue
@@ -1568,7 +1539,6 @@ while True:
 #### Antwoord 12.7
 
 ```python
-from pcinput import getString
 from random import randint
 
 LEEG = "."
@@ -1608,7 +1578,8 @@ def plaatsSchepen( b ):
 
 def neemDoel():
     while True:
-        cel = getString( "Welke cel kies je? " ).upper()
+        cel = input(
+            "Welke cel kies je? " ).strip().upper()
         if len( cel ) != 2:
             print( "Geef een cel in als XY,",
                 "met X een letter en Y een cijfer" )
@@ -2171,7 +2142,6 @@ vaak in een paar regels schrijven, terwijl foutafhandeling drie keer zo
 lang is.
 
 ```python
-from pcinput import getString, getLetter
 from os.path import exists, getsize
 
 LETTERS = b"etaoinshrdlcum "
@@ -2210,7 +2180,7 @@ def decomprimeer( gecodeerd ):
 
 # Vraag om input bestand en lees de inhoud
 while True:
-    filein = getString( "Geef input bestand: " )
+    filein = input( "Geef input bestand: " ).strip()
     if not exists( filein ):
         print( filein, "bestaat niet" )
         continue
@@ -2226,7 +2196,7 @@ while True:
 
 # Vraag om output bestand en creeer het
 while True:
-    fileout = getString( "Geef output bestand: " )
+    fileout = input( "Geef output bestand: " ).strip()
     if exists( fileout ):
         print( fileout, "bestaat al" )
         continue
@@ -2241,7 +2211,8 @@ while True:
 
 # Vraag of de gebruiker wil comprimeren of decomprimeren.
 while True:
-    dc = getLetter( "Wil je (C)omprimeren of (D)ecomprimeren? " )
+    prompt = "Wil je (C)omprimeren of (D)ecomprimeren? "
+    dc = input( prompt ).strip().upper()
     if dc != 'C' and dc != 'D':
         print( "Kies C of D" )
         continue
@@ -2887,8 +2858,6 @@ print( "Score van", strategie2.naam, "is", strategie2.score )
 #### Antwoord 23.1
 
 ```python
-from pcinput import getInteger
-
 class NietDeelbaarDoor:
     def __init__( self ):
         self.seq = list( range( 1, 101 ) )
@@ -2909,7 +2878,7 @@ class NietDeelbaarDoor:
 
 ndd = NietDeelbaarDoor()
 while True:
-    num = getInteger( "Geef een getal: " )
+    num = int( input( "Geef een getal: " ) )
     if num < 0:
         print( "Negatieve getallen worden overgeslagen" )
         continue
@@ -3252,13 +3221,12 @@ for c in clist:
 
 ```python
 from collections import Counter
-from pcinput import getInteger
 from statistics import mean, median
 from sys import exit
 
 numlist = []
 while True:
-    num = getInteger( "Geef een getal: " )
+    num = int( input( "Geef een getal: " ) )
     if num == 0:
         break
     numlist.append( num )

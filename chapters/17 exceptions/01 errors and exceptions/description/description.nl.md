@@ -13,9 +13,7 @@ code uit te breiden of te wijzigen. Bijvoorbeeld, het volgende programma
 geeft een runtime error als je nul ingeeft:
 
 ```python
-from pcinput import getInteger
-
-num = getInteger( "Geef een getal: " )
+num = int( input( "Geef een getal: " ) )
 print( "3 gedeeld door {} is {}".format( num, 3/num ) )
 print( "Tot ziens!" )
 ```
@@ -24,9 +22,7 @@ Python vertelt je wat voor soort error het is, namelijk een
 `ZeroDivisionError`. Om die op te lossen, kun je het programma wijzigen:
 
 ```python
-from pcinput import getInteger
-
-num = getInteger( "Geef een getal: " )
+num = int( input( "Geef een getal: " ) )
 if num == 0:
     print( "Je kunt niet delen door nul" )
 else:

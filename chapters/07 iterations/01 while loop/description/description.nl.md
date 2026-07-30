@@ -3,13 +3,11 @@ en dan het totaal moet laten zien. Met het materiaal dat tot nu toe
 behandeld is, zou je dat als volgt coderen:
 
 ```python
-from pcinput import getInteger
-
-num1 = getInteger( "Nummer 1: " )
-num2 = getInteger( "Nummer 2: " )
-num3 = getInteger( "Nummer 3: " )
-num4 = getInteger( "Nummer 4: " )
-num5 = getInteger( "Nummer 5: " )
+num1 = int( input( "Nummer 1: " ) )
+num2 = int( input( "Nummer 2: " ) )
+num3 = int( input( "Nummer 3: " ) )
+num4 = int( input( "Nummer 4: " ) )
+num5 = int( input( "Nummer 5: " ) )
 
 print( "Totaal is", num1 + num2 + num3 + num4 + num5 )
 ```
@@ -113,12 +111,10 @@ je de gebruiker kunt vragen om vijf getallen, en dan de som van de vijf
 te berekenen:
 
 ```python
-from pcinput import getInteger
-
 totaal = 0
 teller = 0
 while teller < 5:
-    totaal += getInteger( "Geef een nummer: " )
+    totaal += int( input( "Geef een nummer: " ) )
     teller += 1
 
 print( "Totaal is", totaal )
@@ -179,12 +175,10 @@ met het ingeven van getallen door een nul in te geven. Het totaal wordt
 afgedrukt wanneer de loop beëindigd is.
 
 ```python
-from pcinput import getInteger
-    
 num = -1
 totaal = 0
 while num != 0:
-    num = getInteger( "Geef een nummer: " )
+    num = int( input( "Geef een nummer: " ) )
     totaal += num
 print( "Totaal is", totaal )
 ```
@@ -203,20 +197,18 @@ Vanwege deze lelijke kanten aan de code, prefereren sommige programmeurs
 om het als volgt te schrijven:
 
 ```python
-from pcinput import getInteger
-    
-num = getInteger( "Geef een nummer: " )
+num = int( input( "Geef een nummer: " ) )
 totaal = 0
 while num != 0:
     totaal += num
-    num = getInteger( "Geef een nummer: " )
+    num = int( input( "Geef een nummer: " ) )
 print( "Totaal is", totaal )
 ```
 
 Dit lost de twee hierboven genoemde lelijke zaken op, maar introduceert
-iets anders lelijks, namelijk de herhaling van de `getInteger()`
-functie. Hoe je dat kunt oplossen volgt later in dit hoofdstuk. Op dit
-moment hoef je alleen te snappen hoe de `while` loop werkt.
+iets anders lelijks, namelijk de herhaling van de regel die om een
+getal vraagt. Hoe je dat kunt oplossen volgt later in dit hoofdstuk. Op
+dit moment hoef je alleen te snappen hoe de `while` loop werkt.
 
 Maak een loop die de gebruiker een aantal getallen laat ingeven, totdat
 hij nul ingeeft, en dan het totaal en het gemiddelde afdrukt. Vergeet

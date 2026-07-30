@@ -13,9 +13,7 @@ code. For instance, the following program causes a runtime error when
 you enter a zero as input:
 
 ```python
-from pcinput import getInteger
-
-num = getInteger( "Please enter a number: " )
+num = int( input( "Please enter a number: " ) )
 print( "3 divided by {} is {}".format( num, 3/num ) )
 print( "Goodbye!" )
 ```
@@ -24,9 +22,7 @@ Python tells you what kind of error it is, namely a `ZeroDivisionError`.
 To fix it, you can change the program:
 
 ```python
-from pcinput import getInteger
-
-num = getInteger( "Please enter a number: " )
+num = int( input( "Please enter a number: " ) )
 if num == 0:
     print( "Dividing by zero is not allowed" )
 else:

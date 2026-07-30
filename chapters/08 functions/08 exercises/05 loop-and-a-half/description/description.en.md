@@ -11,14 +11,13 @@ get rid of the `exit()` and thus the possible ugly output by introducing
 a `main()` function.
 
 ```python
-from pcinput import getInteger
 from sys import exit
 
 while True:
-    x = getInteger( "Enter number 1: " )
+    x = int( input( "Enter number 1: " ) )
     if x == 0:
         break
-    y = getInteger( "Enter number 2: " )
+    y = int( input( "Enter number 2: " ) )
     if y == 0:
         break
     if (x < 0 or x > 1000) or (y < 0 or y > 1000):
@@ -35,10 +34,10 @@ print( "Goodbye!" )
 ### Assignment
 
 Write a function `get_valid_number` that takes a prompt (`str`). The function
-must use `getInteger` to keep asking for an integer using the given prompt,
-until the user enters a value between 0 and 1000 (inclusive); for every value
-outside that range, print `The numbers should be between 0 and 1000` before
-asking again. The function must return the validated integer (`int`).
+must keep asking for an integer using the given prompt, until the user enters
+a value between 0 and 1000 (inclusive); for every value outside that range,
+print `The numbers should be between 0 and 1000` before asking again. The
+function must return the validated integer (`int`).
 
 Rewrite the code above into a function `main` that takes no arguments, using
 `get_valid_number` to fix the issue described above. Also get rid of the

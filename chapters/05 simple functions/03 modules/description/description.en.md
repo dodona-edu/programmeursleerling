@@ -132,6 +132,18 @@ print( "The same 3 numbers are:", random(), random(), random() )
 
 ### `pcinput`
 
+{:class="callout callout-info"}
+> #### Note
+> On Dodona you do not use `pcinput`. You read the input with `input()` and cast it to the type you need, as in the table below. The module exists to keep asking until the user enters something valid, and that is never needed here: the input of an exercise on Dodona comes from a fixed test case instead of from a person typing at the keyboard, so it is always valid already and there is nothing to ask again. For the same reason you do not need the extra tidying up that `getString()` and `getLetter()` do, which is why plain `input(prompt)` replaces both. The explanation that follows describes the module of the printed book. It applies only when you run the exercises in your own environment, outside Dodona, where you save `pcinput.py` next to your own code.
+
+| in the book | on Dodona |
+|-------------|-----------|
+| `getInteger(prompt)` | `int(input(prompt))` |
+| `getFloat(prompt)` | `float(input(prompt))` |
+| `getString(prompt)` | `input(prompt)` |
+| `getLetter(prompt)` | `input(prompt)` |
+{:class="table table-striped table-condensed" style="width:auto;margin-left:auto;margin-right:auto;"}
+
 `pcinput` is a module I wrote for this book. You can find it in Appendix
 31,
 and can easily recreate it (or simply download it from
@@ -193,33 +205,3 @@ for a float.
 {:class="callout callout-info"}
 > #### Note
 > I do not explain here how the functions of `pcinput` work, as they are implemented using concepts that are discussed much later in the book. You will learn, in time, how to develop such functions yourself. For now, do not worry about how they work, but just use them. This is the attitude that you should have towards most standard functions: as long as you know what they do, which parameters they need, and what they return, you do not need to spend time considering how they work.
-
-On Dodona you do not use `pcinput`. The module is not available here, so
-importing it gives an error. And you do not need it either: the whole
-point of these functions is to keep asking until the user enters
-something valid, but the input of an exercise on Dodona comes from a
-fixed test case instead of from a person typing at the keyboard, so it is
-always valid already and there is nothing to ask again. Reading the input
-with `input()` and casting it to the type you need is therefore enough:
-
-| in the book | on Dodona |
-|-------------|-----------|
-| `getInteger(prompt)` | `int(input(prompt))` |
-| `getFloat(prompt)` | `float(input(prompt))` |
-| `getString(prompt)` | `input(prompt)` |
-| `getLetter(prompt)` | `input(prompt)` |
-{:class="table table-striped table-condensed" style="width:auto;margin-left:auto;margin-right:auto;"}
-
-The example above thus becomes the following on Dodona:
-
-```python
-num1 = int( input( "Please enter an integer: " ) )
-num2 = int( input( "Please enter another integer: " ) )
-
-print( "The sum of", num1, "and", num2, "is", num1 + num2 )
-```
-
-Keep in mind that `getString()` also removes the leading and trailing
-spaces of the input, and that `getLetter()` returns a capital. If you
-need that, you write it yourself as `input(prompt).strip()` and
-`input(prompt).strip().upper()`.
