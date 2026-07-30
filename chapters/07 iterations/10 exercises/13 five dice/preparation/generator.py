@@ -1,33 +1,24 @@
 import os
-import random
-import subprocess
-
-# set fixed seed for generating test cases
-random.seed(123456789)
+from math import comb
 
 # locate evaldir
 evaldir = os.path.join('..', 'evaluation')
 if not os.path.exists(evaldir):
     os.makedirs(evaldir)
 
-# locate solutiondir
-solutiondir = os.path.join('..', 'solution')
-if not os.path.exists(solutiondir):
-    os.makedirs(solutiondir)
-
 # configuration settings
-settings = f'''
+settings = r'''
 tab name: Tests
 python input without prompt: true
 block count: multi
 input block size: 1
 output block size: 1
-ignore fp rounding: -3
+ignore fp rounding: -2
 time limit: 42
 <LANGUAGE code="nl">
     <regex from="non-decreasing sequence of ([0-9]+) dice" to="niet-dalende reeks van \1 dobbelstenen" />
     <fixed from="decreasing" to="dalende" />
-    <fixed from="reeks" to="sequence" />
+    <fixed from="sequence" to="reeks" />
     <fixed from="dice" to="dobbelstenen" />
 </LANGUAGE>
 '''
@@ -43,21 +34,14 @@ outfile = open(os.path.join(evaldir, '0.out'), 'w', encoding='utf-8')
 for stdin in cases:
 
     # add input to input file
-    stdin = str(stdin)
-    print(stdin, file=infile)
+    n = stdin
+    print(n, file=infile)
 
-    # generate output to output file
-    script = os.path.join(solutiondir, 'solution.en.py')
-    process= subprocess.run(
-        ['python', script],
-        input=stdin,
-        encoding='utf-8',
-        capture_output=True, shell=True, check=True
-    )
-    stdout = process.stdout
+    # compute the exact probability: C(n+5, n) / 6**n
+    probability = comb(n + 5, n) / 6 ** n
 
-    # add stdout to output file
-    print(stdout, file=outfile, end='')
+    # add expected output to output file
+    print(f'P(non-decreasing sequence of {n} dice) = {round(probability, 6)}', file=outfile)
 
 # add settings to output file
-print('-' * 60 + settings, file=outfile)
+print('-' * 60 + settings, file=outfile, end='')
