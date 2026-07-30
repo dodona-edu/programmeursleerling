@@ -4,6 +4,23 @@ Boeken hebben een titel. Boeken hebben ook een locatienummer dat
 aangeeft waar ze staan in de bibliotheek. De bibliothecaris wil kunnen
 vinden waar een boek staat als de schrijver en titel gekend zijn, en wil
 ook alle boeken kunnen afdrukken die van een bepaalde schrijver zijn.
+Welke data structuur kun je gebruiken om de boeken in op te slaan?
+
+<details markdown="1">
+<summary>Antwoord</summary>
+
+Gebruik een dictionary (`dict`) die elke schrijver afbeeldt op een andere
+dictionary (`dict`), met de titels van de boeken van die schrijver en hun
+locatienummers. De schrijver zelf stel je voor als een `tuple` met de
+achternaam en de voornaam: een `tuple` is onveranderlijk en kan dus als
+sleutel van een dictionary gebruikt worden, wat met een `list` niet kan.
+
+Zo krijg je beide dingen die de bibliothecaris wil. Om één boek te vinden
+zoek je eerst de schrijver op en daarna de titel. Om alles op te lijsten
+wat de bibliotheek van een schrijver heeft, neem je de sleutels van de
+binnenste dictionary van die schrijver.
+
+</details>
 
 ### Opgave
 

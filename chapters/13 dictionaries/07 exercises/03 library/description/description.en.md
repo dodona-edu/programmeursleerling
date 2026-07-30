@@ -3,7 +3,23 @@ writer, identified by last name and first name. Books also have a title.
 Books also have a location number that identifies where they can be
 found in the library. Librarians want to be able to locate a specific
 book if they know writer and title, and they want to be able to list all
-the books that they have of a specific writer.
+the books that they have of a specific writer. What data structure would
+you use to store the books?
+
+<details markdown="1">
+<summary>Answer</summary>
+
+Use a dictionary (`dict`) that maps each writer onto another dictionary
+(`dict`), holding the titles of that writer's books and their location
+numbers. Represent the writer itself as a `tuple` with the last name and
+the first name: a `tuple` is immutable, so it can be used as a key of a
+dictionary, which a `list` cannot.
+
+That covers both things the librarians want. To locate a single book, you
+look up the writer and then the title. To list everything the library has
+of a writer, you take the keys of that writer's inner dictionary.
+
+</details>
 
 ### Assignment
 
