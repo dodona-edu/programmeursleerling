@@ -1,9 +1,8 @@
 {
-  "type": "content",
   "description": {
     "names": {
-      "nl": "Bibliotheek (TODO)",
-      "en": "Library (TODO)"
+      "nl": "Bibliotheek",
+      "en": "Library"
     }
   },
   "labels": [

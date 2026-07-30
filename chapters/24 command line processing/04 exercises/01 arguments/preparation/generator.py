@@ -1,9 +1,32 @@
-import json
 import random
 import string
 
+import yaml
+
 # Met een vaste seed krijgen we deterministische resultaten.
 random.seed(123456789)
+
+
+class FlowList(list):
+    pass
+
+
+class QuotedStr(str):
+    pass
+
+
+yaml.add_representer(
+    FlowList,
+    lambda dumper, data: dumper.represent_sequence(
+        'tag:yaml.org,2002:seq', data, flow_style=True
+    ),
+)
+yaml.add_representer(
+    QuotedStr,
+    lambda dumper, data: dumper.represent_scalar(
+        'tag:yaml.org,2002:str', data, style="'"
+    ),
+)
 
 
 def generate_data():
@@ -29,45 +52,30 @@ def is_all_int(data):
 
 
 if __name__ == '__main__':
-    contexts = []
+    testcases = []
     numbers = generate_data()
     for inputs in numbers:
-        input_ = {
-            "arguments": [str(x) for x in inputs],
-            "main_call": True
+        testcase = {
+            "arguments": FlowList(QuotedStr(str(x)) for x in inputs),
         }
         if is_all_int(inputs):
-            output_ = {
-                "stdout": {
-                    "type": "text",
-                    "data": str(sum(inputs))
-                }
-            }
+            testcase["stdout"] = QuotedStr(str(sum(inputs)))
         else:
-            output_ = {
-                "stderr": {
-                    "type": "text",
-                    "data": "som: ongeldige argumenten"
-                },
-                "exit_code": {
-                    "value": 1
-                }
+            testcase["stderr"] = {
+                "data": "",
+                "oracle": "custom_check",
+                "file": "stderr_check.py",
+                "name": "evaluate",
             }
-        contexts.append({
-            "run": {
-                "input":  input_,
-                "output": output_
-            }
-        })
+            testcase["exit_code"] = 1
+        testcases.append(testcase)
 
-    plan = {
-        "tabs": [
-            {
-                "name":     "Feedback",
-                "runs": contexts
-            }
-        ]
-    }
+    suite = [
+        {
+            "tab": "Feedback",
+            "testcases": testcases,
+        }
+    ]
 
-    with open("../evaluation/plan.json", "w") as f:
-        json.dump(plan, f, indent=2)
+    with open("../evaluation/suite.yaml", "w") as f:
+        yaml.dump(suite, f, default_flow_style=False, sort_keys=False)

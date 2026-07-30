@@ -1,0 +1,8 @@
+--------------------------------------------------------
+tab name: titles
+independent examples: false
+<LANGUAGE code="nl">
+    <function from="location" to="locatie" />
+    <function from="titles" to="titels" />
+    <fixed from="library" to="bibliotheek" detect="false" />
+</LANGUAGE>

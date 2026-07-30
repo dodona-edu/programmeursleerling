@@ -1,20 +1,20 @@
 P(non-decreasing sequence of 1 dice) = 1.0
 P(non-decreasing sequence of 2 dice) = 0.583333
-P(non-decreasing sequence of 3 dice) = 0.25944
-P(non-decreasing sequence of 4 dice) = 0.097104
-P(non-decreasing sequence of 5 dice) = 0.032293
-P(non-decreasing sequence of 6 dice) = 0.00973
-P(non-decreasing sequence of 7 dice) = 0.002947
-P(non-decreasing sequence of 8 dice) = 0.000782
-P(non-decreasing sequence of 9 dice) = 0.000211
-P(non-decreasing sequence of 10 dice) = 5.1e-05
+P(non-decreasing sequence of 3 dice) = 0.259259
+P(non-decreasing sequence of 4 dice) = 0.097222
+P(non-decreasing sequence of 5 dice) = 0.032407
+P(non-decreasing sequence of 6 dice) = 0.009902
+P(non-decreasing sequence of 7 dice) = 0.002829
+P(non-decreasing sequence of 8 dice) = 0.000766
+P(non-decreasing sequence of 9 dice) = 0.000199
+P(non-decreasing sequence of 10 dice) = 5e-05
 ------------------------------------------------------------
 tab name: Tests
 python input without prompt: true
 block count: multi
 input block size: 1
 output block size: 1
-ignore fp rounding: -3
+ignore fp rounding: -2
 time limit: 42
 <LANGUAGE code="nl">
     <regex from="non-decreasing sequence of ([0-9]+) dice" to="niet-dalende reeks van \1 dobbelstenen" />

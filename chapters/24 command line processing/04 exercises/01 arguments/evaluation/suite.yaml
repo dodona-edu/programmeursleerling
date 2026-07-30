@@ -1,0 +1,127 @@
+- tab: Feedback
+  testcases:
+  - arguments: ['-1', '-23', '72', '84', '-38', '-61', '49', '45']
+    stdout: '127'
+  - arguments: ['22']
+    stdout: '22'
+  - arguments: ['-85', '-30', '18', '-35', '-15', '-95', '-4', '92', '-33']
+    stdout: '-187'
+  - arguments: []
+    stdout: '0'
+  - arguments: ['-25', '19', '2', '24', '-14', '-19', '-39', '-66', '-17', '94']
+    stdout: '-41'
+  - arguments: ['81', '-37', '89', '68', '-52', '28', '-67']
+    stdout: '110'
+  - arguments: ['-73', '-36', '-90', '-2']
+    stdout: '-201'
+  - arguments: ['E', 'y', 'j', '2', 'f', 'N', 'a']
+    stderr:
+      data: ''
+      oracle: custom_check
+      file: stderr_check.py
+      name: evaluate
+    exit_code: 1
+  - arguments: ['40', '75', '-78', '-12']
+    stdout: '25'
+  - arguments: ['56', '-53', '-94', '89']
+    stdout: '-2'
+  - arguments: ['-2']
+    stdout: '-2'
+  - arguments: ['-17', '52', '-24', '31', '-97', '23']
+    stdout: '-32'
+  - arguments: ['52', '-74', '27', '-36', '32', '89', '-95']
+    stdout: '-5'
+  - arguments: ['82', '20', '-4', '-29']
+    stdout: '69'
+  - arguments: ['75', '-47', '32', '28', '97', '-86', '-85', '94', '-70']
+    stdout: '38'
+  - arguments: ['14', '45', '2', '51', '-30', '-2']
+    stdout: '80'
+  - arguments: ['X', 'G', 'Q', 'b', '5', '2', 'y', 'S', 'x', 'D']
+    stderr:
+      data: ''
+      oracle: custom_check
+      file: stderr_check.py
+      name: evaluate
+    exit_code: 1
+  - arguments: ['85', '-76', '-16', '39', '-7']
+    stdout: '25'
+  - arguments: ['12', '39', '76', '-47', '72', '53']
+    stdout: '205'
+  - arguments: ['18', '-76']
+    stdout: '-58'
+  - arguments: ['A', 'p', 'Hello World', 'V']
+    stderr:
+      data: ''
+      oracle: custom_check
+      file: stderr_check.py
+      name: evaluate
+    exit_code: 1
+  - arguments: ['10', '1', '24', '94', '88', '79']
+    stdout: '296'
+  - arguments: ['68', '33', '-24']
+    stdout: '77'
+  - arguments: ['82', '-50', '-72', '-29', '67', '-51']
+    stdout: '-53'
+  - arguments: ['1', '-72', '89', '14', '-96', '-34', '-23']
+    stdout: '-121'
+  - arguments: ['-20', '-4', '71', '98']
+    stdout: '145'
+  - arguments: ['-32', '-40', '-99', '-58', '16', '-88', '79', '77', '-59']
+    stdout: '-204'
+  - arguments: ['-63', '-76']
+    stdout: '-139'
+  - arguments: ['-64', '89', '-20', '73', '18', '51', '-23', '62', '-78']
+    stdout: '108'
+  - arguments: ['11', '55', '33', '2', '-47', '63', '-24', '-66']
+    stdout: '27'
+  - arguments: ['66']
+    stdout: '66'
+  - arguments: []
+    stdout: '0'
+  - arguments: ['-36', '-89', '-45', '17', '-14', '8', '-60', '-28', '89']
+    stdout: '-158'
+  - arguments: ['a', 'A']
+    stderr:
+      data: ''
+      oracle: custom_check
+      file: stderr_check.py
+      name: evaluate
+    exit_code: 1
+  - arguments: ['-40', '86', '-32', '-86', '-7']
+    stdout: '-79'
+  - arguments: []
+    stdout: '0'
+  - arguments: []
+    stdout: '0'
+  - arguments: ['69', '-41', '45', '19', '77', '32', '-37', '-45']
+    stdout: '119'
+  - arguments: ['j', 'e', 'x', 'o', 'R', 'M', 'U', 'r', 'n']
+    stderr:
+      data: ''
+      oracle: custom_check
+      file: stderr_check.py
+      name: evaluate
+    exit_code: 1
+  - arguments: ['70', '75', '-89', '85', '-30', '-17', '-68', '-96']
+    stdout: '-70'
+  - arguments: ['69', '81', '-43']
+    stdout: '107'
+  - arguments: []
+    stdout: '0'
+  - arguments: ['70', '18', '-59', '-65', '82', '65', '26', '-74', '-16']
+    stdout: '47'
+  - arguments: ['73', '88', '-62', '-72', '35', '-36', '-100', '13']
+    stdout: '-61'
+  - arguments: ['42', '-84', '-95', '52', '33', '-22']
+    stdout: '-74'
+  - arguments: ['-29', '-51', '68', '39', '79', '-13', '-22', '-4', '-32']
+    stdout: '35'
+  - arguments: []
+    stdout: '0'
+  - arguments: ['39', '11', '69', '0', '6', '37', '-72', '-29', '25']
+    stdout: '86'
+  - arguments: ['13', '38', '81', '54', '1', '-23', '76', '19', '36', '-11']
+    stdout: '284'
+  - arguments: ['80', '-23']
+    stdout: '57'

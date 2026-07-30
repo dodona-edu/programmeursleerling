@@ -21,8 +21,8 @@ Exit codes:
     0   the judge ran and the expected outcome was reached
     1   the judge ran and the outcome was not the expected one
     2   infrastructure problem (no Docker, missing image, missing judge
-        source, unparseable judge output, ...) -- says nothing about the
-        solution
+        source, unparseable judge output, not a pythia exercise, the judge
+        ran no tests at all, ...) -- says nothing about the solution
 """
 
 from __future__ import annotations
@@ -126,6 +126,14 @@ def resolve_config(exercise_dir):
 
 
 def resolve_judge_mode(config, exercise_dir):
+    handler = config.get('evaluation', {}).get('handler')
+    if handler is not None and handler != 'pythia':
+        raise InfraError(
+            f'{exercise_dir} is not a pythia exercise: the resolved config '
+            f'sets evaluation.handler to "{handler}" -- use the /verify '
+            f'skill for TESTed and SQL exercises'
+        )
+
     mode = config.get('evaluation', {}).get('pythia_judge')
     if not mode:
         raise InfraError(
@@ -503,6 +511,17 @@ def main(argv=None):
         print()
         print('--- judge stderr ---')
         print(stderr.strip()[:4000])
+
+    if passed == 0 and failed == 0:
+        print()
+        print(
+            'INFRASTRUCTURE ERROR: the judge reported no tests at all, so '
+            'nothing can be concluded about this solution -- the '
+            'evaluation/ directory may not contain test files for this '
+            'judge',
+            file=sys.stderr,
+        )
+        return EXIT_INFRA
 
     all_good = bool(accepted) and failed == 0
 

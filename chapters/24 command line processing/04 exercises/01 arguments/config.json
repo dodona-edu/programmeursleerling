@@ -1,15 +1,16 @@
 {
   "description": {
     "names": {
-      "nl": "Som (TODO)",
-      "en": "Sum (TODO)"
+      "nl": "Som",
+      "en": "Sum"
     }
   },
   "labels": [
 
   ],
   "evaluation": {
-    "handler": "tested"
+    "handler": "tested",
+    "test_suite": "suite.yaml"
   },
   "internals": {
     "token": "uPxAgjhujZKktJxhJ6x8ihkeaqDUD2feTRyxIkPpenpebQEuB-BYIgrsKnqZ6V52",
