@@ -8,7 +8,7 @@ for arg in sys.argv[1:]:
     try:
         sum += int(arg)
     except ValueError:
-        print('invalid arguments', file=sys.stderr)
+        print('sum: invalid arguments', file=sys.stderr)
         sys.exit(1)
 
 # output the sum of the arguments

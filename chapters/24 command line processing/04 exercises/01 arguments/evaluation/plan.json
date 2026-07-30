@@ -21,7 +21,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "127"
+                "data": "127\n"
               }
             }
           }
@@ -37,7 +37,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "22"
+                "data": "22\n"
               }
             }
           }
@@ -61,7 +61,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "-187"
+                "data": "-187\n"
               }
             }
           }
@@ -75,7 +75,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "0"
+                "data": "0\n"
               }
             }
           }
@@ -100,7 +100,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "-41"
+                "data": "-41\n"
               }
             }
           }
@@ -122,7 +122,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "110"
+                "data": "110\n"
               }
             }
           }
@@ -141,7 +141,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "-201"
+                "data": "-201\n"
               }
             }
           }
@@ -163,7 +163,14 @@
             "output": {
               "stderr": {
                 "type": "text",
-                "data": "som: ongeldige argumenten"
+                "data": "",
+                "evaluator": {
+                  "type": "custom_check",
+                  "function": {
+                    "file": "stderr_check.py",
+                    "name": "evaluate"
+                  }
+                }
               },
               "exit_code": {
                 "value": 1
@@ -185,7 +192,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "25"
+                "data": "25\n"
               }
             }
           }
@@ -204,7 +211,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "-2"
+                "data": "-2\n"
               }
             }
           }
@@ -220,7 +227,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "-2"
+                "data": "-2\n"
               }
             }
           }
@@ -241,7 +248,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "-32"
+                "data": "-32\n"
               }
             }
           }
@@ -263,7 +270,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "-5"
+                "data": "-5\n"
               }
             }
           }
@@ -282,7 +289,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "69"
+                "data": "69\n"
               }
             }
           }
@@ -306,7 +313,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "38"
+                "data": "38\n"
               }
             }
           }
@@ -327,7 +334,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "80"
+                "data": "80\n"
               }
             }
           }
@@ -352,7 +359,14 @@
             "output": {
               "stderr": {
                 "type": "text",
-                "data": "som: ongeldige argumenten"
+                "data": "",
+                "evaluator": {
+                  "type": "custom_check",
+                  "function": {
+                    "file": "stderr_check.py",
+                    "name": "evaluate"
+                  }
+                }
               },
               "exit_code": {
                 "value": 1
@@ -375,7 +389,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "25"
+                "data": "25\n"
               }
             }
           }
@@ -396,7 +410,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "205"
+                "data": "205\n"
               }
             }
           }
@@ -413,7 +427,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "-58"
+                "data": "-58\n"
               }
             }
           }
@@ -432,7 +446,14 @@
             "output": {
               "stderr": {
                 "type": "text",
-                "data": "som: ongeldige argumenten"
+                "data": "",
+                "evaluator": {
+                  "type": "custom_check",
+                  "function": {
+                    "file": "stderr_check.py",
+                    "name": "evaluate"
+                  }
+                }
               },
               "exit_code": {
                 "value": 1
@@ -456,7 +477,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "296"
+                "data": "296\n"
               }
             }
           }
@@ -474,7 +495,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "77"
+                "data": "77\n"
               }
             }
           }
@@ -495,7 +516,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "-53"
+                "data": "-53\n"
               }
             }
           }
@@ -517,7 +538,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "-121"
+                "data": "-121\n"
               }
             }
           }
@@ -536,7 +557,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "145"
+                "data": "145\n"
               }
             }
           }
@@ -560,7 +581,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "-204"
+                "data": "-204\n"
               }
             }
           }
@@ -577,7 +598,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "-139"
+                "data": "-139\n"
               }
             }
           }
@@ -601,7 +622,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "108"
+                "data": "108\n"
               }
             }
           }
@@ -624,7 +645,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "27"
+                "data": "27\n"
               }
             }
           }
@@ -640,7 +661,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "66"
+                "data": "66\n"
               }
             }
           }
@@ -654,7 +675,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "0"
+                "data": "0\n"
               }
             }
           }
@@ -678,7 +699,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "-158"
+                "data": "-158\n"
               }
             }
           }
@@ -695,7 +716,14 @@
             "output": {
               "stderr": {
                 "type": "text",
-                "data": "som: ongeldige argumenten"
+                "data": "",
+                "evaluator": {
+                  "type": "custom_check",
+                  "function": {
+                    "file": "stderr_check.py",
+                    "name": "evaluate"
+                  }
+                }
               },
               "exit_code": {
                 "value": 1
@@ -718,7 +746,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "-79"
+                "data": "-79\n"
               }
             }
           }
@@ -732,7 +760,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "0"
+                "data": "0\n"
               }
             }
           }
@@ -746,7 +774,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "0"
+                "data": "0\n"
               }
             }
           }
@@ -769,7 +797,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "119"
+                "data": "119\n"
               }
             }
           }
@@ -793,7 +821,14 @@
             "output": {
               "stderr": {
                 "type": "text",
-                "data": "som: ongeldige argumenten"
+                "data": "",
+                "evaluator": {
+                  "type": "custom_check",
+                  "function": {
+                    "file": "stderr_check.py",
+                    "name": "evaluate"
+                  }
+                }
               },
               "exit_code": {
                 "value": 1
@@ -819,7 +854,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "-70"
+                "data": "-70\n"
               }
             }
           }
@@ -837,7 +872,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "107"
+                "data": "107\n"
               }
             }
           }
@@ -851,7 +886,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "0"
+                "data": "0\n"
               }
             }
           }
@@ -875,7 +910,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "47"
+                "data": "47\n"
               }
             }
           }
@@ -898,7 +933,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "-61"
+                "data": "-61\n"
               }
             }
           }
@@ -919,7 +954,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "-74"
+                "data": "-74\n"
               }
             }
           }
@@ -943,7 +978,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "35"
+                "data": "35\n"
               }
             }
           }
@@ -957,7 +992,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "0"
+                "data": "0\n"
               }
             }
           }
@@ -981,7 +1016,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "86"
+                "data": "86\n"
               }
             }
           }
@@ -1006,7 +1041,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "284"
+                "data": "284\n"
               }
             }
           }
@@ -1023,7 +1058,7 @@
             "output": {
               "stdout": {
                 "type": "text",
-                "data": "57"
+                "data": "57\n"
               }
             }
           }
