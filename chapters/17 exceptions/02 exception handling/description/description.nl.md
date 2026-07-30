@@ -41,7 +41,7 @@ uitzonderingen worden via dezelfde `try … except` constructie
 afgehandeld.
 
 ```python
-num = int( input( "Geen een getal: " ) )
+num = int( input( "Geef een getal: " ) )
 try:
     print( "3 gedeeld door {} is {}".format( num, 3/num ) )
     print( "3 gedeeld door {}-3 is {}".format( num, 3/(num-3) ) )
