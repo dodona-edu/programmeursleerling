@@ -141,6 +141,18 @@ print( "Dezelfde 3 zijn:", random(), random(), random() )
 
 ### `pcinput`
 
+{:class="callout callout-info"}
+> #### Opmerking
+> Op Dodona gebruik je `pcinput` niet. Je leest de input met `input()` en cast die naar het type dat je nodig hebt, zoals in de tabel hieronder. De module bestaat om te blijven vragen tot de gebruiker iets correct ingeeft, en dat is hier nooit nodig: de input van een oefening op Dodona komt uit een vast testgeval en wordt niet door een persoon ingetypt, dus die is altijd al correct en er is niets om opnieuw te vragen. Om dezelfde reden heb je het extra opschoonwerk dat `getString()` en `getLetter()` doen niet nodig, en volstaat `input(prompt)` voor beide. De uitleg die volgt beschrijft de module uit het gedrukte boek. Die geldt alleen als je de oefeningen in je eigen omgeving uitvoert, buiten Dodona, met `pcinput.py` naast je eigen code.
+
+| in het boek | op Dodona |
+|-------------|-----------|
+| `getInteger(prompt)` | `int(input(prompt))` |
+| `getFloat(prompt)` | `float(input(prompt))` |
+| `getString(prompt)` | `input(prompt)` |
+| `getLetter(prompt)` | `input(prompt)` |
+{:class="table table-striped table-condensed" style="width:auto;margin-left:auto;margin-right:auto;"}
+
 `pcinput` is een module die ik voor dit boek geschreven heb. Je vindt
 hem in appendix
 31,
@@ -186,9 +198,9 @@ schrijft (daar heb ik een andere versie van de module voor), maar om
 Python te leren zijn deze functies afdoende.
 
 Creëer of download de `pcinput` module, zorg dat hij staat in de folder
-waar je je programma's schrijft, en maak dan een Python programma met
-onderstaande code. Voer het programma uit en test het door iets in te
-geven wat geen integer is.
+waar je op je eigen computer je programma's schrijft, en maak dan een
+Python programma met onderstaande code. Voer het programma uit en test
+het door iets in te geven wat geen integer is.
 
 ```python
 from pcinput import getInteger

@@ -8,14 +8,12 @@ zero, but that is not an error; you just want to allow the user to enter
 new numbers. How do you program that? Here is a first attempt:
 
 ```python
-from pcinput import getInteger
-
 x = 3
 y = 7
 
 while (x != 0) and (y != 0) and (x%y != 0) and (y%x != 0):
-    x = getInteger( "Enter number 1: " )
-    y = getInteger( "Enter number 2: " )
+    x = int( input( "Enter number 1: " ) )
+    y = int( input( "Enter number 2: " ) )
     if (x > 1000) or (y > 1000) or (x < 0) or (y < 0):
         print( "Numbers should both be between 0 and 1000" )
         continue
@@ -67,20 +65,18 @@ have a `continue` in the loop, you also have to copy it there. The code
 becomes something like this:
 
 ```python
-from pcinput import getInteger
-
-x = getInteger( "Enter number 1: " )
-y = getInteger( "Enter number 2: " )
+x = int( input( "Enter number 1: " ) )
+y = int( input( "Enter number 2: " ) )
 
 while (x != 0) and (y != 0) and (x%y != 0) and (y%x != 0):
     if (x > 1000) or (y > 1000) or (x < 0) or (y < 0):
         print( "Numbers should both be between 0 and 1000" )
-        x = getInteger( "Enter number 1: " )
-        y = getInteger( "Enter number 2: " )
+        x = int( input( "Enter number 1: " ) )
+        y = int( input( "Enter number 2: " ) )
         continue
     print( "Multiplication of", x, "and", y, "gives", x * y )
-    x = getInteger( "Enter number 1: " )
-    y = getInteger( "Enter number 2: " )
+    x = int( input( "Enter number 1: " ) )
+    y = int( input( "Enter number 2: " ) )
 
 if x == 0 or y == 0:
     print( "Goodbye!" )
@@ -112,14 +108,13 @@ test that decides whether or not you have to do the loop again, always
 results in `True`).
 
 ```python
-from pcinput import getInteger
 from sys import exit
 
 while True:
-    x = getInteger( "Enter number 1: " )
+    x = int( input( "Enter number 1: " ) )
     if x == 0:
         break
-    y = getInteger( "Enter number 2: " )
+    y = int( input( "Enter number 2: " ) )
     if y == 0:
         break
     if (x < 0 or x > 1000) or (y < 0 or y > 1000):
@@ -153,8 +148,8 @@ A loop like this one, that uses `while True`, is sometimes called a
 "loop-and-a-half." It is a common approach to writing loops for which
 you cannot predict when they will end.
 
-The user must enter a positive integer. You use the `getInteger()`
-function from `pcinput` for that. This function also allows entering
+The user must enter a positive integer. You read that input with
+`input()` and convert it with `int()`. That also allows entering
 negative numbers. If the user enters a negative number, you want to
 print a message and ask him again, until he entered a positive number.
 Once a positive number is entered, you print that number and the program

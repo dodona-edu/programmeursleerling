@@ -163,8 +163,8 @@ block directly under the `else` will be executed.
 You can test whether an integer is odd or even using the modulo
 operator. Specifically, when `x % 2` equals zero, then `x` is even, else
 it is odd. Write some code that asks for an integer and then reports
-whether it is even or odd (you can use the `getInteger()` function from
-`pcinput` to ask for an integer).
+whether it is even or odd (you can use `int( input() )` to ask for an
+integer).
 
 Note: As far as indentation is concerned, it is not absolutely necessary
 to have the code block under the `else` branch use the same number of

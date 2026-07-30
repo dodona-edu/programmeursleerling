@@ -247,11 +247,12 @@ print( "You entered", len( s ), "characters" )
 #### Answer 5.2
 
 ```python
-from pcinput import getFloat
 from math import sqrt
 
-side1 = getFloat( "Please enter the length of the first side: " )
-side2 = getFloat( "Please enter the length of the second side: ")
+side1 = float( input(
+    "Please enter the length of the first side: " ) )
+side2 = float( input(
+    "Please enter the length of the second side: " ) )
 side3 = sqrt( side1 * side1 + side2 * side2 )
 print( "The length of the diagonal is {:.3f}.".format( side3 ) )
 ```
@@ -259,11 +260,9 @@ print( "The length of the diagonal is {:.3f}.".format( side3 ) )
 #### Answer 5.3
 
 ```python
-from pcinput import getFloat
-
-num1 = getFloat( "Please enter number 1: " )
-num2 = getFloat( "Please enter number 2: " )
-num3 = getFloat( "Please enter number 3: " )
+num1 = float( input( "Please enter number 1: " ) )
+num2 = float( input( "Please enter number 2: " ) )
+num3 = float( input( "Please enter number 3: " ) )
 
 print( "The largest is", max( num1, num2, num3 ) )
 print( "The smallest is", min( num1, num2, num3 ) )
@@ -297,9 +296,7 @@ print( "A random integer between 1 and 10 is",
 #### Answer 6.1
 
 ```python
-from pcinput import getFloat
-
-grade = getFloat( "Please enter a grade: " )
+grade = float( input( "Please enter a grade: " ) )
 check = int( grade * 10 )
 if grade < 0 or grade > 10:
     print( "Grades have to be in the range 0 to 10." )
@@ -326,9 +323,7 @@ incorrect order. E.g., if score is 85, then it is not only greater than
 #### Answer 6.3
 
 ```python
-from pcinput import getString
-
-s = getString( "Please enter a string: " )
+s = input( "Please enter a string: " )
 count = 0
 if ("a" in s) or ("A" in s):
     count += 1
@@ -352,12 +347,11 @@ else:
 #### Answer 6.4
 
 ```python
-from pcinput import getFloat
 from math import sqrt
 
-a = getFloat( "A: " )
-b = getFloat( "B: " )
-c = getFloat( "C: " )
+a = float( input( "A: " ) )
+b = float( input( "B: " ) )
+c = float( input( "C: " ) )
 
 if a == 0:
     if b == 0:
@@ -381,9 +375,7 @@ else:
 #### Answer 7.1
 
 ```python
-from pcinput import getInteger
-
-num = getInteger( "Give a number: " )
+num = int( input( "Give a number: " ) )
 i = 1
 while i <= 10:
     print( i, "*", num, "=", i*num )
@@ -393,9 +385,7 @@ while i <= 10:
 #### Answer 7.2
 
 ```python
-from pcinput import getInteger
-
-num = getInteger( "Give a number: " )
+num = int( input( "Give a number: " ) )
 for i in range( 1, 11 ):
     print( i, "*", num, "=", i*num )
 ```
@@ -403,15 +393,13 @@ for i in range( 1, 11 ):
 #### Answer 7.3
 
 ```python
-from pcinput import getInteger
-
 TOTAL = 10
 largest = 0
 smallest = 0
 div3 = 0
 
 for i in range( TOTAL ):
-    num = getInteger( "Please enter number "+str( i+1 )+": " )
+    num = int( input( "Please enter number "+str( i+1 )+": " ) )
     if num%3 == 0:
         div3 += 1
     if i == 0:
@@ -475,10 +463,8 @@ while True:
 #### Answer 7.6
 
 ```python
-from pcinput import getString
-
-word1 = getString( "Give word 1: " )
-word2 = getString( "Give word 2: " )
+word1 = input( "Give word 1: " )
+word2 = input( "Give word 2: " )
 common = ""
 for letter in word1:
     if (letter in word2) and (letter not in common):
@@ -509,13 +495,12 @@ print( "A reasonable approximation of pi is", 4 * hits / DARTS )
 
 ```python
 from random import randint
-from pcinput import getInteger
 
 answer = randint( 1, 1000 )
 count = 0
 
 while True:
-    guess = getInteger( "What is your guess? " )
+    guess = int( input( "What is your guess? " ) )
     if guess < 1 or guess > 1000:
         print( "Your guess should be between 1 and 1000" )
         continue
@@ -537,7 +522,6 @@ else:
 #### Answer 7.9
 
 ```python
-from pcinput import getLetter
 from sys import exit
 
 count = 0
@@ -550,7 +534,7 @@ while True:
     count += 1
     prompt = "I guess "+str( guess )+". Is your number"+\
         " (L)ower or (H)igher, or is this (C)orrect? "
-    response = getLetter( prompt )
+    response = input( prompt )
     if response == "C":
         break
     elif response == "L":
@@ -576,9 +560,7 @@ else:
 #### Answer 7.10
 
 ```python
-from pcinput import getInteger
-
-num = getInteger( "Please enter a number: " )
+num = int( input( "Please enter a number: " ) )
 if num < 2:
     print( num, "is not prime" )
 else:
@@ -831,8 +813,6 @@ should give 2.33 or 2.34.
 #### Answer 8.1
 
 ```python
-from pcinput import getInteger
-
 # multiplicationtable gets an integer as parameter.
 # It prints the multiplication table for that integer.
 def multiplicationtable( n ):
@@ -841,15 +821,13 @@ def multiplicationtable( n ):
         print( i, "*", n, "=", i*n )
         i += 1
 
-num = getInteger( "Give a number: " )
+num = int( input( "Give a number: " ) )
 multiplicationtable( num )
 ```
 
 #### Answer 8.2
 
 ```python
-from pcinput import getString
-
 # commoncharacters gets two strings as parameters.
 # It returns the number of characters that they have in common.
 def commoncharacters( w1, w2 ):
@@ -859,8 +837,8 @@ def commoncharacters( w1, w2 ):
             common += letter
     return len( common )
 
-word1 = getString( "Give word 1: " )
-word2 = getString( "Give word 2: " )
+word1 = input( "Give word 1: " )
+word2 = input( "Give word 2: " )
 
 num = commoncharacters( word1, word2 )
 if num <= 0:
@@ -893,7 +871,6 @@ print( gregoryLeibnitz( 50 ) )
 #### Answer 8.4
 
 ```python
-from pcinput import getFloat
 from math import sqrt
 
 # This function solves a quadratic equation.
@@ -917,8 +894,8 @@ def quadraticFormula( a, b, c ):
         return 2, (-b+sqrt(discriminant))/(2*a), \
             (-b-sqrt(discriminant))/(2*a)
 
-num, sol1, sol2 = quadraticFormula( getFloat( "A: " ),
-    getFloat( "B: " ), getFloat( "C: " ) )
+num, sol1, sol2 = quadraticFormula( float( input( "A: " ) ),
+    float( input( "B: " ) ), float( input( "C: " ) ) )
 if num == 0:
     print( "There are no solutions" )
 elif num == 1:
@@ -930,11 +907,9 @@ else:
 #### Answer 8.5
 
 ```python
-from pcinput import getInteger
-
 def getNumber( prompt ):
     while True:
-        num = getInteger( prompt )
+        num = int( input( prompt ) )
         if num < 0 or num > 1000:
             print( "Please enter a number between 0 and 1000" )
             continue
@@ -1480,8 +1455,6 @@ for i in numbers:
 #### Answer 12.6
 
 ```python
-from pcinput import getInteger
-
 EMPTY = "-"
 PLAYERX = "X"
 PLAYERO = "O"
@@ -1502,8 +1475,8 @@ def opponent( p ):
 
 def getRowCol( player, what ):
     while True:
-        num = getInteger( "Player "+player+", which "+what+
-            " do you play? " )
+        num = int( input( "Player "+player+", which "+what+
+            " do you play? " ) )
         if num < 1 or num > 3:
             print( "Please enter 1, 2, or 3" )
             continue
@@ -1553,7 +1526,6 @@ while True:
 #### Answer 12.7
 
 ```python
-from pcinput import getString
 from random import randint
 
 EMPTY = "."
@@ -1593,7 +1565,8 @@ def placeBattleships( b ):
 
 def getTarget():
     while True:
-        cell = getString( "Which cell do you target? " ).upper()
+        cell = input(
+            "Which cell do you target? " ).strip().upper()
         if len( cell ) != 2:
             print( "Please enter a cell as XY,",
                 "where X is a letter and Y a digit" )
@@ -2143,7 +2116,6 @@ functionality needs a few lines, while handling of potential problems
 takes three-quarters of the code.
 
 ```python
-from pcinput import getString, getLetter
 from os.path import exists, getsize
 
 LETTERS = b"etaoinshrdlcum "
@@ -2182,7 +2154,7 @@ def decompress( encoded ):
 
 # Ask for the input file and read its contents.
 while True:
-    filein = getString( "Which is the input file? " )
+    filein = input( "Which is the input file? " ).strip()
     if not exists( filein ):
         print( filein, "does not exist" )
         continue
@@ -2198,7 +2170,7 @@ while True:
 
 # Ask for the output file and create it.
 while True:
-    fileout = getString( "Which is the output file? " )
+    fileout = input( "Which is the output file? " ).strip()
     if exists( fileout ):
         print( fileout, "already exists" )
         continue
@@ -2213,7 +2185,8 @@ while True:
 
 # Ask whether the user wants to compress or decompress.
 while True:
-    dc = getLetter( "Choose (C)ompress or (D)ecompress? " )
+    prompt = "Choose (C)ompress or (D)ecompress? "
+    dc = input( prompt ).strip().upper()
     if dc != 'C' and dc != 'D':
         print( "Please choose C or D" )
         continue
@@ -2859,8 +2832,6 @@ print( "Score of", strategy2.name, "is", strategy2.score )
 #### Answer 23.1
 
 ```python
-from pcinput import getInteger
-
 class NotDividableBy:
     def __init__( self ):
         self.seq = list( range( 1, 101 ) )
@@ -2881,7 +2852,7 @@ class NotDividableBy:
 
 ndb = NotDividableBy()
 while True:
-    num = getInteger( "Give an integer: " )
+    num = int( input( "Give an integer: " ) )
     if num < 0:
         print( "Negative integers are ignored" )
         continue
@@ -3225,13 +3196,12 @@ for c in clist:
 
 ```python
 from collections import Counter
-from pcinput import getInteger
 from statistics import mean, median
 from sys import exit
 
 numlist = []
 while True:
-    num = getInteger( "Enter a number: " )
+    num = int( input( "Enter a number: " ) )
     if num == 0:
         break
     numlist.append( num )

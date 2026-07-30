@@ -26,9 +26,7 @@ Using exception handling, the code at the start of this chapter can be
 written as follows to avoid runtime errors:
 
 ```python
-from pcinput import getInteger
-
-num = getInteger( "Please enter a number: " )
+num = int( input( "Please enter a number: " ) )
 try:
     print( "3 divided by {} is {}".format( num, 3/num ) )
 except:
@@ -42,9 +40,7 @@ zero and when a user enters 3. Both exceptions are handled by the same
 `try … except` clause.
 
 ```python
-from pcinput import getInteger
-
-num = getInteger( "Please enter a number: " )
+num = int( input( "Please enter a number: " ) )
 try:
     print( "3 divided by {} is {}".format( num, 3/num ) )
     print( "3 divided by {}-3 is {}".format( num, 3/(num-3) ) )

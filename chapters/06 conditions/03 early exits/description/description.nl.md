@@ -5,9 +5,7 @@ een waarde invoert die niet in de berekeningen gebruikt kan worden, wil
 je het programma meteen beëindigen. Dat kun je als volgt coderen:
 
 ```python
-from pcinput import getInteger
-
-num = getInteger( "Geef een positief geheel getal: " )
+num = int( input( "Geef een positief geheel getal: " ) )
 if num < 0:
     print( "Je had een positief geheel getal moeten geven!" )
 else:
@@ -24,10 +22,9 @@ behulp van de functie `exit()` die in de module `sys` staat. De code is
 dan:
 
 ```python
-from pcinput import getInteger
 from sys import exit
 
-num = getInteger( "Geef een positief geheel getal: " )
+num = int( input( "Geef een positief geheel getal: " ) )
 if num < 0:
     print( "Je had een positief geheel getal moeten geven!" )
     exit()

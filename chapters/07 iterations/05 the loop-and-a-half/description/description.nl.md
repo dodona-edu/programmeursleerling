@@ -11,14 +11,12 @@ gewoon dat de gebruiker dan een nieuw getal ingeeft. Hoe programmeer je
 zoiets? Hier is een eerste poging:
 
 ```python
-from pcinput import getInteger
-
 x = 3
 y = 7
 
 while (x != 0) and (y != 0) and (x%y != 0) and (y%x != 0):
-    x = getInteger( "Geef nummer 1: " )
-    y = getInteger( "Geef nummer 2: " )
+    x = int( input( "Geef nummer 1: " ) )
+    y = int( input( "Geef nummer 2: " ) )
     if (x > 1000) or (y > 1000) or (x < 0) or (y < 0):
         print( "Nummers moeten tussen 0 en 1000 zijn" )
         continue
@@ -71,20 +69,18 @@ voor die continue ook om de inputs vragen, anders krijg je een eindeloze
 loop. De code wordt dan iets als:
 
 ```python
-from pcinput import getInteger
-
-x = getInteger( "Geef nummer 1: " )
-y = getInteger( "Geef nummer 2: " )
+x = int( input( "Geef nummer 1: " ) )
+y = int( input( "Geef nummer 2: " ) )
 
 while (x != 0) and (y != 0) and (x%y != 0) and (y%x != 0):
     if (x > 1000) or (y > 1000) or (x < 0) or (y < 0):
         print( "Nummers moeten tussen 0 en 1000 zijn" )
-        x = getInteger( "Geef nummer 1: " )
-        y = getInteger( "Geef nummer 2: " )
+        x = int( input( "Geef nummer 1: " ) )
+        y = int( input( "Geef nummer 2: " ) )
         continue
     print( x, "keer", y, "is", x * y )
-    x = getInteger( "Geef nummer 1: " )
-    y = getInteger( "Geef nummer 2: " )
+    x = int( input( "Geef nummer 1: " ) )
+    y = int( input( "Geef nummer 2: " ) )
 
 if x == 0 or y == 0:
     print( "Klaar!" )
@@ -118,14 +114,13 @@ kun je `while True` gebruiken (dit betekent: de test die je uitvoert om
 te besluiten of de loop uitgevoerd moet worden, geeft altijd `True`).
 
 ```python
-from pcinput import getInteger
 from sys import exit
 
 while True:
-    x = getInteger( "Geef nummer 1: " )
+    x = int( input( "Geef nummer 1: " ) )
     if x == 0:
         break
-    y = getInteger( "Geef nummer 2: " )
+    y = int( input( "Geef nummer 2: " ) )
     if y == 0:
         break
     if (x < 0 or x > 1000) or (y < 0 or y > 1000):
@@ -160,9 +155,9 @@ Een loop als deze, die `while True` gebruikt, wordt soms een
 het schrijven van een loop waarbij je niet precies weet wanneer de loop
 moet eindigen.
 
-De gebruiker geeft een positief geheel getal. Je gebruikt daarvoor de
-`getInteger()` functie van `pcinput`. Deze functie staat het echter ook
-toe om negatieve getallen in te geven. Als de gebruiker een negatief
+De gebruiker geeft een positief geheel getal. Je leest die input in met
+`input()` en zet ze om met `int()`. Dat laat echter ook toe
+om negatieve getallen in te geven. Als de gebruiker een negatief
 getal ingeeft, wil je melden dat dat niet mag, en hem opnieuw een getal
 laten ingeven. Dit blijf je doen totdat daadwerkelijk een positief getal
 is ingegeven. Zodra een positief getal is ingegeven, druk je dat af en

@@ -3,13 +3,11 @@ show the total. With the material from the previous chapters, you would
 program that as follows:
 
 ```python
-from pcinput import getInteger
-
-num1 = getInteger( "Number 1: " )
-num2 = getInteger( "Number 2: " )
-num3 = getInteger( "Number 3: " )
-num4 = getInteger( "Number 4: " )
-num5 = getInteger( "Number 5: " )
+num1 = int( input( "Number 1: " ) )
+num2 = int( input( "Number 2: " ) )
+num3 = int( input( "Number 3: " ) )
+num4 = int( input( "Number 4: " ) )
+num5 = int( input( "Number 5: " ) )
 
 print( "Total is", num1 + num2 + num3 + num4 + num5 )
 ```
@@ -111,12 +109,10 @@ ask the user for five numbers and print the total. This is implemented
 as follows:
 
 ```python
-from pcinput import getInteger
-
 total = 0
 count = 0
 while count < 5:
-    total += getInteger( "Please give a number: " )
+    total += int( input( "Please give a number: " ) )
     count += 1
 
 print( "Total is", total )
@@ -173,12 +169,10 @@ to enter numbers as long as he wants, until he enters a zero. Once a
 zero is entered, the total is printed, and the program ends.
 
 ```python
-from pcinput import getInteger
-    
 num = -1
 total = 0
 while num != 0:
-    num = getInteger( "Enter a number: " )
+    num = int( input( "Enter a number: " ) )
     total += num
 print( "Total is", total )
 ```
@@ -196,20 +190,18 @@ Because of these ugly elements, some programmers prefer to write this
 code as follows:
 
 ```python
-from pcinput import getInteger
-    
-num = getInteger( "Enter a number: " )
+num = int( input( "Enter a number: " ) )
 total = 0
 while num != 0:
     total += num
-    num = getInteger( "Enter a number: " )
+    num = int( input( "Enter a number: " ) )
 print( "Total is", total )
 ```
 
 This solves the ugly parts from the previous code, but introduces
-something new that is ugly, namely the repetition of the `getInteger()`
-function. How this can be solved follows at the end of this chapter. For
-now, make sure that you understand how `while` loops work.
+something new that is ugly, namely the repetition of the line that asks
+for a number. How this can be solved follows at the end of this chapter.
+For now, make sure that you understand how `while` loops work.
 
 Create a loop that lets the user enter some numbers until he enters
 zero, and then prints their total and their average. Make sure you test

@@ -1,3 +1,7 @@
+{:class="callout callout-info"}
+> #### Opmerking
+> Deze appendix documenteert de `pcinput` module uit het boek, als naslagwerk voor wie de oefeningen in een eigen omgeving uitvoert, buiten Dodona. De module is niet beschikbaar op Dodona, dus je kunt hem niet importeren in een oplossing die je indient. Op Dodona lees je de input met `input()` en cast je die naar het type dat je nodig hebt: `int(input(prompt))` in plaats van `getInteger(prompt)`, `float(input(prompt))` in plaats van `getFloat(prompt)`, en `input(prompt)` in plaats van `getString(prompt)` of `getLetter(prompt)`. De functies hieronder blijven vragen tot de gebruiker iets correct ingeeft, en dat is op Dodona niet nodig: de input van een oefening komt uit een vast testgeval en is dus altijd al correct.
+
 In veel opgaves in dit boek is het nuttig om een functie te hebben die
 gebruiker een input laat geven die voldoet aan specifieke eisen. Ik heb
 een module gecreëerd, `pcinput` geheten, die een aantal van die functies

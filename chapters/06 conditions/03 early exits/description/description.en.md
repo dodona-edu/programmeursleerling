@@ -5,9 +5,7 @@ a value that cannot be processed, the program should just end. You could
 code that as follows:
 
 ```python
-from pcinput import getInteger
-
-num = getInteger( "Please enter a positive integer: " )
+num = int( input( "Please enter a positive integer: " ) )
 if num < 0:
     print( "You should have entered a positive integer!" )
 else:
@@ -24,10 +22,9 @@ You can do that using a special function `exit()` that is found in the
 module `sys`. The code above becomes:
 
 ```python
-from pcinput import getInteger
 from sys import exit
 
-num = getInteger( "Please enter a positive integer: " )
+num = int( input( "Please enter a positive integer: " ) )
 if num < 0:
     print( "You should have entered a positive integer!" )
     exit()

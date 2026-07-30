@@ -28,5 +28,6 @@ In this chapter, you learned about:
 -   The `random` module functions `random()`, `randint()`, and `seed()`
 
 -   The `pcinput` module functions `getInteger()`, `getFloat()`,
-    `getString()`, and `getLetter()`
+    `getString()`, and `getLetter()` from the book, and their `input()`
+    equivalents on Dodona
 

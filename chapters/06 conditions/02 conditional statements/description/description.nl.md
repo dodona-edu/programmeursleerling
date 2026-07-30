@@ -165,8 +165,8 @@ uitgevoerd.
 Je kunt testen of een integer even of oneven is met de modulo operator.
 Namelijk als `x % 2` nul is, dan is `x` even, en anders is `x` oneven.
 Schrijf code die vraagt om een integer en dan rapporteert of de integer
-even of oneven is (je kunt de `getInteger()` functie van `pcinput`
-gebruiken om om een integer te vragen).
+even of oneven is (je kunt `int( input() )` gebruiken om om een integer
+te vragen).
 
 Opmerking met betrekking tot inspringing: het is niet absoluut
 noodzakelijk om het blok code onder de `else` aan te lijnen met het blok
