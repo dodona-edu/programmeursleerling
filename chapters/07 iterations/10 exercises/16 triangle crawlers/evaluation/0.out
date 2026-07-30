@@ -3,4 +3,4 @@
 tab name: Tests
 python input without prompt: true
 block count: one
-comparison: exact match
+ignore fp rounding: -1
