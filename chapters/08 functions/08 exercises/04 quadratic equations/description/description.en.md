@@ -12,13 +12,13 @@ is called the **discriminant** of the quadratic equation. The sign of $$\Delta$$
 
 - if $$\Delta > 0$$, then there are two distinct real-valued solutions ($$x_1 \neq x_2$$)
 
-- als $$\Delta = 0$$, then both real-valued solutions are the same ($$x_1 = x_2$$)
+- if $$\Delta = 0$$, then both real-valued solutions are the same ($$x_1 = x_2$$)
 
-- als $$\Delta < 0$$, then there are no real-valued solutions
+- if $$\Delta < 0$$, then there are no real-valued solutions
 
 The real-valued solutions can be determined as:
 
-$$x_{1} = \frac{-b - \sqrt{\Delta}}{2a}\ \ \ \text{en}\ \ \ x_{2} = \frac{-b + \sqrt{\Delta}}{2a}$$
+$$x_{1} = \frac{-b - \sqrt{\Delta}}{2a}\ \ \ \text{and}\ \ \ x_{2} = \frac{-b + \sqrt{\Delta}}{2a}$$
 
 ### Assignment
 
