@@ -28,4 +28,5 @@ In dit hoofdstuk is het volgende besproken:
 -   De `random` functies `random()`, `randint()`, en `seed()`
 
 -   De `pcinput` functies `getInteger()`, `getFloat()`, `getString()`,
-    en `getLetter()`
+    en `getLetter()` uit het boek, en hun `input()` equivalenten op
+    Dodona

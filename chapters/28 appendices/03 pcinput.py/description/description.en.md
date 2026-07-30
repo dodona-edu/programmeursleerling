@@ -1,3 +1,7 @@
+{:class="callout callout-info"}
+> #### Note
+> This appendix documents the `pcinput` module from the printed book, as reference material. The module is not available on Dodona, so you cannot import it in a solution that you submit. On Dodona you read the input with `input()` and cast it to the type you need: `int(input(prompt))` instead of `getInteger(prompt)`, `float(input(prompt))` instead of `getFloat(prompt)`, and `input(prompt)` instead of `getString(prompt)` or `getLetter(prompt)`. The functions below keep asking until the user enters something valid, and that is not needed on Dodona, where the input of an exercise comes from a fixed test case and is thus always valid already.
+
 In many of the exercises in this book, it is useful to have a function
 available that accepts inputs of a certain type. I created a module
 called `pcinput` which contains a number of such functions. During many

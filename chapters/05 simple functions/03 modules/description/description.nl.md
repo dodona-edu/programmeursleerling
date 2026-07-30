@@ -186,9 +186,9 @@ schrijft (daar heb ik een andere versie van de module voor), maar om
 Python te leren zijn deze functies afdoende.
 
 Creëer of download de `pcinput` module, zorg dat hij staat in de folder
-waar je je programma's schrijft, en maak dan een Python programma met
-onderstaande code. Voer het programma uit en test het door iets in te
-geven wat geen integer is.
+waar je op je eigen computer je programma's schrijft, en maak dan een
+Python programma met onderstaande code. Voer het programma uit en test
+het door iets in te geven wat geen integer is.
 
 ```python
 from pcinput import getInteger
@@ -205,3 +205,34 @@ prompt om de gebruiker te vragen een float in te geven.
 {:class="callout callout-info"}
 > #### Opmerking
 > Ik leg niet uit hoe `pcinput` werkt, omdat ik er concepten voor gebruik die pas in hoofdstuk 18 aan bod komen. Je zult later leren hoe je zelf dit soort functies kunt maken. Je hoeft je vooralsnog niet druk te maken over hoe ze werken, je hoeft ze alleen maar te gebruiken. Dat is de houding die je tegenover de meeste standaardfuncties moet hebben: zolang je maar weet wat ze doen, welke parameters ze nodig hebben, en wat ze retourneren, heeft het geen zin na te denken over hoe ze werken.
+
+Op Dodona gebruik je `pcinput` niet. De module is hier niet beschikbaar,
+dus een import van de module geeft een foutmelding. Je hebt hem ook niet
+nodig: de hele bedoeling van deze functies is om te blijven vragen tot de
+gebruiker iets correct ingeeft, maar de input van een oefening op Dodona
+komt uit een vast testgeval en wordt niet door een persoon ingetypt. De
+input is dus altijd al correct en er is niets om opnieuw te vragen. Het
+volstaat daarom om de input met `input()` te lezen en te casten naar het
+type dat je nodig hebt:
+
+| in het boek | op Dodona |
+|-------------|-----------|
+| `getInteger(prompt)` | `int(input(prompt))` |
+| `getFloat(prompt)` | `float(input(prompt))` |
+| `getString(prompt)` | `input(prompt)` |
+| `getLetter(prompt)` | `input(prompt)` |
+{:class="table table-striped table-condensed" style="width:auto;margin-left:auto;margin-right:auto;"}
+
+Het voorbeeld hierboven wordt op Dodona dus:
+
+```python
+num1 = int( input( "Geef een geheel getal: " ) )
+num2 = int( input( "Geef een ander geheel getal: " ) )
+
+print( num1, "+", num2, "=", num1 + num2 )
+```
+
+Houd er wel rekening mee dat `getString()` ook de spaties voor en na de
+input weghaalt, en dat `getLetter()` een hoofdletter retourneert. Heb je
+dat nodig, dan schrijf je dat zelf als `input(prompt).strip()` en
+`input(prompt).strip().upper()`.
