@@ -1,6 +1,6 @@
 import sys
 import datetime
-import importlib
+import importlib.util
 from test_utils import *
 
 # set fixed seed for generating test cases
@@ -125,7 +125,21 @@ for _ in range(20):
         statement += f'.enroll({course_name})'
         student.enroll(course)
     statement += '.courses()'
-    print(statement)
 
-    # generate test result
-    print(f'{student_dict[student_name].courses()!r}')
+    # let the submission itself compare the returned set against a set of the
+    # courses that are already bound in the context, so the expected value of
+    # the test is just the bool True. Two reasons for not simply printing the
+    # repr of the returned set as the expected value:
+    #
+    #   - the iteration order of a set is arbitrary, and printing its repr
+    #     would bake one particular order into the test
+    #   - the judge deep copies the expected value before comparing it, so an
+    #     expected set of courses only ever matches if the submission defines
+    #     equality and hashing on the course class, which the assignment
+    #     doesn't ask for
+    enrolled = student_dict[student_name].courses()
+    names = [name for name, course in course_dict.items() if course in enrolled]
+    statement += ' == {{{}}}'.format(', '.join(names))
+
+    print(statement)
+    print('True')

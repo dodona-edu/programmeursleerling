@@ -6,43 +6,43 @@
 >>> harry = Student(29839339, 'Harry', 'Potter', datetime.date(1980, 7, 31))
 >>> hermione = Student(24837367, 'Hermione', 'Granger', datetime.date(1979, 9, 19))
 >>> ron = Student(27373378, 'Ron', 'Weasley', datetime.date(1980, 3, 1))
->>> hermione.enroll(astronomy).courses()
-{Course(238273, 'Astronomy')}
->>> harry.enroll(defence_against_dark_arts).courses()
-{Course(462763, 'Defence Against Dark Arts')}
->>> ron.enroll(dark_arts).courses()
-{Course(746473, 'Dark Arts')}
->>> hermione.enroll(astronomy).enroll(dark_arts).courses()
-{Course(238273, 'Astronomy'), Course(746473, 'Dark Arts')}
->>> hermione.enroll(dark_arts).enroll(charms).courses()
-{Course(238273, 'Astronomy'), Course(746473, 'Dark Arts'), Course(983448, 'Charms')}
->>> harry.enroll(charms).courses()
-{Course(462763, 'Defence Against Dark Arts'), Course(983448, 'Charms')}
->>> harry.enroll(astronomy).courses()
-{Course(462763, 'Defence Against Dark Arts'), Course(983448, 'Charms'), Course(238273, 'Astronomy')}
->>> hermione.enroll(charms).courses()
-{Course(238273, 'Astronomy'), Course(746473, 'Dark Arts'), Course(983448, 'Charms')}
->>> ron.enroll(charms).courses()
-{Course(746473, 'Dark Arts'), Course(983448, 'Charms')}
->>> hermione.enroll(dark_arts).courses()
-{Course(238273, 'Astronomy'), Course(746473, 'Dark Arts'), Course(983448, 'Charms')}
->>> ron.enroll(defence_against_dark_arts).courses()
-{Course(746473, 'Dark Arts'), Course(462763, 'Defence Against Dark Arts'), Course(983448, 'Charms')}
->>> ron.enroll(charms).courses()
-{Course(746473, 'Dark Arts'), Course(462763, 'Defence Against Dark Arts'), Course(983448, 'Charms')}
->>> ron.enroll(defence_against_dark_arts).courses()
-{Course(746473, 'Dark Arts'), Course(462763, 'Defence Against Dark Arts'), Course(983448, 'Charms')}
->>> ron.enroll(astronomy).courses()
-{Course(746473, 'Dark Arts'), Course(462763, 'Defence Against Dark Arts'), Course(983448, 'Charms'), Course(238273, 'Astronomy')}
->>> hermione.enroll(defence_against_dark_arts).courses()
-{Course(238273, 'Astronomy'), Course(462763, 'Defence Against Dark Arts'), Course(746473, 'Dark Arts'), Course(983448, 'Charms')}
->>> ron.enroll(dark_arts).courses()
-{Course(746473, 'Dark Arts'), Course(462763, 'Defence Against Dark Arts'), Course(983448, 'Charms'), Course(238273, 'Astronomy')}
->>> hermione.enroll(charms).courses()
-{Course(238273, 'Astronomy'), Course(462763, 'Defence Against Dark Arts'), Course(746473, 'Dark Arts'), Course(983448, 'Charms')}
->>> harry.enroll(dark_arts).courses()
-{Course(462763, 'Defence Against Dark Arts'), Course(746473, 'Dark Arts'), Course(983448, 'Charms'), Course(238273, 'Astronomy')}
->>> harry.enroll(astronomy).courses()
-{Course(462763, 'Defence Against Dark Arts'), Course(746473, 'Dark Arts'), Course(983448, 'Charms'), Course(238273, 'Astronomy')}
->>> ron.enroll(charms).courses()
-{Course(746473, 'Dark Arts'), Course(462763, 'Defence Against Dark Arts'), Course(983448, 'Charms'), Course(238273, 'Astronomy')}
+>>> hermione.enroll(astronomy).courses() == {astronomy}
+True
+>>> harry.enroll(defence_against_dark_arts).courses() == {defence_against_dark_arts}
+True
+>>> ron.enroll(dark_arts).courses() == {dark_arts}
+True
+>>> hermione.enroll(astronomy).enroll(dark_arts).courses() == {astronomy, dark_arts}
+True
+>>> hermione.enroll(dark_arts).enroll(charms).courses() == {astronomy, charms, dark_arts}
+True
+>>> harry.enroll(charms).courses() == {charms, defence_against_dark_arts}
+True
+>>> harry.enroll(astronomy).courses() == {astronomy, charms, defence_against_dark_arts}
+True
+>>> hermione.enroll(charms).courses() == {astronomy, charms, dark_arts}
+True
+>>> ron.enroll(charms).courses() == {charms, dark_arts}
+True
+>>> hermione.enroll(dark_arts).courses() == {astronomy, charms, dark_arts}
+True
+>>> ron.enroll(defence_against_dark_arts).courses() == {charms, dark_arts, defence_against_dark_arts}
+True
+>>> ron.enroll(charms).courses() == {charms, dark_arts, defence_against_dark_arts}
+True
+>>> ron.enroll(defence_against_dark_arts).courses() == {charms, dark_arts, defence_against_dark_arts}
+True
+>>> ron.enroll(astronomy).courses() == {astronomy, charms, dark_arts, defence_against_dark_arts}
+True
+>>> hermione.enroll(defence_against_dark_arts).courses() == {astronomy, charms, dark_arts, defence_against_dark_arts}
+True
+>>> ron.enroll(dark_arts).courses() == {astronomy, charms, dark_arts, defence_against_dark_arts}
+True
+>>> hermione.enroll(charms).courses() == {astronomy, charms, dark_arts, defence_against_dark_arts}
+True
+>>> harry.enroll(dark_arts).courses() == {astronomy, charms, dark_arts, defence_against_dark_arts}
+True
+>>> harry.enroll(astronomy).courses() == {astronomy, charms, dark_arts, defence_against_dark_arts}
+True
+>>> ron.enroll(charms).courses() == {astronomy, charms, dark_arts, defence_against_dark_arts}
+True
