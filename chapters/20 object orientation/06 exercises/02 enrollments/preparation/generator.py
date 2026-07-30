@@ -113,7 +113,7 @@ for student in students:
     obj = test_instantiation(Student, *student, varname=varname, newcontext=False)
     student_dict[varname] = obj
 
-for _ in range(20):
+for index in range(20):
 
     student_name, student = random.choice(list(student_dict.items()))
     r = 1 if random.random() < 0.8 else 2
@@ -126,20 +126,25 @@ for _ in range(20):
         student.enroll(course)
     statement += '.courses()'
 
-    # let the submission itself compare the returned set against a set of the
-    # courses that are already bound in the context, so the expected value of
-    # the test is just the bool True. Two reasons for not simply printing the
-    # repr of the returned set as the expected value:
-    #
-    #   - the iteration order of a set is arbitrary, and printing its repr
-    #     would bake one particular order into the test
-    #   - the judge deep copies the expected value before comparing it, so an
-    #     expected set of courses only ever matches if the submission defines
-    #     equality and hashing on the course class, which the assignment
-    #     doesn't ask for
-    enrolled = student_dict[student_name].courses()
-    names = [name for name, course in course_dict.items() if course in enrolled]
-    statement += ' == {{{}}}'.format(', '.join(names))
-
     print(statement)
-    print('True')
+
+    # the returned set of courses is compared by a custom output processor
+    # instead of by the judge itself, since the judge can only compare the
+    # courses in both sets if the submission defines equality and hashing on
+    # its course class, which the exercise doesn't ask for; the processor is
+    # made sticky so that it doesn't have to be repeated for every test (see
+    # courseSetChecker.py for the details)
+    if not index:
+        print('<DEFINITION>')
+        with open('courseSetChecker.py') as checker:
+            print(checker.read().rstrip())
+        print('</DEFINITION>')
+        print('<OUTPUTPROCESSOR sticky="sticky">')
+        print('CourseSetChecker()')
+        print('</OUTPUTPROCESSOR>')
+
+    # generate test result, with the courses sorted by their representation so
+    # that the expected value doesn't depend on the arbitrary iteration order
+    # of a set
+    enrolled = student_dict[student_name].courses()
+    print('{{{}}}'.format(', '.join(sorted(repr(course) for course in enrolled))))
