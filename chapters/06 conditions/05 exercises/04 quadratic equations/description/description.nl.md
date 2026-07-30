@@ -26,7 +26,7 @@ De drie parameters $$a$$, $$b$$ en $$c$$ van een kwadratische vergelijking, elk 
 
 ### Uitvoer
 
-En regel die aangeeft hoeveel verschillende reële oplossingen de kwadratische vergelijking heeft. De oplossingen zelf moeten ook vermeld worden (als die er zijn).
+Een regel die aangeeft hoeveel verschillende reële oplossingen de kwadratische vergelijking heeft. De oplossingen zelf moeten ook vermeld worden (als die er zijn). Als $$a = 0$$ beschrijven de gegeven parameters geen kwadratische vergelijking, en moet de uitvoer `Ongeldige vergelijking` zijn.
 
 ### Voorbeeld
 

@@ -3,13 +3,10 @@ a = float(input())
 b = float(input())
 c = float(input())
 
+# een vergelijking is enkel kwadratisch als a verschilt van nul
 if a == 0:
 
-    if b == 0:
-        print('Ongeldige vergelijking')
-    else:
-        x1 = -c / b
-        print(f'Er is 1 reële oplossing: {x1}')
+    print('Ongeldige vergelijking')
 
 else:
 
