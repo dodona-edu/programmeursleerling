@@ -11,7 +11,3 @@ def factorials(count=10):
 
     for n in range(1, count + 1):
         yield
-
-if __name__ == '__main__':
-    import doctest
-    doctest.testmod()

@@ -11,7 +11,3 @@ def faculteiten(aantal=10):
 
     for n in range(1, aantal + 1):
         yield
-
-if __name__ == '__main__':
-    import doctest
-    doctest.testmod()

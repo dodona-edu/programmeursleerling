@@ -64,7 +64,3 @@ class Fruitmand:
     def __isub__(self, soort):
 
         pass
-
-if __name__ == '__main__':
-    import doctest
-    doctest.testmod()

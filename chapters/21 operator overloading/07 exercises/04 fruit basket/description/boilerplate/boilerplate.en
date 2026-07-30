@@ -64,7 +64,3 @@ class FruitBasket:
     def __isub__(self, fruit):
 
         pass
-
-if __name__ == '__main__':
-    import doctest
-    doctest.testmod()

@@ -52,7 +52,3 @@ class Kaart:
     def __ge__(self, other):
 
         pass
-
-if __name__ == '__main__':
-    import doctest
-    doctest.testmod()

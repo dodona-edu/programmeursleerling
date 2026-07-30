@@ -135,5 +135,3 @@ for i in range( ROUNDS ):
 if __name__ == '__main__':
     print( "End score of", strategy1.name, "is", strategy1.score )
     print( "End score of", strategy2.name, "is", strategy2.score )
-    import doctest
-    doctest.testmod()

@@ -83,7 +83,3 @@ class Cirkel(Vorm):
         pass
     def omtrek( self ):
         pass
-
-if __name__ == '__main__':
-    import doctest
-    doctest.testmod()

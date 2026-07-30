@@ -19,8 +19,3 @@ def encrypteer(bestandsnaam):
     # overschrijf het bestand met de geëncrypteerde byte string
     with open(bestandsnaam, 'wb') as bestand:
         bestand.write(data)
-
-
-if __name__ == '__main__':
-    import doctest
-    doctest.testmod()

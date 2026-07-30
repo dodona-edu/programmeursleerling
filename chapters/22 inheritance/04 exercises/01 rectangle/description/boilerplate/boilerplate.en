@@ -43,7 +43,3 @@ class Square(Rectangle):
 
     def __init__( self, x, y, side ):
         pass
-
-if __name__ == '__main__':
-    import doctest
-    doctest.testmod()

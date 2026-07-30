@@ -135,5 +135,3 @@ for i in range( RONDES ):
 if __name__ == '__main__':
     print( "Eind score", strategie1.name, "is", strategie1.score )
     print( "Eind score", strategie2.name, "is", strategie2.score )
-    import doctest
-    doctest.testmod()

@@ -9,7 +9,3 @@ def niet_deelbaar(delers):
 
     for n in range(1, 101):
         yield
-
-if __name__ == '__main__':
-    import doctest
-    doctest.testmod()

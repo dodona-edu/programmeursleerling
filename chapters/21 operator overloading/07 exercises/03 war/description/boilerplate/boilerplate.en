@@ -106,7 +106,3 @@ def war(pile_1, pile_2):
     >>> war(Drawpile(), pile_1) is pile_1
     True
     """
-
-if __name__ == '__main__':
-    import doctest
-    doctest.testmod()

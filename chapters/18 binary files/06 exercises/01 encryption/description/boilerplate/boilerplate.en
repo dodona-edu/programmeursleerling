@@ -19,8 +19,3 @@ def encrypt(filename):
     # overwrite the file with the encrypted byte string
     with open(filename, 'wb') as datafile:
         datafile.write(data)
-
-
-if __name__ == '__main__':
-    import doctest
-    doctest.testmod()

@@ -63,7 +63,3 @@ class Rechthoek:
     def overlap(self, other):
 
         pass
-
-if __name__ == '__main__':
-    import doctest
-    doctest.testmod()

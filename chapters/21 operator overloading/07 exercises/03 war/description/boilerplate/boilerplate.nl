@@ -106,7 +106,3 @@ def oorlogje(stapel_1, stapel_2):
     >>> oorlogje(Trekstapel(), stapel_1) is stapel_1
     True
     """
-
-if __name__ == '__main__':
-    import doctest
-    doctest.testmod()

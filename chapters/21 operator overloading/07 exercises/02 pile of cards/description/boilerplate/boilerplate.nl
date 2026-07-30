@@ -91,7 +91,3 @@ class Trekstapel:
     def trek(self):
 
         pass
-
-if __name__ == '__main__':
-    import doctest
-    doctest.testmod()

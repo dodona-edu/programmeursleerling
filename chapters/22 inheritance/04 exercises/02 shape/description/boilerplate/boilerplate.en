@@ -83,7 +83,3 @@ class Circle(Shape):
         pass
     def circumference( self ):
         pass
-
-if __name__ == '__main__':
-    import doctest
-    doctest.testmod()
