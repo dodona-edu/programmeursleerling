@@ -1,5 +1,4 @@
-Schrijf het *Hello World* programma dat ik liet zien in hoofdstuk
-2.
+Schrijf het *Hello World* programma dat ik liet zien in de inleiding.
 Het bestaat uit één regel code, namelijk:
 
 ```python

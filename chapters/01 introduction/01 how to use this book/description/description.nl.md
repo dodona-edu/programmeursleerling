@@ -43,10 +43,9 @@ boek kunnen extra optioneel materiaal bevatten.
 
 Tijdens het bestuderen van dit boek heb je alles al op Dodona: je
 schrijft je code in de browser, voert ze daar uit en dient ze in, zonder
-dat je iets moet installeren (hoofdstuk
-3
-legt uit hoe je Python ook op je eigen computer kunt krijgen, als je
-daarnaast buiten de cursus wilt werken). Het boek bevat
+dat je iets moet installeren (het volgende hoofdstuk legt uit hoe je
+Python ook op je eigen computer kunt krijgen, als je daarnaast buiten de
+cursus wilt werken). Het boek bevat
 vele kleine en grotere oefeningen, die je allemaal moet doen tijdens het
 bestuderen. Als je veel van de oefeningen overslaat, zul je zeker niet
 leren programmeren. Meer over het doen van oefeningen volgt later in dit

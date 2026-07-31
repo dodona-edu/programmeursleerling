@@ -1,6 +1,5 @@
-Write the *Hello World* program shown in Chapter
-2.
-It consists of one line of code, namely:
+Write the *Hello World* program shown in the introduction. It consists
+of one line of code, namely:
 
 ```python
 print( "Hello, world!" )

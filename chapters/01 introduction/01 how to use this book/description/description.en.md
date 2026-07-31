@@ -43,10 +43,9 @@ editions of this book may have extra optional material added to the end.
 
 When studying this book, everything you need is already on Dodona: you
 write your code in the browser, run it there, and hand it in, without
-installing anything (Chapter
-3
-explains how to get Python for your own computer as well, if you would
-also like to work outside the course). The book contains many
+installing anything (the next chapter explains how to get Python for
+your own computer as well, if you would also like to work outside the
+course). The book contains many
 small and larger exercises, and you should do all of those while
 studying. There is no way that you will learn how to program if you skip
 the exercises. More on the exercises follows later in this chapter
