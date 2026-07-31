@@ -41,10 +41,12 @@ from which you can pick and choose, though I recommend that you at least
 read through them to understand the topics that they cover. Future
 editions of this book may have extra optional material added to the end.
 
-When studying this book, you should have a computer with Python
-installed at hand (Chapter
+When studying this book, everything you need is already on Dodona: you
+write your code in the browser, run it there, and hand it in, without
+installing anything (Chapter
 3
-explains how to get Python for your computer). The book contains many
+explains how to get Python for your own computer as well, if you would
+also like to work outside the course). The book contains many
 small and larger exercises, and you should do all of those while
 studying. There is no way that you will learn how to program if you skip
 the exercises. More on the exercises follows later in this chapter
@@ -55,9 +57,10 @@ Many of the code snippets in this book – in particular all the answers
 to the exercises and all the slightly longer pieces of code – have a
 file name listed as a caption. This means that this code is available
 under that particular file name from the website associated with this
-book (<http://www.spronck.net/pythonbook>{:target="_blank"}). You can download this code
-and load it immediately in the editor that you are using if you so wish.
+book (<http://www.spronck.net/pythonbook>{:target="_blank"}). If you work on your own
+computer, you can download this code and load it immediately in the
+editor that you are using if you so wish.
 
 {:class="callout callout-info"}
 > #### Note
-> **Note that copying and pasting code from a PDF file to an editor will, in general, not work.** Text in a PDF file is not stored in such a way that spaces are inserted in the correct places when you copy code. So you must either manually type in code, or use the listings that are provided as separate files.
+> **If you are reading this book as a PDF, note that copying and pasting code from a PDF file to an editor will, in general, not work.** Text in a PDF file is not stored in such a way that spaces are inserted in the correct places when you copy code. So you must either manually type in code, or use the listings that are provided as separate files. This does not apply to the code on Dodona, which you can copy as it is.

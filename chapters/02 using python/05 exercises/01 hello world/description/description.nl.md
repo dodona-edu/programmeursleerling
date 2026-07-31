@@ -1,12 +1,12 @@
-Download Python and installeer het op je
-computer. Start IDLE. Creëer een bestand `hello.py`, waarin je de code
-schrijft van het *Hello World* programma dat ik liet zien in hoofdstuk
-2
-– het bestaat uit één regel code, namelijk:
+Schrijf het *Hello World* programma dat ik liet zien in hoofdstuk
+2.
+Het bestaat uit één regel code, namelijk:
 
 ```python
 print( "Hello, world!" )
 ```
 
-Draai het programma, en zie dat de tekst "Hello, world!" getoond wordt
-in de IDLE shell.  
+De code staat al klaar in de editor hieronder, dus je kunt ze indienen
+zoals ze is. Klik op **Indienen** en zie hoe Dodona je programma
+uitvoert en je toont dat de tekst "Hello, world!" precies is wat er
+verwacht werd.

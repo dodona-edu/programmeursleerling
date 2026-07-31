@@ -1,3 +1,7 @@
+{:class="callout callout-info"}
+> #### Note
+> You do not need any of this to follow the course: on Dodona you write and run all your code in the browser. This page is here for readers who would also like to run Python on their own computer.
+
 Once you have created a Python program, you see the program name
 displayed in the folder where you saved it. You can try to run it in the
 same way that you run other programs (e.g., by double-clicking on it).

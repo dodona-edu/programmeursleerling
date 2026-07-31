@@ -8,9 +8,9 @@ is great by the time you have to use Python for practical problems, it
 does not help you to learn. So my advice is that you avoid such links
 while trying to learn programming.
 
-When you install Python, there usually is a manual installed in a Doc
-folder under the Python folder. You can use it if, for some reason, you
-are not connected to the Internet.
+If you install Python on your own computer, there usually is a manual
+installed in a Doc folder under the Python folder. You can use it if,
+for some reason, you are not connected to the Internet.
 
 If you are interested in another book besides this one, I recommend the
 classic *Think Python: How to Think Like a Computer Scientist*, by Allen

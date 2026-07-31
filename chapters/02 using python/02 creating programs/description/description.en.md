@@ -1,3 +1,7 @@
+{:class="callout callout-info"}
+> #### Note
+> You do not need any of this to follow the course: on Dodona you write and run all your code in the browser. This page is here for readers who would also like to run Python on their own computer.
+
 Python programs are created in the form of files. By convention, the
 name of the file that contains a Python program has the extension `.py`.
 

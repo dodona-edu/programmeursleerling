@@ -41,10 +41,12 @@ bestuderen wat je wilt, hoewel ik aanbeveel dat je ze op zijn minst
 doorbladert om te zien waar ze over gaan. Toekomstige edities van dit
 boek kunnen extra optioneel materiaal bevatten.
 
-Tijdens het bestuderen van dit boek moet je een computer bij de hand
-houden waarop je Python hebt geïnstalleerd (hoofdstuk
+Tijdens het bestuderen van dit boek heb je alles al op Dodona: je
+schrijft je code in de browser, voert ze daar uit en dient ze in, zonder
+dat je iets moet installeren (hoofdstuk
 3
-legt uit hoe je Python kunt krijgen voor jouw computer). Het boek bevat
+legt uit hoe je Python ook op je eigen computer kunt krijgen, als je
+daarnaast buiten de cursus wilt werken). Het boek bevat
 vele kleine en grotere oefeningen, die je allemaal moet doen tijdens het
 bestuderen. Als je veel van de oefeningen overslaat, zul je zeker niet
 leren programmeren. Meer over het doen van oefeningen volgt later in dit
@@ -55,9 +57,10 @@ Veel van de code fragmenten in dit boek – in ieder geval alle antwoorden
 op de opgaves en alle iets langere fragmenten – hebben een bestandsnaam
 boven de code genoemd. Dat betekent dat die code beschikbaar is als
 bestand, verkrijgbaar via de website die met dit boek geassocieerd is
-(<http://www.spronck.net/pythonbook>{:target="_blank"}). Je kunt de code downloaden en
-meteen in een editor laden als je dat wilt.
+(<http://www.spronck.net/pythonbook>{:target="_blank"}). Als je op je eigen computer
+werkt, kun je de code downloaden en meteen in een editor laden als je
+dat wilt.
 
 {:class="callout callout-info"}
 > #### Opmerking
-> **Het kopiëren en plakken van code vanuit een PDF bestand naar een editor werkt over het algemeen niet.** Tekst in een PDF bestand is niet opgeslagen op een manier die ervoor zorgt dat spaties correct gekopieerd worden. Dus je moet ofwel code handmatig intypen, ofwel de bestanden gebruiken die ik beschikbaar heb gesteld.
+> **Als je dit boek als PDF leest: het kopiëren en plakken van code vanuit een PDF bestand naar een editor werkt over het algemeen niet.** Tekst in een PDF bestand is niet opgeslagen op een manier die ervoor zorgt dat spaties correct gekopieerd worden. Dus je moet ofwel code handmatig intypen, ofwel de bestanden gebruiken die ik beschikbaar heb gesteld. Voor de code op Dodona geldt dit niet, die kun je gewoon kopiëren.

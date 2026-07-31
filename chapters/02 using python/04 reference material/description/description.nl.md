@@ -8,9 +8,9 @@ zulke sites heel prettig zijn als je Python problemen probeert op te
 lossen in de praktijk, leer je er weinig van. Dus ik raad je aan dit
 soort sites te vermijden zolang je aan het leren bent.
 
-Wanneer je Python installeert, wordt er meestal ook een handboek
-geïnstalleerd in een `Doc` folder onder de Python folder. Die kun je
-gebruiken als je niet met Internet verbonden bent.
+Als je Python op je eigen computer installeert, wordt er meestal ook een
+handboek geïnstalleerd in een `Doc` folder onder de Python folder. Die
+kun je gebruiken als je niet met Internet verbonden bent.
 
 Als je nog een boek wilt gebruiken naast dit boek, en je hebt geen
 problemen met Engels, dan beveel ik het klassieke boek *Think Python:
