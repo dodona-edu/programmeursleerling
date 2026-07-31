@@ -11,7 +11,9 @@ or
 32
 to solve the problem), or you placed them in a location that Python has
 no access to. In the last case, make sure you copy them to the same
-place as where you keep your Python programs.
+place as where you keep your Python programs. On Dodona neither module
+is available, so a solution that you submit should not import them: read
+the input with `input()` instead.
 
 ### I get a FileNotFoundError: [Errno 2]
 

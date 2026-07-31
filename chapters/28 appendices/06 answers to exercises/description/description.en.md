@@ -103,18 +103,18 @@ above is harder, because you need nested conditions and an early escape.
 
 #### Answer 2.1
 
-You now have Python running on your computer. Congratulations!
+You handed in your first program and got your first "Correct" back.
+Congratulations!
 
 #### Answer 2.2
 
-You will see nothing in the shell (apart from a display of the word
-`RESTART` that you always see when running a program). $$7/4$$ is a legal
-Python statement, so the program will not give an error. The program
-just calculates $$7/4$$, but does not display the result using a print
-statement, so the program does not show $$1.75$$. The shell, however,
-displays the result of running the program. But since a program has no
-result by itself, there is nothing for the shell to display either. So
-you see nothing.
+The program produces no output at all. $$7/4$$ is a legal Python
+statement, so the program will not give an error. The program just
+calculates $$7/4$$, but does not display the result using a print
+statement, so the program does not show $$1.75$$. This is the difference
+with an interactive session: a session displays the result of every
+command you type, but a program that is run only shows what it prints
+itself. So you see nothing.
 
 ### Chapter 4
 

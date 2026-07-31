@@ -1,3 +1,7 @@
+{:class="callout callout-info"}
+> #### Note
+> This appendix lists the test files from the printed book, as reference material for readers who run the examples in their own environment, outside Dodona. These files are not available on Dodona: the exercises that work with files come with their own data files, which are already in the current directory when your solution runs. You only need to create these files if you want to try the examples on your own computer.
+
 In Chapter
 17
 several small text files are used to demonstrate functionalities.

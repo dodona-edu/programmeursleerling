@@ -95,8 +95,12 @@ hoeveel command line argumenten er zijn, kun je, zoals gewoonlijk, de
 
 Als je programmeert in een editor die je ook gebruikt om je programma's
 te testen, kun je over het algemeen geen command-line argumenten
-specificeren. Dus als je hiermee wilt experimenteren, moet je je
-programma's daadwerkelijk testen in de command shell. Dat is een heel
-gedoe, zeker tijdens het ontwikkelen van een programma. Ik kan je echter
-vertellen hoe je je programma's zodanig kunt opzetten dat het afhandelen
-van command-line argumenten optioneel is.
+specificeren. Dus als je hier op je eigen computer mee wilt
+experimenteren, moet je je programma's daadwerkelijk testen in de
+command shell. Dat is een heel gedoe, zeker tijdens het ontwikkelen van
+een programma. Op Dodona hoef je dat allemaal niet te regelen: de
+oefeningen van dit hoofdstuk worden uitgevoerd met de argumenten die ze
+nodig hebben, dus je kunt je programma schrijven alsof het vanaf de
+command line wordt opgeroepen. Ik kan je echter vertellen hoe je je
+programma's zodanig kunt opzetten dat het afhandelen van command-line
+argumenten optioneel is.

@@ -10,7 +10,9 @@ of
 32
 om dit op te lossen), of je hebt ze geplaatst op een locatie waar Python
 ze niet kan vinden. Zorg dat je ze kopieert naar dezelfde plaats als
-waar je je Python programma's zet.
+waar je je Python programma's zet. Op Dodona is geen van beide modules
+beschikbaar, dus een oplossing die je indient mag ze niet importeren:
+lees de input dan in met `input()`.
 
 ### Ik krijg een FileNotFoundError: [Errno 2]
 

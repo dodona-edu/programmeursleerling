@@ -1,3 +1,7 @@
+{:class="callout callout-info"}
+> #### Opmerking
+> Deze appendix bevat de testbestanden uit het boek, als naslagwerk voor wie de voorbeelden in een eigen omgeving uitvoert, buiten Dodona. Deze bestanden zijn niet beschikbaar op Dodona: de oefeningen die met bestanden werken, komen met hun eigen databestanden, die al in de huidige directory staan wanneer je oplossing wordt uitgevoerd. Je hoeft deze bestanden enkel zelf te maken als je de voorbeelden op je eigen computer wilt uitproberen.
+
 In hoofdstuk
 17
 worden verscheidene korte tekstbestanden gebruikt om functionaliteiten
