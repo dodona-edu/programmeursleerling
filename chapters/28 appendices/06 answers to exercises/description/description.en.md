@@ -104,7 +104,8 @@ above is harder, because you need nested conditions and an early escape.
 #### Answer 2.1
 
 You handed in your first program and got your first "Correct" back.
-Congratulations!
+Congratulations! And if you also tried it on your own computer, you now
+have Python running there as well.
 
 #### Answer 2.2
 

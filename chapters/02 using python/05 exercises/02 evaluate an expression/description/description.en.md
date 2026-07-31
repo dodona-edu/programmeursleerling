@@ -1,6 +1,7 @@
 In an interactive Python session you can type commands on the prompt
 (`>>>`). On Dodona you get such a session by pressing **To sandbox**
-underneath the editor. Give the command `print(7/4)`. You will see that
+underneath the editor; on your own computer you get one by starting
+IDLE. Give the command `print(7/4)`. You will see that
 it prints the answer $$1.75$$. Then give the command $$7/4$$ (i.e., without
 `print`). Observe that it also prints the answer $$1.75$$.
 

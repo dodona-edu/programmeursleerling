@@ -117,7 +117,8 @@ een stuk lastiger, omdat je er geneste condities voor nodig hebt.
 #### Antwoord 2.1
 
 Je hebt je eerste programma ingediend en je eerste "Correct" gekregen.
-Gefeliciteerd!
+Gefeliciteerd! En als je het ook op je eigen computer hebt geprobeerd,
+draait Python daar nu ook.
 
 #### Antwoord 2.2
 

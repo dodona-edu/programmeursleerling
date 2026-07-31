@@ -1,6 +1,7 @@
 In een interactieve Python sessie kun je commando's typen op de prompt
 (`>>>`). Op Dodona krijg je zo'n sessie door onder de editor op **Naar
-sandbox** te klikken. Geef het commando `print(7/4)`. Je ziet dat de
+sandbox** te klikken; op je eigen computer krijg je er een door IDLE te
+starten. Geef het commando `print(7/4)`. Je ziet dat de
 uitkomst $$1.75$$ is. Geef daarna het commando $$7/4$$ (dus zonder `print`).
 Zie nu dat het antwoord ook $$1.75$$ is.
 
