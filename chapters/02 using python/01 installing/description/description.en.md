@@ -1,3 +1,7 @@
+{:class="callout callout-info"}
+> #### Note
+> You do not need any of this to follow the course: on Dodona you write and run all your code in the browser. This page is here for readers who would also like to run Python on their own computer.
+
 To run Python programs, you need a "Python interpreter." Fortunately,
 Python interpreters are freely available for almost every machine in
 existence. Visit <http://www.python.org>{:target="_blank"} to download a Python
@@ -12,17 +16,3 @@ and copy it to another, which may have a different operating system, and
 it will probably still run as intended (unless the program has some
 system-specific content, but I will get to that in a much later
 chapter).
-
-Some Python courses use an online system in which students write Python
-code. That is a possible approach, but it has three disadvantages:
-
-1. there are free systems which are very limited and therefore less useful;
-
-2. there are paid systems which cost money and also have you deal with
-some peculiarities (as they run in a browser);
- 
-3. at some point you will have to run Python on your own computer anyway, so why not start with it? 
-
-That said, if you prefer to start with an online system and
-only move towards a locally installed version of Python in a later
-chapter, that is certainly possible.

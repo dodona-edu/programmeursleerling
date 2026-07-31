@@ -1,3 +1,7 @@
+{:class="callout callout-info"}
+> #### Note
+> This appendix documents the `pcmaze` module from the printed book, as reference material for readers who run the examples in their own environment, outside Dodona. The module is not available on Dodona, so you cannot import it in a solution that you submit. You only need it if you want to try the maze example on your own computer.
+
 In Chapter
 10
 an example of searching a maze is presented. In that example a module

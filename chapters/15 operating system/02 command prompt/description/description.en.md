@@ -42,7 +42,8 @@ working directory," "make a new directory," "remove an empty directory,"
 it depends on the operating system what exactly the commands are that
 you need to give to achieve these things.
 
-On your system, find the command shell and run the program. On Windows,
-type "dir" to see the files in the current directory. On Macs and Linux,
-this command is usually "ls." After doing this, you can close the
-command shell again.
+If you have your own computer at hand, it is worth finding the command
+shell and running it once. On Windows, type "dir" to see the files in
+the current directory. On Macs and Linux, this command is usually "ls."
+After doing this, you can close the command shell again. You do not need
+any of this for the exercises in this course, which Dodona runs for you.

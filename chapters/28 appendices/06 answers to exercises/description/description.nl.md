@@ -116,17 +116,18 @@ een stuk lastiger, omdat je er geneste condities voor nodig hebt.
 
 #### Antwoord 2.1
 
-Python draait nu op je computer. Gefeliciteerd!
+Je hebt je eerste programma ingediend en je eerste "Correct" gekregen.
+Gefeliciteerd! En als je het ook op je eigen computer hebt geprobeerd,
+draait Python daar nu ook.
 
 #### Antwoord 2.2
 
-Je ziet niets in de shell (behalve het woord `RESTART` dat je altijd
-ziet als je een programma draait). $$7/4$$ is een correct Python commando,
-dus het programma geeft geen foutmelding. Het programma rekent $$7/4$$
-uit, maar toont geen resultaat, dus het programma laat niet $$1.75$$ zien.
-De shell toont het resultaat van het draaien van het programma. Maar
-omdat het programma zelf geen resultaat heeft, is er ook niks dat de
-shell kan laten zien. Dus je ziet niets.
+Het programma toont helemaal niets. $$7/4$$ is een correct Python
+commando, dus het programma geeft geen foutmelding. Het programma rekent
+$$7/4$$ uit, maar toont geen resultaat, dus het programma laat niet
+$$1.75$$ zien. Dat is het verschil met een interactieve sessie: een sessie
+toont de uitkomst van elk commando dat je typt, maar een programma dat
+wordt uitgevoerd toont enkel wat het zelf afdrukt. Dus je ziet niets.
 
 ### Hoofdstuk 4
 

@@ -1,3 +1,7 @@
+{:class="callout callout-info"}
+> #### Opmerking
+> Je hebt niets van dit alles nodig om de cursus te volgen: op Dodona schrijf je al je code in de browser en voer je ze daar ook uit. Deze pagina is er voor wie Python ook op de eigen computer wil draaien.
+
 Wanneer je een Python programma geschreven hebt, zie je de naam van het
 programma in de folder waar je het hebt opgeslagen. Je kunt proberen het
 uit te voeren op dezelfde manier waarop je andere programma's start,

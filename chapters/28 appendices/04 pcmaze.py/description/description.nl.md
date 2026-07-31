@@ -1,3 +1,7 @@
+{:class="callout callout-info"}
+> #### Opmerking
+> Deze appendix documenteert de `pcmaze` module uit het boek, als naslagwerk voor wie de voorbeelden in een eigen omgeving uitvoert, buiten Dodona. De module is niet beschikbaar op Dodona, dus je kunt hem niet importeren in een oplossing die je indient. Je hebt hem enkel nodig als je het doolhofvoorbeeld op je eigen computer wilt uitproberen.
+
 In hoofdstuk
 10
 laat ik in een voorbeeld een doolhof doorzoeken. In dat voorbeeld

@@ -1,3 +1,7 @@
+{:class="callout callout-info"}
+> #### Opmerking
+> Je hebt niets van dit alles nodig om de cursus te volgen: op Dodona schrijf je al je code in de browser en voer je ze daar ook uit. Deze pagina is er voor wie Python ook op de eigen computer wil draaien.
+
 Python programma's zijn bestanden. Over het algemeen wordt voor Python
 bestanden de extensie `.py` gebruikt.
 

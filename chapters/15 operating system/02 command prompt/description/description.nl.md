@@ -44,7 +44,9 @@ bestand," etcetera. Wederom, het is afhankelijk van het
 besturingssysteem wat je geacht wordt te doen om deze zaken te
 bewerkstelligen.
 
-Zoek op je systeem op waar je de command shell kunt starten en voer het
-programma uit. Op Windows, typ "dir" om de bestanden in de huidige
-directory te zien. Op Mac en Linux doe je dit meestal met "ls." Nadat je
-dit geprobeerd hebt, kun je de command shell weer sluiten.
+Als je een eigen computer bij de hand hebt, is het de moeite waard om de
+command shell eens op te zoeken en te starten. Op Windows, typ "dir" om
+de bestanden in de huidige directory te zien. Op Mac en Linux doe je dit
+meestal met "ls." Nadat je dit geprobeerd hebt, kun je de command shell
+weer sluiten. Voor de oefeningen in deze cursus heb je dit allemaal niet
+nodig, die voert Dodona voor je uit.
