@@ -1,8 +1,8 @@
 {
   "description": {
     "names": {
-      "nl": "Woorden tellen",
-      "en": "Counting words"
+      "nl": "Woorden tellen regel per regel",
+      "en": "Counting words line by line"
     }
   },
   "labels": [

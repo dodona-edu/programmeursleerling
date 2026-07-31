@@ -1,8 +1,8 @@
 {
   "description": {
     "names": {
-      "nl": "Fibonaccigetallen",
-      "en": "Fibonacci numbers"
+      "nl": "Fibonaccigetallen traceren",
+      "en": "Tracing Fibonacci numbers"
     }
   },
   "labels": [
